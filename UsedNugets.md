@@ -1,12 +1,13 @@
 ﻿# Build Project Command
 https://github.com/dotnet/sdk/issues/9487
+dotnet msbuild -property:Configuration=Release
 dotnet build -c Debug  - in folder project.sln
 msbuild /v:q  /t:Build /nologo /P:Configuration=Release MySolutionWithSevenProjectsInIt.sln
 
 # Run Project
 https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-run
 dotnet run : command in project folder to run project
-
+dotnet run --project ./projects/proj1/proj1.csproj --property:Configuration=Release
 
 
 dotnet restore
@@ -430,7 +431,6 @@ https://github.com/orgs/EasyMicroservices
     <PackageReference Include="Octokit.Webhooks" Version="2.2.3" />
     <PackageReference Include="Octokit.Webhooks.AspNetCore" Version="2.2.3" />
     <PackageReference Include="OpenGraph-Net" Version="4.0.1" />
-    <PackageReference Include="Pek.Markdig.HighlightJs" Version="0.5.1" />
     <PackageReference Include="PlaywrightExtraSharp2" Version="1.0.7.1" />
     <PackageReference Include="PuppeteerExtraSharp" Version="2.0.0" />
     <PackageReference Include="Quartz.AspNetCore" Version="3.8.1" />

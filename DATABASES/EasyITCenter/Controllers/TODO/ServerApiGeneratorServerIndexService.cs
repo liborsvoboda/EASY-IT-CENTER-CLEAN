@@ -1,18 +1,10 @@
-﻿using HtmlAgilityPack;
-using Markdig.Renderers.Docx;
+﻿using Markdig.Renderers.Docx;
 using Markdig;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging.Abstractions;
-using SharpCompress.Common;
-using System.IO.Compression;
-using Westwind.AspNetCore.Markdown;
 using Pek.Markdig.HighlightJs;
 using Markdown = Westwind.AspNetCore.Markdown.Markdown;
-using DocumentFormat.OpenXml.Drawing.Diagrams;
-using System.Data.Entity.Core.Metadata.Edm;
-using DocumentFormat.OpenXml.Packaging;
-using EasyITCenter.DBModel;
 using OpenGraphNet;
+using MimeKit;
 
 
 
@@ -157,7 +149,7 @@ namespace EasyITCenter.Controllers {
                                 var styles = new DocumentStyles();
                                 var renderer = new DocxDocumentRenderer(document, styles, NullLogger<DocxDocumentRenderer>.Instance);
                                 var pipeline = new MarkdownPipelineBuilder().UseEmphasisExtras().UseAbbreviations().UseAdvancedExtensions().UseBootstrap()
-                                    .UseDiagrams().UseEmphasisExtras().UseEmojiAndSmiley(true).UseDefinitionLists().UseTableOfContent().UseTaskLists()
+                                    .UseDiagrams().UseEmphasisExtras().UseEmojiAndSmiley(true).UseDefinitionLists().UseTaskLists()
                                     .UseSmartyPants().UsePipeTables().UseMediaLinks().UseMathematics().UseListExtras().UseHighlightJs()
                                     .UseGridTables().UseGlobalization().UseGenericAttributes().UseFootnotes().UseFooters().UseSyntaxHighlighting().UseFigures().Build();
 

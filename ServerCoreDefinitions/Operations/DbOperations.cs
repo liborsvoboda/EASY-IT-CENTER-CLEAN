@@ -1,8 +1,4 @@
-﻿using ColorCode.Compilation.Languages;
-using DocumentFormat.OpenXml.ExtendedProperties;
-using EasyITCenter.DBModel;
-using IdentityModel.OidcClient;
-using System.Data;
+﻿using System.Data;
 
 namespace EasyITCenter.ServerCoreStructure {
 
@@ -10,9 +6,6 @@ namespace EasyITCenter.ServerCoreStructure {
     /// All Server Definitions of Database Operation method
     /// </summary>
     public class DbOperations {
-
-
-        #region Definition for Startup And Reload Tables
 
         /// <summary>
         /// Method for All Server Defined Table for Local Using As Off line AutoUpdated Tables
@@ -65,10 +58,8 @@ namespace EasyITCenter.ServerCoreStructure {
             }
         }
 
-        #endregion Definition for Startup And Reload Tables
 
-        #region Public definitions for standard using
-
+       
         /// <summary>
         /// Default Operation for Call Translation
         ///  Over Local Tables Functionality
@@ -137,9 +128,8 @@ namespace EasyITCenter.ServerCoreStructure {
         }
 
 
-        #endregion Public definitions for standard using
 
-        #region Private or On-line/Off-line Definitions
+        
 
 
         private static ServerParameterList? GetServerParameterListsOffline(string paramKey) {
@@ -369,7 +359,7 @@ namespace EasyITCenter.ServerCoreStructure {
             return result;
         }
 
-        #endregion Private or On-line/Off-line Definitions
+        
 
     }
 }

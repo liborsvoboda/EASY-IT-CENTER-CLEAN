@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity.Core.Metadata.Edm;
-using System.Data.Common;
-using EasyITCenter.Controllers;
 using System.Xml;
 
 

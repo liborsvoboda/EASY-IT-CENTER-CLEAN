@@ -1,8 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing.Template;
-using System.Data.Entity.Core.Metadata.Edm;
-using System.Net.Http;
-using System.Net.Http.Headers;
+﻿
 
 namespace EasyITCenter.Controllers {
 
@@ -15,9 +11,9 @@ namespace EasyITCenter.Controllers {
         /// <summary>
         /// For wwwroot folder Update with detect changes and modify static pages
         /// </summary>
-        private readonly Microsoft.AspNetCore.Hosting.IWebHostEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public ServerDocApi(Microsoft.AspNetCore.Hosting.IWebHostEnvironment hostingEnvironment) {
+        public ServerDocApi(IWebHostEnvironment hostingEnvironment) {
             _hostingEnvironment = hostingEnvironment;
         }
 

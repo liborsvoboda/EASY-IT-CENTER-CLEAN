@@ -1,16 +1,5 @@
 ﻿using HandlebarsDotNet;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Octokit;
-using ScrapySharp.Network;
-using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 
 namespace EasyITCenter.Controllers {

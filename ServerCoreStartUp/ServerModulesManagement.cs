@@ -47,7 +47,7 @@ namespace EasyITCenter.ServerCoreConfiguration {
                             .UseGlobalization().UseMathematics().UseMediaLinks().UsePreciseSourceLocation().UseReferralLinks()
                             .UseSmartyPants().UseTaskLists().UseDFMCodeInfoPrefix()
                             .UseHighlightJs().UseInteractiveCode().UseXref()//.UsePrism()
-                            //.UseUrlRewriter(link => link.Url.AsRelativeResource())
+                            .UseUrlRewriter(link => link.Url.AsRelativeResource())
                             //.UseUrlRewriter(link => link.Url.Replace(!ServerConfigSettings.ConfigServerStartupOnHttps && ServerConfigSettings.ConfigServerStartupHTTPAndHTTPS ? "https://" : "http://", !ServerConfigSettings.ConfigServerStartupOnHttps && ServerConfigSettings.ConfigServerStartupHTTPAndHTTPS ? "http://" : "https://"))
                             .UseFigures().UseTaskLists().UseCustomContainers().UseGenericAttributes();//.Build();
                     };
