@@ -1,0 +1,9 @@
+Windows By Logged Account 
+  "DatabaseConnectionString": "Server=127.0.0.1;Database=EasyITCenter;Trusted_Connection=True;TrustServerCertificate=True"
+ Windows 
+  "DatabaseConnectionString": "Server=127.0.0.1,1433;Database=EasyITCenter;User ID=easyitcenter;Password=easyitcenter;TrustServerCertificate=True;"
+ Linux 
+  "DatabaseConnectionString": "Server=127.0.0.1,1433;Database=EasyITCenter;User ID=easyitcenter;Password=easyitcenter;Integrated Security=False;TrustServerCertificate=True;"
+ other Examples "Server=localhost\\SQLEXPRESS;Database=EasyITCenter;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=False;" 
+  "Server=YTWSEM-OTRL240\\SQLEXPRESS;Database=EasyITCenter;User ID=easyitcenter;Password=easyitcenter;Trusted_Connection=True;" 
+  "Server=127.0.0.1\\SQLEXPRESS;Database=EasyITCenter;User ID=easyitcenter;Password=easyitcenter;Integrated Security=False;Trusted_Connection=True;"

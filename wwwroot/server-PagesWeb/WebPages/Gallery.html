@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Libor Svoboda">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="./metro/metro5.css" rel="stylesheet">
+    <!-- <link href="./metro5/icons.css" rel="stylesheet"> -->
+    <link href="./metro/boostrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./metro/boostrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./metro/boostrap/css/docs.css" rel="stylesheet">
+    <link href="./metro/boostrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+	
+    <script type="text/javascript" src="./metro/boostrap/js/jquery.js"></script>
+    <script type="text/javascript" src="./metro/metro5.js"></script>
+    <script type="text/javascript" src="./metro/jquery/js/jquery.printElement.js"></script>
+    <script type="text/javascript" src="./metro/library/js/jspdf.js"></script>
+
+
+	
+	<style>
+	html, body {
+    height: 100%;
+    margin: 0;         /* Reset default margin on the body element */
+}
+iframe {
+    display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    width: 100%;
+    height: 100%;
+}
+	</style>
+
+    <script src="./metro/boostrap/js/bootstrap-transition.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-alert.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-modal.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-dropdown.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-tab.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-tooltip.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-popover.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-button.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-collapse.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-carousel.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-typeahead.js"></script>
+    <script src="./metro/boostrap/js/bootstrap-affix.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="navbar navbar-inverse navbar-fixed-top pb-5">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand fg-blue" href="./index.html">EIC&ESB IT Řešení</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Úvod</a>
+              </li>
+              <li class="">
+                <a href="./eic.html">EIC Multi Server</a>
+              </li>
+              <li class="">
+                <a href="./esb.html">ESB Multi System</a>
+              </li>
+              <li class="">
+                <a href="./docs.html">Pro Vývojáře</a>
+              </li>
+              <li class="">
+                 <a href="./gallery.html">Galerie</a>
+              </li>
+              <li class="">
+                <a href="./metro.html">Metro</a>
+              </li>
+			   <li class="">
+                <a href="./library.html">Mega Knihovna</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ <iframe id="TheIframe" src="../GalleryNews/index.html" width="100%" height="600" frameborder="0" scrolling="yes" width="100%" >
+ </iframe> 
+
+
+<script>
+ 
+function calcHeight(iframeElement){
+    iframeElement.height=iframeElement.contentWindow.document.body.scrollHeight - 50;
+}
+
+calcHeight(document.getElementById("TheIframe"));
+
+</script>  
+
+  </body>
+</html>

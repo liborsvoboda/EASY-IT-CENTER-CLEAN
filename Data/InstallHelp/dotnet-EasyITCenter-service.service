@@ -1,0 +1,19 @@
+[Unit]  
+Description=Dotnet Core EasyITCenter service  
+  
+[Service]  
+ExecStart=sudo dotnet /opt/EasyITCenter/EasyITCenter.dll  
+WorkingDirectory=/opt/EasyITCenter/
+User=root  
+Group=root  
+Restart=always
+RestartSec=5   
+SyslogIdentifier=dotnet-EasyITCenter-service  
+PrivateTemp=true  
+Environment=ASPNETCORE_ENVIRONMENT=Development
+KillSignal=SIGINT
+StandardOutput=file:/opt/EasyITCenter/Logs/standardOutput.log
+StandardError=file:/opt/EasyITCenter/Logs/standardError.log
+
+[Install]  
+WantedBy=multi-user.target  

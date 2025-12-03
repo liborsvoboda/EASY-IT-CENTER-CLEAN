@@ -1,0 +1,48 @@
+﻿@model ServerCorePages.ViewerReportFileModel
+
+@* @addTagHelper *, WebOptimizer.Core *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using EasyITCenter.WebClasses
+@using EasyITCenter.Controllers
+@using EasyITCenter.ServerCoreStructure
+@using Microsoft.AspNetCore.Html
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EIC-Report File Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="charset" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Libor Svoboda">
+    <meta name="description" content="EasyITCenter">
+    <meta name="keywords" content="System, Backend, API, EASY-DATA-Center, EASY-SYSTEM-Builder, Application, Server, IT, Solution, Help, HowTo, Javascript, HTML5, UI, Library, Web, Development, Framework">
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/server-integrated/server-modules/reporting/reportviewer/css/site.css" />
+    <link rel="stylesheet" href="/server-integrated/server-modules/reporting/reportviewer/css/metro-all.min.css" />
+    
+    <script type="text/javascript" src="/server-integrated/server-modules/reporting/reportviewer/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/reporting/reportviewer/js/metro.min.4.5.2.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/reporting/reportviewer/js/globalBehavior.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/reporting/reportviewer/js/globalFunctions.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/reporting/reportviewer/js/globalStorage.js"></script>
+
+    @* Google Translation *@
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body style="width: 100%;">
+   <main id="WebPageHTMLContent" role="main" class="pb-10 w-100 h-100" >
+        @RenderBody()
+   </main>
+</body>
+</html>
+
+ 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Image Carousel Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/blueimp-gallery.min.css" />
+    <link rel="stylesheet" href="./css/blueimp-gallery-indicator.css" />
+    <link rel="stylesheet" href="./css/blueimp-gallery-video.css" />
+    <style>       
+
+.blueimp-gallery > .indicator > li:hover, .blueimp-gallery > .indicator > .active {
+    background-color: darkgray;
+    border-color: darkgray; }
+        .blueimp-gallery-carousel {margin:-1em;}
+    </style>
+</head>
+  <body>
+      
+    <div
+      id="blueimp-image-carousel"
+      class="blueimp-gallery blueimp-gallery-carousel"
+      aria-label="image carousel" style="background-color: darkgray "
+    >
+      <div class="slides" aria-live="off"></div>
+      
+      <a
+        class="prev"
+        aria-controls="blueimp-image-carousel"
+        aria-label="previous slide"
+      ></a>
+      <a
+        class="next"
+        aria-controls="blueimp-image-carousel"
+        aria-label="next slide"
+      ></a>
+      <a
+        class="play-pause"
+        aria-controls="blueimp-image-carousel"
+        aria-label="play slideshow"
+        aria-pressed="true"
+        role="button"
+      ></a>
+      <ol class="indicator" ></ol>
+    </div>
+
+    <script src="./js/blueimp-helper.js"></script>
+    <script src="./js/blueimp-gallery.js"></script>
+    <script src="./js/blueimp-gallery-fullscreen.js"></script>
+    <script src="./js/blueimp-gallery-indicator.js"></script>
+    <script src="./js/blueimp-gallery-video.js"></script>
+    <script src="./js/blueimp-gallery-vimeo.js"></script>
+    <script src="./js/blueimp-gallery-youtube.js"></script>
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/jquery.blueimp-gallery.js"></script>
+    <script>
+
+    let sources=  [
+        { title: '', href: './images/01.png' },
+        { title: '', href: './images/02.png' },
+        { title: '', href: './images/03.png' },
+        { title: '', href: './images/04.png' },
+        { title: '', href: './images/05.png' },
+        { title: '', href: './images/06.png' },
+        { title: '', href: './images/07.png' },
+        { title: '', href: './images/08.png' },
+        { title: '', href: './images/09.png' },
+        { title: '', href: './images/10.png' },
+        { title: '', href: './images/11.png' }
+    ];
+
+    blueimp.Gallery(sources, {
+      container: '#blueimp-image-carousel',
+      carousel: true,
+      enableKeyboardNavigation: true,
+      startSlideshow: false,
+      fullscreen: false
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+	<meta name="robots" content="noindex,follow">
+	<meta name="charset" content="utf-8" />
+
+	<link rel="stylesheet" href="/serverportal/addons/fancytree/dist/skin-win8/ui.fancytree.min.css">
+	<link rel="stylesheet" href="../../metro/css/metro-all.css" />
+
+	<script type="text/javascript" src="/serverportal/addons/jquery/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/serverportal/addons/fancytree/dist/fancytree-all-deps.js"></script>
+	<script type="text/javascript" src="../../metro/js/metro.min.js"></script>
+
+	<script type="text/javascript" src="/serverportal/manage/js/global-storage.js"></script>
+	<script type="text/javascript" src="/serverportal/manage/js/global-behavior.js"></script>
+	<script type="text/javascript" src="/serverportal/manage/js/global-object.js"></script>
+	<script type="text/javascript" src="/serverportal/manage/js/global-functions.js"></script>
+	<script type="text/javascript" src="/serverportal/manage/js/global-api.js"></script>
+
+	<script type="text/javascript" src="/serverportal/addons/monaco/js/monaco-editor/min/vs/loader.js"></script>
+	<style>
+        .monaco-editor {
+            min-width: 100%;
+            width: 100%;
+            min-height: 100%;
+        }
+
+	</style>
+
+	<title>Fancytree - Browser</title>
+	<script type="text/javascript">
+
+		async function StartUp() {
+			const dataJs = await fetch('/serverportal/addons/monaco/js/codepreview.js').then((r) => r.text())
+			new Function(dataJs)();
+		}
+
+		$(function () {
+			$("#tree").fancytree({
+				checkbox: false,
+				source: Metro.storage.getItem('FunctionList', null),
+				activate: function (event, data) {
+                    Gs.Variables.monacoEditorList.filter(obj => { return obj.elementId == "monacoPreview" })[0].editor.getModel().setValue(data.node.key);
+				},
+				checkbox: function (event, data) {
+					return data.node.isFolder() ? false : false;
+				}
+			});
+		});
+
+		StartUp();
+	</script>
+</head>
+<body>
+	<div class="row w-100 h-100 d-inline-flex">
+		<div id="tree" class="h-100" style="width: 350px; overflow-y: auto;"></div>
+		<div id="FrameWindow" class="h-100 row" height="100%" frameborder="0" scrolling="yes" style="width: calc(100% - 350px); height: 100%; position: relative;">
+			<div id="monacoPreview" class='row' style="height: 100%; width: 100%; position: fixed; display: block !important; "></div>
+		</div>
+
+		<select class="theme" style='position: absolute;left: 90%;z-index: 2000;top: 5px;right: 0px;'>
+			<option>vs-dark</option>
+			<option>vs</option>
+			<option>hc-black</option>
+		</select>
+
+		<select class="language" style='position: absolute;left: 90%;z-index: 2000;top: 30px;right: 0px;'>
+			<option>bat</option>
+			<option>csharp</option>
+			<option>css</option>
+			<option>graphql</option>
+			<option>handlebars</option>
+			<option>html</option>
+			<option selected>javascript</option>
+			<option>json</option>
+			<option>markdown</option>
+			<option>mysql</option>
+			<option>pgsql</option>
+			<option>php</option>
+			<option>powerquery</option>
+			<option>powershell</option>
+			<option>python</option>
+			<option>razor</option>
+			<option>scheme</option>
+			<option>scss</option>
+			<option>shell</option>
+			<option>sql</option>
+			<option>typescript</option>
+			<option>vb</option>
+			<option>xml</option>
+		</select>
+	</div>
+</body>
+
+</html>

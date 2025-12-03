@@ -1,0 +1,93 @@
+/*
+
+Spaces Apart
+
+Create a function that takes an arr and returns the total amount of space between the two "1"s.
+
+Examples
+spaceApart([1, 0, 1, "1", 4, 3, 2, 3, 2, "1"]) ➞ 14
+
+spaceApart(["1", 9, 20, 38, "1"]) ➞ 67
+
+spaceApart([3, 2, 9, "1", 0, 0, -1, "1"]) ➞ "invalid"
+
+
+Notes
+Return "invalid" if a negative number exists inside arr or if there is more/less than two "1"s. Ignore any other string inside arr.
+
+*/
+
+
+
+//#############################################################
+//#  SOLUTION 1 
+//#############################################################
+
+
+function spaceApart(arr) {
+    if (arr.some(el => el < 0)) return 'invalid'
+    arr = arr.slice(arr.indexOf('1') + 1, arr.lastIndexOf('1')).filter(el => typeof(el) == typeof(1))
+    return arr.length != 0 ? arr.reduce((a, b) => a + b) : 'invalid'
+}
+
+
+
+//#############################################################
+//#  SOLUTION 2  
+//#############################################################
+
+
+function spaceApart(arr) {
+    return arr.some(x => x < 0) || arr.filter(x => x === "1").length != 2 ? "invalid" : arr.slice(arr.indexOf("1") + 1, arr.lastIndexOf("1")).reduce((a, v) => a + (typeof v == "number" ? v : 0), 0)
+}
+
+
+
+//#############################################################
+//#  SOLUTION 3
+//#############################################################
+
+
+function spaceApart(arr) {
+    let count = 0
+    let isNeg = false
+    for (i of arr) {
+        if (i === '1') count++;
+        if (i < 0) isNeg = true;
+    }
+
+    if (isNeg || count <= 1 || count > 2) return 'invalid';
+
+    let section = arr.slice(arr.indexOf('1'), arr.lastIndexOf('1')).filter(x => typeof x === 'number');
+    return section.reduce((a, b) => a + b, 0)
+
+}
+
+
+//#############################################################
+//#  SOLUTION 4
+//#############################################################
+
+
+function spaceApart(arr) {
+    let a = arr.filter(x => x === '1').length == 2;
+    let b;
+    if (a) {
+        b = arr.slice(arr.indexOf('1') + 1, arr.lastIndexOf('1')).filter(x => typeof x !== 'string');
+    }
+    return b == undefined || b.some(x => x <= -1) ? 'invalid' : b.reduce((acc, cur) => acc + cur);
+}
+
+
+
+//#############################################################
+//#  SOLUTION 5
+//#############################################################
+
+
+function spaceApart(a) {
+    var f = a.indexOf('1')
+    var l = a.lastIndexOf('1')
+    return f == l || a.some(a => a < 0) ? 'invalid' :
+        a.slice(f + 1, l).filter(a => typeof a == 'number').reduce((a, b) => a + b)
+}

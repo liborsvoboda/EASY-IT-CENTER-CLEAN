@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BasicAuthenticationHandler </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BasicAuthenticationHandler ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler">
+
+
+
+  <h1 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler" class="text-break">Class BasicAuthenticationHandler</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1">AuthenticationHandler</a>&lt;<a class="xref" href="EasyITCenter.GitServer.Handlers.BasicAuthenticationOptions.html">BasicAuthenticationOptions</a>&gt;</div>
+    <div class="level2"><span class="xref">BasicAuthenticationHandler</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationhandler">IAuthenticationHandler</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializeasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.InitializeAsync(AuthenticationScheme, HttpContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializeeventsasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.InitializeEventsAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.createeventsasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.CreateEventsAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.initializehandlerasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.InitializeHandlerAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.buildredirecturi">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.BuildRedirectUri(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.resolvetarget">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.ResolveTarget(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.authenticateasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.AuthenticateAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleauthenticateonceasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.HandleAuthenticateOnceAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleauthenticateoncesafeasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.HandleAuthenticateOnceSafeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.challengeasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.ChallengeAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.forbidasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.ForbidAsync(AuthenticationProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.scheme">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Scheme</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.options">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.context">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.request">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.response">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Response</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.originalpath">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.OriginalPath</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.originalpathbase">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.OriginalPathBase</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.logger">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.urlencoder">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.UrlEncoder</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.clock">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Clock</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.optionsmonitor">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.OptionsMonitor</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.events">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.Events</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.claimsissuer">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.ClaimsIssuer</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.currenturi">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.CurrentUri</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EasyITCenter.html">EasyITCenter</a>.<a class="xref" href="EasyITCenter.GitServer.html">GitServer</a>.<a class="xref" href="EasyITCenter.GitServer.Handlers.html">Handlers</a></h6>
+  <h6><strong>Assembly</strong>: EasyITCenter.dll</h6>
+  <h5 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BasicAuthenticationHandler : AuthenticationHandler&lt;BasicAuthenticationOptions&gt;, IAuthenticationHandler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler__ctor_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.#ctor*"></a>
+  <h4 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler__ctor_Microsoft_Extensions_Options_IOptionsMonitor_EasyITCenter_GitServer_Handlers_BasicAuthenticationOptions__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{EasyITCenter.GitServer.Handlers.BasicAuthenticationOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)">BasicAuthenticationHandler(IOptionsMonitor&lt;BasicAuthenticationOptions&gt;, ILoggerFactory, UrlEncoder, ISystemClock)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicAuthenticationHandler(IOptionsMonitor&lt;BasicAuthenticationOptions&gt; options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionsmonitor-1">IOptionsMonitor</a>&lt;<a class="xref" href="EasyITCenter.GitServer.Handlers.BasicAuthenticationOptions.html">BasicAuthenticationOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggerfactory">ILoggerFactory</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encodings.web.urlencoder">UrlEncoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock">ISystemClock</a></td>
+        <td><span class="parametername">clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleAuthenticateAsync_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleAuthenticateAsync*"></a>
+  <h4 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleAuthenticateAsync" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleAuthenticateAsync">HandleAuthenticateAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;AuthenticateResult&gt; HandleAuthenticateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticateresult">AuthenticateResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleauthenticateasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.HandleAuthenticateAsync()</a></div>
+  <a id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleChallengeAsync_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleChallengeAsync*"></a>
+  <h4 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleChallengeAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)">HandleChallengeAsync(AuthenticationProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task HandleChallengeAsync(AuthenticationProperties properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handlechallengeasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.HandleChallengeAsync(AuthenticationProperties)</a></div>
+  <a id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleForbiddenAsync_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleForbiddenAsync*"></a>
+  <h4 id="EasyITCenter_GitServer_Handlers_BasicAuthenticationHandler_HandleForbiddenAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_" data-uid="EasyITCenter.GitServer.Handlers.BasicAuthenticationHandler.HandleForbiddenAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)">HandleForbiddenAsync(AuthenticationProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task HandleForbiddenAsync(AuthenticationProperties properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationhandler-1.handleforbiddenasync">AuthenticationHandler&lt;BasicAuthenticationOptions&gt;.HandleForbiddenAsync(AuthenticationProperties)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationhandler">IAuthenticationHandler</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="EasyITCenter.GitServer.Extensions.GitExtensions.html#EasyITCenter_GitServer_Extensions_GitExtensions_TraverseTree__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___">GitExtensions.TraverseTree&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

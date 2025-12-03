@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Jekyll-themes - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html" class="active"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>Awesome Series @ Planet Jekyll</p>
+<p><a href="https://github.com/planetjekyll/awesome-jekyll">Jekyll</a> •
+<a href="https://github.com/planetjekyll/awesome-jekyll-themes">Jekyll Themes</a> •
+<a href="https://github.com/planetjekyll/awesome-jekyll-plugins">Jekyll Plugins</a> •
+<a href="https://github.com/planetjekyll/awesome-jekyll-editors">Jekyll Editors</a></p>
+<h1 id="awesome-gem-packaged-jekyll-themes"><a class="header" href="#awesome-gem-packaged-jekyll-themes">Awesome (Gem-Packaged) Jekyll Themes</a></h1>
+<p>A collection of awesome (gem-packaged) Jekyll themes</p>
+<hr />
+<p>ANNOUNCEMENT: Looking for awesome &quot;classic&quot; Jekyll themes? See the <a href="https://drjekyllthemes.github.io">Dr. Jekyll's Themes</a>
+directory / listing.</p>
+<hr />
+<h4 id="contributions-welcome-anything-missing-send-in-a-pull-request-thanks"><a class="header" href="#contributions-welcome-anything-missing-send-in-a-pull-request-thanks"><em>Contributions welcome. Anything missing? Send in a pull request. Thanks.</em></a></h4>
+<h2 id="documentation"><a class="header" href="#documentation">Documentation</a></h2>
+<blockquote>
+<p>Note: Starting with Jekyll 3.2+ Themes can get packaged up into Ruby gems.</p>
+</blockquote>
+<p>See the <a href="http://jekyllrb.com/docs/themes">(Gem-Packaged) Themes Page @ Jekyll Docs</a> ».</p>
+<h3 id="intro--disclaimer"><a class="header" href="#intro--disclaimer">Intro / Disclaimer</a></h3>
+<p><em>Gem-Packaged Themes vs. &quot;Classic&quot; Themes</em></p>
+<p>From the <a href="https://github.com/planetjekyll/quickrefs/blob/master/FAQ.md">&quot;Unofficial&quot; Jekyll F.A.Q.</a>:</p>
+<p><strong>Q: How can I get started with gem-packaged themes? / Do I need to package my theme into a gem?</strong></p>
+<p>Gem-packaged themes are just an advanced option and in addition they are in development
+for (real world) experiments (e.g. think v0.1 as stated by the Ben Balter - the lead designer / manager / dev at GitHub).</p>
+<p>Thus, to conclude do NOT read too much into the official themes docs e.g. as the only or &quot;right&quot; way to design a theme.
+Just (continue to) use &quot;classic&quot; themes - there are hundreds to learn from and once you have mastered &quot;classic&quot; themes
+you can &quot;graduate&quot; to the master class, that is, using gem-packaged themes.</p>
+<p>Again gem-packaged themes are wonderful and welcome -- remember, however, the party is just getting started:</p>
+<ul>
+<li><a href="https://github.com/henrythemes/hello-minima-theme">henrythemes/hello-minima-theme</a></li>
+</ul>
+<p>For some &quot;classic&quot; starter themes you may try some of Henry's themes:</p>
+<ul>
+<li><a href="https://github.com/henrythemes/hello-jekyll-theme">henrythemes/hello-jekyll-theme</a></li>
+<li><a href="https://github.com/henrythemes/jekyll-starter-theme">henrythemes/jekyll-starter-theme</a></li>
+<li><a href="https://github.com/henrythemes/jekyll-starter-theme-v2">henrythemes/jekyll-starter-theme-v2</a></li>
+<li><a href="https://github.com/henrythemes/jekyll-minimal-theme">henrythemes/jekyll-minimal-theme</a></li>
+<li><a href="https://github.com/henrythemes/jekyll-bootstrap-theme">henrythemes/jekyll-bootstrap-theme</a></li>
+</ul>
+<p>For the &quot;state-of-the-art&quot; what a &quot;classic&quot; theme can do - see the incredible beautiful and
+extremely well-documented (incl. a getting started guide and much much more) <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes (MM) theme</a> by Michael Rose. Happy Jekylling.</p>
+<h2 id="official-themes"><a class="header" href="#official-themes">Official Themes</a></h2>
+<p><strong>Minima</strong> ★112
+(gem: <a href="https://rubygems.org/gems/minima">minima</a>,
+github: <a href="https://github.com/jekyll/minima">jekyll/minima</a>)
+by Joel Glovier, Ben Balter, Parker Moore et al -- a one-size-fits-all theme for writers</p>
+<p><strong>Swiss</strong> ★35
+(gem: <a href="https://rubygems.org/gems/jekyll-swiss">jekyll-swiss</a>,
+github: <a href="https://github.com/broccolini/swiss">broccolini/swiss</a>)
+by Diana Mounter -- a bold typographic theme inspired by Swiss design</p>
+<p><strong>Athena</strong> ★18
+(gem: <a href="https://rubygems.org/gems/jekyll-athena">jekyll-athena</a>,
+github: <a href="https://github.com/broccolini/athena">broccolini/athena</a>)
+by Diana Mounter -- a simple and elegant theme</p>
+<h2 id="more-themes"><a class="header" href="#more-themes">More Themes</a></h2>
+<p><strong>Minimal Mistakes</strong> ★1316 (gem: <a href="https://rubygems.org/gems/minimal-mistakes-jekyll">minimal-mistakes-jekyll</a>, github: <a href="https://github.com/mmistakes/minimal-mistakes">mmistakes/minimal-mistakes</a>) by Michael Rose -- a flexible two-column theme</p>
+<p><strong>Pixyll</strong> ★1515 (github: <a href="https://github.com/johno/pixyll">johno/pixyll</a>) by John Otander -- a simple, beautiful Jekyll theme that's mobile first.</p>
+<p><strong>Hydejack</strong> ★215 (demo: <a href="https://hydejack.com">https://hydejack.com</a>, gem: <a href="https://rubygems.org/gems/jekyll-theme-hydejack">jekyll-theme-hydejack</a>, github: <a href="https://github.com/qwtel/hydejack">qwtel/hydejack</a>) by Florian Klampfer -- &quot;Best Jekyll Theme by a Mile&quot;. Blog, portfolio, and resume.</p>
+<p><strong>Forty</strong> ★139 (gem: <a href="https://rubygems.org/gems/forty_jekyll_theme">forty_jekyll_theme</a>, github: <a href="https://github.com/andrewbanchich/forty-jekyll-theme">andrewbanchich/forty-jekyll-theme</a>) by Andrew Banchich -- A Jekyll version of the &quot;Forty&quot; theme by HTML5 UP.</p>
+<p><strong>Leonids</strong> ★136 (gem: <a href="https://rubygems.org/gems/leonids">leonids</a>, github: <a href="https://github.com/renyuanz/leonids">renyuanz/leonids</a>) by Renyuan Zou --  a simple and clean two columns theme</p>
+<p><strong>Neo-HPSTR</strong> ★74 (gem: <a href="https://rubygems.org/gems/neo-hpstr-jekyll-theme">neo-hpstr-jekyll-theme</a>, github: <a href="https://github.com/aron-bordin/neo-hpstr-jekyll-theme">aron-bordin/neo-hpstr-jekyll-theme</a>) by Aron Bordin --  a responsive and modern blog template.</p>
+<p><strong>jekyll-theme-console</strong> ★66 (gem: <a href="https://rubygems.org/gems/jekyll-theme-console">jekyll-theme-console</a>, github: <a href="https://github.com/b2a3e8/jekyll-theme-console">b2a3e8/jekyll-theme-console</a>) by b2a3e8 --  a jekyll theme inspired by linux consoles for hackers, developers and script kiddies.</p>
+<p><strong>jekyll-theme-yat</strong> ★78 (gem: <a href="https://rubygems.org/gems/jekyll-theme-yat">jekyll-theme-yat</a>, github: <a href="https://github.com/jeffreytse/jekyll-theme-yat">jeffreytse/jekyll-theme-yat</a>) by jeffreytse -- 🎨 Yet another theme for elegant writers with modern flat style and night mode.</p>
+<p><strong>Alembic</strong> ★29 (gem: <a href="https://rubygems.org/gems/alembic-jekyll-theme">alembic-jekyll-theme</a>, github: <a href="https://github.com/daviddarnes/alembic">daviddarnes/alembic</a>) by David Darnes -- a boilerplate theme</p>
+<p><strong>Garth</strong> ★7 (gem: <a href="https://rubygems.org/gems/garth-jekyll-theme">garth-jekyll-theme</a>, github: <a href="https://github.com/daviddarnes/garth-jekyll-theme">daviddarnes/garth-jekyll-theme</a>) by David Darnes -- a stupidly simple theme</p>
+<p><strong>whiteglass</strong> ★5 (gem: <a href="https://rubygems.org/gems/jekyll-whiteglass">jekyll-whiteglass</a>, github: <a href="https://github.com/yous/whiteglass">yous/whiteglass</a>) by Chayoung You -- Minimal, responsive Jekyll theme for hackers.</p>
+<p><strong>Retlab</strong> ★4 (gem: <a href="https://rubygems.org/gems/retlab">retlab</a>, github: <a href="https://github.com/benbalter/retlab">benbalter/retlab</a>) by Ben Balter -- a minimalist theme for your personal site</p>
+<p><strong>Overkyll</strong> ★4 (gem: <a href="https://rubygems.org/gems/overkyll-jekyll-theme">overkyll-jekyll-theme</a>, github: <a href="https://github.com/bertrandkeller/overkyll-jekyll-theme">bertrandkeller/overkyll-jekyll-theme</a>) by Bertrand Keller --
+a simple starter theme with an ITCSS sass files organisation, a flexbox grid and modular typography</p>
+<p><strong>Ace</strong> ★4 (gem: <a href="https://rubygems.org/gems/ace-theme">ace-theme</a>, github: <a href="https://github.com/aliou/ace">aliou/ace</a>) by Aliou Diallo</p>
+<p><strong>Starving Artist</strong> ★1 (gem: <a href="https://rubygems.org/gems/starving-artist-jekyll-theme">starving-artist</a>, github: <a href="https://github.com/chrisanthropic/starving-artist-jekyll-theme">chrisanthropic/starving-artist-jekyll-theme</a>) by Chris Tarwater -- a mobile friendly portfolio theme.</p>
+<p><strong>Writers Zone</strong> ★1 (gem: <a href="https://rubygems.org/gems/writers-zone">writers-zone</a>, github: <a href="https://github.com/StartZeroGnu/writers-zone">StartZeroGnu/writers-zone</a>) by StartZeroGnu -- theme based on the official minima&quot; theme &quot; with some plugins installed.</p>
+<p><strong>Simple Texture</strong> ★1 (gem: <a href="https://rubygems.org/gems/jekyll-theme-simple-texture">jekyll-theme-simple-texture</a>, github: <a href="https://github.com/yizeng/jekyll-theme-simple-texture">yizeng/jekyll-theme-simple-texture</a>) by Yi Zeng -- a responsive simple texture styled Jekyll theme.</p>
+<p><strong>Help Center Theme</strong> ★2 (gem: <a href="https://rubygems.org/gems/jekyll-help-center-theme">jekyll-help-center-theme</a>, github: <a href="https://github.com/gustavoquinalha/jekyll-help-center-theme">gustavoquinalha/jekyll-help-center-theme</a> by Gustavo Quinalha -- Simple and responsive Jekyll theme for help center.</p>
+<p><strong>Cocoon</strong> ★1 github: <a href="https://github.com/pro-panda/cocoon">pro-panda/cocoon</a> by Rahul Bothra -- Minimal, single paged blog theme</p>
+<p><strong>jekyll-rtd-theme</strong> ★2 (gem: <a href="https://rubygems.org/gems/jekyll-rtd-theme">jekyll-rtd-theme</a>, github: <a href="https://github.com/rundocs/jekyll-rtd-theme">rundocs/jekyll-rtd-theme</a> by RunDcs --full featured from the official ReadtheDocs's  theme</p>
+<p><strong>Hamilton</strong> ★8 (gem: <a href="https://rubygems.org/gems/jekyll-theme-hamilton">jekyll-theme-hamilton</a>, github: <a href="https://github.com/ngzhio/jekyll-theme-hamilton">jekyll-theme-hamilton</a>) by Shangzhi Huang -- A minimal and beautiful Jekyll theme best for writing and note-taking</p>
+<p><strong>Scaffold</strong> ★6 (gem: <a href="https://rubygems.org/gems/jekyll-theme-scaffold/">jekyll-theme-scaffold</a>, github: <a href="https://github.com/sziv2p/jekyll-theme-scaffold">jekyll-theme-scaffold</a>) by Songzi Vong -- A minimalist yet powerful Jekyll theme for bloggers</p>
+<p><strong>Moonwalk</strong> ★23 (gem: <a href="https://rubygems.org/gems/moonwalk">moonwalk</a>, github: <a href="https://github.com/abhinavs/moonwalk">moonwalk</a>) by Abhinav Saxena -- A fast and minimal Jekyll blog theme with clean dark mode</p>
+<p><strong>brutalist-blog</strong> ★2 (github: <a href="https://github.com/andrewhwanpark/brutalist-blog">andrewhwanpark/brutalist-blog</a>) by Andrew Park -- a no frills, fully-responsive, hyper-minimalistic dark/light theme</p>
+<h2 id="github-pages"><a class="header" href="#github-pages">GitHub Pages</a></h2>
+<p>Use the <code>theme</code> property in your <code>_config.yml</code> to specify a theme that comes packaged with GitHub Pages. See <a href="https://pages.github.com/themes"><code>pages.github.com/themes</code></a> for valid values. Use the <code>remote_theme</code> property to specify any public, gem-packaged theme on GitHub.</p>
+<p>See the docs for <a href="https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site">adding a Jekyll theme to your GitHub Pages site</a> for more information.</p>
+<h2 id="find-more"><a class="header" href="#find-more">Find More</a></h2>
+<p>Search BestGems.org for <a href="http://bestgems.org/search?q=jekyll+theme"><code>jekyll+theme</code></a> to find more themes.</p>
+<h2 id="meta"><a class="header" href="#meta">Meta</a></h2>
+<p><strong>License</strong></p>
+<p>The awesome list is dedicated to the public domain. Use it as you please with no restrictions whatsoever.</p>
+<p><strong>Questions? Comments?</strong></p>
+<p>Post them to the <a href="http://talk.jekyllrb.com">jekyll talk forum</a>. Thanks!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Jekyll-plugins.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Jekyll.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Jekyll-plugins.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Jekyll.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

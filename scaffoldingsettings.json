@@ -1,0 +1,23 @@
+{
+  "DataSource": "Server=127.0.0.1;Database=EasyITCenter;Trusted_Connection=True;TrustServerCertificate=True;command timeout=300;",
+  "Provider": "Microsoft.EntityFrameworkCore.SqlServer",
+  "ContextName": "ScaffoldContext",
+  "ContextDirectory": "DATABASES/EasyITCenter/DBEngine",
+  "OutputDirectory": "DATABASES/EasyITCenter/DBModel",
+  "ContextNamespace": "EasyITCenter.DBModel",
+  "Namespace": "EasyITCenter.DBModel",
+  "Schemas": null,
+  "Tables": null,
+  "ProjectDirectory": "",
+  "StartupProjectDirectory": "",
+  "TargetFramework": "",
+  "Configuration": "",
+  "TargetRuntime": null,
+  "DataAnnotations": true,
+  "UseDatabaseNames": false,
+  "NoOnConfiguring": true,
+  "NoPluralize": false,
+  "Force": true,
+  "NoBuild": true,
+  "Verbose": true
+}

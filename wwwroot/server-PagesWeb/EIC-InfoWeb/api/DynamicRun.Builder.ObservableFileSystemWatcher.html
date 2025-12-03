@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ObservableFileSystemWatcher </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ObservableFileSystemWatcher ">
+    
+    <meta name="description" content="This is a wrapper around a file system watcher to use the Rx framework instead of event handlers to handle notifications of file system changes.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher">
+
+
+
+  <h1 id="DynamicRun_Builder_ObservableFileSystemWatcher" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher" class="text-break">Class ObservableFileSystemWatcher</h1>
+  <div class="markdown level0 summary"><p>This is a wrapper around a file system watcher to use the Rx framework instead of event handlers to handle
+notifications of file system changes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ObservableFileSystemWatcher</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DynamicRun.html">DynamicRun</a>.<a class="xref" href="DynamicRun.Builder.html">Builder</a></h6>
+  <h6><strong>Assembly</strong>: EasyITCenter.dll</h6>
+  <h5 id="DynamicRun_Builder_ObservableFileSystemWatcher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObservableFileSystemWatcher : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher__ctor_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.#ctor*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher__ctor_System_Action_System_IO_FileSystemWatcher__" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.#ctor(System.Action{System.IO.FileSystemWatcher})">ObservableFileSystemWatcher(Action&lt;FileSystemWatcher&gt;)</h4>
+  <div class="markdown level1 summary"><p>Pass a function to configure the FileSystemWatcher as desired, this constructor will manage creating and applying
+the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableFileSystemWatcher(Action&lt;FileSystemWatcher&gt; configure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemwatcher">FileSystemWatcher</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher__ctor_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.#ctor*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher__ctor_System_IO_FileSystemWatcher_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.#ctor(System.IO.FileSystemWatcher)">ObservableFileSystemWatcher(FileSystemWatcher)</h4>
+  <div class="markdown level1 summary"><p>Pass an existing FileSystemWatcher instance, this is just for the case where it's not possible to only pass the
+configuration, be aware that disposing this wrapper will dispose the FileSystemWatcher instance too.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableFileSystemWatcher(FileSystemWatcher watcher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemwatcher">FileSystemWatcher</a></td>
+        <td><span class="parametername">watcher</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Watcher" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Watcher">Watcher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly FileSystemWatcher Watcher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemwatcher">FileSystemWatcher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Changed_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Changed*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Changed" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Changed">Changed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;FileSystemEventArgs&gt; Changed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemeventargs">FileSystemEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Created_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Created*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Created" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Created">Created</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;FileSystemEventArgs&gt; Created { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemeventargs">FileSystemEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Deleted_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Deleted*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Deleted" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Deleted">Deleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;FileSystemEventArgs&gt; Deleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesystemeventargs">FileSystemEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Errors_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Errors*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Errors" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Errors">Errors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;ErrorEventArgs&gt; Errors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.erroreventargs">ErrorEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Renamed_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Renamed*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Renamed" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Renamed">Renamed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IObservable&lt;RenamedEventArgs&gt; Renamed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.renamedeventargs">RenamedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Dispose_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Dispose*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Dispose" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Start_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Start*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Start" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+  <a id="DynamicRun_Builder_ObservableFileSystemWatcher_Stop_" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Stop*"></a>
+  <h4 id="DynamicRun_Builder_ObservableFileSystemWatcher_Stop" data-uid="DynamicRun.Builder.ObservableFileSystemWatcher.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="EasyITCenter.GitServer.Extensions.GitExtensions.html#EasyITCenter_GitServer_Extensions_GitExtensions_TraverseTree__1___0_System_Func___0_System_Collections_Generic_IEnumerable___0___">GitExtensions.TraverseTree&lt;T&gt;(T, Func&lt;T, IEnumerable&lt;T&gt;&gt;)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

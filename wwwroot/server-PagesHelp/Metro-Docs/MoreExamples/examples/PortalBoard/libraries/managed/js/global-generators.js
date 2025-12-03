@@ -1,0 +1,14 @@
+﻿//Globální Funkce Portálu
+
+
+
+
+
+
+
+
+
+
+
+
+

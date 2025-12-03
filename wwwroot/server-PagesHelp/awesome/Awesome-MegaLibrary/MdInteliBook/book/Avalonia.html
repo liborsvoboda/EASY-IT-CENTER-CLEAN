@@ -1,0 +1,564 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Avalonia - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html" class="active"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="awesome-avalonia"><a class="header" href="#awesome-avalonia">Awesome-Avalonia <a href="https://makeapullrequest.com/"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a></a></h1>
+<p><a href="https://github.com/AvaloniaUI/Avalonia">Avalonia</a> is a cross platform XAML Framework for the .NET ecosystem</p>
+<p><a href="https://avaloniaui.net/"><img src="https://avatars2.githubusercontent.com/u/14075148?s=200&v=4" align="right" width="100"></a></p>
+<p>A curated list of <strong>Awesome</strong> Avalonia libraries and resources.</p>
+<p>Contributions are always welcome! Please take a look at the <a href="https://github.com/AvaloniaCommunity/awesome-avalonia/blob/master/CONTRIBUTING.md">contribution guidelines</a> pages first.</p>
+<h2 id="content"><a class="header" href="#content">Content</a></h2>
+<ul>
+<li><a href="#awesome-avalonia">Awesome-Avalonia</a>
+<ul>
+<li><a href="#content">Content</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#samples-and-projects">Samples and Projects</a>
+<ul>
+<li><a href="#audio-and-music">Audio and Music</a></li>
+<li><a href="#communication">Communication</a></li>
+<li><a href="#documents">Documents</a></li>
+<li><a href="#data-transfer">Data Transfer</a></li>
+<li><a href="#finance">Finance</a></li>
+<li><a href="#gaming">Gaming</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#productivity">Productivity</a></li>
+<li><a href="#software-development">Software Development</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#libraries--extensions">Libraries &amp; Extensions</a>
+<ul>
+<li><a href="#generic">Generic</a></li>
+<li><a href="#localization--translation--i18n">Localization / Translation / i19n</a></li>
+<li><a href="#theme--icons">Theme &amp; Icons</a></li>
+<li><a href="#mvvm--mvp--mvu">MVVM &amp; MVP &amp; MVU</a></li>
+<li><a href="#charts--plots--diagrams">Charts &amp; Plots &amp; Diagrams</a></li>
+<li><a href="#controls">Controls</a></li>
+<li><a href="#games-and-game-engines">Games and Game engines</a></li>
+<li><a href="#web-browsers">Web Browsers</a></li>
+</ul>
+</li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#presentations-slides">Presentations slides</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#e-books">E-Books</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#other-languages">Other Languages</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="general"><a class="header" href="#general">General</a></h2>
+<ul>
+<li><a href="https://github.com/AvaloniaUI/Avalonia">Avalonia</a> - Avalonia source code.</li>
+<li><a href="https://github.com/AvaloniaUI/avalonia-dotnet-templates">Avalonia Dotnet Template</a> - Avalonia Templates for <code>dotnet new</code>.</li>
+<li><a href="https://github.com/AvaloniaUI/AvaloniaVS">AvaloniaVS</a> - Visual Studio Extension for Avalonia.</li>
+</ul>
+<h2 id="samples-and-projects"><a class="header" href="#samples-and-projects">Samples and Projects</a></h2>
+<h3 id="audio-and-music"><a class="header" href="#audio-and-music">Audio and Music</a></h3>
+<ul>
+<li><a href="https://github.com/mysteryx93/HanumanInstituteApps/wiki/432hz-Batch-Converter">432hz Batch Converter</a> - Converts and re-encodes music to 432hz.</li>
+<li><a href="https://github.com/mysteryx93/HanumanInstituteApps/wiki/432hz-Player">432hz Player</a> - Plays music in 432hz.</li>
+<li><a href="https://github.com/dan0v/AmplitudeSoundboard">Amplitude Soundboard</a> - A sleek, cross-platform soundboard, available for Windows, Linux, and MacOS.</li>
+<li><a href="https://github.com/mat1jaczyyy/apollo-studio">Apollo Studio</a> - Apollo Studio is a standalone editor and live playback engine for RGB Launchpad light effects.</li>
+<li><a href="https://github.com/amp64/openphonos">OpenPhonos</a> - A cross-platform Sonos app built with Avalonia.</li>
+<li><a href="https://github.com/stakira/OpenUtau">OpenUTAU</a> - A cross-platform singing synthesis platform.</li>
+<li><a href="https://github.com/mysteryx93/HanumanInstituteApps/wiki/Powerliminals-Player">Powerliminals Player</a> - Plays multiple audios simultaneously at varying speeds.</li>
+<li><a href="https://github.com/zxyao145/XmlyDownloader">XmlyDownloader</a> - Free audio downloader for ximalaya.com based on Avalonia</li>
+<li><a href="https://github.com/VitalElement/Xune">Xune</a> - A cross-platform resurrection of Zune Desktop Music player using AvaloniaUI.</li>
+</ul>
+<h3 id="communication"><a class="header" href="#communication">Communication</a></h3>
+<ul>
+<li><a href="https://github.com/egramtel/egram.tel">Egram</a> - Egram is an unofficial cross-platform Telegram client written in C#, .NET Core, ReactiveUI and Avalonia.</li>
+<li><a href="https://github.com/alexdillon/GroupMeClientAvalonia">GroupMe Desktop Client</a> - GroupMe Desktop Client Avalonia is an open-source, cross platform, modular client for GroupMe messaging.</li>
+<li><a href="https://github.com/mike-ward/Loon">Loon</a> - Loon is a cross platform desktop twitter client. It's minimal design mimics gadget style applications.</li>
+<li><a href="https://github.com/SkillChat/SkillChat">SkillChat</a> - A cross-platform open-source messenger with real-time chat, sending files, receiving notifications, and the ability to deploy on a private server.</li>
+</ul>
+<h3 id="documents"><a class="header" href="#documents">Documents</a></h3>
+<ul>
+<li><a href="https://github.com/SinoAHpx/AHpx.RG">AHpx.RG</a> - Cross-platform readme generator based on xml summary documentation</li>
+<li><a href="https://github.com/MonkAlex/MangaReader">MangaReader</a> - Help to download updates from online manga readers.</li>
+<li><a href="https://github.com/hailstorm75/ModularDoc">ModularDoc</a> - Modular documentation generator for .NET libraries. Currently supporting Markdown only for GitHub, GitLab, and Bitbucket.</li>
+</ul>
+<h3 id="data-transfer"><a class="header" href="#data-transfer">Data Transfer</a></h3>
+<ul>
+<li><a href="https://github.com/worldbeater/Camelotia">Camelotia</a> - Cross-platform demo file manager for cloud storage.</li>
+<li><a href="https://github.com/waliarubal/Jaya">Jaya</a> - Cross platform file explorer application for Windows, Mac and Linux operating systems.</li>
+<li><a href="https://github.com/telstrapurple/PurpleExplorer">Purple Explorer</a> - A cross-platform desktop application to manage messages in Azure service bus and queue</li>
+</ul>
+<h3 id="finance"><a class="header" href="#finance">Finance</a></h3>
+<ul>
+<li><a href="https://github.com/Nethereum/Nethereum.UI.Desktop">Nethereum UI</a> - Simple wallet cross platform using Avalonia UI.</li>
+<li><a href="https://github.com/zkSNACKs/WalletWasabi">WalletWasabi</a> - Open-source, non-custodial, privacy focused Bitcoin wallet for Windows, Linux, and Mac. Built-in Tor, CoinJoin, and coin control features.</li>
+</ul>
+<h3 id="gaming"><a class="header" href="#gaming">Gaming</a></h3>
+<ul>
+<li><a href="https://github.com/fgsfds/BuildLauncher">BuildLauncher</a> - Launcher and mods downloader for Build Engine games.</li>
+<li><a href="https://github.com/Coloryr/ColorMC">ColorMC</a> - A Minecraft Launcher.</li>
+<li><a href="https://github.com/jonthysell/Mzinga">MzingaViewer</a> - Cross-platform UI for playing the board game Hive against compatible AIs.</li>
+<li><a href="https://github.com/sandermvanvliet/RoadCaptain">RoadCaptain</a> - Build and run custom routes in Zwift the virtual cycling world</li>
+<li><a href="https://github.com/fgsfds/Steam-Superheater">Steam Superheater</a> - Fixes downloader for Steam games.</li>
+</ul>
+<h3 id="graphics"><a class="header" href="#graphics">Graphics</a></h3>
+<ul>
+<li><a href="https://github.com/wieslawsoltes/Core2D">Core2D</a> - A multi-platform data driven 2D diagram editor.</li>
+<li><a href="https://github.com/lacmus-foundation/lacmus-app">Lacmus</a> - The program for searching through photos from the air of lost people in the forest using Retina Net neural network.</li>
+<li><a href="https://github.com/carina-studio/PixelViewer">PixelViewer</a> - Cross-platform image viewer which supports reading raw Luminance/YUV/RGB/ARGB pixels data from file and rendering it.</li>
+<li><a href="https://github.com/wieslawsoltes/SpiroNet">SpiroNet</a> - The .NET C# port of libspiro - conversion between spiro control points and bezier's.</li>
+<li><a href="https://github.com/arklumpus/TreeViewer">TreeViewer</a> - Cross-platform software to draw phylogenetic trees</li>
+<li><a href="https://github.com/ComradeAkei/Xamlade">Xamlade</a> - Visual Avalonia UI XAML editor.</li>
+</ul>
+<h3 id="productivity"><a class="header" href="#productivity">Productivity</a></h3>
+<ul>
+<li><a href="https://github.com/ZadokJoshua/betakads-avalonia-app">Betakads</a> - An AI-powered flashcards generator.</li>
+<li><a href="https://github.com/hoyho/iTimeSlot">iTimeSlot</a> - A cross-platform and freestyle time management app for you to focus on completing tasks.</li>
+<li><a href="https://github.com/davidtimovski/sapphire-notes">Sapphire Notes</a> - A cross-platform desktop application for managing notes.</li>
+<li><a href="https://github.com/davidtimovski/team-sketch">Team Sketch</a> - A cross-platform desktop application for collaborative drawing.</li>
+</ul>
+<h3 id="software-development"><a class="header" href="#software-development">Software Development</a></h3>
+<ul>
+<li><a href="https://github.com/asv-soft/asv-drones">asv-drones</a> - Open source user-friendly software solution designed to provide remote control and monitoring of drones, payloads and RTK base stations.</li>
+<li><a href="https://github.com/icsharpcode/AvaloniaILSpy">AvaloniaILSpy</a> - Avalonia-based .NET Decompiler (port of ILSpy)</li>
+<li><a href="https://github.com/VitalElement/AvalonStudio">AvalonStudio</a> - Cross platform IDE and Shell.</li>
+<li><a href="https://github.com/KvanTTT/DAGE">DAGE</a> - DAGE is an Desktop Antlr grammar editor.</li>
+<li><a href="https://www.devtools.nlnet.net">DevTools for Avalonia</a> - A 3rd party interface debugging functionality for Avalonia, provideing user-friendly and rich debugging features.</li>
+<li><a href="https://github.com/yatli/fvim">FVim</a> - Cross platform Neovim front-end UI, built with F# + Avalonia.</li>
+<li><a href="https://github.com/reignstudios/Git-It-GUI">Git-It-GUI</a> - A Git GUI client designed to be simple with game studio collaboration in mind.</li>
+<li><a href="https://github.com/davidtimovski/json-formatter">JSON Formatter</a> - A cross-platform desktop application for formatting JSON strings.</li>
+<li><a href="https://github.com/ewilliams0305/kangaroo">Kangaroo IP Scanner</a> - Cross platform IP scanner application.</li>
+<li><a href="https://github.com/CoolCoolTomato/MatoEditor">MatoEditor</a> - A beautiful markdown editor.</li>
+<li><a href="https://github.com/MihaMarkic/modern-vice-pdb-monitor">Modern VICE PDB Monitor</a> - Provides a cross platform debugging environment for VICE emulator. Uses AvaloniaEdit as well.</li>
+<li><a href="https://github.com/aloneguid/parquet-dotnet">Parquet Floor</a> - Floor is a reference implementation of the desktop application to view Apache Parquet files.</li>
+<li><a href="https://github.com/alexandrehtrb/Pororoca">Pororoca</a> - A HTTP testing tool with support for HTTP/2 and HTTP/3. Alternative to Postman.</li>
+<li><a href="https://github.com/PowerShell/GraphicalTools">PowerShell GraphicalTools</a> - A module that mixes PowerShell and GUIs!</li>
+<li><a href="https://github.com/x2bool/radish">Radish</a> - Cross-platform desktop client designed exclusively for Redis</li>
+<li><a href="https://github.com/aelij/RoslynPad">RoslynPad</a> - A cross-platform C# editor based on Roslyn and AvalonEdit</li>
+<li><a href="https://github.com/sourcegit-scm/sourcegit.git">SourceGit</a> - A cross-platform Git desktop client.</li>
+<li><a href="https://github.com/Rekkonnect/Syndiesis">Syndiesis</a> - A syntax (and more) visualizer for C# code powered by Roslyn.</li>
+<li><a href="https://github.com/carina-studio/ULogViewer">ULogViewer</a> - Cross-platform universal log viewer which supports customizable logs reading/parsing/displaying.</li>
+<li><a href="https://github.com/sn4k3/UVtools">UVtools</a> - A Cross-platform MSLA/DLP, file analysis, calibration, repair, conversion, manipulation, image processing, stacked layers, openCV</li>
+</ul>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<ul>
+<li><a href="https://github.com/afunc233/Komiic">Komiic</a> - A cross-platform client for <a href="https://komiic.com">Komiic.com</a></li>
+<li><a href="https://github.com/IvanJosipovic/KubeUI">KubeUI</a> - Kubernetes User Interface</li>
+<li><a href="https://github.com/ptupitsyn/let-it-snow">Let it snow</a> - .NET Core Avalonia UI Snow Demo.</li>
+<li><a href="https://github.com/npolyak/NP.Avalonia.Demos">NP.Avalonia.Demos</a> - Demos of Avalonia's features.</li>
+<li><a href="https://github.com/DamianSuess/Learn.PrismAvaloniaOutlookish">Prism Outlookish</a> - Learn Prism.Avalonia with this boilerplate for Regions, Modules, Dialog Service, Notification Service, and more.</li>
+<li><a href="https://github.com/Kibnet/Unlimotion">Unlimotion</a> - A cross-platform open-source task scheduler with unlimited nesting level</li>
+<li><a href="https://github.com/dan0v/xdelta3-cross-gui">xDelta3 Cross GUI</a> - A cross-platform GUI for creating patches using xDelta3 on Windows, Linux, and MacOS.</li>
+<li><a href="https://github.com/schoolgunslinger/YouTube-Video-Uploader-Avalonia">YouTube Video Uploader</a> - Converted from WPF to Avalonia cross-platform tool for uploading videos to YouTube.</li>
+<li><a href="https://github.com/legend2ks/YoutubeDownloader">YoutubeDownloader</a> - Open-source YouTube video downloader</li>
+</ul>
+<h2 id="tutorials"><a class="header" href="#tutorials">Tutorials</a></h2>
+<ul>
+<li><a href="https://dev.to/tunaxor/desktop-apps-with-avalonia-and-fsharp-4n21">AngelMunoz - AvaFunc</a> - Desktop Apps with Avalonia and FSharp.</li>
+<li><a href="https://github.com/AvaloniaUI/Avalonia.Samples">Avalonia.Samples</a> - A collection of minimal samples and tutorials.</li>
+<li><a href="https://docs.avaloniaui.net/docs/next/get-started/wpf/">Avalonia for WPF Developers</a> - Quick start for WPF developers.</li>
+<li><a href="https://docs.avaloniaui.net/docs/next/tutorials">AvaloniaUI Tutorial</a> - Official AvaloniaUI tutorial.</li>
+<li><a href="https://github.com/mysteryx93/Modern.Net-Tutorial">Build Modern Cross-Platform Apps with .NET</a> - Covers all areas of development: Avalonia, Dependency Injection, MVVM, Unit Testing, Reactive and Deployment.</li>
+<li><a href="https://habr.com/en/post/470101/">First App Tutorial</a> - Quick tutorial for creating your first app.</li>
+<li><a href="https://medium.com/@f98f96/avaloniaui-for-beginners-lets-go-624683372c06">Full app for beginners</a> - Tutorial for create calculator. Create full app with desing, mvvm, styling.</li>
+<li><a href="https://github.com/Deadpikle/macOS.SparkleUpdater.Avalonia">macOS Sparkle Updates</a> - Example on using the popular <a href="https://github.com/sparkle-project/Sparkle">Sparkle</a> library in Avalonia</li>
+<li><a href="https://docs.avaloniaui.net/docs/getting-started/">Quickstart</a> - Info for quick start with Avalonia UI.</li>
+<li><a href="https://habr.com/en/post/462307/">Saving Routing State with ReactiveUI and Avalonia</a> - For better UX, your app should be capable of saving state to the disk when the app is suspending and of restoring state when the app is resuming.</li>
+<li><a href="https://habr.com/en/post/471342/">Styles in Avalonia</a> - Quick start for styling Avalonia.</li>
+<li><a href="https://github.com/SuperJMN/Avalonia-IoT-LedBar">SuperJMN - IoT LedBar</a> - AvaloniaUI IoT LED Bar sample.</li>
+<li><a href="https://www.hackster.io/wilderness-labs/run-meadow-within-an-avalonia-application-68371e">Wilderness Labs, Meadow Foundation</a> - Learn how to get atmospheric data from a BME688 using Meadow Foundation and display its readings on an Avalonia application.</li>
+</ul>
+<h2 id="libraries--extensions"><a class="header" href="#libraries--extensions">Libraries &amp; Extensions</a></h2>
+<h3 id="generic"><a class="header" href="#generic">Generic</a></h3>
+<ul>
+<li><a href="https://github.com/AvaloniaUtils/AsyncImageLoader.Avalonia">AsyncImageLoader.Avalonia</a> - Provides way to asynchronous Images loading. From web and beyond</li>
+<li><a href="https://github.com/AvaloniaUI/Avalonia.Xaml.Behaviors">Avalonia.Xaml.Behaviors</a> - Avalonia XAML Behaviors is an easy-to-use means of adding common and reusable interactivity to your Avalonia applications with minimal code.</li>
+<li><a href="https://github.com/AvaloniaInside/Shell">AvaloniaInside.Shell</a> - Reduces the complexity of mobile/desktop application development by providing the fundamental features that most applications require such as Shell, Navigation, And Side Menu</li>
+<li><a href="https://github.com/NeverMorewd/Hosting.Avaloniaui">Lemon.Hosting.Avaloniaui</a> - A lightweight module navigation framework built on top of the Microsoft Dependency Injection (MSDI) for AvaloniaUI.</li>
+<li><a href="https://github.com/NeverMorewd/Lemon.ModuleNavigation">Lemon.ModuleNavigation</a> - .NET Generic Host support for Avaloniaui app.</li>
+<li><a href="https://github.com/liwuqingxin/Avalonia.Css">Nlnet.Avalonia.Css</a> - A library for Avalonia to write styles like CSS.</li>
+<li><a href="https://github.com/Nukepayload2/Nukepayload2.SourceGenerators.AvaloniaUI">Nukepayload2.SourceGenerators.AvaloniaUI</a> - Visual Basic source generator for typed Avalonia <code>x:Name</code> References.</li>
+<li><a href="https://github.com/AvaloniaUtils/ShowMeTheXaml.Avalonia">ShowMeTheXaml.Avalonia</a> - A control that makes it easier to display the corresponding XAML at runtime.</li>
+<li><a href="https://github.com/VerifyTests/Verify.Avalonia">Verify.Avalonia</a> - Extends Verify to allow verification of Avalonia UIs using headless testing.</li>
+</ul>
+<h3 id="localization--translation--i18n"><a class="header" href="#localization--translation--i18n">Localization / Translation / i18n</a></h3>
+<ul>
+<li><a href="https://github.com/Voyonic-Systems/Echoes">Echoes</a> - simple type safe translations library</li>
+</ul>
+<h3 id="theme--icons"><a class="header" href="#theme--icons">Theme &amp; Icons</a></h3>
+<ul>
+<li><a href="https://github.com/Splitwirez/avalonia-aero-theme">Aero Theme</a> - Windows Aero Theme for Avalonia.</li>
+<li><a href="https://github.com/kikipoulet/CherylUI">CherylUI</a> - Avalonia UI Library for Mobile Applications. </li>
+<li><a href="https://github.com/Projektanker/Icons.Avalonia">Icons.Avalonia</a> - A library to easily display icons in an Avalonia App.</li>
+<li><a href="https://github.com/MarwanFr/LucideAvaloniaUI">LucideAvaloniaUI</a> - A library for AvaloniaUI that integrates Lucide icons into your Avalonia applications.</li>
+<li><a href="https://github.com/AvaloniaCommunity/Material.Avalonia">Material Design</a> - Collection of styles to help you customize your Avalonia application theme with Material Design</li>
+<li><a href="https://github.com/AvaloniaUtils/Material.Icons.Avalonia">Material.Icons.Avalonia</a> - Lightweight library for easily display 6000+ icons from <a href="https://pictogrammers.com/library/mdi/?welcome">MaterialDesignIcons</a></li>
+<li><a href="https://github.com/russkyc/heroicons-avalonia">HeroIcons.Avalonia</a> - Hand crafted icons from <a href="https://heroicons.com">Heroicons</a> made available to AvaloniaUI.</li>
+<li><a href="https://github.com/flarive/Neumorphism.Avalonia">Neumorphism.Avalonia</a> - Easy to use and customizable Neumorphism Design implementation for Avalonia.</li>
+<li><a href="https://github.com/irihitech/Semi.Avalonia">Semi.Avalonia</a> - Avalonia Theme inspired by Semi Design.</li>
+<li><a href="https://github.com/MicroSugarDeveloperOrg/AntDesign.Avalonia">AntDesign.Avalonia</a> - Avalonia Theme inspired by Ant Design.</li>
+<li><a href="https://github.com/kikipoulet/SukiUI">SukiUI</a> - Avalonia UI Library with a flat design approach.</li>
+<li><a href="https://github.com/liwuqingxin/Magic.Icon">Magic.Icon</a> - An icon class generator for iconfont in avalonia and wpf.</li>
+</ul>
+<h3 id="mvvm--mvp--mvu"><a class="header" href="#mvvm--mvp--mvu">MVVM &amp; MVP &amp; MVU</a></h3>
+<ul>
+<li><a href="https://github.com/kekyo/Epoxy">Epoxy</a> - Easy, simplicity and minimulism multi-platform MVVM library.</li>
+<li><a href="https://github.com/AvaloniaCommunity/Avalonia.FuncUI">FuncUI</a> - Develop cross-platform MVU GUI Applications using F# and Avalonia (with a view DSL)</li>
+<li><a href="https://github.com/mysteryx93/HanumanInstitute.MvvmDialogs/">HanumanInstitute.MvvmDialogs.Avalonia</a> - Simplifies opening dialogs from a view model with MVVM.</li>
+<li><a href="https://github.com/AvaloniaUI/Avalonia.Markup.Declarative">Markup Declarative</a> - Provides helpers for declarative UI and MVU Pattern in C# for Avalonia UI.</li>
+<li><a href="https://github.com/npolyak/NP.Avalonia.Gidon">NP.Avalonia.Gidon</a> - IoC MVVM framework for Avalonia UI.</li>
+<li><a href="https://github.com/AvaloniaCommunity/Prism.Avalonia">Prism</a> - Prism framework support for Avalonia UI.</li>
+<li><a href="https://github.com/JordanMarr/ReactiveElmish.Avalonia">ReactiveElmish.Avalonia</a> - MVU applications using F# and Avalonia (with XAML views)</li>
+<li><a href="https://github.com/wieslawsoltes/ReactiveHistory">ReactiveHistory</a> - Reactive undo/redo framework for .NET.</li>
+<li><a href="https://github.com/reactiveui/ReactiveMvvm">ReactiveMvvm</a> - Cross-platform ReactiveUI &amp; PropertyChanged.Fody demo app.</li>
+<li><a href="https://github.com/Karnah/ReactiveValidation">ReactiveValidation</a> - Validating properties with messages on UI using fluent-style rules.</li>
+<li><a href="https://github.com/sealoyal2018/stylet.avalonia">Stylet.Avalonia</a> - A very lightweight but powerful ViewModel-First MVVM framework for Avalonia, inspired by Caliburn.Micro.</li>
+</ul>
+<h3 id="charts--plots--diagrams"><a class="header" href="#charts--plots--diagrams">Charts &amp; Plots &amp; Diagrams</a></h3>
+<ul>
+<li><a href="https://github.com/NorthwoodsSoftware/GoDiagram">GoDiagram</a> - A .NET library for rapidly building interactive diagrams.</li>
+<li><a href="https://github.com/beto-rodriguez/LiveCharts2">LiveCharts2</a> - Simple, flexible, interactive &amp; powerful charts, maps and gauges for .Net.</li>
+<li><a href="https://github.com/AvaloniaCommunity/Avalonia.Microcharts">Microcharts</a> - A simple Avalonia only port of the Microcharts library.</li>
+<li><a href="https://github.com/oxyplot/oxyplot-avalonia">OxyPlot</a> - A cross-platform plotting library for .NET.</li>
+<li><a href="https://github.com/swharden/ScottPlot">ScottPlot</a> - Interactive Plotting Library for .NET</li>
+<li><a href="https://github.com/BizUnity/StockPlot">StockPlot</a> - A Stock Markets Technical Analysis library for AvaloniaUI, based on ScottPlot, supporting live data stream.</li>
+<li><a href="https://github.com/Steema/TeeChart-Avalonia-Samples">TeeChart</a> - Versatile native .NET Charting, Map and Gauge control.</li>
+</ul>
+<h3 id="controls"><a class="header" href="#controls">Controls</a></h3>
+<h4 id="docking-layout"><a class="header" href="#docking-layout">Docking Layout</a></h4>
+<ul>
+<li><a href="https://github.com/npolyak/NP.Avalonia.Unidock">NP.Avalonia.Unidock</a> - Simple VS2022-like window and view docking.</li>
+<li><a href="https://github.com/npolyak/NP.Avalonia.UniDock">UniDock</a> - A docking layout system.</li>
+</ul>
+<h4 id="document-viewers"><a class="header" href="#document-viewers">Document Viewers</a></h4>
+<ul>
+<li><a href="https://github.com/whistyun/Markdown.Avalonia">Markdown.Avalonia</a> - Render Markdown in Avalonia.</li>
+<li><a href="https://github.com/arklumpus/MuPDFCore">MuPDFCore</a> - Multiplatform .NET bindings for <a href="https://mupdf.com/">MuPDF</a></li>
+<li><a href="https://github.com/jbaarssen/PdfLibCore">PdfLibCore</a> - A fast PDF editing and reading library for modern .NET Core applications</li>
+<li><a href="https://github.com/Oaz/AvaloniaUI.PrintToPDF">Print to PDF</a> - An experimental library for creating PDFs from Avalonia UI visuals.</li>
+</ul>
+<h4 id="media-players"><a class="header" href="#media-players">Media Players</a></h4>
+<ul>
+<li><a href="https://github.com/AvaloniaUI/AvaloniaGif">AvaloniaGif</a> - Purely C# GIF decoder and animation library.</li>
+<li><a href="https://github.com/WangsYi/ffme.avalonia">FFME.Avalonia</a> - MediaElement based on FFMpeg.</li>
+<li><a href="https://code.videolan.org/videolan/LibVLCSharp">LibVLCSharp.Avalonia</a> - A cross-platform LibVLC Mediaplayer SDK for .NET with Avalonia integration.</li>
+<li><a href="https://github.com/MarcusWichelmann/MarcusW.VncClient">MarcusW.VncClient</a> - A high-performance, cross-platform VNC client control with Avalonia support.</li>
+<li><a href="https://github.com/mysteryx93/MediaPlayerUI.NET/">MediaPlayerUI</a> - Re-usable media player UI.</li>
+</ul>
+<h4 id="ui-libraries"><a class="header" href="#ui-libraries">UI Libraries</a></h4>
+<ul>
+<li><a href="https://github.com/Actipro/Avalonia-Controls">Actipro Avalonia UI Controls</a> - Free UI controls and beautiful themes, along with a Pro option for advanced controls.</li>
+<li><a href="https://github.com/PieroCastillo/Aura.UI">Aura.UI</a> - A Library with a lot of Controls for AvaloniaUI</li>
+<li><a href="https://github.com/chinware/AtomUI">AtomUI</a> - AtomUI is an implementation of Ant Design based on Avalonia/.NET technology, and is committed to bringing Ant Design's excellent and efficient design language and experience to the Avalonia/.NET cross-platform desktop software development field.</li>
+<li><a href="https://github.com/AvaloniaUI/AvaloniaAutoGrid">AvaloniaAutoGrid</a> - A flexible, easy to configure replacement for the standard Grid control.</li>
+<li><a href="https://github.com/arklumpus/AvaloniaColorPicker">AvaloniaColorPicker</a> - A color picker that supports RGB, HSB and CIELAB color spaces.</li>
+<li><a href="https://github.com/Tulesha/Avalonia.Controls.ToolBar">AvaloniaControlsToolBar</a> - A ToolBar and ToolBarTray controls for Avalonia.</li>
+<li><a href="https://github.com/AvaloniaUI/AvaloniaEdit">AvaloniaEdit</a> - This is a port of AvalonEdit for Avalonia.</li>
+<li><a href="https://github.com/MikD1/AvaloniaFixedWrapPanel">AvaloniaFixedWrapPanel</a> - Avalonia WrapPanel with fixed number of items per line</li>
+<li><a href="https://github.com/Oaz/AvaloniaGraphControl">AvaloniaGraphControl</a> - A graph layout panel based on <a href="https://github.com/microsoft/automatic-graph-layout">Microsoft Automatic Graph Layout</a>.</li>
+<li><a href="https://github.com/lukewire129/AvaloniaNavigationBar">AvaloniaNavigationBar</a> - Custom BottomNavigationBar Sample.</li>
+<li><a href="https://github.com/lukewire129/AvaloniaNavigationPage">AvaloniaNavigationPage</a> - <a href="https://github.com/lukewire129/AvaloniaNavigationBar">AvaloniaNavigationBar</a> Page Transition Mechanism</li>
+<li><a href="https://github.com/Deadpikle/AvaloniaProgressRing">AvaloniaProgressRing</a> - A simple progress ring control based on <a href="https://github.com/Kinnara/ModernWpf/wiki/ProgressRing">ModernWpf's progress ring</a></li>
+<li><a href="https://github.com/Splitwirez/AvaloniaRibbon">AvaloniaRibbon</a> - Ribbon for Avalonia.</li>
+<li><a href="https://github.com/Nickelony/SpacedGrid-Avalonia">AvaloniaSpacedGrid</a> - An extension of AvaloniaUI's Grid class with added RowSpacing and ColumnSpacing properties.</li>
+<li><a href="https://github.com/bodong1987/Avalonia.PropertyGrid">Avalonia.PropertyGrid</a> - A property editing control similar to DevExpress.PropertyGridControl.</li>
+<li><a href="https://github.com/satial-interfaces/CalendarControl">CalendarControl</a> - A calendar control (week view) for Avalonia.</li>
+<li><a href="https://github.com/AvaloniaUtils/DialogHost.Avalonia">DialogHost.Avalonia</a> - Managed asynchronous overlay dialogs implementation.</li>
+<li><a href="https://github.com/wieslawsoltes/Dock">Dock</a> - A docking layout system.</li>
+<li><a href="https://github.com/egorozh/Egorozh.ColorPicker">Egorozh.ColorPicker</a> - A color picker with RGB and HSB support.</li>
+<li><a href="https://github.com/Eremex/controls-demo">EremexControls.NET</a> -  Commercial UI controls for the cross-platform Avalonia UI framework to help you deliver cutting-edge applications with enhanced UX.</li>
+<li><a href="https://github.com/mameolan/Avalonia.ExtendedToolkit">ExtendedToolkit</a> - Extended Controls for Avalonia UI.</li>
+<li><a href="https://github.com/amwx/FluentAvalonia">FluentAvalonia</a> - Fluent Design and WinUi Controls</li>
+<li><a href="https://github.com/judero01col/GMap.NET">GMap.NET</a> - GMap.NET Allows the use of routing, geocoding, directions and maps from Google, Yahoo!, Bing, OpenStreetMap, ArcGIS, Pergo, SigPac, Yendux, Mapy.cz, Maps.lt, iKarte.lv, NearMap, HereMap, CloudMade, WikiMapia, MapQuest and many more</li>
+<li><a href="https://github.com/AvaloniaUtils/HyperText.Avalonia">HyperText</a> - Control for visualising and using hypertext.</li>
+<li><a href="https://github.com/jamsoft/JamSoft.AvaloniaUI.Dialogs">JamSoft.AvaloniaUI.Dialogs</a> - An MVVM dialog service, allows custom views, file dialogs  and includes a complete multistep Wizard Control.</li>
+<li><a href="https://www.nuget.org/packages/JamSoft.AvaloniaUI.Lcd#readme-body-tab">JamSoft.AvaloniaUI.Lcd</a> - A highly configurable animated segmented LCD control.</li>
+<li><a href="https://github.com/AvaloniaCommunity/MessageBox.Avalonia">MessageBox.Avalonia</a> - Message Box UI for Avalonia UI.</li>
+<li><a href="https://github.com/jp2masa/Movere">Movere</a> - Movere is an implementation of managed dialogs for Avalonia.</li>
+<li><a href="https://github.com/MakesYT/NodifyM.Avalonia">NodifyM.Avalonia</a> - A collection of controls for node based editors designed for MVVM.</li>
+<li><a href="https://github.com/BAndysc/nodify-avalonia">NodifyAvalonia</a> - Highly performant and modular controls for node-based editors designed for data-binding and MVVM. 1-1 port of WPF's version.</li>
+<li><a href="https://github.com/AvaloniaCommunity/Notification.Avalonia">Notification.Avalonia</a> - Control for show different information in LINQ style.</li>
+<li><a href="https://github.com/npolyak/NP.Avalonia.Visuals">NP.Avalonia.Visuals</a> - Additional visual controls by npolyak.</li>
+<li><a href="https://github.com/AvaloniaUtils/Paginator.Avalonia">Paginator.Avalonia</a> - A paginator control.</li>
+<li><a href="https://github.com/wieslawsoltes/PanAndZoom">PanAndZoom</a> - Pan and zoom control for WPF and Avalonia.</li>
+<li><a href="https://github.com/DmitryNizhebovsky/Avalonia.RangeSlider">RangeSlider</a> - RangeSlider control.</li>
+<li><a href="https://github.com/Roflyanochka/AvaloniaRipple">Ripple Effect</a> - Sample of ripple effect.</li>
+<li><a href="https://github.com/egorozh/Tabalonia">Tabalonia</a> - Tab Control with drag-able tabs.</li>
+<li><a href="https://github.com/irihitech/Ursa.Avalonia">Ursa.Avalonia</a> - Ursa is a UI library for building cross-platform UIs with Avalonia UI.</li>
+<li><a href="https://github.com/sn4k3/UVtools/tree/master/UVtools.AvaloniaControls">UVtools.AvaloniaControls</a> - Fast and configurable AdvancedImageBox with image modes, pan &amp; zoom, select regions, pixel grid and cursor images</li>
+<li><a href="https://github.com/zhongzf/Xamarin.Forms.Platform.Avalonia">Xamarin.Forms.Platform.Avalonia</a> - Xamarin Forms platform implemented with Avalonia (A multi-platform .NET UI framework).</li>
+</ul>
+<h3 id="games-and-game-engines"><a class="header" href="#games-and-game-engines">Games and Game engines</a></h3>
+<ul>
+<li><a href="https://github.com/IvanJosipovic/AvaloniaTetris">AvaloniaTetris</a> - A Tetris game written with Avalonia.</li>
+<li><a href="https://github.com/kekekeks/Avalonia.BattleCity">BattleCity</a> - 2D game stub rendered completely by AvaloniaUI.</li>
+<li><a href="https://github.com/MrJul/Estragonia">Estragonia</a> - Integration of Avalonia into the Godot game engine.</li>
+<li><a href="https://github.com/Macabresoft/Macabre2D/">Macabre2D</a> - A game engine built on MonoGame.</li>
+<li><a href="https://github.com/AvaloniaInside/AvaloniaInside.MonoGame">MonoGame</a> - Integration of MonoGame for Avalonia.</li>
+<li><a href="https://github.com/Kermalis/PokemonBattleEngine">PokemonBattleEngine</a> - A C# library that can emulate Pokémon battles.</li>
+</ul>
+<h3 id="web-browsers"><a class="header" href="#web-browsers">Web Browsers</a></h3>
+<ul>
+<li><a href="https://github.com/OutSystems/CefGlue">CefGlue</a> - .NET/Mono binding for The Chromium Embedded Framework (CEF).</li>
+<li><a href="https://teamdev.com/dotnetbrowser/">DotNetBrowser</a> - Premium Chromium web browser control for Windows, macOS and Linux. </li>
+<li><a href="https://github.com/OutSystems/WebView">OutSystems WebView</a> - Fully featured Avalonia WebView Control.</li>
+<li><a href="https://github.com/MicroSugarDeveloperOrg/Avalonia.WebView">Avalonia BlazorWebView &amp; Avalonia WebView</a> - Native host webview for Avalonia, which used the features of platform.</li>
+</ul>
+<h2 id="videos"><a class="header" href="#videos">Videos</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=t8Ww17iPdqs">libdrm and Multi Touch</a> - Avalonia libdrm/egl/libinput backend progress.</li>
+<li><a href="https://www.youtube.com/watch?v=NkTPfBfDmtA">Nikita Tsukanov - Framebuffer</a> - AvaloniaUI running without X server on top of /dev/fb0 and libevdev2.</li>
+<li><a href="https://www.youtube.com/watch?v=DLHhZJkSqWk">Nikita Tsukanov - XAML-oriented</a> - Nikita Tsukanov - AvaloniaUI - cross-platform XAML-oriented .NET UI framework.</li>
+<li><a href="https://www.youtube.com/watch?v=HAyHIvSzweM">VNC Server</a> - Avalonia acting as a VNC server</li>
+<li><a href="https://www.youtube.com/watch?v=KHH23BFgU30">Wiesław Šoltés - Dock</a> - Dock - docking layout system for Avalonia applications - docking between windows.</li>
+<li><a href="https://www.youtube.com/watch?v=6hnVwWOeOt8">Wiesław Šoltés - Draw2D and Svg</a> - Svg.Skia an SVG rendering library AvaloniaUI demo.</li>
+<li><a href="https://www.youtube.com/watch?v=UHmlfBMq6W4">Wiesław Šoltés - Svg</a> - Avalonia SVG image support.</li>
+<li><a href="https://www.youtube.com/watch?v=btsaMx9rI_I">Wiesław Šoltés - Theme Manager</a> - AvaloniaUI Theme Manager.</li>
+<li><a href="https://www.youtube.com/watch?v=rho26Ik30D4">World of Zero - Hello World</a> - A Cross Platform .NET UI Framework - Hello World in Avalonia UI.</li>
+</ul>
+<h2 id="articles"><a class="header" href="#articles">Articles</a></h2>
+<ul>
+<li><a href="https://link.medium.com/J3ZeqsK2F6">Artyom Gorchakov in The Startup - A Cross-Platform GUI Theme for Desktop .NET Core Applications</a> - Getting started with building awesome cross-platform user interfaces with Avalonia framework and a modern UI theme.</li>
+<li><a href="https://www.hanselman.com/blog/WhatWouldACrossplatformNETUIFrameworkLookLikeExploringAvalonia.aspx">Hanselman - Cross-platform .NET UI Framework</a> - What would a cross-platform .NET UI Framework look like? Exploring Avalonia.</li>
+<li><a href="https://www.idiwork.com/avalonia-a-big-candidate-to-create-crossplatform-apps-with-xaml/">idiwork - Cross-platform apps with XAML</a> - Avalonia, a big candidate to create cross-platform apps with XAML.</li>
+</ul>
+<h2 id="podcasts"><a class="header" href="#podcasts">Podcasts</a></h2>
+<ul>
+<li><a href="https://www.hanselminutes.com/684/avalonia-is-a-cross-platform-xaml-framework-for-net-framework-net-core-and-mono-with-steve">HanselMinutes - E684</a> - Steven Kirk is on HanselMinutes to talk about Avalonia UI.</li>
+</ul>
+<h2 id="presentations-slides"><a class="header" href="#presentations-slides">Presentations slides</a></h2>
+<h2 id="tooling"><a class="header" href="#tooling">Tooling</a></h2>
+<ul>
+<li><a href="https://github.com/aboimpinto/MaterialDesign.Avalonia">Avalonia Material Icon Pack</a> - All Material Icons Pack that can be found in https://fonts.google.com/icons (net5.0 only).</li>
+<li><a href="https://github.com/rabbitism/AvaloniaToolkit">Avalonia Toolkit</a> - Visual Studio Extension to generate boilerplate Avalonia related code.</li>
+<li><a href="https://github.com/kuiperzone/AvantGarde">Avant Garde</a> - Standalone cross-platform XAML previewer for the C# Avalonia Framework</li>
+<li><a href="https://github.com/AvaloniaUI/Citrus.Avalonia">Citrus.Avalonia</a> - Modern styles for Avalonia controls.</li>
+<li><a href="https://github.com/jp2masa/dotnet-properties">dotnet-properties</a> - .NET Core CLI extension that allows editing project properties using a cross-platform UI.</li>
+<li><a href="https://github.com/Kir-Antipov/HotAvalonia">HotAvalonia</a> - Supercharge your Avalonia development experience with hot reload capabilities.</li>
+<li><a href="https://github.com/ahopper/Avalonia.IconPacks">IconPacks</a> - Import of more than 21,000 vector icons from the Visual Studio image library, VSCode Icons and MahApps.Metro.IconPacks.</li>
+<li><a href="https://github.com/punker76/MahApps.Avalonia.IconPacks.Testbed">IconPacks Testbed</a> - Testbed for MahApps.Avalonia.IconPacks.</li>
+<li><a href="https://github.com/worldbeater/Live.Avalonia">Live.Avalonia</a> - Live reloading tool for developing Avalonia applications.</li>
+<li><a href="https://github.com/kuiperzone/PupNet-Deploy">PupNet Deploy</a> - Cross-platform deployment utility which publishes your Avalonia application and packages it as a ready-to-ship installation file.</li>
+<li><a href="https://github.com/ForNeVeR/AvaloniaRider">Rider Plugin For Avalonia</a> - JetBrains Rider plugin for Avalonia development.</li>
+<li><a href="https://github.com/wieslawsoltes/Svg.Skia">Svg.Skia</a> - An SVG rendering library with an example of Avalonia.</li>
+<li><a href="https://github.com/wieslawsoltes/ThemeEditor">ThemeEditor</a> - ThemeEditor is an Avalonia UI Framework theme editor.</li>
+<li><a href="https://github.com/wieslawsoltes/Avalonia.ThemeManager">ThemeManager</a> - Theme manager for Avalonia applications.</li>
+</ul>
+<h2 id="books"><a class="header" href="#books">Books</a></h2>
+<h2 id="e-books"><a class="header" href="#e-books">E-Books</a></h2>
+<h2 id="courses"><a class="header" href="#courses">Courses</a></h2>
+<h2 id="community"><a class="header" href="#community">Community</a></h2>
+<ul>
+<li><a href="https://github.com/AvaloniaUI/Avalonia/issues">Bug report</a> - GitHub Issues page.</li>
+<li><a href="https://gitter.im/AvaloniaUI/Avalonia">Gitter Chat</a> - Gitter Chat</li>
+<li><a href="https://stackoverflow.com/questions/tagged/avaloniaui">StackOverFlow</a> - Ask question in Stack Over Flow with <code>avaloniaui</code> tag.</li>
+</ul>
+<h2 id="other-languages"><a class="header" href="#other-languages">Other Languages</a></h2>
+<ul>
+<li><a href="https://entwickler.de/online/windowsdeveloper/xaml-cross-plattform-loesung-579812969.html">entwickler - eine Cross-Plattform-Lösung</a> - XAML-Tipp: Avalonia – eine Cross-Plattform-Lösung für XAML</li>
+<li><a href="https://github.com/LauZyHou/sbid-ava">LauZyHou - sbid-ava</a> - 内生安全建模工具，基于.Net Core 3.0 的 Avalonia 跨平台桌面应用。</li>
+<li><a href="https://www.youtube.com/watch?v=6uq1-ii26Es">Nikita Tsukanov - CLRium</a> - CLRium #3: Кросс-платформенная разработка с использованием AvaloniaUI.</li>
+<li><a href="https://www.youtube.com/watch?v=8qzqweimcFs">Nikita Tsukanov - DotNext</a> - Никита Цуканов — AvaloniaUI — первый кроссплатформенный XAML UI-фреймворк с поддержкой .NET Core.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="ApiDevTools.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Awesome-All.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="ApiDevTools.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Awesome-All.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

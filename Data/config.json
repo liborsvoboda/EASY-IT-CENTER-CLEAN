@@ -1,0 +1,7 @@
+﻿{
+  "DatabaseConnectionString": "Server=127.0.0.1\\SQLEXPRESS;Database=EasyITCenter;User ID=easyitcenter;Password=easyitcenter;TrustServerCertificate=True;MultipleActiveResultSets=True;",
+  "DatabaseInternalCachingEnabled": false,
+  "DatabaseInternalCacheTimeoutMin": 30,
+  "DatabaseMigrationEnabled": false,
+  "DatabaseLogWarnToDbEnabled": true
+}

@@ -1,0 +1,970 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="EasySYSTEMbuilder InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h3 id="literature">Literature:</h3>
+<p><a href="https://code-maze.com/net-core-web-development-part1/">https://code-maze.com/net-core-web-development-part1/</a><br>
+<a href="https://docs.microsoft.com/cs-cz/aspnet/core/security/cors?view=aspnetcore-6.0">https://docs.microsoft.com/cs-cz/aspnet/core/security/cors?view=aspnetcore-6.0</a>
+<a href="https://docs.microsoft.com/cs-cz/ef/core/cli/dotnet">https://docs.microsoft.com/cs-cz/ef/core/cli/dotnet</a>
+<a href="https://medium.com/free-code-camp/an-awesome-guide-on-how-to-build-restful-apis-with-asp-net-core-87b818123e28">https://medium.com/free-code-camp/an-awesome-guide-on-how-to-build-restful-apis-with-asp-net-core-87b818123e28</a>
+<a href="https://stackoverflow.com/questions/48282223/scaffold-dbcontext-to-different-output-folder">https://stackoverflow.com/questions/48282223/scaffold-dbcontext-to-different-output-folder</a></p>
+<p><a href="https://codewithmukesh.com/blog/repository-pattern-caching-hangfire-aspnet-core/">https://codewithmukesh.com/blog/repository-pattern-caching-hangfire-aspnet-core/</a></p>
+<h2 id="swagger-documentation"><a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggergen">Swagger Documentation</a></h2>
+<h3 id="administration-tools-included-in-backend-server">Administration tools included in Backend server</h3>
+<ul>
+<li>ApiDescription Generator - on url: /swagger</li>
+<li>Data manager for connected DB - on url: /CoreAdmin</li>
+<li>Server Health Service - on url: /ServerHealthService</li>
+<li>WEB root  - with Websocket test utility</li>
+</ul>
+<hr>
+<h3 id="sitemap-automatic-generator">Sitemap Automatic Generator</h3>
+<ul>
+<li>Generate sitemap.xml and robots.txt</li>
+<li>Sitemap is Generated from Menu</li>
+</ul>
+<p>google sitemap
+<a href="https://github.com/uhaciogullari/SimpleMvcSitemap">https://github.com/uhaciogullari/SimpleMvcSitemap</a></p>
+<p>sitemap validating
+<a href="https://www.sitemaps.org/protocol.html">https://www.sitemaps.org/protocol.html</a></p>
+<p>robots.txt
+<a href="https://github.com/karl-sjogren/robots-txt-middleware">https://github.com/karl-sjogren/robots-txt-middleware</a></p>
+<hr>
+<h3 id="json-configuration-older-example--folder-dataconfigjson">JSON configuration Older Example  (folder Data/config.json):</h3>
+<blockquote>
+<p>&quot;DatabaseConnectionString&quot;:      -  MSSQL DB connection string. Its only in config file.<br>
+&quot;ConfigJwtLocalKey&quot;:          - Your JWT Local Key you can set random key.<br>
+&quot;DefaultConfigServerStartupPort&quot;:         - Default Port for HTTP/HTTPS/SOCKET.<br>
+&quot;ConfigWebSocketTimeoutMin&quot;:  - Default WebSocket Timeout.<br>
+&quot;SocketBufferSizeKb&quot;:      - Default WebSocket message size.<br>
+&quot;ServerTimeTokenValidationEnabled&quot;:    - Enable/Disable token Expiration.<br>
+&quot;ConfigApiTokenTimeoutMin&quot;:    - Minutes count to token expiration.<br>
+&quot;HttpsProtocol&quot;:         - Enable/Disable HTTP/ HTTPS on this port. Only one is always in use.<br>
+&quot;ConfigCertificateDomain&quot;:         - Certificate for HTTPS is generated automaticaly i fis HTTPS is enabled.<br>
+This domain is included in the certificate.<br>
+&quot;ConfigCertificatePassword&quot;:       - Password for generated certificate.Its required.<br>
+&quot;DatabaseInternalCachingEnabled&quot;:  - enable Microsoft internal cache for working with Data<br>
+&quot;DatabaseInternalCacheTimeoutMin&quot;: - Time for Purging old chache data<br>
+&quot;EnableApiDescription&quot;: true, - Enable full automatic API documentation generator with request sending for test included<br>
+&quot;ModuleDataManagerEnabled&quot;: true,    - Enable unsafed Data manager<br>
+&quot;ModuleHealthServiceEnabled&quot;:  - Enable Server Health Service with chedking if services   running</p>
+</blockquote>
+<hr>
+<h3 id="golden-universal-backend-server-solution-foe-any-linwindb">Golden Universal BACKEND Server Solution foe ANY LIN/WIN/DB</h3>
+<ul>
+<li>
+<pre><code>Universal Secure MultiPlatform MultiDATABASE BackEnd Server Project 
+</code></pre>
+</li>
+<li>
+<pre><code>WiTH RESTFULL / WEBSOCKET implementations
+</code></pre>
+</li>
+<li>
+<pre><code>With All Template types for INSERT / UPDATE / DELETE / SELECT / 
+</code></pre>
+</li>
+<li>
+<pre><code>PROCEDURES / VIEWS/ SUBFORMDATA and more Other
+</code></pre>
+</li>
+<li>
+<pre><code>With DATABASE , Table Template, Procedure Template, View Template, 
+</code></pre>
+</li>
+<li>
+<pre><code>Backup/Restore and more Examples
+</code></pre>
+</li>
+<li>
+<pre><code>With Tables, Indexes, ForeignKeys in All Standard DB Using 
+</code></pre>
+</li>
+<li>
+<pre><code>FOR SIMPLE COPY / PASTE DEVELOPMENT IN EXTREMELY LOW PRICE 5000Kč/200EURO
+</code></pre>
+</li>
+</ul>
+<hr>
+<h3 id="used-technologies-support-by-core-in-solution-core">USED TECHNOLOGIES (SUPPORT by CORE) IN SOLUTION CORE</h3>
+<ul>
+<li>DB types: SQL Server, Oracle, MySQL, SQLite, PostgreSQL, DB2, etc.</li>
+<li>LINUX, WINDOWS, GCLOUD, DOCKER, AZURE implementation</li>
+<li>HTTP/HTTPS/WebSocket/RestFull / GET,POST,PATCH,PUT,DELETE,OPTION,etc.</li>
+<li>Detailed Logging, EASY Debugging ON ALL Dev layers</li>
+<li>CookiePolicy , CorsPolicy / Authentication / Authorization / Basic–JwtBearer Tokens</li>
+<li>Automatic API EndPoints /Controllers</li>
+<li>IMPORT FULL DB Schema/Tables/Procedures/Views from DB by ONE Scaffold Command</li>
+<li>DB Migrations AND Management of any layer supported</li>
+<li>Implemented SWAGGER AUTO API Generator: API Tester and Documentation</li>
+<li>Implemented DIRECT DATA MANAGER for view/editing data in Database</li>
+<li>Implemented Server HEALTH Check with support All statuses,communications,etc. for Server Control</li>
+<li>Custom WebPage for BackEnd Controlling supported</li>
+<li>LOW/NO code developing supported by DB/TABLE/API/CLASS Templates</li>
+<li>FULL code development supported</li>
+<li>More others tools and AddOns are on GitHub for implement by Package Install</li>
+</ul>
+<hr>
+<h3 id="databases---easy-way-with-auto-management">Databases - EASY Way with AUTO Management</h3>
+<ul>
+<li>ASPNETCORE6 and Entity Framework 6 are perfect managing solution for any DATABASE</li>
+<li>Simple using is Domain for these Technologies, which is simple for each Power User</li>
+<li>Automatic Code Correction, Auto Helper, Generation DB Schema for Visual Control will not allow to make a mistake</li>
+<li>lot of Free Tools on GitHub, can be simple included with High effect</li>
+</ul>
+<hr>
+<h3 id="these-tools-are-included-to-solution-core">These Tools are Included to Solution Core</h3>
+<ul>
+<li>Complex Tool DB Data management</li>
+<li>Automatic API Tester and Documentation Generator</li>
+<li>System Checker with controlling and logging more than 100 Server/Network/DB/IS/OS events</li>
+</ul>
+<hr>
+<h3 id="used-primary-technologies-for-unlimited-vision---older">Used Primary Technologies for Unlimited Vision - Older</h3>
+<ul>
+<li>AspNetCore 6</li>
+<li>Entity Framework 6</li>
+<li>Log4Net</li>
+<li>MSSQL connection</li>
+<li>HTTP/HTTPS/WebSocket/RestFull / [GET,POST,PATCH,PUT,DELETE,OPTION]</li>
+<li>Windows Service / Docker Service / Console application</li>
+<li>CookiePolicy</li>
+<li>CorsPolicy</li>
+<li>Authentication / Authorization / Basic – JwtBearer</li>
+<li>Automatic EndPoints /Controllers</li>
+</ul>
+<hr>
+<h3 id="database-model-snapshot-to-entity-entity-framework-6">Database Model snapshot to Entity Entity Framework 6:</h3>
+<p>The first green descriptions commands is for simple direct working with MSSQL database.
+This command generating „full DB Model Entity“ and „full DB API documentation“.
+Command must be run from „package manager console“.</p>
+<p>1)
+Command for: generate full Entity – Database Model Entity Framework
+Scaffold-DbContext &quot;Server=SQLSRV\SQLEXPRESS;Database=DATAPUB;Trusted_Connection=True;&quot; Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel -ContextDir &quot;DBContexts&quot;</p>
+<p>Scaffold-DbContext &quot;Server=SQLSRV;Database=DATAPUB;Persist Security Info=False;User ID=datapub;Password=datapub;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;&quot; Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel -ContextDir &quot;DBContexts&quot;
+Scaffold-DbContext &quot;Server=192.168.1.35;Database=DATAPUB;User ID=datapub;Password=datapub;&quot; Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel</p>
+<p>Command for: generate full DB Context – Database API documentation
+Scaffold-DbContext &quot;Server=SQLSRV\SQLEXPRESS;Database=DATAPUB;Trusted_Connection=True;&quot; Microsoft.EntityFrameworkCore.SqlServer -ContextDir &quot;DbContexts&quot;</p>
+<p>2)
+Replace Connection string in DBContect folder/Context file with this program part.
+(here you can enable SQL debugging)</p>
+<pre><code class="lang-cs">public DATAPUBContext(DbContextOptions&lt;DATAPUBContext&gt; options)
+    : base(options)
+{ 
+    ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+}
+
+if (!optionsBuilder.IsConfigured)
+{
+
+    optionsBuilder.ConfigureLoggingCacheTime(TimeSpan.FromMinutes(Program.ServerConfigSettings.SimpleCacheTimeMinutes));
+    optionsBuilder.EnableServiceProviderCaching(Program.ServerConfigSettings.SimpleCachingEnabled);
+
+    optionsBuilder.UseSqlServer(Program.ServerConfigSettings.DatabaseConnectionString,
+            x =&gt; x.MigrationsHistoryTable(&quot;MigrationsHistory&quot;, &quot;dbo&quot;));
+    //.UseLoggerFactory(LoggerFactory.Create(builder =&gt; { builder.AddConsole(); }))
+    //.LogTo(message =&gt; Debug.WriteLine(message));
+    //.LogTo(Console.WriteLine);
+}
+</code></pre>
+<hr>
+<ol start="3">
+<li>Disable ForeignKey control you must set JSONIgnore &amp; ValidateNever params for key in DBModel. Example is in UserList:</li>
+</ol>
+<pre><code class="lang-cs">[JsonIgnore]
+[ValidateNever]
+public virtual UserRoleList Role { get; set; } = null!;
+</code></pre>
+<hr>
+<ol start="4">
+<li></li>
+</ol>
+<p>Init Migrations files to DOTNET migration management for Upload/Manage Database Migrations:<br>
+Add-Migration Initial -Context Company.WebApplication1.Data.ApplicationDbContext</p>
+<p>Upload migrations to DATABASE<br>
+dotnet ef database update</p>
+<p>Export Database model to SQL script<br>
+dotnet ef dbcontext script --output Migrations/BasicDBModel.sql</p>
+<p>These nexts commands are for working with database migrations:<br>
+Command for: generate script with full database model<br>
+dotnet ef dbcontext script --output Migrations/BasicDBModel.sql</p>
+<p>Command for: generate new migration script<br>
+dotnet ef migrations add ServerSetting.sql</p>
+<p>Command for: generate script for database update<br>
+dotnet ef migrations bundle --output Migrations/BasicDBModel.sql</p>
+<p>Command for: show all migration List<br>
+dotnet ef migrations list</p>
+<p>Command for: remove Last migration<br>
+dotnet ef migrations remove</p>
+<p>Command for: run all waiting migrations scripts<br>
+dotnet ef database update</p>
+<hr>
+<h3 id="generate-executable-files">Generate executable Files</h3>
+<p><a href="https://learn.microsoft.com/cs-cz/dotnet/core/tools/dotnet-publish">https://learn.microsoft.com/cs-cz/dotnet/core/tools/dotnet-publish</a></p>
+<hr>
+<h3 id="run-debug">Run debug</h3>
+<p>dotnet run --project BACKENDCORE -r win-x64 -c Debug --self-contained</p>
+<p>Generate exe file Without WebPage support
+dotnet publish BACKENDCORE -c Release -o bin -r win-x64 /p:PublishSingleFile=true</p>
+<hr>
+<h3 id="db-backup-procedure-in-linux">DB backup procedure in Linux</h3>
+<pre><code class="lang-sql">CREATE procedure [dbo].[DB_AUTOBACKUP]
+AS
+BEGIN 
+ DECLARE @dbName as varchar(50) = DB_NAME();
+ DECLARE @fileName as varchar(80) = CONCAT('/root/DBbackup/',@dbName,'_',FORMAT(GETDATE(),'yyyyMMdd'),'.bak');
+
+ DBCC SHRINKFILE (2, 1); BACKUP DATABASE @dbName TO DISK = @fileName;
+ DBCC SHRINKFILE (2, 1); BACKUP DATABASE @dbName TO DISK = @fileName;
+END;
+GO
+</code></pre>
+<hr>
+<h3 id="one-project-support-more-dbs--dbcontexts">One Project support More DBs = DBContexts</h3>
+<p>these can be used whatever, MOre Api for More App for example</p>
+<p>The test version, if requested, should ideally
+be deployed separately for making changes</p>
+<hr>
+<h3 id="solution-for-data-selection-by-role---its-needed-in-select-api-only">Solution for Data selection by Role - its needed in SELECT API only</h3>
+<pre><code class="lang-cs">if (Request.HttpContext.User.IsInRole(&quot;admin&quot;))
+{ data = new GoldenContext().ImageGalleryLists.FromSqlRaw(&quot;SELECT * FROM ImageGalleryList WHERE 1=1 AND &quot; + filter.Replace(&quot;+&quot;, &quot; &quot;)).AsNoTracking().ToList(); }
+else
+{
+    data = new GoldenContext().ImageGalleryLists.FromSqlRaw(&quot;SELECT * FROM ImageGalleryList WHERE 1=1 AND &quot; + filter.Replace(&quot;+&quot;, &quot; &quot;))
+        .Include(a =&gt; a.User).Where(a =&gt; a.User.UserName == Request.HttpContext.User.Claims.First().Issuer)
+        .AsNoTracking().ToList();
+}
+</code></pre>
+<hr>
+<h3 id="aspnetcore6--entity-framework6---super-server">ASPNETCORE6 &amp; ENTITY FRAMEWORK6 - SUPER SERVER</h3>
+<p><sup><strong>For thinking, the development of tools and work with them worthy in the 21st century</strong></sup></p>
+<ul>
+<li>ASPNETCORE is a simple intuitive framework with a whisperer for easy development.</li>
+<li>The Current Solution already contains templates and samples and can be developed with their help</li>
+<li>robust system.</li>
+<li>More information can be found with the linked folders.</li>
+<li>The project is conceptually complex for complete laymen who learn a few steps over and over again.</li>
+<li>DB Views behave the same as tables</li>
+<li>Turn off foreign keys in the model To be able to work freely with the tables</li>
+</ul>
+<hr>
+<h3 id="server-configuration">Server configuration</h3>
+<p>The server loads the configuration from a file at startup and after connecting to the database
+replaces it with the settings from the database and starts the server according to the parameters</p>
+<pre><code class="lang-json">&quot;DatabaseConnectionString&quot;:   -  MSSQL DB connection string. Its only in config file.
+&quot;ConfigJwtLocalKey&quot;:          - Your JWT Local Key you can set random key. 
+&quot;DefaultConfigServerStartupPort&quot;:     - Default Port for HTTP/HTTPS/SOCKET. 
+&quot;ConfigWebSocketTimeoutMin&quot;: - Default WebSocket Timeout. 
+&quot;SocketBufferSizeKb&quot;:   - Default WebSocket message size.
+&quot;ServerTimeTokenValidationEnabled&quot;:  - Enable/Disable token Expiration.
+&quot;ConfigApiTokenTimeoutMin&quot;:  - Minutes count to token expiration.
+&quot;HttpsProtocol&quot;: - Enable/Disable HTTP/ HTTPS on this port. Only one is always in use. 
+&quot;ConfigCertificateDomain&quot;:    - Certificate for HTTPS is generated automaticaly i fis HTTPS is enabled.
+                         This domain is included in the certificate. 
+&quot;ConfigCertificatePassword&quot;:     - Password for generated certificate.Its required.
+&quot;DatabaseInternalCachingEnabled&quot;:  - enable Microsoft internal cache for working with Data
+&quot;DatabaseInternalCacheTimeoutMin&quot;: - Time for Purging old chache data
+&quot;EnableApiDescription&quot;: true, - Enable full automatic API documentation generator with request sending for test included
+&quot;ModuleDataManagerEnabled&quot;: true,    - Enable unsafed Data manager
+&quot;ModuleHealthServiceEnabled&quot;:  - Enable Server Health Service with chedking if services running
+</code></pre>
+<ul>
+<li>/BackendCheckApi - Api for checking Server Availability</li>
+<li>/Authentication - Basic authentication Standard message for receiving the Token</li>
+</ul>
+<hr>
+<h3 id="unique-services-of-sever">Unique Services of sever</h3>
+<ul>
+<li><p>/BackendCheckApi - Api for checking Server Availability</p>
+</li>
+<li><p>/Authentication - Basic authentication Standard message for receiving the Token</p>
+</li>
+<li><p>Web Services</p>
+</li>
+<li><p>/swagger - Automatic generator API model documentation and testing</p>
+</li>
+<li><p>/CoreAdmin - Data Manager for the connected database</p>
+</li>
+<li><p>/ServerHealthService - Service for setting health checks; server HW/SW</p>
+</li>
+</ul>
+<hr>
+<h3 id="api-communication-on-the-backend-server-side">API Communication on the BACKEND server side</h3>
+<pre><code class="lang-en">//Disable foreign keys in the model by adding JsonIgnore, ValidateNever : Sample
+
+[JsonIgnore]
+[ValidateNever]
+public virtual UserList User { get; set; } = null!;
+</code></pre>
+<hr>
+<h3 id="api-template">API Template</h3>
+<ul>
+<li>The template is ready for complete communication with the table Just RENAME</li>
+<li>Authorization, INSERT/UPDATE/SELECT/DELETE</li>
+</ul>
+<p><a href="https://github.com/liborsvoboda/EASYSYSTEM-EASYSERVER-EN/blob/main/GoldenProject-ASPNETCORE6/Templates/TemplateListApi.cs">Standard Table API Template</a></p>
+<pre><code class="lang-cs">//Inserting/Deleting Range Items into the Sub Table - for example Invoice Items  
+
+var test = new EASYBUILDERContext(); test.OfferSupportLists.AddRange(record);
+result = test.SaveChanges();
+
+var test = new EASYBUILDERContext(); test.OfferSupportLists.RemoveRange(data);
+int result = test.SaveChanges();                
+
+</code></pre>
+<hr>
+<h3 id="ef6-db-procedure-query-with-response">EF6 DB procedure query with response</h3>
+<pre><code class="lang-c">parameters = new List&lt;SqlParameter&gt; {
+new SqlParameter { ParameterName = &quot;@unlockCode&quot;, Value = unlockCode },
+new SqlParameter { ParameterName = &quot;@partNumber&quot;, Value = partNumber },
+new SqlParameter { ParameterName = &quot;@ipAddress&quot;, Value = clientIPAddr },
+new SqlParameter { ParameterName = &quot;@allowed&quot; , Value = allowed, Direction = System.Data.ParameterDirection.Output} };
+data = new GoldenSystemContext().Database.ExecuteSqlRaw(&quot;exec CheckUnlockKey @unlockCode, @partNumber , @ipAddress, @allowed output&quot;, parameters.ToArray()).ToString();
+allowed = bool.Parse(parameters[3].Value.ToString());
+</code></pre>
+<hr>
+<h3 id="mssql-in-aspnetcore-help-commands-and-types">MSSQL IN ASPNETCORE HELP COMMANDS AND TYPES</h3>
+<pre><code class="lang-c">#Command for: Auto Generate full DB – complete Database Model Entity Framework
+Scaffold-DbContext &quot;Server=SQLSRV\SQLEXPRESS;Database=DATAPUB;Trusted_Connection=True;&quot; Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel -ContextDir &quot;DBContexts&quot;
+</code></pre>
+<hr>
+<h3 id="ef6-query-check-tokenroleissuer---username-include-sub-table-foreign-table">EF6 Query Check Token.Role/Issuer - UserName, Include sub table Foreign Table</h3>
+<pre><code class="lang-cs">if (Request.HttpContext.User.IsInRole(&quot;admin&quot;)) {
+    data = new GoldenContext().AddressLists.ToList();
+} else {
+    data = new GoldenContext().AddressLists.Include(a =&gt; a.User)
+        .Where(a =&gt; a.User.UserName == Request.HttpContext.User.Claims.First().Issuer).ToList();
+}
+</code></pre>
+<hr>
+<h3 id="ignore-more-sub-tables-from-include-in-api-response">Ignore more Sub Tables from include in API response</h3>
+<pre><code class="lang-css">return JsonSerializer.Serialize(data, new JsonSerializerOptions() { ReferenceHandler = ReferenceHandler.IgnoreCycles,WriteIndented = true });
+</code></pre>
+<hr>
+<h3 id="advanced-query-select-for-admin-user-request-suppport">Advanced Query Select for Admin user Request suppport</h3>
+<pre><code class="lang-cs">if (Request.HttpContext.User.IsInRole(&quot;admin&quot;))
+{ data = new GoldenContext().AddressLists.FromSqlRaw(&quot;SELECT * FROM AddressList WHERE 1=1 AND &quot; + filter.Replace(&quot;+&quot;, &quot; &quot;)).AsNoTracking().ToList(); }
+else {
+    data = new GoldenContext().AddressLists.FromSqlRaw(&quot;SELECT * FROM AddressList WHERE 1=1 AND &quot; + filter.Replace(&quot;+&quot;, &quot; &quot;))
+        .Include(a =&gt; a.User).Where(a =&gt; a.User.UserName == Request.HttpContext.User.Claims.First().Issuer)
+        .AsNoTracking().ToList();
+}
+</code></pre>
+<hr>
+<h3 id="extend-table-schema-with-columns-from-another-table">Extend Table schema with columns from another table</h3>
+<pre><code class="lang-cs">data = new GoldenContext().DocumentTypeLists
+.Include(d =&gt; (d.SystemNameNavigation)).Select(x =&gt; new ExtendedDocumentTypeList
+{
+    Id = x.Id,
+    SystemName = x.SystemName,
+    Description = x.Description,
+    DescriptionCz = x.SystemNameNavigation.DescriptionCz,
+    DescriptionEn = x.SystemNameNavigation.DescriptionEn,
+    UserId = x.UserId,
+    Timestamp = x.Timestamp
+}).ToList();
+</code></pre>
+<hr>
+<h3 id="join-table-with-new-custom-join-condition-with-exist-record">Join Table with new custom join condition with exist record</h3>
+<p>**And next more condition in WHERE to List<string> **<br>
+(_joiner, _joined) =&gt; _joiner.City</string></p>
+<pre><code class="lang-css">        [HttpGet(&quot;/GoldenSystemWebApi/Search/GetSearchDial/{language}&quot;)]
+        public async Task&lt;string&gt; GetSearchDial(string language = &quot;cz&quot;) {
+
+            List&lt;string&gt; data;
+            List&lt;string&gt; cityData;
+            List&lt;string&gt; countryData;
+
+            using (new TransactionScope(TransactionScopeOption.Required, new TransactionOptions { IsolationLevel = IsolationLevel.ReadUncommitted })) {
+
+                countryData = _dbContext.CountryLists.
+                    Join(_dbContext.HotelLists.Where(a =&gt; a.Advertised &amp;&amp; a.Approved == true), 
+                    joiner =&gt; joiner.Id, joined =&gt; joined.CountryId, (_joiner, _joined) =&gt; _joiner.SystemName).ToList();
+                
+                cityData = _dbContext.CityLists.Join(_dbContext.HotelLists.Where(a =&gt; a.Advertised &amp;&amp; a.Approved == true),
+                    joiner =&gt; joiner.Id, joined =&gt; joined.CountryId, (_joiner, _joined) =&gt; _joiner.City).ToList();
+
+                data = _dbContext.HotelLists.Where(a=&gt; a.Approved == true &amp;&amp; a.Advertised == true).Select(a =&gt; a.Name).ToList();
+            }
+            countryData.ForEach(item =&gt; data.Add(DBOperations.DBTranslate(item, language)));
+            cityData.ForEach(item =&gt; data.Add(DBOperations.DBTranslate(item, language)));
+            data = data.Distinct().ToList();
+            data.Sort();
+            return JsonSerializer.Serialize(data, new JsonSerializerOptions() { ReferenceHandler = ReferenceHandler.IgnoreCycles, WriteIndented = true });
+        }
+</code></pre>
+<hr>
+<h3 id="join-table-with-new-custom-join-condition-with-exist-record-to-tuple-list">Join Table with new custom join condition with exist record to Tuple List</h3>
+<pre><code class="lang-css">countryData = _dbContext.CountryLists.
+                    Join(_dbContext.HotelLists.Where(a =&gt; a.Advertised &amp;&amp; a.Approved == true),
+                    joiner =&gt; joiner.Id, joined =&gt; joined.CountryId, (_joiner, _joined) =&gt; new Tuple&lt;int, string&gt;(_joined.Id, _joined.Name)).ToList();
+</code></pre>
+<hr>
+<h3 id="mysql-in-aspnetcore-help-commands-and-types">MYSQL IN ASPNETCORE HELP COMMANDS AND TYPES</h3>
+<pre><code class="lang-bash">#Console command for download full database schema to Backend Server Project
+Scaffold-DbContext &quot;server=localhost;port=3306;database=lowercasedbname;uid=user;password=password;&quot; Pomelo.EntityFrameworkCore.MySql -OutputDir DBModel
+</code></pre>
+<pre><code class="lang-c">#MYSQL Entity DB Context Connection Code with loaded configuration settings
+#Absolute Detailed Logging supported, uncomment only
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+    if (!optionsBuilder.IsConfigured) {
+        optionsBuilder.ConfigureLoggingCacheTime(TimeSpan.FromMinutes(Program.ServerConfigSettings.DatabaseInternalCacheTimeoutMin));
+        optionsBuilder.EnableServiceProviderCaching(Program.ServerConfigSettings.DatabaseInternalCachingEnabled);  
+        optionsBuilder.UseMySql(Program.ServerConfigSettings.DatabaseConnectionString,
+            ServerVersion.AutoDetect(Program.ServerConfigSettings.DatabaseConnectionString))
+            ;
+            //.UseLoggerFactory(LoggerFactory.Create(builder =&gt; { builder.AddConsole(); }))
+            //.LogTo(message =&gt; Debug.WriteLine(message))
+            //.LogTo(Console.WriteLine)
+            ;
+        }
+    }
+</code></pre>
+<hr>
+<h3 id="api-condition-for-role-admin-only">API Condition for Role Admin only</h3>
+<pre><code class="lang-cs">[Authorize(Roles = Role.Admin)]
+[Authorize(Roles = &quot;admin&quot;)]
+[CustomAuthorize(Roles = &quot;admin&quot;)]  
+    - Ist working only for full controller
+    - not inserted is: allow All
+    - This role unlogged user in App if not correct by api setting
+
+</code></pre>
+<pre><code class="lang-cs">
+[AllowAnonymous]
+[Authorize]
+    - This is condition for each API separately without role check
+
+
+</code></pre>
+<pre><code class="lang-cs">
+if (Request.HttpContext.User.IsInRole(&quot;admin&quot;))
+    
+    - this is chek role in API 
+    or next method is check over Data model in request
+    - in app is shown message about right or when correct do command
+
+</code></pre>
+<hr>
+<h3 id="api-condition-ignore-for-swagger-docs">API Condition Ignore For Swagger Docs</h3>
+<pre><code class="lang-cs">
+[ApiExplorerSettings(IgnoreApi = true)]
+
+</code></pre>
+<hr>
+<h3 id="backend-server-templates-and-system-rules-copypasterename-supported">BACKEND server Templates and system rules COPY/PASTE/RENAME supported</h3>
+<p><sup><strong>For thinking, the development of tools and work with them worthy in the 21st century</strong></sup></p>
+<ul>
+<li>The displayed template codes can also be found in the Database</li>
+<li>Make the database model as honest as possible in relation to data and bindings</li>
+<li>The best solution is to have the database check the correctness of the data (in 1 place)</li>
+<li>The database contains a DBHELP help procedure</li>
+<li>Document items are deleted with a linked key</li>
+<li>Procedures for Backup/Restore are prepared in the DB</li>
+<li>The system uses SLQ, EF6, Procedures, Views, Functions</li>
+<li>That's all it takes to develop</li>
+</ul>
+<pre><code class="lang-sql">-- The procedure setting the rights for the user to the necessary operations
+
+USE [EASYBUILDER]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure [dbo].[DB_SETRIGHTS]
+AS
+BEGIN 
+ BEGIN TRY CREATE USER [easybuilder] FOR LOGIN [easybuilder] END TRY BEGIN CATCH END CATCH;
+ BEGIN TRY ALTER ROLE [db_datareader] ADD MEMBER [easybuilder]; END TRY BEGIN CATCH END CATCH;
+ BEGIN TRY ALTER ROLE [db_datawriter] ADD MEMBER [easybuilder]; END TRY BEGIN CATCH END CATCH;
+ BEGIN TRY GRANT EXECUTE TO [easybuilder]; END TRY BEGIN CATCH END CATCH;
+END;
+GO
+</code></pre>
+<pre><code class="lang-sql">/*
+Template for creating standardized Tables (from Table -&gt; CREATE TO)
+The template is used by way of REPLACE 'TemplateList' after 'NewTableList'
+edit fields correctly, set indexes and foreign keys
+System ID Columns - AutoIncrement, TimeStamp - InsertTime
+Keys: UserId - Binding to the UsersList Table
+*/
+</code></pre>
+<pre><code class="lang-sql">USE [EASYBUILDER]
+GO
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TemplateList](
+ [Id] [int] IDENTITY(1,1) NOT NULL,
+ [Name] [varchar](50) NOT NULL,
+ [Description] [text] NULL,
+ [Default] [bit] NOT NULL,
+ [UserId] [int] NOT NULL,
+ [Active] [bit] NOT NULL,
+ [TimeStamp] [datetime2](7) NOT NULL,
+ CONSTRAINT [PK_TemplateList] PRIMARY KEY CLUSTERED 
+(
+ [Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+ CONSTRAINT [IX_TemplateList] UNIQUE NONCLUSTERED 
+(
+ [Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[TemplateList] ADD  CONSTRAINT [DF_TemplateList_Active]  DEFAULT ((1)) FOR [Active]
+GO
+
+ALTER TABLE [dbo].[TemplateList] ADD  CONSTRAINT [DF_TemplateList_TimeStamp]  DEFAULT (getdate()) FOR [TimeStamp]
+GO
+
+ALTER TABLE [dbo].[TemplateList]  WITH CHECK ADD  CONSTRAINT [FK_TemplateList_UserList] FOREIGN KEY([UserId])
+REFERENCES [dbo].[UserList] ([Id])
+GO
+
+ALTER TABLE [dbo].[TemplateList] CHECK CONSTRAINT [FK_TemplateList_UserList]
+GO
+</code></pre>
+<pre><code class="lang-sql">/*
+System procedure for Reports with advanced filtering The procedure is part of the Supplied Database
+*/
+</code></pre>
+<pre><code class="lang-sql">USE [EASYBUILDER]
+GO
+
+/****** Object:  StoredProcedure [dbo].[ReportDataset]    Script Date: 11.03.2023 6:45:06 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[ReportDataset]
+@TableName varchar(50) = null,
+@Sequence int = 0
+AS
+BEGIN
+ -- SET NOCOUNT ON added to prevent extra result sets from
+ -- interfering with SELECT statements.
+ SET NOCOUNT ON;
+
+-- Intended for use with param-ed reports.
+-- To be called from various My-FyiReporting reports
+--   - Various reports with their own layouts are called from VB app after setting Queue with usp_ReportQueue_Push()
+--     each report then just contains : 
+
+-- SET FMTONLY OFF;
+-- EXEC usp_ReportQueue_Pop @TableName='SomeTablename', @Sequence='10'
+-- 
+
+DECLARE @ID int;
+DECLARE @NAME varchar(50);
+DECLARE @SQL nvarchar(MAX);
+DECLARE @FILTER nvarchar(MAX);
+DECLARE @SEARCH varchar(50);
+DECLARE @SEARCHCOLUMNLIST nvarchar(MAX);
+DECLARE @SEARCHFILTERIGNORE bit;
+DECLARE @RECID varchar(50);
+DECLARE @RECIDFILTERIGNORE bit;
+
+DECLARE @SEPARATEDCOLUMNS nvarchar(MAX);
+
+
+SELECT Top 1 
+  @ID=[Id], 
+  @NAME=[Name], 
+  @SQL=[Sql], 
+  @FILTER=[Filter], 
+  @SEARCH=[Search], 
+  @SEARCHCOLUMNLIST=[SearchColumnList],
+  @SEARCHFILTERIGNORE=[SearchFilterIgnore],
+  @RECID=[RecId],
+  @RECIDFILTERIGNORE=[RecIdFilterIgnore]
+FROM ReportQueueList WHERE [TableName]=@TableName AND [Sequence] = @Sequence; 
+
+--PRERARE RECID
+IF (@RECID = 0 OR (@RECIDFILTERIGNORE = 1 AND @FILTER &lt;&gt; '1=1')) BEGIN 
+ SET @RECID = ''
+END ELSE BEGIN
+ SET @RECID = CONCAT(' AND Id=',@RECID);
+END
+
+--PRERARE SEARCH
+IF (@SEARCH = '' OR (@SEARCHFILTERIGNORE = 1 AND @FILTER &lt;&gt; '1=1')) BEGIN
+ SET @SEPARATEDCOLUMNS =  '1=1';
+END ELSE BEGIN
+ SELECT @SEPARATEDCOLUMNS = STRING_AGG (CONCAT(value,' LIKE ',char(39),'%',@SEARCH,'%',char(39)), ' OR ') FROM STRING_SPLIT (@SEARCHCOLUMNLIST, ',');  
+END
+
+ SET @SQL = CONCAT(@SQL,' WHERE 1=1 AND (', @FILTER,') AND (', @SEPARATEDCOLUMNS,') ',@RECID); 
+ --PRINT @SQL; --FOR Debuging
+ EXECUTE sp_executesql @SQL;
+END
+GO
+</code></pre>
+<pre><code class="lang-sql">--SQL Trigger for Table to set a single value for type 'Default'
+</code></pre>
+<pre><code class="lang-sql">USE [EASYBUILDER]
+GO
+
+/****** Object:  Trigger [dbo].[TR_UnitList]    Script Date: 11.03.2023 6:48:06 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE   TRIGGER [dbo].[TR_UnitList] ON [dbo].[UnitList]
+FOR INSERT, UPDATE, DELETE
+AS
+DECLARE @Operation VARCHAR(15)
+ 
+IF EXISTS (SELECT 0 FROM inserted)
+BEGIN
+ DECLARE @setDefault bit;DECLARE @RecId int;
+ SET NOCOUNT ON;
+
+    IF EXISTS (SELECT 0 FROM deleted)
+    BEGIN --UPDADE
+  SELECT @setDefault = ins.[Default] from inserted ins;
+  SELECT @RecId = ins.Id from inserted ins;
+
+  IF(@setDefault = 1) BEGIN
+   UPDATE [dbo].UnitList SET [Default] = 0 WHERE Id &lt;&gt; @RecId;   
+  END
+ END ELSE
+  BEGIN -- INSERT
+   SELECT @setDefault = ins.[Default] from inserted ins;
+   SELECT @RecId = ins.Id from inserted ins;
+
+   IF(@setDefault = 1) BEGIN
+    UPDATE [dbo].UnitList SET [Default] = 0 WHERE Id &lt;&gt; @RecId;   
+   END
+  
+  END
+END ELSE 
+BEGIN --DELETE
+ SELECT @setDefault = ins.[Default] from deleted ins;
+ SELECT @RecId = ins.Id from deleted ins;
+
+ IF(@setDefault = 1) BEGIN
+  UPDATE [dbo].UnitList SET [Default] = 1  
+  WHERE Id IN(SELECT TOP (1) Id FROM [dbo].UnitList WHERE Id &lt;&gt; @RecId)
+  ;
+ END
+END
+GO
+
+ALTER TABLE [dbo].[UnitList] ENABLE TRIGGER [TR_UnitList]
+GO   
+</code></pre>
+<hr>
+<h3 id="api-communication---4-types-is-enough">API communication - 4 TYPES is enough</h3>
+<p><sup><strong>For thinking, the development of tools and work with them worthy in the 21st century</strong></sup></p>
+<p>It is so. INSERT/UPDATE/DETETE/SELECT are the mentioned types which are enough
+ensure the communication of any system.
+And top it all off with a single list of APIaddress calls and communication is resolved
+set up for this as a standardized automatic part of the kernel.</p>
+<p>System kernel code dump, Where you just always add the address and don't care about anything else</p>
+<hr>
+<h3 id="system-apiaddreslist---all-calls-in-one-place">System APIAddresList - all calls in one place</h3>
+<pre><code class="lang-cs">    /// &lt;summary&gt;
+    /// ALL standard View AND Form API Call must end with &quot;List&quot; - These will automatic added for reports Definitions
+    /// &lt;/summary&gt;
+    public enum ApiUrls
+    {
+        GoldenSystemBasicAttachmentList,
+        GoldenSystemAddressList,
+        Authentication,
+        BackendCheck,
+        GoldenSystemBranchList,
+        GoldenSystemCalendar,
+        GoldenSystemCreditNoteList,
+        GoldenSystemCreditNoteSupportList,
+        GoldenSystemCurrencyList,
+        GoldenSystemDocumentAdviceList,
+        GoldenSystemExchangeRateList,
+        GoldenSystemIncomingInvoiceList,
+        GoldenSystemIncomingInvoiceSupportList,
+        GoldenSystemIncomingOrderList,
+        GoldenSystemIncomingOrderSupportList,
+
+        GoldenSystemTemplateClassList
+    }
+</code></pre>
+<hr>
+<h3 id="4-api-calls---system-core-module">4 API Calls - SYSTEM Core module</h3>
+<pre><code class="lang-cs">    class ApiCommunication
+    {
+        public static async Task&lt;Authentification&gt; Authentification(ApiUrls apiUrl, string userName = null, string password = null)
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Basic&quot;, Convert.ToBase64String(Encoding.UTF8.GetBytes(userName + &quot;:&quot; + password)));
+                    StringContent test = new StringContent(&quot;&quot;, Encoding.UTF8, &quot;application/json&quot;);
+                    HttpResponseMessage json = await httpClient.PostAsync(App.Setting.ApiAddress + &quot;/&quot; + apiUrl, test);
+                    return JsonConvert.DeserializeObject&lt;Authentification&gt;(await json.Content.ReadAsStringAsync());
+                }
+                catch { return new Authentification() { Token = null, Expiration = null }; }
+            }
+        }
+
+        public static async Task&lt;T&gt; GetApiRequest&lt;T&gt;(ApiUrls apiUrl, string key = null, string token = null) where T : new()
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try {
+                    if (token != null) { httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Bearer&quot;, token); }
+                    string json = await httpClient.GetStringAsync(App.Setting.ApiAddress + &quot;/&quot; + apiUrl + (!string.IsNullOrWhiteSpace(key) ? &quot;/&quot; + key : &quot;&quot;));
+                    return JsonConvert.DeserializeObject&lt;T&gt;(json);
+                } catch { return new T(); }
+            }
+        }
+
+        public static async Task&lt;DBResultMessage&gt; PostApiRequest(ApiUrls apiUrl, HttpContent body, string key = null, string token = null)
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    if (token != null) { httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Bearer&quot;, token); }
+                    HttpResponseMessage json = await httpClient.PostAsync(App.Setting.ApiAddress + &quot;/&quot; + apiUrl + (!string.IsNullOrWhiteSpace(key) ? &quot;/&quot; + key : &quot;&quot;), body);
+                    DBResultMessage result = JsonConvert.DeserializeObject&lt;DBResultMessage&gt;(await json.Content.ReadAsStringAsync());
+                    if (result.ErrorMessage == null) { result.ErrorMessage = await json.Content.ReadAsStringAsync(); }
+                    return result;
+                }
+                catch (Exception ex)
+                { return new DBResultMessage() { RecordCount = 0, ErrorMessage = ex.Message + Environment.NewLine + ex.StackTrace, Status = &quot;error&quot; }; }
+            }
+        }
+
+        public static async Task&lt;DBResultMessage&gt; PutApiRequest(ApiUrls apiUrl, HttpContent body, string key = null, string token = null)
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    if (token != null) { httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Bearer&quot;, token); }
+                    HttpResponseMessage json = await httpClient.PutAsync(App.Setting.ApiAddress + &quot;/&quot; + apiUrl + (!string.IsNullOrWhiteSpace(key) ? &quot;/&quot; + key : &quot;&quot;), body);
+                    DBResultMessage result = JsonConvert.DeserializeObject&lt;DBResultMessage&gt;(await json.Content.ReadAsStringAsync());
+                    if (result.ErrorMessage == null) { result.ErrorMessage = await json.Content.ReadAsStringAsync(); }
+                    return result;
+                }
+                catch (Exception ex)
+                { return new DBResultMessage() { RecordCount = 0, ErrorMessage = ex.Message + Environment.NewLine + ex.StackTrace, Status = &quot;error&quot; }; }
+            }
+        }
+
+        public static async Task&lt;DBResultMessage&gt; DeleteApiRequest(ApiUrls apiUrl, string key = null, string token = null)
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    if (token != null) { httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Bearer&quot;, token); }
+                    HttpResponseMessage json = await httpClient.DeleteAsync(App.Setting.ApiAddress + &quot;/&quot; + apiUrl + (!string.IsNullOrWhiteSpace(key) ? &quot;/&quot; + key : &quot;&quot;));
+                    return JsonConvert.DeserializeObject&lt;DBResultMessage&gt;(await json.Content.ReadAsStringAsync());
+                }
+                catch (Exception ex)
+                { return new DBResultMessage() { RecordCount = 0, ErrorMessage = ex.Message + Environment.NewLine + ex.StackTrace, Status = &quot;error&quot; }; }
+            }
+        }
+
+        public static async Task&lt;bool&gt; CheckApiConnection()
+        {
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    string json = await httpClient.GetStringAsync(App.Setting.ApiAddress + &quot;/&quot; + ApiUrls.BackendCheck);
+                    return true;
+                }
+                catch
+                { return false; }
+            }
+        }
+
+    }
+</code></pre>
+<hr>
+<h2 id="cloning-database-as-new-db-and-schema-and-added-to-api-server-as-next-new-db">CLONING DATABASE AS NEW DB AND SCHEMA AND ADDED to API Server AS NEXT NEW DB</h2>
+<p>Cloning DB Schema is good solution for More DB instances In One Server for working as
+Example:</p>
+<ul>
+<li><p>more Branches</p>
+</li>
+<li><p>Test / Dev / Sharp instances</p>
+</li>
+<li><p>New Cloned System</p>
+</li>
+<li><p>Do It By CloneEDCtoXXX.Bat in DatabaseFolder AND DO THESE 2 STEPS</p>
+</li>
+</ul>
+<h3 id="1-replace-hard-db-connection-for-multiple-db-in-schema">1] Replace Hard DB connection for Multiple DB in Schema</h3>
+<p>in configuration is only One Connection string
+for more Databases you must modify the config or Replace
+DsataContect by hard inserted connectin string</p>
+<p>Here is code for Replacing</p>
+<pre><code class="lang-cs">public SHOPINGERContext()
+        {
+        }
+
+        public SHOPINGERContext(DbContextOptions&lt;SHOPINGERContext&gt; options)
+                    : base(options) {
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+            if (!optionsBuilder.IsConfigured) {
+                optionsBuilder.ConfigureLoggingCacheTime(TimeSpan.FromMinutes(BackendServer.ServerConfigSettings.DatabaseInternalCacheTimeoutMin));
+                optionsBuilder.EnableServiceProviderCaching(BackendServer.ServerConfigSettings.DatabaseInternalCachingEnabled);
+
+                optionsBuilder.UseSqlServer(&quot;Server=192.168.1.141,1433;Database=SHOPINGER;User Id=shopinger;Password=shopinger;TrustServerCertificate=True&quot;,
+                      x =&gt; x.MigrationsHistoryTable(&quot;MigrationsHistory&quot;, &quot;dbo&quot;));
+
+                if (BackendServer.ServerRuntimeData.DebugMode) {
+                    optionsBuilder.UseLoggerFactory(LoggerFactory.Create(builder =&gt; { builder.AddConsole(); }))
+                        .LogTo(message =&gt; Debug.WriteLine(message)).LogTo(Console.WriteLine);
+                };
+                ;
+            }
+        }
+</code></pre>
+<hr>
+<h3 id="2-extend-file-serverdatabaseengine-for-special-dataworking">2] Extend file 'ServerDATaBaseEngine' for Special DataWorking</h3>
+<p>Extend Server definition for this new DatasertWorking for Support
+Get datatable from Stored Procedures</p>
+<pre><code class="lang-cs">        public static List&lt;T&gt; SHOPINGERCollectionFromSql&lt;T&gt;(this SHOPINGERContext dbContext, string sql) where T : class, new() {
+            using var cmd = dbContext.Database.GetDbConnection().CreateCommand();
+            cmd.CommandText = sql;
+            if (cmd.Connection.State != ConnectionState.Open)
+                cmd.Connection.Open();
+            try {
+                List&lt;T&gt; results = null;
+                DataTable table = new DataTable();
+                table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+                table.Load(cmd.ExecuteReader());
+                results = ServerCoreHelpers.BindList&lt;T&gt;(table).ToList();
+
+                return results;
+            } catch (Exception Ex) { ServerCoreFunctions.SendEmail(new MailRequest() { Content = ServerCoreFunctions.GetSystemErrMessage(Ex) }); } finally { cmd.Connection.Close(); }
+            return new List&lt;T&gt;();
+        }
+</code></pre>
+<hr>
+<h3 id="markdown-item-template">MarkDown Item Template</h3>
+<pre><code class="lang-cs">
+</code></pre>
+<hr>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasySYSTEMbuilder Universální Systém builder - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

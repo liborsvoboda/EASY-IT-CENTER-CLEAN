@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+	<meta name="robots" content="noindex,follow">
+	<meta name="charset" content="utf-8" />
+
+	<link rel="stylesheet" href="./dist/skin-win8/ui.fancytree.min.css">
+	<link rel="stylesheet" href="/serverportal/metro/css/metro-all.css" />
+
+	<script src="../jquery/jquery-3.6.0.min.js"></script>
+	<script src="./dist/fancytree-all-deps.js"></script>
+	<script type="text/javascript" src="/serverportal/metro/js/metro.4.5.2.min.js"></script>
+
+	<title>Fancytree - Browser</title>
+	<script type="text/javascript">
+		$(function () {
+			$("#tree").fancytree({
+				checkbox: false,
+				source: {
+					url: "/serverportal/addons/fancytree/jsondata.json"
+				},
+				activate: function (event, data) {
+                    $("#FrameWindow").html("<iframe id=IFrameWindow src='" + data.node.key + "' class='h-100' height='100%' frameborder='0' scrolling='yes' style='width:100%; height: 100%;' ></iframe>");
+				},
+				checkbox: function (event, data) {
+					return data.node.isFolder() ? false : false;
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="row w-100 h-100 d-inline-flex">
+		<div id="tree" class="h-100" style="width: 200px; overflow-y: auto;"></div>
+		<div id="FrameWindow" class="h-100" height="100%" frameborder="0" scrolling="yes" style="width: calc(100% - 200px);height:100%;"></div>
+	</div>
+</body>
+
+</html>

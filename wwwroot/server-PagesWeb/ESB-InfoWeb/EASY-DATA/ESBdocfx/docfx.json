@@ -1,0 +1,79 @@
+{
+  "metadata": [
+    {
+	   "src": [
+        {
+          "files": [ 
+			"**/bin/Debug/EasyITSystemCenter.exe"
+		  ],
+		  "exclude": ["InfoWeb/**","**/obj/**","**/wwwroot/**","EASY-IT-CENTER-SERVER/**","EASY-ADDONS/**","**packages**"]
+        }
+      ],
+      "dest": "api",
+	  "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+	  "references": [
+		  "**/bin/Debug/EasyITSystemCenter.exe"
+	  ]
+    },
+	{
+	   "src": [
+        {
+          "files": [ 
+			"**/bin/InfoWeb/**",
+		  ],
+		  "exclude": ["**/obj/**","**/wwwroot/**","**/EASY-IT-CENTER-SERVER/**","**/EASY-ADDONS/**","**/packages/**"]
+        }
+      ],
+      "dest": "api",
+    }
+  ],
+  "build": {
+	  "markdownEngineProperties": {
+      "markdigExtensions": [
+          "Abbreviations",
+          "Footnotes"
+      ]
+	},
+    "content": [
+      {
+        "files": [
+		  "**/*.swagger.json",
+          "**/*.{md,yml,json,exe,png}"
+        ],
+		  "exclude": ["**/obj/**","**/wwwroot/**","**/EASY-IT-CENTER-SERVER/**","**/EASY-ADDONS/**","**/packages/**"]
+      }
+    ],
+    "resource": [
+      {
+        "files": "EASY-DATA/**"
+      }
+    ],
+    "output": "InfoWeb",
+    "template": [
+      "default",
+	  //"statictoc",
+      //"modern"
+	  "singulinkfx"
+    ],
+    "globalMetadata": {
+      "_appName": "EasySYSTEMbuilder InfoWeb",
+      //"_appTitle": "EasySYSTEMbuilder InfoWeb",
+	  "_appFooter": "EasySYSTEMbuilder Universální Systém builder - Komplexní Řešení pro Vaše IT",
+	  //"_appLogoPath": "EASY-DATA/Images/logo.png",
+	  "_enableNewTab": true,
+	  "_disableSideFilter": false,
+	   "_disableContribution": true,
+      "_disableBreadcrumb": false,
+      "_enableSearch": true,
+      "pdf": true
+    },
+	"rules": {
+		"InvalidHref": "info"
+	},
+    "postProcessors": [],
+    "disableGitFeatures": true,
+    "exportViewModel": false
+  }
+}

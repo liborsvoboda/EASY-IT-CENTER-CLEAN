@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>blockchain - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html" class="active"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p align="center">
+  <img src="http://www.userlogos.org/files/logos/Deva/blockchain1.png" />
+</p>
+<h3 id="contents"><a class="header" href="#contents">Contents</a></h3>
+<ul>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#exchanges">Exchanges</a>
+<ul>
+<li><a href="#global">Global</a></li>
+<li><a href="#usa">USA</a></li>
+<li><a href="#canada--mexico">Canada / Mexico</a></li>
+<li><a href="#australia--new-zealand">Australia / New Zealand</a></li>
+<li><a href="#eu">EU</a></li>
+<li><a href="#india">India</a></li>
+<li><a href="#china">China</a></li>
+<li><a href="#japan--korea--other-asia">Japan / Korea / Other Asia</a></li>
+<li><a href="#cis">CIS</a></li>
+<li><a href="#middle-east--africa">Middle East / Africa</a></li>
+</ul>
+</li>
+<li><a href="#payments--lending">Payments / Lending</a></li>
+<li><a href="#jobs">Jobs</a></li>
+<li><a href="#shopping">Shopping</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#future-plans">Future plans</a></li>
+</ul>
+<hr />
+<p>To propose a project - open issue/PR or contact me via <a href="https://t.me/tmaniac">Telegram</a></p>
+<p>Some links are affiliate, so I could keep the list up to date. I marked them as 🍭
+You can also support the list directly:</p>
+<p><strong>Bitcoin:</strong> <em>1MjC5Htqzd2uJx6eFSuBCh1HT122Gesfpd</em></p>
+<p><strong>Ethereum:</strong> <em>0x78a2C634b844b23e22795EAb1Bd344629f4983c2</em></p>
+<p><strong>Monero:</strong> <em>4B8cnjTaXnADZMJhNVkZtoHNVqBE1Pjavag6Mp54HPmp1FUUUnFteLRbdAMvKDzCoeBE3vY81BZzVNoGBaaPfRhw6jiS3Z1</em></p>
+<hr />
+<h3 id="platforms"><a class="header" href="#platforms">Platforms</a></h3>
+<ul>
+<li><a href="https://bitcoin.org">Bitcoin</a> - the most popular cryptocurrency on Blockchain</li>
+<li><a href="https://www.ethereum.org/">Ethereum</a> - decentralized platform that runs smart contracts with its own cryptocurrency - Ether</li>
+<li><a href="https://ethereumclassic.github.io/">Ethereum classic</a> - continuation of the original Ethereum blockchain - the classic version preserving untampered history, hard forked after <a href="http://www.coindesk.com/understanding-dao-hack-journalists/">DAO hack</a></li>
+<li><a href="https://getmonero.org">Monero</a> - secure, private, untraceable currency. It is open-source and freely available to all</li>
+<li><a href="https://azure.microsoft.com/en-us/solutions/blockchain/">Azure blockchain</a> - Blockchain as a Service from Microsoft. Not free 🔐</li>
+<li><a href="http://www.ibm.com/blockchain/">IBM blockchain</a> - blockchain network in a cloud environment. Not free 🔐</li>
+<li><a href="https://wavesplatform.com/">Waves</a> - decentralized platform that allows any user to issue, transfer, swap and trade custom tokens directly on the blockchain</li>
+<li><a href="https://monax.io/">Monax</a> - ecosystem application platform. Sells legally compliant smart contract-based SDKs to accelerate your time to market with sophisticated ecosystem applications.</li>
+<li><a href="http://emercoin.com/">Emercoin</a> - distributed blockchain services for business and personal use with its own decentralized DNS system</li>
+<li><a href="https://www.nem.io">NEM</a> - P2P system that provides services like payments, messaging, asset making, and naming system</li>
+<li><a href="https://nxt.org">NXT</a> - powerful, open and completely decentralized application platform</li>
+<li><a href="https://www.ardorplatform.org/">Ardor</a> - blockchain-as-a-service platform that will allow people to utilize the blockchain technology of Nxt through the use of child chains</li>
+<li><a href="https://decent.ch/">Decent</a> - blockchain content distribution platform</li>
+<li><a href="https://www.hyperledger.org/">Hyperledger</a> - open source collaborative effort created to advance cross-industry blockchain technologies</li>
+<li><a href="http://www.multichain.com/">Multichain</a> - open platform for blockchain applications</li>
+<li><a href="https://stratisplatform.com/">Stratis</a> - end-to-end solutions for development, testing and deployment of native C# blockchain applications on the .Net framework. Claims to be enterprise ready.</li>
+<li><a href="http://credits.vision/">Credits</a> - blockchain infrastructure provider for building secure and scalable blockchains</li>
+<li><a href="http://counterparty.io/">Counterparty</a> - create and trade any kind of digital token and run smart contracts on blockchain</li>
+<li><a href="http://swarm-gateways.net/">Swarm</a> - serverless hosting incentivised peer-to-peer storage and content distribution. The primary objective is to provide a redundant store of Ethereum's public record, store and distribute DAPP code and data, as well as blockchain data</li>
+<li><a href="https://chain.com/">Chain</a> - enterprise-grade blockchain infrastructure that enables organizations to build financial services from the ground up</li>
+<li><a href="https://www.factom.com">Factom</a> - provides active solutions for compliance, identity, transparent assets, and securities for Enterprise, Government and Non-Profit systems</li>
+<li><a href="http://www.expanse.tech/">Expanse</a> - fault tolerant cloud computer built on blockchain technology that facilitates censorship resistant applications</li>
+</ul>
+<h3 id="exchanges"><a class="header" href="#exchanges">Exchanges</a></h3>
+<p><a href="https://bitcoin.org/en/choose-your-wallet">Where to store bitcoins</a></p>
+<p>For other cryptocurrencies, it's best to use their own wallet (usually from their site, i.e. <a href="https://www.ethereum.org/">Ethereum</a> or <a href="https://www.dash.org/wallet/">Dash</a>)</p>
+<p>I found no way to buy bitcoin anonymously, by adequate rate, outside of US and EU, and for USD or Euros. If you know the way, please contact me <a href="https://t.me/tmaniac">here</a>.</p>
+<p><a href="https://coinmarketcap.com/">List of all main cryptocurrencies and their market cap</a></p>
+<h4 id="global"><a class="header" href="#global">Global</a></h4>
+<ul>
+<li><a href="https://bitsquare.io">Bitsquare</a> - P2P decentralized exchange</li>
+<li><a href="https://localbitcoins.com/">Localbitcoins</a> - Peer-to-peer bitcoin exchange</li>
+<li><a href="https://coinatmradar.com">Coinatmradar</a> - list of ATMs</li>
+<li><a href="https://lykke.com">Lykke</a> - mobile wallet with exchange, works with most credit cards, supports Solarcoin and Chronobank and has a very good exchange rate</li>
+<li><a href="https://cex.io/r/0/up104147987/0/">CEX.io</a> - credit card or bank transfer, supports Ether 🍭</li>
+<li><a href="https://www.coinbase.com/join/5212202cee56a72fbe000061">Coinbase</a> - supports Ether 🍭</li>
+<li><a href="https://www.Coinmama.com/?ref=imbaniac.">Coinmama</a> - cash or cards in almost all countries, supports Ether 🍭</li>
+<li><a href="https://www.bitpanda.com/?ref=7384335410044472714">Bitpanda</a> - supports Ether 🍭</li>
+<li><a href="https://www.kraken.com">Kraken 🇪🇺 🇨🇦 🇺🇸</a> - supports all main cryptocurrencies</li>
+<li><a href="https://xcoins.io/?r=a6e773">xCoins</a> - credit cards and PayPal are accepted 🍭</li>
+<li><a href="https://btc-e.com">BTC-e</a> - clear and solid exchange, no documents required</li>
+<li><a href="https://paxful.com">Paxful</a> - P2P exchange with variety of payment options, including credit/debit/gift cards</li>
+<li><a href="http://nonstopcoin.com/">Nonstopcoin</a> - buy Bitcoins with Perfect Money, OKPAY, Payeer, AdvCash, BTC-e USD</li>
+<li><a href="https://blockchain.info/">Blockchain.info</a> - popular cloud wallet with ability to purchase Bitcoins</li>
+<li><a href="https://www.bitfinex.com">Bitfinex</a> - elegant web trading platform from a few cryptocurrencies </li>
+<li><a href="https://www.bitcoin.de">Bitcoin.de</a> - P2P exchange</li>
+<li><a href="http://bitit.gift/?referral=WHIKUUSA">Bitit.gift</a> - instant buy with cards and vouchers 🍭</li>
+<li><a href="https://www.alfacashier.com/r/2f790f4c">Alfacashier</a> - supports many cryptocurrencies 🍭</li>
+<li><a href="https://www.bitmex.com/register/0rE6wB">Bitmex</a> - BTC trading platform 🍭</li>
+<li><a href="https://coinsbank.com">Coinsbank</a> - works with credit cards</li>
+<li><a href="https://shapeshift.io">Shapeshift</a> - exchange bitcoin to many altcoins</li>
+<li><a href="https://poloniex.com">Poloniex</a> - cryptocurrency exchange</li>
+<li><a href="https://gemini.com">Gemini 🇨🇦 🇺🇸 🇬🇧 🇭🇰 🇸🇬 🇰🇷 🇯🇵</a> - Bitcoin exchange from <a href="https://en.wikipedia.org/wiki/Winklevoss_twins">Winklevoss twins</a></li>
+<li><a href="https://www.gdax.com/">GDAX</a> - trading platform on top of Coinbase</li>
+<li><a href="https://hitbtc.com?ref_id=588072309d841">Hit BTC</a> - supports all main cryptocurrencies 🍭</li>
+<li><a href="https://changelly.com/exchange/BTC/ETH/1?ref_id=dc30cb25d349">Changelly</a> - Exchange cryptocurrencies between different wallets 🍭</li>
+<li><a href="https://bittrex.com">Bittrex</a> - supports many cryptocurrencies</li>
+<li><a href="www.vaultoro.com/?a=101996">Vaultoro</a> - trade bitcoin and altcoins and physical gold 🍭</li>
+<li><a href="https://uphold.com">Uphold 🇪🇺 🇺🇸</a> - work with credit cards, instant virtual cards to spend money and variety of other options</li>
+<li><a href="https://www.therocktrading.com">The Rock Trading</a> - supports all main cryptocurrencies</li>
+<li><a href="https://yobit.io/?bonus=Eksfz">Yobit</a> - exchange platform, ability to create own cryptocurrencies and games 🍭</li>
+<li><a href="https://exmo.com/?ref=373944">Exmo</a> - supports a few payment systems (mainly available in CIS) 🍭</li>
+<li><a href="https://www.dgx.io/">DIGIX</a> - purchase digital gold assets with Ether or Bitcoin</li>
+<li><a href="https://www.myetherwallet.com">My Ether Wallet</a> - ether wallet with built-in Ether-BTC exchange</li>
+<li><a href="https://wallofcoins.com">Wall of Coins</a> - buy and sell btc directly. Works in many countries</li>
+<li><a href="http://etoro.tw/2urV4vD">eToro</a> - not only cryptocurrencies, very good UI, CFD (Contracts For Difference). Not available for USA citizens. 🍭</li>
+<li><a href="https://www.luno.com/">Luno</a> - works in Europe, Africa and Asia</li>
+<li><a href="https://coinwale.com/">Coinwale</a> - anonymous cryptocurrency exchange, supports BTC, BCH, ETH, LTC, XVG &amp; DOGE</li>
+<li><a href="https://www.cryptofacilities.com/">Crypto Facilities</a> - FCA regulated Crypto Futures Exchange supporting BTC &amp; XRP</li>
+</ul>
+<h4 id="usa"><a class="header" href="#usa">USA</a></h4>
+<ul>
+<li><a href="https://libertyx.com">Libertyx 🇺🇸</a> - buy BTC from local stores</li>
+<li><a href="https://www.glidera.io">Glidera 🇺🇸</a> - integrated into Mycelium and Airbitz wallets</li>
+<li><a href="https://www.itbit.com">ItBit 🇺🇸</a></li>
+<li><a href="https://www.bitquick.co">BitQuick 🇺🇸</a></li>
+</ul>
+<h4 id="canada--mexico"><a class="header" href="#canada--mexico">Canada / Mexico</a></h4>
+<ul>
+<li><a href="https://mybtc.ca/">Mybtc 🇨🇦</a> - instant buy with cards and vouchers</li>
+<li><a href="https://quickbt.com/">Quickbt 🇨🇦</a> - buy instant with debit, cash, flexepinin CA</li>
+<li><a href="https://bitso.com/">Bitso 🇲🇽</a></li>
+</ul>
+<h4 id="australia--new-zealand"><a class="header" href="#australia--new-zealand">Australia / New Zealand</a></h4>
+<ul>
+<li><a href="http://www.bitrocket.co/">Bitrocket 🇦🇺</a></li>
+<li><a href="https://www.independentreserve.com/">Independentreserve 🇦🇺</a></li>
+<li><a href="https://btcmarkets.net">Btc Markets 🇦🇺</a></li>
+</ul>
+<h4 id="eu"><a class="header" href="#eu">EU</a></h4>
+<ul>
+<li><a href="https://www.bitstamp.net/">Bitstamp 🇪🇺</a></li>
+<li><a href="https://coinmate.io">Coinmate 🇪🇺</a></li>
+<li><a href="https://bit2me.com/">Bit2me 🇪🇺</a> - buy BTC or exchange BTC for cash to any ATM in EU</li>
+<li><a href="https://anycoindirect.eu/en/buy/bitcoins?discref=5ab5b673-f8a2-41e8-b6c4-fca63bfabb9a">Anycoindirect 🇪🇺</a> 🍭</li>
+<li><a href="https://bitonic.nl">Bitonic 🇪🇺</a></li>
+<li><a href="https://bitbay.net/">Bitbay 🇪🇺</a></li>
+<li><a href="https://www.belgacoin.com">Belgacoin 🇪🇺</a> - no registration</li>
+<li><a href="https://www.bitboat.net/">Bitboat 🇪🇺</a> - buy BTC with no account required, with cash to ATMs in EU</li>
+<li><a href="https://cubits.com/">Cubits 🇪🇺</a></li>
+<li><a href="https://www.coinify.com/">Coinify 🇪🇺</a></li>
+<li><a href="https://btcdirect.eu">BTC Direct 🇪🇺</a></li>
+<li><a href="https://www.happycoins.com">Happycoins 🇪🇺</a></li>
+<li><a href="https://coinfinity.co/">Coinfinity 🇪🇺</a></li>
+<li><a href="https://paymium.com">Paymium 🇪🇺</a></li>
+<li><a href="https://coinmotion.com/">Coinmotion 🇪🇺</a></li>
+<li><a href="https://cryptopay.me/">Cryptopay 🇪🇺</a></li>
+<li><a href="https://spectrocoin.com/">Spectrocoin 🇪🇺</a></li>
+<li><a href="https://www.mrcoin.eu/en">Mrcoin 🇪🇺</a></li>
+<li><a href="https://decicoin.com/">Decicoin 🇪🇺</a></li>
+<li><a href="https://cointed.com/">Cointed 🇩🇪</a></li>
+<li><a href="https://bity.com/">Bity 🇨🇭 </a></li>
+<li><a href="https://bittiraha.fi/">Bittiraha 🇫🇮</a></li>
+</ul>
+<h4 id="india"><a class="header" href="#india">India</a></h4>
+<ul>
+<li><a href="https://www.unocoin.com/">Unocoin 🇮🇳</a></li>
+<li><a href="https://www.zebpay.com/">Zebpay 🇮🇳</a></li>
+<li><a href="https://coinsecure.in/">Coinsecure 🇮🇳</a></li>
+<li><a href="http://www.buyucoin.com/">Buyucoin 🇮🇳</a></li>
+<li><a href="https://btcxindia.com/">BtcxIndia 🇮🇳</a></li>
+<li><a href="https://ethexindia.com/">ethexIndia 🇮🇳</a></li>
+<li><a href="https://koinex.in/">Koinex 🇮🇳</a></li>
+<li><a href="https://www.throughbit.com/">ThroughBit 🇮🇳</a></li>
+<li><a href="https://www.pocketbits.in">PocketBits 🇮🇳</a></li>
+</ul>
+<h4 id="china"><a class="header" href="#china">China</a></h4>
+<ul>
+<li><a href="https://www.okcoin.cn">Okcoin 🇭🇰 🇨🇳</a> - one of the biggest BTC exchange.</li>
+<li><a href="exchange.btcc.com">BTCC 🇨🇳</a></li>
+<li><a href="https://www.huobi.com/">Huobi 🇨🇳</a></li>
+<li><a href="https://www.btc100.com/">BTC100 🇨🇳</a></li>
+<li><a href="https://www.chbtc.com/">CHBTC 🇨🇳</a></li>
+<li><a href="https://www.dabtc.com/">Dabtc 🇨🇳</a></li>
+<li><a href="https://www.btctrade.com/">BTC Trade 🇨🇳</a></li>
+<li><a href="https://yunbi.com">Yunbi 🇨🇳</a></li>
+<li><a href="https://bitbays.com">Bitbays 🇨🇳</a></li>
+<li><a href="http://www.btc38.com/">BTC38 🇨🇳</a></li>
+<li><a href="https://bter.com">Bter 🇨🇳</a></li>
+</ul>
+<h4 id="japan--korea--other-asia"><a class="header" href="#japan--korea--other-asia">Japan / Korea / Other Asia</a></h4>
+<ul>
+<li><a href="https://coincheck.com/?c=_aI3PKBrW6U">Coincheck 🇯🇵</a> 🍭</li>
+<li><a href="https://bitflyer.jp/">BitFlyer 🇯🇵</a></li>
+<li><a href="https://www.btcbox.co.jp/">BTC Box 🇯🇵</a></li>
+<li><a href="https://www.quoine.com/">Quoine 🇯🇵</a> - trading program</li>
+<li><a href="https://zaif.jp/">Zaif 🇯🇵</a></li>
+<li><a href="https://www.korbit.co.kr/">Korbit 🇰🇷</a></li>
+<li><a href="https://bx.in.th/">BX Thailand 🇹🇭</a></li>
+<li><a href="https://vip.bitcoin.co.id/ref/imbaniac">Bitcoin.co.id 🇮🇩</a> 🍭</li>
+</ul>
+<h4 id="cis"><a class="header" href="#cis">CIS</a></h4>
+<ul>
+<li><a href="https://kuna.io/">Kuna 🇺🇦</a></li>
+</ul>
+<h4 id="middle-east--africa"><a class="header" href="#middle-east--africa">Middle East / Africa</a></h4>
+<ul>
+<li><a href="https://www.bit2c.co.il/">Bit2c 🇮🇱</a></li>
+<li><a href="https://www.nairaex.com/">Nairaex</a> - Nigerian exchange</li>
+</ul>
+<h3 id="payments--lending"><a class="header" href="#payments--lending">Payments / Lending</a></h3>
+<ul>
+<li><a href="https://www.e-coin.io/?ref=bb5f6a0f682f485ca396da4a002c6777">Ecoin</a> - free virtual card in mobile app 🍭</li>
+<li><a href="https://bitpay.com/">Bitpay</a> - accept bitcoin, store and spend bitcoin securely, or turn bitcoin into dollars</li>
+<li><a href="https://ripple.com/">Ripple</a> - instant, certain, low-cost international payments</li>
+<li><a href="https://www.circle.com">Circle</a> - peer-to-peer payments with traditional fiat currencies on blockchain</li>
+<li><a href="https://tether.to/">Tether</a> - fiat currencies on the Bitcoin blockchain</li>
+<li><a href="https://www.bitpesa.co/">Bitpesa</a> - send and collect business payments, between Africa and the rest of the world</li>
+<li><a href="https://crediblefriends.com/">Crediblefriends</a> - peer-to-peer lending platform built on Bitcoin that enables anyone to quickly extend lines of credit to all of their trusted friends</li>
+<li><a href="https://btcjam.com/">BTC Jam</a> - borrow and lend using Bitcoin</li>
+<li><a href="https://www.bitbond.com/?a=3T8K669VWY">Bitbond</a> - invest and borrow (mainly for small business) 🍭</li>
+</ul>
+<h3 id="jobs"><a class="header" href="#jobs">Jobs</a></h3>
+<ul>
+<li><a href="https://www.reddit.com/r/Jobs4Bitcoins/">reddit.com/r/Jobs4Bitcoins</a> - bitcoin jobs board</li>
+<li><a href="http://www.xbtfreelancer.com/?ref=31381">Xbtfreelancer</a> - full-featured freelance platform 🍭 </li>
+<li><a href="https://www.bitwage.me/prelaunch?referral=Sy4H3kEwg&amp;refSource=copy">Bitwage</a> - remote job placement and wage management solutions 🍭</li>
+<li><a href="https://www.freelancer.com/jobs/bitcoin/">Freelancer.com</a> - bitcoin jobs on Freelancer</li>
+<li><a href="https://www.indeed.com/q-Bitcoin-jobs.html">Indeed.com</a> - bitcoin jobs on Indeed</li>
+<li><a href="https://coinality.com/">Coinality</a> - job board, pay in Bitcoin, Litecoin, and Dogecoin</li>
+<li><a href="https://www.cryptogrind.com/">Cryptogrind</a> - freelance platform</li>
+<li><a href="http://bitgigs.com/">Bitgigs</a> - dead-simple job board</li>
+<li><a href="http://www.bitcoin-vacancy.com/">Bitcoin-vacancy</a> - do cryptocurrency related jobs and get paid in cryptocurrencies</li>
+<li><a href="https://angel.co/bitcoin/jobs">Angel.co</a> - Bitcoin startup jobs</li>
+<li><a href="https://reinproject.org/">Rein Project</a> - decentralized freelance market on Bitcoin</li>
+<li><a href="http://ethlance.com/">Ethlance</a> - jobs pain in ethereum</li>
+<li><a href="https://blockchainjob.co/">BlockchainJob.co</a> - Find your perfect non-technical role in the Crypto space. Operations, Marketing, UX/UI Design and more.</li>
+<li><a href="https://cryptojobslist.com/">Crypto Jobs List</a> - Curated jobs from top verified blockchain companies.</li>
+<li><a href="https://cryptocurrencyjobs.co/">Cryptocurrency Jobs</a> - Find great jobs at startups that use blockchain technology.</li>
+</ul>
+<h3 id="services"><a class="header" href="#services">Services</a></h3>
+<ul>
+<li><a href="https://purse.io/?_r=WIsYgT">Purse</a> - buy orders on Amazon in exchange for Bitcoin 🍭 </li>
+<li><a href="https://go.nordvpn.net/aff_c?offer_id=15&amp;aff_id=3243">Nord VPN</a> - secure and fast VPN with good price 🍭</li>
+<li><a href="https://www.mullvad.net/">Mullvad VPN</a> - 5$/month, accepts bitcoin, works fast and smoothly</li>
+</ul>
+<h3 id="projects"><a class="header" href="#projects">Projects</a></h3>
+<ul>
+<li><a href="https://chronobank.io">Chronobank</a> - wide-ranging blockchain project, aimed at disrupting the HR/recruitment/finance industries in Uber-like way</li>
+<li><a href="https://bitnation.co/">Bitnation</a> - become a world citizen</li>
+<li><a href="https://steem.io/">Steem</a> - blockchain-based social media platform with reward system</li>
+<li><a href="https://solarcoin.org/">Solarcoin</a> - global rewards program for solar electricity generation</li>
+<li><a href="http://lazooz.org/">Lazooz</a> - decentralized transportation platform, utilising vehicles` unused space to create a variety of smart transportation solutions</li>
+<li><a href="http://www.synereo.com/">Synereo</a> - blockchain content distribution platform with reward system and goal to change the decentralized future of social networking</li>
+<li><a href="https://bnktothefuture.com/">BnkToTheFuture</a> - blockchain crowdfunding platform</li>
+<li><a href="https://storj.io/">Storj</a> - blockchain end-to-end encrypted, distributed object storage. Free while in beta</li>
+<li><a href="http://www.chronicled.com/">Chronicled</a> - link any physical product to its digital identity on a blockchain</li>
+<li><a href="http://tallysticks.io/">Tallysticks</a> - automate the invoicing and the invoice financing processes, making it easier, cheaper, faster and more transparent</li>
+<li><a href="https://airbitz.co/">Airbitz</a> - single-signon security platform for blockchain apps</li>
+<li><a href="https://tokenly.com/">Tokenly</a> - digital representation of your good whether it’s a trading card, song, movie, game, loyalty point, membership, and more</li>
+<li><a href="http://loyyal.com/">Loyyal</a> - universal loyalty and rewards platform, built with blockchain and smart contract technology</li>
+<li><a href="https://openbazaar.org/">Open Bazaar</a> - pear-to-pear marketplace</li>
+<li><a href="http://rarepepedirectory.com/">Rare Pepe Directory</a> - rare pepes tokens on the blockchain 🐸</li>
+<li><a href="https://golem.network/">Golem</a> - global, open sourced, decentralized supercomputer that anyone can access</li>
+<li><a href="https://www.ascribe.io/">Ascribe</a> - decentralized content registry for for artists and creators</li>
+<li><a href="https://blockai.com/">Blockai</a> - claim the copyright for your art (mainly photos). Works with instagram</li>
+<li><a href="https://crypto-copyright.com/">Crypto-copyright</a> - proof of ownership for 4mBTC</li>
+<li><a href="https://stampery.com/">Stampery</a> - data certification for enterprises</li>
+<li><a href="https://www.everledger.io/">Everledger</a> - permanent ledger for diamond certification</li>
+<li><a href="https://followmyvote.com/">Follow my vote</a> - blockchain voting platform</li>
+<li><a href="http://www.borderless.tech/">Borderless</a> - coalition of globally accessible governance services forged out of smart contracts</li>
+<li><a href="https://www.otonomos.com/">Otonomos</a> - setup and govern companies around the world with online control panel</li>
+<li><a href="http://democracy.earth/">Democracy Earth</a> - governance in a post nation-state world</li>
+<li><a href="https://golos.io/">Golos</a> - russian fork of steem.it</li>
+<li><a href="https://aragon.one/">Aragon</a> - disintermediate the creation and maintaince of companies and other organizational structures. Based on Ethereum.</li>
+<li><a href="https://starbase.co/">StarBase</a> - token based global crowdfunding and crowdsourcing platform</li>
+<li><a href="https://gnosis.pm/">Gnosis</a> - make complex predictions with an easy to use prediction market (Upcoming)</li>
+<li><a href="https://melonport.com/">Melon</a> - Blockchain Software for Asset Management</li>
+<li><a href="https://github.com/yfgeek/BlockVotes">BlockVotes</a> - E-voting system based on ring signatures</li>
+</ul>
+<h3 id="games"><a class="header" href="#games">Games</a></h3>
+<ul>
+<li><a href="https://www.rollin.io/ref/102z">Rollin</a> - provably fair dice game 🍭</li>
+<li><a href="https://firstblood.io">First blood</a> - eSports reward platform</li>
+<li><a href="https://coinpalace.io">Coinpalace</a> - classical casino with games on Bitcoin. Not fair chances</li>
+<li><a href="https://edgeless.io/">Edgeless</a> - Ethereum smart contract-based casino with 0% house edge (ICO)</li>
+</ul>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Blazor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="BridgeNET.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Blazor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="BridgeNET.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

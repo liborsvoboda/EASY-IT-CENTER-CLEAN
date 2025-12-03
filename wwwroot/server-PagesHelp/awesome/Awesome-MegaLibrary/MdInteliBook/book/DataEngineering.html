@@ -1,0 +1,532 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DataEngineering - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html" class="active"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="awesome-data-engineering"><a class="header" href="#awesome-data-engineering">Awesome Data Engineering</a></h1>
+<p>A curated list of data engineering tools for software developers <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></a></p>
+<p>List of content</p>
+<ol>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#data-ingestion">Ingestion</a></li>
+<li><a href="#file-system">File System</a></li>
+<li><a href="#serialization-format">Serialization format</a></li>
+<li><a href="#stream-processing">Stream Processing</a></li>
+<li><a href="#batch-processing">Batch Processing</a></li>
+<li><a href="#charts-and-dashboards">Charts and Dashboards</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#elk-elastic-logstash-kibana">ELK Elastic Logstash Kibana</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#community">Community</a></li>
+</ol>
+<h1 id="databases"><a class="header" href="#databases">Databases</a></h1>
+<ul>
+<li>Relational
+<ul>
+<li><a href="https://github.com/rqlite/rqlite">RQLite</a> Replicated SQLite using the Raft consensus protocol</li>
+<li><a href="https://www.mysql.com/">MySQL</a> The world's most popular open source database.
+<ul>
+<li><a href="https://github.com/pingcap/tidb">TiDB</a> TiDB is a distributed NewSQL database compatible with MySQL protocol</li>
+<li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">Percona XtraBackup</a> Percona XtraBackup is a free, open source, complete online backup solution for all versions of Percona Server, MySQL® and MariaDB®</li>
+<li><a href="https://github.com/pinterest/mysql_utils">mysql_utils</a> Pinterest MySQL Management Tools</li>
+</ul>
+</li>
+<li><a href="https://mariadb.org/">MariaDB</a> An enhanced, drop-in replacement for MySQL.</li>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a> The world's most advanced open source database.</li>
+<li><a href="https://aws.amazon.com/rds/">Amazon RDS</a> Amazon RDS makes it easy to set up, operate, and scale a relational database in the cloud. </li>
+<li><a href="https://crate.io/">Crate.IO</a> Scalable SQL database with the NOSQL goodies.</li>
+</ul>
+</li>
+<li>Key-Value
+<ul>
+<li><a href="https://redis.io/">Redis</a> An open source, BSD licensed, advanced key-value cache and store.</li>
+<li><a href="http://docs.basho.com/riak/kv/">Riak</a> A distributed database designed to deliver maximum data availability by distributing data across multiple servers.</li>
+<li><a href="https://aws.amazon.com/dynamodb/">AWS DynamoDB</a> A fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.</li>
+<li><a href="https://github.com/rescrv/HyperDex">HyperDex</a> HyperDex is a scalable, searchable key-value store. Deprecated.</li>
+<li><a href="http://ssdb.io">SSDB</a> A high performance NoSQL database supporting many data structures, an alternative to Redis</li>
+<li><a href="https://github.com/alticelabs/kyoto">Kyoto Tycoon</a> Kyoto Tycoon is a lightweight network server on top of the Kyoto Cabinet key-value database, built for high-performance and concurrency</li>
+<li><a href="https://github.com/iondbproject/iondb">IonDB</a> A key-value store for microcontroller and IoT applications</li>
+</ul>
+</li>
+<li>Column
+<ul>
+<li><a href="https://cassandra.apache.org/">Cassandra</a> The right choice when you need scalability and high availability without compromising performance.
+<ul>
+<li><a href="https://www.ecyrd.com/cassandracalculator/">Cassandra Calculator</a> This simple form allows you to try out different values for your Apache Cassandra cluster and see what the impact is for your application.</li>
+<li><a href="https://github.com/pcmanus/ccm">CCM</a> A script to easily create and destroy an Apache Cassandra cluster on localhost</li>
+<li><a href="https://github.com/scylladb/scylla">ScyllaDB</a> NoSQL data store using the seastar framework, compatible with Apache Cassandra https://www.scylladb.com/</li>
+</ul>
+</li>
+<li><a href="https://hbase.apache.org/">HBase</a> The Hadoop database, a distributed, scalable, big data store.</li>
+<li><a href="https://aws.amazon.com/redshift/">AWS Redshift</a> A fast, fully managed, petabyte-scale data warehouse that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools.</li>
+<li><a href="https://github.com/filodb/FiloDB">FiloDB</a> Distributed. Columnar. Versioned. Streaming. SQL.</li>
+<li><a href="https://www.vertica.com">Vertica</a> Distributed, MPP columnar database with extensive analytics SQL.</li>
+</ul>
+</li>
+<li>Document
+<ul>
+<li><a href="https://www.mongodb.com">MongoDB</a> An open-source, document database designed for ease of development and scaling. 
+<ul>
+<li><a href="https://www.percona.com/software/mongo-database/percona-server-for-mongodb">Percona Server for MongoDB</a> Percona Server for MongoDB® is a free, enhanced, fully compatible, open source, drop-in replacement for the MongoDB® Community Edition that includes enterprise-grade features and functionality.</li>
+<li><a href="https://github.com/rain1017/memdb">MemDB</a> Distributed Transactional In-Memory Database (based on MongoDB)</li>
+</ul>
+</li>
+<li><a href="https://www.elastic.co/">Elasticsearch</a> Search &amp; Analyze Data in Real Time.</li>
+<li><a href="https://www.couchbase.com/">Couchbase</a> The highest performing NoSQL distributed database.</li>
+<li><a href="https://rethinkdb.com/">RethinkDB</a> The open-source database for the realtime web.</li>
+<li><a href="https://ravendb.net/">RavenDB</a> Fully Transactional NoSQL Document Database.</li>
+</ul>
+</li>
+<li>Graph
+<ul>
+<li><a href="https://neo4j.com/">Neo4j</a> The world’s leading graph database.</li>
+<li><a href="https://orientdb.com">OrientDB</a> 2nd Generation Distributed Graph Database with the flexibility of Documents in one product with an Open Source commercial friendly license.</li>
+<li><a href="https://www.arangodb.com/">ArangoDB</a> A distributed free and open-source database with a flexible data model for documents, graphs, and key-values. </li>
+<li><a href="https://titan.thinkaurelius.com">Titan</a> A scalable graph database optimized for storing and querying graphs containing hundreds of billions of vertices and edges distributed across a multi-machine cluster.</li>
+<li><a href="https://github.com/twitter-archive/flockdb">FlockDB</a> A distributed, fault-tolerant graph database by Twitter. Deprecated.</li>
+</ul>
+</li>
+<li>Distributed
+<ul>
+<li><a href="https://www.datomic.com">DAtomic</a> The fully transactional, cloud-ready, distributed database.</li>
+<li><a href="https://geode.apache.org/">Apache Geode</a> An open source, distributed, in-memory database for scale-out applications.</li>
+<li><a href="https://github.com/gchq/Gaffer">Gaffer </a> A large-scale graph database</li>
+</ul>
+</li>
+<li>Timeseries
+<ul>
+<li><a href="https://github.com/influxdata/influxdb">InfluxDB</a> Scalable datastore for metrics, events, and real-time analytics.</li>
+<li><a href="https://github.com/OpenTSDB/opentsdb">OpenTSDB</a> A scalable, distributed Time Series Database.</li>
+<li><a href="https://github.com/kairosdb/kairosdb">kairosdb</a> Fast scalable time series database.</li>
+<li><a href="https://github.com/spotify/heroic">Heroic</a> A scalable time series database based on Cassandra and Elasticsearch, by Spotify</li>
+<li><a href="https://github.com/apache/incubator-druid">Druid</a> Column oriented distributed data store ideal for powering interactive applications</li>
+<li><a href="http://basho.com/products/riak-ts/">Riak-TS</a> Riak TS is the only enterprise-grade NoSQL time series database optimized specifically for IoT and Time Series data</li>
+<li><a href="https://github.com/akumuli/Akumuli">Akumuli</a> Akumuli is a numeric time-series database. It can be used to capture, store and process time-series data in real-time. The word &quot;akumuli&quot; can be translated from esperanto as &quot;accumulate&quot;.</li>
+<li><a href="https://github.com/Pardot/Rhombus">Rhombus</a> A time-series object store for Cassandra that handles all the complexity of building wide row indexes.</li>
+<li><a href="https://github.com/dalmatinerdb/dalmatinerdb">Dalmatiner DB</a> Fast distributed metrics database</li>
+<li><a href="https://github.com/rackerlabs/blueflood">Blueflood</a> A distributed system designed to ingest and process time series data</li>
+<li><a href="https://github.com/NationalSecurityAgency/timely">Timely</a> Timely is a time series database application that provides secure access to time series data based on Accumulo and Grafana.</li>
+</ul>
+</li>
+<li>Other
+<ul>
+<li><a href="https://github.com/tarantool/tarantool/">Tarantool</a> Tarantool is an in-memory database and application server.</li>
+<li><a href="https://github.com/greenplum-db/gpdb">GreenPlum</a> The Greenplum Database (GPDB) is an advanced, fully featured, open source data warehouse. It provides powerful and rapid analytics on petabyte scale data volumes.</li>
+<li><a href="https://github.com/cayleygraph/cayley">cayley</a> An open-source graph database. Google.</li>
+<li><a href="https://github.com/SnappyDataInc/snappydata">Snappydata</a> SnappyData: OLTP + OLAP Database built on Apache Spark</li>
+</ul>
+</li>
+</ul>
+<h1 id="data-ingestion"><a class="header" href="#data-ingestion">Data Ingestion</a></h1>
+<ul>
+<li><a href="https://kafka.apache.org/">Kafka</a> Publish-subscribe messaging rethought as a distributed commit log.
+<ul>
+<li><a href="https://github.com/confluentinc/bottledwater-pg">BottledWater</a> Change data capture from PostgreSQL into Kafka. Deprecated.</li>
+<li><a href="https://github.com/airbnb/kafkat">kafkat</a> Simplified command-line administration for Kafka brokers</li>
+<li><a href="https://github.com/edenhill/kafkacat">kafkacat</a> Generic command line non-JVM Apache Kafka producer and consumer</li>
+<li><a href="https://github.com/xstevens/pg_kafka">pg-kafka</a> A PostgreSQL extension to produce messages to Apache Kafka</li>
+<li><a href="https://github.com/edenhill/librdkafka">librdkafka</a> The Apache Kafka C/C++ library</li>
+<li><a href="https://github.com/wurstmeister/kafka-docker">kafka-docker</a> Kafka in Docker</li>
+<li><a href="https://github.com/yahoo/kafka-manager">kafka-manager</a> A tool for managing Apache Kafka</li>
+<li><a href="https://github.com/SOHU-Co/kafka-node">kafka-node</a> Node.js client for Apache Kafka 0.8</li>
+<li><a href="https://github.com/pinterest/secor">Secor</a> Pinterest's Kafka to S3 distributed consumer</li>
+<li><a href="https://github.com/uber/kafka-logger">Kafka-logger</a> Kafka-winston logger for nodejs from uber</li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/kinesis/">AWS Kinesis</a> A fully managed, cloud-based service for real-time data processing over large, distributed data streams.</li>
+<li><a href="https://www.rabbitmq.com/">RabbitMQ</a> Robust messaging for applications.</li>
+<li><a href="https://www.fluentd.org">FluentD</a> An open source data collector for unified logging layer.</li>
+<li><a href="https://www.embulk.org">Embulk</a> An open source bulk data loader that helps data transfer between various databases, storages, file formats, and cloud services.</li>
+<li><a href="https://sqoop.apache.org">Apache Sqoop</a> A tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases.</li>
+<li><a href="https://github.com/mozilla-services/heka">Heka</a> Data Acquisition and Processing Made Easy. Deprecated.</li>
+<li><a href="https://github.com/apache/incubator-gobblin">Gobblin</a> Universal data ingestion framework for Hadoop from Linkedin</li>
+<li><a href="https://nakadi.io">Nakadi</a> Nakadi is an open source event messaging platform that provides a REST API on top of Kafka-like queues.</li>
+<li><a href="http://www.pravega.io">Pravega</a> Pravega provides a new storage abstraction - a stream - for continuous and unbounded data.</li>
+<li><a href="https://pulsar.apache.org/">Apache Pulsar</a> Apache Pulsar is an open-source distributed pub-sub messaging system.</li>
+<li><a href="https://github.com/awslabs/aws-data-wrangler">AWS Data Wranlger</a> Utility belt to handle data on AWS.</li>
+</ul>
+<h1 id="file-system"><a class="header" href="#file-system">File System</a></h1>
+<ul>
+<li><a href="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html">HDFS</a>
+<ul>
+<li><a href="https://github.com/spotify/snakebite">Snakebite</a> A pure python HDFS client</li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/s3/">AWS S3</a>
+<ul>
+<li><a href="https://github.com/RaRe-Technologies/smart_open">smart_open</a> Utils for streaming large files (S3, HDFS, gzip, bz2)</li>
+</ul>
+</li>
+<li><a href="https://www.alluxio.org/">Alluxio</a> Alluxio is a memory-centric distributed storage system enabling reliable data sharing at memory-speed across cluster frameworks, such as Spark and MapReduce</li>
+<li><a href="https://ceph.com/">CEPH</a> Ceph is a unified, distributed storage system designed for excellent performance, reliability and scalability</li>
+<li><a href="https://www.orangefs.org/">OrangeFS</a> Orange File System is a branch of the Parallel Virtual File System</li>
+<li><a href="https://github.com/tuplejump/snackfs-release">SnackFS</a> SnackFS is our bite-sized, lightweight HDFS compatible FileSystem built over Cassandra</li>
+<li><a href="https://www.gluster.org/">GlusterFS</a> Gluster Filesystem</li>
+<li><a href="http://www.xtreemfs.org/">XtreemFS</a> fault-tolerant distributed file system for all storage needs</li>
+<li><a href="https://github.com/chrislusf/seaweedfs">SeaweedFS</a> Seaweed-FS is a simple and highly scalable distributed file system. There are two objectives: to store billions of files! to serve the files fast! Instead of supporting full POSIX file system semantics, Seaweed-FS choose to implement only a key~file mapping. Similar to the word &quot;NoSQL&quot;, you can call it as &quot;NoFS&quot;.</li>
+<li><a href="https://github.com/s3ql/s3ql/">S3QL</a> S3QL is a file system that stores all its data online using storage services like Google Storage, Amazon S3, or OpenStack.</li>
+<li><a href="https://lizardfs.com/">LizardFS</a> LizardFS Software Defined Storage is a distributed, parallel, scalable, fault-tolerant, Geo-Redundant and highly available file system.</li>
+</ul>
+<h1 id="serialization-format"><a class="header" href="#serialization-format">Serialization format</a></h1>
+<ul>
+<li><a href="https://avro.apache.org">Apache Avro</a> Apache Avro™ is a data serialization system</li>
+<li><a href="https://parquet.apache.org">Apache Parquet</a> Apache Parquet is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
+<ul>
+<li><a href="https://github.com/google/snappy">Snappy</a> A fast compressor/decompressor. Used with Parquet</li>
+<li><a href="https://zlib.net/pigz/">PigZ</a> A parallel implementation of gzip for modern
+multi-processor, multi-core machines</li>
+</ul>
+</li>
+<li><a href="https://orc.apache.org/">Apache ORC</a> The smallest, fastest columnar storage for Hadoop workloads </li>
+<li><a href="https://thrift.apache.org">Apache Thrift</a> The Apache Thrift software framework, for scalable cross-language services development</li>
+<li><a href="https://github.com/protocolbuffers/protobuf">ProtoBuf</a> Protocol Buffers - Google's data interchange format</li>
+<li><a href="https://wiki.apache.org/hadoop/SequenceFile">SequenceFile</a> SequenceFile is a flat file consisting of binary key/value pairs. It is extensively used in MapReduce as input/output formats</li>
+<li><a href="https://github.com/EsotericSoftware/kryo">Kryo</a> Kryo is a fast and efficient object graph serialization framework for Java</li>
+</ul>
+<h1 id="stream-processing"><a class="header" href="#stream-processing">Stream Processing</a></h1>
+<ul>
+<li><a href="https://beam.apache.org/">Apache Beam</a> Apache Beam is a unified programming model that implements both batch and streaming data processing jobs that run on many execution engines.</li>
+<li><a href="https://spark.apache.org/streaming/">Spark Streaming</a> Spark Streaming makes it easy to build scalable fault-tolerant streaming applications.</li>
+<li><a href="https://flink.apache.org/">Apache Flink</a> Apache Flink is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.</li>
+<li><a href="https://storm.apache.org">Apache Storm</a> Apache Storm is a free and open source distributed realtime computation system</li>
+<li><a href="https://samza.apache.org">Apache Samza</a> Apache Samza is a distributed stream processing framework</li>
+<li><a href="https://nifi.apache.org/">Apache NiFi</a> is an easy to use, powerful, and reliable system to process and distribute data</li>
+<li><a href="https://voltdb.com/">VoltDB</a> VoltDb is an ACID-compliant RDBMS which uses a <a href="https://en.wikipedia.org/wiki/Shared-nothing_architecture">shared nothing architecture</a>.</li>
+<li><a href="https://github.com/pipelinedb/pipelinedb">PipelineDB</a> The Streaming SQL Database</li>
+<li><a href="https://cloud.spring.io/spring-cloud-dataflow/">Spring Cloud Dataflow</a> Streaming and tasks execution between Spring Boot apps</li>
+<li><a href="https://www.bonobo-project.org/">Bonobo</a> Bonobo is a data-processing toolkit for python 3.5+</li>
+<li><a href="https://github.com/robinhood/faust">Robinhood's Faust</a> Forever scalable event processing &amp; in-memory durable K/V store as a library with asyncio &amp; static typing.</li>
+</ul>
+<h1 id="batch-processing"><a class="header" href="#batch-processing">Batch Processing</a></h1>
+<ul>
+<li><a href="https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html">Hadoop MapReduce</a> Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner</li>
+<li><a href="https://spark.apache.org/">Spark</a>
+<ul>
+<li><a href="https://spark-packages.org">Spark Packages</a> A community index of packages for Apache Spark</li>
+<li><a href="https://github.com/Stratio/deep-spark">Deep Spark</a> Connecting Apache Spark with different data stores. Deprecated.</li>
+<li><a href="http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPIExamples.html">Spark RDD API Examples</a> by Zhen He</li>
+<li><a href="https://livy.incubator.apache.org">Livy</a> Livy, the REST Spark Server</li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/emr/">AWS EMR</a> A web service that makes it easy to quickly and cost-effectively process vast amounts of data.</li>
+<li><a href="https://tez.apache.org/">Tez</a> An application framework which allows for a complex directed-acyclic-graph of tasks for processing data.</li>
+<li><a href="https://github.com/asavinov/bistro">Bistro</a> is a light-weight engine for general-purpose data processing including both batch and stream analytics. It is based on a novel unique data model, which represents data via <em>functions</em> and processes data via <em>columns operations</em> as opposed to having only set operations in conventional approaches like MapReduce or SQL.</li>
+</ul>
+<ul>
+<li>Batch ML
+<ul>
+<li><a href="https://www.h2o.ai/">H2O</a> Fast scalable machine learning API for smarter applications.</li>
+<li><a href="https://mahout.apache.org/">Mahout</a> An environment for quickly creating scalable performant machine learning applications.</li>
+<li><a href="https://spark.apache.org/docs/latest/ml-guide.html">Spark MLlib</a> Spark’s scalable machine learning library consisting of common learning algorithms and utilities, including classification, regression, clustering, collaborative filtering, dimensionality reduction, as well as underlying optimization primitives.</li>
+</ul>
+</li>
+<li>Batch Graph
+<ul>
+<li><a href="https://turi.com/products/create/docs/">GraphLab Create</a> A machine learning platform that enables data scientists and app developers to easily create intelligent apps at scale.</li>
+<li><a href="https://giraph.apache.org/">Giraph</a> An iterative graph processing system built for high scalability. </li>
+<li><a href="https://spark.apache.org/graphx/">Spark GraphX</a> Apache Spark's API for graphs and graph-parallel computation. </li>
+</ul>
+</li>
+<li>Batch SQL
+<ul>
+<li><a href="https://prestodb.github.io/docs/current/index.html">Presto</a> A distributed SQL query engine designed to query large data sets distributed over one or more heterogeneous data sources.</li>
+<li><a href="https://hive.apache.org">Hive</a> Data warehouse software facilitates querying and managing large datasets residing in distributed storage. 
+<ul>
+<li><a href="https://github.com/apache/incubator-hivemall">Hivemall</a> Scalable machine learning library for Hive/Hadoop.</li>
+<li><a href="https://github.com/dropbox/PyHive">PyHive</a> Python interface to Hive and Presto.</li>
+</ul>
+</li>
+<li><a href="https://drill.apache.org/">Drill</a> Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage.</li>
+</ul>
+</li>
+</ul>
+<h1 id="charts-and-dashboards"><a class="header" href="#charts-and-dashboards">Charts and Dashboards</a></h1>
+<ul>
+<li><a href="https://www.highcharts.com/">Highcharts</a> A charting library written in pure JavaScript, offering an easy way of adding interactive charts to your web site or web application.</li>
+<li><a href="https://www.zingchart.com/">ZingChart</a> Fast JavaScript charts for any data set.</li>
+<li><a href="https://c3js.org">C3.js</a> D3-based reusable chart library.</li>
+<li><a href="https://d3js.org/">D3.js</a> A JavaScript library for manipulating documents based on data.
+<ul>
+<li><a href="https://d3plus.org">D3Plus</a> D3's simplier, easier to use cousin. Mostly predefined templates that you can just plug data in.</li>
+</ul>
+</li>
+<li><a href="http://smoothiecharts.org">SmoothieCharts</a> A JavaScript Charting Library for Streaming Data.</li>
+<li><a href="https://github.com/stitchfix/pyxley">PyXley</a> Python helpers for building dashboards using Flask and React</li>
+<li><a href="https://github.com/plotly/dash">Plotly</a> Flask, JS, and CSS boilerplate for interactive, web-based visualization apps in Python</li>
+<li><a href="https://github.com/apache/incubator-superset">Apache Superset</a> Apache Superset (incubating) is a modern, enterprise-ready business intelligence web application</li>
+<li><a href="https://redash.io/">Redash</a> Make Your Company Data Driven. Connect to any data source, easily visualize and share your data.</li>
+<li><a href="https://github.com/metabase/metabase">Metabase</a> Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</li>
+<li><a href="http://www.pyqtgraph.org/">PyQtGraph</a> PyQtGraph is a pure-python graphics and GUI library built on PyQt4 / PySide and numpy. It is intended for use in mathematics / scientific / engineering applications.</li>
+</ul>
+<h1 id="workflow"><a class="header" href="#workflow">Workflow</a></h1>
+<ul>
+<li><a href="https://github.com/spotify/luigi">Luigi</a> Luigi is a Python module that helps you build complex pipelines of batch jobs.
+<ul>
+<li><a href="https://github.com/seatgeek/cronq">CronQ</a> An application cron-like system. <a href="https://chairnerd.seatgeek.com/building-out-the-seatgeek-data-pipeline/">Used</a> w/Luige. Deprecated.</li>
+</ul>
+</li>
+<li><a href="https://www.cascading.org/">Cascading</a> Java based application development platform.</li>
+<li><a href="https://github.com/apache/airflow">Airflow</a> Airflow is a system to programmaticaly author, schedule and monitor data pipelines.</li>
+<li><a href="https://azkaban.github.io/">Azkaban</a> Azkaban is a batch workflow job scheduler created at LinkedIn to run Hadoop jobs. Azkaban resolves the ordering through job dependencies and provides an easy to use web user interface to maintain and track your workflows. </li>
+<li><a href="https://oozie.apache.org/">Oozie</a> Oozie is a workflow scheduler system to manage Apache Hadoop jobs</li>
+<li><a href="https://github.com/pinterest/pinball">Pinball</a> DAG based workflow manager. Job flows are defined programmaticaly in Python. Support output passing between jobs.</li>
+<li><a href="https://github.com/dagster-io/dagster">Dagster</a> Dagster is an open-source Python library for building data applications.</li>
+</ul>
+<h1 id="elk-elastic-logstash-kibana"><a class="header" href="#elk-elastic-logstash-kibana">ELK Elastic Logstash Kibana</a></h1>
+<ul>
+<li><a href="https://github.com/pblittle/docker-logstash">docker-logstash</a> A highly configurable logstash (1.4.4) docker image running Elasticsearch (1.7.0) and Kibana (3.1.2).</li>
+<li><a href="https://github.com/jprante/elasticsearch-jdbc">elasticsearch-jdbc</a> JDBC importer for Elasticsearch</li>
+<li><a href="https://github.com/zombodb/zombodb">ZomboDB</a> Postgres Extension that allows creating an index backed by Elasticsearch</li>
+</ul>
+<h1 id="docker"><a class="header" href="#docker">Docker</a></h1>
+<ul>
+<li><a href="https://github.com/redbooth/gockerize">Gockerize</a> Package golang service into minimal docker containers</li>
+<li><a href="https://github.com/ClusterHQ/flocker">Flocker</a> Easily manage Docker containers &amp; their data</li>
+<li><a href="https://rancher.com/rancher-os/">Rancher</a> RancherOS is a 20mb Linux distro that runs the entire OS as Docker containers</li>
+<li><a href="https://www.kontena.io/">Kontena</a> Application Containers for Masses</li>
+<li><a href="https://github.com/weaveworks/weave">Weave</a> Weaving Docker containers into applications</li>
+<li><a href="https://github.com/CenturyLinkLabs/zodiac">Zodiac</a> A lightweight tool for easy deployment and rollback of dockerized applications</li>
+<li><a href="https://github.com/google/cadvisor">cAdvisor</a> Analyzes resource usage and performance characteristics of running containers</li>
+<li><a href="https://github.com/figadore/micro-s3-persistence">Micro S3 persistence</a> Docker microservice for saving/restoring volume data to S3</li>
+<li><a href="https://github.com/grammarly/rocker-compose">Rocker-compose</a> Docker composition tool with idempotency features for deploying apps composed of multiple containers. Deprecated.</li>
+<li><a href="https://github.com/hashicorp/nomad">Nomad</a> Nomad is a cluster manager, designed for both long lived services and short lived batch processing workloads</li>
+<li><a href="https://imagelayers.io/">ImageLayers</a> Vizualize docker images and the layers that compose them</li>
+</ul>
+<h1 id="datasets"><a class="header" href="#datasets">Datasets</a></h1>
+<h2 id="realtime"><a class="header" href="#realtime">Realtime</a></h2>
+<ul>
+<li><a href="https://developer.twitter.com/en/docs/tweets/filter-realtime/overview">Twitter Realtime</a> The Streaming APIs give developers low latency access to Twitter’s global stream of Tweet data.</li>
+<li><a href="https://github.com/Interana/eventsim">Eventsim</a> Event data simulator. Generates a stream of pseudo-random events from a set of users, designed to simulate web traffic.</li>
+<li><a href="https://www.reddit.com/r/datasets/comments/3mk1vg/realtime_data_is_available_including_comments/">Reddit</a> Real-time data is available including comments, submissions and links posted to reddit</li>
+</ul>
+<h2 id="data-dumps"><a class="header" href="#data-dumps">Data Dumps</a></h2>
+<ul>
+<li><a href="https://www.gharchive.org/">GitHub Archive</a> GitHub's public timeline since 2011, updated every hour</li>
+<li><a href="https://commoncrawl.org/">Common Crawl</a> Open source repository of web crawl data</li>
+<li><a href="https://dumps.wikimedia.org/enwiki/latest/">Wikipedia</a> Wikipedia's complete copy of all wikis, in the form of wikitext source and metadata embedded in XML. A number of raw database tables in SQL form are also available.</li>
+</ul>
+<h1 id="monitoring"><a class="header" href="#monitoring">Monitoring</a></h1>
+<h2 id="prometheus"><a class="header" href="#prometheus">Prometheus</a></h2>
+<ul>
+<li><a href="https://github.com/prometheus/prometheus">Prometheus.io</a> An open-source service monitoring system and time series database</li>
+<li><a href="https://github.com/prometheus/haproxy_exporter">HAProxy Exporter</a> Simple server that scrapes HAProxy stats and exports them via HTTP for Prometheus consumption</li>
+</ul>
+<h1 id="community"><a class="header" href="#community">Community</a></h1>
+<h2 id="forums"><a class="header" href="#forums">Forums</a></h2>
+<ul>
+<li><a href="https://www.reddit.com/r/dataengineering/">/r/dataengineering</a> News, tips and background on Data Engineering</li>
+<li><a href="https://www.reddit.com/r/ETL/">/r/etl</a> Subreddit focused on ETL</li>
+</ul>
+<h2 id="conferences"><a class="header" href="#conferences">Conferences</a></h2>
+<ul>
+<li><a href="https://www.datacouncil.ai/about">DataEngConf</a> DataEngConf is the first technical conference that bridges the gap between data scientists, data engineers and data analysts.</li>
+</ul>
+<h2 id="podcasts"><a class="header" href="#podcasts">Podcasts</a></h2>
+<ul>
+<li><a href="https://www.dataengineeringpodcast.com/">Data Engineering Podcast</a> The show about modern data infrastructure.</li>
+</ul>
+<p>Cheers to <a href="http://xyz.insightdataengineering.com/blog/pipeline_map.html">The Data Engineering Ecosystem: An Interactive Map</a></p>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list. Created by <a href="https://insightdataengineering.com">Insight Data Engineering</a> fellows.</p>
+<h2 id="license"><a class="header" href="#license">License</a></h2>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /></a></p>
+<p>To the extent possible under law, <a href="https://github.com/igorbarinov/">Igor Barinov</a> has waived all copyright and related or neighboring rights to this work.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Csharp.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="DbTools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Csharp.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="DbTools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

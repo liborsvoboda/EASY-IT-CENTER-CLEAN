@@ -1,0 +1,428 @@
+﻿[
+  {
+    "title": "3d-card-hover",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\3d-card-hover\\index.html"
+  },
+  {
+    "title": "3d-text",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\3d-text\\index.html"
+  },
+  {
+    "title": "ajax",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\ajax\\index.html"
+  },
+  {
+    "title": "Album",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Album\\index.html"
+  },
+  {
+    "title": "background-effect1",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\background-effect1\\index.html"
+  },
+  {
+    "title": "background-effect2",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\background-effect2\\index.html"
+  },
+  {
+    "title": "background-icons",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\background-icons\\index.html"
+  },
+  {
+    "title": "Blog",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Blog\\index.html"
+  },
+  {
+    "title": "calculator",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\calculator\\index.html"
+  },
+  {
+    "title": "card-hover-1",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\card-hover-1\\index.html"
+  },
+  {
+    "title": "Carousel",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Carousel\\index.html"
+  },
+  {
+    "title": "ckeditor",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\ckeditor\\index.html"
+  },
+  {
+    "title": "clouds",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\clouds\\index.html"
+  },
+  {
+    "title": "color-schemes-2",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\colors\\color-schemes-2.html"
+  },
+  {
+    "title": "color-schemes-grayscale",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\colors\\color-schemes-grayscale.html"
+  },
+  {
+    "title": "color-schemes",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\colors\\color-schemes.html"
+  },
+  {
+    "title": "colors",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\colors\\index.html"
+  },
+  {
+    "title": "cube-custom-func",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\cube\\cube-custom-func.html"
+  },
+  {
+    "title": "cube",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\cube\\index.html"
+  },
+  {
+    "title": "Dashboard",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Dashboard\\index.html"
+  },
+  {
+    "title": "datetime",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\datetime\\index.html"
+  },
+  {
+    "title": "desktop",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\desktop\\index.html"
+  },
+  {
+    "title": "dialogs",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\dialogs\\index.html"
+  },
+  {
+    "title": "FancyTreeViewer",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\fancytreeviewer\\index.html"
+  },
+  {
+    "title": "forms",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\forms\\index.html"
+  },
+  {
+    "title": "github",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\github\\index.html"
+  },
+  {
+    "title": "local-weather",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\local-weather\\index.html"
+  },
+  {
+    "title": "pomodoro-clock",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\pomodoro-clock\\index.html"
+  },
+  {
+    "title": 404,
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\404.html"
+  },
+  {
+    "title": 500,
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\500.html"
+  },
+  {
+    "title": "buttons",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\buttons.html"
+  },
+  {
+    "title": "coming-soon",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\coming-soon.html"
+  },
+  {
+    "title": "help-center",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\help-center.html"
+  },
+  {
+    "title": "Portal",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\index.html"
+  },
+  {
+    "title": "invoice",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\invoice.html"
+  },
+  {
+    "title": "list",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\list.html"
+  },
+  {
+    "title": "lockscreen",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\lockscreen.html"
+  },
+  {
+    "title": "login",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\login.html"
+  },
+  {
+    "title": "maintenance",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\maintenance.html"
+  },
+  {
+    "title": "preloader",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\preloader.html"
+  },
+  {
+    "title": "register",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\register.html"
+  },
+  {
+    "title": "table-classes",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\table-classes.html"
+  },
+  {
+    "title": "typography",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\typography.html"
+  },
+  {
+    "title": "PortalBoard",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\PortalBoard\\index.html"
+  },
+  {
+    "title": "quote-machine",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\quote-machine\\index.html"
+  },
+  {
+    "title": "schemes",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\schemes\\index.html"
+  },
+  {
+    "title": "simon-game",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\simon-game\\index.html"
+  },
+  {
+    "title": "smoke",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\smoke\\index.html"
+  },
+  {
+    "title": "stroke-anime",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\stroke-anime\\index.html"
+  },
+  {
+    "title": "table",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\index.html"
+  },
+  {
+    "title": "table-100K",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-100K.html"
+  },
+  {
+    "title": "table-big",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-big.html"
+  },
+  {
+    "title": "table-inspector-export-custom-func",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-inspector-export-custom-func.html"
+  },
+  {
+    "title": "table-inspector-exprot-custom-func",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-inspector-exprot-custom-func.html"
+  },
+  {
+    "title": "table-json-with-header",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-json-with-header.html"
+  },
+  {
+    "title": "table-json",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-json.html"
+  },
+  {
+    "title": "table-methods",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\table\\table-methods.html"
+  },
+  {
+    "title": "third-party",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\third-party\\index.html"
+  },
+  {
+    "title": "select2",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\third-party\\select2.html"
+  },
+  {
+    "title": "tictactoe-game",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\tictactoe-game\\index.html"
+  },
+  {
+    "title": "tiles",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\tiles\\index.html"
+  },
+  {
+    "title": "ToolPanel",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\ToolPanel\\index.html"
+  },
+  {
+    "title": "tribute-page",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\tribute-page\\index.html"
+  },
+  {
+    "title": "wikipedia-viewer",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\wikipedia-viewer\\index.html"
+  },
+  {
+    "title": "animated-stroke",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\buttons\\animated-stroke\\index.html"
+  },
+  {
+    "title": "colorful-glowing",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\buttons\\colorful-glowing\\index.html"
+  },
+  {
+    "title": "glowing-checkbox",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\buttons\\glowing-checkbox\\index.html"
+  },
+  {
+    "title": "html",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\christmasBalls\\html\\index.html"
+  },
+  {
+    "title": "classic",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\clock\\analog\\classic\\index.html"
+  },
+  {
+    "title": "neumorph",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\clock\\analog\\neumorph\\index.html"
+  },
+  {
+    "title": "ckeditor",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-PagesHelp\\\\Metro-Docs\\\\MoreExamples\\examples\\Portal\\vendors\\ckeditor\\index.html"
+  }
+]

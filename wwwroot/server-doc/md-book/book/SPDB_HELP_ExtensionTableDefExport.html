@@ -1,0 +1,1970 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SP DB_HELP_ExtensionTableDefExport - EIC&amp;ESB Dokumentace</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="EasyITcenter &amp; EasySYSTEMbuilder Dokumentace">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">EIC&ESB-Globální IT Řešení na míru</li><li class="chapter-item expanded "><a href="VizeaNápadyaPostupy.html"><strong aria-hidden="true">1.</strong> Ver.9: Vize a Nápady a Postupy</a></li><li class="chapter-item expanded "><a href="HistorieReklamníchSdělení.html"><strong aria-hidden="true">2.</strong> Ver.5: Historie Reklamních Sdělení</a></li><li class="chapter-item expanded "><a href="ÚvodníInformace.html"><strong aria-hidden="true">3.</strong> Ver.22: Úvodní Informace</a></li><li class="chapter-item expanded "><a href="PřipravovanéNovinky.html"><strong aria-hidden="true">4.</strong> Ver.43: Připravované Novinky</a></li><li class="chapter-item expanded "><a href="AutomatickéFunkcinality.html"><strong aria-hidden="true">5.</strong> Ver.5: Automatické Funkcinality</a></li><li class="chapter-item expanded "><a href="DatabázeNápověda.html"><strong aria-hidden="true">6.</strong> Ver.3: Databáze Nápověda</a></li><li class="chapter-item expanded "><a href="EIC&ESB3rdNástrojeaModuly.html"><strong aria-hidden="true">7.</strong> Ver.5: EIC&ESB 3rd Nástroje a Moduly</a></li><li class="chapter-item expanded "><a href="ZpracovávánéAChangeLog.html"><strong aria-hidden="true">8.</strong> Ver.37: Zpracováváné A ChangeLog</a></li><li class="chapter-item expanded "><a href="CeníkEIC&ESBaITSlužeb.html"><strong aria-hidden="true">9.</strong> Ver.22: Ceník EIC&ESB a IT Služeb</a></li><li class="chapter-item expanded "><a href="Kontakty.html"><strong aria-hidden="true">10.</strong> Ver.2: Kontakty</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Start -DATABASE-RULE</li><li class="chapter-item expanded "><a href="WebRozcestník.html"><strong aria-hidden="true">11.</strong> Ver.8: Web Rozcestník</a></li><li class="chapter-item expanded "><a href="DBTabulkyŘešení.html"><strong aria-hidden="true">12.</strong> Ver.50: DB Tabulky Řešení</a></li><li class="chapter-item expanded "><a href="DBProceduryŘešení.html"><strong aria-hidden="true">13.</strong> Ver.49: DB Procedury Řešení</a></li><li class="chapter-item expanded "><a href="DBTriggery.html"><strong aria-hidden="true">14.</strong> Ver.47: DB Triggery</a></li><li class="chapter-item expanded "><a href="DBViewaFunkce.html"><strong aria-hidden="true">15.</strong> Ver.45: DB View a Funkce</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-Dev Pravidla</li><li class="chapter-item expanded "><a href="EICServerInstalaceWIN_LIN.html"><strong aria-hidden="true">16.</strong> Ver.15: EIC Server Instalace WIN_LIN</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="EIC-LogikaaStruktura.html"><strong aria-hidden="true">17.</strong> Ver.12: EIC - Logika a Struktura</a></li><li class="chapter-item expanded "><a href="EICUnikátníAPISlužby.html"><strong aria-hidden="true">18.</strong> Ver.8: EIC Unikátní API Služby</a></li><li class="chapter-item expanded "><a href="ZákladníKonfiguraceServeru.html"><strong aria-hidden="true">19.</strong> Ver.23: Základní Konfigurace Serveru</a></li><li class="chapter-item expanded "><a href="SeznamImpl.ModulůServeru.html"><strong aria-hidden="true">20.</strong> Ver.9: Seznam Impl. Modulů Serveru</a></li><li class="chapter-item expanded "><a href="EICXMLKomentářezProjektu.html"><strong aria-hidden="true">21.</strong> Ver.14: EIC XML Komentáře z Projektu</a></li><li class="chapter-item expanded "><a href="EICRadyprogramování.html"><strong aria-hidden="true">22.</strong> Ver.8: EIC Rady programování</a></li><li class="chapter-item expanded "><a href="APIŠablonySystému.html"><strong aria-hidden="true">23.</strong> Ver.60: API Šablony Systému</a></li><li class="chapter-item expanded "><a href="StaticWebPortál.html"><strong aria-hidden="true">24.</strong> Ver.3: Static Web Portál</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="ESB-LogikaaStuktura.html"><strong aria-hidden="true">25.</strong> Ver.5: ESB - Logika a Stuktura</a></li><li class="chapter-item expanded "><a href="SeznamImplementovanýchAgend.html"><strong aria-hidden="true">26.</strong> Ver.18:  Seznam Implementovaných Agend</a></li><li class="chapter-item expanded "><a href="SeznamukázkovýchModulůSystému.html"><strong aria-hidden="true">27.</strong> Ver.13: Seznam ukázkových Modulů Systému</a></li><li class="chapter-item expanded "><a href="ESBXMLKomentářezProjektu.html"><strong aria-hidden="true">28.</strong> Ver.6: ESB XML Komentáře z Projektu</a></li><li class="chapter-item expanded "><a href="MikročíselníkyunikátníFunkce.html"><strong aria-hidden="true">29.</strong> Ver.8: Mikročíselníky unikátní Funkce</a></li><li class="chapter-item expanded "><a href="GlobálníFunkce.html"><strong aria-hidden="true">30.</strong> Ver.9: Globální Funkce</a></li><li class="chapter-item expanded "><a href="ESBRadyprogramování.html"><strong aria-hidden="true">31.</strong> Ver.8: ESB Rady programování</a></li><li class="chapter-item expanded "><a href="XAMLŠablonySystému.html"><strong aria-hidden="true">32.</strong> Ver.63: XAML Šablony Systému</a></li><li class="chapter-item expanded "><a href="ESBTiskovéřešení.html"><strong aria-hidden="true">33.</strong> Ver.5: ESB Tiskové řešení</a></li><li class="chapter-item expanded "><a href="DoplňujícíSubProjekty.html"><strong aria-hidden="true">34.</strong> Ver.8: Doplňující SubProjekty</a></li><li class="chapter-item expanded "><a href="ESBSystemHelpLibrary.html"><strong aria-hidden="true">35.</strong> Ver.9: ESB System Help Library</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="APIŠablonySystému.html"><strong aria-hidden="true">36.</strong> Ver.62: API Šablony Systému</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="XAMLŠablonySystému.html"><strong aria-hidden="true">37.</strong> Ver.2: XAML Šablony Systému</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="GenerátoryaJejichFunkce.html"><strong aria-hidden="true">38.</strong> Ver.63: Generátory a Jejich Funkce</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIS-ESB-ClonedSmallServers</li><li class="chapter-item expanded "><a href="ExpertDocSPAManager.html"><strong aria-hidden="true">39.</strong> Ver.18: ExpertDoc SPA Manager</a></li><li class="chapter-item expanded "><a href="ExpertDocWebServer.html"><strong aria-hidden="true">40.</strong> Ver.18: ExpertDoc Web Server</a></li><li class="chapter-item expanded "><a href="ExpertDocExportSPADocWebu.html"><strong aria-hidden="true">41.</strong> Ver.21: ExpertDoc Export SPADoc Webu</a></li><li class="chapter-item expanded "><a href="ExpertDocUkázkyFormátování.html"><strong aria-hidden="true">42.</strong> Ver.19: ExpertDoc Ukázky Formátování</a></li><li class="chapter-item expanded "><a href="ExpertDocGrafickéUkázky.html"><strong aria-hidden="true">43.</strong> Ver.21: ExpertDoc Grafické Ukázky</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-CanceledRazorBuild</li><li class="chapter-item expanded "><a href="ZrušenýMVCWebPortalCsHtml.html"><strong aria-hidden="true">44.</strong> Ver.78: Zrušený MVC Web Portal CsHtml</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC&ESB Github a Svět Neomezená Řešení</li><li class="chapter-item expanded "><a href="GitHubTopPriorita.html"><strong aria-hidden="true">45.</strong> Ver.2: GitHub Top Priorita</a></li><li class="chapter-item expanded "><a href="awesome-dotnet-core.html"><strong aria-hidden="true">46.</strong> Ver.2: awesome-dotnet-core</a></li><li class="chapter-item expanded "><a href="awesome-dotnet-coreNext.html"><strong aria-hidden="true">47.</strong> Ver.2: awesome-dotnet-core Next</a></li><li class="chapter-item expanded "><a href="awesomeBlazor.html"><strong aria-hidden="true">48.</strong> Ver.3: awesome Blazor</a></li><li class="chapter-item expanded "><a href="awesome-workflow-engines.html"><strong aria-hidden="true">49.</strong> Ver.3: awesome-workflow-engines</a></li><li class="chapter-item expanded "><a href="editorjsrozšířený.html"><strong aria-hidden="true">50.</strong> Ver.4: editorjs rozšířený</a></li><li class="chapter-item expanded "><a href="AwesomeWPF.html"><strong aria-hidden="true">51.</strong> Ver.4: Awesome WPF</a></li><li class="chapter-item expanded "><a href="ZaznamenanéNápadykprověření.html"><strong aria-hidden="true">52.</strong> Ver.2: Zaznamenané Nápady k prověření </a></li><li class="chapter-item expanded "><a href="InspiraceGithubBohatéProfily.html"><strong aria-hidden="true">53.</strong> Ver.3: Inspirace Github Bohaté Profily </a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC+ESB Sdílené WEB Řešení VŠECH</li><li class="chapter-item expanded "><a href="WebSocketv5MINUTACH.html"><strong aria-hidden="true">54.</strong> WebSocket v 5 MINUTÁCH</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Start -DATABASE-RULE</li><li class="chapter-item expanded "><a href="MSSQLZalohaObnovaDB.html"><strong aria-hidden="true">55.</strong> MSSQL Zaloha Obnova DB</a></li><li class="chapter-item expanded "><a href="MSSQLDBTABULkY.html"><strong aria-hidden="true">56.</strong> MSSQL DB TABULkY</a></li><li class="chapter-item expanded "><a href="TBLBasicAttachmentList.html"><strong aria-hidden="true">57.</strong> TBL BasicAttachmentList</a></li><li class="chapter-item expanded "><a href="TBLBasicCalendarList.html"><strong aria-hidden="true">58.</strong> TBL BasicCalendarList</a></li><li class="chapter-item expanded "><a href="TBLBasicCurrencyList.html"><strong aria-hidden="true">59.</strong> TBL BasicCurrencyList</a></li><li class="chapter-item expanded "><a href="TBLBasicImageGalleryList.html"><strong aria-hidden="true">60.</strong> TBL BasicImageGalleryList</a></li><li class="chapter-item expanded "><a href="TBLBasicItemList.html"><strong aria-hidden="true">61.</strong> TBL BasicItemList</a></li><li class="chapter-item expanded "><a href="TBLBasicUnitList.html"><strong aria-hidden="true">62.</strong> TBL BasicUnitList</a></li><li class="chapter-item expanded "><a href="TBLBasicVatList.html"><strong aria-hidden="true">63.</strong> TBL BasicVatList</a></li><li class="chapter-item expanded "><a href="TBLBasicViewAttachmentList.html"><strong aria-hidden="true">64.</strong> TBL BasicViewAttachmentList</a></li><li class="chapter-item expanded "><a href="TBLBusinessAddressList.html"><strong aria-hidden="true">65.</strong> TBL BusinessAddressList</a></li><li class="chapter-item expanded "><a href="TBLBusinessBranchList.html"><strong aria-hidden="true">66.</strong> TBL BusinessBranchList</a></li><li class="chapter-item expanded "><a href="TBLBusinessCreditNoteList.html"><strong aria-hidden="true">67.</strong> TBL BusinessCreditNoteList</a></li><li class="chapter-item expanded "><a href="TBLBusinessCreditNoteSupportList.html"><strong aria-hidden="true">68.</strong> TBL BusinessCreditNoteSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessExchangeRateList.html"><strong aria-hidden="true">69.</strong> TBL BusinessExchangeRateList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingInvoiceList.html"><strong aria-hidden="true">70.</strong> TBL BusinessIncomingInvoiceList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingInvoiceSupportList.html"><strong aria-hidden="true">71.</strong> TBL BusinessIncomingInvoiceSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingOrderList.html"><strong aria-hidden="true">72.</strong> TBL BusinessIncomingOrderList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingOrderSupportList.html"><strong aria-hidden="true">73.</strong> TBL BusinessIncomingOrderSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessMaturityList.html"><strong aria-hidden="true">74.</strong> TBL BusinessMaturityList</a></li><li class="chapter-item expanded "><a href="TBLBusinessNotesList.html"><strong aria-hidden="true">75.</strong> TBL BusinessNotesList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOfferList.html"><strong aria-hidden="true">76.</strong> TBL BusinessOfferList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOfferSupportList.html"><strong aria-hidden="true">77.</strong> TBL BusinessOfferSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingInvoiceList.html"><strong aria-hidden="true">78.</strong> TBL BusinessOutgoingInvoiceList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingInvoiceSupportList.html"><strong aria-hidden="true">79.</strong> TBL BusinessOutgoingInvoiceSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingOrderList.html"><strong aria-hidden="true">80.</strong> TBL BusinessOutgoingOrderList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingOrderSupportList.html"><strong aria-hidden="true">81.</strong> TBL BusinessOutgoingOrderSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessPaymentMethodList.html"><strong aria-hidden="true">82.</strong> TBL BusinessPaymentMethodList</a></li><li class="chapter-item expanded "><a href="TBLBusinessPaymentStatusList.html"><strong aria-hidden="true">83.</strong> TBL BusinessPaymentStatusList</a></li><li class="chapter-item expanded "><a href="TBLBusinessReceiptList.html"><strong aria-hidden="true">84.</strong> TBL BusinessReceiptList</a></li><li class="chapter-item expanded "><a href="TBLBusinessReceiptSupportList.html"><strong aria-hidden="true">85.</strong> TBL BusinessReceiptSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessWarehouseList.html"><strong aria-hidden="true">86.</strong> TBL BusinessWarehouseList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocTemplateList.html"><strong aria-hidden="true">87.</strong> TBL DocSrvDocTemplateList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationCodeLibraryList.html"><strong aria-hidden="true">88.</strong> TBL DocSrvDocumentationCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationGroupList.html"><strong aria-hidden="true">89.</strong> TBL DocSrvDocumentationGroupList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationList.html"><strong aria-hidden="true">90.</strong> TBL DocSrvDocumentationList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvAuthLogList.html"><strong aria-hidden="true">91.</strong> TBL GithubSrvAuthLogList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvRepositoryList.html"><strong aria-hidden="true">92.</strong> TBL GithubSrvRepositoryList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvSshKeyList.html"><strong aria-hidden="true">93.</strong> TBL GithubSrvSshKeyList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvTeamList.html"><strong aria-hidden="true">94.</strong> TBL GithubSrvTeamList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvTeamRepositoryRoleList.html"><strong aria-hidden="true">95.</strong> TBL GithubSrvTeamRepositoryRoleList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvUserTeamRoleList.html"><strong aria-hidden="true">96.</strong> TBL GithubSrvUserTeamRoleList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvLicenseActivationFailList.html"><strong aria-hidden="true">97.</strong> TBL LicSrvLicenseActivationFailList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvLicenseAlgorithmList.html"><strong aria-hidden="true">98.</strong> TBL LicSrvLicenseAlgorithmList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvUsedLicenseList.html"><strong aria-hidden="true">99.</strong> TBL LicSrvUsedLicenseList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidGroupList.html"><strong aria-hidden="true">100.</strong> TBL ProdGuidGroupList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidOperationList.html"><strong aria-hidden="true">101.</strong> TBL ProdGuidOperationList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidPartList.html"><strong aria-hidden="true">102.</strong> TBL ProdGuidPartList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidPersonList.html"><strong aria-hidden="true">103.</strong> TBL ProdGuidPersonList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidWorkList.html"><strong aria-hidden="true">104.</strong> TBL ProdGuidWorkList</a></li><li class="chapter-item expanded "><a href="TBLProviderAutoGenServerReqList.html"><strong aria-hidden="true">105.</strong> TBL ProviderAutoGenServerReqList</a></li><li class="chapter-item expanded "><a href="TBLProviderGeneratedLicenseList.html"><strong aria-hidden="true">106.</strong> TBL ProviderGeneratedLicenseList</a></li><li class="chapter-item expanded "><a href="TBLProviderGeneratedToolList.html"><strong aria-hidden="true">107.</strong> TBL ProviderGeneratedToolList</a></li><li class="chapter-item expanded "><a href="TBLProviderViewGeneratedToolRatingList.html"><strong aria-hidden="true">108.</strong> TBL ProviderViewGeneratedToolRatingList</a></li><li class="chapter-item expanded "><a href="TBLServerApiSecurityList.html"><strong aria-hidden="true">109.</strong> TBL ServerApiSecurityList</a></li><li class="chapter-item expanded "><a href="TBLServerCorsDefAllowedOriginList.html"><strong aria-hidden="true">110.</strong> TBL ServerCorsDefAllowedOriginList</a></li><li class="chapter-item expanded "><a href="TBLServerHealthCheckTaskList.html"><strong aria-hidden="true">111.</strong> TBL ServerHealthCheckTaskList</a></li><li class="chapter-item expanded "><a href="TBLServerLiveDataMonitorList.html"><strong aria-hidden="true">112.</strong> TBL ServerLiveDataMonitorList</a></li><li class="chapter-item expanded "><a href="TBLServerModuleAndServiceList.html"><strong aria-hidden="true">113.</strong> TBL ServerModuleAndServiceList</a></li><li class="chapter-item expanded "><a href="TBLServerSettingList.html"><strong aria-hidden="true">114.</strong> TBL ServerSettingList</a></li><li class="chapter-item expanded "><a href="TBLServerStaticOrMvcDefPathList.html"><strong aria-hidden="true">115.</strong> TBL ServerStaticOrMvcDefPathList</a></li><li class="chapter-item expanded "><a href="TBLServerToolPanelDefinitionList.html"><strong aria-hidden="true">116.</strong> TBL ServerToolPanelDefinitionList</a></li><li class="chapter-item expanded "><a href="TBLServerToolTypeList.html"><strong aria-hidden="true">117.</strong> TBL ServerToolTypeList</a></li><li class="chapter-item expanded "><a href="TBLSolutionEmailerHistoryList.html"><strong aria-hidden="true">118.</strong> TBL SolutionEmailerHistoryList</a></li><li class="chapter-item expanded "><a href="TBLSolutionEmailTemplateList.html"><strong aria-hidden="true">119.</strong> TBL SolutionEmailTemplateList</a></li><li class="chapter-item expanded "><a href="TBLSolutionFailList.html"><strong aria-hidden="true">120.</strong> TBL SolutionFailList</a></li><li class="chapter-item expanded "><a href="TBLSolutionLanguageList.html"><strong aria-hidden="true">121.</strong> TBL SolutionLanguageList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMessageModuleList.html"><strong aria-hidden="true">122.</strong> TBL SolutionMessageModuleList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMessageTypeList.html"><strong aria-hidden="true">123.</strong> TBL SolutionMessageTypeList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMixedEnumList.html"><strong aria-hidden="true">124.</strong> TBL SolutionMixedEnumList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMottoList.html"><strong aria-hidden="true">125.</strong> TBL SolutionMottoList</a></li><li class="chapter-item expanded "><a href="TBLSolutionOperationList.html"><strong aria-hidden="true">126.</strong> TBL SolutionOperationList</a></li><li class="chapter-item expanded "><a href="TBLSolutionSchedulerList.html"><strong aria-hidden="true">127.</strong> TBL SolutionSchedulerList</a></li><li class="chapter-item expanded "><a href="TBLSolutionSchedulerProcessList.html"><strong aria-hidden="true">128.</strong> TBL SolutionSchedulerProcessList</a></li><li class="chapter-item expanded "><a href="TBLSolutionStaticFileList.html"><strong aria-hidden="true">129.</strong> TBL SolutionStaticFileList</a></li><li class="chapter-item expanded "><a href="TBLSolutionStaticFilePathList.html"><strong aria-hidden="true">130.</strong> TBL SolutionStaticFilePathList</a></li><li class="chapter-item expanded "><a href="TBLSolutionTaskList.html"><strong aria-hidden="true">131.</strong> TBL SolutionTaskList</a></li><li class="chapter-item expanded "><a href="TBLSolutionUserList.html"><strong aria-hidden="true">132.</strong> TBL SolutionUserList</a></li><li class="chapter-item expanded "><a href="TBLSolutionUserRoleList.html"><strong aria-hidden="true">133.</strong> TBL SolutionUserRoleList</a></li><li class="chapter-item expanded "><a href="TBLSolutionWebsiteList.html"><strong aria-hidden="true">134.</strong> TBL SolutionWebsiteList</a></li><li class="chapter-item expanded "><a href="TBLSystemCustomPageList.html"><strong aria-hidden="true">135.</strong> TBL SystemCustomPageList</a></li><li class="chapter-item expanded "><a href="TBLSystemDocumentAdviceList.html"><strong aria-hidden="true">136.</strong> TBL SystemDocumentAdviceList</a></li><li class="chapter-item expanded "><a href="TBLSystemDocumentTypeList.html"><strong aria-hidden="true">137.</strong> TBL SystemDocumentTypeList</a></li><li class="chapter-item expanded "><a href="TBLSystemGroupMenuList.html"><strong aria-hidden="true">138.</strong> TBL SystemGroupMenuList</a></li><li class="chapter-item expanded "><a href="TBLSystemIgnoredExceptionList.html"><strong aria-hidden="true">139.</strong> TBL SystemIgnoredExceptionList</a></li><li class="chapter-item expanded "><a href="TBLSystemLoginHistoryList.html"><strong aria-hidden="true">140.</strong> TBL SystemLoginHistoryList</a></li><li class="chapter-item expanded "><a href="TBLSystemMenuList.html"><strong aria-hidden="true">141.</strong> TBL SystemMenuList</a></li><li class="chapter-item expanded "><a href="TBLSystemModuleList.html"><strong aria-hidden="true">142.</strong> TBL SystemModuleList</a></li><li class="chapter-item expanded "><a href="TBLSystemParameterList.html"><strong aria-hidden="true">143.</strong> TBL SystemParameterList</a></li><li class="chapter-item expanded "><a href="TBLSystemReportList.html"><strong aria-hidden="true">144.</strong> TBL SystemReportList</a></li><li class="chapter-item expanded "><a href="TBLSystemReportQueueList.html"><strong aria-hidden="true">145.</strong> TBL SystemReportQueueList</a></li><li class="chapter-item expanded "><a href="TBLSystemSvgIconList.html"><strong aria-hidden="true">146.</strong> TBL SystemSvgIconList</a></li><li class="chapter-item expanded "><a href="TBLSystemTranslationList.html"><strong aria-hidden="true">147.</strong> TBL SystemTranslationList</a></li><li class="chapter-item expanded "><a href="TBLTemplateList.html"><strong aria-hidden="true">148.</strong> TBL TemplateList</a></li><li class="chapter-item expanded "><a href="TBLWebBannedIpAddressList.html"><strong aria-hidden="true">149.</strong> TBL WebBannedIpAddressList</a></li><li class="chapter-item expanded "><a href="TBLWebCodeLibraryList.html"><strong aria-hidden="true">150.</strong> TBL WebCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLWebConfiguratorList.html"><strong aria-hidden="true">151.</strong> TBL WebConfiguratorList</a></li><li class="chapter-item expanded "><a href="TBLWebCoreFileList.html"><strong aria-hidden="true">152.</strong> TBL WebCoreFileList</a></li><li class="chapter-item expanded "><a href="TBLWebDeveloperNewsList.html"><strong aria-hidden="true">153.</strong> TBL WebDeveloperNewsList</a></li><li class="chapter-item expanded "><a href="TBLWebDocumentationCodeLibraryList.html"><strong aria-hidden="true">154.</strong> TBL WebDocumentationCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLWebDocumentationList.html"><strong aria-hidden="true">155.</strong> TBL WebDocumentationList</a></li><li class="chapter-item expanded "><a href="TBLWebGlobalPageBlockList.html"><strong aria-hidden="true">156.</strong> TBL WebGlobalPageBlockList</a></li><li class="chapter-item expanded "><a href="TBLWebGroupMenuList.html"><strong aria-hidden="true">157.</strong> TBL WebGroupMenuList</a></li><li class="chapter-item expanded "><a href="TBLWebMenuList.html"><strong aria-hidden="true">158.</strong> TBL WebMenuList</a></li><li class="chapter-item expanded "><a href="TBLWebMessagesList.html"><strong aria-hidden="true">159.</strong> TBL WebMessagesList</a></li><li class="chapter-item expanded "><a href="TBLWebSettingList.html"><strong aria-hidden="true">160.</strong> TBL WebSettingList</a></li><li class="chapter-item expanded "><a href="TBLWebUserSettingList.html"><strong aria-hidden="true">161.</strong> TBL WebUserSettingList</a></li><li class="chapter-item expanded "><a href="TBLWebVisitIpList.html"><strong aria-hidden="true">162.</strong> TBL WebVisitIpList</a></li><li class="chapter-item expanded "><a href="FNFn_SplitString.html"><strong aria-hidden="true">163.</strong> FN Fn_SplitString</a></li><li class="chapter-item expanded "><a href="FNfnGetFileName.html"><strong aria-hidden="true">164.</strong> FNfnGetFileName</a></li><li class="chapter-item expanded "><a href="SP_SpOperationTemplate.html"><strong aria-hidden="true">165.</strong> SP _SpOperationTemplate</a></li><li class="chapter-item expanded "><a href="SP_SpOperationTodoCheckRolesIntegrity.html"><strong aria-hidden="true">166.</strong> SP _SpOperationTodoCheckRolesIntegrity</a></li><li class="chapter-item expanded "><a href="SPDB_HELP_ExtensionTableDefExport.html" class="active"><strong aria-hidden="true">167.</strong> SP DB_HELP_ExtensionTableDefExport</a></li><li class="chapter-item expanded "><a href="SPDB_HELP_INFO.html"><strong aria-hidden="true">168.</strong> SP DB_HELP_INFO</a></li><li class="chapter-item expanded "><a href="SPExampleExportJsonFile.html"><strong aria-hidden="true">169.</strong> SP ExampleExportJsonFile</a></li><li class="chapter-item expanded "><a href="SPLicSrvSpCheckUnlockKey.html"><strong aria-hidden="true">170.</strong> SP LicSrvSpCheckUnlockKey</a></li><li class="chapter-item expanded "><a href="SPReportDataset.html"><strong aria-hidden="true">171.</strong> SP ReportDataset</a></li><li class="chapter-item expanded "><a href="SPsp_GetDDL.html"><strong aria-hidden="true">172.</strong> SP sp_GetDDL</a></li><li class="chapter-item expanded "><a href="SPSpAutoCleanEmailer.html"><strong aria-hidden="true">173.</strong> SP SpAutoCleanEmailer</a></li><li class="chapter-item expanded "><a href="SPSpImportSvgIcon.html"><strong aria-hidden="true">174.</strong> SP SpImportSvgIcon</a></li><li class="chapter-item expanded "><a href="SPSpImportTemplateDocFilesFromFolder.html"><strong aria-hidden="true">175.</strong> SP SpImportTemplateDocFilesFromFolder</a></li><li class="chapter-item expanded "><a href="SPSpOperationAutoGenDescToDocs.html"><strong aria-hidden="true">176.</strong> SP SpOperationAutoGenDescToDocs</a></li><li class="chapter-item expanded "><a href="SPSpOperationAutoUpdateDbTemplateDoc.html"><strong aria-hidden="true">177.</strong> SP SpOperationAutoUpdateDbTemplateDoc</a></li><li class="chapter-item expanded "><a href="SPSpOperationDBBackup.html"><strong aria-hidden="true">178.</strong> SP SpOperationDBBackup</a></li><li class="chapter-item expanded "><a href="SPSpOperationExportConfigFile.html"><strong aria-hidden="true">179.</strong> SP SpOperationExportConfigFile</a></li><li class="chapter-item expanded "><a href="SPSpOperationFailListClean.html"><strong aria-hidden="true">180.</strong> SP SpOperationFailListClean</a></li><li class="chapter-item expanded "><a href="SPSpOperationFillTranslationTableList.html"><strong aria-hidden="true">181.</strong> SP SpOperationFillTranslationTableList</a></li><li class="chapter-item expanded "><a href="SPSpOperationRunSqlScript.html"><strong aria-hidden="true">182.</strong> SP SpOperationRunSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpProvider_ExportSqlScript.html"><strong aria-hidden="true">183.</strong> SP SpProvider_ExportSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpProvider_SendSqlScript.html"><strong aria-hidden="true">184.</strong> SP SpProvider_SendSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpShowDBProcedureList.html"><strong aria-hidden="true">185.</strong> SP SpShowDBProcedureList</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_BACKUP.html"><strong aria-hidden="true">186.</strong> SP SpTaskDB_BACKUP</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_CLONE.html"><strong aria-hidden="true">187.</strong> SP SpTaskDB_CLONE</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_SETRIGHTS.html"><strong aria-hidden="true">188.</strong> SP SpTaskDB_SETRIGHTS</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetSystemPageList.html"><strong aria-hidden="true">189.</strong> SP SystemSpGetSystemPageList</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetTableList.html"><strong aria-hidden="true">190.</strong> SP SystemSpGetTableList</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetUserMenuList.html"><strong aria-hidden="true">191.</strong> SP SystemSpGetUserMenuList</a></li><li class="chapter-item expanded "><a href="TRTR_BranchList.html"><strong aria-hidden="true">192.</strong> TR TR_BranchList</a></li><li class="chapter-item expanded "><a href="TRTR_CurrencyList.html"><strong aria-hidden="true">193.</strong> TR TR_CurrencyList</a></li><li class="chapter-item expanded "><a href="TRTR_DocumentationList.html"><strong aria-hidden="true">194.</strong> TR TR_DocumentationList</a></li><li class="chapter-item expanded "><a href="TRTR_ImageGalleryList.html"><strong aria-hidden="true">195.</strong> TR TR_ImageGalleryList</a></li><li class="chapter-item expanded "><a href="TRTR_MaturityList.html"><strong aria-hidden="true">196.</strong> TR TR_MaturityList</a></li><li class="chapter-item expanded "><a href="TRTR_ParameterList.html"><strong aria-hidden="true">197.</strong> TR TR_ParameterList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentMethodList.html"><strong aria-hidden="true">198.</strong> TR TR_PaymentMethodList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusList.html"><strong aria-hidden="true">199.</strong> TR TR_PaymentStatusList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusListCreditNote.html"><strong aria-hidden="true">200.</strong> TR TR_PaymentStatusListCreditNote</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusListReceipt.html"><strong aria-hidden="true">201.</strong> TR TR_PaymentStatusListReceipt</a></li><li class="chapter-item expanded "><a href="TRTR_ReportList.html"><strong aria-hidden="true">202.</strong> TR TR_ReportList</a></li><li class="chapter-item expanded "><a href="TRTR_ServerModuleAndServiceList.html"><strong aria-hidden="true">203.</strong> TR TR_ServerModuleAndServiceList</a></li><li class="chapter-item expanded "><a href="TRTR_SolutionEmailerHistoryList.html"><strong aria-hidden="true">204.</strong> TR TR_SolutionEmailerHistoryList</a></li><li class="chapter-item expanded "><a href="TRTR_SystemTranslationList.html"><strong aria-hidden="true">205.</strong> TR TR_SystemTranslationList</a></li><li class="chapter-item expanded "><a href="TRTR_UnitList.html"><strong aria-hidden="true">206.</strong> TR TR_UnitList</a></li><li class="chapter-item expanded "><a href="TRTR_UserList.html"><strong aria-hidden="true">207.</strong> TR TR_UserList</a></li><li class="chapter-item expanded "><a href="TRTR_VatList.html"><strong aria-hidden="true">208.</strong> TR TR_VatList</a></li><li class="chapter-item expanded "><a href="TRTR_WarehouseList.html"><strong aria-hidden="true">209.</strong> TR TR_WarehouseList</a></li><li class="chapter-item expanded "><a href="TRTR_WebDocumentationList.html"><strong aria-hidden="true">210.</strong> TR TR_WebDocumentationList</a></li><li class="chapter-item expanded "><a href="TRTR_WebMenuList.html"><strong aria-hidden="true">211.</strong> TR TR_WebMenuList</a></li><li class="chapter-item expanded "><a href="VIEWBasicViewAttachmentList.html"><strong aria-hidden="true">212.</strong> VIEW BasicViewAttachmentList</a></li><li class="chapter-item expanded "><a href="VIEWProviderViewGeneratedToolRatingList.html"><strong aria-hidden="true">213.</strong> VIEW ProviderViewGeneratedToolRatingList</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="ManualniServerSettingPageXAML.html"><strong aria-hidden="true">214.</strong> Manuální ServerSettingPage XAML</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="SablonaMVCsvlastnimzabezpecenim.html"><strong aria-hidden="true">215.</strong> Šablona MVC s vlastním zabezpečením</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="WPF_C#MetodyFormularu.html"><strong aria-hidden="true">216.</strong> WPF_C# Metody Formulářů</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="C#APIAutorizaceToken,Basic.html"><strong aria-hidden="true">217.</strong> C# API Autorizace Token, Basic</a></li><li class="chapter-item expanded "><a href="C#APIpropracisDynamickymiProcedurami.html"><strong aria-hidden="true">218.</strong> C# API pro práci s Dynamickými  Procedurami</a></li><li class="chapter-item expanded "><a href="C#APIpropracisProceduramiTrueFalse.html"><strong aria-hidden="true">219.</strong> C# API pro práci s Procedurami TrueFalse</a></li><li class="chapter-item expanded "><a href="C#APIpropracisrozsahypolozek.html"><strong aria-hidden="true">220.</strong> C# API pro práci s rozsahy položek</a></li><li class="chapter-item expanded "><a href="C#APIpropraciseSoubory,Obrazky,Atd.html"><strong aria-hidden="true">221.</strong> C# API pro práci se Soubory,Obrázky,Atd</a></li><li class="chapter-item expanded "><a href="C#APIsulozernimSubRozsahuv1kroku.html"><strong aria-hidden="true">222.</strong> C# API s uložerním Sub Rozsahův 1 kroku</a></li><li class="chapter-item expanded "><a href="C#APIUniverzalniSablonaRestFull.html"><strong aria-hidden="true">223.</strong> C# API Univerzální Šablona RestFull</a></li><li class="chapter-item expanded "><a href="C#DatoveBlokyPrebiratezDB.html"><strong aria-hidden="true">224.</strong> C# Datové Bloky Přebíráte z DB</a></li><li class="chapter-item expanded "><a href="C#FormularesPrehledyPlneOkomentovane.html"><strong aria-hidden="true">225.</strong> C# Formuláře s Přehledy Plně Okomentované</a></li><li class="chapter-item expanded "><a href="C#KompetniPopisyAPI.html"><strong aria-hidden="true">226.</strong> C# Kompetní Popisy API </a></li><li class="chapter-item expanded "><a href="C#WebSocketReseni.html"><strong aria-hidden="true">227.</strong> C# WebSocket Řešení</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="XAMLFormularNastaveniveskupinach.html"><strong aria-hidden="true">228.</strong> XAML Formulář Nastavení ve skupinách</a></li><li class="chapter-item expanded "><a href="XAMLGrafy,Diagrami,Uml,Atd.html"><strong aria-hidden="true">229.</strong> XAML Grafy, Diagrami, Uml, Atd</a></li><li class="chapter-item expanded "><a href="XAMLMonitoringOSSystemu.html"><strong aria-hidden="true">230.</strong> XAML Monitoring OS Systému</a></li><li class="chapter-item expanded "><a href="XAMLPanelNastroju.html"><strong aria-hidden="true">231.</strong> XAML Panel Nástrojů</a></li><li class="chapter-item expanded "><a href="XAMLProhlizecDoc,PDF,Office,Obrazky,Atd.html"><strong aria-hidden="true">232.</strong> XAML Prohlížeč Doc,PDF,Office,Obrázky,Atd</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularsLokalnimPrekladem.html"><strong aria-hidden="true">233.</strong> XAML Přehled a Formulář s Lokálním Překladem</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularsVazbou.html"><strong aria-hidden="true">234.</strong> XAML Přehled a Formulář s Vazbou</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularseSubFormem.html"><strong aria-hidden="true">235.</strong> XAML Přehled a Formulář se SubFormem</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularseSubPrehledem.html"><strong aria-hidden="true">236.</strong> XAML Přehled a Formulář se SubPřehledem</a></li><li class="chapter-item expanded "><a href="XAMLPrehravacVidei,Zvuku.html"><strong aria-hidden="true">237.</strong> XAML Přehrávač Videí, Zvuků</a></li><li class="chapter-item expanded "><a href="XAMLSamotnyPrehled.html"><strong aria-hidden="true">238.</strong> XAML Samotný Přehled</a></li><li class="chapter-item expanded "><a href="XAMLSablonaPrehled+Formular.html"><strong aria-hidden="true">239.</strong> XAML Šablona Přehled + Formulář</a></li><li class="chapter-item expanded "><a href="XAMLSetricObrazovky.html"><strong aria-hidden="true">240.</strong> XAML Šetřič Obrazovky</a></li><li class="chapter-item expanded "><a href="XAMLVlastniFormular.html"><strong aria-hidden="true">241.</strong> XAML Vlastní Formulář</a></li><li class="chapter-item expanded "><a href="XAMLWeby,Internet,Portaly.html"><strong aria-hidden="true">242.</strong> XAML Weby, Internet, Portály</a></li><li class="chapter-item expanded "><a href="XAMLZobrazeni3D,STL,atd.html"><strong aria-hidden="true">243.</strong> XAML Zobrazení 3D,STL,atd</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-CanceledRazorBuild</li><li class="chapter-item expanded "><a href="_ViewImports.cshtml.html"><strong aria-hidden="true">244.</strong> _ViewImports.cshtml</a></li><li class="chapter-item expanded "><a href="_ViewStart.cshtml.html"><strong aria-hidden="true">245.</strong> _ViewStart.cshtml</a></li><li class="chapter-item expanded "><a href="AdvantageousServices.cshtml.html"><strong aria-hidden="true">246.</strong> AdvantageousServices.cshtml</a></li><li class="chapter-item expanded "><a href="AminLogin.cshtml.html"><strong aria-hidden="true">247.</strong> AminLogin.cshtml</a></li><li class="chapter-item expanded "><a href="AminLogin.cshtml.cs.html"><strong aria-hidden="true">248.</strong> AminLogin.cshtml.cs</a></li><li class="chapter-item expanded "><a href="AutomaticServices.cshtml.html"><strong aria-hidden="true">249.</strong> AutomaticServices.cshtml</a></li><li class="chapter-item expanded "><a href="BusinessGenerators.cshtml.html"><strong aria-hidden="true">250.</strong> BusinessGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="DashBoard.cshtml.html"><strong aria-hidden="true">251.</strong> DashBoard.cshtml</a></li><li class="chapter-item expanded "><a href="Databases.cshtml.html"><strong aria-hidden="true">252.</strong> Databases.cshtml</a></li><li class="chapter-item expanded "><a href="DocumentationsGenerators.cshtml.html"><strong aria-hidden="true">253.</strong> DocumentationsGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="Downloads.cshtml.html"><strong aria-hidden="true">254.</strong> Downloads.cshtml</a></li><li class="chapter-item expanded "><a href="EDCImageList.cshtml.html"><strong aria-hidden="true">255.</strong> EDCImageList.cshtml</a></li><li class="chapter-item expanded "><a href="EDCManagersInfoCZ.cshtml.html"><strong aria-hidden="true">256.</strong> EDCManagersInfoCZ.cshtml</a></li><li class="chapter-item expanded "><a href="EDCManagersInfoEN.cshtml.html"><strong aria-hidden="true">257.</strong> EDCManagersInfoEN.cshtml</a></li><li class="chapter-item expanded "><a href="Error.cshtml.html"><strong aria-hidden="true">258.</strong> Error.cshtml</a></li><li class="chapter-item expanded "><a href="ESBImageList.cshtml.html"><strong aria-hidden="true">259.</strong> ESBImageList.cshtml</a></li><li class="chapter-item expanded "><a href="ESBManagersInfoCZ.cshtml.html"><strong aria-hidden="true">260.</strong> ESBManagersInfoCZ.cshtml</a></li><li class="chapter-item expanded "><a href="ESBManagersInfoEN.cshtml.html"><strong aria-hidden="true">261.</strong> ESBManagersInfoEN.cshtml</a></li><li class="chapter-item expanded "><a href="GalleryGenerators.cshtml.html"><strong aria-hidden="true">262.</strong> GalleryGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="ChangeLog.cshtml.html"><strong aria-hidden="true">263.</strong> ChangeLog.cshtml</a></li><li class="chapter-item expanded "><a href="InteliBook.cshtml.html"><strong aria-hidden="true">264.</strong> InteliBook.cshtml</a></li><li class="chapter-item expanded "><a href="Login.cshtml.html"><strong aria-hidden="true">265.</strong> Login.cshtml</a></li><li class="chapter-item expanded "><a href="MdView.cshtml.html"><strong aria-hidden="true">266.</strong> MdView.cshtml</a></li><li class="chapter-item expanded "><a href="PriceList.cshtml.html"><strong aria-hidden="true">267.</strong> PriceList.cshtml</a></li><li class="chapter-item expanded "><a href="Privacy.cshtml.html"><strong aria-hidden="true">268.</strong> Privacy.cshtml</a></li><li class="chapter-item expanded "><a href="Registration.cshtml.html"><strong aria-hidden="true">269.</strong> Registration.cshtml</a></li><li class="chapter-item expanded "><a href="ResetPassword.cshtml.html"><strong aria-hidden="true">270.</strong> ResetPassword.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionCoresLogic.cshtml.html"><strong aria-hidden="true">271.</strong> SolutionCoresLogic.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionServers.cshtml.html"><strong aria-hidden="true">272.</strong> SolutionServers.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionsVisionsIdeas.cshtml.html"><strong aria-hidden="true">273.</strong> SolutionsVisionsIdeas.cshtml</a></li><li class="chapter-item expanded "><a href="SystemToolsGenerators.cshtml.html"><strong aria-hidden="true">274.</strong> SystemToolsGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="SystemToolsGenerators.cshtml.cs.html"><strong aria-hidden="true">275.</strong> SystemToolsGenerators.cshtml.cs</a></li><li class="chapter-item expanded "><a href="TechnologyPosibilities.cshtml.html"><strong aria-hidden="true">276.</strong> TechnologyPosibilities.cshtml</a></li><li class="chapter-item expanded "><a href="TechnologyPosibilities.cshtml.cs.html"><strong aria-hidden="true">277.</strong> TechnologyPosibilities.cshtml.cs</a></li><li class="chapter-item expanded "><a href="Terms.cshtml.html"><strong aria-hidden="true">278.</strong> Terms.cshtml</a></li><li class="chapter-item expanded "><a href="Terms.cshtml.cs.html"><strong aria-hidden="true">279.</strong> Terms.cshtml.cs</a></li><li class="chapter-item expanded "><a href="UserProfile.cshtml.html"><strong aria-hidden="true">280.</strong> UserProfile.cshtml</a></li><li class="chapter-item expanded "><a href="UserProfile.cshtml.cs.html"><strong aria-hidden="true">281.</strong> UserProfile.cshtml.cs</a></li><li class="chapter-item expanded "><a href="VideoGallery.cshtml.html"><strong aria-hidden="true">282.</strong> VideoGallery.cshtml</a></li><li class="chapter-item expanded "><a href="VideoGallery.cshtml.cs.html"><strong aria-hidden="true">283.</strong> VideoGallery.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebEditors.cshtml.html"><strong aria-hidden="true">284.</strong> WebEditors.cshtml</a></li><li class="chapter-item expanded "><a href="WebEditors.cshtml.cs.html"><strong aria-hidden="true">285.</strong> WebEditors.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebMenuBuilder.cshtml.html"><strong aria-hidden="true">286.</strong> WebMenuBuilder.cshtml</a></li><li class="chapter-item expanded "><a href="WebMenuBuilder.cshtml.cs.html"><strong aria-hidden="true">287.</strong> WebMenuBuilder.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebSetting.cshtml.html"><strong aria-hidden="true">288.</strong> WebSetting.cshtml</a></li><li class="chapter-item expanded "><a href="WebSetting.cshtml.cs.html"><strong aria-hidden="true">289.</strong> WebSetting.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebViewers.cshtml.html"><strong aria-hidden="true">290.</strong> WebViewers.cshtml</a></li><li class="chapter-item expanded "><a href="WebViewers.cshtml.cs.html"><strong aria-hidden="true">291.</strong> WebViewers.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WpfDeveloperTools.cshtml.html"><strong aria-hidden="true">292.</strong> WpfDeveloperTools.cshtml</a></li><li class="chapter-item expanded "><a href="WpfDeveloperTools.cshtml.cs.html"><strong aria-hidden="true">293.</strong> WpfDeveloperTools.cshtml.cs</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">EIC&amp;ESB Dokumentace</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Úvod---start--database-rule"><a class="header" href="#Úvod---start--database-rule">Úvod   Start -DATABASE-RULE</a></h1>
+<p>Vše začíná U databáze. 
+Pravidla určující MultiLogiku v 1 Balíčku.
+Zde najdete Kompletní Strukturu Aktuální Databáze
+a Seznam Pravidel, které je obecně dobré dodržovat</p>
+<p>1 pravidlo: Každé slovo má Hluboký Význam</p>
+<p>SQL_STORED_PROCEDURE</p>
+<p>CREATE procedure [dbo].[DB_INFO_ExtensionTableDefExport]
+AS
+BEGIN </p>
+<pre><code>PRINT 'UNCOMMENT AND EXECUTE FOR RUNNING PROCEDURE SpAutoUpdateTemplateDoc'
+/*
+
+USE [master];
+</code></pre>
+<h2>GO
+IF OBJECT_ID('[dbo].[sp_GetDDL]') IS NOT NULL 
+DROP  PROCEDURE [dbo].[sp_GetDDL]; 
+GO
+--#################################################################################################
+-- Real World DBA Toolkit Version 2019-08-01 Lowell Izaguirre lowell@stormrage.com
+--#################################################################################################
+-- USAGE: exec sp_GetDDL GMACT
+--   or   exec sp_GetDDL 'bob.example'
+--   or   exec sp_GetDDL '[schemaname].[tablename]'
+--   or   exec sp_GetDDL #temp
+--#################################################################################################
+-- copyright 2004-2018 by Lowell Izaguirre scripts<em>at</em>stormrage.com all rights reserved.
+--developer utility function added by Lowell, used in SQL Server Management Studio 
+-- http://www.stormrage.com/SQLStuff/sp_GetDDL_Latest.txt
+--Purpose: Script Any Table, Temp Table or Object(Procedure Function Synonym View Table Trigger)
+--#################################################################################################
+-- see the thread here for lots of details: http://www.sqlservercentral.com/Forums/Topic751783-566-7.aspx
+-- You can use this however you like...this script is not rocket science, but it took a bit of work to create.
+-- the only thing that I ask
+-- is that if you adapt my procedure or make it better, to simply send me a copy of it,
+-- so I can learn from the things you've enhanced.The feedback you give will be what makes
+-- it worthwhile to me, and will be fed back to the SQL community.
+-- add this to your toolbox of helpful scripts.
+--#################################################################################################</h2>
+<p>-- V300  uses String concatination and sys.tables instead of a cursor
+-- V301  enhanced 07/31/2009 to include extended properties definitions
+-- V302  fixes an issue where the schema is created , ie 'bob', but no user named 'bob' owns the schema, so the table is not found
+-- V303  fixes an issue where all rules are appearing, instead of jsut the rule related to a column
+-- V304  testing whether vbCrLf is better than just CHAR(13), some formatting cleanup with GO statements
+--       also fixed an issue with the conversion from syscolumns to sys.columns, max-length is only field we need, not [precision]
+-- V305  user feedback helped me find that the type_name function should call user_type_id instead of system_type_id
+--       also fixed issue where identity definition missing from numeric/decimal definition
+-- V306  fixes the computed columns definition that got broken/removed somehow in V300
+--       also formatting when decimal is not an identity
+-- V307  fixes bug identified by David Griffiths-491597 from SSC where the  @TABLE_ID
+--       is reselected, but without it's schema  , potentially selecting the wrong table
+--       also fixed is the missing size definition for varbinary, also found by David Griffith
+-- V308  abtracted all SQLs to use Table Alaises
+--       added logic to script a temp table.
+--       added warning about possibly not being marked as system object.
+-- V309  added logic based on feedback from Vincent Wylenzek @SSC to return the definition from sys.sql_modules for
+--       any object like procedure/view/function/trigger, and not just a table. 
+--       note previously, if you pointed sp_GetDDL at a view, it returned the view definition as a table...
+--       now it will return the view definition instead.
+-- V309a returns multi row recordset, one line per record 
+-- V310a fixed the commented out code related to collation identified by moadh.bs @SSC
+--       changed the DEFAULT definitions to not include the default name.
+-- V310b Added PERSISTED to calculated columns where applicable
+-- V310b fixed COLLATE statement for temp tables
+-- V310c fixed NVARCHAR size misreported as doubled.
+-- V311  fixed issue where indexes did not identify if the column was ASC or DESC found by nikus @ SSC
+-- V311a fixed issue where indexes did not identify if the index was CLUSTERED or NONCLUSTERED found by nikus @ SSC 02/22/2013
+-- V312  got rid of all upper casing, and allowing all scripts to generate the exact object names in cases of case sensitive databases.
+--       now using the case sensitive name of the table passed: so of you did 'exec sp_GetDDL invoicedocs , it might return the script for InvoiceDocs, as that is how it is spelled in sys.objects.
+--       added if exists(drop table/procedure/function) statement to the scripting automatically.
+--       toggled the commented out code to list any default constraints by name, hopefully to be more accurate..
+--       formatting of index statements to be multi line for better readability
+--V314   03/30/2015
+--       did i mention this scripts out temp tables too? sp_GetDDL #tmp
+--       scripts any object:table,#temptable procedure, function, view or trigger
+--       added ability to script synonyms
+--       moved logic for REAL datatype to fix error when scripting real columns
+--       added OmaCoders suggestion to script column extended properties as well.
+--       added matt_slack suggestion to script schemaname as part of index portion of script.
+--       minor script cleanup to use QUOTENAME insead of concatenating square brackets.
+--       changed compatibility to 2008 and above only, now filtered idnexes with WHERE statmeents script correctly
+--       foreign key tables and columns  in script now quotenamed to account for spaces in names; previously an error for Applciation ID instead of [Application ID]
+--V315   Fixes Aliases and column names that prevented Case Sensitive collations from working.
+--       Adds code if the procedure scripted is a system object
+--       index scripts featuring filtered indexes is now included
+--       index scripts now include filegroup name and compression settings
+--       foreign key casecade delete/update settings now included as identified by Alberto aserio@SSC)
+--       Fixes related to scripting extended events  as identified by Alberto aserio@SSC)
+--V316   Fixes Identified 07/27/2016 by mlm( m.martinelli@SSC)
+--       Added logic  resolving error when custom data type are defined using name greather than 16 char.
+--       Added handling for data types: binary, datetime2, datetimeoffset, time
+--       Added Set Based logic for Handling Fixed FOREIGN KEYS handling when one foreign key is define on more then one field
+--       Added SPARSE column property
+--V317   Fixes Identified 03/30/2017 by Lowell
+--       Scripting of Foreign key column(s) are now quotenamed
+--       Scripting column store indexes was broken, now fixed for column store indexes
+--V318   Fixes Identified 02/14/2018 by Lowell
+--       Scripting of with collation added/required for scripting SharePoint/ReportServer , or databases with non standard collations
+--       Scripting enhanced to definitively handle case sensitive collations as well.
+--V319   Adding logic for Temporal Tables, to grab their auto nistory tables
+--       first attempt for partitioned tables, to get the columns correctly on the partition scheme
+-- DROP PROCEDURE [dbo].[sp_GetDDL]
+--#############################################################################
+--if you are going to put this in MASTER, and want it to be able to query
+--each database's sys.indexes, you MUST mark it as a system procedure:
+--EXECUTE sp_ms_marksystemobject 'sp_GetDDL'
+--#############################################################################
+CREATE PROCEDURE [dbo].[sp_GetDDL]
+@TBL                VARCHAR(255)
+AS
+BEGIN
+SET NOCOUNT ON;
+DECLARE     @TBLNAME                VARCHAR(200),
+@SCHEMANAME             VARCHAR(255),
+@STRINGLEN              INT,
+@TABLE_ID               INT,
+@FINALSQL               VARCHAR(MAX),
+@CONSTRAINTSQLS         VARCHAR(MAX),
+@CHECKCONSTSQLS         VARCHAR(MAX),
+@RULESCONSTSQLS         VARCHAR(MAX),
+@FKSQLS                 VARCHAR(MAX),
+@TRIGGERSTATEMENT       VARCHAR(MAX),
+@EXTENDEDPROPERTIES     VARCHAR(MAX),
+@INDEXSQLS              VARCHAR(MAX),
+@MARKSYSTEMOBJECT       VARCHAR(MAX),
+@vbCrLf                 CHAR(2),
+@ISSYSTEMOBJECT         INT,
+@PROCNAME               VARCHAR(256),
+@input                  VARCHAR(MAX),
+@ObjectTypeFound        VARCHAR(255),
+@ObjectDataTypeLen      INT,
+--V3.20 additions
+@WithStatement          VARCHAR(MAX),
+@FileGroupStatement     VARCHAR(MAX),
+@PartitioningStatement  VARCHAR(MAX),
+@TemporalStatement      VARCHAR(MAX);
+--##############################################################################
+-- INITIALIZE
+--##############################################################################
+SET @input = '';
+--new code: determine whether this proc is marked as a system proc with sp_ms_marksystemobject,
+--which flips the is_ms_shipped bit in sys.objects
+SELECT @ISSYSTEMOBJECT = ISNULL([is_ms_shipped],0),@PROCNAME = ISNULL([name],'sp_GetDDL') FROM [sys].[objects] WHERE [object_id] = @@PROCID;
+IF @ISSYSTEMOBJECT IS NULL 
+SELECT @ISSYSTEMOBJECT = ISNULL([is_ms_shipped],0),@PROCNAME = ISNULL([name],'sp_GetDDL') FROM [master].[sys].[objects] WHERE [object_id] = @@PROCID;
+IF @ISSYSTEMOBJECT IS NULL 
+SET @ISSYSTEMOBJECT = 0;<br />
+IF @PROCNAME IS NULL
+SET @PROCNAME = 'sp_GetDDL';
+--SET @TBL =  '[DBO].[WHATEVER1]'
+--does the tablename contain a schema?
+SET @vbCrLf =  CHAR(10);
+SELECT @SCHEMANAME = ISNULL(PARSENAME(@TBL,2),'dbo') ,
+@TBLNAME    = PARSENAME(@TBL,1);
+SELECT
+@TBLNAME    = [objz].[name],
+@TABLE_ID   = [objz].[object_id]
+FROM [sys].[objects] AS [objz]
+WHERE [objz].[type]          IN ('S','U')
+AND [objz].[name]          &lt;&gt;  'dtproperties'
+AND [objz].[name]           =  @TBLNAME
+AND [objz].[schema_id] =  SCHEMA_ID(@SCHEMANAME) ;
+SELECT @ObjectDataTypeLen = MAX(LEN([name])) FROM [sys].[types];
+--##############################################################################
+-- Check If TEMP TableName is Valid
+--##############################################################################
+IF LEFT(@TBLNAME,1) = '#'  COLLATE SQL_Latin1_General_CP1_CI_AS
+BEGIN
+PRINT '--TEMP TABLE  ' + QUOTENAME(@TBLNAME) + '  FOUND';
+IF OBJECT_ID('tempdb..' + QUOTENAME(@TBLNAME)) IS NOT NULL
+BEGIN
+PRINT '--GOIN TO TEMP PROCESSING';
+GOTO TEMPPROCESS;
+END;
+END;
+ELSE
+BEGIN
+PRINT '--Non-Temp Table, ' + QUOTENAME(@TBLNAME) + ' continue Processing';
+END;
+--##############################################################################
+-- Check If TableName is Valid
+--##############################################################################
+IF ISNULL(@TABLE_ID,0) = 0
+BEGIN
+--V309 code: see if it is an object and not a table.
+SELECT
+@TBLNAME    = [objz].[name],
+@TABLE_ID   = [objz].[object_id],
+@ObjectTypeFound = [objz].[type_desc]
+FROM [sys].[objects] AS [objz]
+--WHERE [type_desc]     IN('SQL_STORED_PROCEDURE','VIEW','SQL_TRIGGER','AGGREGATE_FUNCTION','SQL_INLINE_TABLE_VALUED_FUNCTION','SQL_TABLE_VALUED_FUNCTION','SQL_SCALAR_FUNCTION','SYNONYMN')
+WHERE [objz].[type]          IN ('P','V','TR','AF','IF','FN','TF','SN')
+AND [objz].[name]          &lt;&gt;  'dtproperties'
+AND [objz].[name]           =  @TBLNAME
+AND [objz].[schema_id] =  SCHEMA_ID(@SCHEMANAME) ;
+IF ISNULL(@TABLE_ID,0) &lt;&gt; 0<br />
+BEGIN
+--adding a drop statement.
+--adding a sp_ms_marksystemobject if needed
+SELECT @MARKSYSTEMOBJECT = CASE 
+WHEN [objz].[is_ms_shipped] = 1 
+THEN '
+GO
+--#################################################################################################
+--Mark as a system object
+EXECUTE sp_ms_marksystemobject  ''' + QUOTENAME(@SCHEMANAME) +'.' + QUOTENAME(@TBLNAME) + '''
+--#################################################################################################
+' 
+ELSE '
+GO
+' 
+END 
+FROM [sys].[objects] AS [objz] 
+WHERE [objz].[object_id] = @TABLE_ID;
+--adding a drop statement.
+IF @ObjectTypeFound = 'SYNONYM'  COLLATE SQL_Latin1_General_CP1_CI_AS
+BEGIN
+SELECT @FINALSQL = 
+'IF EXISTS(SELECT * FROM sys.synonyms WHERE name = ''' 
++ [name] 
++ ''''
++ ' AND base_object_name &lt;&gt; ''' + [base_object_name] + ''')'
++ @vbCrLf
++ '  DROP SYNONYM ' + QUOTENAME([name]) + ''
++ @vbCrLf
++'GO'
++ @vbCrLf
++'IF NOT EXISTS(SELECT * FROM sys.synonyms WHERE name = ''' 
++ [name] 
++ ''')'
++ @vbCrLf
++ 'CREATE SYNONYM ' + QUOTENAME([name]) + ' FOR ' + [base_object_name] +';'
+FROM [sys].[synonyms]
+WHERE  [name]   =  @TBLNAME
+AND [schema_id] =  SCHEMA_ID(@SCHEMANAME);
+END;
+ELSE
+BEGIN
+SELECT @FINALSQL = 
+'IF OBJECT_ID(''' + QUOTENAME(@SCHEMANAME) + '.' + QUOTENAME(@TBLNAME) + ''') IS NOT NULL ' + @vbCrLf
++ 'DROP ' + CASE 
+WHEN [objz].[type] IN ('P')
+THEN ' PROCEDURE '
+WHEN [objz].[type] IN ('V')
+THEN ' VIEW      '
+WHEN [objz].[type] IN ('TR')
+THEN ' TRIGGER   '
+ELSE ' FUNCTION  '
+END 
++ QUOTENAME(@SCHEMANAME) + '.' + QUOTENAME(@TBLNAME) + ' ' + @vbCrLf + 'GO' + @vbCrLf
++ [def].[definition] + @MARKSYSTEMOBJECT
+FROM [sys].[objects] AS [objz] 
+INNER JOIN [sys].[sql_modules] AS [def]
+ON [objz].[object_id] = [def].[object_id]
+WHERE [objz].[type]          IN ('P','V','TR','AF','IF','FN','TF')
+AND [objz].[name]          &lt;&gt;  'dtproperties'
+AND [objz].[name]           =  @TBLNAME
+AND [objz].[schema_id] =  SCHEMA_ID(@SCHEMANAME) ;
+END;
+SET @input = @FINALSQL;</p>
+<pre><code>    SELECT @input AS [Item];
+     RETURN;
+    END;
+  ELSE
+    BEGIN
+    SET @FINALSQL = 'Object ' + QUOTENAME(@SCHEMANAME) + '.' + QUOTENAME(@TBLNAME) + ' does not exist in Database ' + QUOTENAME(DB_NAME())   + ' '  
+                  + CASE 
+                      WHEN @ISSYSTEMOBJECT = 0 THEN @vbCrLf + ' (also note that ' + @PROCNAME + ' is not marked as a system proc and cross db access to sys.tables will fail.)'
+                      ELSE ''
+                    END;
+  IF LEFT(@TBLNAME,1) = '#' 
+    SET @FINALSQL = @FINALSQL + ' OR in The tempdb database.';
+  SELECT @FINALSQL AS [Item];
+  RETURN 0;
+    END;  
+  
+END;
+</code></pre>
+<p>--##############################################################################
+-- Valid Table, Continue Processing
+--##############################################################################
+--Is this a SYSTEM versioned TABLE?
+SELECT @FINALSQL = 
+CASE 
+WHEN [tabz].[history_table_id] IS NULL 
+THEN '' 
+ELSE 'ALTER TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' SET (SYSTEM_VERSIONING = OFF);' + @vbCrLf
++  'IF OBJECT_ID(''' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[history_table_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[history_table_id])) + ''') IS NOT NULL ' + @vbCrLf
++ 'DROP TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[history_table_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[history_table_id])) + ' ' + @vbCrLf + 'GO' + @vbCrLf
+END
++ 'IF OBJECT_ID(''' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ''') IS NOT NULL ' + @vbCrLf
++ 'DROP TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' ' + @vbCrLf + 'GO' + @vbCrLf
++ 'CREATE TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' ( '
+FROM [sys].[tables] [tabz] WHERE [tabz].[object_id] = @TABLE_ID
+PRINT @FINALSQL
+--removed invalid code here which potentially selected wrong table--thanks David Grifiths @SSC!
+SELECT
+@STRINGLEN = MAX(LEN([colz].[name])) + 1
+FROM [sys].[objects] AS [objz]
+INNER JOIN [sys].[columns] AS [colz]
+ON  [objz].[object_id] = [colz].[object_id]
+AND [objz].[object_id] = @TABLE_ID;
+--##############################################################################
+--Get the columns, their definitions and defaults.
+--##############################################################################
+SELECT
+@FINALSQL = @FINALSQL
++ CASE
+WHEN [colz].[is_computed] = 1
+THEN @vbCrLf
++ QUOTENAME([colz].[name])
++ ' '
++ SPACE(@STRINGLEN - LEN([colz].[name]))
++ 'AS ' + ISNULL([CALC].[definition],'')
++ CASE 
+WHEN [CALC].[is_persisted] = 1 
+THEN ' PERSISTED'
+ELSE ''
+END
+ELSE @vbCrLf
++ QUOTENAME([colz].[name])
++ ' '
++ SPACE(@STRINGLEN - LEN([colz].[name]))
++ UPPER(TYPE_NAME([colz].[user_type_id]))
++ CASE
+-- data types with precision and scale  IE DECIMAL(18,3), NUMERIC(10,2)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('decimal','numeric')
+THEN '('
++ CONVERT(VARCHAR,[colz].[precision])
++ ','
++ CONVERT(VARCHAR,[colz].[scale])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[precision])
++ ','
++ CONVERT(VARCHAR,[colz].[scale])))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE
+WHEN COLUMNPROPERTY ( @TABLE_ID , [colz].[name] , 'IsIdentity' ) = 0
+THEN ''
+ELSE ' IDENTITY('
++ CONVERT(VARCHAR,ISNULL(IDENT_SEED(@TBLNAME),1) )
++ ','
++ CONVERT(VARCHAR,ISNULL(IDENT_INCR(@TBLNAME),1) )
++ ')'
+END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+-- data types with scale  IE datetime2(7),TIME(7)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('datetime2','datetimeoffset','time')
+THEN CASE 
+WHEN [colz].[scale] &lt; 7 THEN
+'('
++ CONVERT(VARCHAR,[colz].[scale])
++ ') '
+ELSE 
+'    '
+END
++ SPACE(4)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ '        '
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE [colz].[generated_always_type]
+WHEN 0 THEN ''
+WHEN 1 THEN ' GENERATED ALWAYS AS ROW START'
+WHEN 2 THEN ' GENERATED ALWAYS AS ROW END'
+ELSE ''
+END 
++ CASE WHEN [colz].[is_hidden] = 1 THEN ' HIDDEN' ELSE '' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+--data types with no/precision/scale,IE  FLOAT
+WHEN  TYPE_NAME([colz].[user_type_id]) IN ('float') --,'real')
+THEN
+--addition: if 53, no need to specifically say (53), otherwise display it
+CASE
+WHEN [colz].[precision] = 53
+THEN SPACE(11 - LEN(CONVERT(VARCHAR,[colz].[precision])))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,[colz].[precision])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[precision])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+--data type with max_length		ie CHAR (44), VARCHAR(40), BINARY(5000),
+--##############################################################################
+-- COLLATE STATEMENTS
+-- personally i do not like collation statements,
+-- but included here to make it easy on those who do
+--##############################################################################
+WHEN  TYPE_NAME([colz].[user_type_id]) IN ('char','varchar','binary','varbinary')
+THEN CASE
+WHEN  [colz].[max_length] = -1
+THEN  '(max)'
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[max_length])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--    WHEN COLS.collation_name IS NULL
+--    THEN ''
+--    ELSE ' COLLATE ' + COLS.collation_name
+--  END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,[colz].[max_length])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[max_length])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+--data type with max_length ( BUT DOUBLED) ie NCHAR(33), NVARCHAR(40)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('nchar','nvarchar')
+THEN CASE
+WHEN  [colz].[max_length] = -1
+THEN '(max)'
++ SPACE(5 - LEN(CONVERT(VARCHAR,([colz].[max_length] / 2))))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN  ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,([colz].[max_length] / 2))
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,([colz].[max_length] / 2))))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('datetime','money','text','image','real')
+THEN SPACE(18 - LEN(TYPE_NAME([colz].[user_type_id])))
++ '              '
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+--  other data type 	IE INT, DATETIME, MONEY, CUSTOM DATA TYPE,...
+ELSE SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE
+WHEN COLUMNPROPERTY ( @TABLE_ID , [colz].[name] , 'IsIdentity' ) = 0
+THEN '              '
+ELSE ' IDENTITY('
++ CONVERT(VARCHAR,ISNULL(IDENT_SEED(@TBLNAME),1) )
++ ','
++ CONVERT(VARCHAR,ISNULL(IDENT_INCR(@TBLNAME),1) )
++ ')'
+END
++ SPACE(2)
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
++ CASE
+WHEN [colz].[default_object_id] = 0
+THEN ''
+--ELSE ' DEFAULT '  + ISNULL(def.[definition] ,'')
+--optional section in case NAMED default constraints are needed:
+ELSE '  CONSTRAINT ' + QUOTENAME([DEF].[name]) + ' DEFAULT ' + ISNULL([DEF].[definition] ,'')
+--i thought it needed to be handled differently! NOT!
+END  --CASE cdefault
+END --iscomputed
++ ','
+FROM [sys].[columns] AS [colz]
+LEFT OUTER JOIN  [sys].[default_constraints]  AS [DEF]
+ON [colz].[default_object_id] = [DEF].[object_id]
+LEFT OUTER JOIN [sys].[computed_columns] AS [CALC]
+ON  [colz].[object_id] = [CALC].[object_id]
+AND [colz].[column_id] = [CALC].[column_id]
+WHERE [colz].[object_id]=@TABLE_ID
+ORDER BY [colz].[column_id];
+--##############################################################################
+--used for formatting the rest of the constraints:
+--##############################################################################
+SELECT
+@STRINGLEN = MAX(LEN([objz].[name])) + 1
+FROM [sys].[objects] AS [objz];
+--##############################################################################
+--PK/Unique Constraints and Indexes, using the 2005/08 INCLUDE syntax
+--##############################################################################
+DECLARE @Results  TABLE (
+[SCHEMA_ID]             INT,
+[SCHEMA_NAME]           VARCHAR(255),
+[OBJECT_ID]             INT,
+[OBJECT_NAME]           VARCHAR(255),
+[index_id]              INT,
+[index_name]            VARCHAR(255),
+[ROWS]                  BIGINT,
+[SizeMB]                DECIMAL(19,3),
+[IndexDepth]            INT,
+[TYPE]                  INT,
+[type_desc]             VARCHAR(30),
+[fill_factor]           INT,
+[is_unique]             INT,
+[is_primary_key]        INT ,
+[is_unique_constraint]  INT,
+[index_columns_key]     VARCHAR(MAX),
+[index_columns_include] VARCHAR(MAX),
+[has_filter] BIT ,
+[filter_definition] VARCHAR(MAX),
+[currentFilegroupName]  VARCHAR(128),
+[CurrentCompression]    VARCHAR(128));
+INSERT INTO @Results
+SELECT
+[SCH].[schema_id], [SCH].[name] AS [SCHEMA_NAME],
+[objz].[object_id], [objz].[name] AS [OBJECT_NAME],
+[IDX].[index_id], ISNULL([IDX].[name], '---') AS [index_name],
+[partitions].[ROWS], [partitions].[SizeMB], INDEXPROPERTY([objz].[object_id], [IDX].[name], 'IndexDepth') AS [IndexDepth],
+[IDX].[type], [IDX].[type_desc], [IDX].[fill_factor],
+[IDX].[is_unique], [IDX].[is_primary_key], [IDX].[is_unique_constraint],
+ISNULL([Index_Columns].[index_columns_key], '---') AS [index_columns_key],
+ISNULL([Index_Columns].[index_columns_include], '---') AS [index_columns_include],
+[IDX].[has_filter],
+[IDX].[filter_definition],
+[filz].[name],
+ISNULL([p].[data_compression_desc],'')
+FROM [sys].[objects] AS [objz]
+INNER JOIN [sys].[schemas] AS [SCH] ON [objz].[schema_id]=[SCH].[schema_id]
+INNER JOIN [sys].[indexes] AS [IDX] ON [objz].[object_id]=[IDX].[object_id]
+INNER JOIN [sys].[filegroups] AS [filz] ON [IDX].[data_space_id] = [filz].[data_space_id]
+INNER JOIN [sys].[partitions] AS [p]     ON  [IDX].[object_id] =  [p].[object_id]  AND [IDX].[index_id] = [p].[index_id]
+INNER JOIN (
+SELECT
+[statz].[object_id], [statz].[index_id], SUM([statz].[row_count]) AS [ROWS],
+CONVERT(NUMERIC(19,3), CONVERT(NUMERIC(19,3), SUM([statz].[in_row_reserved_page_count]+[statz].[lob_reserved_page_count]+[statz].[row_overflow_reserved_page_count]))/CONVERT(NUMERIC(19,3), 128)) AS [SizeMB]
+FROM [sys].[dm_db_partition_stats] AS [statz]
+GROUP BY [statz].[object_id], [statz].[index_id]
+) AS [partitions] 
+ON  [IDX].[object_id]=[partitions].[object_id] 
+AND [IDX].[index_id]=[partitions].[index_id]
+CROSS APPLY (
+SELECT
+LEFT([Index_Columns].[index_columns_key], LEN([Index_Columns].[index_columns_key])-1) AS [index_columns_key],
+LEFT([Index_Columns].[index_columns_include], LEN([Index_Columns].[index_columns_include])-1) AS [index_columns_include]
+FROM
+(
+SELECT
+(
+SELECT QUOTENAME([colz].[name]) + CASE WHEN [IXCOLS].[is_descending_key] = 0 THEN ' asc' ELSE ' desc' END + ',' + ' '
+FROM [sys].[index_columns] AS [IXCOLS]
+INNER JOIN [sys].[columns] AS [colz]
+ON  [IXCOLS].[column_id]   = [colz].[column_id]
+AND [IXCOLS].[object_id] = [colz].[object_id]
+WHERE [IXCOLS].[is_included_column] = 0
+AND [IDX].[object_id] = [IXCOLS].[object_id] 
+AND [IDX].[index_id] = [IXCOLS].[index_id]
+ORDER BY [IXCOLS].[key_ordinal]
+FOR XML PATH('')
+) AS [index_columns_key],
+(
+SELECT QUOTENAME([colz].[name]) + ',' + ' '
+FROM [sys].[index_columns] AS [IXCOLS]
+INNER JOIN [sys].[columns] AS [colz]
+ON  [IXCOLS].[column_id]   = [colz].[column_id]
+AND [IXCOLS].[object_id] = [colz].[object_id]
+WHERE [IXCOLS].[is_included_column] = 1
+AND [IDX].[object_id] = [IXCOLS].[object_id] 
+AND [IDX].[index_id] = [IXCOLS].[index_id]
+ORDER BY [IXCOLS].[index_column_id]
+FOR XML PATH('')
+) AS [index_columns_include]
+) AS [Index_Columns]
+) AS [Index_Columns]
+WHERE [SCH].[name]  LIKE CASE 
+WHEN @SCHEMANAME = ''   COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN [SCH].[name] 
+ELSE @SCHEMANAME 
+END
+AND [objz].[name] LIKE CASE 
+WHEN @TBLNAME = ''   COLLATE SQL_Latin1_General_CP1_CI_AS 
+THEN [objz].[name] 
+ELSE @TBLNAME 
+END
+ORDER BY 
+[SCH].[name], 
+[objz].[name], 
+[IDX].[name];
+--@Results table has both PK,s Uniques and indexes in thme...pull them out for adding to funal results:
+SET @CONSTRAINTSQLS = '';
+SET @INDEXSQLS      = '';
+SET @TemporalStatement = '';
+SET @WithStatement = '';
+--##############################################################################
+-- Temporal tables
+--##############################################################################
+SELECT @TemporalStatement =  ISNULL(@vbCrLf + 'PERIOD FOR SYSTEM_TIME ('</p>
+<ul>
+<li>
+<p>MAX(CASE WHEN [colz].[generated_always_type] = 1 THEN [colz].[name] ELSE '' END)
++','</p>
+</li>
+<li>
+<p>MAX(CASE WHEN [colz].[generated_always_type] = 2 THEN [colz].[name] ELSE '' END)
++'),','') ,
+@WithStatement = ISNULL(' SYSTEM_VERSIONING = ON (HISTORY_TABLE=' + QUOTENAME(OBJECT_SCHEMA_NAME([objz].[history_table_id])) + '.' + QUOTENAME(OBJECT_NAME([objz].[history_table_id])) + '),' ,'')
+FROM [sys].[tables] [objz]
+INNER JOIN [sys].[columns] [colz] 
+ON [objz].[object_id] = [colz].[object_id]
+WHERE [colz].[object_id] = @TABLE_ID 
+AND [colz].[generated_always_type] &gt; 0
+GROUP BY [colz].[object_id],[objz].[history_table_id]
+--##############################################################################
+-- memory optimized
+--##############################################################################
+SELECT @WithStatement  = @WithStatement + ISNULL('MEMORY_OPTIMIZED=ON, DURABILITY=' + [objz].[durability_desc] + ',','') 
+FROM [sys].[tables] [objz]
+WHERE [objz].[is_memory_optimized] =1
+AND [objz].[object_id] = @TABLE_ID 
+--##############################################################################
+--constraints
+--column store indexes are different: the &quot;include&quot; columns for normal indexes as scripted above are the columnstores indexed columns
+--add a CASE for that situation.
+--##############################################################################
+SELECT @CONSTRAINTSQLS = @CONSTRAINTSQLS 
++ CASE
+WHEN [is_primary_key] = 1 OR [is_unique] = 1
+THEN @vbCrLf
++ 'CONSTRAINT   '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME([index_name]) + ' '
++ CASE<br />
+WHEN [is_primary_key] = 1 
+THEN ' PRIMARY KEY ' 
+ELSE CASE<br />
+WHEN [is_unique] = 1<br />
+THEN ' UNIQUE      '<br />
+ELSE '' 
+END 
+END
++ [type_desc] 
++ CASE 
+WHEN [type_desc]='NONCLUSTERED' 
+THEN '' 
+ELSE '   ' 
+END
++ ' (' + [index_columns_key] + ')'
++ CASE 
+WHEN [index_columns_include] &lt;&gt; '---' 
+THEN ' INCLUDE (' + [index_columns_include] + ')' 
+ELSE '' 
+END
++ CASE
+WHEN [has_filter] = 1 
+THEN ' ' + [filter_definition]
+ELSE ' '
+END
++ CASE WHEN [fill_factor] &lt;&gt; 0 OR [CurrentCompression] &lt;&gt; 'NONE'
+THEN ' WITH (' + CASE
+WHEN [fill_factor] &lt;&gt; 0 
+THEN 'FILLFACTOR = ' + CONVERT(VARCHAR(30),[fill_factor]) 
+ELSE '' 
+END
++ CASE
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN ',DATA_COMPRESSION = ' + [CurrentCompression] + ' '
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression]  = 'NONE' THEN ''
+WHEN [fill_factor]  = 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN 'DATA_COMPRESSION = ' + [CurrentCompression] + ' '
+ELSE '' 
+END
++ ')'
+ELSE '' 
+END </p>
+<pre><code>      ELSE ''
+    END + ','
+</code></pre>
+</li>
+</ul>
+<p>FROM @Results
+WHERE [type_desc] != 'HEAP'
+AND [is_primary_key] = 1 
+OR  [is_unique] = 1
+ORDER BY 
+[is_primary_key] DESC,
+[is_unique] DESC;
+--
+--##############################################################################
+--indexes
+--##############################################################################
+SELECT @INDEXSQLS = @INDEXSQLS 
++ CASE
+WHEN [is_primary_key] = 0 OR [is_unique] = 0
+THEN @vbCrLf
++ 'CREATE '  COLLATE SQL_Latin1_General_CP1_CI_AS + [type_desc] + ' INDEX '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME([index_name]) + ' '
++ @vbCrLf
++ '   ON '   COLLATE SQL_Latin1_General_CP1_CI_AS
++ QUOTENAME([SCHEMA_NAME]) + '.' + QUOTENAME([OBJECT_NAME])
++ CASE 
+WHEN [CurrentCompression] = 'COLUMNSTORE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ' (' + [index_columns_include] + ')' 
+ELSE ' (' + [index_columns_key] + ')'
+END
++ CASE 
+WHEN [CurrentCompression] = 'COLUMNSTORE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE
+CASE
+WHEN [index_columns_include] &lt;&gt; '---' 
+THEN @vbCrLf + '   INCLUDE ('  COLLATE SQL_Latin1_General_CP1_CI_AS + [index_columns_include] + ')'   COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE ''   COLLATE SQL_Latin1_General_CP1_CI_AS
+END
+END
+--2008 filtered indexes syntax
++ CASE 
+WHEN [has_filter] = 1 
+THEN @vbCrLf + '   WHERE '  COLLATE SQL_Latin1_General_CP1_CI_AS + [filter_definition]
+ELSE ''
+END
++ CASE WHEN [fill_factor] &lt;&gt; 0 OR [CurrentCompression] &lt;&gt; 'NONE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ' WITH ('  COLLATE SQL_Latin1_General_CP1_CI_AS + CASE
+WHEN [fill_factor] &lt;&gt; 0 
+THEN 'FILLFACTOR = '  COLLATE SQL_Latin1_General_CP1_CI_AS + CONVERT(VARCHAR(30),[fill_factor]) 
+ELSE '' 
+END
++ CASE
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN ',DATA_COMPRESSION = ' + [CurrentCompression]+' '
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression]  = 'NONE' THEN ''
+WHEN [fill_factor]  = 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN 'DATA_COMPRESSION = ' + [CurrentCompression]+' '
+ELSE '' 
+END
++ ')'
+ELSE '' 
+END 
+END
+FROM @Results
+WHERE [type_desc] != 'HEAP'
+AND [is_primary_key] = 0 
+AND [is_unique] = 0
+ORDER BY 
+[is_primary_key] DESC,
+[is_unique] DESC;
+IF @INDEXSQLS &lt;&gt; ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @INDEXSQLS = @vbCrLf + 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + @INDEXSQLS;
+--##############################################################################
+--CHECK Constraints
+--##############################################################################
+SET @CHECKCONSTSQLS = ''  COLLATE SQL_Latin1_General_CP1_CI_AS;
+SELECT
+@CHECKCONSTSQLS = @CHECKCONSTSQLS
++ @vbCrLf
++ ISNULL('CONSTRAINT   ' + QUOTENAME([objz].[name]) + ' '
++ SPACE(@STRINGLEN - LEN([objz].[name]))
++ ' CHECK ' + ISNULL([CHECKS].[definition],'')
++ ',','')
+FROM [sys].[objects] AS [objz]
+INNER JOIN [sys].[check_constraints] AS [CHECKS] ON [objz].[object_id] = [CHECKS].[object_id]
+WHERE [objz].[type] = 'C'
+AND [objz].[parent_object_id] = @TABLE_ID;
+--##############################################################################
+--FOREIGN KEYS
+--##############################################################################
+SET @FKSQLS = '' ;
+SELECT
+@FKSQLS=@FKSQLS
++ @vbCrLf + [MyAlias].[Command] FROM
+(
+SELECT
+DISTINCT
+--FK must be added AFTER the PK/unique constraints are added back.
+850 AS [ExecutionOrder],
+'CONSTRAINT ' </p>
+<ul>
+<li>
+<p>QUOTENAME([conz].[name]) </p>
+</li>
+<li>
+<p>' FOREIGN KEY (' </p>
+</li>
+<li>
+<p>[ChildCollection].[ChildColumns] </p>
+</li>
+<li>
+<p>') REFERENCES ' </p>
+</li>
+<li>
+<p>QUOTENAME(SCHEMA_NAME([conz].[schema_id])) </p>
+</li>
+<li>
+<p>'.' </p>
+</li>
+<li>
+<p>QUOTENAME(OBJECT_NAME([conz].[referenced_object_id])) </p>
+</li>
+<li>
+<p>' (' + [ParentCollection].[ParentColumns] </p>
+</li>
+<li>
+<p>') ' </p>
+</li>
+<li>
+<p>CASE [conz].[update_referential_action]
+WHEN 0 THEN '' --' ON UPDATE NO ACTION '
+WHEN 1 THEN ' ON UPDATE CASCADE '
+WHEN 2 THEN ' ON UPDATE SET NULL '
+ELSE ' ON UPDATE SET DEFAULT '
+END
++ CASE [conz].[delete_referential_action]
+WHEN 0 THEN '' --' ON DELETE NO ACTION '
+WHEN 1 THEN ' ON DELETE CASCADE '
+WHEN 2 THEN ' ON DELETE SET NULL '
+ELSE ' ON DELETE SET DEFAULT '
+END
++ CASE [conz].[is_not_for_replication]
+WHEN 1 THEN ' NOT FOR REPLICATION '
+ELSE ''
+END</p>
+</li>
+<li>
+<p>',' AS [Command]
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]</p>
+<p>INNER JOIN (--gets my child tables column names<br />
+SELECT
+[conz].[name],
+--technically, FK's can contain up to 16 columns, but real life is often a single column. coding here is for all columns
+[ChildColumns] = STUFF((SELECT 
+',' + QUOTENAME([REFZ].[name])
+FROM   [sys].[foreign_key_columns] AS [fkcolz]
+INNER JOIN [sys].[columns] AS [REFZ]
+ON [fkcolz].[parent_object_id] = [REFZ].[object_id]
+AND [fkcolz].[parent_column_id] = [REFZ].[column_id]
+WHERE [fkcolz].[parent_object_id] = [conz].[parent_object_id]
+AND [fkcolz].[constraint_object_id] = [conz].[object_id]
+ORDER  BY
+[fkcolz].[constraint_column_id]
+FOR XML PATH(''), TYPE).<a href="&#x27;.&#x27;,&#x27;varchar(max)&#x27;">value</a>,1,1,'')
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]
+WHERE [conz].[parent_object_id]= @TABLE_ID
+GROUP  BY
+[conz].[name],
+[conz].[parent_object_id],--- without GROUP BY multiple rows are returned
+[conz].[object_id]
+) AS [ChildCollection]
+ON [conz].[name] = [ChildCollection].[name]
+INNER JOIN (--gets the parent tables column names for the FK reference
+SELECT
+[conz].[name],
+[ParentColumns] = STUFF((SELECT
+',' + [REFZ].[name]
+FROM   [sys].[foreign_key_columns] AS [fkcolz]
+INNER JOIN [sys].[columns] AS [REFZ]
+ON [fkcolz].[referenced_object_id] = [REFZ].[object_id]
+AND [fkcolz].[referenced_column_id] = [REFZ].[column_id]
+WHERE  [fkcolz].[referenced_object_id] = [conz].[referenced_object_id]
+AND [fkcolz].[constraint_object_id] = [conz].[object_id]
+ORDER BY [fkcolz].[constraint_column_id]
+FOR XML PATH(''), TYPE).<a href="&#x27;.&#x27;,&#x27;varchar(max)&#x27;">value</a>,1,1,'')
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]
+-- AND colz.parent_column_id 
+GROUP  BY
+[conz].[name],
+[conz].[referenced_object_id],--- without GROUP BY multiple rows are returned
+[conz].[object_id]
+) AS [ParentCollection]
+ON [conz].[name] = [ParentCollection].[name]
+)AS [MyAlias];
+--##############################################################################
+--RULES
+--##############################################################################
+SET @RULESCONSTSQLS = '';
+SELECT
+@RULESCONSTSQLS = @RULESCONSTSQLS</p>
+<ul>
+<li>ISNULL(
+@vbCrLf
++ 'if not exists(SELECT [name] FROM sys.objects WHERE TYPE=''R'' AND schema_id = ' COLLATE SQL_Latin1_General_CP1_CI_AS + CONVERT(VARCHAR(30),[objz].[schema_id]) + ' AND [name] = '''  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME(OBJECT_NAME([colz].[rule_object_id])) + ''')'  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf
++ [MODS].[definition]  + @vbCrLf + 'GO' COLLATE SQL_Latin1_General_CP1_CI_AS +  @vbCrLf
++ 'EXEC sp_binderule  ' + QUOTENAME([objz].[name]) + ', ''' + QUOTENAME(OBJECT_NAME([colz].[object_id])) + '.' + QUOTENAME([colz].[name]) + ''''  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS ,'')
+FROM [sys].[columns] [colz] 
+INNER JOIN [sys].[objects] [objz]
+ON [objz].[object_id] = [colz].[object_id]
+INNER JOIN [sys].[sql_modules] AS [MODS]
+ON [colz].[rule_object_id] = [MODS].[object_id]
+WHERE [colz].[rule_object_id] &lt;&gt; 0
+AND [colz].[object_id] = @TABLE_ID;
+--##############################################################################
+--TRIGGERS
+--##############################################################################
+SET @TRIGGERSTATEMENT = '';
+SELECT
+@TRIGGERSTATEMENT = @TRIGGERSTATEMENT +  @vbCrLf + [MODS].[definition] + @vbCrLf + 'GO'
+FROM [sys].[sql_modules] AS [MODS]
+WHERE [MODS].[object_id] IN(SELECT
+[objz].[object_id]
+FROM [sys].[objects] AS [objz]
+WHERE [objz].[type] = 'TR'
+AND [objz].[parent_object_id] = @TABLE_ID);
+IF @TRIGGERSTATEMENT &lt;&gt; ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @TRIGGERSTATEMENT = @vbCrLf + 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + @TRIGGERSTATEMENT;
+--##############################################################################
+--NEW SECTION QUERY ALL EXTENDED PROPERTIES
+--##############################################################################
+SET @EXTENDEDPROPERTIES = '';
+SELECT  @EXTENDEDPROPERTIES =
+@EXTENDEDPROPERTIES + @vbCrLf +
+'EXEC sys.sp_addextendedproperty
+@name = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS + [name] + ''', @value = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS + REPLACE(CONVERT(VARCHAR(MAX),[value]),'''','''''') + ''',
+@level0type = N''SCHEMA'', @level0name = '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME(@SCHEMANAME) + ',
+@level1type = N''TABLE'', @level1name = '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME(@TBLNAME) + ';'
+--SELECT objtype, objname, name, value
+FROM [sys].[fn_listextendedproperty] (NULL, 'schema', @SCHEMANAME, 'table', @TBLNAME, NULL, NULL);
+--OMacoder suggestion for column extended properties http://www.sqlservercentral.com/Forums/FindPost1651606.aspx
+;WITH [obj] AS (
+SELECT [split].[a].<a href="&#x27;.&#x27;," title="VARCHAR(20)">value</a> AS [name]
+FROM ( 
+SELECT CAST ('<M>' + REPLACE('column,constraint,index,trigger,parameter', ',', '</M><M>') + '</M>' AS XML) AS [data] 
+) AS [A] 
+CROSS APPLY [data].[nodes] ('/M') AS <a href="%5Ba%5D">split</a>
+)
+SELECT 
+@EXTENDEDPROPERTIES =
+@EXTENDEDPROPERTIES + @vbCrLf + @vbCrLf +
+'EXEC sys.sp_addextendedproperty
+@name = N''' COLLATE SQL_Latin1_General_CP1_CI_AS
+<ul>
+<li>[lep].[name] </li>
+<li>''', @value = N''' COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>REPLACE(CONVERT(VARCHAR(MAX),[lep].[value]),'''','''''') + ''',
+@level0type = N''SCHEMA'', @level0name = ' COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME(@SCHEMANAME) </li>
+<li>',
+@level1type = N''TABLE'', @level1name = ' COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME(@TBLNAME) </li>
+<li>',
+@level2type = N''' COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>UPPER([obj].[name])</li>
+<li>''', @level2name = ' COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME([lep].[objname]) + ';' COLLATE SQL_Latin1_General_CP1_CI_AS
+--SELECT objtype, objname, name, value
+FROM [obj] 
+CROSS APPLY [sys].[fn_listextendedproperty] (NULL, 'schema', @SCHEMANAME, 'table', @TBLNAME, [obj].[name], NULL) AS [lep];</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>IF @EXTENDEDPROPERTIES &lt;&gt; '' COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @EXTENDEDPROPERTIES = @vbCrLf + 'GO' COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + @EXTENDEDPROPERTIES;
+--##############################################################################
+--FINAL CLEANUP AND PRESENTATION
+--##############################################################################
+--at this point, there is a trailing comma, or it blank
+--WITH statment has a trailing comma</p>
+<p>IF @WithStatement &gt; '' 
+SET @WithStatement='WITH (' + SUBSTRING(@WithStatement,1,LEN(@WithStatement) -1)  + ')'
+SELECT
+@FINALSQL = @FINALSQL
++ @TemporalStatement
++ @CONSTRAINTSQLS
++ @CHECKCONSTSQLS
++ @FKSQLS;
+--note that this trims the trailing comma from the end of the statements
+SET @FINALSQL = SUBSTRING(@FINALSQL,1,LEN(@FINALSQL) -1) ;
+SET @FINALSQL = @FINALSQL + ')' COLLATE SQL_Latin1_General_CP1_CI_AS +  @vbCrLf + @WithStatement COLLATE SQL_Latin1_General_CP1_CI_AS +  @vbCrLf ;
+SET @input = @vbCrLf
++ @FINALSQL
++ @INDEXSQLS
++ @RULESCONSTSQLS
++ @TRIGGERSTATEMENT
++ @EXTENDEDPROPERTIES;
+SELECT @input AS [Item];
+RETURN 0;<br />
+--##############################################################################
+-- END Normal Table Processing
+--############################################################################## </p>
+<p>--simple, primitive version to get the results of a TEMP table from the TEMP db.<br />
+--##############################################################################
+-- NEW Temp Table Logic
+--##############################################################################<br />
+TEMPPROCESS:
+SELECT @TABLE_ID = OBJECT_ID('tempdb..' COLLATE SQL_Latin1_General_CP1_CI_AS + @TBLNAME);
+--##############################################################################
+-- Valid temp Table, Continue Processing
+--##############################################################################
+SELECT @FINALSQL = 
+CASE 
+WHEN [tabz].[history_table_id] IS NULL 
+THEN '' 
+ELSE 'ALTER TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' SET (SYSTEM_VERSIONING = OFF);' + @vbCrLf
++  'IF OBJECT_ID(''' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[history_table_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[history_table_id])) + ''') IS NOT NULL ' + @vbCrLf
++ 'DROP TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[history_table_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[history_table_id])) + ' ' + @vbCrLf + 'GO' + @vbCrLf
+END
++ 'IF OBJECT_ID(''' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id]) ) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ''') IS NOT NULL ' + @vbCrLf
++ 'DROP TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' ' + @vbCrLf + 'GO' + @vbCrLf
++ 'CREATE TABLE ' + QUOTENAME(OBJECT_SCHEMA_NAME([tabz].[object_id])) + '.' + QUOTENAME(OBJECT_NAME([tabz].[object_id])) + ' ( '
+FROM [sys].[tables] [tabz] WHERE [tabz].[object_id] = OBJECT_ID(@TABLE_ID)
+--removed invalid code here which potentially selected wrong table--thansk David Grifiths @SSC!
+SELECT 
+@STRINGLEN = MAX(LEN([colz].[name])) + 1
+FROM [tempdb].[sys].[objects] AS [objz]
+INNER JOIN [tempdb].[sys].[columns] AS [colz]
+ON  [objz].[object_id] = [colz].[object_id]
+AND [objz].[object_id] = @TABLE_ID;
+--##############################################################################
+--Get the hash index definitions for memory optimized tables, if any.
+--##############################################################################</p>
+<p>--##############################################################################
+--Get the columns, their definitions and defaults.
+--##############################################################################
+SELECT
+@FINALSQL = @FINALSQL
++ CASE
+WHEN [colz].[is_computed] = 1
+THEN @vbCrLf
++ QUOTENAME([colz].[name])
++ ' '
++ SPACE(@STRINGLEN - LEN([colz].[name]))
++ 'AS ' + ISNULL([CALC].[definition],'')
++ CASE 
+WHEN [CALC].[is_persisted] = 1 
+THEN ' PERSISTED'
+ELSE ''
+END
+ELSE @vbCrLf
++ QUOTENAME([colz].[name])
++ ' '
++ SPACE(@STRINGLEN - LEN([colz].[name]))
++ UPPER(TYPE_NAME([colz].[user_type_id]))
++ CASE
+-- data types with precision and scale  IE DECIMAL(18,3), NUMERIC(10,2)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('decimal','numeric')
+THEN '('
++ CONVERT(VARCHAR,[colz].[precision])
++ ','
++ CONVERT(VARCHAR,[colz].[scale])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[precision])
++ ','
++ CONVERT(VARCHAR,[colz].[scale])))
++ SPACE(7)
++ SPACE(16 - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE
+WHEN [colz].[is_identity] = 1
+THEN ' IDENTITY(1,1)'
+ELSE ''
+----WHEN COLUMNPROPERTY ( @TABLE_ID , COLS.[name] , 'IsIdentity' ) = 1
+----THEN ' IDENTITY('
+----       + CONVERT(VARCHAR,ISNULL(IDENT_SEED('tempdb..' + @TBLNAME),1) )
+----       + ','
+----       + CONVERT(VARCHAR,ISNULL(IDENT_INCR('tempdb..' + @TBLNAME),1) )
+----       + ')'
+----ELSE ''
+END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+-- data types with scale  IE datetime2(7),TIME(7)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('datetime2','datetimeoffset','time')
+THEN CASE 
+WHEN [colz].[scale] &lt; 7 THEN
+'('
++ CONVERT(VARCHAR,[colz].[scale])
++ ') '
+ELSE 
+'    '
+END
++ SPACE(4)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ '        '
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE [colz].[generated_always_type]
+WHEN 0 THEN ''
+WHEN 1 THEN ' GENERATED ALWAYS AS ROW START'
+WHEN 2 THEN ' GENERATED ALWAYS AS ROW END'
+ELSE ''
+END 
++ CASE WHEN [colz].[is_hidden] = 1 THEN ' HIDDEN' ELSE '' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+--data types with no/precision/scale,IE  FLOAT
+WHEN  TYPE_NAME([colz].[user_type_id]) IN ('float') --,'real')
+THEN
+--addition: if 53, no need to specifically say (53), otherwise display it
+CASE
+WHEN [colz].[precision] = 53
+THEN SPACE(11 - LEN(CONVERT(VARCHAR,[colz].[precision])))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,[colz].[precision])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[precision])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+--ie VARCHAR(40)
+--##############################################################################
+-- COLLATE STATEMENTS in tempdb!
+-- personally i do not like collation statements,
+-- but included here to make it easy on those who do
+--##############################################################################
+WHEN  TYPE_NAME([colz].[user_type_id]) IN ('char','varchar','binary','varbinary')
+THEN CASE
+WHEN  [colz].[max_length] = -1
+THEN  '(max)'
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[max_length])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--    WHEN COLS.collation_name IS NULL
+--    THEN ''
+--    ELSE ' COLLATE ' + COLS.collation_name
+--  END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,[colz].[max_length])
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,[colz].[max_length])))
++ SPACE(7) + SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+----collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+--data type with max_length ( BUT DOUBLED) ie NCHAR(33), NVARCHAR(40)
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('nchar','nvarchar')
+THEN CASE
+WHEN  [colz].[max_length] = -1
+THEN '(max)'
++ SPACE(5 - LEN(CONVERT(VARCHAR,([colz].[max_length] / 2))))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+-- --collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN  ' NOT NULL'
+ELSE '     NULL'
+END
+ELSE '('
++ CONVERT(VARCHAR,([colz].[max_length] / 2))
++ ') '
++ SPACE(6 - LEN(CONVERT(VARCHAR,([colz].[max_length] / 2))))
++ SPACE(7)
++ SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
+-- --collate to comment out when not desired
+--+ CASE
+--     WHEN COLS.collation_name IS NULL
+--     THEN ''
+--     ELSE ' COLLATE ' + COLS.collation_name
+--   END
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
+--  other data type 	IE INT, DATETIME, MONEY, CUSTOM DATA TYPE,...
+WHEN TYPE_NAME([colz].[user_type_id]) IN ('datetime','money','text','image','real')
+THEN SPACE(18 - LEN(TYPE_NAME([colz].[user_type_id])))
++ '              '
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+--IE INT
+ELSE SPACE(@ObjectDataTypeLen - LEN(TYPE_NAME([colz].[user_type_id])))
++ CASE
+WHEN [colz].[is_identity] = 1
+THEN ' IDENTITY(1,1)'
+ELSE '              '
+----WHEN COLUMNPROPERTY ( @TABLE_ID , COLS.[name] , 'IsIdentity' ) = 1
+----THEN ' IDENTITY('
+----     + CONVERT(VARCHAR,ISNULL(IDENT_SEED('tempdb..' + @TBLNAME),1) )
+----     + ','
+----     + CONVERT(VARCHAR,ISNULL(IDENT_INCR('tempdb..' + @TBLNAME),1) )
+----     + ')'
+----ELSE '              '
+END
++ SPACE(2)
++ CASE  WHEN [colz].[is_sparse] = 1 THEN ' sparse' ELSE '       ' END
++ CASE
+WHEN [colz].[is_nullable] = 0
+THEN ' NOT NULL'
+ELSE '     NULL'
+END
+END
++ CASE
+WHEN [colz].[default_object_id] = 0
+THEN ''
+ELSE ' DEFAULT '  + ISNULL([DEF].[definition] ,'')
+--optional section in case NAMED default cosntraints are needed:
+--ELSE ' CONSTRAINT [' + DEF.name + '] DEFAULT '+ REPLACE(REPLACE(ISNULL(DEF.[definition] ,''),'((','('),'))',')')
+--i thought it needed to be handled differently! NOT!
+END  --CASE cdefault
+END --iscomputed
++ ','
+FROM [tempdb].[sys].[columns] AS [colz]
+LEFT OUTER JOIN  [tempdb].[sys].[default_constraints]  AS [DEF]
+ON [colz].[default_object_id] = [DEF].[object_id]
+LEFT OUTER JOIN [tempdb].[sys].[computed_columns] AS [CALC]
+ON  [colz].[object_id] = [CALC].[object_id]
+AND [colz].[column_id] = [CALC].[column_id]
+WHERE [colz].[object_id]=@TABLE_ID
+ORDER BY [colz].[column_id];
+--##############################################################################
+--used for formatting the rest of the constraints:
+--##############################################################################
+SELECT
+@STRINGLEN = MAX(LEN([objz].[name])) + 1
+FROM [tempdb].[sys].[objects] AS [objz];
+--##############################################################################
+--PK/Unique Constraints and Indexes, using the 2005/08 INCLUDE syntax
+--##############################################################################
+DECLARE @Results2  TABLE (
+[SCHEMA_ID]             INT,
+[SCHEMA_NAME]           VARCHAR(255),
+[OBJECT_ID]             INT,
+[OBJECT_NAME]           VARCHAR(255),
+[index_id]              INT,
+[index_name]            VARCHAR(255),
+[ROWS]                  BIGINT,
+[SizeMB]                DECIMAL(19,3),
+[IndexDepth]            INT,
+[TYPE]                  INT,
+[type_desc]             VARCHAR(30),
+[fill_factor]           INT,
+[is_unique]             INT,
+[is_primary_key]        INT ,
+[is_unique_constraint]  INT,
+[index_columns_key]     VARCHAR(MAX),
+[index_columns_include] VARCHAR(MAX),
+[has_filter] BIT ,
+[filter_definition] VARCHAR(MAX),
+[currentFilegroupName]  VARCHAR(128),
+[CurrentCompression]    VARCHAR(128));
+INSERT INTO @Results2
+SELECT
+[SCH].[schema_id], [SCH].[name] AS [SCHEMA_NAME],
+[objz].[object_id], [objz].[name] AS [OBJECT_NAME],
+[IDX].[index_id], ISNULL([IDX].[name], '---') AS [index_name],
+[partitions].[ROWS], [partitions].[SizeMB], INDEXPROPERTY([objz].[object_id], [IDX].[name], 'IndexDepth') AS [IndexDepth],
+[IDX].[type], [IDX].[type_desc], [IDX].[fill_factor],
+[IDX].[is_unique], [IDX].[is_primary_key], [IDX].[is_unique_constraint],
+ISNULL([Index_Columns].[index_columns_key], '---') AS [index_columns_key],
+ISNULL([Index_Columns].[index_columns_include], '---') AS [index_columns_include],
+[IDX].[has_filter],
+[IDX].[filter_definition],
+[filz].[name],
+ISNULL([p].[data_compression_desc],'')
+FROM [tempdb].[sys].[objects] AS [objz]
+INNER JOIN [tempdb].[sys].[schemas] AS [SCH] ON [objz].[schema_id]=[SCH].[schema_id]
+INNER JOIN [tempdb].[sys].[indexes] AS [IDX] ON [objz].[object_id]=[IDX].[object_id]
+INNER JOIN [sys].[filegroups] AS [filz] ON [IDX].[data_space_id] = [filz].[data_space_id]
+INNER JOIN [sys].[partitions] AS [p]     ON  [IDX].[object_id] =  [p].[object_id]  AND [IDX].[index_id] = [p].[index_id]
+INNER JOIN (
+SELECT
+[statz].[object_id], [statz].[index_id], SUM([statz].[row_count]) AS [ROWS],
+CONVERT(NUMERIC(19,3), CONVERT(NUMERIC(19,3), SUM([statz].[in_row_reserved_page_count]+[statz].[lob_reserved_page_count]+[statz].[row_overflow_reserved_page_count]))/CONVERT(NUMERIC(19,3), 128)) AS [SizeMB]
+FROM [tempdb].[sys].[dm_db_partition_stats] AS [statz]
+GROUP BY [statz].[object_id], [statz].[index_id]
+) AS [partitions] 
+ON  [IDX].[object_id]=[partitions].[object_id] 
+AND [IDX].[index_id]=[partitions].[index_id]
+CROSS APPLY (
+SELECT
+LEFT([Index_Columns].[index_columns_key], LEN([Index_Columns].[index_columns_key])-1) AS [index_columns_key],
+LEFT([Index_Columns].[index_columns_include], LEN([Index_Columns].[index_columns_include])-1) AS [index_columns_include]
+FROM
+(
+SELECT
+(
+SELECT QUOTENAME([colz].[name]) + CASE WHEN [IXCOLS].[is_descending_key] = 0 THEN ' asc' ELSE ' desc' END + ',' + ' '
+FROM [tempdb].[sys].[index_columns] AS [IXCOLS]
+INNER JOIN [tempdb].[sys].[columns] AS [colz]
+ON  [IXCOLS].[column_id]   = [colz].[column_id]
+AND [IXCOLS].[object_id] = [colz].[object_id]
+WHERE [IXCOLS].[is_included_column] = 0
+AND [IDX].[object_id] = [IXCOLS].[object_id] 
+AND [IDX].[index_id] = [IXCOLS].[index_id]
+ORDER BY [IXCOLS].[key_ordinal]
+FOR XML PATH('')
+) AS [index_columns_key],
+(
+SELECT QUOTENAME([colz].[name]) + ',' + ' '
+FROM [tempdb].[sys].[index_columns] AS [IXCOLS]
+INNER JOIN [tempdb].[sys].[columns] AS [colz]
+ON  [IXCOLS].[column_id]   = [colz].[column_id]
+AND [IXCOLS].[object_id] = [colz].[object_id]
+WHERE [IXCOLS].[is_included_column] = 1
+AND [IDX].[object_id] = [IXCOLS].[object_id] 
+AND [IDX].[index_id] = [IXCOLS].[index_id]
+ORDER BY [IXCOLS].[index_column_id]
+FOR XML PATH('')
+) AS [index_columns_include]
+) AS [Index_Columns]
+) AS [Index_Columns]
+WHERE [SCH].[name]  LIKE CASE 
+WHEN @SCHEMANAME = '' COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN [SCH].[name] 
+ELSE @SCHEMANAME 
+END
+AND [objz].[name] LIKE CASE 
+WHEN @TBLNAME = ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN [objz].[name] 
+ELSE @TBLNAME 
+END
+ORDER BY 
+[SCH].[name], 
+[objz].[name], 
+[IDX].[name];
+--@Results2 table has both PK,s Uniques and indexes in thme...pull them out for adding to funal results:
+SET @CONSTRAINTSQLS = '' COLLATE SQL_Latin1_General_CP1_CI_AS;
+SET @INDEXSQLS      = '' COLLATE SQL_Latin1_General_CP1_CI_AS;
+--##############################################################################
+--constraints
+--##############################################################################
+SELECT @CONSTRAINTSQLS = @CONSTRAINTSQLS 
++ CASE
+WHEN [is_primary_key] = 1 OR [is_unique] = 1
+THEN @vbCrLf
++ 'CONSTRAINT   '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME([index_name]) + ' '
++ SPACE(@STRINGLEN - LEN([index_name]))
++ CASE<br />
+WHEN [is_primary_key] = 1 
+THEN ' PRIMARY KEY '  COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE CASE<br />
+WHEN [is_unique] = 1<br />
+THEN ' UNIQUE      '     COLLATE SQL_Latin1_General_CP1_CI_AS<br />
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END 
+END
++ [type_desc] 
++ CASE 
+WHEN [type_desc]='NONCLUSTERED' 
+THEN ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE '   ' 
+END
++ ' (' + [index_columns_key] + ')'
++ CASE 
+WHEN [index_columns_include] &lt;&gt; '---' 
+THEN ' INCLUDE (' + [index_columns_include] + ')' 
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ CASE
+WHEN [has_filter] = 1 
+THEN ' ' + [filter_definition]
+ELSE ' '
+END
++ CASE WHEN [fill_factor] &lt;&gt; 0 OR [CurrentCompression] &lt;&gt; 'NONE'
+THEN ' WITH (' + CASE
+WHEN [fill_factor] &lt;&gt; 0 
+THEN 'FILLFACTOR = ' + CONVERT(VARCHAR(30),[fill_factor]) 
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ CASE
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN ',DATA_COMPRESSION = ' + [CurrentCompression] + ' '
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression]  = 'NONE' THEN ''
+WHEN [fill_factor]  = 0  AND [CurrentCompression] &lt;&gt; 'NONE' THEN 'DATA_COMPRESSION = ' + [CurrentCompression] + ' '
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ ')'
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END 
+ELSE '' COLLATE SQL_Latin1_General_CP1_CI_AS
+END + ','
+FROM @Results2
+WHERE [type_desc] != 'HEAP'
+AND [is_primary_key] = 1 
+OR  [is_unique] = 1
+ORDER BY 
+[is_primary_key] DESC,
+[is_unique] DESC;
+--##############################################################################
+--indexes
+--##############################################################################
+SELECT @INDEXSQLS = @INDEXSQLS 
++ CASE
+WHEN [is_primary_key] = 0 OR [is_unique] = 0
+THEN @vbCrLf
++ 'CREATE '  COLLATE SQL_Latin1_General_CP1_CI_AS + [type_desc] + ' INDEX '  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME([index_name]) + ' ' COLLATE SQL_Latin1_General_CP1_CI_AS
++ @vbCrLf
++ '   ON '  COLLATE SQL_Latin1_General_CP1_CI_AS
++ QUOTENAME([SCHEMA_NAME]) + '.' + QUOTENAME([OBJECT_NAME])
++ CASE 
+WHEN [CurrentCompression] = 'COLUMNSTORE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ' ('  COLLATE SQL_Latin1_General_CP1_CI_AS+ [index_columns_include] + ')'  COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE ' ('  COLLATE SQL_Latin1_General_CP1_CI_AS+ [index_columns_key] + ')' COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ CASE 
+WHEN [CurrentCompression] = 'COLUMNSTORE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE
+CASE
+WHEN [index_columns_include] &lt;&gt; '---' 
+THEN @vbCrLf + '   INCLUDE ('  COLLATE SQL_Latin1_General_CP1_CI_AS + [index_columns_include] + ')'  COLLATE SQL_Latin1_General_CP1_CI_AS 
+ELSE ''   COLLATE SQL_Latin1_General_CP1_CI_AS
+END
+END
+--2008 filtered indexes syntax
++ CASE 
+WHEN [has_filter] = 1 
+THEN @vbCrLf + '   WHERE '  COLLATE SQL_Latin1_General_CP1_CI_AS + [filter_definition]
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ CASE WHEN [fill_factor] &lt;&gt; 0 OR [CurrentCompression] &lt;&gt; 'NONE'  COLLATE SQL_Latin1_General_CP1_CI_AS
+THEN ' WITH ('  COLLATE SQL_Latin1_General_CP1_CI_AS + CASE
+WHEN [fill_factor] &lt;&gt; 0 
+THEN 'FILLFACTOR = '  COLLATE SQL_Latin1_General_CP1_CI_AS + CONVERT(VARCHAR(30),[fill_factor]) 
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ CASE
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression] &lt;&gt; 'NONE'  COLLATE SQL_Latin1_General_CP1_CI_AS THEN ',DATA_COMPRESSION = ' COLLATE SQL_Latin1_General_CP1_CI_AS + [CurrentCompression] + ' '
+WHEN [fill_factor] &lt;&gt; 0  AND [CurrentCompression]  = 'NONE'  COLLATE SQL_Latin1_General_CP1_CI_AS THEN ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+WHEN [fill_factor]  = 0  AND [CurrentCompression] &lt;&gt; 'NONE'  COLLATE SQL_Latin1_General_CP1_CI_AS THEN 'DATA_COMPRESSION = '  COLLATE SQL_Latin1_General_CP1_CI_AS+ [CurrentCompression] + ' '
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END
++ ')' COLLATE SQL_Latin1_General_CP1_CI_AS
+ELSE ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+END 
+END
+FROM @Results2
+WHERE [type_desc] != 'HEAP'
+AND [is_primary_key] = 0 
+AND [is_unique] = 0
+ORDER BY 
+[is_primary_key] DESC,
+[is_unique] DESC;
+IF @INDEXSQLS &lt;&gt; '' COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @INDEXSQLS = @vbCrLf + 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS+ @vbCrLf + @INDEXSQLS;
+--##############################################################################
+--CHECK Constraints
+--##############################################################################
+SET @CHECKCONSTSQLS = '';
+SELECT
+@CHECKCONSTSQLS = @CHECKCONSTSQLS
++ @vbCrLf
++ ISNULL('CONSTRAINT   ' + QUOTENAME([objz].[name]) + ' '
++ SPACE(@STRINGLEN - LEN([objz].[name]))
++ ' CHECK ' + ISNULL([CHECKS].[definition],'')
++ ',','')
+FROM [tempdb].[sys].[objects] AS [objz]
+INNER JOIN [tempdb].[sys].[check_constraints] AS [CHECKS] ON [objz].[object_id] = [CHECKS].[object_id]
+WHERE [objz].[type] = 'C'
+AND [objz].[parent_object_id] = @TABLE_ID;
+--##############################################################################
+--FOREIGN KEYS
+--##############################################################################
+SET @FKSQLS = '' ;
+SELECT
+@FKSQLS=@FKSQLS
++ @vbCrLf + [MyAlias].[Command] FROM
+(
+SELECT
+DISTINCT
+--FK must be added AFTER the PK/unique constraints are added back.
+850 AS [ExecutionOrder],
+'CONSTRAINT ' </p>
+<ul>
+<li>
+<p>QUOTENAME([conz].[name]) </p>
+</li>
+<li>
+<p>' FOREIGN KEY (' </p>
+</li>
+<li>
+<p>[ChildCollection].[ChildColumns] </p>
+</li>
+<li>
+<p>') REFERENCES ' </p>
+</li>
+<li>
+<p>QUOTENAME(SCHEMA_NAME([conz].[schema_id])) </p>
+</li>
+<li>
+<p>'.' </p>
+</li>
+<li>
+<p>QUOTENAME(OBJECT_NAME([conz].[referenced_object_id])) </p>
+</li>
+<li>
+<p>' (' + [ParentCollection].[ParentColumns] </p>
+</li>
+<li>
+<p>') ' </p>
+</li>
+<li>
+<p>CASE [conz].[update_referential_action]
+WHEN 0 THEN '' --' ON UPDATE NO ACTION '
+WHEN 1 THEN ' ON UPDATE CASCADE '
+WHEN 2 THEN ' ON UPDATE SET NULL '
+ELSE ' ON UPDATE SET DEFAULT '
+END
++ CASE [conz].[delete_referential_action]
+WHEN 0 THEN '' --' ON DELETE NO ACTION '
+WHEN 1 THEN ' ON DELETE CASCADE '
+WHEN 2 THEN ' ON DELETE SET NULL '
+ELSE ' ON DELETE SET DEFAULT '
+END
++ CASE [conz].[is_not_for_replication]
+WHEN 1 THEN ' NOT FOR REPLICATION '
+ELSE ''
+END</p>
+</li>
+<li>
+<p>',' AS [Command]
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]</p>
+<p>INNER JOIN (--gets my child tables column names<br />
+SELECT
+[conz].[name],
+--technically, FK's can contain up to 16 columns, but real life is often a single column. coding here is for all columns
+[ChildColumns] = STUFF((SELECT 
+',' + QUOTENAME([REFZ].[name])
+FROM   [sys].[foreign_key_columns] AS [fkcolz]
+INNER JOIN [sys].[columns] AS [REFZ]
+ON [fkcolz].[parent_object_id] = [REFZ].[object_id]
+AND [fkcolz].[parent_column_id] = [REFZ].[column_id]
+WHERE [fkcolz].[parent_object_id] = [conz].[parent_object_id]
+AND [fkcolz].[constraint_object_id] = [conz].[object_id]
+ORDER  BY
+[fkcolz].[constraint_column_id]
+FOR XML PATH(''), TYPE).<a href="&#x27;.&#x27;,&#x27;varchar(max)&#x27;">value</a>,1,1,'')
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]
+WHERE [conz].[parent_object_id]= @TABLE_ID
+GROUP  BY
+[conz].[name],
+[conz].[parent_object_id],--- without GROUP BY multiple rows are returned
+[conz].[object_id]
+) AS [ChildCollection]
+ON [conz].[name] = [ChildCollection].[name]
+INNER JOIN (--gets the parent tables column names for the FK reference
+SELECT
+[conz].[name],
+[ParentColumns] = STUFF((SELECT
+',' + [REFZ].[name]
+FROM   [sys].[foreign_key_columns] AS [fkcolz]
+INNER JOIN [sys].[columns] AS [REFZ]
+ON [fkcolz].[referenced_object_id] = [REFZ].[object_id]
+AND [fkcolz].[referenced_column_id] = [REFZ].[column_id]
+WHERE  [fkcolz].[referenced_object_id] = [conz].[referenced_object_id]
+AND [fkcolz].[constraint_object_id] = [conz].[object_id]
+ORDER BY [fkcolz].[constraint_column_id]
+FOR XML PATH(''), TYPE).<a href="&#x27;.&#x27;,&#x27;varchar(max)&#x27;">value</a>,1,1,'')
+FROM   [sys].[foreign_keys] AS [conz]
+INNER JOIN [sys].[foreign_key_columns] AS [colz]
+ON [conz].[object_id] = [colz].[constraint_object_id]
+-- AND colz.parent_column_id 
+GROUP  BY
+[conz].[name],
+[conz].[referenced_object_id],--- without GROUP BY multiple rows are returned
+[conz].[object_id]
+) AS [ParentCollection]
+ON [conz].[name] = [ParentCollection].[name]
+)AS [MyAlias];
+--##############################################################################
+--RULES
+--##############################################################################
+SET @RULESCONSTSQLS = ''  COLLATE SQL_Latin1_General_CP1_CI_AS;
+SELECT
+@RULESCONSTSQLS = @RULESCONSTSQLS</p>
+<ul>
+<li>ISNULL(
+@vbCrLf
++ 'if not exists(SELECT [name] FROM tempdb.sys.objects WHERE TYPE=''R'' AND schema_id = '  COLLATE SQL_Latin1_General_CP1_CI_AS 
++ CONVERT(VARCHAR(30),[objz].[schema_id]) 
++ ' AND [name] = '''  COLLATE SQL_Latin1_General_CP1_CI_AS
++ QUOTENAME(OBJECT_NAME([colz].[rule_object_id])) 
++ ''')'  COLLATE SQL_Latin1_General_CP1_CI_AS
++ @vbCrLf
++ [MODS].[definition]  + @vbCrLf 
++ 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS +  @vbCrLf
++ 'EXEC sp_binderule  '  COLLATE SQL_Latin1_General_CP1_CI_AS
++ QUOTENAME([objz].[name]) 
++ ', '''  COLLATE SQL_Latin1_General_CP1_CI_AS 
++ QUOTENAME(OBJECT_NAME([colz].[object_id])) 
++ '.'  COLLATE SQL_Latin1_General_CP1_CI_AS + QUOTENAME([colz].[name]) 
++ ''''  COLLATE SQL_Latin1_General_CP1_CI_AS
++ @vbCrLf 
++ 'GO' ,''  COLLATE SQL_Latin1_General_CP1_CI_AS)
+FROM [tempdb].[sys].[columns] [colz] 
+INNER JOIN [tempdb].[sys].[objects] [objz]
+ON [objz].[object_id] = [colz].[object_id]
+INNER JOIN [tempdb].[sys].[sql_modules] AS [MODS]
+ON [colz].[rule_object_id] = [MODS].[object_id]
+WHERE [colz].[rule_object_id] &lt;&gt; 0
+AND [colz].[object_id] = @TABLE_ID;
+--##############################################################################
+--TRIGGERS
+--##############################################################################
+SET @TRIGGERSTATEMENT = '';
+SELECT
+@TRIGGERSTATEMENT = @TRIGGERSTATEMENT +  @vbCrLf + [MODS].[definition] + @vbCrLf + 'GO'
+FROM [tempdb].[sys].[sql_modules] AS [MODS]
+WHERE [MODS].[object_id] IN(SELECT
+[objz].[object_id]
+FROM [tempdb].[sys].[objects] AS [objz]
+WHERE [objz].[type] = 'TR'
+AND [objz].[parent_object_id] = @TABLE_ID);
+IF @TRIGGERSTATEMENT &lt;&gt; ''  COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @TRIGGERSTATEMENT = @vbCrLf + 'GO'  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + @TRIGGERSTATEMENT;
+--##############################################################################
+--NEW SECTION QUERY ALL EXTENDED PROPERTIES
+--##############################################################################
+SET @EXTENDEDPROPERTIES = ''  COLLATE SQL_Latin1_General_CP1_CI_AS;
+SELECT  @EXTENDEDPROPERTIES =
+@EXTENDEDPROPERTIES + @vbCrLf +
+'EXEC tempdb.sys.sp_addextendedproperty
+@name = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS
++ [name] 
++ ''', @value = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS
++ REPLACE(CONVERT(VARCHAR(MAX),[value]),'''','''''') + ''',
+@level0type = N''SCHEMA'', @level0name = '  COLLATE SQL_Latin1_General_CP1_CI_AS
++ QUOTENAME(@SCHEMANAME + ',
+@level1type = N''TABLE'', @level1name = ['  COLLATE SQL_Latin1_General_CP1_CI_AS
++ @TBLNAME) 
++ '];' COLLATE SQL_Latin1_General_CP1_CI_AS
+--SELECT objtype, objname, name, value
+FROM [sys].[fn_listextendedproperty] (NULL, 'schema', @SCHEMANAME, 'table', @TBLNAME, NULL, NULL);
+--OMacoder suggestion for column extended properties http://www.sqlservercentral.com/Forums/FindPost1651606.aspx
+SELECT @EXTENDEDPROPERTIES =
+@EXTENDEDPROPERTIES + @vbCrLf +
+'EXEC sys.sp_addextendedproperty
+@name = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS
+<ul>
+<li>[name] </li>
+<li>''', @value = N'''  COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>REPLACE(CONVERT(VARCHAR(MAX),[value]),'''','''''') </li>
+<li>''',
+@level0type = N''SCHEMA'', @level0name = '  COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME(@SCHEMANAME) + ',
+@level1type = N''TABLE'', @level1name = '  COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME(@TBLNAME) + ',
+@level2type = N''COLUMN'', @level2name = '  COLLATE SQL_Latin1_General_CP1_CI_AS</li>
+<li>QUOTENAME([objname]) + ';' COLLATE SQL_Latin1_General_CP1_CI_AS
+--SELECT objtype, objname, name, value
+FROM [sys].[fn_listextendedproperty] (NULL, 'schema', @SCHEMANAME, 'table', @TBLNAME, 'column', NULL);
+IF @EXTENDEDPROPERTIES &lt;&gt; '' COLLATE SQL_Latin1_General_CP1_CI_AS
+SET @EXTENDEDPROPERTIES = @vbCrLf + 'GO' COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf + @EXTENDEDPROPERTIES;
+--##############################################################################
+--FINAL CLEANUP AND PRESENTATION
+--##############################################################################
+--at this point, there is a trailing comma, or it blank
+SELECT
+@FINALSQL = @FINALSQL
++ @CONSTRAINTSQLS
++ @CHECKCONSTSQLS
++ @FKSQLS;
+--note that this trims the trailing comma from the end of the statements
+SET @FINALSQL = SUBSTRING(@FINALSQL,1,LEN(@FINALSQL) -1) ;
+SET @FINALSQL = @FINALSQL + ')'  COLLATE SQL_Latin1_General_CP1_CI_AS + @vbCrLf ;
+SET @input = @vbCrLf</li>
+<li>@FINALSQL</li>
+<li>@INDEXSQLS</li>
+<li>@RULESCONSTSQLS</li>
+<li>@TRIGGERSTATEMENT</li>
+<li>@EXTENDEDPROPERTIES;
+SELECT @input AS [Item];</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>RETURN 0;<br />
+END; --PROC
+GO
+--#################################################################################################
+--Mark as a system object
+EXECUTE [sys].[sp_MS_marksystemobject] 'sp_GetDDL';
+GRANT EXECUTE ON [dbo].[sp_GetDDL] TO PUBLIC;
+--#################################################################################################
+GO</p>
+<pre><code>*/
+</code></pre>
+<p>END;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="SP_SpOperationTodoCheckRolesIntegrity.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="SPDB_HELP_INFO.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="SP_SpOperationTodoCheckRolesIntegrity.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="SPDB_HELP_INFO.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

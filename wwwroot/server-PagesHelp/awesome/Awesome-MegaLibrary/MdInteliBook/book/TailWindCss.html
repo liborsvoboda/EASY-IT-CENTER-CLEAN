@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>TailWindCss - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html" class="active"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!--lint disable awesome-heading awesome-github double-link no-dead-urls-->
+<p align="center">
+  <br />
+  <img width="100" src="./assets/logo.svg" alt="Tailwind CSS logo">
+  <br />
+  <br />
+</p>
+<h2 align="center">Awesome Tailwind CSS</h2>
+<p align="center">
+  <a href="https://tailwindcss.com">Tailwind CSS</a> is a utility-first CSS framework for rapidly building custom user interfaces.
+  <br />
+  <br />
+  <a href="https://github.com/sindresorhus/awesome">
+    <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome badge">
+  </a>
+  &nbsp;
+  <a href="https://github.com/sindresorhus/awesome-lint">
+    <img src="https://github.com/aniftyco/awesome-tailwindcss/workflows/Lint/badge.svg" alt="Lint status badge">
+  </a>
+  <br />
+  <br />
+</p>
+<h2 id="contents"><a class="header" href="#contents">Contents</a></h2>
+<ul>
+<li><a href="#useful-links">Useful Links</a></li>
+<li><a href="#ide-extensions">IDE Extensions</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#ui-libraries-components--templates">UI Libraries, Components &amp; Templates</a></li>
+<li><a href="#starters--themes">Starters &amp; Themes</a></li>
+<li><a href="#open-source-projects">Open-Source Projects</a></li>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#apps--websites">Apps &amp; Websites</a></li>
+</ul>
+<h2 id="useful-links"><a class="header" href="#useful-links">Useful Links</a></h2>
+<p><strong>Legend</strong>: 💙 Official resource</p>
+<ul>
+<li>💙 <a href="https://tailwindcss.com">Website</a> - Official Tailwind CSS website.</li>
+<li>💙 <a href="https://github.com/tailwindcss/tailwindcss">Repository</a> - Official Tailwind CSS repository.</li>
+<li>💙 <a href="https://github.com/tailwindcss/tailwindcss/discussions">Discussions</a> - Official place to connect with other community members about Tailwind.</li>
+<li>💙 <a href="https://tailwindui.com">Tailwind UI</a> - Component library made with Tailwind CSS.</li>
+<li>💙 <a href="https://github.com/tailwindlabs/headlessui">Headless UI</a> - Completely unstyled, fully accessible UI components.</li>
+<li>💙 <a href="https://heroicons.com/">Heroicons</a> - Beautiful, hand-crafted SVG icons.</li>
+<li>💙 <a href="https://play.tailwindcss.com/">Play</a> - Advanced online playground for Tailwind CSS.</li>
+<li><a href="https://tailwindweekly.com/">Tailwind Weekly</a> - Weekly newsletter about all things Tailwind CSS.</li>
+<li><a href="https://builtwithtailwind.com/">Built With Tailwind</a> - Community-driven collection of awesome websites built with Tailwind CSS.</li>
+</ul>
+<h2 id="ide-extensions"><a class="header" href="#ide-extensions">IDE Extensions</a></h2>
+<p><strong>Legend</strong>: 💙 Official resource</p>
+<ul>
+<li>💙 <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">IntelliSense for Code</a> - IntelliSense extension for Visual Studio Code.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=muhajirframe.tailwind-styled-snippets">Styled Snippets for Code</a> - Snippet extension for Visual Studio Code.</li>
+<li><a href="https://github.com/heybourn/headwind">Headwind for Code</a> - Class sorter extension for Visual Studio Code.</li>
+<li><a href="https://github.com/bourhaouta/vscode-tailwindshades">Shades for Code</a> - Color palette generator extension for Visual Studio Code.</li>
+<li><a href="https://github.com/iamcco/coc-tailwindcss">IntelliSense for Neovim</a> - IntelliSense extension for Neovim.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=PeterMekhaeil.vscode-tailwindcss-explorer">Tailwind CSS Explorer for Code</a> - Explore the classes available in your project's Tailwind CSS setup.</li>
+</ul>
+<h2 id="plugins"><a class="header" href="#plugins">Plugins</a></h2>
+<p><strong>Legend</strong>: 💙 Official plugin · 🎨 Theming · 💼 Utilities · 🧬 Variants · 🧩 Components · 🛑 Deprecated</p>
+<ul>
+<li>💙🧩 <a href="https://github.com/tailwindlabs/tailwindcss-typography">Typography</a> - Adds a <code>prose</code> class for beautiful typographic defaults.</li>
+<li>💙💼 <a href="https://github.com/tailwindlabs/tailwindcss-aspect-ratio">Aspect Ratio</a> - Adds composable aspect ratio utilities.</li>
+<li>💙 <a href="https://github.com/tailwindlabs/tailwindcss-forms">Forms</a> - Adds better default styles to form elements.</li>
+<li>🎨🧬 <a href="https://github.com/innocenzi/tailwindcss-theming">Theming</a> - Theming using CSS variables, with dark mode support.</li>
+<li>🎨🧬 <a href="https://github.com/JakeNavith/tailwindcss-theme-variants">Theme Variants</a> - Adds them variants based on media queries and/or CSS selectors.</li>
+<li>🎨🧬 <a href="https://github.com/estevanmaito/tailwindcss-multi-theme">Multi Theme</a> - Adds theme variants based on a single <code>theme</code> property.</li>
+<li>🎨🧬 <a href="https://github.com/crswll/tailwindcss-theme-swapper">Theme Swapper</a> - Theming using CSS variables, with media queries support.</li>
+<li>🎨🧬 <a href="https://github.com/javifm86/tailwindcss-prefers-dark-mode">Prefers Dark Mode</a> - Adds variants based on the <code>prefers-color-scheme</code> media query.</li>
+<li>🎨🧬 <a href="https://github.com/danestves/tailwindcss-darkmode">Dark Mode</a> - Adds <code>dark</code> variants based on CSS classes.</li>
+<li>🎨🧬 <a href="https://github.com/ChanceArthur/tailwindcss-dark-mode">Dark Mode</a> - Adds <code>dark</code> variants based on the <code>prefers-color-scheme</code> media query.</li>
+<li>💼 <a href="https://github.com/benface/tailwindcss-gap">Gap</a> - Adds <code>gap</code> utilities.</li>
+<li>💼 <a href="https://github.com/webdna/tailwindcss-aspect-ratio">Aspect Ratio</a> - Adds <code>aspect-ratio</code> utilities.</li>
+<li>💼 <a href="https://github.com/SirNavith/tailwindcss-custom-native">Custom Native</a> - Leverages Tailwind CSS's configuration to allow the creation of utilities.</li>
+<li>💼 <a href="https://github.com/innocenzi/tailwindcss-scroll-snap">Scroll Snap</a> - Adds <code>scroll-snap</code> utilities.</li>
+<li>💼 <a href="https://github.com/octoper/tailwindcss-shadow-outline-colors">Shadow Outline Colors</a> - Adds <code>box-shadow</code> utilities based on configured colors.</li>
+<li>💼 <a href="https://github.com/hacknug/tailwindcss-text-indent">Text Indent</a> - Adds <code>text-indent</code> utilities.</li>
+<li>💼 <a href="https://github.com/hacknug/tailwindcss-image-rendering">Image Rendering</a> - Adds <code>image-rendering</code> utilities.</li>
+<li>💼 <a href="https://github.com/benface/tailwindcss-filters">Filters</a> - Adds <code>filter</code> utilities.</li>
+<li>💼 <a href="https://github.com/jonaskay/tailwindcss-elevation">Elevation</a> - Adds <a href="https://material.io/design/environment/elevation.html">Material UI <code>elevation</code></a> utilities.</li>
+<li>💼 <a href="https://github.com/naoray/tailwind-caret-color">Caret Color</a> - Adds <code>caret</code> color utilities.</li>
+<li>💼 <a href="https://github.com/hacknug/tailwindcss-blend-mode">Blend Mode</a> - Adds <code>blend-mode</code> utilities.</li>
+<li>💼 <a href="https://github.com/philippbosch/tailwindcss-colorize">Colorize</a> - Adds <code>filter</code> utilities.</li>
+<li>💼 <a href="https://github.com/magicspon/tailwindcss-writing-mode">Writing Mode</a> - Adds <code>writing-mode</code> utilities.</li>
+<li>💼 <a href="https://github.com/philippbosch/tailwindcss-hyphens">Hyphens</a> - Adds <code>hyphens</code> utilities.</li>
+<li>💼 <a href="https://github.com/cossssmin/tailwindcss-border-gradients">Border Gradients</a> - Adds <code>border-image</code> gradient utilities.</li>
+<li>💼 <a href="https://github.com/aerni/tailwindcss-rfs">RFS</a> - Adds <a href="https://github.com/twbs/rfs"><code>RFS</code></a> utilities.</li>
+<li>💼 <a href="https://github.com/opdavies/tailwindcss-list-reset">List Reset</a> - Adds back the <code>list-reset</code> class that was removed prior to Tailwind CSS 1.0.</li>
+<li>💼 <a href="https://github.com/bradlc/tailwindcss-fluid">Fluid</a> - Adds fluid sizing utilities.</li>
+<li>💼 <a href="https://github.com/benface/tailwindcss-typography">Typography</a> - Adds typography utilities.</li>
+<li>💼 <a href="https://github.com/chrisrowe/tailwindcss-triangle-after">Triangle After</a> - Adds CSS triangles utilities.</li>
+<li>💼 <a href="https://github.com/brettgullan/tailwindcss-scrims">Scrims</a> - Adds scrims utilities.</li>
+<li>💼 <a href="https://github.com/jhta/tailwindcss-truncate-multiline">Truncate Multiline</a> - Adds utilities to truncate multi-line text elements.</li>
+<li>💼 <a href="https://github.com/omarkhatibco/tailwind-css-logical-properties">CSS Logical Properties</a> - Generate utilities for CSS Logical Properties.</li>
+<li>💼 <a href="https://github.com/gvital3230/tailwindcss-tooltip-arrow-after">Tooltip Arrows After</a> - Adds CSS utilities for tooltip arrows with configurable border and background.</li>
+<li>💼 <a href="https://github.com/20lives/tailwindcss-rtl">Bidirectional</a> - Adds utilities for creating multilingual bidirectional layouts.</li>
+<li>💼 <a href="https://github.com/AndersNielsen85/tailwindcss-bg-svg">Background SVG</a> - Inject SVGs as background images with color variants.</li>
+<li>💼 <a href="https://github.com/praveenjuge/tailwindcss-brand-colors">Brand Colors</a> - Adds various brand colors for background, border and text.</li>
+<li>💼 <a href="https://github.com/karolis-sh/tailwind-bootstrap-grid">Bootstrap Grid</a> - Generates Bootstrap's style flexbox grid system.</li>
+<li>💼 <a href="https://github.com/Larsklopstra/tailwindcss-css-filters">CSS Filters</a> - Adds <code>filter</code> and <code>backdrop-filter</code> utilities with defaults.</li>
+<li>💼 <a href="https://github.com/stormwarning/tailwindcss-capsize">Leading Trim</a> - Adds utilities to trim text whitespace, using <a href="https://github.com/seek-oss/capsize">Capsize</a>.</li>
+<li>🧬 <a href="https://github.com/Log1x/tailwindcss-pseudo">Pseudo</a> - Adds custom variants to Tailwind CSS's configuration.</li>
+<li>🧬 <a href="https://github.com/RonMelkhior/tailwindcss-dir">Direction</a> - Adds <code>RTL</code> and <code>LTR</code> variants.</li>
+<li>🧬 <a href="https://github.com/SteadfastCollective/tailwindcss-touch">Touch</a> - Adds <code>touch</code> variants.</li>
+<li>🧬 <a href="https://github.com/bradlc/tailwindcss-alpha">Alpha</a> - Adds alpha color variants.</li>
+<li>🧬 <a href="https://github.com/hdodov/tailwindcss-localized">Localized</a> - Adds variants based on the HTML <code>lang</code> attribute, to use utilities only with certain languages.</li>
+<li>🧬 <a href="https://github.com/chasegiunta/tailwindcss-important">Important</a> - Adds an <code>important</code> variant.</li>
+<li>🧬 <a href="https://github.com/locksten/tailwindcss-padded-radius">Padded Radius</a> - Adds variants for matching nested border radii.</li>
+<li>🧬 <a href="https://github.com/soberwp/tailwindcss-fl">Fluid</a> - Generates <code>fl:</code> variants.</li>
+<li>🧩 <a href="https://github.com/jorenvanhee/tailwindcss-debug-screens">Debug Screens</a> - Adds a component that shows the currently active screen (responsive breakpoint).</li>
+<li>🧩 <a href="https://github.com/AndreaMinato/tailwind-heropatterns">Heropatterns</a> - Adds <a href="https://www.heropatterns.com">Hero Patterns</a> components.</li>
+<li>🧩 <a href="https://github.com/drdogbot7/tailwindcss-responsive-embed">Responsive Embed</a> - Adds a <code>responsive-embed</code> component.</li>
+<li>🧩 <a href="https://github.com/drehimself/tailwindcss-tables">Bootstrap Tables</a> - Adds table components based on Bootstrap's tables.</li>
+<li>🧩 <a href="https://github.com/NathanHeffley/tailwindcss-card">Card</a> - Adds card components.</li>
+<li>🧩 <a href="https://github.com/opdavies/tailwindcss-skip-link">Skip link</a> - Adds a <em>Skip to main content</em> accessible component.</li>
+<li>🧩 <a href="https://github.com/n1kk/tailwind-color-vars">Colors to CSS Variables</a> - Exports color configuration to CSS Custom Properties.</li>
+<li>🧩 <a href="https://github.com/omarkhatibco/tailwind-css-variables">CSS Variables</a> - Exports configuration to CSS Custom Properties.</li>
+</ul>
+<blockquote>
+<p>🛑 - <em>The plugins below offer functionalities that are now fully or partially implemented in Tailwind CSS.</em></p>
+</blockquote>
+<ul>
+<li>🛑💼 <a href="https://github.com/benface/tailwindcss-gradients">benface's gradients</a> - Adds gradient utilities.</li>
+<li>🛑💼 <a href="https://github.com/lorisleiva/tailwindcss-plugins/tree/master/gradients">lorisleiva's gradients</a> - Adds background gradient utilities.</li>
+<li>🛑💼 <a href="https://github.com/webdna/tailwindcss-visuallyhidden">Visually Hidden</a> - Adds screen reader utilities.</li>
+<li>🛑💼 <a href="https://github.com/hendrikeng/tailwindcss-object-fit">Object Fit</a> - Adds <code>object-fit</code> utilities.</li>
+<li>🛑💼 <a href="https://github.com/hacknug/tailwindcss-object-position">Object Position</a> - Adds <code>object-position</code> utilities.</li>
+<li>🛑💼 <a href="https://github.com/jack-pallot/tailwindcss-accessibility">Accessibility</a> - Adds screen reader utilities.</li>
+<li>🛑💼 <a href="https://github.com/benface/tailwindcss-layout">Layout</a> - Adds some layout utilities.</li>
+<li>🛑💼 <a href="https://github.com/chrisrowe/tailwindcss-grid">Grid</a> - Adds CSS grids utilities.</li>
+<li>🛑💼 <a href="https://github.com/benface/tailwindcss-transforms">Transforms</a> - Adds <code>transform</code> utilities.</li>
+<li>🛑💼 <a href="https://github.com/benface/tailwindcss-transitions">benface's transitions</a> - Adds configurable transition utilities, with or without CSS variables.</li>
+<li>🛑💼 <a href="https://github.com/webdna/tailwindcss-transition">webdna's transitions</a> - Adds configurable transition utilities.</li>
+<li>🛑💼 <a href="https://github.com/glhd/tailwindcss-plugins">glhd's transitions</a> - Adds basic transition utilities.</li>
+<li>🛑💼 <a href="https://github.com/hacknug/tailwindcss-cursor-extended">Cursor Extended</a> - Extends <code>cursor</code> utilities.</li>
+<li>🛑💼 <a href="https://github.com/philippbosch/tailwindcss-font-variant-numeric">Font Variant Numeric</a> - Adds <code>font-variant-numeric</code> utilities.</li>
+<li>🛑🧬 <a href="https://github.com/soueuls/tailwind-color-alpha">CSS Alpha Colors</a> - Adds opacity variants to existing colors.</li>
+<li>🛑🧩 <a href="https://github.com/aniftyco/tailwindcss-spinner">Spinner</a> - Adds a spinner component.</li>
+<li>🛑🧩 <a href="https://github.com/n1kk/tailwindcss-spaced-items">Spaced Items</a> - Adds <code>spaced</code> components that add fixed margins to all container items.</li>
+<li>🛑🧩💙 <a href="https://github.com/tailwindlabs/tailwindcss-custom-forms">Custom Forms</a> - Adds better default styles to form elements.</li>
+</ul>
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<p><strong>Legend</strong>: 🌍 Accessible online · 🔼 Conversion or upgrade tool · 🔧 Generator · 🅰 Typing/enforcement · 💼 Plugins/Tools/Extensions for external services · 🎨 Color-related · 🚀 Framework</p>
+<ul>
+<li>🎨🌍🔧 <a href="https://javisperez.github.io/tailwindcolorshades">Tailwind Color Shades</a> - Color shades generator for Tailwind CSS.</li>
+<li>🎨🌍🔧 <a href="https://adevade.github.io/color-scheme-generator">Palette generator</a> - Color palette generator that outputs Tailwind CSS configuration files.</li>
+<li>🎨🌍🔧 <a href="https://color.tailwindow.com">Tailwindow's Color Shades</a> - Color shades generator for Tailwind CSS.</li>
+<li>🎨🌍🔧 <a href="https://tailwind-colors.meidev.co">Tailwind Colors</a> - Color configuration generator for Tailwind CSS.</li>
+<li>🎨🌍🔧 <a href="https://stefanbuck.com/tailwind-color-theme-explorer">Tailwind Color Explorer</a> - Color explorer for Tailwind CSS.</li>
+<li>🎨🌍🔧 <a href="https://tailwind.ink/">TailwindInk</a> - AI palette generator, trained with the Tailwind CSS palette.</li>
+<li>🎨🌍🔧 <a href="https://gradient-designer.csspost.com/">Gradient Designer</a> - Generate gradients for Tailwind 2.0+.</li>
+<li>🎨🌍🔧 <a href="https://grayscale.design/">Grayscale Design</a> - A Luminance-based color palette generator.</li>
+<li>🎨🌍🔧 <a href="https://hypercolor.dev/">Hypercolor</a> - Collection of pre-configured Tailwind CSS gradients with directional options.</li>
+<li>🎨🌍🔧 <a href="https://palettolithic.com">Palettolithic</a> - Generates harmonius color palettes based on one color.</li>
+<li>🎨🌍💼 <a href="https://www.figma.com/community/file/905719775911766776">Tailwind CSS v2 colors</a> - Figma library with Tailwind CSS v2 colors.</li>
+<li>🎨🔧💼 <a href="https://github.com/Bouhoum/colorkraken">Colorkraken</a> - Color shades generator for Tailwind CSS.</li>
+<li>🎨🔧💼 <a href="https://github.com/wowlusitong/babel-plugin-tailwind-dark">babel-plugin-tailwind-dark</a> - A Babel plugin to add custom dark class when compiling your code using Babel.</li>
+<li>🌍🔧 <a href="http://gpt-tailwind.com/">GPT-3 Tailwind CSS code generator</a> - OpenAI GPT-3 powered Tailwind CSS code generator.</li>
+<li>🌍🔧 <a href="https://stitches.hyperyolo.com/">Stitches</a> - Template generator with Tailwind (online).</li>
+<li>🌍🔧 <a href="https://tail-animista.vercel.app">tail-animista</a> - Configurable custom animation utilities generator for Tailwind CSS.</li>
+<li>🌍 <a href="https://tailwind-typography-playground.vercel.app/">Typography Playground</a> - Tool for trying different Google Fonts combinations with the Tailwind CSS Typography Plugin.</li>
+<li>🌍💙 <a href="https://play.tailwindcss.com/">Play</a> - Advanced online playground for Tailwind CSS.</li>
+<li>🌍 <a href="https://tailwind.run">tailwind.run</a> - Tailwind CSS fiddle with built-time features (online).</li>
+<li>🌍 <a href="https://tailzilla.app">tailzilla.app</a> - Online playground for Tailwind CSS.</li>
+<li>🔼🌍 <a href="https://github.vue.tailwind-prefix.cbass.dev">Tailwind Automatic Prefix Applicator</a> - Tailwind classes' prefixer tool.</li>
+<li>🔼🌍 <a href="https://transform.tools/css-to-tailwind">CSS to Tailwind CSS Converter</a> - Converts CSS to Tailwind CSS by suggesting classes that best match.</li>
+<li>🔼 <a href="https://github.com/awssat/tailwindo">Tailwindo</a> - Bootstrap to Tailwind CSS converter.</li>
+<li>🔼 <a href="https://github.com/virkillz/tailupgrade">Tailupgrade</a> - Conversion tool for upgrading HTML files from Tailwind CSS v0.x to v1.0.</li>
+<li>🔼 <a href="https://github.com/awssat/tailwind-shift">Tailwind Shift</a> - Upgrade tool for upgrading from Tailwind CSS v0.7 to v1.0.</li>
+<li>🔼 <a href="https://github.com/avencera/rustywind">RustyWind</a> - CLI tool for sorting Tailwind CSS classes.</li>
+<li>🅰 <a href="https://github.com/TVke/react-native-tailwindcss">react-native-tailwindcss</a> - React Native typing system.</li>
+<li>🅰 <a href="https://github.com/dvkndn/typed-tailwind">typed-tailwind</a> - TypeScript typings for Tailwind CSS.</li>
+<li>💼 <a href="https://github.com/muhajirframe/gatsby-plugin-tailwindcss">Gatsby Plugin</a> - Tailwind CSS integration for Gatsby.</li>
+<li>💼 <a href="https://github.com/brandonpittman/gridsome-plugin-tailwindcss">Gridsome Plugin</a> - Tailwind CSS integration for Gridsome.</li>
+<li>💼 <a href="https://github.com/clnt/alfred-tailwindcss-docs">Alfred Workflow</a> - Fast Tailwind CSS documentation search application.</li>
+<li>💼 <a href="https://github.com/tehpsalmist/ng-tailwindcss">ng-tailwindcss</a> - CLI tool for integrating Tailwind CSS into Angular-CLI projects.</li>
+<li>💼 <a href="https://github.com/forsartis/vue-cli-plugin-tailwind">vue-cli-plugin-tailwind</a> - Vue CLI plugin that adds Tailwind CSS to a project.</li>
+<li>💼 <a href="https://github.com/impulse/tailwindcss-figma-kit">Tailwind CSS Figma Kit</a> - Figma Kit for Tailwind CSS.</li>
+<li>💼 <a href="https://github.com/impulse/tailwindcss-figma-plugin">Tailwind CSS Figma Plugin</a> - Figma plugin that integrates Tailwind CSS.</li>
+<li>💼 <a href="https://github.com/nuxt-community/tailwindcss-module">@nuxtjs/tailwindcss</a> - Tailwind CSS module for NuxtJS with PurgeCSS and modern CSS (preset env 1).</li>
+<li>💼 <a href="https://github.com/agneym/preact-cli-tailwind">preact-cli-tailwind</a> - Tailwind CSS integration for Preact.</li>
+<li>💼 <a href="https://github.com/Acidic9/tailwind-classes-sorter">tailwind-classes-sorter</a> - NPM library which provides a utility to sort Tailwind CSS classes.</li>
+<li>💼 <a href="https://github.com/Acidic9/prettier-plugin-tailwind">prettier-plugin-tailwind</a> - Prettier plugin that sorts class lists.</li>
+<li>💼🔧 <a href="https://extensions.zeplin.io/5ae2d20017c57fd249c9876f">Zeplin Config &amp; Class generator</a> - Zeplin extension that generates Tailwind configurations.</li>
+<li>💼🔧 <a href="https://github.com/Arthie/tailwindcssinjs">@tailwindcssinjs/macro</a> - Babel macro that transforms Tailwind CSS classes into objects for CSS-in-JS libraries.</li>
+<li>💼🔧 <a href="https://github.com/ben-rogerson/twin.macro">twin.macro</a> - Use Tailwind classes within any CSS-in-JS library.</li>
+<li>💼🔧 <a href="https://github.com/rogden/tailwind-config-viewer">Tailwind Config Viewer</a> - Local UI tool for visualizing your Tailwind CSS configuration file.</li>
+<li>💼🔧 <a href="https://github.com/pascalbaljetmedia/laravel-form-components">Laravel Form Components</a> - Blade form components using Tailwind CSS Custom Forms.</li>
+<li>🔧 <a href="https://github.com/phthhieu/re-tailwind">re-tailwind</a> - ReasonML utility that generates Tailwind classes.</li>
+<li>🔧 <a href="https://protoship.io">Protoship Codegen</a> - Code generator that creates Tailwind CSS based HTML &amp; CSS from Sketch designs.</li>
+<li>🚀 <a href="https://maizzle.com/">Maizzle</a> - Framework for rapid email prototyping with Tailwind CSS.</li>
+<li>🌍 <a href="http://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheat Sheet</a> - Tailwind CSS class names cheat sheet.</li>
+<li>🌍 <a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/tailwind.css">Tailwind Cheat Sheet</a> - Tailwind CSS class names in one single file.</li>
+<li>🌍 <a href="https://umeshmk.github.io/Tailwindcss-cheatsheet">Tailwind Cheat Sheet</a> - Tailwind CSS class names, variants and directives cheat sheet.</li>
+</ul>
+<h2 id="ui-libraries-components--templates"><a class="header" href="#ui-libraries-components--templates">UI Libraries, Components &amp; Templates</a></h2>
+<p><strong>Legend</strong>: 💙 Official resource · 📚 Library · 🧩 Components · 📁 Templates</p>
+<ul>
+<li>💙🧩 <a href="https://tailwindui.com">Tailwind UI</a> - Component library made with Tailwind CSS.</li>
+<li>💙📚 <a href="https://github.com/tailwindlabs/headlessui">Headless UI</a> - Completely unstyled, fully accessible UI components.</li>
+<li>📚 <a href="https://github.com/alfonsobries/vue-tailwind">VueTailwind</a> - Vue.js UI library using Tailwind CSS.</li>
+<li>📁 <a href="https://tailwindmade.com/">Tailwind Made</a> - Paid, developer-friendly templates made with Tailwind CSS.</li>
+<li>🧩 <a href="https://mertjf.github.io/tailblocks">TailBlocks</a> - 60+ different ready to use Tailwind CSS blocks.</li>
+<li>🧩 <a href="https://tailwindcomponents.com">Tailwind Components</a> - Community-driven Tailwind CSS component repository.</li>
+<li>🧩 <a href="https://www.tailwindtoolbox.com">Tailwind Toolbox</a> - Templates, components and resources.</li>
+<li>🧩 <a href="https://merakiui.com">Meraki UI Components</a> - Beautiful Tailwind CSS components that support RTL languages.</li>
+<li>🧩📁 <a href="https://www.tailwindtemplates.io">Tailwind Templates</a> - Collection of templates and components.</li>
+<li>🧩📁 <a href="https://treact.owaiskhan.me">Treact</a> - React UI templates and components built using Tailwind CSS.</li>
+<li>🧩📁 <a href="https://github.com/zeroblack-c/jakarta-lte">Jakarta LTE</a> - Admin template using Tailwind CSS.</li>
+<li>🧩 <a href="https://github.com/kenhyuwa/vue-tailwind-picker">Date picker</a> - Datepicker component for Vue.js using Tailwind CSS.</li>
+<li>🧩 <a href="https://kutty.netlify.app">Kutty</a> - Accessible and reusable components that are commonly used in web applications.</li>
+<li>🧩 <a href="https://component.tailwindow.com/">Tailwindow</a> - Collection of Tailwind CSS component blocks and UI elements.</li>
+<li>🧩 <a href="https://sailui.github.io/">Sail UI</a> - Collection of basic UI components built on Tailwind CSS.</li>
+<li>🧩 <a href="https://craigerskine.github.io/jquery-tailwind-checkbox-toggle">jQuery Toggler</a> - Switches using jQuery and Tailwind CSS.</li>
+<li>🧩 <a href="https://creative-tim.com/learning-lab/tailwind-starter-kit">Tailwind Kit</a> - Framework-agnostic, Vue.js, React and Angular components.</li>
+<li>🧩 <a href="https://lofiui.co/">lofi ui</a> - Low-fidelity Tailwind CSS components.</li>
+<li>🧩 <a href="https://www.gustui.com/">Gust UI</a> - Sleek Tailwind CSS components for web applications in React and HTML.</li>
+<li>🧩 <a href="https://windstrap.netlify.app">Windstrap</a> - Tailwind CSS with Bootstrap JS.</li>
+<li>🧩 <a href="https://blocks.wickedtemplates.com/">WickedBlocks</a> - Collection of more than 120 layout blocks and components built with Tailwind CSS.</li>
+<li>🧩 <a href="https://github.com/saadeghi/daisyui">Daisy UI</a> - UI Components for Tailwind CSS.</li>
+<li>📁 <a href="https://windmill-dashboard.vercel.app/">Windmill Dashboard</a> - Multi theme, completely accessible dashboard template.</li>
+<li>📁 <a href="https://github.com/tailwindadmin/admin">Tailwind Admin</a> - Administration panel template with Tailwind CSS.</li>
+<li>📁 <a href="https://landing-gradients.netlify.app/">Landing Gradients</a> - Landing page template using gradients (1.7+).</li>
+<li>📁 <a href="https://github.com/mohusman360/mohusman360.github.io">Resume</a> - Simple resume with Tailwind CSS.</li>
+<li>📁 <a href="https://github.com/cruip/tailwind-landing-page-template">Simple Light</a> - Free landing page template built with React &amp; Tailwind CSS.</li>
+<li>📁 <a href="https://github.com/wobsoriano/v-dashboard">V-Dashboard</a> - Dashboard starter template built with Vue 3 and Tailwind CSS.</li>
+<li>📁 <a href="https://github.com/Smuice-com/Free-Nuxtjs-Tailwindcss-landing-page-template">Petra</a> - Free landing page template built with Nuxt.js &amp; Tailwind CSS.</li>
+<li>📚 <a href="https://a17t.miles.land">a17t</a> - Atomic design toolkit built to extend Tailwind CSS.</li>
+<li>📚 <a href="https://github.com/knipferrc/tails-ui">tails-ui</a> - React UI library using Tailwind CSS.</li>
+<li>📚 <a href="https://github.com/thedevdojo/tails">tails</a> - Hand-crafted templates and components using Tailwind CSS.</li>
+</ul>
+<h2 id="starters--themes"><a class="header" href="#starters--themes">Starters &amp; Themes</a></h2>
+<p><strong>Legend</strong>: 💼 Package · 📟 Command line tool/generator · 🚀 Cloneable</p>
+<ul>
+<li>📟 <a href="https://github.com/DemianD/create-react-app-tailwindcss">Create React App with PurgeCSS</a> - CRA script that adds Tailwind CSS and PurgeCSS.</li>
+<li>📟 <a href="https://github.com/use-preset/laravel-tailwindcss">Laravel Preset</a> - Adds Tailwind CSS to the Laravel framework.</li>
+<li>📟💼 <a href="https://github.com/laravel-frontend-presets/tailwindcss">Laravel Front-end Preset</a> - Front-end preset using Tailwind CSS for Laravel.</li>
+<li>📟💼 <a href="https://github.com/Naoray/dark-tailwind-preset">Laravel Dark Front-end Preset</a> - Dark-themed front-end preset using Tailwind CSS for Laravel.</li>
+<li>🚀 <a href="https://github.com/muhajirframe/react-tailwind-emotion-starter">Create React App with EmotionJS</a> - CRA boilerplate using Tailwind CSS and Emotion JS.</li>
+<li>📟 <a href="https://github.com/dance2die/cra-template-tailwindcss-typescript">Create React App with TypeScript</a> - CRA template with support for Tailwind CSS and TypeScript.</li>
+<li>🚀 <a href="https://github.com/michelegera/create-tailwindcss-boilerplate">Tailwind CSS Boilerplate</a> - Tailwind CSS boilerplate using Parcel.</li>
+<li>🚀 <a href="https://github.com/taylorbryant/tailwind-jekyll">Jekyll Starter</a> - Jekyll starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/mhanberg/jekyll-tailwind-starter">Jekyll Starter</a> - Jekyll starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/simonswiss/tailwind-starter">Gulp Starter</a> - Gulp starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/taylorbryant/gatsby-starter-tailwind">Gatsby Starter</a> - Gatsby starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/PlanFlowDev/Simplicity-Itself-Gatsby-Tailwind-Starter-Theme">Gatsby Starter Simplicity</a> - Gatsby starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/impulse/gatsby-typescript-tailwind">Gatsby Starter + TypeScript</a> - Gatsby starter using Tailwind CSS and TypeScript.</li>
+<li>🚀 <a href="https://github.com/muhajirframe/gatsby-tailwind-emotion-starter">Gatsby Starter + Emotion JS</a> - Gatsby starter using Tailwind CSS and Emotion JS.</li>
+<li>🚀 <a href="https://github.com/mjsarfatti/gatsby-starter-tailwind-opinionated">Gatsby Starter Opinionated</a> - Gatsby starter using Tailwind CSS and opinionated goodies.</li>
+<li>🚀 <a href="https://github.com/kriswep/cra-tailwindcss">Create React App Boilerplate</a> - CRA boilerplate using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/saadeghi/create-react-app-tailwindcss">Create React App with PurgeCSS + Autoprefixer + CSSNano</a> - CRA boilerplate using CSS Nano.</li>
+<li>🚀 <a href="https://github.com/jack-pallot/dogpatch">Dogpatch</a> - WordPress starter using Webpack, Vue, Babel and Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/oddstronaut/tailwind-next">Next.js Starter</a> - Next.js boilerplate using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/EricPKerr/sapper-tailwindcss-starter">Sapper &amp; Svelte Starter</a> - Svelte boilerplate using Sapper, Tailwind CSS, Purge CSS, Prettier and ESLint.</li>
+<li>🚀 <a href="https://github.com/HugoDF/netlify-lambda-tailwind-static-starter">Netlify Lambda Starter</a> - Netlify Lambda boilerplate using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter">Hugo Theme Starter with Tailwind CSS</a> - Hugo theme starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/scottishstoater/jamstack-web-starter">Eleventy Web Starter</a> - Starter kit using Eleventy, Tailwind CSS, Webpack and PostCSS.</li>
+<li>🚀 <a href="https://github.com/arkency/nanoc-parcel-tailwind-starter">Nanoc Starter</a> - Nanoc starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/saadeghi/tailwindcss-postcss-browsersync-boilerplate">PostCSS and Browsersync Boilerplate</a> - Boilerplate using CSS Nano.</li>
+<li>🚀 <a href="https://github.com/saadeghi/tailwindcss-parceljs-typescript-boilerplate">ParcelJS + TypeScript Boilerplate</a> - Boilerplate using Tailwind CSS, ParcelJS bundler and TypeScript.</li>
+<li>🚀 <a href="https://github.com/xiaoluoboding/vuepress-tailwind-theme-starter">VuePress Tailwind CSS Starter</a> - A VuePress starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/windedge/gatsby-tailwind-serif">Gatsby Serif</a> - Gatsby's serif theme using Tailwind CSS.</li>
+<li>🚀 <a href="https://git.habd.as/jhabdas/seminyak">Seminyak Hugo Theme</a> - Hugo theme using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/ixartz/Eleventy-Starter-Boilerplate/">Eleventy Starter</a> - Production-ready, SEO-friendly blog starter using Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/wobsoriano/vite-react-tailwind-starter">Vite + React + Tailwind Starter</a> - Boilerplate using Vite, React and Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/web2033/vite-vue3-tailwind-starter">Vite + Vue 3.x + Tailwind 2.x Starter</a> - Starter template using Vite, Vue, Vue Router and Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/uicrooks/shopify-theme-lab">Shopify Theme Lab</a> - Shopify theme development starter using Vue and Tailwind CSS.</li>
+<li>🚀 <a href="https://github.com/Kamona-WD/starter-dashboard-layout">Starter Dashboard Layout</a> - Dashboard layout using Tailwind CSS and Alpine JS.</li>
+</ul>
+<h2 id="open-source-projects"><a class="header" href="#open-source-projects">Open-Source Projects</a></h2>
+<ul>
+<li><a href="https://github.com/iluminar/goodwork">Goodwork</a> - Project Management &amp; Collaboration tool.</li>
+<li><a href="https://github.com/bazzite/statusfy">Statusfy</a> - Status page system using Tailwind CSS.</li>
+<li><a href="https://github.com/guillaumebriday/todolist-frontend-vuejs">Todolist</a> - To-do list application using Tailwind CSS.</li>
+<li><a href="https://github.com/vkaelin/LeagueStats">LeagueStats</a> - Statistics website for League of Legends players.</li>
+<li><a href="https://github.com/itswadesh/sapper-ecommerce">SapperCommerce</a> - E-commerce storefront using Svelte &amp; Tailwind CSS.</li>
+<li><a href="https://github.com/itswadesh/misiki-books">Misiki Books</a> - Book shop using Vue + Moltin + Tailwind CSS.</li>
+</ul>
+<h2 id="learning"><a class="header" href="#learning">Learning</a></h2>
+<p><strong>Legend</strong>: 💙 Official resource · 🧪 Sample · 🔧 Setup Tutorial · 🎬 Video Tutorial · 🎓 Component or Page Tutorial · 🎥 Cast</p>
+<ul>
+<li>💙🧪 <a href="https://github.com/tailwindlabs/tailwindcss-plugin-examples">Plugin Examples</a> - Official plugin examples.</li>
+<li>🧪 <a href="https://github.com/huphtur/tailwind-theme-switcher">Tailwind Dark Mode Theme Switcher</a> - Switching themes with CSS Custom Properties and Tailwind CSS.</li>
+<li>🧪 <a href="https://github.com/opdavies/rebuilding-acquia">Acquia</a> - Acquia's hosting dashboard rebuilt with Vue.js and Tailwind CSS.</li>
+<li>🧪 <a href="https://codepen.io/joshmanders/pen/PQQBoR">Navbar</a> - Navbar made with Vue.js and Tailwind CSS.</li>
+<li>🧪 <a href="https://github.com/TowelSoftware/tailwindcss-toggle">Toggle switch</a> - Switch using Tailwind CSS.</li>
+<li>🧪 <a href="https://github.com/michelegera/tailwindcss-open-template/">“Open” landing page</a> - “Open” landing page template by Cruip built with Tailwind CSS Boilerplate.</li>
+<li>🔧 <a href="https://www.oliverdavies.uk/articles/testing-tailwindcss-plugins-with-jest">Testing Tailwind CSS plugins with Jest</a> - How to test Tailwind CSS plugins with Jest.</li>
+<li>🔧 <a href="https://paramagicdev.github.io/my-blog/javascript/tailwindWebpackPostCSS">Tailwind CSS with Webpack 4 and PostCSS</a> - How to setup Tailwind CSS with PostCSS and Webpack.</li>
+<li>🔧 <a href="https://medium.com/@AndrewDelPrete/using-tailwindcss-with-css-in-js-32ae6796f95c">Tailwind CSS with CSS-in-JS</a> - How to use Tailwind CSS with CSS-in-JS.</li>
+<li>🔧 <a href="https://nick-basile.com/blog/post/setting-up-tailwind-in-a-laravel-project">Tailwind CSS in a Laravel Project</a> - How to setup Tailwind CSS in a Laravel project.</li>
+<li>🔧 <a href="https://eaf4.com/how-to-add-tailwindcss-to-an-ember-app">Tailwind CSS with Ember</a> - How to add Tailwind CSS to an Ember application.</li>
+<li>🔧 <a href="https://roots.io/guides/how-to-setup-tailwind-css-in-sage">Sage WordPress theme and Tailwind CSS</a> - How to setup Tailwind CSS in Sage.</li>
+<li>🔧 <a href="https://dev.to/jakedohm_34/using-tailwind-with-gatsby-js-10fj">Tailwind CSS with GatsbyJS</a> - How to use Tailwind CSS with Gatsby.</li>
+<li>🔧 <a href="https://equimper.com/blog/how-to-setup-tailwindcss-in-phoenix-1.4">Tailwind CSS with Phoenix 1.4</a> - How to setup Tailwind CSS in Phoenix 1.4.</li>
+<li>🔧 <a href="https://web-crunch.com/how-to-extend-tailwind-css">Extend Tailwind CSS</a> - How to Extend Tailwind CSS.</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=ZrRRMBaz5Z0">Rebuilding Laravel.io</a> - Rebuilding Laravel.io with Tailwind CSS.</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=7gX_ApBeSpQ">Rebuilding Coinbase</a> - Rebuilding Coinbase with Tailwind CSS [see the <a href="https://codepen.io/adamwathan/pen/RxWrZr">Codepen</a>].</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=Pg_5Ni1_bg4">Rebuilding Twitter</a> - Rebuilding Twitter with Tailwind CSS [see the <a href="https://codepen.io/drehimself/full/vpeVMx">CodePen</a>].</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=qxQKnqmNKv0">Rebuilding YouTube</a> - Rebuilding YouTube with Tailwind CSS.</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=_JhTaENzfZQ&amp;t=1263s">Rebuilding Netlify</a> - Rebuilding Netlify with Tailwind CSS.</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=banq3TfAPYk">Rebuilding Resolute</a> - Rebuilding Resolute with Tailwind CSS.</li>
+<li>🎬 <a href="https://web-crunch.com/tailwind-css-movie-production-landing-page">Let's Build: Movie Production Landing Page</a> - Building a movie production landing page with Tailwind CSS.</li>
+<li>🎬 <a href="https://web-crunch.com/lets-build-tailwind-css-responsive-navbar">Lets Build: Responsive Navbar</a> - Building a responsive navbar with Tailwind CSS.</li>
+<li>🎬 <a href="https://web-crunch.com/lets-build-tailwind-css-dribbble-shot">Let's Build: Dribbble Shot</a> - Dribbble shot with Tailwind CSS.</li>
+<li>🎬 <a href="https://web-crunch.com/lets-build-tailwind-css-tweet">Let's Build: Tweet component</a> - Building a Tweet component with Tailwind CSS.</li>
+<li>🎓 <a href="https://codeburst.io/creating-a-modal-dialog-with-tailwind-css-42722c9aea4f">Modal Dialog</a> - Creating a modal dialog with Tailwind CSS.</li>
+<li>🎓 <a href="https://github.com/asvny/building-realworld-user-interfaces-using-tailwind">Building real-world UIs using Tailwind CSS</a> - Building UIs of Shopify, Spotify, Netlify and Atlassian.</li>
+<li>🎓 <a href="http://joey.io/rebuilding-freshbooks-with-tailwind-css">Rebuilding FreshBooks</a> - Rebuilding FreshBooks with Tailwind CSS.</li>
+<li>🎓 <a href="https://stefanbauer.me/building-pingping/we-build-a-login-using-tailwindcss">Login Page (PingPing)</a> - Creating a login page with Tailwind CSS.</li>
+<li>🎓 <a href="https://mustafaaloko.github.io/2017/tailwind-css-building-a-login-page">Login Page</a> - Creating a login page with Tailwind CSS.</li>
+<li>🎓 <a href="https://nick-basile.com/blog/post/how-to-build-a-vuejs-component-with-tailwind-in-a-laravel-project">Vue.js Component with Tailwind and Laravel</a> - Building a Vue.js component in a Laravel project.</li>
+<li>🎓 <a href="https://nick-basile.com/blog/post/build-a-customizable-vuejs-modal-with-tailwind-css">Vue.js Modal</a> - Building a customizable modal with Tailwind CSS and Vue.js.</li>
+<li>🎓 <a href="https://nick-basile.com/blog/post/building-a-nav-with-tailwind-css">Navigation</a> - Building a navigation with Tailwind CSS.</li>
+<li>🎓 <a href="https://css-tricks.com/style-form-tailwind-css">Forms with Tailwind CSS</a> - How to style a form with Tailwind CSS.</li>
+<li>🎓 <a href="https://nick-basile.com/blog/post/building-a-photo-gallery-with-css-grid-and-tailwind-css">Photo gallery with CSS grids</a> - Building a photo gallery with CSS grids and Tailwind CSS.</li>
+<li>🎓 <a href="https://www.oliverdavies.uk/articles/rebuilding-bartik-with-vuejs-tailwind-css">Rebuilding Bartik</a> - Rebuilding Bartik (Drupal's default theme) with Vue.js and Tailwind CSS.</li>
+<li>🎓 <a href="https://web-crunch.com/re-create-airbnbs-home-page-with-tailwind-css">Rebuilding Airbnb's Home Page</a> - Rebuilding Airbnb's Home Page with Tailwind CSS.</li>
+<li>🎥 <a href="https://www.youtube.com/watch?v=HIPgzWS-Bxg">Laracasts Weekly Stream: Tailwind</a></li>
+<li>🎥 <a href="https://www.youtube.com/watch?v=nBzfVK3QUzM">More experimentation with Tailwind CSS</a></li>
+<li>🎥 <a href="https://youtu.be/SLGb2RLie9w">Rebuilding Spotify</a></li>
+<li>🎥 <a href="https://youtu.be/t54tuaoHVLo">Rebuilding Discord</a></li>
+<li>🎥 <a href="https://youtu.be/ULe6yKJrFuI">Rebuilding Meetup</a></li>
+</ul>
+<h2 id="apps--websites"><a class="header" href="#apps--websites">Apps &amp; Websites</a></h2>
+<ul>
+<li><a href="https://joshmanders.com/">Josh Manders</a> - Thoughts, Stories &amp; Ideas.</li>
+<li><a href="https://primcloud.com/">Primcloud</a> - Deploy your apps quickly and easily.</li>
+<li><a href="https://jackmcdade.com/">Jack McDade</a> - Is tired of boring websites.</li>
+<li><a href="https://www.danceofdawn.com/">Dance of Dawn</a> - Be awaked by your birth.</li>
+<li><a href="https://statamic.com/">Statamic</a> - Build beautiful, easy to manage websites.</li>
+<li><a href="https://sitesauce.app/">Sitesauce</a> - A static version of your website in one click.</li>
+<li><a href="https://hellosun.brussels/">Hello Sun</a> - Helping Brussels go solar.</li>
+<li><a href="https://nuxtjs.org/">Nuxt</a> - Build your next Vue.js application with confidence with NuxtJS.</li>
+</ul>
+<p align="center">
+  <br />
+  <br />
+  ·
+  <br />
+  <br />
+  <sub>Contributions welcome! Read the <a href=".github/CONTRIBUTING.html">contribution guidelines</a> first.</sub>
+</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Sysadmin.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Talks.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Sysadmin.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Talks.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

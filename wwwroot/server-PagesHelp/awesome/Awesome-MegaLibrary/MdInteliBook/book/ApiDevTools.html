@@ -1,0 +1,580 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ApiDevTools - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html" class="active"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="http-api-development-tools"><a class="header" href="#http-api-development-tools">HTTP API Development Tools</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>This is a collection of useful resources for building RESTful HTTP+JSON APIs. There are a lot of good tools and entire ecosystems out there! It can be overwhelming not knowing what options are available, so you can use this as a reference starting point.</p>
+<p>Contributions are most welcome. Categories are also open to suggestions!</p>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ul>
+<li><a href="#api-specification-languages">API Specification Languages</a></li>
+<li><a href="#api-specification-tools">API Specification Tools</a></li>
+<li><a href="#api-specifications">API Specifications</a></li>
+<li><a href="#api-frameworks">API Frameworks</a></li>
+<li><a href="#api-client-development-tools">API Client Development Tools</a></li>
+<li><a href="#api-documentation">API Documentation</a></li>
+<li><a href="#api-clients">API Clients</a></li>
+<li><a href="#api-debugging-and-mocking">API Debugging and Mocking</a></li>
+<li><a href="#api-design-guides">API Design Guides</a></li>
+<li><a href="#api-publishing">API Publishing</a></li>
+<li><a href="#api-gateways">API Gateways</a></li>
+<li><a href="#api-security">API Security</a></li>
+<li><a href="#api-monitoring">API Monitoring</a></li>
+<li><a href="#api-testing">API Testing</a></li>
+<li><a href="#api-developer-portal">API Developer Portal</a></li>
+<li><a href="#json-format-standards">JSON Format Standards</a></li>
+<li><a href="#learning-resources">Learning Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+<h2 id="api-specification-languages"><a class="header" href="#api-specification-languages">API Specification Languages</a></h2>
+<ul>
+<li><a href="https://github.com/OAI/OpenAPI-Specification">OpenAPI (formerly known as Swagger)</a></li>
+<li><a href="https://github.com/apiaryio/api-blueprint">API Blueprint</a></li>
+<li><a href="http://json-schema.org/">JSON Schema</a></li>
+<li><a href="https://raml.org/">RAML</a></li>
+</ul>
+<h2 id="api-specification-tools"><a class="header" href="#api-specification-tools">API Specification Tools</a></h2>
+<ul>
+<li><a href="https://swagger.io/tools/swagger-inspector/">Swagger Inspector</a>: Test and auto-generate OpenAPI documentation for any API.</li>
+<li><a href="http://editor.swagger.io/">Swagger Editor</a>: An editor for designing Swagger specifications.</li>
+<li><a href="https://swagger.io/open-source-integrations/">Swagger Tools and Integrations</a>: A list of libraries and frameworks serving the Swagger ecosystem.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi">OpenAPI extension for VS Code</a>:  Visual Studio Code (VS Code) extension that provides support for the OpenAPI Specification.</li>
+<li><a href="https://plugins.jetbrains.com/plugin/14837-openapi-swagger-editor">OpenAPI plugin for JetBrains IDEs</a>: Jetbrains plugin that provides support for the OpenAPI Specification.</li>
+<li><a href="https://github.com/apiaryio/dredd">Dredd</a>: Validate API documentation written in API Blueprint against its backend implementation.</li>
+<li><a href="https://lucybot-inc.github.io/api-spec-converter/">API Spec Converter</a>: Convert between different API spec formats.</li>
+<li><a href="https://www.apimatic.io/">Apimatic</a>: Supports API description formats including Swagger, OAI format, RAML, API Blueprint, IO Docs, WADL, Postman Collections and HAR 1.4 and more</li>
+<li><a href="https://openapidesigner.com">OpenAPI Definition Designer</a>: Free visual OpenAPI3 definition creation and editing tool.</li>
+<li><a href="https://stoplight.io/studio/">Stoplight Studio</a>: Create, prototype, and share OpenAPI descriptions and JSON Schemas using a visual editor.</li>
+<li><a href="https://github.com/stoplightio/spectral">Spectral</a>: Define rulesets to lint YAML or JSON, including OpenAPI 2.x, 3.x and AsyncAPI</li>
+<li><a href="https://www.useoptic.com/docs/openapi/generate-from-traffic">Optic</a>: Verify the accuracy of your OpenAPI 3.x spec using real traffic, and automatically apply patches that keep it up-to-date</li>
+</ul>
+<h2 id="api-specifications"><a class="header" href="#api-specifications">API Specifications</a></h2>
+<ul>
+<li><a href="http://apicommons.org/">API Commons</a>: A repository of language-agnostic API specifications / Data Models.</li>
+<li><a href="https://apis.guru/openapi-directory/">APIS.guru</a>: Directory of API specs in OpenAPI(aka Swagger) 2.0 format.</li>
+<li><a href="https://any-api.com/">AnyAPI</a>: Documentation and Test Consoles for Public APIs.</li>
+</ul>
+<h2 id="api-frameworks"><a class="header" href="#api-frameworks">API Frameworks</a></h2>
+<h3 id="ruby"><a class="header" href="#ruby">Ruby</a></h3>
+<ul>
+<li><a href="https://github.com/rails-api/rails-api">rails-api</a>: Rails for API only applications.</li>
+<li><a href="https://github.com/interagent/pliny">pliny</a>: Opinionated template Sinatra app for writing APIs in Ruby.</li>
+<li><a href="https://github.com/ruby-grape/grape">grape</a>: An opinionated micro-framework for creating REST-like APIs in Ruby.</li>
+<li><a href="https://github.com/rails-api/active_model_serializers">ActiveModel::Serializer</a>: Brings convention over configuration to your JSON generation.</li>
+<li><a href="https://github.com/nesquena/rabl">rabl</a>: Generate JSON and XML from any ruby object.</li>
+<li><a href="https://github.com/rails/jbuilder">jbuilder</a>: Create JSON structures via a Builder-style DSL.</li>
+<li><a href="https://github.com/trailblazer/roar">roar</a>: Parse and render REST API documents using representers.</li>
+</ul>
+<h3 id="python"><a class="header" href="#python">Python</a></h3>
+<ul>
+<li><a href="http://www.django-rest-framework.org/">Django REST framework</a>: Toolkit that makes it easy to build Web APIs.</li>
+<li><a href="https://github.com/django-tastypie/django-tastypie">Tastypie</a>: Webservice API framework for Django.</li>
+<li><a href="https://github.com/toastdriven/restless">restless</a>: A lightweight REST miniframework for Python.</li>
+<li><a href="https://github.com/flask-restful/flask-restful">flask-restful</a>: Simple framework for creating REST APIs.</li>
+<li><a href="https://github.com/falconry/falcon">Falcon</a>: Falcon is a low-level, high-performance Python framework for building HTTP APIs, app backends, and higher-level frameworks.</li>
+<li><a href="https://github.com/zalando/connexion">Connexion</a>: Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation and OAuth2 support</li>
+<li><a href="https://github.com/encode/apistar">apistar</a>: A smart Web API framework, designed for Python3.</li>
+<li><a href="https://github.com/channelcat/sanic">sanic</a>: Sanic is a Flask-like Python 3.5+ web server that's written to go fast.</li>
+<li><a href="https://github.com/timothycrosley/hug">hug</a>: hug aims to make developing Python driven APIs as simple as possible, but no simpler.</li>
+<li><a href="https://github.com/tiangolo/fastapi">FastAPI</a>: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. </li>
+</ul>
+<h3 id="javascript"><a class="header" href="#javascript">Javascript</a></h3>
+<ul>
+<li><a href="https://hapijs.com/">hapi.js</a>: Web and services application framework for Node.js.</li>
+<li><a href="https://github.com/restify/node-restify">Restify</a>: Node.js REST framework specifically meant for web service APIs.</li>
+<li><a href="https://expressjs.com/">Express</a>: Fast, unopinionated, minimalist web framework for Node.js.</li>
+<li><a href="http://sailsjs.org/">sailsjs</a>: Realtime MVC Framework for Node.js.</li>
+<li><a href="https://www.actionherojs.com/">Actionhero</a>: Multi-transport Node.js API server with integrated cluster capabilities and delayed tasks.</li>
+<li><a href="https://github.com/wprl/baucis">Baucis</a>: To build</li>
+<li><a href="http://koajs.com/">Koa</a>: Next generation web framework for Node.js</li>
+<li><a href="http://loopback.io/">Loopback</a>: Node.js framework for creating APIs and easily connecting to backend data sources.</li>
+<li><a href="http://senecajs.org/">Seneca</a>: A microservices toolkit for Node.js.</li>
+<li><a href="https://feathersjs.com/">Feathers</a>: Build RESTful and real-time APIs through Socket.io or Primus.</li>
+<li><a href="https://github.com/deployd/deployd">Deployd</a>: Deployd is the simplest way to build realtime APIs for web and mobile apps</li>
+<li><a href="https://github.com/kamilmysliwiec/nest">Nest</a>: A modern node.js framework for efficient and scalable web applications built on top of TypeScript</li>
+</ul>
+<h3 id="go"><a class="header" href="#go">Go</a></h3>
+<ul>
+<li><a href="https://github.com/ant0ine/go-json-rest">Go-Json-Rest</a>: Thin layer on top of <code>net/http</code> that helps building RESTful APIs easily</li>
+<li><a href="https://github.com/manishrjain/gocrud">gocrud</a>: Go library to simplify creating, updating and deleting arbitrary depth structured data — to make building REST services fast and easy.</li>
+<li><a href="https://github.com/dougblack/sleepy">sleepy</a>: RESTful micro-framework written in Go.</li>
+<li><a href="https://github.com/go-restit/restit">restit</a>: Go micro framework to help writing RESTful API integration test.</li>
+<li><a href="https://github.com/codehack/go-relax">go-relax</a>: Framework of pluggable components to build RESTful API's.</li>
+<li><a href="https://github.com/ungerik/go-rest">go-rest</a>: Small and evil REST framework for Go.</li>
+<li><a href="https://github.com/emicklei/go-restful">go-restful</a>: A declarative highly readable framework for building restful API's.</li>
+<li><a href="https://github.com/bahlo/goat">Goat</a>: Minimalistic REST API server in Go.</li>
+<li><a href="https://github.com/resoursea/api">Resoursea</a>: REST framework for quickly writing resource based services.</li>
+<li><a href="https://github.com/cosiner/zerver">Zerver</a>: Zerver is a expressive, modular, feature completed RESTful framework.</li>
+<li><a href="https://github.com/gofiber/fiber">Fiber</a>: :zap:Fiber is an Express inspired web framework written in Go with :coffee: .</li>
+</ul>
+<h3 id="scala"><a class="header" href="#scala">Scala</a></h3>
+<ul>
+<li><a href="https://github.com/tumblr/colossus">Colossus</a>: I/O and microservice library for Scala.</li>
+<li><a href="https://twitter.github.io/finatra/">Finatra</a>: Fast, testable, Scala HTTP services built on Twitter-Server and Finagle.</li>
+<li><a href="https://www.playframework.com/">Play</a>: The high velocity web framework for Java and Scala.</li>
+<li><a href="http://www.scalatra.org/">Scalatra</a>: Simple, accessible and free web micro-framework.</li>
+<li><a href="https://github.com/skinny-framework/skinny-micro">Skinny Micro</a>: Micro-web framework to build servlet applications in Scala.</li>
+<li><a href="http://spray.io/">Spray</a>: Open-source toolkit for building REST/HTTP-based integration layers on top of Scala and Akka.</li>
+<li><a href="https://github.com/akka/akka-http">Akka HTTP</a>: The Akka HTTP modules implement a full server- and client-side HTTP stack on top of akka-actor and akka-stream.</li>
+<li><a href="https://github.com/swagger-akka-http/swagger-akka-http">Swagger Akka HTTP</a>: Swagger-Akka-Http brings Swagger support for Akka-Http Apis.</li>
+</ul>
+<h3 id="java"><a class="header" href="#java">Java</a></h3>
+<ul>
+<li><a href="http://rest.li/">Rest.li</a>: REST framework using type-safe bindings and asynchronous, non-blocking IO.</li>
+<li><a href="https://www.dropwizard.io/en/latest/">Dropwizard</a>: Framework for developing ops-friendly, high-performance, RESTful web services.</li>
+<li><a href="https://jersey.java.net/">Jersey</a>: RESTful web services in Java.</li>
+<li><a href="https://projects.spring.io/spring-boot/">Spring Boot</a>: RESTful Web Service using Spring, high-performance and little configuration needed.</li>
+<li><a href="https://github.com/metamug/mason">Metamug Mason</a>: Create REST APIs with JSP tags and SQL. Edit and hot deploy REST resources on the server.</li>
+</ul>
+<h3 id="haskell"><a class="header" href="#haskell">Haskell</a></h3>
+<ul>
+<li><a href="https://github.com/scotty-web/scotty">Scotty</a>: Micro web framework inspired by Ruby's Sinatra, using WAI and Warp.</li>
+<li><a href="https://github.com/agrafix/Spock">Spock</a>: Another Haskell web framework for rapid development.</li>
+<li><a href="https://github.com/haskell-servant/servant">Servant</a>: A Type-Level Web DSL.</li>
+<li><a href="https://github.com/yesodweb/yesod">Yesod</a>: The Haskell RESTful web framework.</li>
+</ul>
+<h3 id="elixir"><a class="header" href="#elixir">Elixir</a></h3>
+<ul>
+<li><a href="http://phoenixframework.org/">Phoenix</a>: Framework for building HTML5 apps, API backends and distributed systems.</li>
+<li><a href="https://github.com/elixir-plug/plug">Plug</a>: A specification and conveniences for composable modules between web applications.</li>
+</ul>
+<h3 id="erlang"><a class="header" href="#erlang">Erlang</a></h3>
+<ul>
+<li><a href="https://github.com/ninenines/cowboy">Cowboy</a>: Small, fast, modular HTTP server written in Erlang.</li>
+<li><a href="https://github.com/videlalvaro/gen_microservice">Gen Microservice</a>: This library solves the problem of implementing microservices with Erlang.</li>
+<li><a href="https://github.com/mochi/mochiweb">Mochiweb</a>: Erlang library for building lightweight HTTP servers.</li>
+</ul>
+<h3 id="postgres"><a class="header" href="#postgres">Postgres</a></h3>
+<ul>
+<li><a href="https://github.com/begriffs/postgrest">PostgREST</a>: Serve a RESTful API from any existing PostgreSQL database.</li>
+<li><a href="https://github.com/prest/prest">pREST</a>: pREST is a way to serve a RESTful API from any databases written in Go.</li>
+</ul>
+<h3 id="mysql"><a class="header" href="#mysql">MySQL</a></h3>
+<ul>
+<li><a href="https://github.com/o1lab/xmysql">xmysql</a>: Generate REST APIs for any MySQL Database.</li>
+</ul>
+<h3 id="php"><a class="header" href="#php">PHP</a></h3>
+<ul>
+<li><a href="https://github.com/api-platform/api-platform">API Platform</a>: API framework on top of Symfony with JSON-LD, Schema.org and Hydra support</li>
+<li><a href="https://github.com/dingo/api">Dingo API</a>: A RESTful API package for the Laravel and Lumen frameworks</li>
+<li><a href="https://github.com/thephpleague/fractal">Fractal</a>: Fractal provides a presentation and transformation layer for complex data output, the like found in RESTful APIs, and works really well with JSON</li>
+<li><a href="https://github.com/yiisoft/yii2">Yii2 Framework</a>: Provides a whole set of tools to simplify the task of implementing RESTful Web Service APIs</li>
+</ul>
+<h3 id="r"><a class="header" href="#r">R</a></h3>
+<ul>
+<li><a href="https://www.rplumber.io/">Plumber</a>: API Framework to build APIs for simple R Functions</li>
+</ul>
+<h3 id="c"><a class="header" href="#c">C#</a></h3>
+<ul>
+<li><a href="https://dotnet.microsoft.com/en-us/apps/aspnet/apis">ASP.NET Web APIs</a>: Build secure REST APIs on any platform with C#</li>
+</ul>
+<h3 id="miscellaneous"><a class="header" href="#miscellaneous">Miscellaneous</a></h3>
+<ul>
+<li><a href="https://github.com/dreamfactorysoftware/dreamfactory">Dream Factory</a>: Turn any database into an API platform.</li>
+</ul>
+<h2 id="api-client-development-tools"><a class="header" href="#api-client-development-tools">API Client Development Tools</a></h2>
+<h3 id="general"><a class="header" href="#general">General</a></h3>
+<ul>
+<li><a href="https://github.com/swagger-api/swagger-codegen">Swagger CodeGen</a>: Generate client libraries automatically from a Swagger-compliant server.</li>
+<li><a href="https://github.com/Azure/autorest">AutoRest</a>: Generate client libraries for RESTful web services</li>
+<li><a href="https://github.com/openapitools/openapi-generator">OpenAPI Generator</a>: A community fork of Swagger Codegen to automatically generate API clients, server stubs and documentation for REST APIs given an OpenAPI/Swagger spec.</li>
+<li><a href="https://atyourservice.awalsh.io/">at-your-service</a>: A developer tool for API observability on the browser. Generate OpenAPI specifications and code from network traffic.</li>
+</ul>
+<h3 id="ruby-1"><a class="header" href="#ruby-1">Ruby</a></h3>
+<ul>
+<li><a href="https://apidock.com/ruby/Net/HTTP">Net::HTTP</a>: An HTTP client API for Ruby.</li>
+<li><a href="https://github.com/lostisland/faraday">faraday</a>: Simple, but flexible HTTP client library, with support for multiple backends.</li>
+<li><a href="https://github.com/rest-client/rest-client">rest-client</a>: Simple HTTP and REST client for Ruby</li>
+<li><a href="https://github.com/interagent/heroics">heroics</a>: Ruby HTTP client for APIs represented with JSON schema.</li>
+<li><a href="https://github.com/inf0rmer/blanket">blanket</a>: A Ruby API wrapper.</li>
+<li><a href="https://github.com/maccman/nestful">nestful</a>: Ruby HTTP/REST client.</li>
+</ul>
+<h3 id="java-1"><a class="header" href="#java-1">Java</a></h3>
+<ul>
+<li><a href="https://square.github.io/retrofit/">Retrofit</a>: A type-safe HTTP client for Android and Java.</li>
+</ul>
+<h3 id="javascript-1"><a class="header" href="#javascript-1">Javascript</a></h3>
+<ul>
+<li><a href="https://github.com/mgonto/restangular">Restangular</a>: Restangular is an AngularJS service that simplifies common GET, POST, DELETE, and UPDATE requests with a minimum of client code</li>
+</ul>
+<h3 id="net"><a class="header" href="#net">.NET</a></h3>
+<ul>
+<li><a href="https://github.com/paulcbetts/refit">Refit</a>: The automatic type-safe REST library for .NET Core, Xamarin and .NET</li>
+<li><a href="https://github.com/mattiasnordqvist/Web-Anchor">WebAnchor</a>: Web Anchor provides type-safe, testable and flexible access to web resources.</li>
+</ul>
+<h3 id="dart"><a class="header" href="#dart">.Dart</a></h3>
+<ul>
+<li><a href="https://dartfrog.vgv.dev/docs/overview">Frog</a>: Dart Frog is built on top of shelf and mason and is inspired by many tools including remix.run, next.js, and express.js. </li>
+<li><a href="https://github.com/serverpod/serverpod">Serverpod</a>: Serverpod is a next-generation app and web server, built for the Flutter community. It allows you to write your server-side code in Dart, automatically generate your APIs, and hook up your database with minimal effort. Serverpod is open-source, and you can host your server anywhere.</li>
+</ul>
+<h2 id="api-documentation"><a class="header" href="#api-documentation">API Documentation</a></h2>
+<ul>
+<li><a href="https://github.com/Rebilly/ReDoc">ReDoc</a>: OpenAPI/Swagger-generated API Reference Documentation.</li>
+<li><a href="https://github.com/swagger-api/swagger-ui">Swagger UI</a>: Dynamically generate documentation from a Swagger-compliant API.</li>
+<li><a href="https://github.com/lord/slate">Slate</a>: Static site generated documentation for your API.</li>
+<li><a href="https://developerhub.io/">DeveloperHub</a>: Documentation tool to write, publish, review, analyse and collect feedback on personalised customer-facing API docs.</li>
+<li><a href="https://github.com/interagent/prmd">prmd</a>: JSON Schema tooling: scaffold, verify, and generate documentation from JSON Schema documents.</li>
+<li><a href="https://github.com/danielgtaylor/aglio">Aglio</a>: An API Blueprint renderer with theme support that outputs static HTML.</li>
+<li><a href="https://apiary.io/">Apiary</a>: Collaborative design, instant API mock, generated documentation, integrated code samples, debugging and automated testing.</li>
+<li><a href="https://readme.io/">Readme</a>: API Documentation Hosting.</li>
+<li><a href="https://api-docs.io/">API Docs</a>: Hosted public API documentation for OAS (Swagger) and RAML specs.</li>
+<li><a href="https://github.com/tmcw/docbox">Docbox</a>: REST API documentation generator, using Markdown.</li>
+<li><a href="https://github.com/Mermade/widdershins">widdershins</a>: REST API documentation generator from OpenAPI 3.0 / Swagger 2.0 / AsyncAPI 1.x / Semoasa 0.1.0 definition</li>
+<li><a href="https://github.com/stoplightio/elements">Elements</a>: Web Components-based API documentation for OpenAPI 3.x/2.x</li>
+</ul>
+<h2 id="api-clients"><a class="header" href="#api-clients">API Clients</a></h2>
+<h3 id="open-source"><a class="header" href="#open-source">Open Source</a></h3>
+<ul>
+<li><a href="https://github.com/hoppscotch/hoppscotch">Hoppscotch</a>: API client for REST, GraphQL, Websocket, SSE, Socket.IO and MQTT</li>
+<li><a href="https://github.com/Orange-OpenSource/hurl">Hurl</a>: Hurl makes it easy to work with HTML content, REST / SOAP / GraphQL APIs, or any other XML / JSON based APIs.</li>
+</ul>
+<h3 id="hosted"><a class="header" href="#hosted">Hosted</a></h3>
+<ul>
+<li><a href="http://www.json-generator.com/">JSON Generator</a>: Generate and host mock JSON data.</li>
+</ul>
+<h3 id="desktop"><a class="header" href="#desktop">Desktop</a></h3>
+<ul>
+<li><a href="https://www.getpostman.com">Postman</a>: Desktop API testing tool.</li>
+<li><a href="https://firecamp.app">Firecamp</a>: API Studio for WebSocket, Rest API and GraphQL.</li>
+<li><a href="https://httpie.org/">HTTPie</a>: Command line HTTP client.</li>
+<li><a href="https://paw.cloud/">Paw</a>: REST client for Mac.</li>
+<li><a href="https://insomnia.rest/">Insomnia</a>: REST API client for Mac, Windows, and Linux.</li>
+<li><a href="https://github.com/knid/httpy">httpy</a>: Programmable Command line HTTP client.</li>
+</ul>
+<h2 id="api-debugging-and-mocking"><a class="header" href="#api-debugging-and-mocking">API Debugging and Mocking</a></h2>
+<h3 id="hosted-1"><a class="header" href="#hosted-1">Hosted</a></h3>
+<ul>
+<li><a href="https://beeceptor.com">Beeceptor</a>: An HTTP-proxy for rest APIs - inspect and build mock APIs.</li>
+<li><a href="https://mockbin.com/">MockBin</a>: Generate mock HTTP endpoints.</li>
+<li><a href="http://httpbin.org">httpbin</a>: Templated responses for testing various scenarios for HTTP requests.</li>
+<li><a href="https://github.com/stoplightio/prism">Prism</a>: a set of packages for API mocking and contract testing with OpenAPI v2 (formerly known as Swagger) and OpenAPI v3.x, including mock servers and a validation proxy.</li>
+<li><a href="https://mockingcloud.com">MockingCloud</a>: Generate full mock REST APIs with just OpenAPI yaml/json spec files.</li>
+<li><a href="https://www.svix.com/play/">Svix Play</a>: Easily inspect, test, and debug incoming webhooks.</li>
+</ul>
+<h3 id="desktop-1"><a class="header" href="#desktop-1">Desktop</a></h3>
+<ul>
+<li><a href="https://www.getpostman.com/docs/postman/mock_servers/setting_up_mock">Postman</a>: Desktop API client and mocking tool.</li>
+<li><a href="https://github.com/typicode/json-server">Json-Server</a> Full fake REST API with zero coding.</li>
+<li><a href="https://mockoon.com">Mockoon</a>: Desktop API mocking tool.</li>
+</ul>
+<h2 id="api-design-guides"><a class="header" href="#api-design-guides">API Design Guides</a></h2>
+<ul>
+<li><a href="https://cloud.google.com/apis/design/">Google API Design Guide</a></li>
+<li><a href="https://github.com/paypal/api-standards/blob/master/api-style-guide.md">PayPal API Style Guide</a></li>
+<li><a href="https://github.com/interagent/http-api-design">Heroku Platform HTTP API Design Guide</a></li>
+<li><a href="http://work.haufegroup.io/api-style-guide/">Haufe API Style Guide</a></li>
+<li><a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md">Microsoft REST API Guidelines</a></li>
+<li><a href="https://github.com/18f/api-standards">18F API Standards</a></li>
+<li><a href="https://www.narwhl.com/">The RESTed NARWHL</a></li>
+<li><a href="https://github.com/whitehouse/api-standards">White House Web API Standards</a></li>
+<li><a href="https://zalando.github.io/restful-api-guidelines/">Zalando REST API Guidelines</a></li>
+<li><a href="http://apistylebook.com/design/guidelines/">API Stylebook Design Guidelines</a></li>
+<li><a href="http://apistylebook.com/design/topics/">API Stylebook Design Topics</a></li>
+<li><a href="https://github.com/adidas-group/api-guidelines">Adidas-group API Design Guide</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design">Azure API Design</a></li>
+</ul>
+<h2 id="api-publishing"><a class="header" href="#api-publishing">API Publishing</a></h2>
+<ul>
+<li><a href="https://www.mashape.com/">Mashape</a>: API Marketplace.</li>
+</ul>
+<h2 id="api-gateways"><a class="header" href="#api-gateways">API Gateways</a></h2>
+<ul>
+<li><a href="https://aws.amazon.com/api-gateway/">AWS API Gateway</a>: Traffic management, authorization and access control, monitoring, and API version management.</li>
+<li><a href="https://www.getambassador.io/">Ambassador API Gateway</a>: Ambassador is a specialized control plane that translates Kubernetes annotations to Envoy configuration. All traffic is directly handled by the high-performance Envoy Proxy.</li>
+<li><a href="https://apigrove.github.io/apigrove/">APIGrove</a>: API manager built in Java on top of Fuse ESB.</li>
+<li><a href="https://github.com/apigee-127/a127-documentation/wiki/What-is-Apigee-127">Apigee127</a>: nodejs based API Gateway</li>
+<li><a href="http://pushpin.org">Pushpin</a>: Proxy for both request/response or streaming (long poll) of responses</li>
+<li><a href="https://github.com/strongloop/microgateway">Strongloop</a>: nodejs based API Gateway</li>
+<li><a href="http://www.fusio-project.org/">Fusio</a>: PHP based open source API management platform</li>
+<li><a href="https://camel.apache.org/">Camel</a>: Empowers you to define routing and mediation rules in a variety of domain-specific languages, including a Java-based fluent API, Spring or Blueprint XML configuration files, and a Scala DSL.</li>
+<li><a href="http://www.haproxy.org/">HAProxy</a>: Reliable, high Performance TCP/HTTP load balancer.</li>
+<li><a href="https://openresty.org/">OpenResty</a>: Fast web application server built on top of Nginx.</li>
+<li><a href="http://tengine.taobao.org/">Tengine</a>: A distribution of Nginx with some advanced features.</li>
+<li><a href="https://tyk.io/">Tyk</a>: Open-source, fast and scalable API gateway, portal and API management platform.</li>
+<li><a href="https://github.com/vulcand/vulcand">Vulcand</a>: Programmatic load balancer backed by Etcd.</li>
+<li><a href="https://github.com/Netflix/zuul">Zuul</a>: An edge service that provides dynamic routing, monitoring, resiliency, security, and more.</li>
+<li><a href="https://getkong.org/">Kong</a>: An open-source management layer for APIs, delivering high performance and reliability.</li>
+<li><a href="https://github.com/hellofresh/janus">Janus</a>: A lightweight API Gateway written in Go by <a href="https://engineering.hellofresh.com">Hello Fresh</a>.</li>
+<li><a href="https://github.com/fabiolb/fabio">fabio</a>: A fast, modern, zero-conf load balancing HTTP(S) router for deploying microservices managed by <a href="https://www.consul.io">consul</a> by eBay.</li>
+<li><a href="https://github.com/containous/traefik">Traefik</a>: Træfik (pronounced like traffic) is a modern HTTP reverse proxy and load balancer written in Go.</li>
+<li><a href="https://github.com/ory/oathkeeper">Oathkeeper</a>: OIdentity &amp; Access Proxy (IAP) that authorizes HTTP requests based on sets of rules. Integrates with ORY Hydra. </li>
+</ul>
+<h2 id="api-security"><a class="header" href="#api-security">API Security</a></h2>
+<ul>
+<li><a href="https://apisecurity.io/tools/audit/">Online OpenAPI/Swagger File Security Audit</a>: Free online static analysis of API contract files. Upload the file and get the report.</li>
+<li><a href="https://github.com/shieldfy/API-Security-Checklist">API Security checklist</a>: Checklist of the most important security countermeasures when designing, testing, and releasing your API.</li>
+<li><a href="https://github.com/ory/hydra">Ory Hydra</a>: OAuth2 server with OpenID Connect written in Go.</li>
+</ul>
+<h2 id="api-web-scanners"><a class="header" href="#api-web-scanners">API Web Scanners</a></h2>
+<ul>
+<li><a href="https://github.com/blst-security/cherrybomb">Cherrybomb</a>: Stop half-done API specifications! Cherrybomb is a CLI tool that helps you avoid undefined user behaviour by validating your API specifications.</li>
+</ul>
+<h2 id="api-monitoring"><a class="header" href="#api-monitoring">API Monitoring</a></h2>
+<ul>
+<li><a href="https://www.runscope.com/">Runscope</a>: API Performance Monitoring.</li>
+<li><a href="https://ping-api.com/">Ping-API</a>: Automated API Testing.</li>
+<li><a href="https://streamdal.com">Streamdal</a>: A tool to embed privacy controls in your application code to detect PII as it enters and leaves your systems, preventing it from reaching unintended APIs, databases, data streams, or pipelines.</li>
+</ul>
+<h2 id="api-testing"><a class="header" href="#api-testing">API Testing</a></h2>
+<ul>
+<li><a href="https://assertible.com">Assertible</a>: Continuously test and monitor your APIs after deployments and across environments.</li>
+<li><a href="https://github.com/Orange-OpenSource/hurl">Hurl</a>: Hurl makes it easy to test HTML content, REST / SOAP / GraphQL APIs, or any other XML / JSON based APIs.</li>
+<li><a href="https://github.com/svanoort/pyresttest">Pyresttest</a>: YAML based REST testing and API microbenchmarking tool</li>
+<li><a href="https://github.com/zaproxy/zaproxy">OWASP Zaproxy</a>: A tool to test your API for known security vulnerabilities, with a great CI integration.</li>
+<li><a href="https://github.com/restqa/restqa">RestQA</a>: Microservice API Testing tool focused on providing a great developer experience.</li>
+<li><a href="https://www.useoptic.com/docs/diff-openapi">Optic CI</a>: Test for breaking API changes in CI Pipelines</li>
+</ul>
+<h2 id="api-developer-portal"><a class="header" href="#api-developer-portal">API Developer Portal</a></h2>
+<ul>
+<li><a href="https://tyk.io/features">Tyk</a>: API Developer Portal on top of API gateway, make your API gateway easier to be used by developers.</li>
+<li><a href="https://apimatic.io/developer-experience-portal">APIMATIC</a>: Instantly build an API Portal with SDKs, Live Code Samples, Test Cases, API Transformation and language specific Docs &amp; Reference - tailored for your API.</li>
+<li><a href="https://www.useoptic.com">Optic Docs</a>: Share verified-accurate OpenAPI documentation with your consumers. With Optic they can subscribe to your API and get notified when it changes. </li>
+</ul>
+<h2 id="json-format-standards"><a class="header" href="#json-format-standards">JSON Format Standards</a></h2>
+<ul>
+<li><a href="http://stateless.co/hal_specification.html">HAL</a></li>
+<li><a href="http://jsonapi.org/faq/">JSONAPI</a></li>
+<li><a href="http://json-schema.org/">JSON Schema</a></li>
+<li><a href="http://www.hydra-cg.com/">Hydra</a></li>
+<li><a href="https://github.com/ionwg/ion-doc">Ion</a></li>
+<li><a href="https://json-ld.org/">JSON-LD</a></li>
+</ul>
+<h2 id="learning-resources"><a class="header" href="#learning-resources">Learning Resources</a></h2>
+<ul>
+<li><a href="http://shop.oreilly.com/product/9780596805838.do">REST in Practice</a></li>
+<li><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Roy Fielding's dissertation on REST</a></li>
+<li><a href="http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">Best Practices for Designing a Pragmatic RESTful API</a></li>
+<li><a href="https://blog.octo.com/en/design-a-rest-api/">How to Design a REST API</a></li>
+<li><a href="https://yos.io/2016/04/27/automated-api-development/">Automated API Development</a></li>
+<li><a href="http://nordicapis.com/">Nordic APIs</a></li>
+<li><a href="https://www.mulesoft.com/sites/default/files/resource-assets/ebook-UndisturbedREST_v1.pdf">Undisturbed REST</a></li>
+<li><a href="https://leanpub.com/build-apis-you-wont-hate">Build APIs You Won't Hate</a></li>
+<li><a href="https://www.manning.com/books/irresistible-apis">Irresistible APIs</a></li>
+<li><a href="https://apiary.io/how-to-build-api">How to build an API</a></li>
+<li><a href="https://www.programmableweb.com/api-university">API University</a></li>
+<li><a href="http://shop.oreilly.com/product/9780596529260.do">RESTful Web Services</a></li>
+<li><a href="http://shop.oreilly.com/product/0636920028468.do">RESTful Web APIs</a></li>
+<li><a href="https://alistapart.com/article/the-ten-essentials-for-good-api-documentation">The Ten Essentials for Good API Documentation</a></li>
+<li><a href="https://apisecurity.io">APIsecurity.io weekly newsletter</a></li>
+<li><a href="https://www.manning.com/books/testing-web-apis">Testing Web APIs</a></li>
+<li><a href="https://www.manning.com/books/the-design-of-web-apis-second-edition">The Design of Web APIs, Second Edition</a></li>
+</ul>
+<h2 id="blogs"><a class="header" href="#blogs">Blogs</a></h2>
+<ul>
+<li><a href="http://apievangelist.com/blog/">API Evangelist</a></li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li><a href="https://httpstatuses.com/">HTTP Status Codes Reference</a></li>
+</ul>
+<h2 id="contributing"><a class="header" href="#contributing">Contributing</a></h2>
+<p><a href="https://github.com/yosriady/api-development-tools/pulls">Pull Requests</a> are most welcome!</p>
+<p>Please write a brief one-sentence summary when adding a new resource.</p>
+<h2 id="thanks"><a class="header" href="#thanks">Thanks</a></h2>
+<p><strong>api-development-tools</strong> © 2016+, Yos Riady. Released under the <a href="https://mit-license.org/">MIT</a> License.<br>
+Authored and maintained by Yos Riady with help from contributors (<a href="https://github.com/yosriady/api-development-tools/contributors">list</a>).</p>
+<blockquote>
+<p><a href="https://yos.io">yos.io</a>  · 
+GitHub <a href="https://github.com/yosriady">@yosriady</a></p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Algolia.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Avalonia.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Algolia.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Avalonia.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

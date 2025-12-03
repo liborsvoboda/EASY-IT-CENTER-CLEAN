@@ -1,0 +1,52 @@
+﻿@model ServerCorePages.ViewerMarkDownFileModel
+
+@* @addTagHelper *, WebOptimizer.Core *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Westwind.AspNetCore.Markdown
+
+@using EasyITCenter.WebClasses
+@using EasyITCenter.Controllers
+@using EasyITCenter.ServerCoreStructure
+@using Microsoft.AspNetCore.Html
+@using Westwind.AspNetCore.Markdown
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EIC-MarkDown File Viewer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="charset" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Libor Svoboda">
+    <meta name="description" content="EasyITCenter">
+    <meta name="keywords" content="System, Backend, API, EASY-DATA-Center, EASY-SYSTEM-Builder, Application, Server, IT, Solution, Help, HowTo, Javascript, HTML5, UI, Library, Web, Development, Framework">
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/server-integrated/server-modules/markdown/css/bootstrap.css" />
+    <link href="/server-integrated/server-modules/markdown/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/server-integrated/server-modules/markdown/metro/css/metro3.css" rel="stylesheet" />
+    <link href="/server-integrated/server-modules/markdown/metro/css/metro-schemes.css" rel="stylesheet" />
+    <link href="/server-integrated/server-modules/markdown/metro/css/metro-icons.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/js/jquery-3.6.0.min.js"> </script>
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/js/jspdf.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/js/clipboard.min.js"></script>
+
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/metro/js/metro-addon.js"></script>
+    <script type="text/javascript" src="/server-integrated/server-modules/markdown/metro/js/metro3.js"></script>
+
+    @* Google Translation *@
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+    
+
+<body>
+
+    @RenderBody()
+</body>
+</html>

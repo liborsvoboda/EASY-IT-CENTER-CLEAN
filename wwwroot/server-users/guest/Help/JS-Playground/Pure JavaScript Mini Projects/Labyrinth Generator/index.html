@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Labyrinth Generator</title>
+    </head>
+    <body>
+       <p style="line-height:18px; font-size:18px; font-family:times;">
+        <script>
+            for(var i=1; i<20; i++){
+                for(var j=1; j<20; j++){
+                    var s = Math.floor((Math.random()*2)%2) ? "╱":"╲";
+                    document.write(s);
+                }
+                document.write("<br>");
+            }
+        </script>
+        </p>
+    </body>
+</html>

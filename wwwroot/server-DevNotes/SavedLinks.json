@@ -1,0 +1,3094 @@
+﻿[  {
+        "title": "Dokumentace k Bicep | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/azure/azure-resource-manager/bicep/",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "Publikování aplikace - .NET | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/dotnet/core/deploying/",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "Dokumentace k nástrojům a diagnostice .NET | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/dotnet/navigate/tools-diagnostics/",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "Spuštění .NET z JavaScriptu | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/aspnet/core/client-side/dotnet-interop?view=aspnetcore-8.0",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "Dokumentace pro .NET | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/dotnet/",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "BlazorWebAssemblyPrerendering/Server/Program.cs at main · danroth27/BlazorWebAssemblyPrerendering",
+        "url": "https://github.com/danroth27/BlazorWebAssemblyPrerendering/blob/main/Server/Program.cs",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "BradleyCSO/CityInfo.API: A Web API that gets information of a particular City. Taken from Pluralsight's ASP Net Core 6 Web API Fundamentals course, and built on thereafter. Has a front-end, which can be found here: https://github.com/BradleyCSO/GiveMeCityInfo",
+        "url": "https://github.com/BradleyCSO/CityInfo.API",
+        "tags": ["AzureExtension"]
+    }, {
+        "title": "DotnetJavaScriptSamples/RazorClassLibrarySamples/BlazorWebApp/Program.cs at main · danroth27/DotnetJavaScriptSamples",
+        "url": "https://github.com/danroth27/DotnetJavaScriptSamples/blob/main/RazorClassLibrarySamples/BlazorWebApp/Program.cs",
+        "tags": ["APIServices"]
+    }, {
+        "title": "danroth27/DotnetJavaScriptSamples",
+        "url": "https://github.com/danroth27/DotnetJavaScriptSamples/tree/main",
+        "tags": ["APIServices"]
+    }, {
+        "title": "danroth27/UltimateBlazorApp: Blazor app hosted using Blazor Server, Blazor WebAssembly, and Blazor Hybrid",
+        "url": "https://github.com/danroth27/UltimateBlazorApp/tree/main",
+        "tags": ["APIServices"]
+    }, {
+        "title": "danroth27/DotnetRazor8146: Repro for dotnet/razor#8146",
+        "url": "https://github.com/danroth27/DotnetRazor8146/tree/main",
+        "tags": ["APIServices"]
+    }, {
+        "title": "netxcore IIs entegration",
+        "url": "https://github.com/danroth27/Presentations/blob/main/Ignite2016/AspNetCoreDeepDive/demos/IISIntegrationDemo/Startup.cs",
+        "tags": ["APIServices"]
+    }, {
+        "title": "danroth27/AspNetCoreModules.Samples: ASP.NET Core Modules samples",
+        "url": "https://github.com/danroth27/AspNetCoreModules.Samples",
+        "tags": ["APIServices"]
+    }, {
+        "title": "SideWaffleWebsite/SideWaffleWebsite/Bin at master · ligershark/SideWaffleWebsite",
+        "url": "https://github.com/ligershark/SideWaffleWebsite/tree/master/SideWaffleWebsite/Bin",
+        "tags": ["APIServices"]
+    }, {
+        "title": "SabaCell/Nike: A reactive framework for building microservice architecture solution easier",
+        "url": "https://github.com/SabaCell/Nike/tree/master",
+        "tags": ["APIServices"]
+    }, {
+        "title": "danroth27 (Daniel Roth)",
+        "url": "https://github.com/danroth27",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "BradleyCSO",
+        "url": "https://github.com/BradleyCSO",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Browserify",
+        "url": "https://github.com/browserify",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "fdecampredon (François de Campredon)",
+        "url": "https://github.com/fdecampredon",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jsdom repositories",
+        "url": "https://github.com/orgs/jsdom/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "AngleSharp",
+        "url": "https://github.com/AngleSharp",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jchristn (jchristn) / Repositories",
+        "url": "https://github.com/jchristn?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "unoplatform repositories",
+        "url": "https://github.com/orgs/unoplatform/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "JonDouglas (JonDouglas) / Repositories",
+        "url": "https://github.com/JonDouglas?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ReactiveUI",
+        "url": "https://github.com/reactiveui",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "RolandPheasant (RolandPheasant) / Repositories",
+        "url": "https://github.com/RolandPheasant?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "FlorianRappl (FlorianRappl) / Repositories",
+        "url": "https://github.com/FlorianRappl?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "AngleSharp repositories",
+        "url": "https://github.com/orgs/AngleSharp/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "microsoft repositories",
+        "url": "https://github.com/orgs/microsoft/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cncf repositories",
+        "url": "https://github.com/orgs/cncf/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cncf/devstats-website: Website for devstats.cncf.io",
+        "url": "https://github.com/cncf/devstats-website/tree/master",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "chakra-core repositories",
+        "url": "https://github.com/orgs/chakra-core/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dodyg (dodyg) / Repositories",
+        "url": "https://github.com/dodyg?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "OrchardCMS repositories",
+        "url": "https://github.com/orgs/OrchardCMS/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Six Labors images",
+        "url": "https://github.com/SixLabors",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "berstend (berstend̡̲̫̹̠̖͚͓̔̄̓̐̄͛̀͘)",
+        "url": "https://github.com/berstend",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "shravan2x (Shravan Rajinikanth)",
+        "url": "https://github.com/shravan2x?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dodyg (dodyg) / Repositories",
+        "url": "https://github.com/dodyg?page=2&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "NtreevSoft repositories",
+        "url": "https://github.com/orgs/NtreevSoft/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "C# Avalonia +",
+        "url": "https://github.com/orgs/MicroSugarDeveloperOrg/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "kekekeks (Nikita Tsukanov)",
+        "url": "https://github.com/kekekeks",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "kekekeks (kekekeks) / Repositories",
+        "url": "https://github.com/kekekeks?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jpmikkers (jpmikkers) / Repositories",
+        "url": "https://github.com/jpmikkers?page=2&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "henon (henon) / Repositories",
+        "url": "https://github.com/henon?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "danielpalme (danielpalme) / Repositories",
+        "url": "https://github.com/danielpalme?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "loic-sharma (Loïc Sharma)",
+        "url": "https://github.com/loic-sharma",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "xoofx (xoofx) / Repositories",
+        "url": "https://github.com/xoofx?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "loic-sharma (loic-sharma) / Repositories",
+        "url": "https://github.com/loic-sharma?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "drake7707 (drake7707) / Repositories",
+        "url": "https://github.com/drake7707?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "agentcooper (agentcooper) / Repositories",
+        "url": "https://github.com/agentcooper?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "fabiandev (fabiandev) / Repositories",
+        "url": "https://github.com/fabiandev?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dsherret (David Sherret)",
+        "url": "https://github.com/dsherret",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dsherret (dsherret) / Repositories",
+        "url": "https://github.com/dsherret?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dragos-constantin-stoica (Dragos STOICA)",
+        "url": "https://github.com/dragos-constantin-stoica",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "arjunattam (arjunattam) / Repositories",
+        "url": "https://github.com/arjunattam?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "arasouli91 (arasouli91) / Repositories",
+        "url": "https://github.com/arasouli91?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "landriiuk / Repositories",
+        "url": "https://github.com/landriiuk?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "andresghernandez / Repositories",
+        "url": "https://github.com/andresghernandez?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dsplaisted / Repositories",
+        "url": "https://github.com/dsplaisted?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "HearTao repositories TS good",
+        "url": "https://github.com/orgs/HearTao/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "xdan (xdan) / Repositories",
+        "url": "https://github.com/xdan?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "editor-js repositories",
+        "url": "https://github.com/orgs/editor-js/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mar10 (mar10) / Repositories · GitHub",
+        "url": "https://github.com/mar10?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ericsink (ericsink) / Repositories · GitHub",
+        "url": "https://github.com/ericsink?page=2&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "tensorflow repositories · GitHub",
+        "url": "https://github.com/orgs/tensorflow/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ErikEJ (ErikEJ) / Repositories · GitHub",
+        "url": "https://github.com/ErikEJ?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mkdocs repositories · GitHub",
+        "url": "https://github.com/orgs/mkdocs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "krdbigsa repositories · GitHub",
+        "url": "https://github.com/orgs/krdbigsa/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "psijkof (psijkof) / Repositories",
+        "url": "https://github.com/psijkof?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "vhpoet (Vahe Hovhannisyan)",
+        "url": "https://github.com/vhpoet",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "uraimo (uraimo)",
+        "url": "https://github.com/uraimo",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jweisz (Justin Weisz)",
+        "url": "https://github.com/jweisz",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "storybookjs repositories",
+        "url": "https://github.com/orgs/storybookjs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "twbs repositories",
+        "url": "https://github.com/orgs/twbs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "yabwe repositories",
+        "url": "https://github.com/orgs/yabwe/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "sofish (小鱼)",
+        "url": "https://github.com/sofish",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "sofish (sofish) / Repositories",
+        "url": "https://github.com/sofish?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "basecamp repositories",
+        "url": "https://github.com/orgs/basecamp/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Voog repositories",
+        "url": "https://github.com/orgs/Voog/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "michelson (michelson) / Repositories",
+        "url": "https://github.com/michelson?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "react-page repositories",
+        "url": "https://github.com/orgs/react-page/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Made by Many",
+        "url": "https://github.com/madebymany",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "madebymany repositories",
+        "url": "https://github.com/orgs/madebymany/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "glidejs repositories",
+        "url": "https://github.com/orgs/glidejs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ghosh (ghosh) / Repositories",
+        "url": "https://github.com/ghosh?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "trys (trys) / Repositories",
+        "url": "https://github.com/trys?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "gatsbyjs repositories",
+        "url": "https://github.com/orgs/gatsbyjs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "spotify repositories",
+        "url": "https://github.com/orgs/spotify/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mermaid-js repositories",
+        "url": "https://github.com/orgs/mermaid-js/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cibox repositories",
+        "url": "https://github.com/orgs/cibox/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "heech1013 (heech1013) / Repositories",
+        "url": "https://github.com/heech1013?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mermaidjs repositories",
+        "url": "https://github.com/orgs/mermaidjs/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "TrueCommerce repositories",
+        "url": "https://github.com/orgs/TrueCommerce/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "madeindjs (madeindjs) / Repositories",
+        "url": "https://github.com/madeindjs?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "excalidraw repositories",
+        "url": "https://github.com/orgs/excalidraw/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Mermaid-Chart repositories",
+        "url": "https://github.com/orgs/Mermaid-Chart/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "graphql-editor repositories",
+        "url": "https://github.com/orgs/graphql-editor/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "tiagovtristao (tiagovtristao) / Repositories",
+        "url": "https://github.com/tiagovtristao?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "auth0-developer-hub repositories",
+        "url": "https://github.com/orgs/auth0-developer-hub/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "auth0 repositories",
+        "url": "https://github.com/orgs/auth0/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jashkenas (jashkenas) / Repositories",
+        "url": "https://github.com/jashkenas?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "flathub-infra repositories",
+        "url": "https://github.com/orgs/flathub-infra/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "nettitude repositories",
+        "url": "https://github.com/orgs/nettitude/repositories?page=2",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "linagora repositories",
+        "url": "https://github.com/orgs/linagora/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "zjyfdu (zjyfdu) / Repositories",
+        "url": "https://github.com/zjyfdu?tab=repositories&q=&type=&language=&sort=",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "fyodorio-closet",
+        "url": "https://github.com/fyodorio-closet",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "arkadym (arkadym) / Repositories",
+        "url": "https://github.com/arkadym?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "smylebifa (smylebifa) / Repositories",
+        "url": "https://github.com/smylebifa?page=2&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "gpwhaha (gpwhaha) / Repositories",
+        "url": "https://github.com/gpwhaha?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "atlsecsrv-com repositories",
+        "url": "https://github.com/orgs/atlsecsrv-com/repositories?page=2",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "atlsecsrv-com repositories",
+        "url": "https://github.com/orgs/atlsecsrv-com/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "nhn repositories",
+        "url": "https://github.com/orgs/nhn/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "avanzu (avanzu) / Repositories",
+        "url": "https://github.com/avanzu?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "nicolas-besnard (nicolas-besnard) / Repositories",
+        "url": "https://github.com/nicolas-besnard?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "summernote repositories",
+        "url": "https://github.com/orgs/summernote/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "0326 (0326) / Repositories",
+        "url": "https://github.com/0326?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mbebenita (mbebenita) / Repositories",
+        "url": "https://github.com/mbebenita?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "183demao (183demao) / Repositories",
+        "url": "https://github.com/183demao?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "realityking (realityking) / Repositories",
+        "url": "https://github.com/realityking?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ahmad-moussawi (ahmad-moussawi) / Repositories",
+        "url": "https://github.com/ahmad-moussawi?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "chrissrogers (chrissrogers) / Repositories",
+        "url": "https://github.com/chrissrogers?page=3&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Zt-freak (Zt-freak) / Repositories",
+        "url": "https://github.com/Zt-freak?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "netpi (netpi) / Repositories",
+        "url": "https://github.com/netpi?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cadorn (cadorn) / Repositories",
+        "url": "https://github.com/cadorn?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mkslanc (mkslanc) / Repositories",
+        "url": "https://github.com/mkslanc?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dgreenheck (dgreenheck) / Repositories",
+        "url": "https://github.com/dgreenheck?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "DannyMoerkerke (DannyMoerkerke) / Repositories",
+        "url": "https://github.com/DannyMoerkerke?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "kamuz (kamuz) / Repositories",
+        "url": "https://github.com/kamuz?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "CNSKnight (CNSKnight) / Repositories",
+        "url": "https://github.com/CNSKnight?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "goranalkovic (Goran Alković)",
+        "url": "https://github.com/goranalkovic",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "desktop repositories",
+        "url": "https://github.com/orgs/desktop/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "JefMari (Jeferson Mari)",
+        "url": "https://github.com/JefMari?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "wangeditor-team repositories",
+        "url": "https://github.com/orgs/wangeditor-team/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "xqiu (xqiu) / Repositories",
+        "url": "https://github.com/xqiu?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "chris84948",
+        "url": "https://github.com/chris84948?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Knagis (Knagis) / Repositories",
+        "url": "https://github.com/Knagis?page=2&tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cwensley (Curtis Wensley)",
+        "url": "https://github.com/cwensley",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "cwensley (cwensley) / Repositories",
+        "url": "https://github.com/cwensley?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Open Live Writer",
+        "url": "https://github.com/OpenLiveWriter",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "marklio (marklio) / Repositories",
+        "url": "https://github.com/marklio?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Coati Software",
+        "url": "https://github.com/CoatiSoftware",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "premsahni0501 (premsahni0501) / Repositories",
+        "url": "https://github.com/premsahni0501?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "sitespeedio repositories",
+        "url": "https://github.com/orgs/sitespeedio/repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "sitespeed.io",
+        "url": "https://github.com/sitespeedio",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Raja0sama (Raja0sama) / Repositories",
+        "url": "https://github.com/Raja0sama?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "ukman JS PIVOT",
+        "url": "https://github.com/ukman",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "aelassas (aelassas) / Repositories",
+        "url": "https://github.com/aelassas?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "k3ldar (Si Carter)",
+        "url": "https://github.com/k3ldar",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "paullstanley (paullstanley) / Repositories",
+        "url": "https://github.com/paullstanley?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jbenzshawel (Addison Benzshawel)",
+        "url": "https://github.com/jbenzshawel?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "leostella97 (leostella97) / Repositories",
+        "url": "https://github.com/leostella97?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "didin1453fatih (didin1453fatih) / Repositories",
+        "url": "https://github.com/didin1453fatih?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "akreienbring (akreienbring) / Repositories",
+        "url": "https://github.com/akreienbring?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "shovoalways (shovoalways) / Repositories",
+        "url": "https://github.com/shovoalways?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "deprecate repositories",
+        "url": "https://github.com/orgs/deprecate/repositories?page=3",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "OscarGodson (OscarGodson) / Repositories",
+        "url": "https://github.com/OscarGodson?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "jakubgarfield (jakubgarfield) / Repositories",
+        "url": "https://github.com/jakubgarfield?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "nuhmanpk (nuhmanpk) / Repositories",
+        "url": "https://github.com/nuhmanpk?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "nickola (Nickolay Kovalev)",
+        "url": "https://github.com/nickola",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "dimsemenov (dimsemenov) / Repositories",
+        "url": "https://github.com/dimsemenov?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mguinness (mguinness) / Repositories",
+        "url": "https://github.com/mguinness?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "gordon-matt",
+        "url": "https://github.com/gordon-matt?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "mistic100 (mistic100) / Repositories",
+        "url": "https://github.com/mistic100?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "roymina (roymina) / Repositories",
+        "url": "https://github.com/roymina?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "2881099",
+        "url": "https://github.com/2881099?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "gravity00 (João Simões )",
+        "url": "https://github.com/gravity00",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "aishang2015 (aishang2015) / Repositories",
+        "url": "https://github.com/aishang2015?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "Shipow (Shipow) / Repositories",
+        "url": "https://github.com/Shipow?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "diegofrata (diegofrata) / Repositories",
+        "url": "https://github.com/diegofrata?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "DeeJayTC (DeeJayTC) / Repositories",
+        "url": "https://github.com/DeeJayTC?tab=repositories",
+        "tags": ["GithubProfiles"]
+    }, {
+        "title": "beginner-series/Artificial Intelligence and Machine Learning/sample-code/Notebooks/10-Introduction-AutoML.ipynb at main · danroth27/beginner-series",
+        "url": "https://github.com/danroth27/beginner-series/blob/main/Artificial%20Intelligence%20and%20Machine%20Learning/sample-code/Notebooks/10-Introduction-AutoML.ipynb",
+        "tags": ["ML AI"]
+    }, {
+        "title": "Installation | GenAIScript",
+        "url": "https://microsoft.github.io/genaiscript/getting-started/installation/",
+        "tags": ["ML AI"]
+    }, {
+        "title": "Uno Platform: Build Cross-Platform .NET Apps Faster",
+        "url": "https://platform.uno/",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "Examples · Bootstrap v5.3",
+        "url": "https://getbootstrap.com/docs/5.3/examples/",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "Prism",
+        "url": "https://github.com/PrismLibrary",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "Aardvark Platform",
+        "url": "https://github.com/aardvark-platform",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "soydachi/GeekyTool: A simple toolkit for .NET developers",
+        "url": "https://github.com/soydachi/GeekyTool",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "quasarframework repositories",
+        "url": "https://github.com/orgs/quasarframework/repositories",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "fancyapps (fancyapps) / Repositories",
+        "url": "https://github.com/fancyapps?tab=repositories",
+        "tags": ["FrameUi"]
+    }, {
+        "title": "jsx-typescript/src/services at jsx · fdecampredon/jsx-typescript",
+        "url": "https://github.com/fdecampredon/jsx-typescript/tree/jsx/src/services",
+        "tags": ["compilers"]
+    }, {
+        "title": "browserify/browserify: browser-side require() the node.js way",
+        "url": "https://github.com/browserify/browserify#usage",
+        "tags": ["compilers"]
+    }, {
+        "title": "TypeStrong/grunt-ts: A grunt task to manage your complete typescript development to production workflow",
+        "url": "https://github.com/TypeStrong/grunt-ts",
+        "tags": ["compilers"]
+    }, {
+        "title": "TypeStrong/tscs: TypeScript Compiler Services",
+        "url": "https://github.com/TypeStrong/tscs",
+        "tags": ["compilers"]
+    }, {
+        "title": "TypeDoc Example",
+        "url": "https://typedoc.org/example/#md:functions",
+        "tags": ["compilers"]
+    }, {
+        "title": "NuGet Gallery | Packages",
+        "url": "https://www.nuget.org/packages",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Microsoft 6000",
+        "url": "https://github.com/microsoft",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "My GET Nuget Protal",
+        "url": "https://www.myget.org/gallery",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "GitHub",
+        "url": "https://github.com/",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Packages | NuGet Package Explorer",
+        "url": "https://nuget.info/packages",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "NuGet Gallery | Home",
+        "url": "https://www.nuget.org/",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Open Source Collective - Open Collective",
+        "url": "https://opencollective.com/opensource",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Projects | .NET Foundation",
+        "url": "https://dotnetfoundation.org/projects/current-projects",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Cloudsmith - Repositories - Orchard Core (orchardcore) - Orchard Core Preview (preview) - Packages",
+        "url": "https://cloudsmith.io/~orchardcore/repos/preview/packages/",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "NuGet Gallery | Packages matching nodejs",
+        "url": "https://www.nuget.org/packages?page=3&q=nodejs&sortBy=relevance",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "ai-traders/liget: NuGet server and cache running on kestrel in docker",
+        "url": "https://github.com/ai-traders/liget?tab=readme-ov-file",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Přehled hostování vlastních informačních kanálů NuGet | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/nuget/hosting-packages/overview",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "jsDelivr - A free, fast, and reliable CDN for JS and open source",
+        "url": "https://www.jsdelivr.com/?query=suneditor%20&page=1",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "NuGet Gallery | dotnetframework",
+        "url": "https://www.nuget.org/profiles/dotnetframework?_src=template",
+        "tags": ["Nuget-Portals"]
+    }, {
+        "title": "Test generator | Playwright",
+        "url": "https://playwright.dev/docs/codegen#running-codegen",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "Interoperabilita JavaScriptu s ASP.NET Core Blazor (zprostředkovatel komunikace JS) | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/aspnet/core/blazor/javascript-interoperability/?view=aspnetcore-8.0&WT.mc_id=dotnet-35129-website",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "dotnet/wpf: WPF is a .NET Core UI framework for building Windows desktop applications.",
+        "url": "https://github.com/dotnet/wpf/tree/main",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "React integration for ASP.NET MVC | ReactJS.NET",
+        "url": "https://reactjs.net/",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "ligershark/WebOptimizer: A bundler and minifier for ASP.NET Core",
+        "url": "https://github.com/ligershark/WebOptimizer",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "NuGet Package Explorer",
+        "url": "https://github.com/NuGetPackageExplorer",
+        "tags": ["EIC-Implement"]
+    }, {
+        "title": "bagetter repositories",
+        "url": "https://github.com/orgs/bagetter/repositories",
+        "tags": ["EIC-Implement", "Servery"]
+    }, {
+        "title": "Info+Code StackOverflow",
+        "url": "https://stackoverflow.com/questions/tagged/wpf",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Started NET,CORE Portal ",
+        "url": "https://learn.microsoft.com/en-us/dotnet/core/get-started",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Info DevOpsGit",
+        "url": "https://learn.microsoft.com/cs-cz/azure/devops/organizations/projects/connect-to-projects?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops&tabs=visual-studio-2022#prerequisites",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "NET Refereces",
+        "url": "https://referencesource.microsoft.com/",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Overview - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/docbuilder/integratingdocumentbuilder",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Basic concepts - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/basic",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Windows Admin Center Overview | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-CZ/windows-server/manage/windows-admin-center/overview#see-how-customers-are-benefitting-from-windows-admin-center",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "MSDN Magazine Issues | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/msdn-magazine-issues",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "JavaScript — Dynamic client-side scripting - Learn web development | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "Learn to Code — For Free — Coding Courses for Busy People",
+        "url": "https://www.freecodecamp.org/",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "freeCodeCamp.org",
+        "url": "https://github.com/freeCodeCamp",
+        "tags": ["HELP Info"]
+    }, {
+        "title": "corert/Documentation/botr at master · dotnet/corert",
+        "url": "https://github.com/dotnet/corert/tree/master/Documentation/botr",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "roslyn/src/Compilers/Core/MSBuildTask/Microsoft.Managed.Core.targets at 86ff365d5d28fddd4a4738cf1d9d101522dffd50 · dotnet/roslyn",
+        "url": "https://github.com/dotnet/roslyn/blob/86ff365d5d28fddd4a4738cf1d9d101522dffd50/src/Compilers/Core/MSBuildTask/Microsoft.Managed.Core.targets#L312",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "Code of Conduct | .NET Foundation",
+        "url": "https://dotnetfoundation.org/about/policies/code-of-conduct",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "runtime/src at main · dotnet/runtime",
+        "url": "https://github.com/dotnet/runtime/tree/main/src",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "editor",
+        "url": "https://referencesource.microsoft.com/#q=editor",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "runtime/.github at 5fd3f22b98cb0d126e4f6328f5a0bf922a532f69 · dotnet/runtime",
+        "url": "https://github.com/dotnet/runtime/tree/5fd3f22b98cb0d126e4f6328f5a0bf922a532f69/.github",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "roslyn/src/Workspaces/CSharp/Portable at main · dotnet/roslyn",
+        "url": "https://github.com/dotnet/roslyn/tree/main/src/Workspaces/CSharp/Portable",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": ".NET API browser | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/dotnet/api/",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "Home | DefinitelyTyped",
+        "url": "https://definitelytyped.org/",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "Google Open Source",
+        "url": "https://opensource.google/",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "msdn-code-gallery-microsoft/OneCodeTeam at master · microsoftarchive/msdn-code-gallery-microsoft",
+        "url": "https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "DotNet BIG HELP",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/DotNet_Security_Cheat_Sheet.html",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "HansKindberg-Lab (Hans Kindberg (lab))",
+        "url": "https://github.com/HansKindberg-Lab",
+        "tags": ["HELP Info", "CSharpBIGhelp"]
+    }, {
+        "title": "CodeBuildGenAnalyse",
+        "url": "https://sourceroslyn.io/",
+        "tags": ["HELP Info", "CodeBrowse"]
+    }, {
+        "title": "CodeBrowse NetFramework",
+        "url": "https://referencesource.microsoft.com/#q=system",
+        "tags": ["HELP Info", "CodeBrowse"]
+    }, {
+        "title": "html to Pdf",
+        "url": "https://github.com/arichika/RotativaCore",
+        "tags": ["WaitForImplement", "EIC"]
+    }, {
+        "title": "reactiveui/ReactiveUI: An advanced, composable, functional reactive model-view-viewmodel framework for all .NET platforms that is inspired by functional reactive programming. ReactiveUI allows you to abstract mutable state away from your user interfaces, express the idea around a feature in one readable place and improve the testability of your application.",
+        "url": "https://github.com/reactiveui/reactiveui",
+        "tags": ["WaitForImplement", "EIC&ESB"]
+    }, {
+        "title": "Metrics :: App Metrics",
+        "url": "https://www.app-metrics.io/samples/metrics-code/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "ronaldbosma/code-analyses-tools",
+        "url": "https://github.com/ronaldbosma/code-analyses-tools/tree/main",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "aspnet/LibraryManager",
+        "url": "https://github.com/aspnet/LibraryManager",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Nx manage repos",
+        "url": "https://github.com/nrwl",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Install Porter – Porter",
+        "url": "https://porter.sh/docs/getting-started/install-porter/#install-or-upgrade",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "libgit2 repositories",
+        "url": "https://github.com/orgs/libgit2/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Api Framework – Weik.io",
+        "url": "https://weik.io/apiframework",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "NuGet",
+        "url": "https://github.com/NuGet",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "BaGet SDK - BaGet",
+        "url": "https://loic-sharma.github.io/BaGet/advanced/sdk/#search-for-packages",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "weikio repositories",
+        "url": "https://github.com/orgs/weikio/repositories?type=all",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "AppMetrics repositories",
+        "url": "https://github.com/orgs/AppMetrics/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Home :: App Metrics",
+        "url": "https://www.app-metrics.io/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "svenkle/nuget-server: A stand-alone hosted wrapper of the NuGet.Server package",
+        "url": "https://github.com/svenkle/nuget-server",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Quick start | Hugo",
+        "url": "https://gohugo.io/getting-started/quick-start/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "basa-casa repositories",
+        "url": "https://github.com/orgs/basa-casa/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "nextcloud/server: ☁️ Server Nextcloud, bezpečný domov pro všechna vaše data",
+        "url": "https://github.com/nextcloud/server?tab=readme-ov-file",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "jgraph repositories",
+        "url": "https://github.com/orgs/jgraph/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "CryptPad",
+        "url": "https://github.com/cryptpad",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Installing the daemon | Snapcraft documentation",
+        "url": "https://snapcraft.io/docs/installing-snapd",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Kong/insomnia: Open source, multiplatformní API klient pro GraphQL, REST, WebSockets, SSE a gRPC. S cloudovým, lokálním a Git úložištěm.",
+        "url": "https://github.com/kong/insomnia",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Insomnia repositories",
+        "url": "https://github.com/orgs/Kong/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Introduction — Nextcloud latest Administration Manual latest documentation",
+        "url": "https://docs.nextcloud.com/server/stable/admin_manual/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "System requirements — Nextcloud latest Administration Manual latest documentation",
+        "url": "https://docs.nextcloud.com/server/stable/admin_manual/installation/system_requirements.html#server",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "CryptPad Documentation — CryptPad 2024.6.1 documentation",
+        "url": "https://docs.cryptpad.org/en/index.html",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "truenas repositories",
+        "url": "https://github.com/orgs/truenas/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "moby repositories",
+        "url": "https://github.com/orgs/moby/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "feathersjs-ecosystem/apollo-server: 🌍 GraphQL server for Express, Connect, Hapi, Koa and more",
+        "url": "https://github.com/feathersjs-ecosystem/apollo-server",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Introduction to Apollo Server | Apollo GraphQL Docs",
+        "url": "https://www.apollographql.com/docs/apollo-server/v2/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Documentation | Apollo GraphQL Docs",
+        "url": "https://www.apollographql.com/docs/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Getting Started With GraphQL.js | GraphQL",
+        "url": "https://graphql.org/graphql-js/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "GraphQL | A query language for your API",
+        "url": "https://graphql.org/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "graphql repositories",
+        "url": "https://github.com/orgs/graphql/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "aspnetboilerplate/aspnetboilerplate: ASP.NET Boilerplate - Web Application Framework",
+        "url": "https://github.com/aspnetboilerplate/aspnetboilerplate",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "aspnetboilerplate/aspnetboilerplate: ASP.NET Boilerplate - Web Application Framework",
+        "url": "https://github.com/aspnetboilerplate/aspnetboilerplate/tree/dev",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "OmniSharp/omnisharp-server: HTTP wrapper around NRefactory allowing C# editor plugins to be written in any language.",
+        "url": "https://github.com/OmniSharp/omnisharp-server",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Install Knative using quickstart - Knative",
+        "url": "https://knative.dev/docs/install/quickstart-install/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Knative Extensions",
+        "url": "https://github.com/knative-extensions",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Home - Knative",
+        "url": "https://knative.dev/docs/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "knative repositories",
+        "url": "https://github.com/orgs/knative/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "stackblitz repositories",
+        "url": "https://github.com/orgs/stackblitz/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Lexical React Table Example (forked) - StackBlitz",
+        "url": "https://stackblitz.com/edit/facebook-lexical-qphdh2?file=src%2Fmain.tsx",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Turbo: The speed of a single-page web application without having to write any JavaScript.",
+        "url": "https://turbo.hotwired.dev/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "hotwired repositories",
+        "url": "https://github.com/orgs/hotwired/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Stimulus Handbook AUTO OPTIMIZE JS",
+        "url": "https://stimulus.hotwired.dev/handbook/introduction",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Stimulus: A modest JavaScript framework for the HTML you already have.",
+        "url": "https://stimulus.hotwired.dev/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Tekton Hub",
+        "url": "https://hub.tekton.dev/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Integrate your tech stack with our libraries | Algolia",
+        "url": "https://www.algolia.com/developers/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "grafana repositories",
+        "url": "https://github.com/orgs/grafana/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Install Knative using quickstart - Knative",
+        "url": "https://knative.dev/docs/install/quickstart-install/#before-you-begin",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Install and Set Up kubectl on Windows | Kubernetes",
+        "url": "https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/#install-kubectl-binary-with-curl-on-windows",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Install · cloudcoderdotorg/CloudCoder Wiki",
+        "url": "https://github.com/cloudcoderdotorg/CloudCoder/wiki/Install",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "cloudcoderdotorg repositories",
+        "url": "https://github.com/orgs/cloudcoderdotorg/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "nest/sample/18-context/src/app.module.ts at master · nestjs/nest",
+        "url": "https://github.com/nestjs/nest/blob/master/sample/18-context/src/app.module.ts",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Standalone applications | NestJS - A progressive Node.js framework",
+        "url": "https://docs.nestjs.com/standalone-applications",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Releases · coder/code-server",
+        "url": "https://github.com/coder/code-server/releases",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "coder repositories",
+        "url": "https://github.com/orgs/coder/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Kubernetes - Coder Docs",
+        "url": "https://coder.com/docs/install/kubernetes",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "git repositories",
+        "url": "https://github.com/orgs/git/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "nginx repositories",
+        "url": "https://github.com/orgs/nginx/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "nginx",
+        "url": "https://github.com/nginx",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Gitpod",
+        "url": "https://github.com/gitpod-io",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Browse One-Click App Marketplace | Akamai",
+        "url": "https://www.linode.com/marketplace/apps/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "bambustudio - LinuxServer.io",
+        "url": "https://docs.linuxserver.io/images/docker-bambustudio/",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "linuxserver repositories",
+        "url": "https://github.com/orgs/linuxserver/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "ServiceStack repositories",
+        "url": "https://github.com/orgs/ServiceStack/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "ServiceStack/Admin: AutoQuery + Admin UI for ServiceStack Projects",
+        "url": "https://github.com/ServiceStack/Admin",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "ServiceStack/Studio: ServiceStack Studio",
+        "url": "https://github.com/ServiceStack/Studio",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "SteeltoeOSS repositories",
+        "url": "https://github.com/orgs/SteeltoeOSS/repositories",
+        "tags": ["Solutions", "Server"]
+    }, {
+        "title": "Frame UNO",
+        "url": "https://platform.uno/code-samples/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "ReactiveUI | An advanced, composable, reactive model-view-viewmodel framework",
+        "url": "https://www.reactiveui.net/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "AvaloniaCommunity/awesome-avalonia: A collection of interesting libraries and tools for Avalonia project.",
+        "url": "https://github.com/AvaloniaCommunity/awesome-avalonia?tab=readme-ov-file#presentations-slides",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Webix: JavaScript UI Library; HTML5 JS framework, 102 UI Web Widgets",
+        "url": "https://webix.com/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Framework7",
+        "url": "https://github.com/framework7io",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "framework7io repositories",
+        "url": "https://github.com/orgs/framework7io/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Feathers | The API and Real-time Application Framework",
+        "url": "https://feathersjs.com/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "feathersjs repositories",
+        "url": "https://github.com/orgs/feathersjs/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "FeathersJS Ecosystem | feathers",
+        "url": "https://feathersjs.com/ecosystem/?sort=lastPublish",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "feathersjs-ecosystem repositories",
+        "url": "https://github.com/orgs/feathersjs-ecosystem/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "TodoMVC",
+        "url": "https://todomvc.com/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "tastejs/todomvc: Helping you select an MV* framework - Todo apps for React.js, Ember.js, Angular, and many more",
+        "url": "https://github.com/tastejs/todomvc",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "tastejs repositories",
+        "url": "https://github.com/orgs/tastejs/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Knockout : Home",
+        "url": "https://knockoutjs.com/index.html",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "knockout repositories",
+        "url": "https://github.com/orgs/knockout/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Quick Start | RedwoodJS Docs",
+        "url": "https://docs.redwoodjs.com/docs/quick-start#next-steps",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Reference | RedwoodJS Docs",
+        "url": "https://docs.redwoodjs.com/docs/index",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "redwoodjs repositories",
+        "url": "https://github.com/orgs/redwoodjs/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "SRV+APS aspnetboilerplate + ASP.NET FRM with all Examples",
+        "url": "https://github.com/aspnetboilerplate/aspnetboilerplate-samples",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "aspnetboilerplate repositories",
+        "url": "https://github.com/orgs/aspnetboilerplate/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "ProseMirror repositories",
+        "url": "https://github.com/orgs/ProseMirror/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "0326/prism: Lightweight, robust, elegant syntax highlighting.",
+        "url": "https://github.com/0326/prism",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Download ▲ Prism",
+        "url": "https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Prism HighLight Configurator",
+        "url": "https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+aspnet+csharp+css-extras+powerquery+powershell+warpscript+wasm&plugins=line-numbers+autolinker+wpd+file-highlight+show-language+jsonp-highlight+inline-color+previewers+autoloader+command-line+data-uri-highlight+toolbar+copy-to-clipboard+download-button+filter-highlight-all",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Yii PHP Framework",
+        "url": "https://www.yiiframework.com/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "yiisoft repositories",
+        "url": "https://github.com/orgs/yiisoft/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Download",
+        "url": "https://datatables.net/download/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "tailwindlabs repositories",
+        "url": "https://github.com/orgs/tailwindlabs/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "shadcn/ui",
+        "url": "https://ui.shadcn.com/",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Introduction | FAST",
+        "url": "https://www.fast.design/docs/introduction",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "microsoft/fluentui: Fluent UI web represents a collection of utilities, React components, and web components for building web applications.",
+        "url": "https://github.com/microsoft/fluentui/tree/master",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "basscss repositories",
+        "url": "https://github.com/orgs/basscss/repositories",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "aspnetboilerplate/bower-abp-resources: Bower package for ASP.NET script and style resources.",
+        "url": "https://github.com/aspnetboilerplate/bower-abp-resources/tree/master",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "ASP.NET Boilerplate",
+        "url": "https://github.com/aspnetboilerplate",
+        "tags": ["Solutions", "FrameUI"]
+    }, {
+        "title": "Getting Started: Document Editor with ASP.NET Core - TX Text Control .NET Server for ASP.NET",
+        "url": "https://docs.textcontrol.com/textcontrol/asp-dotnet/article.aspnet.coreeditor.htm",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Find and Highlight",
+        "url": "https://www.e-iceblue.com/LiveDemo/Spire.Doc/Find-and-Highlight.html",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "eiceblue (E-iceblue Product Family)",
+        "url": "https://github.com/eiceblue",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "SheetJS - Home",
+        "url": "https://sheetjs.com/",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "sheetjs/docs.sheetjs.com: SheetJS Community Edition Docs repo - docs.sheetjs.com - SheetJS",
+        "url": "https://git.sheetjs.com/sheetjs/docs.sheetjs.com",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "@txtextcontrol/tx-ng-document-editor - npm",
+        "url": "https://www.npmjs.com/package/@txtextcontrol/tx-ng-document-editor",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Text Control",
+        "url": "https://github.com/TextControl",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ONLYOFFICE",
+        "url": "https://github.com/ONLYOFFICE",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "OfficeDev repositories",
+        "url": "https://github.com/orgs/OfficeDev/repositories",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "go-gitea repositories",
+        "url": "https://github.com/orgs/go-gitea/repositories",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ONLYOFFICE repositories",
+        "url": "https://github.com/orgs/ONLYOFFICE/repositories",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "API System - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/docspace/apisystem/portalsection",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ONLYOFFICE - Cloud Office Applications",
+        "url": "https://helpcenter.onlyoffice.com/index.aspx",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Add Office Functionality to Your Web App with OnlyOffice — SitePoint",
+        "url": "https://www.sitepoint.com/add-office-functionality-to-your-web-app-with-onlyoffice/",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ONLYOFFICE Document Editor",
+        "url": "http://127.0.0.1:5000/test/OfficeWeb/apps/documenteditor/main/",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Language-specific examples for editors - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/example/csharp",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "dotnet/Open-XML-SDK: Open XML SDK by Microsoft",
+        "url": "https://github.com/dotnet/Open-XML-SDK",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "How to: Add custom UI to a spreadsheet document | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/office/open-xml/spreadsheet/how-to-add-custom-ui-to-a-spreadsheet-document?tabs=cs-xml%2Ccs-2%2Ccs-3%2Ccs-4%2Ccs",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Structure of a SpreadsheetML document | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/office/open-xml/spreadsheet/structure-of-a-spreadsheetml-document?tabs=cs",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "WOPI - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/wopi/hostpage",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Embedding forms into a web page - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/embeddingforms",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "INSTALL ONLYOFFICE Docs for Windows system requirements - ONLYOFFICE",
+        "url": "https://helpcenter.onlyoffice.com/installation/docs-developer-sys-reqs-windows.aspx",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Free .NET PDF API - Developing PDF in C#, VB.NET, ASP.NET",
+        "url": "https://www.e-iceblue.com/Introduce/free-pdf-component.html",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ONLYOFFICE repositories",
+        "url": "https://github.com/orgs/ONLYOFFICE/repositories?type=all&page=4",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Downloads - Free Spire.Doc",
+        "url": "https://www.e-iceblue.com/Download/download-word-for-net-free.html",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "NuGet Gallery | NetOfficeFw.Core 2.0.0-preview20",
+        "url": "https://www.nuget.org/packages/NetOfficeFw.Core/2.0.0-preview20",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Online Demo HTML to RTF - HTML to RTF .Net",
+        "url": "https://sautinsoft.net/HtmlToRtf/HtmlToRtf",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Add Text and Image",
+        "url": "https://www.e-iceblue.com/LiveDemo/Spire.Presentation/Add-Text-and-Image.html",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "reportportal/reportportal: Main Repository. ReportPortal starts here - see readme below.",
+        "url": "https://github.com/reportportal/reportportal",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Microsoft 365 Developer",
+        "url": "https://github.com/OfficeDev",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "btactic-oo/server: The backend server software layer which is the part of ONLYOFFICE Document Server and is the base for all other components",
+        "url": "https://github.com/btactic-oo/server",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Build OnlyOffice from source code (2024-05) – bTactic Open Source&Cloud Solutions",
+        "url": "https://www.btactic.com/build-onlyoffice-from-source-code-2024-05/?lang=en",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Jak vytvořit základní MVP se samostatným Onlyoffice? - Tvůrce dokumentů - ONLYOFFICE",
+        "url": "https://forum.onlyoffice.com/t/how-to-build-basic-mvp-with-standalone-onlyoffice/4151/5",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ahmad-moussawi/vertex: Powerful JSX View Engine 😎",
+        "url": "https://github.com/ahmad-moussawi/vertex",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "ORM on NPOI · nissl-lab/npoi Wiki",
+        "url": "https://github.com/nissl-lab/npoi/wiki/ORM-on-NPOI",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Introduction | stackedit.js",
+        "url": "https://benweet.github.io/stackedit.js/",
+        "tags": ["Solutions", "Documents"]
+    }, {
+        "title": "Open Source Projects Built at Salesforce | Salesforce Engineering Blog",
+        "url": "https://engineering.salesforce.com/open-source/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "tableau repositories",
+        "url": "https://github.com/orgs/tableau/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "salesforce repositories",
+        "url": "https://github.com/orgs/salesforce/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "🥖🛒 BaGetter | BaGetter Nuget server",
+        "url": "https://www.bagetter.com/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "loic-sharma/BaGet: A lightweight NuGet and symbol server",
+        "url": "https://github.com/loic-sharma/BaGet",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "BaGet",
+        "url": "https://loic-sharma.github.io/BaGet/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "tye/samples/multi-project/worker at master · loic-sharma/tye",
+        "url": "https://github.com/loic-sharma/tye/tree/master/samples/multi-project/worker",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "dragos-constantin-stoica/ifact: Invoicing made simple",
+        "url": "https://github.com/dragos-constantin-stoica/ifact/tree/master",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "denoland repositories",
+        "url": "https://github.com/orgs/denoland/repositories?type=all",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "denoland repositories",
+        "url": "https://github.com/orgs/denoland/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Deno Runtime Quick Start",
+        "url": "https://docs.deno.com/runtime/manual/#create-a-simple-web-server",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "webix-hub repositories",
+        "url": "https://github.com/orgs/webix-hub/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "WildGums/Orc.ProjectManagement: Manage Projects",
+        "url": "https://github.com/WildGums/Orc.ProjectManagement/tree/develop",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "microsoft/opensource-management-portal: Monolitický, zaujatý Open Source Management Portal společnosti Microsoft umožňující samoobslužné služby v podnikovém měřítku využívající GitHub API 🏔🧑‍💻🧰",
+        "url": "https://github.com/microsoft/opensource-management-portal",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Apache CouchDB",
+        "url": "https://couchdb.apache.org/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Downloads - MDriven AB",
+        "url": "https://mdriven.net/downloads",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "microsoft/IIS.WebManager: Web Manager for managing IIS",
+        "url": "https://github.com/microsoft/IIS.WebManager?tab=readme-ov-file",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Welcome to Puppet® 8.8.1",
+        "url": "https://www.puppet.com/docs/puppet/8/puppet_index.html",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Orchard Gallery - The Orchard Gallery",
+        "url": "https://gallery.orchardproject.net/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Code Generation Templates - Orchard Core Documentation",
+        "url": "https://docs.orchardcore.net/en/latest/getting-started/templates/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Built-in analyzer reference | Elasticsearch Guide [8.14] | Elastic",
+        "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-analyzers.html",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Orchard Core",
+        "url": "https://orchardcore.net/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "OVHcloud",
+        "url": "https://github.com/ovh",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "ovh repositories",
+        "url": "https://github.com/orgs/ovh/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "dotnet/aspire: An opinionated, cloud ready stack for building observable, production ready, distributed applications in .NET",
+        "url": "https://github.com/dotnet/aspire/tree/main",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "alexhiggins732/NSwag: The Swagger/OpenAPI toolchain for .NET, ASP.NET Core and TypeScript.",
+        "url": "https://github.com/alexhiggins732/NSwag",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey Software Docs | Chocolatey Components Dependencies and Support Lifecycle",
+        "url": "https://docs.chocolatey.org/en-us/chocolatey-components-dependencies-and-support-lifecycle/#supported-windows-versions",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey Software Docs | Getting Started",
+        "url": "https://docs.chocolatey.org/en-us/getting-started/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "readthedocs repositories",
+        "url": "https://github.com/orgs/readthedocs/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Development installation — Read the Docs developer documentation",
+        "url": "https://dev.readthedocs.io/en/latest/install.html",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Development installation — Read the Docs developer documentation",
+        "url": "https://dev.readthedocs.io/en/latest/install.html#core-team-standards",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Full featured documentation deployment platform - Read the Docs",
+        "url": "https://about.readthedocs.com/?ref=readthedocs.org",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "RicoSuter/ChocolateyGUI: Explorer for chocolatey, requires the install of chocolatey",
+        "url": "https://github.com/RicoSuter/ChocolateyGUI",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey Software | Chocolatey - The package manager for Windows",
+        "url": "https://chocolatey.org/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey",
+        "url": "https://github.com/chocolatey",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "boxstarter.org/input/downloads at master · chocolatey/boxstarter.org",
+        "url": "https://github.com/chocolatey/boxstarter.org/tree/master/input/downloads",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "WIN network management",
+        "url": "https://github.com/chocolatey/boxstarter.org/tree/master",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "chocolatey/nuget-chocolatey: NuGet Enhanced for Chocolatey",
+        "url": "https://github.com/chocolatey/nuget-chocolatey/tree/2.11_adds",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "chocolatey/choco-wiki: The content from this repository has been moved to https://github.com/chocolatey/docs. If you have found an issue, or want to submit a fix, then please open an issue, or a PR, on that repository.",
+        "url": "https://github.com/chocolatey/choco-wiki",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "chocolatey/chocolatey-workshop: Chocolatey Workshop",
+        "url": "https://github.com/chocolatey/chocolatey-workshop",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "chocolatey repositories",
+        "url": "https://github.com/orgs/chocolatey/repositories?page=2",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey Software | Community",
+        "url": "https://community.chocolatey.org/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "chocolatey/ChocolateyGUI: A delicious GUI for Chocolatey",
+        "url": "https://github.com/chocolatey/ChocolateyGUI",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Chocolatey Software Docs | Integrates with everything",
+        "url": "https://docs.chocolatey.org/en-us/features/integrations/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Godot Asset Library",
+        "url": "https://godotengine.org/asset-library/asset?category=10&godot_version=4.3&support[official]=1",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Overview | Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Install Tools | Kubernetes",
+        "url": "https://kubernetes.io/docs/tasks/tools/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Download Kubernetes | Kubernetes",
+        "url": "https://kubernetes.io/releases/download/#binaries",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Stateful Applications | Kubernetes",
+        "url": "https://kubernetes.io/docs/tutorials/stateful-application/",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "Serverless Framework: Plugins",
+        "url": "https://www.serverless.com/plugins",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "bitfoundation repositories",
+        "url": "https://github.com/orgs/bitfoundation/repositories",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "givanz/Vvveb: Powerful and easy to use cms to build websites, blogs or ecommerce stores.",
+        "url": "https://github.com/givanz/Vvveb",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "k3ldar/.NetCorePluginManager: .Net Core Plugin Manager, extend web applications using plugin technology enabling true SOLID and DRY principles when developing applications",
+        "url": "https://github.com/k3ldar/.NetCorePluginManager/tree/master",
+        "tags": ["Solutions", "AppHosting"]
+    }, {
+        "title": "openlink (openlink) / Repositories",
+        "url": "https://github.com/openlink?tab=repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "OmniSharp repositories",
+        "url": "https://github.com/orgs/OmniSharp/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "shadcn-ui repositories",
+        "url": "https://github.com/orgs/shadcn-ui/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Tailwind Labs",
+        "url": "https://github.com/tailwindlabs",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "RAPID Developtailwindlabs/tailwindcss: A utility-first CSS framework for rapid UI development.",
+        "url": "https://github.com/tailwindlabs/tailwindcss",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "WEB GENERATOR Rapid",
+        "url": "https://play.tailwindcss.com/uj1vGACRJA?layout=preview",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Open-source projects — Pony Foo",
+        "url": "https://ponyfoo.com/opensource",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Build a C# .NET app with WinUI 3 and Win32 interop - Windows apps | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/windows/apps/winui/winui3/desktop-winui3-app-with-basic-interop#basic-managed-cnet-app",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Develop - Fluent 2 Design System",
+        "url": "https://fluent2.microsoft.design/get-started/develop",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "benweet/stackedit.js: Add StackEdit to any website",
+        "url": "https://github.com/benweet/stackedit.js",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "browserify/browserify: browser-side require() the node.js way",
+        "url": "https://github.com/browserify/browserify?tab=readme-ov-file",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Ember.js",
+        "url": "https://github.com/emberjs",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "emberjs/ember: The Ember.js npm module",
+        "url": "https://github.com/emberjs/ember",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "apache repositories",
+        "url": "https://github.com/orgs/apache/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "LightTable repositories",
+        "url": "https://github.com/orgs/LightTable/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "brackets.io",
+        "url": "https://github.com/brackets-cont",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Redocly repositories",
+        "url": "https://github.com/orgs/Redocly/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "RicoSuter (Rico Suter)",
+        "url": "https://github.com/RicoSuter",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "RicoSuter/VistoJS: Visto JavaScript Framework (VistoJS)",
+        "url": "https://github.com/RicoSuter/VistoJS",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Introduction · RicoSuter/VistoJS Wiki",
+        "url": "https://github.com/RicoSuter/VistoJS/wiki/Introduction",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "RicoSuter/VistoJS: Visto JavaScript Framework (VistoJS)",
+        "url": "https://github.com/RicoSuter/VistoJS/tree/master",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "migueldeicaza/autocomplete: IDE-style autocomplete for your existing terminal & shell",
+        "url": "https://github.com/migueldeicaza/autocomplete",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Download for Windows - Godot Engine",
+        "url": "https://godotengine.org/download/windows/",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Using the Web editor — Godot Engine (latest) documentation in English",
+        "url": "https://docs.godotengine.org/en/latest/tutorials/editor/using_the_web_editor.html",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Godot Engine",
+        "url": "https://github.com/godotengine",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "godotengine repositories",
+        "url": "https://github.com/orgs/godotengine/repositories?page=3",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Releases · godotengine/godot",
+        "url": "https://github.com/godotengine/godot/releases",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "C# language features — Godot Engine (latest) documentation in English",
+        "url": "https://docs.godotengine.org/en/latest/tutorials/scripting/c_sharp/c_sharp_features.html",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "godotengine/godot: Godot Engine – Multi-platform 2D and 3D game engine",
+        "url": "https://github.com/godotengine/godot",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "soydachi/GeekyTool: A simple toolkit for .NET developers",
+        "url": "https://github.com/soydachi/GeekyTool/tree/dev",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "DefinitelyTyped repositories",
+        "url": "https://github.com/orgs/DefinitelyTyped/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Scriptcs",
+        "url": "https://github.com/scriptcs",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "scriptcs repositories",
+        "url": "https://github.com/orgs/scriptcs/repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "tmyroadctfig (Luke Quinane)",
+        "url": "https://github.com/tmyroadctfig?tab=repositories",
+        "tags": ["Solutions", "AppDeveloper"]
+    }, {
+        "title": "Concept - Text Control Technical Demos",
+        "url": "https://demos.textcontrol.com/Chapter/Topic/RichTextEditor/Concept",
+        "tags": ["Solutions", "examples"]
+    }, {
+        "title": "WildGums repositories",
+        "url": "https://github.com/orgs/WildGums/repositories",
+        "tags": ["Solutions"]
+    }, {
+        "title": "Software Development and Testing Tools | Tutorialspoint",
+        "url": "https://www.tutorialspoint.com/online_dev_tools.htm",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Web Development Technologies | Tutorialspoint",
+        "url": "https://www.tutorialspoint.com/web_development_tutorials.htm",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "100+ info widgets with functionality",
+        "url": "https://tracesof.net/uebersicht-widgets/",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": ".NET & .NET Core Workflow Engine, Workflow Server",
+        "url": "https://workflowengine.io/",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "muaz-khan/RTCMultiConnection: RTCMultiConnection is a WebRTC JavaScript library for peer-to-peer applications (screen sharing, audio/video conferencing, file sharing, media streaming etc.)",
+        "url": "https://github.com/muaz-khan/RTCMultiConnection/tree/master",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "muaz-khan (muaz-khan) / Repositories",
+        "url": "https://github.com/muaz-khan?tab=repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Sage/graphql-dotnet: GraphQL for .NET",
+        "url": "https://github.com/Sage/graphql-dotnet",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "graphql-dotnet/parser: A lexer and parser for GraphQL in .NET",
+        "url": "https://github.com/graphql-dotnet/parser",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Sage/streamlinejs: Asynchronous JavaScript for dummies",
+        "url": "https://github.com/Sage/streamlinejs",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Sage/streamlinejs: Asynchronous JavaScript for dummies",
+        "url": "https://github.com/Sage/streamlinejs/tree/master",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Geo Ip Plugin · k3ldar/.NetCorePluginManager Wiki",
+        "url": "https://github.com/k3ldar/.NetCorePluginManager/wiki/Geo-Ip-Plugin",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": ".NetCorePluginManager/Plugins at master · k3ldar/.NetCorePluginManager",
+        "url": "https://github.com/k3ldar/.NetCorePluginManager/tree/master/Plugins",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "SyedArifulIslamEmon (Syed Ariful Emon)",
+        "url": "https://github.com/SyedArifulIslamEmon",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "ManasDatta (Manas Datta)",
+        "url": "https://github.com/ManasDatta?tab=repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "SyedArifulIslamEmon/design-resources-for-developers: Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more",
+        "url": "https://github.com/SyedArifulIslamEmon/design-resources-for-developers",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Parallax",
+        "url": "https://github.com/parallax",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "FastReports repositories",
+        "url": "https://github.com/orgs/FastReports/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Hosting Your Own NuGet PowerShell Repository | the-itguy",
+        "url": "https://the-itguy.de/hosting-your-own-nuget-powershell-repository/",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "JavaScript `[JSImport]`/`[JSExport]` interop with a WebAssembly Browser App project | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/aspnet/core/client-side/dotnet-interop/wasm-browser-app?view=aspnetcore-8.0#project-configuration",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "jeffa00/posh-markdown: PowerShell Cmdlet to convert Markdown to HTML. Uses MarkdownSharp DLL",
+        "url": "https://github.com/jeffa00/posh-markdown",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Login | Login",
+        "url": "https://app.consentmanager.net/clientv2/designs/22672/settings",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Introduction to Metro UI :: Popular HTML, CSS and JS library",
+        "url": "https://docs.metroui.org.ua/",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "rrweb-io",
+        "url": "https://github.com/rrweb-io",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "PostCSS",
+        "url": "https://github.com/postcss",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "autoprefixer (Autoprefixer by ymatuhin)",
+        "url": "https://github.com/autoprefixer",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "postcss repositories",
+        "url": "https://github.com/orgs/postcss/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "posthtml repositories",
+        "url": "https://github.com/orgs/posthtml/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "fb55 (fb55) / Repositories",
+        "url": "https://github.com/fb55?tab=repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Web Workers API - Web APIs | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Using Web Workers - Web APIs | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "web-platform-tests repositories",
+        "url": "https://github.com/orgs/web-platform-tests/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "cheeriojs repositories",
+        "url": "https://github.com/orgs/cheeriojs/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "rrweb-io repositories",
+        "url": "https://github.com/orgs/rrweb-io/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "ember-cli repositories",
+        "url": "https://github.com/orgs/ember-cli/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "browserify repositories",
+        "url": "https://github.com/orgs/browserify/repositories?page=3",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "HdrHistogram repositories",
+        "url": "https://github.com/orgs/HdrHistogram/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "icsharpcode repositories",
+        "url": "https://github.com/orgs/icsharpcode/repositories",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Sample Projects | AspNet Boilerplate",
+        "url": "https://aspnetboilerplate.com/Samples",
+        "tags": ["Solutions", "tools"]
+    }, {
+        "title": "Persistence - Workflow Core",
+        "url": "https://workflow-core.readthedocs.io/en/latest/persistence/",
+        "tags": ["Solutions", "WorkFlows"]
+    }, {
+        "title": "GitHub - mkdocs/catalog: :trophy: A list of awesome MkDocs projects and plugins.",
+        "url": "https://github.com/mkdocs/catalog",
+        "tags": ["Solutions", "GenDocs"]
+    }, {
+        "title": "MkDocs Bootswatch Themes",
+        "url": "https://mkdocs.github.io/mkdocs-bootswatch/",
+        "tags": ["Solutions", "GenDocs"]
+    }, {
+        "title": "How to Install Orchard CMS? - Windows VPS Hosting | AccuWeb Help Center",
+        "url": "https://manage.accuwebhosting.com/knowledgebase/2462/How-to-Install-Orchard-CMS.html",
+        "tags": ["Solutions", "GenDocs"]
+    }, {
+        "title": "squidfunk (squidfunk) / Repositories",
+        "url": "https://github.com/squidfunk?tab=repositories",
+        "tags": ["Solutions", "GenDocs"]
+    }, {
+        "title": "liborsvoboda/EASY-IT-CENTER-SERVER: Universal IT Server for Only One GroupWare Server Solution",
+        "url": "https://github.com/liborsvoboda/EASY-IT-CENTER-SERVER",
+        "tags": ["Solutions", "GenDocs"]
+    }, {
+        "title": "WebView2 | Playwright .NET",
+        "url": "https://playwright.dev/dotnet/docs/webview2",
+        "tags": ["Solutions", "playwright"]
+    }, {
+        "title": "interactive/samples/notebooks/csharp/Samples/DataFrame-Getting Started.ipynb at main · dotnet/interactive",
+        "url": "https://github.com/dotnet/interactive/blob/main/samples/notebooks/csharp/Samples/DataFrame-Getting%20Started.ipynb",
+        "tags": ["Solutions", "playwright"]
+    }, {
+        "title": "Orchard Gallery - Olark Live Chat",
+        "url": "http://gallery.orchardproject.net/Packages/Orchard.Module.Sunkist.OlarkLiveChat",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Gallery - The Orchard Gallery",
+        "url": "http://gallery.orchardproject.net/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Core - Orchard Harvest 2024",
+        "url": "https://orchardcore.net/harvest",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Core",
+        "url": "https://orchardcore.net/#getting-started",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "1.8.3 - Orchard Core Documentation",
+        "url": "https://docs.orchardcore.net/en/latest/releases/1.8.3/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "OrchardCMS",
+        "url": "https://github.com/OrchardCMS",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Core Documentation",
+        "url": "https://docs.orchardcore.net/en/latest/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "orchardproject's Profile | Docker Hub",
+        "url": "https://hub.docker.com/u/orchardproject",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "orchardproject/orchardcore-cms-windows Tags | Docker Hub",
+        "url": "https://hub.docker.com/r/orchardproject/orchardcore-cms-windows/tags",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Admin - Orchard Core Documentation",
+        "url": "https://docs.orchardcore.net/en/latest/reference/modules/Admin/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Gallery - Modules",
+        "url": "http://gallery.orchardproject.net/Packages/Modules",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard Core download | SourceForge.net",
+        "url": "https://sourceforge.net/projects/orchard-core.mirror/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Orchard CMS - Orchard Extensibility | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2012/january/orchard-cms-orchard-extensibility",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Create a CMS Web application - Orchard Core Documentation",
+        "url": "https://docs.orchardcore.net/en/latest/getting-started/",
+        "tags": ["Solutions", "Orchard"]
+    }, {
+        "title": "Terms & Conditions Template - TermsFeed",
+        "url": "https://www.termsfeed.com/blog/sample-terms-and-conditions-template/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Static Site Generators - Top Open Source SSGs | Jamstack",
+        "url": "https://jamstack.org/generators/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "jamstack",
+        "url": "https://github.com/jamstack",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "apHarmony/jsharmony-cms-empty: jsHarmony CMS Empty Project Template",
+        "url": "https://github.com/apHarmony/jsharmony-cms-empty",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "sveltia/sveltia-cms: Alternative to Netlify/Decap CMS. Fast, lightweight, Git-based headless CMS. Modern UX, first-class i18n support, open source & free. Made with Svelte.",
+        "url": "https://github.com/sveltia/sveltia-cms",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Payload: The fastest growing open-source headless CMS",
+        "url": "https://payloadcms.com/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Welcome to the Strapi Developer Docs! | Strapi Documentation",
+        "url": "https://docs.strapi.io/dev-docs/intro",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Strapi’s documentation | Strapi Documentation",
+        "url": "https://docs.strapi.io/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "How to build a static site with Hugo | Hygraph",
+        "url": "https://hygraph.com/blog/hugo-static-site#how-to-install-hugo",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "strapi repositories",
+        "url": "https://github.com/orgs/strapi/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Describing HTML snippets — MathJax 2.7 documentation",
+        "url": "https://docs.mathjax.org/en/v2.7-latest/reference/HTML-snippets.html",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "MathJax",
+        "url": "https://github.com/mathjax",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "mathjax repositories",
+        "url": "https://github.com/orgs/mathjax/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Plotly.NET | Plotly.NET",
+        "url": "https://plotly.net/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "plotly/Plotly.NET: interactive graphing library for .NET programming languages :chart_with_upwards_trend:",
+        "url": "https://github.com/plotly/Plotly.NET",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "plotly repositories",
+        "url": "https://github.com/orgs/plotly/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "The Rust Programming Language",
+        "url": "https://github.com/rust-lang",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "ModularCode",
+        "url": "https://github.com/modularcode",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Handlebars-Net/Handlebars.Net at hackernoon.com",
+        "url": "https://github.com/Handlebars-Net/Handlebars.Net?ref=hackernoon.com",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Handlebars-Net repositories",
+        "url": "https://github.com/orgs/Handlebars-Net/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Open-Source Static Site Generator Index - Runa Capital",
+        "url": "https://runacap.com/data/ssg-index/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "The world’s fastest framework for building websites | Hugo",
+        "url": "https://gohugo.io/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Generators | Jekyll • Simple, blog-aware, static sites",
+        "url": "https://jekyllrb.com/docs/plugins/generators/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Samples Index | GoJS",
+        "url": "https://gojs.net/latest/samples/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Northwoods Software Corporation",
+        "url": "https://github.com/NorthwoodsSoftware",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Svelte",
+        "url": "https://github.com/sveltejs",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Introduction • Docs • SvelteKit",
+        "url": "https://kit.svelte.dev/docs/introduction",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Serve static | NestJS - A progressive Node.js framework",
+        "url": "https://docs.nestjs.com/recipes/serve-static",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "nestjs/nest: A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript/JavaScript 🚀",
+        "url": "https://github.com/nestjs/nest/tree/master",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "jsTree",
+        "url": "https://www.jstree.com/docs/config/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "TypeStrong repositories",
+        "url": "https://github.com/orgs/TypeStrong/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "TypeDoc",
+        "url": "https://typedoc.org/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Generators | Yeoman",
+        "url": "https://yeoman.io/generators/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "alexhiggins732/Swashbuckle.AspNetCore: Swagger tools for documenting API's built on ASP.NET Core",
+        "url": "https://github.com/alexhiggins732/Swashbuckle.AspNetCore",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Developing a contract",
+        "url": "https://docs.neo.org/docs/n3/gettingstarted/develop.html#compiling-contract-file",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "ALTV Interactions",
+        "url": "https://docs.altv.mp/cs/articles/getting-started/interactions.html",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "yeoman repositories",
+        "url": "https://github.com/orgs/yeoman/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "yeoman repositories",
+        "url": "https://github.com/orgs/yeoman/repositories?page=2",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "MSDN-WhiteKnight (MSDN.WhiteKnight)",
+        "url": "https://github.com/MSDN-WhiteKnight",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "MSDN-WhiteKnight (MSDN-WhiteKnight) / Repositories",
+        "url": "https://github.com/MSDN-WhiteKnight?tab=repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Using CilTools.BytecodeAnalysis | CIL Tools",
+        "url": "https://msdn-whiteknight.github.io/CilTools/articles/using-bytecode-analysis.html",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "MSDN-WhiteKnight/docfx: Tools for building and publishing API documentation for .NET projects",
+        "url": "https://github.com/MSDN-WhiteKnight/docfx/tree/dev",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "yeoman/yeoman: Yeoman - a set of tools for automating development workflow",
+        "url": "https://github.com/yeoman/yeoman",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "Installation | TypeDoc",
+        "url": "https://typedoc.org/guides/installation/",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "metalsmith repositories",
+        "url": "https://github.com/orgs/metalsmith/repositories",
+        "tags": ["Solutions", "Generator"]
+    }, {
+        "title": "OrchardCMS/Autofac: An addictive .NET IoC container",
+        "url": "https://github.com/OrchardCMS/Autofac?tab=readme-ov-file",
+        "tags": ["Solutions", "help"]
+    }, {
+        "title": "Demos — AlterNET Software",
+        "url": "https://www.alternetsoft.com/demos",
+        "tags": ["Solutions", "OnlineSYstemDev"]
+    }, {
+        "title": "madeindjs/typeorm: ORM for TypeScript and JavaScript (ES7, ES6, ES5). Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, SAP Hana, WebSQL databases. Works in NodeJS, Browser, Ionic, Cordova and Electron platforms.",
+        "url": "https://github.com/madeindjs/typeorm",
+        "tags": ["Solutions", "Database"]
+    }, {
+        "title": "Documentation | Elanat",
+        "url": "https://elanat.net/page_content/documentation",
+        "tags": ["Solutions", "CMS"]
+    }, {
+        "title": "Documentation | Elanat",
+        "url": "https://elanat.net/page_content/documentation/add_on/creating_plugin_for_elanat_under_asp_dot_net_core",
+        "tags": ["Solutions", "CMS"]
+    }, {
+        "title": "Auth0 Authentication and Authorization Code Samples",
+        "url": "https://developer.auth0.com/resources/code-samples?_gl=1*3zlpq8*_gcl_au*MTE5NzUwMzUyNC4xNzIzNTE5NjUz*_ga*MTAxNTkxOTE3MS4xNzIzNTE5NjUz*_ga_QKMSDV5369*MTcyMzUxOTY1Mi4xLjEuMTcyMzUxOTY2Mi41MC4wLjA.",
+        "tags": ["Solutions", "ProjectCodeSamples"]
+    }, {
+        "title": "Auth0 Libraries",
+        "url": "https://auth0.com/docs/libraries#spa",
+        "tags": ["Solutions", "ProjectCodeSamples"]
+    }, {
+        "title": "Auth0 Authentication and Authorization Code Samples",
+        "url": "https://developer.auth0.com/resources/code-samples?language=javascript%2Ctypescript",
+        "tags": ["Solutions", "ProjectCodeSamples"]
+    }, {
+        "title": "Auth0 Libraries",
+        "url": "https://auth0.com/docs/libraries?_gl=1*1jowd1m*_gcl_au*MTE5NzUwMzUyNC4xNzIzNTE5NjUz*_ga*NzYyMDQzNDE1LjE3MjM1MTk3NzY.*_ga_QKMSDV5369*MTcyMzUxOTc3Ni4xLjEuMTcyMzUxOTg3MS4yNS4wLjA.",
+        "tags": ["Solutions", "ProjectCodeSamples"]
+    }, {
+        "title": "Všechny aplikace - App Store - Nextcloud",
+        "url": "https://apps.nextcloud.com/",
+        "tags": ["Solutions", "ProjectCodeSamples"]
+    }, {
+        "title": "Builder framework samples - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/docbuilder/builderframeworksamples/csharpbuildersamples",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "ONLYOFFICE Document Builder integration API - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/docbuilder/integrationapi/net/cdocbuilder",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Config - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/config/editor/customization",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Config - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/config/",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "ONLYOFFICE Document Builder integration API - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/docbuilder/integrationapi/default",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Save onlyoffice document | FormKiQ",
+        "url": "https://docs.formkiq.com/docs/api-reference/only-office-document-save",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "ONLYOFFICE Document Builder integration API - ONLYOFFICE Api Documentation",
+        "url": "https://api1.onlyoffice.com/docbuilder/integrationapi/net",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Přidání poskytovatele DMS - ONLYOFFICE Api dokumentace",
+        "url": "https://api1.onlyoffice.com/desktop/addingdms/",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Try now - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/try",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Edit HTML - ONLYOFFICE",
+        "url": "https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-PDF-Editor/UsageInstructions/HTML.aspx",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Callback handler - ONLYOFFICE Api Documentation",
+        "url": "https://api.onlyoffice.com/editors/callback",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Integrating ONLYOFFICE With a Document Management System - DZone",
+        "url": "https://dzone.com/articles/how-to-integrate-onlyoffice-with-a-document-manage",
+        "tags": ["Solutions", "openoffice"]
+    }, {
+        "title": "Flathub - Apps for Linux",
+        "url": "https://flathub.org/",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Übersicht Widgets",
+        "url": "https://tracesof.net/uebersicht-widgets/#jenkins",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Electron",
+        "url": "https://github.com/electron",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Electron.NET",
+        "url": "https://github.com/ElectronNET",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "vercel repositories",
+        "url": "https://github.com/orgs/vercel/repositories",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Next.js by Vercel - The React Framework",
+        "url": "https://nextjs.org/",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "electron repositories",
+        "url": "https://github.com/orgs/electron/repositories",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Examples Overview | Electron",
+        "url": "https://www.electronjs.org/docs/latest/tutorial/examples",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "gitpod-samples repositories",
+        "url": "https://github.com/orgs/gitpod-samples/repositories",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Portapps",
+        "url": "https://github.com/portapps",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "portapps repositories",
+        "url": "https://github.com/orgs/portapps/repositories",
+        "tags": ["Solutions", "apps"]
+    }, {
+        "title": "Your Guide to the Nextcloud All-in-One on Windows 10 & 11! - Nextcloud",
+        "url": "https://nextcloud.com/blog/your-guide-to-the-nextcloud-all-in-one-on-windows-10-11/",
+        "tags": ["Solutions", "nextcloud"]
+    }, {
+        "title": "WiX Toolset",
+        "url": "https://wixtoolset.org/",
+        "tags": ["Solutions", "Installators"]
+    }, {
+        "title": "WiX Toolset",
+        "url": "https://github.com/wixtoolset/",
+        "tags": ["Solutions", "Installators"]
+    }, {
+        "title": "wixtoolset repositories",
+        "url": "https://github.com/orgs/wixtoolset/repositories",
+        "tags": ["Solutions", "Installators"]
+    }, {
+        "title": "Using the Web Storage API - Web APIs | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API",
+        "tags": ["Solutions", "Storage"]
+    }, {
+        "title": "Browser extensions - Mozilla | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions",
+        "tags": ["Solutions", "Storage"]
+    }, {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-localstorage-dev",
+        "tags": ["Solutions", "Storage"]
+    }, {
+        "title": "mdn repositories",
+        "url": "https://github.com/orgs/mdn/repositories",
+        "tags": ["Solutions", "WEB"]
+    }, {
+        "title": "statiqdev repositories",
+        "url": "https://github.com/orgs/statiqdev/repositories",
+        "tags": ["Solutions", "WEB"]
+    }, {
+        "title": "Polyglot Notebooks - Visual Studio Marketplace",
+        "url": "https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode",
+        "tags": ["Solutions"]
+    }, {
+        "title": "dotnet/interactive: .NET Interactive combines the power of .NET with many other languages to create notebooks, REPLs, and embedded coding experiences. Share code, explore data, write, and learn across your apps in ways you couldn't before.",
+        "url": "https://github.com/dotnet/interactive",
+        "tags": ["Solutions"]
+    }, {
+        "title": "Access Token Debugger - Meta for Developers",
+        "url": "https://developers.facebook.com/tools/debug/accesstoken/",
+        "tags": ["Solutions", "SocialSites"]
+    }, {
+        "title": "Graph API Explorer - Meta for Developers",
+        "url": "https://developers.facebook.com/tools/explorer/",
+        "tags": ["Solutions", "SocialSites"]
+    }, {
+        "title": "facebook/jscodeshift: A JavaScript codemod toolkit.",
+        "url": "https://github.com/facebook/jscodeshift/",
+        "tags": ["Solutions", "DynamicProgramRunner"]
+    }, {
+        "title": "Docs | jscodeshift",
+        "url": "https://jscodeshift.com/",
+        "tags": ["Solutions", "DynamicProgramRunner"]
+    }, {
+        "title": "facebook/jscodeshift: A JavaScript codemod toolkit.",
+        "url": "https://github.com/facebook/jscodeshift",
+        "tags": ["Solutions", "DynamicProgramRunner"]
+    }, {
+        "title": "jhollingworth/StitchIt: CommonJS Module Packager for ASP.NET",
+        "url": "https://github.com/jhollingworth/StitchIt",
+        "tags": ["Solutions", "Packager builder"]
+    }, {
+        "title": "pixijs repositories",
+        "url": "https://github.com/orgs/pixijs/repositories",
+        "tags": ["Solutions", "graphics"]
+    }, {
+        "title": "Konva - JavaScript 2d canvas library",
+        "url": "https://konvajs.org/",
+        "tags": ["Solutions", "graphics"]
+    }, {
+        "title": "konvajs repositories",
+        "url": "https://github.com/orgs/konvajs/repositories",
+        "tags": ["Solutions", "graphics"]
+    }, {
+        "title": "资源社区 | BoardOS",
+        "url": "https://boardos.online/community",
+        "tags": ["Solutions", "UniversalApps"]
+    }, {
+        "title": "gohugoio repositories",
+        "url": "https://github.com/orgs/gohugoio/repositories",
+        "tags": ["Solutions", "CloudyAPPSdocsAll"]
+    }, {
+        "title": "Ethical Design Resources",
+        "url": "https://www.ethicaldesignresources.com/",
+        "tags": ["Solutions", "Templates"]
+    }, {
+        "title": "codesandbox repositories",
+        "url": "https://github.com/orgs/codesandbox/repositories",
+        "tags": ["Solutions", "DevelopOnline"]
+    }, {
+        "title": "Globální zkratky ve WinForms a WPF - CodeProject",
+        "url": "https://www.codeproject.com/Articles/442285/Global-Shortcuts-in-WinForms-and-WPF",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "PowerShell Gallery | FormDesigner/MahApps.Metro.xml 4.7.1",
+        "url": "https://www.powershellgallery.com/packages/PowerShellProTools/4.7.1/Content/FormDesigner%5CMahApps.Metro.xml",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "Vytváření objektů .NET a COM - PowerShell | Microsoft Learn",
+        "url": "https://learn.microsoft.com/cs-cz/powershell/scripting/samples/creating-.net-and-com-objects--new-object-?view=powershell-7.4",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "OWIN — Open Web Interface for .NET",
+        "url": "http://owin.org/",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "Work with SameSite cookies and the Open Web Interface for .NET (OWIN) | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/aspnet/samesite/owin-samesite#api-usage-with-samesite",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "Social Auth types",
+        "url": "https://github.com/aspnet/AspNetKatana/blob/main/samples/Katana.Sandbox.WebServer/Startup.cs",
+        "tags": ["Solutions", "SYSTEM"]
+    }, {
+        "title": "oleg-shilo/wixsharp: Framework for building a complete MSI or WiX source code by using script files written with C# syntax.",
+        "url": "https://github.com/oleg-shilo/wixsharp",
+        "tags": ["Solutions", "Installer"]
+    }, {
+        "title": "Home · oleg-shilo/wixsharp Wiki",
+        "url": "https://github.com/oleg-shilo/wixsharp/wiki",
+        "tags": ["Solutions", "Installer"]
+    }, {
+        "title": "ddurschlag/BitBucketSourceBrowserPlugin: BitBucket plugin for SourceBrowser",
+        "url": "https://github.com/ddurschlag/BitBucketSourceBrowserPlugin",
+        "tags": ["Solutions", "SourceBrowser"]
+    }, {
+        "title": "shibayan/SourceBrowserExtension: SourceBrowser for Azure Site Extension",
+        "url": "https://github.com/shibayan/SourceBrowserExtension",
+        "tags": ["Solutions", "SourceBrowser"]
+    }, {
+        "title": "Sample code for DevTools - Microsoft Edge Developer documentation | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sample-code/sample-code",
+        "tags": ["Solutions", "WebView2"]
+    }, {
+        "title": "MicrosoftEdge/Demos: Web pages and apps used to demo various DevTools, PWA, WebView, Extensions, and Web Platform features of Microsoft Edge",
+        "url": "https://github.com/MicrosoftEdge/Demos/tree/main",
+        "tags": ["Solutions", "WebView2"]
+    }, {
+        "title": "NuGet | AdminUI Documentation",
+        "url": "https://www.identityserver.com/documentation/adminui/Installation/Installation_NuGet/",
+        "tags": ["Solutions", "Identity"]
+    }, {
+        "title": "Improvements to auth and identity in ASP.NET Core 8 - .NET Blog",
+        "url": "https://devblogs.microsoft.com/dotnet/improvements-auth-identity-aspnetcore-8/",
+        "tags": ["Solutions", "Identity"]
+    }, {
+        "title": "Home :: Duende IdentityServer Documentation",
+        "url": "https://docs.duendesoftware.com/identityserver/v7",
+        "tags": ["Solutions", "Identity"]
+    }, {
+        "title": "What's new with identity in .NET 8 - .NET Blog",
+        "url": "https://devblogs.microsoft.com/dotnet/whats-new-with-identity-in-dotnet-8/#basic-web-api-backend",
+        "tags": ["Solutions", "Identity"]
+    }, {
+        "title": "Self-Host ASP.NET Web API 1 (C#) - ASP.NET 4.x | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/aspnet/web-api/overview/older-versions/self-host-a-web-api#install-nuget-package-manager",
+        "tags": ["Solutions", "FIRSTTODO"]
+    }, {
+        "title": "statiqdev/Statiq.Framework: A flexible and extensible static content generation framework for .NET.",
+        "url": "https://github.com/statiqdev/Statiq.Framework/tree/main",
+        "tags": ["Solutions", "FIRSTTODO"]
+    }, {
+        "title": "jbogard/roundhouse: RoundhousE is a Database Migration Utility for .NET using sql files and versioning based on source control",
+        "url": "https://github.com/jbogard/roundhouse/tree/master",
+        "tags": ["Solutions", "FIRSTTODO"]
+    }, {
+        "title": "jbogard/sqllocaldb: SQL LocalDB Wrapper is a .NET assembly providing interop with the Microsoft SQL Server LocalDB native API.",
+        "url": "https://github.com/jbogard/sqllocaldb",
+        "tags": ["Solutions", "FIRSTTODO"]
+    }, {
+        "title": "jbogard/JavaScriptServices: Microsoft ASP.NET Core JavaScript Services",
+        "url": "https://github.com/jbogard/JavaScriptServices",
+        "tags": ["Solutions", "FIRSTTODO"]
+    }, {
+        "title": "Ironclad/rivet: The open-source visual AI programming environment and TypeScript library",
+        "url": "https://github.com/Ironclad/rivet",
+        "tags": ["Solutions", "Graphics"]
+    }, {
+        "title": "Ironclad repositories",
+        "url": "https://github.com/orgs/Ironclad/repositories",
+        "tags": ["Solutions", "Graphics"]
+    }, {
+        "title": "Sage/streamline-zip: Zipping in node.js with no external dependencies",
+        "url": "https://github.com/Sage/streamline-zip/tree/master",
+        "tags": ["Solutions", "Tools"]
+    }, {
+        "title": "Monaco Editor",
+        "url": "https://microsoft.github.io/monaco-editor/",
+        "tags": ["Solutions", "Tools"]
+    }, {
+        "title": "c9 repositories",
+        "url": "https://github.com/orgs/c9/repositories",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "Explore Docker's Container Image Repository | Docker Hub",
+        "url": "https://hub.docker.com/search?operating_system=windows",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "daytonaio/daytona: The Open Source Dev Environment Manager.",
+        "url": "https://github.com/daytonaio/daytona",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "daytonaio repositories",
+        "url": "https://github.com/orgs/daytonaio/repositories",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "Daytona",
+        "url": "https://github.com/daytonaio",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "VS Code in the browser for everyone - Blog",
+        "url": "https://www.gitpod.io/blog/openvscode-server-launch",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "gitpod-io/openvscode-server: Run upstream VS Code on a remote machine with access through a modern web browser from any device, anywhere.",
+        "url": "https://github.com/gitpod-io/openvscode-server",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "Git for Windows",
+        "url": "https://github.com/git-for-windows",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "Git for Windows",
+        "url": "https://gitforwindows.org/",
+        "tags": ["Solutions", "cloud"]
+    }, {
+        "title": "Microsot Dotnet",
+        "url": "https://github.com/dotnet",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ASP.NET",
+        "url": "https://github.com/aspnet",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "RolandPheasant/awesome-dotnet: A collection of awesome .NET libraries, tools, frameworks and software",
+        "url": "https://github.com/RolandPheasant/awesome-dotnet",
+        "tags": ["BestCodeProfiles", "awesome"]
+    }, {
+        "title": "dotnet/aspnetcore: ASP.NET Core",
+        "url": "https://github.com/dotnet/aspnetcore/tree/main",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "aspnet repositories",
+        "url": "https://github.com/orgs/aspnet/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "Git Solutions",
+        "url": "https://github.com/orgs/git-for-windows/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "grokys (Steven Kirk) Super C# XAML",
+        "url": "https://github.com/grokys",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "AvaloniaUI repositories",
+        "url": "https://github.com/orgs/AvaloniaUI/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "henon (henon) / Repositories",
+        "url": "https://github.com/henon?page=3&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "algolia repositories",
+        "url": "https://github.com/orgs/algolia/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "App Solutions / Repositories",
+        "url": "https://github.com/dragos-constantin-stoica?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ahwelgemoed (ahwelgemoed) / Repositories",
+        "url": "https://github.com/ahwelgemoed?page=3&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "mxschmitt (mxschmitt) / Repositories",
+        "url": "https://github.com/mxschmitt?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "weikio repositories",
+        "url": "https://github.com/orgs/weikio/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "bevry repositories TS Good",
+        "url": "https://github.com/orgs/bevry/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "cancerberoSgx (cancerberoSgx) / Repositories",
+        "url": "https://github.com/cancerberoSgx?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "mrdoob (mrdoob) / Repositories JS best library",
+        "url": "https://github.com/mrdoob?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "mrward (mrward) / Repositories · GitHub C# 300",
+        "url": "https://github.com/mrward?page=4&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "getsentry repositories · GitHub",
+        "url": "https://github.com/orgs/getsentry/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "facebook repositories",
+        "url": "https://github.com/orgs/facebook/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "Baidu EFE team",
+        "url": "https://github.com/ecomfe",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "sindresorhus (sindresorhus) / MEGA BEST",
+        "url": "https://github.com/sindresorhus?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ecomfe repositories",
+        "url": "https://github.com/orgs/ecomfe/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "w3c repositories",
+        "url": "https://github.com/orgs/w3c/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "cdnjs repositories",
+        "url": "https://github.com/orgs/cdnjs/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "bevacqua (bevacqua) / Repositories",
+        "url": "https://github.com/bevacqua?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "samsmithnz (samsmithnz) / Repositories C#",
+        "url": "https://github.com/samsmithnz?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "TomWright (TomWright) / Repositories",
+        "url": "https://github.com/TomWright?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "elanatframework (elanatframework) / Repositories",
+        "url": "https://github.com/elanatframework?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "nextcloud repositories",
+        "url": "https://github.com/orgs/nextcloud/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "Developer Documentation Home | BrowserStack Documentation",
+        "url": "https://www.browserstack.com/docs/",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "BrowserStack",
+        "url": "https://github.com/browserstack",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "úložiště appium",
+        "url": "https://github.com/orgs/appium/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "atapas (atapas) / Repositories BEST WEB",
+        "url": "https://github.com/atapas?page=2&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ajaxorg repositories",
+        "url": "https://github.com/orgs/ajaxorg/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "shepmaster (shepmaster) / Repositories",
+        "url": "https://github.com/shepmaster?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "jhollingworth (jhollingworth) / Repositories",
+        "url": "https://github.com/jhollingworth?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "jetheredge (jetheredge) / Repositories",
+        "url": "https://github.com/jetheredge?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ColorlibHQ repositories",
+        "url": "https://github.com/orgs/ColorlibHQ/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "madskristensen 300 C# Repositories",
+        "url": "https://github.com/madskristensen?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "google repositories",
+        "url": "https://github.com/orgs/google/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "domchristie (domchristie) / Repositories",
+        "url": "https://github.com/domchristie?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "kriskowal (kriskowal) / Repositories",
+        "url": "https://github.com/kriskowal?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "akrisiun (akrisiun) / Repositories",
+        "url": "https://github.com/akrisiun?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "nmetulev (nmetulev) / Repositories",
+        "url": "https://github.com/nmetulev?page=4&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "tonysneed (tonysneed) / Repositories",
+        "url": "https://github.com/tonysneed?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "tonysneed (tonysneed) / Repositories",
+        "url": "https://github.com/tonysneed?page=6&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "danesparza (danesparza) / Repositories",
+        "url": "https://github.com/danesparza?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "KirillOsenkov (KirillOsenkov) / Repositories",
+        "url": "https://github.com/KirillOsenkov?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "oleg-shilo (oleg-shilo) / Repositories",
+        "url": "https://github.com/oleg-shilo?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "shibayan (shibayan) / Repositories",
+        "url": "https://github.com/shibayan?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "triggerdotdev repositories",
+        "url": "https://github.com/orgs/triggerdotdev/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "cferdinandi (Chris Ferdinandi)",
+        "url": "https://github.com/cferdinandi?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "jagenjo (Javi Agenjo)",
+        "url": "https://github.com/jagenjo?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "creativetimofficial repositories",
+        "url": "https://github.com/orgs/creativetimofficial/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "Identity Hosting Solution",
+        "url": "https://github.com/alexhiggins732?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "alexhiggins732 (alexhiggins732) / Repositories",
+        "url": "https://github.com/alexhiggins732?page=2&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "RicoSuter (RicoSuter) / Repositories",
+        "url": "https://github.com/RicoSuter?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "RicoSuter (RicoSuter) / Repositories",
+        "url": "https://github.com/RicoSuter?page=2&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "alexhiggins732 (alexhiggins732) / Repositories",
+        "url": "https://github.com/alexhiggins732?page=4&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "migueldeicaza (migueldeicaza) / Repositories",
+        "url": "https://github.com/migueldeicaza?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "migueldeicaza (migueldeicaza) / Repositories",
+        "url": "https://github.com/migueldeicaza?page=4&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "soydachi (Dachi Gogotchuri)",
+        "url": "https://github.com/soydachi",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "scottksmith95 (Scott Smith)",
+        "url": "https://github.com/scottksmith95",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "Sage repositories",
+        "url": "https://github.com/orgs/Sage/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "jbogard (jbogard) / Repositories",
+        "url": "https://github.com/jbogard?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "jbogard (jbogard) / Repositories",
+        "url": "https://github.com/jbogard?page=3&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "microsoftarchive repositories",
+        "url": "https://github.com/orgs/microsoftarchive/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "BenitoJedai (BenitoJedai) / Repositories",
+        "url": "https://github.com/BenitoJedai?page=2&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "SyedArifulIslamEmon (SyedArifulIslamEmon) / Repositories",
+        "url": "https://github.com/SyedArifulIslamEmon?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "devinus (devinus) / Repositories",
+        "url": "https://github.com/devinus?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "381 repos) / ALL types",
+        "url": "https://github.com/theolivenbaum?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "devinus (devinus) / Repositories",
+        "url": "https://github.com/devinus?page=5&tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "remy (Remy Sharp)",
+        "url": "https://github.com/remy",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "kurdin (kurdin) / Repositories",
+        "url": "https://github.com/kurdin?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "remy (remy) / Repositories",
+        "url": "https://github.com/remy?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "DavidWells 400 JS Repos",
+        "url": "https://github.com/DavidWells?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "rflechner (rflechner) / Repositories",
+        "url": "https://github.com/rflechner?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "AndreyAkinshin (AndreyAkinshin) / Repositories",
+        "url": "https://github.com/AndreyAkinshin?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "daveaglick (daveaglick) / Repositories",
+        "url": "https://github.com/daveaglick?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "myd7349 (myd7349) / Repositories",
+        "url": "https://github.com/myd7349?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ashmind (ashmind) / Repositories",
+        "url": "https://github.com/ashmind?tab=repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "ashmind/rxjs: A reactive programming library for JavaScript",
+        "url": "https://github.com/ashmind/rxjs/tree/master",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "dotnet repositories",
+        "url": "https://github.com/orgs/dotnet/repositories",
+        "tags": ["BestCodeProfiles"]
+    }, {
+        "title": "alternetsoft repositories",
+        "url": "https://github.com/orgs/alternetsoft/repositories",
+        "tags": ["ESB-Implemented"]
+    }, {
+        "title": "WebView control for Windows Forms and WPF - Windows Community Toolkit | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/windows/communitytoolkit/controls/wpf-winforms/webview#creating-multiple-web-views-in-the-same-process",
+        "tags": ["webview"]
+    }, {
+        "title": "Test Management project Dashboard | BrowserStack Documentation",
+        "url": "https://www.browserstack.com/docs/test-management/reports-and-analytics/dashboard",
+        "tags": ["CodeTesting"]
+    }, {
+        "title": "Stripe JS Reference",
+        "url": "https://docs.stripe.com/js",
+        "tags": ["Payment"]
+    }, {
+        "title": "stripe-samples repositories",
+        "url": "https://github.com/orgs/stripe-samples/repositories",
+        "tags": ["Payment"]
+    }, {
+        "title": "umodoc (Umo Team)",
+        "url": "https://github.com/umodoc",
+        "tags": ["editors"]
+    }, {
+        "title": "ianstormtaylor (ianstormtaylor) / Repositories",
+        "url": "https://github.com/ianstormtaylor?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "Liberty-liu (Liberty-liu) / Repositories",
+        "url": "https://github.com/Liberty-liu?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "jejacks0n (jejacks0n) / Repositories",
+        "url": "https://github.com/jejacks0n?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "GrapesJS repositories",
+        "url": "https://github.com/orgs/GrapesJS/repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "mervick (mervick) / Repositories",
+        "url": "https://github.com/mervick?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "plasmicapp repositories",
+        "url": "https://github.com/orgs/plasmicapp/repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "kenshin54 (Jialin Tian)",
+        "url": "https://github.com/kenshin54",
+        "tags": ["editors"]
+    }, {
+        "title": "samclarke (samclarke) / Repositories",
+        "url": "https://github.com/samclarke?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "adiptal (adiptal) / Repositories",
+        "url": "https://github.com/adiptal?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "umodoc (umodoc) / Repositories",
+        "url": "https://github.com/umodoc?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "node-projects repositories",
+        "url": "https://github.com/orgs/node-projects/repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "xjh22222228 (xjh22222228) / Repositories",
+        "url": "https://github.com/xjh22222228?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "givanz (givanz) / Repositories",
+        "url": "https://github.com/givanz?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "jbt (jbt) / Repositories",
+        "url": "https://github.com/jbt?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "hinesboy (hinesboy) / Repositories",
+        "url": "https://github.com/hinesboy?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "benweet (benweet) / Repositories",
+        "url": "https://github.com/benweet?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "Documentation · daveho/AceGWT Wiki",
+        "url": "https://github.com/daveho/AceGWT/wiki/Documentation",
+        "tags": ["editors"]
+    }, {
+        "title": "daveho (daveho) / Repositories",
+        "url": "https://github.com/daveho?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "playcode repositories",
+        "url": "https://github.com/orgs/playcode/repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "playcode/node-libs-browser: The node core libs for in browser usage.",
+        "url": "https://github.com/playcode/node-libs-browser",
+        "tags": ["editors"]
+    }, {
+        "title": "WYSIWYG HTML Editor v3 Demos - Froala",
+        "url": "https://froala.com/wysiwyg-editor/examples/",
+        "tags": ["editors"]
+    }, {
+        "title": "froala repositories",
+        "url": "https://github.com/orgs/froala/repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "JiHong88 (JiHong88) / Repositories",
+        "url": "https://github.com/JiHong88?tab=repositories",
+        "tags": ["editors"]
+    }, {
+        "title": "PrimeFaces Extensions Showcase",
+        "url": "https://www.primefaces.org/showcase-ext/views/orgchart.jsf",
+        "tags": ["editors"]
+    }, {
+        "title": "JiHong88/suneditor: Pure javascript based WYSIWYG html editor, with no dependencies.",
+        "url": "https://github.com/JiHong88/suneditor?tab=readme-ov-file#options",
+        "tags": ["editors"]
+    }, {
+        "title": "scottksmith95/texter: Send SMS messages using Twilio from Node",
+        "url": "https://github.com/scottksmith95/texter",
+        "tags": ["thirdpartyServices"]
+    }, {
+        "title": "soydachi/MeetupApi: Meetup api for C# cross developers. Pull Requests welcome!",
+        "url": "https://github.com/soydachi/MeetupApi?tab=readme-ov-file",
+        "tags": ["thirdpartyServices"]
+    }
+]

@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+    <meta name="robots" content="noindex,follow" />
+    <meta name="charset" content="utf-8" />
+
+    <link rel="stylesheet" href="/serverportal/addons/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/serverportal/addons/summernote/css/summernote.min.css" />
+
+    <link rel="stylesheet" href="/serverportal/addons/fancytree/dist/skin-win8/ui.fancytree.min.css" />
+    <link rel="stylesheet" href="/serverportal/addons/fancytree/extensions/contextmenu/jquery.contextMenu.min.css" />
+    <link rel="stylesheet" href="/serverportal/metro/css/metro-all.min.css" />
+
+    <link rel='stylesheet' type='text/css' href='/serverportal/addons/froalaeditor/froala.min.css' />
+    <link rel="stylesheet" type="text/css" href="/serverportal/addons/froalaeditor/plugins/fullscreen.min.css" />
+
+    <link rel="stylesheet" href="/serverportal/addons/suneditor/dist/css/suneditor.min.css" />
+    <link rel="stylesheet" href="/serverportal/addons/suneditor/dist/css/codemirror.min.css" />
+    <link rel="stylesheet" href="/serverportal/addons/suneditor/dist/katex/katex.min.css" />
+
+    <script type="text/javascript" src="/serverportal/addons/jquery/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="/serverportal/addons/fancytree/dist/fancytree-all-deps.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/fancytree/extensions/contextmenu/js/jquery.contextMenu.min.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/fancytree/extensions/contextmenu/js/jquery.fancytree.contextMenu.js"></script>
+    <script type="text/javascript" src="/serverportal/metro/js/metro.4.5.2.min.js"></script>
+
+    <!--GLOBAL FUNCT-->
+    <script type="text/javascript" src="/serverportal/manage/js/global-storage.js"></script>
+    <script type="text/javascript" src="/serverportal/manage/js/global-behavior.js"></script>
+    <script type="text/javascript" src="/serverportal/manage/js/global-object.js"></script>
+    <script type="text/javascript" src="/serverportal/manage/js/global-functions.js"></script>
+    <script type="text/javascript" src="/serverportal/manage/js/global-api.js"></script>
+
+    <script type="text/javascript" src="/serverportal/manage/js/js.cookie.min.js"></script>
+
+    <!--TOOLS-->
+    <script type="text/javascript" src="/serverportal/manage/js/mermaid.min.cdn.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/highlightjs/highlight.min.js"></script>
+    <script rel="stylesheet" src="/serverportal/addons/suneditor/dist/codemirror.min.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/dist/katex/katex.min.js"></script>
+
+    <!--SUMMERNOTE-->
+    <script src="/serverportal/addons/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/summernote/js/summernote.min.js"></script>
+
+    <!--FROALA-->
+    <script type='text/javascript' src='/serverportal/addons/froalaeditor/froala.min.js'></script>
+    <script type="text/javascript" src="/serverportal/addons/froalaeditor/plugins/fullscreen.min.js"></script>
+    <script type='text/javascript' src='/serverportal/addons/froalaeditor/languages/cs.js'></script>
+
+
+    <!--MONACO-->
+    <script type="text/javascript" src="/serverportal/addons/monaco/js/monaco-editor/min/vs/loader.js"></script>
+    <style>
+        .monaco-editor { min-width: 100%;width: 100%; min-height: calc(100vh - 25px) !important; height: calc(100vh - 25px) !important; }
+    </style>
+
+    <title>User Storage Manager</title>
+</head>
+<body>
+    <div class="row w-100 h-100 d-inline-flex">
+        <div id="DataTree" class="h-100" style="width: 300px; overflow-y: auto; padding-top: 25px;"></div>
+        <div id="FrameWindow" class="h-100 row" height="100%" frameborder="0" scrolling="yes" style="width: calc(100% - 300px); height: 100%; position: relative; padding-top: 25px;">
+            <div id="userFilesPreview" class="row" style="height: 100%; width: 100%; position: fixed; display: block !important;"></div>
+        </div>
+
+        <select id="MonacoTheme" class="theme" style='position: absolute;left: 90%;z-index: 2000;top: 30px;right: 0px;'>
+            <option>vs-dark</option>
+            <option>vs</option>
+            <option>hc-black</option>
+        </select>
+
+        <select id="MonacoLanguage" class="language" style='position: absolute;left: 90%;z-index: 2000;top: 60px;right: 0px;'>
+            <option>bat</option>
+            <option>csharp</option>
+            <option>css</option>
+            <option>graphql</option>
+            <option>handlebars</option>
+            <option>html</option>
+            <option selected=selected>javascript</option>
+            <option>json</option>
+            <option>markdown</option>
+            <option>mysql</option>
+            <option>pgsql</option>
+            <option>php</option>
+            <option>powerquery</option>
+            <option>powershell</option>
+            <option>python</option>
+            <option>razor</option>
+            <option>scheme</option>
+            <option>scss</option>
+            <option>shell</option>
+            <option>sql</option>
+            <option>typescript</option>
+            <option>vb</option>
+            <option>xml</option>
+        </select>
+
+        <div id="ActionMenu" class="w-100 pos-fixed" style="z-index: 9999999999;">
+            <nav data-role="ribbonmenu">
+                <ul class="tabs-holder">
+                    <li onclick="ReloadUserStorage();" class=""><a href="#">Reload</a></li>
+                    <li><a href="#sectionFile">Editors</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Preview</a></li>
+                </ul>
+                <div class="content-holder">
+                    <div class="section" id="sectionFile">
+                        <div class="group">
+                            <button id="SetMonaco" class="ribbon-button disabled" onclick=SetEditor('Monaco');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-codepen"></span>
+                                </span>
+                                <span class="caption">Monaco</span>
+                            </button>
+                            <span class="title">Code Editors</span>
+                        </div>
+                        <div class="group">
+                            <button id="SetTinyMCE" class="ribbon-button" onclick=SetEditor('TinyMCE');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-table"></span>
+                                </span>
+                                <span class="caption">TinyMCE</span>
+                            </button>
+                            <button id="SetFroala" class="ribbon-button" onclick=SetEditor('Froala');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-flow-tree"></span>
+                                </span>
+                                <span class="caption">Froala</span>
+                            </button>
+                            <button id="SetSUNEdit" class="ribbon-button" onclick=SetEditor('SUNEdit');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-sun3"></span>
+                                </span>
+                                <span class="caption">Sun</span>
+                            </button>
+                            <button id="SetSummer" class="ribbon-button" onclick=SetEditor('Summer');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-sun"></span>
+                                </span>
+                                <span class="caption">Summer</span>
+                            </button>
+                            <span class="title">Basic HTML Editors</span>
+                        </div>
+                        <div class="group">
+                            <button id="SetMDEditor" class="ribbon-button" onclick=SetEditor('MDEditor');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-calendar"></span>
+                                </span>
+                                <span class="caption">MD Editor</span>
+                            </button>
+                            <button id="SetJSONEditor" class="ribbon-button" onclick=SetEditor('JSONEditor');Gs.Functions.RemoveClass('sectionFile','active');>
+                                <span class="icon">
+                                    <span class="mif-dropbox"></span>
+                                </span>
+                                <span class="caption">JSON Editor</span>
+                            </button>
+                            <span class="title">Special Editors</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script>
+        //Global Variables
+        dataJs = null;
+        EditorInit = null;
+        Files = [];
+
+        async function StartUp() {
+            dataJs = await fetch('/serverportal/addons/monaco/js/userFiles.js').then((r) => r.text())
+            new Function(dataJs)(); Metro.storage.setItem("SelectedEditor", "Monaco");
+            InitiateTree();
+        }
+
+        function InitiateTree() {
+            $("#DataTree").fancytree({
+                extensions: ["contextMenu"],
+                checkbox: false,
+                quicksearch: true,
+                source: {
+                    url: "/UserStorageService/GetUserStorage"
+                },
+                activate: function (event, data) {
+                    //console.log("activate", event, data, data.node.data.extension);
+
+                    //Show Text Files ServerParam["TextFilesExtensionList"]
+                    if (["js", "html", "css", "txt"].includes(data.node.data.extension)) {
+                        SetEditor("Monaco");
+                        if (Metro.storage.getItem("SelectedEditor", null) == null || Metro.storage.getItem("SelectedEditor", null) == "Monaco") {
+                            Gs.Variables.monacoEditorList.filter(obj => {
+                                return obj.elementId == "userFilesPreview"
+                            })[0].editor.getModel().setValue(data.node.key);
+                        } else if (Metro.storage.getItem("SelectedEditor", null) == "TinyMCE") {
+                            tinymce.get('TinyMCE').setContent(data.node.key);
+                        } else if (Metro.storage.getItem("SelectedEditor", null) == "Froala") {
+                            EditorInit.html.set(data.node.key);
+                        } else if (Metro.storage.getItem("SelectedEditor", null) == "SUNEdit") {
+                            EditorInit.setContents(data.node.key);
+                        } else if (Metro.storage.getItem("SelectedEditor", null) == "Summer") {
+                            $(`#SummerEditor`).summernote(`code`, data.node.key);
+                        }
+
+                    } else if (["md"].includes(data.node.data.extension)) {
+                        SetEditor("MDEditor");
+                    } else if (["json"].includes(data.node.data.extension)) {
+                        SetEditor("JSONEditor");
+                    } else if (["jpg", "jpeg", "png", "tiff", "bmp", "gif", "svg"].includes(data.node.data.extension)) {
+                        SetEditor("Image");
+                    } else if (["mp4", "avi", "mov"].includes(data.node.data.extension)) {
+                        SetEditor("Video");
+                    } else if (["mp3"].includes(data.node.data.extension)) {
+                        SetEditor("Audio");
+                    } else if (["stl"].includes(data.node.data.extension)) {
+                        SetEditor("STLviewer");
+                    } else if (["pdf"].includes(data.node.data.extension)) {
+                        SetEditor("PDFviewer");
+                    } else {
+                        SetEditor("Other");
+                    }
+                },
+                checkbox: function (event, data) {
+                    return data.node.isFolder() ? false : false;
+                },
+                contextMenu: {
+                    autoFocus: true,
+                    menu: function (node) {
+                        if (node.folder) {
+                            return {
+                                "createFolder": { "name": "Create Folder", "icon": "add" }, "moveFolder": { "name": "Move to Folder", "icon": "edit" },
+                                "copyFolder": { "name": "Copy to Folder", "icon": "copy" }, "clearFolder": { "name": "Clear Folder", "icon": "delete" },
+                                "deleteFolder": { "name": "Delete Folder", "icon": "quit" },
+                                "sep1": "---------", "downloadFolder": { "name": "Download Folder (Zip)", "icon": "paste" },
+                                "sep2": "---------", "createFile": { "name": "Create File", "icon": "add" }, "uploadFiles": { "name": "Upload Files", "icon": "add" },
+                            };
+                        } else {
+                            return {
+                                "saveFile": { "name": "Save File", "icon": "paste" }, "moveFile": { "name": "Move to Folder\\File", "icon": "paste" },
+                                "copyFile": { "name": "Copy to Folder\\File", "icon": "copy" }, "deleteFile": { "name": "Delete File", "icon": "delete" },
+                                "sep1": "---------", "downloadFile": { "name": "Download File (Zip)", "icon": "paste" }, 
+                            };
+                        }
+                    },
+                    actions: function (node, action, options) {
+                        if (action == "createFolder") {
+                            let content = "<div><input id='FolderName' type='text' data-role='input' data-prepend='Folder Name:' ></div>";
+                            let actions = [{
+                                caption: "Create Folder", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#FolderName").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/CreateUserFolder", { Path: $('#DataTree').fancytree("getActiveNode").data.path + "\\" + $("#FolderName").val() }, null, "ReloadUserStorage");
+                                    } else { alert("Name must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Create Folder", content, actions);
+
+                        } else if (action == "moveFolder") {
+                            let content = "<div><input id='FolderName' type='text' data-role='input' data-prepend='Target Folder Name: ' ></div>"
+                            let actions = [{
+                                caption: "Move Folder", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#FolderName").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/MoveUserFolder", { SourcePath: $('#DataTree').fancytree("getActiveNode").data.path, TargetPath: "\\" + $("#FolderName").val() }, null, "ReloadUserStorage");
+                                    } else { alert("Name must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Move Folder", content, actions);
+
+                        } else if (action == "copyFolder") {
+                            let content = "<div><input id='FolderName' type='text' data-role='input' data-prepend='Target Folder Name: ' ></div>";
+                            let actions = [{
+                                caption: "Copy Folder", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#FolderName").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/CopyUserFolder", { SourcePath: $('#DataTree').fancytree("getActiveNode").data.path, TargetPath: "\\" + $("#FolderName").val() }, null, "ReloadUserStorage");
+                                    } else { alert("Name must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Copy Folder", content, actions);
+
+                        } else if (action == "downloadFolder") {
+                            Gs.Apis.DownloadApi("UserStorageService/DownloadUserFolder", { Path: $('#DataTree').fancytree("getActiveNode").data.path }, $('#DataTree').fancytree("getActiveNode").data.path.split("\\").pop(), true);
+                        } else if (action == "clearFolder") {
+                            let content = "<div>Do you want to Clear selected Folder? " + $('#DataTree').fancytree("getActiveNode").data.path + "</div>";
+                            let actions = [{
+                                caption: "Clear Folder", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    await Gs.Apis.RunServerPostApi("UserStorageService/ClearUserFolder", { Path: $('#DataTree').fancytree("getActiveNode").data.path }, null, "ReloadUserStorage");
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Clear Folder", content, actions);
+
+                        } else if (action == "deleteFolder") {
+                            let content = "<div>Do you want to Delete selected Folder? " + $('#DataTree').fancytree("getActiveNode").data.path + "</div>";
+                            let actions = [{
+                                caption: "Delete Folder", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    await Gs.Apis.RunServerPostApi("UserStorageService/DeleteUserFolder", { Path: $('#DataTree').fancytree("getActiveNode").data.path }, null, "ReloadUserStorage");
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Delete Folder", content, actions);
+
+                        } else if (action == "createFile") {
+                            let content = "<div><input id='Filename' type='text' data-role='input' data-prepend='Write FileName: ' ></div>";
+                            let actions = [{
+                                caption: "Create File", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#Filename").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/CreateUserFile", { Path: $('#DataTree').fancytree("getActiveNode").data.path, Filename: "\\" + $("#Filename").val() }, null, "ReloadUserStorage");
+                                    } else { alert("FileName must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Create File", content, actions);
+
+                        } else if (action == "uploadFiles") {
+                            let content = "<div><input id='Files' type='file' data-role='file' data-mode='drop' multiple data-on-select='LoadFiles()' ></div>";
+                            let actions = [{
+                                caption: "Upload Files", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if (document.getElementById("Files").files.length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/UploadUserFiles", { Path: $('#DataTree').fancytree("getActiveNode").data.path, Files: Files }, null, "ReloadUserStorage");
+                                    } else { alert("Files must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Upload Files", content, actions);
+
+                        } else if (action == "saveFile") { //console.log("extension", $('#DataTree').fancytree("getActiveNode").data.extension);
+                            Gs.Apis.RunServerPostApi("UserStorageService/SetUserTextFile", {
+                                Path: $('#DataTree').fancytree("getActiveNode").data.path,
+                                Content: Metro.storage.getItem("SelectedEditor", null) == null || Metro.storage.getItem("SelectedEditor", null) == "Monaco" ?
+                                    Gs.Variables.monacoEditorList.filter(obj => { return obj.elementId == "userFilesPreview" })[0].model.getValue() :
+                                    Metro.storage.getItem("SelectedEditor", null) == "TinyMCE" ? tinyMCE.getContent('TinyMCE') :
+                                        Metro.storage.getItem("SelectedEditor", null) == "Froala" ? EditorInit.html.get() :
+                                            Metro.storage.getItem("SelectedEditor", null) == "SUNEdit" ? EditorInit.getContents() : 
+                                                Metro.storage.getItem("SelectedEditor", null) == "Summer" ? $(`#SummerEditor`).summernote(`code`) :
+                                                    Metro.storage.getItem("SelectedEditor", null) == "MDEditor" ? $('#HelpEditor')[0].contentWindow.mdEditor.getMarkdown() :
+                                                        Metro.storage.getItem("SelectedEditor", null) == "JSONEditor" ? 
+                                                            $("#IFrameWindow")[0].contentWindow.document.getElementById("copy-code").getAttribute("data-clipboard-text") == 'null' ?
+                                                                $("#IFrameWindow")[0].contentWindow.inputEditor.doc.getValue() : $("#IFrameWindow")[0].contentWindow.document.getElementById("copy-code").getAttribute("data-clipboard-text")
+                                                        : ""
+                            }, null, "ReloadUserStorage");
+                        } else if (action == "moveFile") {
+                            let content = "<div><input id='FileName' type='text' data-role='input' data-prepend='Target Folder\\File Name: ' ></div>";
+                            let actions = [{
+                                caption: "Move File", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#FileName").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/MoveUserFile", { SourcePath: $('#DataTree').fancytree("getActiveNode").data.path, TargetPath: "\\" + $("#FileName").val() }, null, "ReloadUserStorage");
+                                    } else { alert("FileName must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Move File", content, actions);
+
+                        } else if (action == "copyFile") {
+                            let content = "<div><input id='FileName' type='text' data-role='input' data-prepend='Target Folder\\File Name: ' ></div>";
+                            let actions = [{
+                                caption: "Copy File", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    if ($("#FileName").val().length > 0) {
+                                        await Gs.Apis.RunServerPostApi("UserStorageService/CopyUserFile", { SourcePath: $('#DataTree').fancytree("getActiveNode").data.path, TargetPath: "\\" + $("#FileName").val() }, null, "ReloadUserStorage");
+                                    } else { alert("Name must be Inserted"); }
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Copy File", content, actions);
+
+                        } else if (action == "deleteFile") {
+                            let content = "<div>Do you want to Delete selected File? " + $('#DataTree').fancytree("getActiveNode").data.path.split("\\").pop() + "</div>";
+                            let actions = [{
+                                caption: "Delete File", cls: "js-dialog-close success",
+                                onclick: async function () {
+                                    await Gs.Apis.RunServerPostApi("UserStorageService/DeleteUserFile", { Path: $('#DataTree').fancytree("getActiveNode").data.path }, null, "ReloadUserStorage");
+                                }
+                            }, { caption: "Cancel", cls: "js-dialog-close alert", onclick: function () { } }]
+                            Gs.Objects.CreateDialogRequest("Delete File", content, actions);
+
+                        } else if (action == "downloadFile") {
+                            Gs.Apis.DownloadApi("UserStorageService/DownloadUserFile", { Path: $('#DataTree').fancytree("getActiveNode").data.path }, $('#DataTree').fancytree("getActiveNode").data.path.split("\\").pop(), true);
+                        }
+
+                        //console.log("Selected action '" + action + "' on node " + node + "." + $('#DataTree').fancytree("getActiveNode").data);
+                    }
+                },
+            });
+        }
+
+        //STARTUP
+        $(document).ready(function () {
+            StartUp();
+        });
+
+
+        function ReloadUserStorage() {
+            SetEditor("");
+            $('#DataTree').fancytree('option', 'source', { url: "/UserStorageService/GetUserStorage" });
+        }
+
+
+        function LoadFiles() {
+            let fileList = document.getElementById("Files").files;
+            Files = [];
+            for (let i = 0; i < fileList.length; i++) {
+                let reader = new FileReader();
+                reader.onload = function () { Files.push({ Filename: fileList[i].name, Content: reader.result }); }
+                reader.readAsDataURL(fileList[i]); 
+            }
+        }
+
+
+        async function SetEditor(editor) {
+            Metro.storage.setItem("SelectedEditor", editor);
+
+            //CLEAN EDITOR
+            Gs.Variables.monacoEditorList = []; $("#MonacoTheme").hide(); $("#MonacoLanguage").hide();
+            Gs.Functions.RemoveClass('SetMonaco', 'disabled'); Gs.Functions.RemoveClass('SetTinyMCE', 'disabled'); Gs.Functions.RemoveClass('SetFroala', 'disabled');
+            Gs.Functions.RemoveClass('SetSUNEdit', 'disabled'); Gs.Functions.RemoveClass('SetSummer', 'disabled'); Gs.Functions.RemoveClass('SetMDEditor', 'disabled');
+            Gs.Functions.RemoveClass('SetJSONEditor', 'disabled'); Gs.Functions.RemoveClass('FrameWindow', 'fr-fullscreen-wrapper'); EditorInit = null;
+
+            //SET EDITOR
+            switch (editor) {
+                case "Other":
+                    $("#FrameWindow").html('<h3 style="padding: 10px;">Unsupported Format</h3>');
+                    break;
+                case "STLviewer":
+                    $("#FrameWindow").html('<iframe id="IFrameWindow" src="' + Metro.storage.getItem('ApiOriginSuffix', null) + "serverportal/addons/stl-viewer/index.html" + '" width="100%" frameborder="0" scrolling="yes" style="width:100%; height:calc(100vh);"></iframe>');
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { $("#IFrameWindow")[0].contentWindow.init($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 1000);
+                    break;
+                case "PDFviewer":
+                    $("#FrameWindow").html('<iframe id="IFrameWindow" src="' + Metro.storage.getItem('ApiOriginSuffix', null) + "serverportal/addons/pdf-viewer/web/index.html" + '" width="100%" frameborder="0" scrolling="yes" style="width:100%; height:calc(100vh);"></iframe>');
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { $("#IFrameWindow")[0].contentWindow.PDFViewerApplication.open($('#DataTree').fancytree("getActiveNode").key, 'default.pdf'); }
+                    }, 1000);
+                    break;
+                case "Audio":
+                    $("#FrameWindow").html('<audio id="Audio" data-role="audio-player" data-src="' + $('#DataTree').fancytree("getActiveNode").key + '" class="dark" style="width:100%;height: calc(100vh);"></audio>');
+                    break;
+                case "Video":
+                    $("#FrameWindow").html('<video id="Video" data-role="video-player" data-src="' + $('#DataTree').fancytree("getActiveNode").key + '" style="width:100%;height: calc(100vh);"></video>');
+                    break;
+                case "Image":
+                    $("#FrameWindow").html('<img src="' + $('#DataTree').fancytree("getActiveNode").key + '" class="row" style="height: 100%;padding-left: 10px;">');
+                    break;
+                case "JSONEditor":
+                    Gs.Functions.AddClass('SetJSONEditor', 'disabled');
+                    $("#FrameWindow").html('<iframe id="IFrameWindow" src="' + Metro.storage.getItem('ApiOriginSuffix', null) + "serverportal/addons/jsonData/index.html" + '" width="100%" frameborder="0" scrolling="yes" style="width:100%; height:calc(100vh);"></iframe>');
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { $("#IFrameWindow")[0].contentWindow.inputEditor.doc.setValue($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 500);
+                    break;
+                case "MDEditor":
+                    Gs.Functions.AddClass('SetMDEditor', 'disabled');
+                    $("#FrameWindow").html('<iframe id="HelpEditor" src="/serverportal/addons/markdown/index.html" width="100%" height="100%" frameborder="0" scrolling="yes" style="width:100%; height:calc(100vh);"></iframe>');
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { $('#HelpEditor')[0].contentWindow.mdEditor.setMarkdown($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 500);
+                    break;
+                case "Monaco":
+                    Gs.Functions.AddClass('SetMonaco', 'disabled'); $("#MonacoTheme").show(); $("#MonacoLanguage").show();
+
+                    $("#FrameWindow").html('<div id="userFilesPreview" class="row" style="height: 100%; width: 100%; position: fixed; display: block !important;"></div>');
+                    new Function(dataJs)();
+                    $("#MonacoTheme").show();
+                    $("#MonacoLanguage").show();
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { Gs.Variables.monacoEditorList.filter(obj => { return obj.elementId == "userFilesPreview" })[0].editor.getModel().setValue($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 1000);
+                    break;
+                case "TinyMCE":
+                    Gs.Functions.AddClass('SetTinyMCE', 'disabled'); 
+
+                    $("#FrameWindow").html('<textarea id="TinyMCE" class="form-control"></textarea >');
+                    const standardEditor = {
+                        selector: 'textarea#TinyMCE',
+                        skin: 'oxide-dark', content_css: 'dark',
+                        width: window.innerWidth, height: window.innerHeight,
+                        plugins: ['accordion', 'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak', 'searchreplace', 'wordcount', 'visualblocks',
+                            'visualchars', 'code', 'fullscreen', 'insertdatetime', 'insertdatetime', 'quickbars', 'media', 'table', 'emoticons', 'help', 'preview'],
+                        toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                            'bullist numlist outdent indent | link image | print preview media fullscreen | ' + 'forecolor backcolor emoticons | help',
+                        menu: { menubar: 'favs file edit view insert format tools table help', content_css: 'css/content.css' }
+                    }; tinymce.init(standardEditor);
+
+                    setTimeout(function () { if (document.querySelector("body > div.tox.tox-silver-sink.tox-tinymce-aux") != null) { $("#FrameWindow").append(document.querySelector("body > div.tox.tox-silver-sink.tox-tinymce-aux")); } }, 1000);
+                    setTimeout(function () {
+                        if (document.querySelector("body > div.tox.tox-silver-sink.tox-tinymce-aux") != null) { $("#FrameWindow").append(document.querySelector("body > div.tox.tox-silver-sink.tox-tinymce-aux")); }
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { tinymce.get('TinyMCE').setContent($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 5000);
+                    break;
+                case "Froala":
+                    Gs.Functions.AddClass('SetFroala', 'disabled'); 
+                    $("#FrameWindow").html('<div id="FroalaEditor" style="height:100%;padding-top: 25px;"></div>');
+                    EditorInit = new FroalaEditor('#FroalaEditor', { language: 'cs', toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo', 'trackChanges', 'markdown'] }, function () {
+                        if (!EditorInit.fullscreen.isActive()) { EditorInit.fullscreen.toggle() };
+                    });
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { EditorInit.html.set($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 1000);
+                    break;
+                case "SUNEdit":
+                    Gs.Functions.AddClass('SetSUNEdit', 'disabled'); 
+                    $("#FrameWindow").html('<textarea id="SUNEdit" style="display:none;">');
+
+                    EditorInit = SUNEDITOR.create('SUNEdit', {
+                        display: 'block', width: 'calc(100%-300px)', height: 'calc(100vh);',
+                        popupDisplay: 'full', charCounter: true, charCounterLabel: 'Characters :',
+                        imageGalleryUrl: Metro.storage.getItem("ApiOriginSuffix", null) + 'UserStorageService/GetSunImageList',
+                        buttonList: [
+                            ['undo', 'redo'], ['font', 'fontSize', 'formatBlock'], ['paragraphStyle', 'blockquote'],
+                            ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript'], ['fontColor', 'hiliteColor', 'textStyle'],
+                            ['removeFormat'], ['outdent', 'indent'], ['align', 'horizontalRule', 'list', 'lineHeight'], ['table', 'link', 'image', 'video', 'audio', 'math'],
+                            ['imageGallery'], ['fullScreen', 'showBlocks', 'codeView'], ['preview', 'print'], ['save', 'template']
+                        ], placeholder: 'Zde vytvořte mediální dokument...',
+                        templates: [{ name: 'Calendar', html: '<div data-role="calendar"></div>' }, { name: 'Donut', html: '<div id="donut3" data-role="donut" data-value="35" data-hole=".6" data-stroke="#f5f5f5" data-fill="#9C27B0" data-animate="10" ></div> ' }],
+                        codeMirror: CodeMirror,katex: katex
+                    });
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { EditorInit.setContents($('#DataTree').fancytree("getActiveNode").key); }
+                    }, 1000);
+                    break;
+                case "Summer":
+                    Gs.Functions.AddClass('SetSummer', 'disabled'); 
+                    $("#FrameWindow").html('<div id="SummerEditor" style="width: 100%;"></div> ');
+                    $(`#SummerEditor`).summernote({
+                        tabsize: 2, width: 1200, height: 800, maxHeight: 1200, lang: `cs-CZ`,
+                        placeholder: `write Description...`,
+                        toolbar: [[`style`, [`style`]], [`font`, [`bold`, `underline`, `clear`]], [`fontname`, [`fontname`]],
+                        [`fontsize`, [`fontsize`]], [`color`, [`color`]], [`para`, [`ul`, `ol`, `paragraph`]], [`table`, [`table`]],
+                        [`insert`, [`link`, `picture`, `video`]], [`view`, [`fullscreen`, `codeview`, `undo`, `redo`, `help`]]]
+                    });
+                    setTimeout(function () {
+                        if ($('#DataTree').fancytree("getActiveNode") != null) { $(`#SummerEditor`).summernote(`code`, $('#DataTree').fancytree("getActiveNode").key); }
+                    }, 1000);
+                    break;
+                default:
+            }
+
+        }
+
+
+
+    </script>
+
+    <!--TYNYMCE-->
+    <script type="text/javascript" src="/serverportal/addons/tinymce/tinymce.min.js"></script>
+
+    <!--SUNEDITOR-->
+    <script type="text/javascript" src="/serverportal/addons/suneditor/js/common.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/cdn/htmlmixed.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/cdn/xml.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/cdn/css.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/cdn/codemirror.min.js"></script>
+    <script type="text/javascript" src="/serverportal/addons/suneditor/dist/suneditor.min.js"></script>
+
+</body>
+</html>

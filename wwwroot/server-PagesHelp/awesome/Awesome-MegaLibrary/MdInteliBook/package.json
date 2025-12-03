@@ -1,0 +1,16 @@
+﻿{
+  "name": "Local WebServer",
+  "version": "1.0.0",
+  "main": "./server.js",
+  "license": "GS World IT Shared Community",
+  "type": "module",
+  "scripts": {
+    "install": "npm install",
+    "web": "http-server --cors=* -a 0.0.0.0 -c-1 -o -p 9000 -r true",
+	  "redirect": "http-server --cors=* -a 0.0.0.0 -c-1  -r true -o --proxy http://localhost:9000? ",
+    "https": "http-server --cors=* -a 0.0.0.0 -c-1 -S -C ./localhost.cert.pem -K ./key.pem -o -p 9000 -r true"
+  },
+  "dependencies": {
+    "http-server": "14.1.1"
+  }
+}

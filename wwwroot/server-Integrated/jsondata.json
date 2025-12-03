@@ -1,0 +1,146 @@
+﻿[
+  {
+    "title": "AnyDevOnline",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-compiler\\AnyDevOnline\\index.html"
+  },
+  {
+    "title": "CodeConvert",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-compiler\\CodeConvert\\index.html"
+  },
+  {
+    "title": "CsharpOnline",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-compiler\\CsharpOnline\\index.html"
+  },
+  {
+    "title": "SharpOnline",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-compiler\\SharpOnline\\index.html"
+  },
+  {
+    "title": "mermaid",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated\\docs-editor\\mermaid\\index.html"
+  },
+  {
+    "title": "monaco-csharp",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-editor\\monaco-csharp\\index.html"
+  },
+  {
+    "title": "monaco-graphql",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-editor\\monaco-graphql\\index.html"
+  },
+  {
+    "title": "monaco-sql",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-editor\\monaco-sql\\index.html"
+  },
+  {
+    "title": "monaco-web",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/code-editor\\monaco-web\\index.html"
+  },
+  {
+    "title": "OnlineDBDiagram",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/db-designer\\OnlineDBDiagram\\index.html"
+  },
+  {
+    "title": "sqldesigner",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/db-designer\\sqldesigner\\index.html"
+  },
+  {
+    "title": "lexical",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/docs-editor\\lexical\\index.html"
+  },
+  {
+    "title": "MdeDitGraph",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/docs-editor\\MdeDitGraph\\index.html"
+  },
+  {
+    "title": "MdUni",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/docs-editor\\MdUni\\index.html"
+  },
+  {
+    "title": "FroalaEditor",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/html-editor\\FroalaEditor\\index.html"
+  },
+  {
+    "title": "HtmlTinyMce",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/html-editor\\HtmlTinyMce\\index.html"
+  },
+  {
+    "title": "SunEditor",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/html-editor\\SunEditor\\index.html"
+  },
+  {
+    "title": "online-develop",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/online-develop\\index.html"
+  },
+  {
+    "title": "Presentation",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/presentation-designer\\Presentation\\index.html"
+  },
+  {
+    "title": "PlaygroundStudio",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/webapp-studio\\PlaygroundStudio\\index.html"
+  },
+  {
+    "title": "StaticWebStudio",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/webapp-studio\\StaticWebStudio\\index.html"
+  },
+  {
+    "title": "UniAppCreator",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/webapp-studio\\UniAppCreator\\index.html"
+  },
+  {
+    "title": "EditorJS",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/webflow-editor/EditorJS\\index.html"
+  },
+  {
+    "title": "HtmlFlow",
+    "folder": false,
+    "checkbox": false,
+    "key": "\\server-Integrated/webflow-editor/HtmlFlow\\index.html"
+  }
+]

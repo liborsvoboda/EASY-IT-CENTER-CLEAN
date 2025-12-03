@@ -1,0 +1,81 @@
+{
+  "metadata": [
+    {
+	   "src": [
+        {
+          "files": [ 
+			"**/bin/Debug/net6.0/EasyITCenter.dll",
+			"**/bin/Debug/net6.0/DgmlSchemaApi.dll"
+		  ],
+		  "exclude": ["InfoWeb/**","**/obj/**","**/wwwroot/**","EASY-IT-CENTER-SYSTEM/**","EASY-TOOLS/**","EASY-ADDONS/**","**packages**"]
+        }
+      ],
+      "dest": "api",
+	  "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+	  "references": [
+		  "**/EasyITCenter.dll",
+		  "**/DgmlSchemaApi.dll",
+	  ]
+    },
+	{
+	   "src": [
+        {
+          "files": [ 
+			"**/bin/InfoWeb/**",
+		  ],
+		  "exclude": ["**/obj/**","**/wwwroot/**","**/EASY-IT-CENTER-SYSTEM/**","**/EASY-TOOLS/**","**/EASY-ADDONS/**","**/packages/**"]
+        }
+      ],
+      "dest": "api",
+    }
+  ],
+  "build": {
+	  "markdownEngineProperties": {
+      "markdigExtensions": [
+          "Abbreviations",
+          "Footnotes"
+      ]
+	},
+    "content": [
+      {
+        "files": [
+		  "**/*.swagger.json",
+          "**/*.{md,yml,json}"
+        ],
+		  "exclude": ["**/obj/**","**/wwwroot/**","**/EASY-IT-CENTER-SYSTEM/**","**/EASY-TOOLS/**","**/EASY-ADDONS/**","**/packages/**"]
+      }
+    ],
+    "resource": [
+      {
+        "files": "**/Images/**"
+      }
+    ],
+    "output": "InfoWeb",
+    "template": [
+      "default",
+	  //"statictoc",
+      //"modern"
+	  "singulinkfx"
+    ],
+    "globalMetadata": {
+      "_appName": "EasyITcenter InfoWeb",
+      //"_appTitle": "EasyITCenter InfoWeb",
+	  "_appFooter": "EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT",
+	  //"_appLogoPath": "EASY-DATA/Images/logo.png",
+	  "_enableNewTab": true,
+	  "_disableSideFilter": false,
+	   "_disableContribution": true,
+      "_disableBreadcrumb": false,
+      "_enableSearch": true,
+      "pdf": true
+    },
+	"rules": {
+		"InvalidHref": "info"
+	},
+    "postProcessors": [],
+    "disableGitFeatures": true,
+    "exportViewModel": false
+  }
+}

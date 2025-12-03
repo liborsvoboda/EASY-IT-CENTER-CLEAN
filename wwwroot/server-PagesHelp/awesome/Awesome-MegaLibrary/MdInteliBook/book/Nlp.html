@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nlp - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html" class="active"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="speech-and-natural-language-processing"><a class="header" href="#speech-and-natural-language-processing">Speech and Natural Language Processing</a></h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></a></p>
+<p>A curated list of speech and natural language processing resources.
+Other lists can be found in this <a href="https://github.com/bayandin/awesome-awesomeness">list</a>. If you want to contribute to this list (please do), send me a pull request.</p>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ul>
+<li><a href="#saas-apis">SaaS</a></li>
+<li>
+<pre><code>[NLP](#nlp-saas)
+</code></pre>
+</li>
+<li><a href="#finite-state-toolkits-and-regular-expressions">Finite State Toolkits and Regular Expressions</a></li>
+<li><a href="#language-modelling-toolkits">Language Modelling Toolkits</a></li>
+<li><a href="#speech-recognition">Speech Recognition</a></li>
+<li><a href="#signal-processing">Signal Processing</a></li>
+<li><a href="#text-to-speech">Text-to-Speech</a></li>
+<li><a href="#speech-data">Speech Data</a></li>
+<li><a href="#machine-translation">Machine Translation</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#other-tools">Other Tools</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+</ul>
+<h2 id="saas-apis"><a class="header" href="#saas-apis">SaaS Apis</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<h3 id="nlp-saas"><a class="header" href="#nlp-saas">NLP SaaS</a></h3>
+<ul>
+<li><a href="https://cloud.google.com/natural-language/">Google Cloud Natural Language API</a></li>
+<li><a href="https://www.ibm.com/watson/developercloud/alchemy-language.html">IBM Watson Alchemy Language</a></li>
+<li><a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api">Microsoft Cognitive Service</a></li>
+<li><a href="https://developer.aylien.com/text-api-demo">Aylien</a></li>
+<li><a href="https://www.indico.io">Indico</a></li>
+<li><a href="https://www.textrazor.com">TextRazor</a></li>
+<li><a href="https://www.meaningcloud.com">MeaningCloud</a></li>
+<li><a href="https://www.rosette.com">Rosette</a></li>
+</ul>
+<h2 id="finite-state-toolkits-and-regular-expressions"><a class="header" href="#finite-state-toolkits-and-regular-expressions">Finite State Toolkits and Regular Expressions</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/graehl/carmel">Carmel</a> Finite-state toolkit, EM and Bayesian (Gibbs sampling) training for FST and context-free derivation forests/</li>
+<li><a href="http://openfst.org/twiki/pub/Contrib/FstContrib/categorial-1.3.3.tar.gz">Categorial semiring</a> Categorial semiring as described in <a href="http://www.mitpressjournals.org/doi/pdf/10.1162/COLI_a_00198">Sproat et al. 2014</a></li>
+<li><a href="http://www.brics.dk/automaton/">dk.brics.automaton</a> Java toolkit for FSAs and regular expression.</li>
+<li><a href="https://github.com/moodmosaic/Fare">Fare</a> Fare is a finite state and regular expression libary for the .NET framework written in C#. am is a JavaScript library for working with automata and formal grammars for regular and context-free languages</li>
+<li><a href="https://github.com/mhulden/foma">Foma</a> Finite-state compiler and C library</li>
+<li><a href="http://tagh.de/tom/wp-content/uploads/fsm-12.6.2012.zip">fsm2.0</a> Thomas Hanneforths fsm 2.0 library written C++ has a few nice operations such as three-way composition</li>
+<li><a href="https://github.com/markusdr/fstrain">fstrain</a> A toolkit for training finite-state models</li>
+<li><a href="https://github.com/steveash/jopenfst">jopenfst</a> Java port of the C++ OpenFst library; originally forked from the CMU Sphinx project</li>
+<li><a href="https://github.com/krbeesley/kleene-lang">Kleene programming language</a> High level finite state programming language built on top of OpenFst.</li>
+<li><a href="http://people.csail.mit.edu/ilh/fst/">MIT FST Toolkit</a> WFST toolkit no maintained anymore but feature a few commands not found in other toolkits</li>
+<li><a href="https://github.com/ICML14MoMCompare/MoMs-for-StochasticLanguages">MoMs-for-StochasticLanguages</a> Spectral and other training algorithms for WFSAs.</li>
+<li><a href="https://github.com/kho/openfst">n Shortest Path for PDT</a> n Shortest Path for PDT</li>
+<li><a href="https://github.com/izuzak/noam">Noam</a> &quot;Noam is a JavaScript library for working with automata and formal grammars for regular and context-free languages&quot;. Also has pretty cool examples using</li>
+<li><a href="https://github.com/mdaines/viz.js/">viz.js</a></li>
+<li><a href="http://openfst.org">OpenFst</a> OpenFst is a library for constructing, combining, optimizing, and searching weighted finite-state transducers (FSTs).</li>
+<li><a href="https://github.com/benob/openfst-utils">openfst-utils</a> Nice set of utilities for OpenFst includes implementation of Categorial semirings.openfst-utils.</li>
+<li><a href="https://github.com/benob/openlat">openlat</a> Toolkit for manipulating word lattice built on top of OpenFst. Includes support for reading and writing HTK compatible lattices.</li>
+<li><a href="https://github.com/vchahun/pyfst">PyFst</a> Python interface to OpenFst</li>
+<li><a href="http://www.ims.uni-stuttgart.de/tcl/SOFTWARE/SFST.html">SFST - Stuttgart Finite State Transducer Tools</a> &quot;SFST is a toolbox for the implementation of morphological analysers and other tools which are based on finite state transducer technology.&quot;</li>
+<li><a href="https://code.google.com/p/treba/">Treba</a> &quot;Treba is a basic command-line tool for training, decoding, and calculating with weighted (probabilistic) finite state automata (PFSA) and Hidden Markov Models (HMMs).&quot;</li>
+</ul>
+<p>Many of the tools in the machine translation section also implement
+interesting graph and semiring operations.</p>
+<h2 id="language-modelling-toolkits"><a class="header" href="#language-modelling-toolkits">Language Modelling Toolkits</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="http://chien.cm.nctu.edu.tw/bayesian-recurrent-neural-network-for-language-modeling/">Bayesian Recurrent Neural Network for Language Modeling</a> This is a C/C++ implementation for Bayesian recurrent neural network for language modeling (BRNNLM)</li>
+<li><a href="http://code.google.com/p/berkeleylm/">Berkeley LM</a></li>
+<li><a href="https://github.com/jhclark/bigfatlm">Bigfatlm</a> Provides Hadoop training of Kneser-ney language models, written in Java.</li>
+<li><a href="http://www-lium.univ-lemans.fr/cslm/">CSLM</a> &quot;Continuous Space Language Model toolkit. CSLM toolkit is open-source software which implements the so-called continuous space language model.</li>
+<li><a href="https://github.com/jnory/DALM">DALM</a> Double array language model.</li>
+<li><a href="http://kheafield.com/code/kenlm/">KenLM</a> Kenneth Heafield's language model toolkit, uses a very fast and low memory representation.</li>
+<li><a href="http://chasen.org/~daiti-m/dist/lwlm/">lwlm</a> lwlm is an exact, full Bayesian implementation of the Latent Words Language Model (Deschacht and Moens, 2009).</li>
+<li><a href="http://homepages.inf.ed.ac.uk/lzhang10/maxent.html">Maximum Entropy Modeling</a> Le Zhang has a comprehensive set of links related MaxEnt models.</li>
+<li><a href="http://www.phon.ioc.ee/dokuwiki/doku.php?id=people:tanel:srilm-me.en">Maximum entropy language models: SRILM extension</a> &quot;This patch adds the functionality to train and apply maximum entropy (MaxEnt) language models to the SRILM toolkit. Currently, only N-gram features are supported&quot;</li>
+<li><a href="https://code.google.com/p/mitlm/">mitlm</a> My personal favourite LM toolkit, super fast and seems to get slightly higher accuracy.</li>
+<li><a href="http://research.microsoft.com/en-us/downloads/78e26f9c-fc9a-44bb-80a7-69324c62df8c/default.aspx">MSRLM</a> &quot;This scalable language-model tool is used to build language models from large amounts of data. It supports modified absolute discounting and Kneser-Ney smoothing.&quot;</li>
+<li><a href="http://opengrm.org">OpenGrm</a> Language modelling toolkit for use with OpenFst.</li>
+<li><a href="https://github.com/redpony/cpyp">cpyp</a> C++ library for modeling with Pitman-Yor processes</li>
+<li><a href="http://sourceforge.net/projects/randlm/">RandLM</a> Bloom filter based random language models</li>
+<li><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/">RNNLM</a> Recurrent neural network language model toolkit.</li>
+<li><a href="http://code.google.com/p/refr">Refr</a> Re-ranking framework from the Johns-Hopkins workshop on confusion language modelling.</li>
+<li><a href="http://www-i6.informatik.rwth-aachen.de/web/Software/rwthlm.php">rwthlm</a> A toolkit for training neural network language models (feedforward, recurrent, and long short-term memory neural networks). The software was written by Martin Sundermeyer.</li>
+<li><a href="http://www.speech.sri.com/projects/%20srilm/">SRILM</a> Very popular toolkit, source code avaliable but only non-free for commerical use.</li>
+</ul>
+<h2 id="speech-recognition"><a class="header" href="#speech-recognition">Speech Recognition</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/aalto-speech">AaltoASR</a> Aalto Automatic Speech Recognition tools</li>
+<li><a href="https://github.com/usc-sail/barista">Barista</a> Barista is an open-source framework for concurrent speech processing.</li>
+<li><a href="http://www.bavieca.org/index.html">Bavieca</a> New open source toolkit featuring static and dynamic decoders.</li>
+<li><a href="https://github.com/alumae/kaldi-nnet-dur-model">kaldi-nnet-dur-model</a> Neural network phone duration model on top of the Kaldi speech recognition framework, <a href="https://phon.ioc.ee/dokuwiki/lib/exe/fetch.php?media=people:tanel:icassp2014-durmodel.pdf">(Interspeech paper)</a></li>
+<li><a href="http://cmusphinx.sourceforge.net/">CMU Sphinx</a> Open Source Toolkit For Speech Recognition Project by Carnegie Mellon University</li>
+<li><a href="http://htk.eng.cam.ac.uk/">HTK</a> &quot;The Hidden Markov Model Toolkit (HTK) is a portable toolkit for building and manipulating hidden Markov models.&quot;</li>
+<li><a href="https://github.com/idiap/juicer">Juicer</a> Juicer is a Weighted Finite State Transducer (WFST) based decoder for Automatic Speech Recognition (ASR).</li>
+<li><a href="http://julius.sourceforge.jp/en_index.php">Julius</a> &quot;Julius is a high-performance, two-pass large vocabulary continuous speech recognition (LVCSR) decoder software for speech-related researchers and developers.&quot;</li>
+<li><a href="http://kaldi.sourceforge.net/">Kaldi</a> Modern open source toolkit lead by Dan Povey featuring many state-of-the-art techniques.</li>
+<li><a href="http://opendcd.org/">OpenDcd</a> An Open Source WFST based Speech Recognition Decoder.</li>
+<li><a href="https://code.google.com/p/phonetisaurus/">Phonetisaurus</a> Josef Novak's super fast WFST based Phoneticizer, site also has some really nice tutorials slides.</li>
+<li><a href="https://github.com/nassosoassos/sail_align">Sail Align</a> SailAlign is an open-source software toolkit for robust long speech-text alignment implementing an adaptive, iterative speech recognition and text alignment scheme that allows for the processing of very long (and possibly noisy) audio and is robust to transcription errors. It is mainly written as a perl library but its functionality also depends...</li>
+<li><a href="http://research.microsoft.com/en-us/projects/scarf/">SCARF: A Segmental CRF Toolkit for Speech Recognition</a> &quot;SCARF is a toolkit for doing speech recognition with segmental conditional random fields.&quot;</li>
+<li><a href="https://code.google.com/p/trainc/">trainc</a> David Rybach and Michael Riley's tool for direct construction of context-dependency transducers (Interspeech best paper).</li>
+<li><a href="http://www-i6.informatik.rwth-aachen.de/rwth-asr/">RASR</a> RWTH ASR -The RWTH Aachen University Speech Recognition System</li>
+</ul>
+<h2 id="signal-processing"><a class="header" href="#signal-processing">Signal Processing</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="http://isse.sourceforge.net/">An Interactive Source Separation Editor</a> &quot;ISSE is an open-source, freely available, cross-platform audio editing tool that allows a user to perform source separation by painting on time-frequency visualisations of sound.&quot;</li>
+<li><a href="https://github.com/idiap/bob">Bob</a> Bob is a free signal-processing and machine learning toolbox originally developed by the Biometrics group at Idiap Research Institute, in Switzerland.</li>
+<li><a href="http://www.ee.columbia.edu/~dpwe/resources/matlab/">Matlab Audio Processing Examples</a></li>
+<li><a href="http://labrosa.ee.columbia.edu/projects/SAcC/">SAcC - Subband Autocorrelation Classification Pitch Tracker</a> &quot;SAcC is a (compiled) Matlab script that performs noise- robust pitch tracking by classifying the autocorrelations of a set of subbands using an MLP neural network.&quot;</li>
+</ul>
+<h2 id="text-to-speech"><a class="header" href="#text-to-speech">Text-to-Speech</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="http://hts.sp.nitech.ac.jp/">HTS</a> HMM-based speech synthesis</li>
+<li><a href="https://github.com/wilpert/RusPhonetizer">RusPhonetizer</a> Grammar rules and dictionaries for the phonetic transcription of Russian sentences</li>
+</ul>
+<h2 id="speech-data"><a class="header" href="#speech-data">Speech Data</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/cmusphinx/cmudict">cmudict</a> CMUdict (the Carnegie Mellon Pronouncing Dictionary) is a free pronouncing dictionary of English.</li>
+<li><a href="http://www.openslr.org/12/">LibriSpeech ASR corpus</a> LibriSpeech is a corpus of approximately 1000 hours of 16kHz read English speech, prepared by Vassil Panayotov with the assistance of Daniel Povey. The data is derived from read audiobooks from the LibriVox project, and has been carefully segmented and aligned.</li>
+<li><a href="http://www-lium.univ-lemans.fr/en/content/ted-lium-corpus">TED-LIUM Corpus</a> The TED-LIUM corpus was made from audio talks and their transcriptions available on the TED website.</li>
+</ul>
+<h2 id="machine-translation"><a class="header" href="#machine-translation">Machine Translation</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://code.google.com/p/berkeleyaligner/">Berkeley Aligner</a> &quot;...a word alignment software package that implements recent innovations in unsupervised word alignment.&quot;</li>
+<li><a href="https://github.com/redpony/cdec">cdec</a> &quot;Decoder, aligner, and model optimizer for statistical machine translation and other structured prediction models based on (mostly) context-free formalisms&quot;</li>
+<li><a href="http://www-i6.informatik.rwth-aachen.de/jane/">Jane</a> &quot;Jane is RWTH's open source statistical machine translation toolkit. Jane supports state-of-the-art techniques for phrase-based and hierarchical phrase-based machine translation.&quot;</li>
+<li><a href="http://joshua-decoder.org/">Joshua</a> Hierarchical and syntax based machine translation decoder written in Java.</li>
+<li><a href="http://www.statmt.org/moses/">Moses</a> Standard open source machine translation toolkit.</li>
+<li><a href="https://github.com/ldmt-muri/alignment-with-openfst">alignment-with-openfst</a></li>
+<li><a href="http://cs.jhu.edu/~ozaidan/zmert/">zmert</a> Nice Java Mert implementation by <a href="http://www.cs.jhu.edu/~ozaidan/">Omar F. Zaidan</a></li>
+</ul>
+<h2 id="machine-learning"><a class="header" href="#machine-learning">Machine Learning</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/BIDData">BIDData</a> BIDMat is a matrix library intended to support large-scale exploratory data analysis. Its sister library BIDMach implements the machine learning layer.</li>
+<li><a href="http://libfm.org/">libFM: Factorization Machine Library</a></li>
+<li><a href="https://code.google.com/p/sofia-ml/">sofia-ml</a> Fast incremental learning algorithms for classification, regression, ranking from Google.</li>
+<li><a href="https://github.com/JasperSnoek/spearmint">Spearmint</a> Spearmint is a package to perform Bayesian optimization according to the algorithms outlined in the paper: Practical Bayesian Optimization of Machine Learning Algorithms Jasper Snoek, Hugo Larochelle and Ryan P. Adams Advances in Neural Information Processing Systems, 2012</li>
+</ul>
+<h2 id="deep-learning"><a class="header" href="#deep-learning">Deep Learning</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/soumith/convnet-benchmarks">Benchmarks</a> - Comparison of different convolution network implementations.</li>
+<li><a href="http://arxiv.org/pdf/1409.3215v1.pdf">Cafee</a> - Really active deep learning toolkit with support for cuDNN and lots of other backends.</li>
+<li><a href="https://developer.nvidia.com/cudnn">cuDNN</a> - Deep neural network from Nvidia with paper <a href="http://arxiv.org/pdf/1410.0759.pdf">here</a>. <a href="https://github.com/soumith/cudnn.torch">Torch 7 has support for cuDnn</a> and <a href="https://github.com/hannes-brt/cudnn-python-wrappers">here</a> are some Python wrappers.</li>
+<li><a href="http://sourceforge.net/projects/currennt/">CURRENNT</a> - Munich Open-Source CUDA RecurREnt Neural Network Toolkit described in this <a href="http://www.mmk.ei.tum.de/publ/pdf/14/14wen7.pdf">paper</a></li>
+<li><a href="http://radimrehurek.com/gensim/index.html">gensim</a> - Python topic modeling toolkit with word2vec implementation. Extremly easy to use and to install.</li>
+<li><a href="http://www.socher.org/index.php/Main/GloveGlobalVectorsForWordRepresentation">Glove</a> Global vectors for word representation.</li>
+<li><a href="https://github.com/lisa-groundhog/GroundHog">GroundHog</a> Neural network based machine translation toolkit.</li>
+<li><a href="https://github.com/dophist/kaldi-lstm">KALDI LSTM</a> C++ implementation of LSTM (Long Short Term Memory), in Kaldi's nnet1 framework. Used for automatic speech recognition, possibly language modeling etc.</li>
+<li><a href="https://github.com/pauldb89/OxLM">OxLM: Oxford Neural Language Modelling Toolkit</a> Neural network toolkit for machine translation described in the paper <a href="https://ufal.mff.cuni.cz/pbml/102/art-baltescu-blunsom-hoang.pdf">here</a></li>
+<li><a href="http://nlg.isi.edu/software/nplm/">Neural Probabilistic Language Model Toolkit</a> &quot;NPLM is a toolkit for training and using feedforward neural language models (Bengio, 2003). It is fast even for large vocabularies (100k or more): a model can be trained on a billion words of data in about a week, and can be queried in about 40 μs, which is usable inside a decoder for machine translation.&quot;</li>
+<li><a href="https://github.com/glecorve/rnnlm2wfst">RNNLM2WFST</a> Tool to convert RNNLMs to WFSTs</li>
+<li><a href="http://viennacl.sourceforge.net">ViennaCL</a> ViennaCL is a free open-source linear algebra library for computations on many-core architectures (GPUs, MIC) and multi-core CPUs.</li>
+</ul>
+<h2 id="natural-language-processing"><a class="header" href="#natural-language-processing">Natural Language Processing</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/BLLIP/bllip-parser">BLLIP reranking parser</a> &quot;BLLIP Parser is a statistical natural language parser including a generative constituent parser (first-stage) and discriminative maximum entropy reranker (second-stage).&quot;</li>
+<li><a href="http://opennlp.apache.org/">OpenNLP</a> The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</li>
+<li><a href="https://github.com/TeamCohen/SEAL">SEAL</a> Set expander for any language described in this <a href="http://www.cs.cmu.edu/~wcohen/postscript/icdm-2007.pdf">paper</a></li>
+<li><a href="http://nlp.stanford.edu/software/corenlp.shtml">Stanford CoreNLP</a> &quot;Stanford CoreNLP provides a set of natural language analysis tools written in Java&quot;</li>
+<li><a href="https://github.com/meyersbs/SPLAT">SPLAT</a> &quot;SPLAT, the Speech Processing &amp; Linguistic Analysis Tool is an open source Python3.4 library and command line tool designed to be intuitive, efficient, and fast. Given a text, SPLAT can calculate a variety of metrics to help you with your research!&quot;</li>
+</ul>
+<h2 id="applications"><a class="header" href="#applications">Applications</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/UFAL-DSG/cloud-asr">Cloud ASR using PyKaldi</a> &quot;CloudASR is a software platform and a public ASR webservice.&quot;</li>
+</ul>
+<h2 id="other-tools"><a class="header" href="#other-tools">Other Tools</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="https://github.com/mprentice/GraphViz-sty">GraphViz.sty</a> Really handy tool adding dot languge directly to a LaTex document, useful for tweaking the small colorized WFST figure in papers and presentations.</li>
+</ul>
+<h2 id="blogs"><a class="header" href="#blogs">Blogs</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="http://williamhartmann.wordpress.com/">Between One and Zero</a> by William Hartmann</li>
+<li><a href="http://cmusphinx.sourceforge.net/">cmusphinx</a> CMU Sphinx related blog</li>
+<li><a href="http://languagelog.ldc.upenn.edu/nll/">Language Log</a></li>
+<li><a href="http://lingpipe-blog.com/">LingPipe Blog</a> Natural Language Processing and Text Analytics</li>
+<li><a href="http://nlpers.blogspot.ch/">Natural Language Processing Blog</a> by Hal Daumé III</li>
+<li><a href="http://spokenlanguageprocessing.blogspot.jp/">Spoken Language Processing</a> &quot;Some thoughts on Spoken Language Processing, with tangents on Natural Language Processing, Machine Learning, and Signal Processing thrown in for good measure.&quot;</li>
+</ul>
+<h2 id="books"><a class="header" href="#books">Books</a></h2>
+<p><strong><a href="#"><code>^        back to top        ^</code></a></strong></p>
+<ul>
+<li><a href="http://research.microsoft.com/pubs/209355/DeepLearning-NowPublishing-Vol7-SIG-039.pdf">DEEP LEARNING: Methods and Applications</a> By Li Deng and Dong Yu</li>
+<li><a href="http://www.cs.cornell.edu/jeh/NOSOLUTIONS90413.pdf">Foundations of Data Science</a> Draft by John Hopcroft and Ravindran Kannan</li>
+<li><a href="http://stanford.edu/class/ee103/mma.pdf">Introduction to Matrix Methods and Applications</a> (Working Title) S. Boyd and L. Vandenberghe</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Newsletters.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="NodeJs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Newsletters.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="NodeJs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

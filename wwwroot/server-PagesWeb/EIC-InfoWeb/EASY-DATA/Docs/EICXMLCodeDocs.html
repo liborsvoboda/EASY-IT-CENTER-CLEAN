@@ -1,0 +1,3123 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Golden </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Golden ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><a name='assembly'></a></p>
+<h1 id="golden">Golden</h1>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#T-Golden-ServerCoreDefinition-AuthenticateResponse" title="Golden.ServerCoreDefinition.AuthenticateResponse">AuthenticateResponse</a>
+<ul>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Expiration" title="Golden.ServerCoreDefinition.AuthenticateResponse.Expiration">Expiration</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Id" title="Golden.ServerCoreDefinition.AuthenticateResponse.Id">Id</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Name" title="Golden.ServerCoreDefinition.AuthenticateResponse.Name">Name</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Role" title="Golden.ServerCoreDefinition.AuthenticateResponse.Role">Role</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Surname" title="Golden.ServerCoreDefinition.AuthenticateResponse.Surname">Surname</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-AuthenticateResponse-Token" title="Golden.ServerCoreDefinition.AuthenticateResponse.Token">Token</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-BackendServer" title="Golden.BackendServer">BackendServer</a>
+<ul>
+<li><a href="#F-Golden-BackendServer-ServerConfigSettings" title="Golden.BackendServer.ServerConfigSettings">ServerConfigSettings</a></li>
+<li><a href="#F-Golden-BackendServer-ServerRuntimeData" title="Golden.BackendServer.ServerRuntimeData">ServerRuntimeData</a></li>
+<li><a href="#M-Golden-BackendServer-BuildWebHost-System-String%5B%5D-" title="Golden.BackendServer.BuildWebHost(System.String[])">BuildWebHost(args)</a></li>
+<li><a href="#M-Golden-BackendServer-Main-System-String%5B%5D-" title="Golden.BackendServer.Main(System.String[])">Main(args)</a></li>
+<li><a href="#M-Golden-BackendServer-RestartServer" title="Golden.BackendServer.RestartServer">RestartServer()</a></li>
+<li><a href="#M-Golden-BackendServer-ServerStartupDbDataLoading" title="Golden.BackendServer.ServerStartupDbDataLoading">ServerStartupDbDataLoading()</a></li>
+<li><a href="#M-Golden-BackendServer-StartServer" title="Golden.BackendServer.StartServer">StartServer()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDefinition-CommunicationController" title="Golden.ServerCoreDefinition.CommunicationController">CommunicationController</a>
+<ul>
+<li><a href="#P-Golden-ServerCoreDefinition-CommunicationController-HttpContext" title="Golden.ServerCoreDefinition.CommunicationController.HttpContext">HttpContext</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-CommunicationController-CheckAdmin" title="Golden.ServerCoreDefinition.CommunicationController.CheckAdmin">CheckAdmin()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser">CustomFtpUser</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-#ctor-System-String-" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.#ctor(System.String)">#ctor(name)</a></li>
+<li><a href="#P-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-Name" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.Name">Name</a></li>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-IsInGroup-System-String-" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser.IsInGroup(System.String)">IsInGroup()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-CustomString" title="Golden.ServerCoreDBSettings.CustomString">CustomString</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-DBResult" title="Golden.ServerCoreDefinition.DBResult">DBResult</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-DBResultMessage" title="Golden.ServerCoreDefinition.DBResultMessage">DBResultMessage</a>
+<ul>
+<li><a href="#P-Golden-ServerCoreDefinition-DBResultMessage-ErrorMessage" title="Golden.ServerCoreDefinition.DBResultMessage.ErrorMessage">ErrorMessage</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-DBResultMessage-InsertedId" title="Golden.ServerCoreDefinition.DBResultMessage.InsertedId">InsertedId</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-DBResultMessage-RecordCount" title="Golden.ServerCoreDefinition.DBResultMessage.RecordCount">RecordCount</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-DBResultMessage-Status" title="Golden.ServerCoreDefinition.DBResultMessage.Status">Status</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreWebPages-DBWebApiResponses" title="Golden.ServerCoreWebPages.DBWebApiResponses">DBWebApiResponses</a></li>
+<li><a href="#T-Golden-ServerCoreDBSettings-DatabaseContextExtensions" title="Golden.ServerCoreDBSettings.DatabaseContextExtensions">DatabaseContextExtensions</a></li>
+<li><a href="#T-Golden-ServerCoreWebPages-EmailVerification" title="Golden.ServerCoreWebPages.EmailVerification">EmailVerification</a></li>
+<li><a href="#T-Golden-Controllers-ExpertDocApi" title="Golden.Controllers.ExpertDocApi">ExpertDocApi</a>
+<ul>
+<li><a href="#M-Golden-Controllers-ExpertDocApi-GetDocumentationGroupedList-System-Int32-" title="Golden.Controllers.ExpertDocApi.GetDocumentationGroupedList(System.Int32)">GetDocumentationGroupedList(id)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-GoldenContext" title="Golden.ServerCoreDBSettings.GoldenContext">GoldenContext</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-GoldenContext-GetApiUserId-Microsoft-AspNetCore-Http-HttpContext-" title="Golden.ServerCoreDBSettings.GoldenContext.GetApiUserId(Microsoft.AspNetCore.Http.HttpContext)">GetApiUserId(httpContext)</a></li>
+<li><a href="#M-Golden-ServerCoreDBSettings-GoldenContext-IsAdmin-Microsoft-AspNetCore-Http-HttpContext-" title="Golden.ServerCoreDBSettings.GoldenContext.IsAdmin(Microsoft.AspNetCore.Http.HttpContext)">IsAdmin(httpContext)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ControllersExtensions-GoldenSystemAuthenticationApi" title="Golden.ControllersExtensions.GoldenSystemAuthenticationApi">GoldenSystemAuthenticationApi</a>
+<ul>
+<li><a href="#M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-Authenticate-System-String,System-String-" title="Golden.ControllersExtensions.GoldenSystemAuthenticationApi.Authenticate(System.String,System.String)">Authenticate(username,password)</a></li>
+<li><a href="#M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-LifetimeValidator-System-Nullable%7BSystem-DateTime%7D,System-Nullable%7BSystem-DateTime%7D,Microsoft-IdentityModel-Tokens-SecurityToken,Microsoft-IdentityModel-Tokens-TokenValidationParameters-" title="Golden.ControllersExtensions.GoldenSystemAuthenticationApi.LifetimeValidator(System.Nullable{System.DateTime},System.Nullable{System.DateTime},Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters)">LifetimeValidator(notBefore,expires,token,params)</a></li>
+<li><a href="#M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-RefreshUserToken-System-String,Golden-ServerCoreDefinition-AuthenticateResponse-" title="Golden.ControllersExtensions.GoldenSystemAuthenticationApi.RefreshUserToken(System.String,Golden.ServerCoreDefinition.AuthenticateResponse)">RefreshUserToken(username,token)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ControllersExtensions-GoldenSystemBackendCheckApi" title="Golden.ControllersExtensions.GoldenSystemBackendCheckApi">GoldenSystemBackendCheckApi</a>
+<ul>
+<li><a href="#M-Golden-ControllersExtensions-GoldenSystemBackendCheckApi-GetBackendCheckApi" title="Golden.ControllersExtensions.GoldenSystemBackendCheckApi.GetBackendCheckApi">GetBackendCheckApi()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreServers-HostedFtpServer" title="Golden.ServerCoreServers.HostedFtpServer">HostedFtpServer</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServer-#ctor-FubarDev-FtpServer-IFtpServerHost-" title="Golden.ServerCoreServers.HostedFtpServer.#ctor(FubarDev.FtpServer.IFtpServerHost)">#ctor(ftpServerHost)</a></li>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServer-StartAsync-System-Threading-CancellationToken-" title="Golden.ServerCoreServers.HostedFtpServer.StartAsync(System.Threading.CancellationToken)">StartAsync()</a></li>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServer-StopAsync-System-Threading-CancellationToken-" title="Golden.ServerCoreServers.HostedFtpServer.StopAsync(System.Threading.CancellationToken)">StopAsync()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreServers-HostedFtpServerMembershipProvider" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider">HostedFtpServerMembershipProvider</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-ValidateUser-System-String,System-String-" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.ValidateUser(System.String,System.String)">ValidateUser(username,password)</a></li>
+<li><a href="#M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-ValidateUserAsync-System-String,System-String-" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.ValidateUserAsync(System.String,System.String)">ValidateUserAsync(username,password)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-IdFilter" title="Golden.ServerCoreDBSettings.IdFilter">IdFilter</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-MailRequest" title="Golden.ServerCoreDefinition.MailRequest">MailRequest</a></li>
+<li><a href="#T-Golden-ServerCoreDBSettings-NameFilter" title="Golden.ServerCoreDBSettings.NameFilter">NameFilter</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreHelpers-OperatingSystem" title="Golden.ServerCoreDefinition.ServerCoreHelpers.OperatingSystem">OperatingSystem</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ProcessClass" title="Golden.ServerCoreDefinition.ProcessClass">ProcessClass</a></li>
+<li><a href="#T-Golden-ServerCoreDBSettings-RobotsController" title="Golden.ServerCoreDBSettings.RobotsController">RobotsController</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerConfigSettings" title="Golden.ServerCoreDefinition.ServerConfigSettings">ServerConfigSettings</a>
+<ul>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigApiTokenTimeoutMin" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigApiTokenTimeoutMin">ConfigApiTokenTimeoutMin</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificateDomain" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigCertificateDomain">ConfigCertificateDomain</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificatePassword" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigCertificatePassword">ConfigCertificatePassword</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificatePath" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigCertificatePath">ConfigCertificatePath</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigJwtLocalKey" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigJwtLocalKey">ConfigJwtLocalKey</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigMaxWebSocketBufferSizeKb" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigMaxWebSocketBufferSizeKb">ConfigMaxWebSocketBufferSizeKb</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerGetLetsEncrypt" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigServerGetLetsEncrypt">ConfigServerGetLetsEncrypt</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerStartupOnHttps" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigServerStartupOnHttps">ConfigServerStartupOnHttps</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerStartupPort" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigServerStartupPort">ConfigServerStartupPort</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigWebSocketTimeoutMin" title="Golden.ServerCoreDefinition.ServerConfigSettings.ConfigWebSocketTimeoutMin">ConfigWebSocketTimeoutMin</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseConnectionString" title="Golden.ServerCoreDefinition.ServerConfigSettings.DatabaseConnectionString">DatabaseConnectionString</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseInternalCacheTimeoutMin" title="Golden.ServerCoreDefinition.ServerConfigSettings.DatabaseInternalCacheTimeoutMin">DatabaseInternalCacheTimeoutMin</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseInternalCachingEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.DatabaseInternalCachingEnabled">DatabaseInternalCachingEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPLoginPassword" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerSMTPLoginPassword">EmailerSMTPLoginPassword</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPLoginUsername" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerSMTPLoginUsername">EmailerSMTPLoginUsername</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPPort" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerSMTPPort">EmailerSMTPPort</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPServerAddress" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerSMTPServerAddress">EmailerSMTPServerAddress</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPSslIsEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerSMTPSslIsEnabled">EmailerSMTPSslIsEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerServiceEmailAddress" title="Golden.ServerCoreDefinition.ServerConfigSettings.EmailerServiceEmailAddress">EmailerServiceEmailAddress</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleDataManagerEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleDataManagerEnabled">ModuleDataManagerEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleDbDiagramGeneratorEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleDbDiagramGeneratorEnabled">ModuleDbDiagramGeneratorEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleHealthServiceEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleHealthServiceEnabled">ModuleHealthServiceEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleHealthServiceRefreshIntervalSec" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleHealthServiceRefreshIntervalSec">ModuleHealthServiceRefreshIntervalSec</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleMdDocumentationEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleMdDocumentationEnabled">ModuleMdDocumentationEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleSwaggerApiDocEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ModuleSwaggerApiDocEnabled">ModuleSwaggerApiDocEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerEnableWebSocketMonitor" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerEnableWebSocketMonitor">ServerEnableWebSocketMonitor</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerFtpEngineEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerFtpEngineEnabled">ServerFtpEngineEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerFtpSecurityEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerFtpSecurityEnabled">ServerFtpSecurityEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerJsWebPagesEngineEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerJsWebPagesEngineEnabled">ServerJsWebPagesEngineEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerJsWebStartupCommand" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerJsWebStartupCommand">ServerJsWebStartupCommand</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerMvcWebPagesEngineEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerMvcWebPagesEngineEnabled">ServerMvcWebPagesEngineEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerRazorWebPagesEngineEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerRazorWebPagesEngineEnabled">ServerRazorWebPagesEngineEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerTimeTokenValidationEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerTimeTokenValidationEnabled">ServerTimeTokenValidationEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerWebBrowserEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerWebBrowserEnabled">ServerWebBrowserEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerWebSocketEngineEnabled" title="Golden.ServerCoreDefinition.ServerConfigSettings.ServerWebSocketEngineEnabled">ServerWebSocketEngineEnabled</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialCoreCheckerEmailSenderActive" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialCoreCheckerEmailSenderActive">SpecialCoreCheckerEmailSenderActive</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialEnableMassEmail" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialEnableMassEmail">SpecialEnableMassEmail</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialServerLanguage" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialServerLanguage">SpecialServerLanguage</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialServerServiceName" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialServerServiceName">SpecialServerServiceName</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialUseDbLocalAutoupdatedDials" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialUseDbLocalAutoupdatedDials">SpecialUseDbLocalAutoupdatedDials</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialUserWebRootPath" title="Golden.ServerCoreDefinition.ServerConfigSettings.SpecialUserWebRootPath">SpecialUserWebRootPath</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreConfiguration-ServerConfigurationServices" title="Golden.ServerCoreConfiguration.ServerConfigurationServices">ServerConfigurationServices</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureAuthentication-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureAuthentication(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureControllers-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureControllers(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureControllers(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureCookie-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureCookie(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureCookie(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureDatabaseContext-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureDatabaseContext(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureDatabaseContext(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureFTPServer-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureFTPServer(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureFTPServer(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureLetsEncrypt-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureLetsEncrypt(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureLetsEncrypt(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureLogging-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureLogging(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureLogging(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureScopes-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureScopes(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureScopes(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureServerWebPages-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureServerWebPages(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureServerWebPages(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureSingletons-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureSingletons(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureSingletons(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureThirdPartyApi-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureThirdPartyApi(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureThirdPartyApi(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureWebSocketLoggerMonitor-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerConfigurationServices.ConfigureWebSocketLoggerMonitor(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureWebSocketLoggerMonitor(services)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreDbOperations" title="Golden.ServerCoreDefinition.ServerCoreDbOperations">ServerCoreDbOperations</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslate-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.DBTranslate(System.String,System.String)">DBTranslate(word,language)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslateOffline-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.DBTranslateOffline(System.String,System.String)">DBTranslateOffline(word,language)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslateOnline-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.DBTranslateOnline(System.String,System.String)">DBTranslateOnline(word,language)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-LoadStaticDbDials-System-Nullable%7BGolden-ServerCoreDefinition-ServerLocalDbDials%7D-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.LoadStaticDbDials(System.Nullable{Golden.ServerCoreDefinition.ServerLocalDbDials})">LoadStaticDbDials(onlyThis)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-WriteVisit-System-String,System-Int32,System-String-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.WriteVisit(System.String,System.Int32,System.String)">WriteVisit(ipAddress,userId,userName)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreDbOperations-WriteWebVisit-System-String-" title="Golden.ServerCoreDefinition.ServerCoreDbOperations.WriteWebVisit(System.String)">WriteWebVisit(ipAddress,userId,userName)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerCoreExportApi" title="Golden.ServerCoreDBSettings.ServerCoreExportApi">ServerCoreExportApi</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreFunctions" title="Golden.ServerCoreDefinition.ServerCoreFunctions">ServerCoreFunctions</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-ByteArrayToFile-System-String,System-Byte%5B%5D-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.ByteArrayToFile(System.String,System.Byte[])">ByteArrayToFile(fileName,byteArray)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CheckDirectory-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CheckDirectory(System.String)">CheckDirectory(directory)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CheckFile-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CheckFile(System.String)">CheckFile(file)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-ClearFolder-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.ClearFolder(System.String)">ClearFolder(FolderName)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CopyDirectory-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CopyDirectory(System.String,System.String)">CopyDirectory(directory)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CopyFile-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CopyFile(System.String,System.String)">CopyFile(from,to)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CreateFile-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CreateFile(System.String)">CreateFile(file)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-CreatePath-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.CreatePath(System.String)">CreatePath(path)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-FileDetectEncoding-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.FileDetectEncoding(System.String)">FileDetectEncoding(FileName)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-FirstCharToLowerCase-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.FirstCharToLowerCase(System.String)">FirstCharToLowerCase(str)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetByteArrayFrom64Encode-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.GetByteArrayFrom64Encode(System.String)">GetByteArrayFrom64Encode(strContent)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSelfSignedCertificate-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.GetSelfSignedCertificate(System.String)">GetSelfSignedCertificate(password)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSelfSignedCertificateFromFile-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.GetSelfSignedCertificateFromFile(System.String)">GetSelfSignedCertificateFromFile()</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSystemErrMessage-System-Exception,System-Int32-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.GetSystemErrMessage(System.Exception,System.Int32)">GetSystemErrMessage(exception,msgCount)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetUserApiErrMessage-System-Exception,System-Int32-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.GetUserApiErrMessage(System.Exception,System.Int32)">GetUserApiErrMessage(exception,msgCount)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-LoadSettings" title="Golden.ServerCoreDefinition.ServerCoreFunctions.LoadSettings">LoadSettings()</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-RandomString-System-Int32-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.RandomString(System.Int32)">RandomString(length)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-ReadFile-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.ReadFile(System.String)">ReadFile(fileName)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-RunProcess-Golden-ServerCoreDefinition-ProcessClass-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.RunProcess(Golden.ServerCoreDefinition.ProcessClass)">RunProcess(processDefinition)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-SendEmail-Golden-ServerCoreDefinition-MailRequest,System-Boolean-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.SendEmail(Golden.ServerCoreDefinition.MailRequest,System.Boolean)">SendEmail(mailRequest,sendImmediately)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-SendMassEmail-System-Collections-Generic-List%7BGolden-ServerCoreDefinition-MailRequest%7D-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.SendMassEmail(System.Collections.Generic.List{Golden.ServerCoreDefinition.MailRequest})">SendMassEmail(mailRequests)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-UnicodeToUTF8-System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.UnicodeToUTF8(System.String)">UnicodeToUTF8(strFrom)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreFunctions-WriteToFile-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreFunctions.WriteToFile(System.String,System.String)">WriteToFile(file,content)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreHelpers" title="Golden.ServerCoreDefinition.ServerCoreHelpers">ServerCoreHelpers</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-AddSocketConnectionToCentalList-System-Net-WebSockets-WebSocket,System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.AddSocketConnectionToCentalList(System.Net.WebSockets.WebSocket,System.String)">AddSocketConnectionToCentalList(newWebSocket,socketAPIPath)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-BindList%60%601-System-Data-DataTable-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.BindList``1(System.Data.DataTable)">BindList``1(dt)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-CheckTokenValidityFromString-System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.CheckTokenValidityFromString(System.String)">CheckTokenValidityFromString(tokenString)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-DisposeSocketConnectionsWithTimeOut" title="Golden.ServerCoreDefinition.ServerCoreHelpers.DisposeSocketConnectionsWithTimeOut">DisposeSocketConnectionsWithTimeOut()</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-GetValidationParameters" title="Golden.ServerCoreDefinition.ServerCoreHelpers.GetValidationParameters">GetValidationParameters()</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-IsValidEmail-System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.IsValidEmail(System.String)">IsValidEmail(email)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-ListenClientWebSocketMessages-System-Net-WebSockets-WebSocket,System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.ListenClientWebSocketMessages(System.Net.WebSockets.WebSocket,System.String)">ListenClientWebSocketMessages(webSocket,socketAPIPath)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-RemoveWhitespace-System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.RemoveWhitespace(System.String)">RemoveWhitespace(input)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-SendMessageAndUpdateWebSocketsInSpecificPath-System-String,System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.SendMessageAndUpdateWebSocketsInSpecificPath(System.String,System.String)">SendMessageAndUpdateWebSocketsInSpecificPath(socketAPIPath,message)</a></li>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-SendMessageToClientSocket-System-Net-WebSockets-WebSocket,System-String-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.SendMessageToClientSocket(System.Net.WebSockets.WebSocket,System.String)">SendMessageToClientSocket(webSocket,message)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerCoreLoggerWS" title="Golden.ServerCoreDBSettings.ServerCoreLoggerWS">ServerCoreLoggerWS</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-Echo-Microsoft-AspNetCore-Http-HttpContext,System-Net-WebSockets-WebSocket-" title="Golden.ServerCoreDBSettings.ServerCoreLoggerWS.Echo(Microsoft.AspNetCore.Http.HttpContext,System.Net.WebSockets.WebSocket)">Echo(context,webSocket)</a></li>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-Get" title="Golden.ServerCoreDBSettings.ServerCoreLoggerWS.Get">Get()</a></li>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-GetBySocketAPIPath-System-String-" title="Golden.ServerCoreDBSettings.ServerCoreLoggerWS.GetBySocketAPIPath(System.String)">GetBySocketAPIPath(id)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi" title="Golden.ServerCoreDBSettings.ServerCoreWebBuilderApi">ServerCoreWebBuilderApi</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi-GetWebBuilderCodePreview-System-Int32-" title="Golden.ServerCoreDBSettings.ServerCoreWebBuilderApi.GetWebBuilderCodePreview(System.Int32)">GetWebBuilderCodePreview()</a></li>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi-GetWebBuilderMenuPreview-System-Int32-" title="Golden.ServerCoreDBSettings.ServerCoreWebBuilderApi.GetWebBuilderMenuPreview(System.Int32)">GetWebBuilderMenuPreview(id)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerCoreWebUserApi" title="Golden.ServerCoreDBSettings.ServerCoreWebUserApi">ServerCoreWebUserApi</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerCoreWebUserApi-PostSendVerifyCode-Golden-ServerCoreWebPages-EmailVerification-" title="Golden.ServerCoreDBSettings.ServerCoreWebUserApi.PostSendVerifyCode(Golden.ServerCoreWebPages.EmailVerification)">PostSendVerifyCode(email)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi" title="Golden.ServerCoreDBSettings.ServerDbDgmlSchemaApi">ServerDbDgmlSchemaApi</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi-#ctor-Golden-ServerCoreDBSettings-GoldenContext-" title="Golden.ServerCoreDBSettings.ServerDbDgmlSchemaApi.#ctor(Golden.ServerCoreDBSettings.GoldenContext)">#ctor(context)</a></li>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi-Get" title="Golden.ServerCoreDBSettings.ServerDbDgmlSchemaApi.Get">Get()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-Controllers-ServerDocApi" title="Golden.Controllers.ServerDocApi">ServerDocApi</a>
+<ul>
+<li><a href="#F-Golden-Controllers-ServerDocApi-_hostingEnvironment" title="Golden.Controllers.ServerDocApi._hostingEnvironment">_hostingEnvironment</a></li>
+<li><a href="#M-Golden-Controllers-ServerDocApi-GenerateMdBook" title="Golden.Controllers.ServerDocApi.GenerateMdBook">GenerateMdBook()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerEmailerApi" title="Golden.ServerCoreDBSettings.ServerEmailerApi">ServerEmailerApi</a></li>
+<li><a href="#T-Golden-ServerCoreConfiguration-ServerEnablingServices" title="Golden.ServerCoreConfiguration.ServerEnablingServices">ServerEnablingServices</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableCors-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerEnablingServices.EnableCors(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableCors()</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableEndpoints-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerEnablingServices.EnableEndpoints(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableEndpoints()</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableLogging-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerEnablingServices.EnableLogging(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableLogging(app,loggerFactory)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableWebSocket-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerEnablingServices.EnableWebSocket(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableWebSocket(app)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerLocalDbDials" title="Golden.ServerCoreDefinition.ServerLocalDbDials">ServerLocalDbDials</a></li>
+<li><a href="#T-Golden-ServerCoreConfiguration-ServerModules" title="Golden.ServerCoreConfiguration.ServerModules">ServerModules</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModules-ConfigureCoreAdmin-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerModules.ConfigureCoreAdmin(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureCoreAdmin(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModules-ConfigureDocumentation-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerModules.ConfigureDocumentation(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureDocumentation(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModules-ConfigureHealthCheck-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerModules.ConfigureHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureHealthCheck(services)</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModules-ConfigureSwagger-Microsoft-Extensions-DependencyInjection-IServiceCollection@-" title="Golden.ServerCoreConfiguration.ServerModules.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection@)">ConfigureSwagger(services)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreConfiguration-ServerModulesEnabling" title="Golden.ServerCoreConfiguration.ServerModulesEnabling">ServerModulesEnabling</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableCoreAdmin-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerModulesEnabling.EnableCoreAdmin(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableCoreAdmin()</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableDocumentation-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerModulesEnabling.EnableDocumentation(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableDocumentation()</a></li>
+<li><a href="#M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableSwagger-Microsoft-AspNetCore-Builder-IApplicationBuilder@-" title="Golden.ServerCoreConfiguration.ServerModulesEnabling.EnableSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder@)">EnableSwagger()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerProviderHealthCheck" title="Golden.ServerCoreDefinition.ServerProviderHealthCheck">ServerProviderHealthCheck</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerProviderHealthCheck-Microsoft#Extensions#Diagnostics#HealthChecks#IHealthCheck#CheckHealthAsync-Microsoft-Extensions-Diagnostics-HealthChecks-HealthCheckContext,System-Threading-CancellationToken-" title="Golden.ServerCoreDefinition.ServerProviderHealthCheck.Microsoft#Extensions#Diagnostics#HealthChecks#IHealthCheck#CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">Microsoft#Extensions#Diagnostics#HealthChecks#IHealthCheck#CheckHealthAsync(context,cancellationToken)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerRestartApi" title="Golden.ServerCoreDBSettings.ServerRestartApi">ServerRestartApi</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerRuntimeData" title="Golden.ServerCoreDefinition.ServerRuntimeData">ServerRuntimeData</a>
+<ul>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-CentralWebSocketList" title="Golden.ServerCoreDefinition.ServerRuntimeData.CentralWebSocketList">CentralWebSocketList</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-LocalDBTableList" title="Golden.ServerCoreDefinition.ServerRuntimeData.LocalDBTableList">LocalDBTableList</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerArgs" title="Golden.ServerCoreDefinition.ServerRuntimeData.ServerArgs">ServerArgs</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerCancelToken" title="Golden.ServerCoreDefinition.ServerRuntimeData.ServerCancelToken">ServerCancelToken</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerCoreStatus" title="Golden.ServerCoreDefinition.ServerRuntimeData.ServerCoreStatus">ServerCoreStatus</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerFTPProvider" title="Golden.ServerCoreDefinition.ServerRuntimeData.ServerFTPProvider">ServerFTPProvider</a></li>
+<li><a href="#F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerRestartRequest" title="Golden.ServerCoreDefinition.ServerRuntimeData.ServerRestartRequest">ServerRestartRequest</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-ConfigFile" title="Golden.ServerCoreDefinition.ServerRuntimeData.ConfigFile">ConfigFile</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-DataPath" title="Golden.ServerCoreDefinition.ServerRuntimeData.DataPath">DataPath</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-DebugMode" title="Golden.ServerCoreDefinition.ServerRuntimeData.DebugMode">DebugMode</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-Setting_folder" title="Golden.ServerCoreDefinition.ServerRuntimeData.Setting_folder">Setting_folder</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-Startup_path" title="Golden.ServerCoreDefinition.ServerRuntimeData.Startup_path">Startup_path</a></li>
+<li><a href="#P-Golden-ServerCoreDefinition-ServerRuntimeData-UserPath" title="Golden.ServerCoreDefinition.ServerRuntimeData.UserPath">UserPath</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreDBSettings-ServerWebPagesConfigApi" title="Golden.ServerCoreDBSettings.ServerWebPagesConfigApi">ServerWebPagesConfigApi</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDBSettings-ServerWebPagesConfigApi-Index" title="Golden.ServerCoreDBSettings.ServerWebPagesConfigApi.Index">Index()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreWebPages-ServerWebPagesLogin" title="Golden.ServerCoreWebPages.ServerWebPagesLogin">ServerWebPagesLogin</a></li>
+<li><a href="#T-Golden-ServerCoreWebPages-ServerWebPagesToken" title="Golden.ServerCoreWebPages.ServerWebPagesToken">ServerWebPagesToken</a></li>
+<li><a href="#T-Golden-ServerCoreDBSettings-SetReportFilter" title="Golden.ServerCoreDBSettings.SetReportFilter">SetReportFilter</a></li>
+<li><a href="#T-Golden-ServerCoreDBSettings-SitemapController" title="Golden.ServerCoreDBSettings.SitemapController">SitemapController</a></li>
+<li><a href="#T-Golden-Startup" title="Golden.Startup">Startup</a>
+<ul>
+<li><a href="#M-Golden-Startup-Configure-Microsoft-AspNetCore-Builder-IApplicationBuilder,Microsoft-Extensions-Hosting-IHostApplicationLifetime-" title="Golden.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">Configure(app,serverLifetime)</a></li>
+<li><a href="#M-Golden-Startup-ConfigureServices-Microsoft-Extensions-DependencyInjection-IServiceCollection-" title="Golden.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">ConfigureServices(services)</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-Controllers-SystemDocApi" title="Golden.Controllers.SystemDocApi">SystemDocApi</a>
+<ul>
+<li><a href="#F-Golden-Controllers-SystemDocApi-_hostingEnvironment" title="Golden.Controllers.SystemDocApi._hostingEnvironment">_hostingEnvironment</a></li>
+<li><a href="#M-Golden-Controllers-SystemDocApi-GetMdDocumentPreview-System-Int32-" title="Golden.Controllers.SystemDocApi.GetMdDocumentPreview(System.Int32)">GetMdDocumentPreview()</a></li>
+<li><a href="#M-Golden-Controllers-SystemDocApi-GetMdLibraryPreview-System-Int32-" title="Golden.Controllers.SystemDocApi.GetMdLibraryPreview(System.Int32)">GetMdLibraryPreview()</a></li>
+</ul>
+</li>
+<li><a href="#T-Golden-ServerCoreWebPages-UserConfig" title="Golden.ServerCoreWebPages.UserConfig">UserConfig</a></li>
+<li><a href="#T-Golden-ServerCoreWebPages-WebMessage" title="Golden.ServerCoreWebPages.WebMessage">WebMessage</a></li>
+<li><a href="#T-Golden-ServerCoreWebPages-WebRegistration" title="Golden.ServerCoreWebPages.WebRegistration">WebRegistration</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-WebSocketExtension" title="Golden.ServerCoreDefinition.WebSocketExtension">WebSocketExtension</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogProvider" title="Golden.ServerCoreDefinition.ServerCoreHelpers.WebSocketLogProvider">WebSocketLogProvider</a></li>
+<li><a href="#T-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogger" title="Golden.ServerCoreDefinition.ServerCoreHelpers.WebSocketLogger">WebSocketLogger</a>
+<ul>
+<li><a href="#M-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogger-Log%60%601-Microsoft-Extensions-Logging-LogLevel,Microsoft-Extensions-Logging-EventId,%60%600,System-Exception,System-Func%7B%60%600,System-Exception,System-String%7D-" title="Golden.ServerCoreDefinition.ServerCoreHelpers.WebSocketLogger.Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">Log``1(logLevel,eventId,state,exception,formatter)</a></li>
+</ul>
+</li>
+</ul>
+<p><a name='T-Golden-ServerCoreDefinition-AuthenticateResponse'></a></p>
+<h2 id="authenticateresponse-type">AuthenticateResponse <code>type</code></h2>
+<h5 id="namespace">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary">Summary</h5>
+<p>The authenticate response.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Expiration'></a></p>
+<h3 id="expiration-property">Expiration <code>property</code></h3>
+<h5 id="summary-1">Summary</h5>
+<p>Gets or Sets the expiration.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Id'></a></p>
+<h3 id="id-property">Id <code>property</code></h3>
+<h5 id="summary-2">Summary</h5>
+<p>Gets or Sets the id.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Name'></a></p>
+<h3 id="name-property">Name <code>property</code></h3>
+<h5 id="summary-3">Summary</h5>
+<p>Gets or Sets the name.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Role'></a></p>
+<h3 id="role-property">Role <code>property</code></h3>
+<h5 id="summary-4">Summary</h5>
+<p>Gets or Sets the role.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Surname'></a></p>
+<h3 id="surname-property">Surname <code>property</code></h3>
+<h5 id="summary-5">Summary</h5>
+<p>Gets or Sets the surname.</p>
+<p><a name='P-Golden-ServerCoreDefinition-AuthenticateResponse-Token'></a></p>
+<h3 id="token-property">Token <code>property</code></h3>
+<h5 id="summary-6">Summary</h5>
+<p>Gets or Sets the token.</p>
+<p><a name='T-Golden-BackendServer'></a></p>
+<h2 id="backendserver-type">BackendServer <code>type</code></h2>
+<h5 id="namespace-1">Namespace</h5>
+<p>Golden</p>
+<h5 id="summary-7">Summary</h5>
+<p>Server Main Definition Starting Point Of Project</p>
+<p><a name='F-Golden-BackendServer-ServerConfigSettings'></a></p>
+<h3 id="serverconfigsettings-constants">ServerConfigSettings <code>constants</code></h3>
+<h5 id="summary-8">Summary</h5>
+<p>Startup Server Initialization Server Setting Data</p>
+<p><a name='F-Golden-BackendServer-ServerRuntimeData'></a></p>
+<h3 id="serverruntimedata-constants">ServerRuntimeData <code>constants</code></h3>
+<h5 id="summary-9">Summary</h5>
+<p>Startup Server Initialization Server Runtime Data</p>
+<p><a name='M-Golden-BackendServer-BuildWebHost-System-String[]-'></a></p>
+<h3 id="buildwebhostargs-method">BuildWebHost(args) <code>method</code></h3>
+<h5 id="summary-10">Summary</h5>
+<p>Final Preparing Server HostBuilder Definition
+Exit 10 Is missing or Format Problem with Configuration File</p>
+<h5 id="returns">Returns</h5>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>args</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String%5B%5D" title="System.String[]">System.String[]</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-BackendServer-Main-System-String[]-'></a></p>
+<h3 id="mainargs-method">Main(args) <code>method</code></h3>
+<h5 id="summary-11">Summary</h5>
+<p>Server Startup Process</p>
+<h5 id="parameters-1">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>args</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String%5B%5D" title="System.String[]">System.String[]</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-BackendServer-RestartServer'></a></p>
+<h3 id="restartserver-method">RestartServer() <code>method</code></h3>
+<h5 id="summary-12">Summary</h5>
+<p>Server Restart Controller</p>
+<h5 id="parameters-2">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-BackendServer-ServerStartupDbDataLoading'></a></p>
+<h3 id="serverstartupdbdataloading-method">ServerStartupDbDataLoading() <code>method</code></h3>
+<h5 id="summary-13">Summary</h5>
+<p>Server Startup DB Data loading for minimize DB Connect TO Frequency Dials Without Changes
+Example: LanguageList</p>
+<h5 id="parameters-3">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-BackendServer-StartServer'></a></p>
+<h3 id="startserver-method">StartServer() <code>method</code></h3>
+<h5 id="summary-14">Summary</h5>
+<p>Server Start Controller</p>
+<h5 id="parameters-4">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreDefinition-CommunicationController'></a></p>
+<h2 id="communicationcontroller-type">CommunicationController <code>type</code></h2>
+<h5 id="namespace-2">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-15">Summary</h5>
+<p>Server Communication Extensions for Controlling Data</p>
+<p><a name='P-Golden-ServerCoreDefinition-CommunicationController-HttpContext'></a></p>
+<h3 id="httpcontext-property">HttpContext <code>property</code></h3>
+<h5 id="summary-16">Summary</h5>
+<p>Server Request Accessory controller</p>
+<p><a name='M-Golden-ServerCoreDefinition-CommunicationController-CheckAdmin'></a></p>
+<h3 id="checkadmin-method">CheckAdmin() <code>method</code></h3>
+<h5 id="summary-17">Summary</h5>
+<p>Extension for check Admin Role</p>
+<h5 id="parameters-5">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser'></a></p>
+<h2 id="customftpuser-type">CustomFtpUser <code>type</code></h2>
+<h5 id="namespace-3">Namespace</h5>
+<p>Golden.ServerCoreServers.HostedFtpServerMembershipProvider</p>
+<h5 id="summary-18">Summary</h5>
+<p>Custom FTP user implementation</p>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-#ctor-System-String-'></a></p>
+<h3 id="ctorname-constructor">#ctor(name) <code>constructor</code></h3>
+<h5 id="summary-19">Summary</h5>
+<p>Initializes a new instance of the <a href="#T-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser" title="Golden.ServerCoreServers.HostedFtpServerMembershipProvider.CustomFtpUser">CustomFtpUser</a> instance.</p>
+<h5 id="parameters-6">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The user name</td>
+</tr>
+</tbody>
+</table>
+<p><a name='P-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-Name'></a></p>
+<h3 id="name-property-1">Name <code>property</code></h3>
+<h5 id="summary-20">Summary</h5>
+<p><em>Inherit from parent.</em></p>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-CustomFtpUser-IsInGroup-System-String-'></a></p>
+<h3 id="isingroup-method">IsInGroup() <code>method</code></h3>
+<h5 id="summary-21">Summary</h5>
+<p><em>Inherit from parent.</em></p>
+<h5 id="parameters-7">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreDBSettings-CustomString'></a></p>
+<h2 id="customstring-type">CustomString <code>type</code></h2>
+<h5 id="namespace-4">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-22">Summary</h5>
+<p>Custom Definition for Returning string List from Stored Procedures Name is ColumnName from
+Stored Procedure Result</p>
+<p><a name='T-Golden-ServerCoreDefinition-DBResult'></a></p>
+<h2 id="dbresult-type">DBResult <code>type</code></h2>
+<h5 id="namespace-5">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-23">Summary</h5>
+<p>Database response types definition</p>
+<p><a name='T-Golden-ServerCoreDefinition-DBResultMessage'></a></p>
+<h2 id="dbresultmessage-type">DBResultMessage <code>type</code></h2>
+<h5 id="namespace-6">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-24">Summary</h5>
+<p>The DB result message.</p>
+<p><a name='P-Golden-ServerCoreDefinition-DBResultMessage-ErrorMessage'></a></p>
+<h3 id="errormessage-property">ErrorMessage <code>property</code></h3>
+<h5 id="summary-25">Summary</h5>
+<p>Gets or Sets the error message.</p>
+<p><a name='P-Golden-ServerCoreDefinition-DBResultMessage-InsertedId'></a></p>
+<h3 id="insertedid-property">InsertedId <code>property</code></h3>
+<h5 id="summary-26">Summary</h5>
+<p>Gets or Sets the inserted id.</p>
+<p><a name='P-Golden-ServerCoreDefinition-DBResultMessage-RecordCount'></a></p>
+<h3 id="recordcount-property">RecordCount <code>property</code></h3>
+<h5 id="summary-27">Summary</h5>
+<p>Gets or Sets the record count.</p>
+<p><a name='P-Golden-ServerCoreDefinition-DBResultMessage-Status'></a></p>
+<h3 id="status-property">Status <code>property</code></h3>
+<h5 id="summary-28">Summary</h5>
+<p>Gets or Sets the status.</p>
+<p><a name='T-Golden-ServerCoreWebPages-DBWebApiResponses'></a></p>
+<h2 id="dbwebapiresponses-type">DBWebApiResponses <code>type</code></h2>
+<h5 id="namespace-7">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-29">Summary</h5>
+<p>WebApi Responses</p>
+<p><a name='T-Golden-ServerCoreDBSettings-DatabaseContextExtensions'></a></p>
+<h2 id="databasecontextextensions-type">DatabaseContextExtensions <code>type</code></h2>
+<h5 id="namespace-8">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-30">Summary</h5>
+<p>Database Context Extensions for All Types Procedures For Retun Data in procedure can be
+Simple SELECT * XXX and you Create Same Class for returned DataSet</p>
+<p><a name='T-Golden-ServerCoreWebPages-EmailVerification'></a></p>
+<h2 id="emailverification-type">EmailVerification <code>type</code></h2>
+<h5 id="namespace-9">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-31">Summary</h5>
+<p>WebPages User Verification class</p>
+<p><a name='T-Golden-Controllers-ExpertDocApi'></a></p>
+<h2 id="expertdocapi-type">ExpertDocApi <code>type</code></h2>
+<h5 id="namespace-10">Namespace</h5>
+<p>Golden.Controllers</p>
+<p><a name='M-Golden-Controllers-ExpertDocApi-GetDocumentationGroupedList-System-Int32-'></a></p>
+<h3 id="getdocumentationgroupedlistid-method">GetDocumentationGroupedList(id) <code>method</code></h3>
+<h5 id="summary-32">Summary</h5>
+<p>ExpertDocManager Group Documentation Request Api</p>
+<h5 id="returns-1">Returns</h5>
+<h5 id="parameters-8">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td>The identifier.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-GoldenContext'></a></p>
+<h2 id="goldencontext-type">GoldenContext <code>type</code></h2>
+<h5 id="namespace-11">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-33">Summary</h5>
+<p>Server Main Database Settings Here is Included ScaffoldContext which is connected via Visual
+Studio Tool Here can Be added customization which are not on the server Here is Extended the
+Context with Insert News Functionality Customizing and implement Settings for Automatic
+Adopted Database Schema for Unlimited Working and Operations For Specifics API schemas</p>
+<p><a name='M-Golden-ServerCoreDBSettings-GoldenContext-GetApiUserId-Microsoft-AspNetCore-Http-HttpContext-'></a></p>
+<h3 id="getapiuseridhttpcontext-method">GetApiUserId(httpContext) <code>method</code></h3>
+<h5 id="summary-34">Summary</h5>
+<p>Return User From API Request if Exist other null</p>
+<h5 id="returns-2">Returns</h5>
+<h5 id="parameters-9">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>httpContext</td>
+<td><a href="#T-Microsoft-AspNetCore-Http-HttpContext" title="Microsoft.AspNetCore.Http.HttpContext">Microsoft.AspNetCore.Http.HttpContext</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDBSettings-GoldenContext-IsAdmin-Microsoft-AspNetCore-Http-HttpContext-'></a></p>
+<h3 id="isadminhttpcontext-method">IsAdmin(httpContext) <code>method</code></h3>
+<h5 id="summary-35">Summary</h5>
+<p>Return User From API Request if Exist other null</p>
+<h5 id="returns-3">Returns</h5>
+<h5 id="parameters-10">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>httpContext</td>
+<td><a href="#T-Microsoft-AspNetCore-Http-HttpContext" title="Microsoft.AspNetCore.Http.HttpContext">Microsoft.AspNetCore.Http.HttpContext</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ControllersExtensions-GoldenSystemAuthenticationApi'></a></p>
+<h2 id="goldensystemauthenticationapi-type">GoldenSystemAuthenticationApi <code>type</code></h2>
+<h5 id="namespace-12">Namespace</h5>
+<p>Golden.ControllersExtensions</p>
+<p><a name='M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-Authenticate-System-String,System-String-'></a></p>
+<h3 id="authenticateusernamepassword-method">Authenticate(username,password) <code>method</code></h3>
+<h5 id="summary-36">Summary</h5>
+<p>API Authenticated and Generate Token</p>
+<h5 id="returns-4">Returns</h5>
+<h5 id="parameters-11">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>password</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-LifetimeValidator-System-Nullable{System-DateTime},System-Nullable{System-DateTime},Microsoft-IdentityModel-Tokens-SecurityToken,Microsoft-IdentityModel-Tokens-TokenValidationParameters-'></a></p>
+<h3 id="lifetimevalidatornotbeforeexpirestokenparams-method">LifetimeValidator(notBefore,expires,token,params) <code>method</code></h3>
+<h5 id="summary-37">Summary</h5>
+<p>API Token LifeTime Validator</p>
+<h5 id="returns-5">Returns</h5>
+<h5 id="parameters-12">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>notBefore</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Nullable" title="System.Nullable{System.DateTime}">System.Nullable{System.DateTime}</a></td>
+<td></td>
+</tr>
+<tr>
+<td>expires</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Nullable" title="System.Nullable{System.DateTime}">System.Nullable{System.DateTime}</a></td>
+<td></td>
+</tr>
+<tr>
+<td>token</td>
+<td><a href="#T-Microsoft-IdentityModel-Tokens-SecurityToken" title="Microsoft.IdentityModel.Tokens.SecurityToken">Microsoft.IdentityModel.Tokens.SecurityToken</a></td>
+<td></td>
+</tr>
+<tr>
+<td>params</td>
+<td><a href="#T-Microsoft-IdentityModel-Tokens-TokenValidationParameters" title="Microsoft.IdentityModel.Tokens.TokenValidationParameters">Microsoft.IdentityModel.Tokens.TokenValidationParameters</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ControllersExtensions-GoldenSystemAuthenticationApi-RefreshUserToken-System-String,Golden-ServerCoreDefinition-AuthenticateResponse-'></a></p>
+<h3 id="refreshusertokenusernametoken-method">RefreshUserToken(username,token) <code>method</code></h3>
+<h5 id="summary-38">Summary</h5>
+<p>API Refresh User Token</p>
+<h5 id="returns-6">Returns</h5>
+<h5 id="parameters-13">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>token</td>
+<td><a href="#T-Golden-ServerCoreDefinition-AuthenticateResponse" title="Golden.ServerCoreDefinition.AuthenticateResponse">Golden.ServerCoreDefinition.AuthenticateResponse</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ControllersExtensions-GoldenSystemBackendCheckApi'></a></p>
+<h2 id="goldensystembackendcheckapi-type">GoldenSystemBackendCheckApi <code>type</code></h2>
+<h5 id="namespace-13">Namespace</h5>
+<p>Golden.ControllersExtensions</p>
+<h5 id="summary-39">Summary</h5>
+<p>Simple Api for Checking Avaiability</p>
+<h5 id="see-also">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-ControllerBase" title="Microsoft.AspNetCore.Mvc.ControllerBase">Microsoft.AspNetCore.Mvc.ControllerBase</a></li>
+</ul>
+<p><a name='M-Golden-ControllersExtensions-GoldenSystemBackendCheckApi-GetBackendCheckApi'></a></p>
+<h3 id="getbackendcheckapi-method">GetBackendCheckApi() <code>method</code></h3>
+<h5 id="summary-40">Summary</h5>
+<p>Gets the backend check API.</p>
+<h5 id="returns-7">Returns</h5>
+<h5 id="parameters-14">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreServers-HostedFtpServer'></a></p>
+<h2 id="hostedftpserver-type">HostedFtpServer <code>type</code></h2>
+<h5 id="namespace-14">Namespace</h5>
+<p>Golden.ServerCoreServers</p>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServer-#ctor-FubarDev-FtpServer-IFtpServerHost-'></a></p>
+<h3 id="ctorftpserverhost-constructor">#ctor(ftpServerHost) <code>constructor</code></h3>
+<h5 id="summary-41">Summary</h5>
+<p>Initializes a new instance of the <a href="#T-Golden-ServerCoreServers-HostedFtpServer" title="Golden.ServerCoreServers.HostedFtpServer">HostedFtpServer</a> class.</p>
+<h5 id="parameters-15">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ftpServerHost</td>
+<td><a href="#T-FubarDev-FtpServer-IFtpServerHost" title="FubarDev.FtpServer.IFtpServerHost">FubarDev.FtpServer.IFtpServerHost</a></td>
+<td>The FTP server host that gets wrapped as a hosted service.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServer-StartAsync-System-Threading-CancellationToken-'></a></p>
+<h3 id="startasync-method">StartAsync() <code>method</code></h3>
+<h5 id="summary-42">Summary</h5>
+<p><em>Inherit from parent.</em></p>
+<h5 id="parameters-16">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServer-StopAsync-System-Threading-CancellationToken-'></a></p>
+<h3 id="stopasync-method">StopAsync() <code>method</code></h3>
+<h5 id="summary-43">Summary</h5>
+<p><em>Inherit from parent.</em></p>
+<h5 id="parameters-17">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreServers-HostedFtpServerMembershipProvider'></a></p>
+<h2 id="hostedftpservermembershipprovider-type">HostedFtpServerMembershipProvider <code>type</code></h2>
+<h5 id="namespace-15">Namespace</h5>
+<p>Golden.ServerCoreServers</p>
+<h5 id="summary-44">Summary</h5>
+<p>Custom membership provider for Authentication Validation
+Actual is Set by UserName and Password in Database</p>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-ValidateUser-System-String,System-String-'></a></p>
+<h3 id="validateuserusernamepassword-method">ValidateUser(username,password) <code>method</code></h3>
+<h5 id="summary-45">Summary</h5>
+<p>FTP User Validation
+Its for Open FTP and User Validation</p>
+<h5 id="returns-8">Returns</h5>
+<h5 id="parameters-18">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The username.</td>
+</tr>
+<tr>
+<td>password</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The password.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreServers-HostedFtpServerMembershipProvider-ValidateUserAsync-System-String,System-String-'></a></p>
+<h3 id="validateuserasyncusernamepassword-method">ValidateUserAsync(username,password) <code>method</code></h3>
+<h5 id="summary-46">Summary</h5>
+<p>FTP User Validation Async
+Its for Open FTP and User Validation</p>
+<h5 id="returns-9">Returns</h5>
+<p>The result of the validation.</p>
+<h5 id="parameters-19">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The user name.</td>
+</tr>
+<tr>
+<td>password</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The password.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-IdFilter'></a></p>
+<h2 id="idfilter-type">IdFilter <code>type</code></h2>
+<h5 id="namespace-16">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-47">Summary</h5>
+<p>Custom Class Definition for Filtering by record Id</p>
+<p><a name='T-Golden-ServerCoreDefinition-MailRequest'></a></p>
+<h2 id="mailrequest-type">MailRequest <code>type</code></h2>
+<h5 id="namespace-17">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-48">Summary</h5>
+<p>Class Definition for Server Emailer
+In List of this claas you can use Mass Emailer</p>
+<p><a name='T-Golden-ServerCoreDBSettings-NameFilter'></a></p>
+<h2 id="namefilter-type">NameFilter <code>type</code></h2>
+<h5 id="namespace-18">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-49">Summary</h5>
+<p>Custom Class Definition for Filtering by string</p>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreHelpers-OperatingSystem'></a></p>
+<h2 id="operatingsystem-type">OperatingSystem <code>type</code></h2>
+<h5 id="namespace-19">Namespace</h5>
+<p>Golden.ServerCoreDefinition.ServerCoreHelpers</p>
+<h5 id="summary-50">Summary</h5>
+<p>Extension For Checking Operation System
+of Server Running</p>
+<p><a name='T-Golden-ServerCoreDefinition-ProcessClass'></a></p>
+<h2 id="processclass-type">ProcessClass <code>type</code></h2>
+<h5 id="namespace-20">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-51">Summary</h5>
+<p>Server Process class for running external prrocesses</p>
+<p><a name='T-Golden-ServerCoreDBSettings-RobotsController'></a></p>
+<h2 id="robotscontroller-type">RobotsController <code>type</code></h2>
+<h5 id="namespace-21">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-52">Summary</h5>
+<p>robots.txt routing</p>
+<h5 id="see-also-1">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-Controller" title="Microsoft.AspNetCore.Mvc.Controller">Microsoft.AspNetCore.Mvc.Controller</a></li>
+</ul>
+<p><a name='T-Golden-ServerCoreDefinition-ServerConfigSettings'></a></p>
+<h2 id="serverconfigsettings-type">ServerConfigSettings <code>type</code></h2>
+<h5 id="namespace-22">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-53">Summary</h5>
+<p>The server settings.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigApiTokenTimeoutMin'></a></p>
+<h3 id="configapitokentimeoutmin-property">ConfigApiTokenTimeoutMin <code>property</code></h3>
+<h5 id="summary-54">Summary</h5>
+<p>Bearer Token Timeout Setting in Minutes. Connection must be Refreshed in Interval After
+Timeout connection Must Login Again. It is as needed. You Can Change Key for close All
+connections Immediately. Timeout is good for Webpages
+Recomended: 15</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificateDomain'></a></p>
+<h3 id="configcertificatedomain-property">ConfigCertificateDomain <code>property</code></h3>
+<h5 id="summary-55">Summary</h5>
+<p>Its Domain for include to Automatic Generated Certificate For Server running on HTTPS.
+Domain is for Your validation Certificate Domain. Can be Changed for commercial.
+Domain is Used for Lets Encrypt also
+Write with Comma separator
+Recommended: 127.0.0.1</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificatePassword'></a></p>
+<h3 id="configcertificatepassword-property">ConfigCertificatePassword <code>property</code></h3>
+<h5 id="summary-56">Summary</h5>
+<p>Password will be inserted to Server Generated Certificate for HTTPS.
+Recommended: empty = Maximal Security Randomly generated 20 chars string</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigCertificatePath'></a></p>
+<h3 id="configcertificatepath-property">ConfigCertificatePath <code>property</code></h3>
+<h5 id="summary-57">Summary</h5>
+<p>Certificate file NextFrom'DATA'Path\Filename.pfx For import External Certificate
+Its Path from Data Startup Folder,example &quot;groupware.pfx&quot; is in Data Path
+The Password must be inserted in ConfigCertificatePassword Settings
+Other for ignore this Setting set empty string &quot;&quot;
+This settings has Higest Priority before LesEncrypt enabled</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigJwtLocalKey'></a></p>
+<h3 id="configjwtlocalkey-property">ConfigJwtLocalKey <code>property</code></h3>
+<h5 id="summary-58">Summary</h5>
+<p>Special Functions:Server AutoGenerated encryption Key For Securing Communication On Each
+Server Restart All Tokens not will be valid and the Login Reconnect is Requested. Its
+AntiHacker Security Rule
+Recommended: empty = Maximal Security Randomly generated 40 chars string</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigMaxWebSocketBufferSizeKb'></a></p>
+<h3 id="configmaxwebsocketbuffersizekb-property">ConfigMaxWebSocketBufferSizeKb <code>property</code></h3>
+<h5 id="summary-59">Summary</h5>
+<p>Maximum socket message size for control Traffic
+Recomended: 10</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerGetLetsEncrypt'></a></p>
+<h3 id="configservergetletsencrypt-property">ConfigServerGetLetsEncrypt <code>property</code></h3>
+<h5 id="summary-60">Summary</h5>
+<p>Setting for Automatic Obtain Lets Encrypt
+more Security Setting Politics.
+Recommended: true</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerStartupOnHttps'></a></p>
+<h3 id="configserverstartuponhttps-property">ConfigServerStartupOnHttps <code>property</code></h3>
+<h5 id="summary-61">Summary</h5>
+<p>Setting for Server URL Services. Logically can run only one Http or Https Server has
+more Security Setting Politics.
+Recommended: true</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigServerStartupPort'></a></p>
+<h3 id="configserverstartupport-property">ConfigServerStartupPort <code>property</code></h3>
+<h5 id="summary-62">Summary</h5>
+<p>Set Server Startup Port on Http/HttpS/WebSocket and for All Engines, Modules, API
+Controler and WebPages
+Recommended: 5000</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ConfigWebSocketTimeoutMin'></a></p>
+<h3 id="configwebsockettimeoutmin-property">ConfigWebSocketTimeoutMin <code>property</code></h3>
+<h5 id="summary-63">Summary</h5>
+<p>WebSocket Timeout Connection Settings in Minutes. After timeout when not detected any
+communication socket is closed Set according to your need
+Recommended: 2</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseConnectionString'></a></p>
+<h3 id="databaseconnectionstring-property">DatabaseConnectionString <code>property</code></h3>
+<h5 id="summary-64">Summary</h5>
+<p>Server Database Connection string for Full Service of Database
+Migration/Api/Check/Unlimited Develop !!!Warning: Check this connection for
+Read/Write/Exec is enabled</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseInternalCacheTimeoutMin'></a></p>
+<h3 id="databaseinternalcachetimeoutmin-property">DatabaseInternalCacheTimeoutMin <code>property</code></h3>
+<h5 id="summary-65">Summary</h5>
+<p>Time in Minutes for Database Valid Cache Data and Refreshing Duplicit Functionality with
+Database Server
+Recommended: 30</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-DatabaseInternalCachingEnabled'></a></p>
+<h3 id="databaseinternalcachingenabled-property">DatabaseInternalCachingEnabled <code>property</code></h3>
+<h5 id="summary-66">Summary</h5>
+<p>Enable Disable Entity Framework Internal Cache I recommend turning it off : from Logic,
+Duplicit Functionality with Database Server in complex process can generate problems
+Recommended: false</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPLoginPassword'></a></p>
+<h3 id="emailersmtploginpassword-property">EmailerSMTPLoginPassword <code>property</code></h3>
+<h5 id="summary-67">Summary</h5>
+<p>SMTP Password for Login to External Mail Server Its Necessary for Correct running Server
+Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPLoginUsername'></a></p>
+<h3 id="emailersmtploginusername-property">EmailerSMTPLoginUsername <code>property</code></h3>
+<h5 id="summary-68">Summary</h5>
+<p>SMTP UserName for Login to External Mail Server Its Necessary for Correct running Server
+Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPPort'></a></p>
+<h3 id="emailersmtpport-property">EmailerSMTPPort <code>property</code></h3>
+<h5 id="summary-69">Summary</h5>
+<p>SMTP Port for Login to External Mail Server Its Necessary for Correct running Server
+Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPServerAddress'></a></p>
+<h3 id="emailersmtpserveraddress-property">EmailerSMTPServerAddress <code>property</code></h3>
+<h5 id="summary-70">Summary</h5>
+<p>SMTP Server Address for Login to External Mail Server Its Necessary for Correct running
+Server Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerSMTPSslIsEnabled'></a></p>
+<h3 id="emailersmtpsslisenabled-property">EmailerSMTPSslIsEnabled <code>property</code></h3>
+<h5 id="summary-71">Summary</h5>
+<p>EmailerSMTPSslIsEnabled SSl Email Protocol for Login to External Mail Server Its
+Necessary for Correct running Server Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-EmailerServiceEmailAddress'></a></p>
+<h3 id="emailerserviceemailaddress-property">EmailerServiceEmailAddress <code>property</code></h3>
+<h5 id="summary-72">Summary</h5>
+<p>Service email, for info about not available service from HeatchCheck Can be used for
+next Develop, automatic checking problems, missing data and all other Its Necessary for
+Correct running Server Internal Core Monitoring</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleDataManagerEnabled'></a></p>
+<h3 id="moduledatamanagerenabled-property">ModuleDataManagerEnabled <code>property</code></h3>
+<h5 id="summary-73">Summary</h5>
+<p>Special Function: AutoGenerated Database DataManager for working with Data Running only
+in Debug mode for simple Develop, can be modified. All changes are Reflected after
+restart server</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleDbDiagramGeneratorEnabled'></a></p>
+<h3 id="moduledbdiagramgeneratorenabled-property">ModuleDbDiagramGeneratorEnabled <code>property</code></h3>
+<h5 id="summary-74">Summary</h5>
+<p>Enable Automatic Database Diagram for Simple show Database structure with All bingings</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleHealthServiceEnabled'></a></p>
+<h3 id="modulehealthserviceenabled-property">ModuleHealthServiceEnabled <code>property</code></h3>
+<h5 id="summary-75">Summary</h5>
+<p>Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+Over Net can Control Other Company Services Also as Central Control Point With Email
+Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+Must be run for Metrics AddOn <a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health">https://learn.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health</a></p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleHealthServiceRefreshIntervalSec'></a></p>
+<h3 id="modulehealthservicerefreshintervalsec-property">ModuleHealthServiceRefreshIntervalSec <code>property</code></h3>
+<h5 id="summary-76">Summary</h5>
+<p>Special Function: More than 200 Server Statuses Can be monitored by HeathCheckService,
+Over Net can Control Other Company Services Also as Central Control Point With Email
+Service. For Example: Server/Memory/All DB Types/IP/HDD/Port/Api/NET/Cloud/Environment
+Must be run for Metrics AddOn !!! run in Release mode for Good Reading of Logs without
+HeathChecks Cycling info <a href="https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks">https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks</a> <a href="https://testfully.io/blog/api-health-check-monitoring/">https://testfully.io/blog/api-health-check-monitoring/</a></p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleMdDocumentationEnabled'></a></p>
+<h3 id="modulemddocumentationenabled-property">ModuleMdDocumentationEnabled <code>property</code></h3>
+<h5 id="summary-77">Summary</h5>
+<p>Enable Server Structure Documentation for Developers Using RootPath, - Block File
+Browsing Is Good for Server with Documentation only Or Use for Show WebPage and Copy
+&quot;Only HTML&quot;</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ModuleSwaggerApiDocEnabled'></a></p>
+<h3 id="moduleswaggerapidocenabled-property">ModuleSwaggerApiDocEnabled <code>property</code></h3>
+<h5 id="summary-78">Summary</h5>
+<p>Special Function: Server Automatically Generate Full Documentation of API structure AND
+Database Model. Plus Included API Interface for Online Testing All API Methods with
+Authentication Its Automatic Solution for Third Party cooperation. All changes are
+Reflected after restart server</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerEnableWebSocketMonitor'></a></p>
+<h3 id="serverenablewebsocketmonitor-property">ServerEnableWebSocketMonitor <code>property</code></h3>
+<h5 id="summary-79">Summary</h5>
+<p>Server support online multi watch Logging
+Its Run on Websocket and the Log Messages are
+sent for All opened connections for wathing
+on Path: ServerCoreMonitor
+You can enable Mass Email Api</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerFtpEngineEnabled'></a></p>
+<h3 id="serverftpengineenabled-property">ServerFtpEngineEnabled <code>property</code></h3>
+<h5 id="summary-80">Summary</h5>
+<p>Enable FTP File Server oppened for every connection with full rights</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerFtpSecurityEnabled'></a></p>
+<h3 id="serverftpsecurityenabled-property">ServerFtpSecurityEnabled <code>property</code></h3>
+<h5 id="summary-81">Summary</h5>
+<p>Enable FTP Security
+For access to FTP must be logged</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerJsWebPagesEngineEnabled'></a></p>
+<h3 id="serverjswebpagesengineenabled-property">ServerJsWebPagesEngineEnabled <code>property</code></h3>
+<h5 id="summary-82">Summary</h5>
+<p>Enable JS WebPages support engine with Correct Configuration
+React, Nodejs, etc..</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerJsWebStartupCommand'></a></p>
+<h3 id="serverjswebstartupcommand-property">ServerJsWebStartupCommand <code>property</code></h3>
+<h5 id="summary-83">Summary</h5>
+<p>Definition of WebPage Startup npmscript command
+React, Nodejs, etc..</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerMvcWebPagesEngineEnabled'></a></p>
+<h3 id="servermvcwebpagesengineenabled-property">ServerMvcWebPagesEngineEnabled <code>property</code></h3>
+<h5 id="summary-84">Summary</h5>
+<p>Enable Mvc WebPages support engine with Correct Configuration</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerRazorWebPagesEngineEnabled'></a></p>
+<h3 id="serverrazorwebpagesengineenabled-property">ServerRazorWebPagesEngineEnabled <code>property</code></h3>
+<h5 id="summary-85">Summary</h5>
+<p>Enable Razor WebPages support engine with Correct Configuration for Automaping form
+folder 'Pages'</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerTimeTokenValidationEnabled'></a></p>
+<h3 id="servertimetokenvalidationenabled-property">ServerTimeTokenValidationEnabled <code>property</code></h3>
+<h5 id="summary-86">Summary</h5>
+<p>Enable Disable Bearer Token Timeout Validation Token can be valid EveryTime to using:
+Example for machine connection Or is Control last activity</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerWebBrowserEnabled'></a></p>
+<h3 id="serverwebbrowserenabled-property">ServerWebBrowserEnabled <code>property</code></h3>
+<h5 id="summary-87">Summary</h5>
+<p>Enable WebPages File Browsing from server Url on Server</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-ServerWebSocketEngineEnabled'></a></p>
+<h3 id="serverwebsocketengineenabled-property">ServerWebSocketEngineEnabled <code>property</code></h3>
+<h5 id="summary-88">Summary</h5>
+<p>Enable WebSocket Engine with Default Example Api Controller</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialCoreCheckerEmailSenderActive'></a></p>
+<h3 id="specialcorecheckeremailsenderactive-property">SpecialCoreCheckerEmailSenderActive <code>property</code></h3>
+<h5 id="summary-89">Summary</h5>
+<p>Activation / Deactivation of Email Sender For Server Core Fails Checker All Catch Write
+to SendEmail, In Debug mode is Written in console in Release mode is Sended email (All
+incorrect server statuses are monitored) Can be writen to Database - !!! Warning for
+infinite Cycling (DB shutdown example)
+Recommended: true</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialEnableMassEmail'></a></p>
+<h3 id="specialenablemassemail-property">SpecialEnableMassEmail <code>property</code></h3>
+<h5 id="summary-90">Summary</h5>
+<p>Server support mass emailing as Service
+You can enable Mass Email Api</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialServerLanguage'></a></p>
+<h3 id="specialserverlanguage-property">SpecialServerLanguage <code>property</code></h3>
+<h5 id="summary-91">Summary</h5>
+<p>Server Language for Translating Server internal statuses
+Recommended: cz or en - other languages are not implemented</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialServerServiceName'></a></p>
+<h3 id="specialserverservicename-property">SpecialServerServiceName <code>property</code></h3>
+<h5 id="summary-92">Summary</h5>
+<p>Server Service Name automatic figured in All IS/OS/Engines info
+Recommended: Golden</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialUseDbLocalAutoupdatedDials'></a></p>
+<h3 id="specialusedblocalautoupdateddials-property">SpecialUseDbLocalAutoupdatedDials <code>property</code></h3>
+<h5 id="summary-93">Summary</h5>
+<p>Special Function: Using Selected Tables with AutoRefresh On change as Local DataSets,
+For Optimize Traffic. For Example LanguageList - Static table with often reading
+Recommended: true - functionality must be implemented in Server Code</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerConfigSettings-SpecialUserWebRootPath'></a></p>
+<h3 id="specialuserwebrootpath-property">SpecialUserWebRootPath <code>property</code></h3>
+<h5 id="summary-94">Summary</h5>
+<p>User Web Root Path for Startup
+and Any missing address Automatic Redirection
+Value must start with /
+Not need Regex Configuration</p>
+<p><a name='T-Golden-ServerCoreConfiguration-ServerConfigurationServices'></a></p>
+<h2 id="serverconfigurationservices-type">ServerConfigurationServices <code>type</code></h2>
+<h5 id="namespace-23">Namespace</h5>
+<p>Golden.ServerCoreConfiguration</p>
+<h5 id="summary-95">Summary</h5>
+<p>Server Core Configuration Settings of Security, Communications, Technologies, Modules Rules,
+Rights, Conditions, Formats, Services, Logging, etc..</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureAuthentication-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureauthenticationservices-method">ConfigureAuthentication(services) <code>method</code></h3>
+<h5 id="summary-96">Summary</h5>
+<p>Server Core: Configure Server Authentication Support</p>
+<h5 id="parameters-20">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureControllers-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurecontrollersservices-method">ConfigureControllers(services) <code>method</code></h3>
+<h5 id="summary-97">Summary</h5>
+<p>Server Core: Configure Server Controllers
+options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = [ValidateNever]
+in Class options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+= [JsonIgnore] in Class</p>
+<h5 id="parameters-21">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureCookie-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurecookieservices-method">ConfigureCookie(services) <code>method</code></h3>
+<h5 id="summary-98">Summary</h5>
+<p>Server Core: Configure Cookie Politics</p>
+<h5 id="parameters-22">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureDatabaseContext-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configuredatabasecontextservices-method">ConfigureDatabaseContext(services) <code>method</code></h3>
+<h5 id="summary-99">Summary</h5>
+<p>Server Core: Configure Custom Services</p>
+<h5 id="parameters-23">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureFTPServer-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureftpserverservices-method">ConfigureFTPServer(services) <code>method</code></h3>
+<h5 id="summary-100">Summary</h5>
+<p>Custom Secure FTP Server</p>
+<h5 id="parameters-24">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td>The services.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureLetsEncrypt-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureletsencryptservices-method">ConfigureLetsEncrypt(services) <code>method</code></h3>
+<h5 id="summary-101">Summary</h5>
+<p>Server core: Configures LetsEncrypt using.
+Certificate will be saved in DataPath</p>
+<h5 id="parameters-25">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td>The services.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureLogging-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureloggingservices-method">ConfigureLogging(services) <code>method</code></h3>
+<h5 id="summary-102">Summary</h5>
+<p>Server Core: Configure Server Logging</p>
+<h5 id="parameters-26">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureScopes-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurescopesservices-method">ConfigureScopes(services) <code>method</code></h3>
+<h5 id="summary-103">Summary</h5>
+<p>Server Core: Configure Custom Core Services</p>
+<h5 id="parameters-27">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureServerWebPages-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureserverwebpagesservices-method">ConfigureServerWebPages(services) <code>method</code></h3>
+<h5 id="summary-104">Summary</h5>
+<p>Configures the MVC server pages on Server format &quot;cshtml&quot;</p>
+<h5 id="parameters-28">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td>The services.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureSingletons-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configuresingletonsservices-method">ConfigureSingletons(services) <code>method</code></h3>
+<h5 id="summary-105">Summary</h5>
+<p>Server Core: Configures the singletons.</p>
+<h5 id="parameters-29">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td>The services.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureThirdPartyApi-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurethirdpartyapiservices-method">ConfigureThirdPartyApi(services) <code>method</code></h3>
+<h5 id="summary-106">Summary</h5>
+<p>Server Core: Configure HTTP Client for work with third party API</p>
+<h5 id="parameters-30">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerConfigurationServices-ConfigureWebSocketLoggerMonitor-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurewebsocketloggermonitorservices-method">ConfigureWebSocketLoggerMonitor(services) <code>method</code></h3>
+<h5 id="summary-107">Summary</h5>
+<p>Server core: Configures the WebSocket logger monitor.
+For multi monitoring and for Example Posibilities</p>
+<h5 id="parameters-31">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td>The services.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreDbOperations'></a></p>
+<h2 id="servercoredboperations-type">ServerCoreDbOperations <code>type</code></h2>
+<h5 id="namespace-24">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-108">Summary</h5>
+<p>All Server Definitions of Database Operation method</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslate-System-String,System-String-'></a></p>
+<h3 id="dbtranslatewordlanguage-method">DBTranslate(word,language) <code>method</code></h3>
+<h5 id="summary-109">Summary</h5>
+<p>Default Operation for Call Translation</p>
+<h5 id="returns-10">Returns</h5>
+<h5 id="parameters-32">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>word</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>language</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslateOffline-System-String,System-String-'></a></p>
+<h3 id="dbtranslateofflinewordlanguage-method">DBTranslateOffline(word,language) <code>method</code></h3>
+<h5 id="summary-110">Summary</h5>
+<p>Database LanuageList for Off-line Using Definitions</p>
+<h5 id="returns-11">Returns</h5>
+<h5 id="parameters-33">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>word</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>language</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-DBTranslateOnline-System-String,System-String-'></a></p>
+<h3 id="dbtranslateonlinewordlanguage-method">DBTranslateOnline(word,language) <code>method</code></h3>
+<h5 id="summary-111">Summary</h5>
+<p>Database LanuageList for On-line Using Definitions</p>
+<h5 id="returns-12">Returns</h5>
+<h5 id="parameters-34">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>word</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>language</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-LoadStaticDbDials-System-Nullable{Golden-ServerCoreDefinition-ServerLocalDbDials}-'></a></p>
+<h3 id="loadstaticdbdialsonlythis-method">LoadStaticDbDials(onlyThis) <code>method</code></h3>
+<h5 id="summary-112">Summary</h5>
+<p>Method for All Server Defined Table for Local Using As Off line AutoUpdated Tables</p>
+<h5 id="parameters-35">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onlyThis</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Nullable" title="System.Nullable{Golden.ServerCoreDefinition.ServerLocalDbDials}">System.Nullable{Golden.ServerCoreDefinition.ServerLocalDbDials}</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-WriteVisit-System-String,System-Int32,System-String-'></a></p>
+<h3 id="writevisitipaddressuseridusername-method">WriteVisit(ipAddress,userId,userName) <code>method</code></h3>
+<h5 id="summary-113">Summary</h5>
+<p>Trigger User Login History</p>
+<h5 id="parameters-36">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ipAddress</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+<tr>
+<td>userId</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td></td>
+</tr>
+<tr>
+<td>userName</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreDbOperations-WriteWebVisit-System-String-'></a></p>
+<h3 id="writewebvisitipaddressuseridusername-method">WriteWebVisit(ipAddress,userId,userName) <code>method</code></h3>
+<h5 id="summary-114">Summary</h5>
+<p>Trigger User Login History</p>
+<h5 id="parameters-37">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ipAddress</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerCoreExportApi'></a></p>
+<h2 id="servercoreexportapi-type">ServerCoreExportApi <code>type</code></h2>
+<h5 id="namespace-25">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-115">Summary</h5>
+<p>[Authorize]
+Server Export Services</p>
+<h5 id="see-also-2">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-Controller" title="Microsoft.AspNetCore.Mvc.Controller">Microsoft.AspNetCore.Mvc.Controller</a></li>
+</ul>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreFunctions'></a></p>
+<h2 id="servercorefunctions-type">ServerCoreFunctions <code>type</code></h2>
+<h5 id="namespace-26">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-ByteArrayToFile-System-String,System-Byte[]-'></a></p>
+<h3 id="bytearraytofilefilenamebytearray-method">ByteArrayToFile(fileName,byteArray) <code>method</code></h3>
+<h5 id="summary-116">Summary</h5>
+<p>Write ByteArray to File</p>
+<h5 id="returns-13">Returns</h5>
+<h5 id="parameters-38">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>Name of the file.</td>
+</tr>
+<tr>
+<td>byteArray</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Byte%5B%5D" title="System.Byte[]">System.Byte[]</a></td>
+<td>The byte array.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CheckDirectory-System-String-'></a></p>
+<h3 id="checkdirectorydirectory-method">CheckDirectory(directory) <code>method</code></h3>
+<h5 id="summary-117">Summary</h5>
+<p>Checks the directory.</p>
+<h5 id="returns-14">Returns</h5>
+<h5 id="parameters-39">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The directory.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CheckFile-System-String-'></a></p>
+<h3 id="checkfilefile-method">CheckFile(file) <code>method</code></h3>
+<h5 id="summary-118">Summary</h5>
+<p>Checks the file.</p>
+<h5 id="returns-15">Returns</h5>
+<h5 id="parameters-40">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The file.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-ClearFolder-System-String-'></a></p>
+<h3 id="clearfolderfoldername-method">ClearFolder(FolderName) <code>method</code></h3>
+<h5 id="summary-119">Summary</h5>
+<p>Full Clear Folder</p>
+<h5 id="parameters-41">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FolderName</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>Name of the folder.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CopyDirectory-System-String,System-String-'></a></p>
+<h3 id="copydirectorydirectory-method">CopyDirectory(directory) <code>method</code></h3>
+<h5 id="summary-120">Summary</h5>
+<p>Copy Full directory.</p>
+<h5 id="returns-16">Returns</h5>
+<h5 id="parameters-42">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directory</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The directory.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CopyFile-System-String,System-String-'></a></p>
+<h3 id="copyfilefromto-method">CopyFile(from,to) <code>method</code></h3>
+<h5 id="summary-121">Summary</h5>
+<p>Copies the file.</p>
+<h5 id="returns-17">Returns</h5>
+<h5 id="parameters-43">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>from</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>From.</td>
+</tr>
+<tr>
+<td>to</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>To.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CreateFile-System-String-'></a></p>
+<h3 id="createfilefile-method">CreateFile(file) <code>method</code></h3>
+<h5 id="summary-122">Summary</h5>
+<p>Prepared Method for Create empty file</p>
+<h5 id="returns-18">Returns</h5>
+<h5 id="parameters-44">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-CreatePath-System-String-'></a></p>
+<h3 id="createpathpath-method">CreatePath(path) <code>method</code></h3>
+<h5 id="summary-123">Summary</h5>
+<p>Creates the path recursively.</p>
+<h5 id="returns-19">Returns</h5>
+<h5 id="parameters-45">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The path.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-FileDetectEncoding-System-String-'></a></p>
+<h3 id="filedetectencodingfilename-method">FileDetectEncoding(FileName) <code>method</code></h3>
+<h5 id="summary-124">Summary</h5>
+<p>Files the detect encoding.</p>
+<h5 id="returns-20">Returns</h5>
+<h5 id="parameters-46">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FileName</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>Name of the file.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-FirstCharToLowerCase-System-String-'></a></p>
+<h3 id="firstchartolowercasestr-method">FirstCharToLowerCase(str) <code>method</code></h3>
+<h5 id="summary-125">Summary</h5>
+<p>Change First Character of String</p>
+<h5 id="returns-21">Returns</h5>
+<h5 id="parameters-47">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>str</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The string.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetByteArrayFrom64Encode-System-String-'></a></p>
+<h3 id="getbytearrayfrom64encodestrcontent-method">GetByteArrayFrom64Encode(strContent) <code>method</code></h3>
+<h5 id="summary-126">Summary</h5>
+<p>Separate ByteArray from 64 encode file
+For inserted file types</p>
+<h5 id="returns-22">Returns</h5>
+<h5 id="parameters-48">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strContent</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>Content of the string.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSelfSignedCertificate-System-String-'></a></p>
+<h3 id="getselfsignedcertificatepassword-method">GetSelfSignedCertificate(password) <code>method</code></h3>
+<h5 id="summary-127">Summary</h5>
+<p>Gets the self signed certificate For API Security HTTPS.</p>
+<h5 id="returns-23">Returns</h5>
+<h5 id="parameters-49">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>password</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The password.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSelfSignedCertificateFromFile-System-String-'></a></p>
+<h3 id="getselfsignedcertificatefromfile-method">GetSelfSignedCertificateFromFile() <code>method</code></h3>
+<h5 id="summary-128">Summary</h5>
+<p>Set Imported Certificate from file on Server for Https
+File must has Valid path from Startup Data Path</p>
+<h5 id="returns-24">Returns</h5>
+<h5 id="parameters-50">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetSystemErrMessage-System-Exception,System-Int32-'></a></p>
+<h3 id="getsystemerrmessageexceptionmsgcount-method">GetSystemErrMessage(exception,msgCount) <code>method</code></h3>
+<h5 id="summary-129">Summary</h5>
+<p>Mined-ed Error Message For System Save to Database For Simple Solving Problem</p>
+<h5 id="returns-25">Returns</h5>
+<h5 id="parameters-51">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exception</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Exception" title="System.Exception">System.Exception</a></td>
+<td></td>
+</tr>
+<tr>
+<td>msgCount</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-GetUserApiErrMessage-System-Exception,System-Int32-'></a></p>
+<h3 id="getuserapierrmessageexceptionmsgcount-method">GetUserApiErrMessage(exception,msgCount) <code>method</code></h3>
+<h5 id="summary-130">Summary</h5>
+<p>Mined-ed Error Message For Answer in API Error Response with detailed info about problem</p>
+<h5 id="returns-26">Returns</h5>
+<h5 id="parameters-52">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exception</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Exception" title="System.Exception">System.Exception</a></td>
+<td></td>
+</tr>
+<tr>
+<td>msgCount</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-LoadSettings'></a></p>
+<h3 id="loadsettings-method">LoadSettings() <code>method</code></h3>
+<h5 id="summary-131">Summary</h5>
+<p>Server Local Startup Configuration Its Running as First - Load from Congig.Json After DB
+connection Before Server Start Is This configuration Replaced By Data from DB And next
+Server Start. Its for situation - Bad Connection Server Start with Configuration from File</p>
+<h5 id="parameters-53">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-RandomString-System-Int32-'></a></p>
+<h3 id="randomstringlength-method">RandomString(length) <code>method</code></h3>
+<h5 id="summary-132">Summary</h5>
+<p>Randoms the string.</p>
+<h5 id="returns-27">Returns</h5>
+<h5 id="parameters-54">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td>The length.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-ReadFile-System-String-'></a></p>
+<h3 id="readfilefilename-method">ReadFile(fileName) <code>method</code></h3>
+<h5 id="summary-133">Summary</h5>
+<p>Reads the file.</p>
+<h5 id="returns-28">Returns</h5>
+<h5 id="parameters-55">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>Name of the file.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-RunProcess-Golden-ServerCoreDefinition-ProcessClass-'></a></p>
+<h3 id="runprocessprocessdefinition-method">RunProcess(processDefinition) <code>method</code></h3>
+<h5 id="summary-134">Summary</h5>
+<p>Server Function For Running External Processes</p>
+<h5 id="returns-29">Returns</h5>
+<h5 id="parameters-56">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>processDefinition</td>
+<td><a href="#T-Golden-ServerCoreDefinition-ProcessClass" title="Golden.ServerCoreDefinition.ProcessClass">Golden.ServerCoreDefinition.ProcessClass</a></td>
+<td>The process definition.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-SendEmail-Golden-ServerCoreDefinition-MailRequest,System-Boolean-'></a></p>
+<h3 id="sendemailmailrequestsendimmediately-method">SendEmail(mailRequest,sendImmediately) <code>method</code></h3>
+<h5 id="summary-135">Summary</h5>
+<p>System Mailer sending Emails To service email with detected fail for analyze and
+corrections on the Way provide better services every time !!! This You can implement
+everywhere, !!! In Debug mode is written to Console, in Release will be sent email
+Empty Sender And Recipients set email for Service Recipient</p>
+<h5 id="parameters-57">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mailRequest</td>
+<td><a href="#T-Golden-ServerCoreDefinition-MailRequest" title="Golden.ServerCoreDefinition.MailRequest">Golden.ServerCoreDefinition.MailRequest</a></td>
+<td></td>
+</tr>
+<tr>
+<td>sendImmediately</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Boolean" title="System.Boolean">System.Boolean</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-SendMassEmail-System-Collections-Generic-List{Golden-ServerCoreDefinition-MailRequest}-'></a></p>
+<h3 id="sendmassemailmailrequests-method">SendMassEmail(mailRequests) <code>method</code></h3>
+<h5 id="summary-136">Summary</h5>
+<p>Sends the mass mail.</p>
+<h5 id="parameters-58">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mailRequests</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Collections.Generic.List" title="System.Collections.Generic.List{Golden.ServerCoreDefinition.MailRequest}">System.Collections.Generic.List{Golden.ServerCoreDefinition.MailRequest}</a></td>
+<td>The mail requests.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-UnicodeToUTF8-System-String-'></a></p>
+<h3 id="unicodetoutf8strfrom-method">UnicodeToUTF8(strFrom) <code>method</code></h3>
+<h5 id="summary-137">Summary</h5>
+<p>Unicodes to ut f8.</p>
+<h5 id="returns-30">Returns</h5>
+<h5 id="parameters-59">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strFrom</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The string from.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreFunctions-WriteToFile-System-String,System-String-'></a></p>
+<h3 id="writetofilefilecontent-method">WriteToFile(file,content) <code>method</code></h3>
+<h5 id="summary-138">Summary</h5>
+<p>Write String to File
+Used for JsonSaving</p>
+<h5 id="parameters-60">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The file.</td>
+</tr>
+<tr>
+<td>content</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The content.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreHelpers'></a></p>
+<h2 id="servercorehelpers-type">ServerCoreHelpers <code>type</code></h2>
+<h5 id="namespace-27">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-139">Summary</h5>
+<p>System Helpers for EASY working
+Here are extension for Database Model, WebSocket</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-AddSocketConnectionToCentalList-System-Net-WebSockets-WebSocket,System-String-'></a></p>
+<h3 id="addsocketconnectiontocentallistnewwebsocketsocketapipath-method">AddSocketConnectionToCentalList(newWebSocket,socketAPIPath) <code>method</code></h3>
+<h5 id="summary-140">Summary</h5>
+<p>Add WeSocket Connection To Central List</p>
+<h5 id="parameters-61">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>newWebSocket</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Net.WebSockets.WebSocket" title="System.Net.WebSockets.WebSocket">System.Net.WebSockets.WebSocket</a></td>
+<td>The new web socket.</td>
+</tr>
+<tr>
+<td>socketAPIPath</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The socket path.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-BindList``1-System-Data-DataTable-'></a></p>
+<h3 id="bindlist1dt-method">BindList``1(dt) <code>method</code></h3>
+<h5 id="summary-141">Summary</h5>
+<p>Extension For Using Custom Defined Tables from Database Procedures
+Its used as Database Context Extension as 'CollectionFromSql'
+Method in Database Context</p>
+<h5 id="returns-31">Returns</h5>
+<h5 id="parameters-62">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dt</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Data.DataTable" title="System.Data.DataTable">System.Data.DataTable</a></td>
+<td>The dt.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="generic-types">Generic Types</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-CheckTokenValidityFromString-System-String-'></a></p>
+<h3 id="checktokenvalidityfromstringtokenstring-method">CheckTokenValidityFromString(tokenString) <code>method</code></h3>
+<h5 id="summary-142">Summary</h5>
+<p>Token Validator Extension For Server WebPages</p>
+<h5 id="returns-32">Returns</h5>
+<h5 id="parameters-63">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tokenString</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The token string.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-DisposeSocketConnectionsWithTimeOut'></a></p>
+<h3 id="disposesocketconnectionswithtimeout-method">DisposeSocketConnectionsWithTimeOut() <code>method</code></h3>
+<h5 id="summary-143">Summary</h5>
+<p>!! Global Method for Simple Using WebSockets
+WebSocket Disposed - Cleaning monitored Sockets from Central List.
+Are Closed and Disposed Only with Timeout or with closed Connection</p>
+<h5 id="parameters-64">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-GetValidationParameters'></a></p>
+<h3 id="getvalidationparameters-method">GetValidationParameters() <code>method</code></h3>
+<h5 id="summary-144">Summary</h5>
+<p>Server Token Validation Parameters definition
+For Api is Used if is ON/Off for WePages is On everyTime</p>
+<h5 id="returns-33">Returns</h5>
+<h5 id="parameters-65">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-IsValidEmail-System-String-'></a></p>
+<h3 id="isvalidemailemail-method">IsValidEmail(email) <code>method</code></h3>
+<h5 id="summary-145">Summary</h5>
+<p>Determines whether [is valid email] [the specified email].</p>
+<h5 id="returns-34">Returns</h5>
+<p><code>true</code> if [is valid email] [the specified email]; otherwise, <code>false</code>.</p>
+<h5 id="parameters-66">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The email.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-ListenClientWebSocketMessages-System-Net-WebSockets-WebSocket,System-String-'></a></p>
+<h3 id="listenclientwebsocketmessageswebsocketsocketapipath-method">ListenClientWebSocketMessages(webSocket,socketAPIPath) <code>method</code></h3>
+<h5 id="summary-146">Summary</h5>
+<p>Register Listening Client WebSocket Communication
+Ist for Receive messages from Client</p>
+<h5 id="returns-35">Returns</h5>
+<h5 id="parameters-67">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>webSocket</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Net.WebSockets.WebSocket" title="System.Net.WebSockets.WebSocket">System.Net.WebSockets.WebSocket</a></td>
+<td></td>
+</tr>
+<tr>
+<td>socketAPIPath</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-RemoveWhitespace-System-String-'></a></p>
+<h3 id="removewhitespaceinput-method">RemoveWhitespace(input) <code>method</code></h3>
+<h5 id="summary-147">Summary</h5>
+<p>Removes the whitespace from the String.</p>
+<h5 id="returns-36">Returns</h5>
+<h5 id="parameters-68">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The input.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-SendMessageAndUpdateWebSocketsInSpecificPath-System-String,System-String-'></a></p>
+<h3 id="sendmessageandupdatewebsocketsinspecificpathsocketapipathmessage-method">SendMessageAndUpdateWebSocketsInSpecificPath(socketAPIPath,message) <code>method</code></h3>
+<h5 id="summary-148">Summary</h5>
+<p>Sends the message and update web sockets in specific path.</p>
+<h5 id="parameters-69">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>socketAPIPath</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The socket API path.</td>
+</tr>
+<tr>
+<td>message</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The message.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-SendMessageToClientSocket-System-Net-WebSockets-WebSocket,System-String-'></a></p>
+<h3 id="sendmessagetoclientsocketwebsocketmessage-method">SendMessageToClientSocket(webSocket,message) <code>method</code></h3>
+<h5 id="summary-149">Summary</h5>
+<p>Sends the message to client WebSocket.
+This Is Used by &quot;SendMessageAndUpdateWebSocketsInSpecificPath&quot;
+For Update Informaions on All Connections in Same WebSocket Path
+Its Solution FOR Teminals, Group Communications, etc.</p>
+<h5 id="parameters-70">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>webSocket</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Net.WebSockets.WebSocket" title="System.Net.WebSockets.WebSocket">System.Net.WebSockets.WebSocket</a></td>
+<td>The web socket.</td>
+</tr>
+<tr>
+<td>message</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td>The message.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerCoreLoggerWS'></a></p>
+<h2 id="servercoreloggerws-type">ServerCoreLoggerWS <code>type</code></h2>
+<h5 id="namespace-28">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-150">Summary</h5>
+<p>WEBSocket Template still not used Ideal for Terminal Panels, chat, controlling services</p>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-Echo-Microsoft-AspNetCore-Http-HttpContext,System-Net-WebSockets-WebSocket-'></a></p>
+<h3 id="echocontextwebsocket-method">Echo(context,webSocket) <code>method</code></h3>
+<h5 id="summary-151">Summary</h5>
+<p>WebSocket Communication Set Examle</p>
+<h5 id="returns-37">Returns</h5>
+<h5 id="parameters-71">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>context</td>
+<td><a href="#T-Microsoft-AspNetCore-Http-HttpContext" title="Microsoft.AspNetCore.Http.HttpContext">Microsoft.AspNetCore.Http.HttpContext</a></td>
+<td>The context.</td>
+</tr>
+<tr>
+<td>webSocket</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Net.WebSockets.WebSocket" title="System.Net.WebSockets.WebSocket">System.Net.WebSockets.WebSocket</a></td>
+<td>The web socket.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-Get'></a></p>
+<h3 id="get-method">Get() <code>method</code></h3>
+<h5 id="summary-152">Summary</h5>
+<p>WebSocket Registration Connection API Example</p>
+<h5 id="returns-38">Returns</h5>
+<h5 id="parameters-72">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreLoggerWS-GetBySocketAPIPath-System-String-'></a></p>
+<h3 id="getbysocketapipathid-method">GetBySocketAPIPath(id) <code>method</code></h3>
+<h5 id="summary-153">Summary</h5>
+<p>Universal WebSocket API Definitions
+for Connection Paths and Registering
+To Server Central List ow WebSocket Connections</p>
+<h5 id="returns-39">Returns</h5>
+<h5 id="parameters-73">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.String" title="System.String">System.String</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi'></a></p>
+<h2 id="servercorewebbuilderapi-type">ServerCoreWebBuilderApi <code>type</code></h2>
+<h5 id="namespace-29">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-154">Summary</h5>
+<p>Server Root Controller</p>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi-GetWebBuilderCodePreview-System-Int32-'></a></p>
+<h3 id="getwebbuildercodepreview-method">GetWebBuilderCodePreview() <code>method</code></h3>
+<h5 id="summary-155">Summary</h5>
+<p>WebBuilder Code Library Preview Api</p>
+<h5 id="returns-40">Returns</h5>
+<h5 id="parameters-74">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreWebBuilderApi-GetWebBuilderMenuPreview-System-Int32-'></a></p>
+<h3 id="getwebbuildermenupreviewid-method">GetWebBuilderMenuPreview(id) <code>method</code></h3>
+<h5 id="summary-156">Summary</h5>
+<p>WebBuilder Menu Preview Api</p>
+<h5 id="returns-41">Returns</h5>
+<h5 id="parameters-75">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Int32" title="System.Int32">System.Int32</a></td>
+<td>The identifier.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerCoreWebUserApi'></a></p>
+<h2 id="servercorewebuserapi-type">ServerCoreWebUserApi <code>type</code></h2>
+<h5 id="namespace-30">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-157">Summary</h5>
+<p>Server Root Controller</p>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerCoreWebUserApi-PostSendVerifyCode-Golden-ServerCoreWebPages-EmailVerification-'></a></p>
+<h3 id="postsendverifycodeemail-method">PostSendVerifyCode(email) <code>method</code></h3>
+<h5 id="summary-158">Summary</h5>
+<p>WebPages Verification Email</p>
+<h5 id="returns-42">Returns</h5>
+<h5 id="parameters-76">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td><a href="#T-Golden-ServerCoreWebPages-EmailVerification" title="Golden.ServerCoreWebPages.EmailVerification">Golden.ServerCoreWebPages.EmailVerification</a></td>
+<td>The email.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi'></a></p>
+<h2 id="serverdbdgmlschemaapi-type">ServerDbDgmlSchemaApi <code>type</code></h2>
+<h5 id="namespace-31">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-159">Summary</h5>
+<p>Database Schema Diagram Controller</p>
+<h5 id="see-also-3">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-Controller" title="Microsoft.AspNetCore.Mvc.Controller">Microsoft.AspNetCore.Mvc.Controller</a></li>
+</ul>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi-#ctor-Golden-ServerCoreDBSettings-GoldenContext-'></a></p>
+<h3 id="ctorcontext-constructor">#ctor(context) <code>constructor</code></h3>
+<h5 id="summary-160">Summary</h5>
+<p>Initializes a new instance of the <a href="#!-DgmlSchemaApi" title="DgmlSchemaApi"></a> class.</p>
+<h5 id="parameters-77">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>context</td>
+<td><a href="#T-Golden-ServerCoreDBSettings-GoldenContext" title="Golden.ServerCoreDBSettings.GoldenContext">Golden.ServerCoreDBSettings.GoldenContext</a></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerDbDgmlSchemaApi-Get'></a></p>
+<h3 id="get-method-1">Get() <code>method</code></h3>
+<h5 id="summary-161">Summary</h5>
+<p>Creates a DGML class diagram of most of the entities in the project wher you go to
+localhost/dgml See <a href="https://github.com/ErikEJ/SqlCeToolbox/wiki/EF-Core-Power-Tools">https://github.com/ErikEJ/SqlCeToolbox/wiki/EF-Core-Power-Tools</a></p>
+<h5 id="returns-43">Returns</h5>
+<p>a DGML class diagram</p>
+<h5 id="parameters-78">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-Controllers-ServerDocApi'></a></p>
+<h2 id="serverdocapi-type">ServerDocApi <code>type</code></h2>
+<h5 id="namespace-32">Namespace</h5>
+<p>Golden.Controllers</p>
+<p><a name='F-Golden-Controllers-ServerDocApi-_hostingEnvironment'></a></p>
+<h3 id="_hostingenvironment-constants">_hostingEnvironment <code>constants</code></h3>
+<h5 id="summary-162">Summary</h5>
+<p>For wwwroot folder Update
+with detect changes
+and modify static pages</p>
+<p><a name='M-Golden-Controllers-ServerDocApi-GenerateMdBook'></a></p>
+<h3 id="generatemdbook-method">GenerateMdBook() <code>method</code></h3>
+<h5 id="summary-163">Summary</h5>
+<p>Server Inteligent Documentation Generator Api</p>
+<h5 id="parameters-79">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerEmailerApi'></a></p>
+<h2 id="serveremailerapi-type">ServerEmailerApi <code>type</code></h2>
+<h5 id="namespace-33">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-164">Summary</h5>
+<p>Server Email sender Api for logged Communication</p>
+<h5 id="see-also-4">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-ControllerBase" title="Microsoft.AspNetCore.Mvc.ControllerBase">Microsoft.AspNetCore.Mvc.ControllerBase</a></li>
+</ul>
+<p><a name='T-Golden-ServerCoreConfiguration-ServerEnablingServices'></a></p>
+<h2 id="serverenablingservices-type">ServerEnablingServices <code>type</code></h2>
+<h5 id="namespace-34">Namespace</h5>
+<p>Golden.ServerCoreConfiguration</p>
+<h5 id="summary-165">Summary</h5>
+<p>Server Core Enabling Settings of Security, API Communications, Technologies, Modules,Rules,
+Rights, Rules, Rights, Conditions, Cors, Cookies, Formats, Services, Logging, etc..</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableCors-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enablecors-method">EnableCors() <code>method</code></h3>
+<h5 id="summary-166">Summary</h5>
+<p>Server Cors Configuration</p>
+<h5 id="parameters-80">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableEndpoints-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enableendpoints-method">EnableEndpoints() <code>method</code></h3>
+<h5 id="summary-167">Summary</h5>
+<p>Server Endpoints Configuration</p>
+<h5 id="parameters-81">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableLogging-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enableloggingapploggerfactory-method">EnableLogging(app,loggerFactory) <code>method</code></h3>
+<h5 id="summary-168">Summary</h5>
+<p>Enable Server Logging in Debug Mode</p>
+<h5 id="returns-44">Returns</h5>
+<h5 id="parameters-82">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app</td>
+<td><a href="#T-Microsoft-AspNetCore-Builder-IApplicationBuilder@" title="Microsoft.AspNetCore.Builder.IApplicationBuilder@">Microsoft.AspNetCore.Builder.IApplicationBuilder@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerEnablingServices-EnableWebSocket-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enablewebsocketapp-method">EnableWebSocket(app) <code>method</code></h3>
+<h5 id="summary-169">Summary</h5>
+<p>Server WebSocket Configuration</p>
+<h5 id="returns-45">Returns</h5>
+<h5 id="parameters-83">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app</td>
+<td><a href="#T-Microsoft-AspNetCore-Builder-IApplicationBuilder@" title="Microsoft.AspNetCore.Builder.IApplicationBuilder@">Microsoft.AspNetCore.Builder.IApplicationBuilder@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDefinition-ServerLocalDbDials'></a></p>
+<h2 id="serverlocaldbdials-type">ServerLocalDbDials <code>type</code></h2>
+<h5 id="namespace-35">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-170">Summary</h5>
+<p>Special Functions: Definition of Selected tables for Optimal Using to Data nature Its saves
+traffic, increases availability and for Example implemented Language is in Develop Auto Fill
+Table when is First Using Its can be used for more Dials</p>
+<p><a name='T-Golden-ServerCoreConfiguration-ServerModules'></a></p>
+<h2 id="servermodules-type">ServerModules <code>type</code></h2>
+<h5 id="namespace-36">Namespace</h5>
+<p>Golden.ServerCoreConfiguration</p>
+<h5 id="summary-171">Summary</h5>
+<p>Configure Server Ad-dons and Modules</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModules-ConfigureCoreAdmin-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurecoreadminservices-method">ConfigureCoreAdmin(services) <code>method</code></h3>
+<h5 id="summary-172">Summary</h5>
+<p>Server Module: Automatic DB Data Manager for work with data directly
+services.AddCoreAdmin(&quot;Admin&quot;); is Token RoleName</p>
+<h5 id="parameters-84">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModules-ConfigureDocumentation-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configuredocumentationservices-method">ConfigureDocumentation(services) <code>method</code></h3>
+<h5 id="summary-173">Summary</h5>
+<p>Server Module: Generted Developer Documentation for Defvelopers Documentation contain
+full Server Structure for extremelly simple developing</p>
+<h5 id="parameters-85">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModules-ConfigureHealthCheck-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configurehealthcheckservices-method">ConfigureHealthCheck(services) <code>method</code></h3>
+<h5 id="summary-174">Summary</h5>
+<p>Server Module: Automatic DB Data Manager for work with data directly
+Extreme Posibilities <a href="https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks">https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks</a></p>
+<h5 id="parameters-86">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModules-ConfigureSwagger-Microsoft-Extensions-DependencyInjection-IServiceCollection@-'></a></p>
+<h3 id="configureswaggerservices-method">ConfigureSwagger(services) <code>method</code></h3>
+<h5 id="summary-175">Summary</h5>
+<p>Server Module: Swagger Api Doc Generator And Online Tester Configuration</p>
+<h5 id="parameters-87">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection@" title="Microsoft.Extensions.DependencyInjection.IServiceCollection@">Microsoft.Extensions.DependencyInjection.IServiceCollection@</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreConfiguration-ServerModulesEnabling'></a></p>
+<h2 id="servermodulesenabling-type">ServerModulesEnabling <code>type</code></h2>
+<h5 id="namespace-37">Namespace</h5>
+<p>Golden.ServerCoreConfiguration</p>
+<h5 id="summary-176">Summary</h5>
+<p>Enable Configured Server Ad-dons and Modules</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableCoreAdmin-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enablecoreadmin-method">EnableCoreAdmin() <code>method</code></h3>
+<h5 id="summary-177">Summary</h5>
+<p>Server Module: Enable Swagger Api Doc Generator And Online Tester</p>
+<h5 id="parameters-88">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableDocumentation-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enabledocumentation-method">EnableDocumentation() <code>method</code></h3>
+<h5 id="summary-178">Summary</h5>
+<p>Server Module: Enable Generated Developer Documentation</p>
+<h5 id="parameters-89">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-ServerCoreConfiguration-ServerModulesEnabling-EnableSwagger-Microsoft-AspNetCore-Builder-IApplicationBuilder@-'></a></p>
+<h3 id="enableswagger-method">EnableSwagger() <code>method</code></h3>
+<h5 id="summary-179">Summary</h5>
+<p>Server Module: Enable Swagger Api Doc Generator And Online Tester</p>
+<h5 id="parameters-90">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreDefinition-ServerProviderHealthCheck'></a></p>
+<h2 id="serverproviderhealthcheck-type">ServerProviderHealthCheck <code>type</code></h2>
+<h5 id="namespace-38">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-180">Summary</h5>
+<p>Custom Registering
+Data are on /HealthResultService</p>
+<h5 id="see-also-5">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-Extensions-Diagnostics-HealthChecks-IHealthCheck" title="Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck">Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck</a></li>
+</ul>
+<p><a name='M-Golden-ServerCoreDefinition-ServerProviderHealthCheck-Microsoft#Extensions#Diagnostics#HealthChecks#IHealthCheck#CheckHealthAsync-Microsoft-Extensions-Diagnostics-HealthChecks-HealthCheckContext,System-Threading-CancellationToken-'></a></p>
+<h3 id="microsoftextensionsdiagnosticshealthchecksihealthcheckcheckhealthasynccontextcancellationtoken-method">Microsoft#Extensions#Diagnostics#HealthChecks#IHealthCheck#CheckHealthAsync(context,cancellationToken) <code>method</code></h3>
+<h5 id="summary-181">Summary</h5>
+<p>Interface for Registering Custom  Defined Checks on Startup
+<a href="https://dilanlivera.dev/add-health-checks-in-aspnet-core">https://dilanlivera.dev/add-health-checks-in-aspnet-core</a>
+<a href="https://medium.com/@suman.chatterjee/net-core-web-api-custom-health-check-13c6350b5f0c">https://medium.com/@suman.chatterjee/net-core-web-api-custom-health-check-13c6350b5f0c</a>
+<a href="https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks">https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks</a></p>
+<h5 id="returns-46">Returns</h5>
+<h5 id="parameters-91">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>context</td>
+<td><a href="#T-Microsoft-Extensions-Diagnostics-HealthChecks-HealthCheckContext" title="Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext">Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext</a></td>
+<td></td>
+</tr>
+<tr>
+<td>cancellationToken</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Threading.CancellationToken" title="System.Threading.CancellationToken">System.Threading.CancellationToken</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerRestartApi'></a></p>
+<h2 id="serverrestartapi-type">ServerRestartApi <code>type</code></h2>
+<h5 id="namespace-39">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-182">Summary</h5>
+<p>Server Restart Api for Remote Control</p>
+<h5 id="see-also-6">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-ControllerBase" title="Microsoft.AspNetCore.Mvc.ControllerBase">Microsoft.AspNetCore.Mvc.ControllerBase</a></li>
+</ul>
+<p><a name='T-Golden-ServerCoreDefinition-ServerRuntimeData'></a></p>
+<h2 id="serverruntimedata-type">ServerRuntimeData <code>type</code></h2>
+<h5 id="namespace-40">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-183">Summary</h5>
+<p>The server runtime data.</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-CentralWebSocketList'></a></p>
+<h3 id="centralwebsocketlist-constants">CentralWebSocketList <code>constants</code></h3>
+<h5 id="summary-184">Summary</h5>
+<p>Central WebSocket List for Easy one place Using</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-LocalDBTableList'></a></p>
+<h3 id="localdbtablelist-constants">LocalDBTableList <code>constants</code></h3>
+<h5 id="summary-185">Summary</h5>
+<p>The local db table list.</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerArgs'></a></p>
+<h3 id="serverargs-constants">ServerArgs <code>constants</code></h3>
+<h5 id="summary-186">Summary</h5>
+<p>Server Starup Args</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerCancelToken'></a></p>
+<h3 id="servercanceltoken-constants">ServerCancelToken <code>constants</code></h3>
+<h5 id="summary-187">Summary</h5>
+<p>Cancellation Token for Server Remote Control</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerCoreStatus'></a></p>
+<h3 id="servercorestatus-constants">ServerCoreStatus <code>constants</code></h3>
+<h5 id="summary-188">Summary</h5>
+<p>Server Core Status</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerFTPProvider'></a></p>
+<h3 id="serverftpprovider-constants">ServerFTPProvider <code>constants</code></h3>
+<h5 id="summary-189">Summary</h5>
+<p>Server Securited FTP Provider for Remote Control</p>
+<p><a name='F-Golden-ServerCoreDefinition-ServerRuntimeData-ServerRestartRequest'></a></p>
+<h3 id="serverrestartrequest-constants">ServerRestartRequest <code>constants</code></h3>
+<h5 id="summary-190">Summary</h5>
+<p>Server Restart Request Indicator</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-ConfigFile'></a></p>
+<h3 id="configfile-property">ConfigFile <code>property</code></h3>
+<h5 id="summary-191">Summary</h5>
+<p>Gets or Sets the configure file.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-DataPath'></a></p>
+<h3 id="datapath-property">DataPath <code>property</code></h3>
+<h5 id="summary-192">Summary</h5>
+<p>Gets or Sets the data path.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-DebugMode'></a></p>
+<h3 id="debugmode-property">DebugMode <code>property</code></h3>
+<h5 id="summary-193">Summary</h5>
+<p>Gets or Sets the debug mode.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-Setting_folder'></a></p>
+<h3 id="setting_folder-property">Setting_folder <code>property</code></h3>
+<h5 id="summary-194">Summary</h5>
+<p>Gets or Sets the setting_folder.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-Startup_path'></a></p>
+<h3 id="startup_path-property">Startup_path <code>property</code></h3>
+<h5 id="summary-195">Summary</h5>
+<p>Gets or Sets the startup_path.</p>
+<p><a name='P-Golden-ServerCoreDefinition-ServerRuntimeData-UserPath'></a></p>
+<h3 id="userpath-property">UserPath <code>property</code></h3>
+<h5 id="summary-196">Summary</h5>
+<p>Gets or Sets the configure file.</p>
+<p><a name='T-Golden-ServerCoreDBSettings-ServerWebPagesConfigApi'></a></p>
+<h2 id="serverwebpagesconfigapi-type">ServerWebPagesConfigApi <code>type</code></h2>
+<h5 id="namespace-41">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-197">Summary</h5>
+<p>Server Root Controller
+Used by Server Webpages</p>
+<h5 id="see-also-7">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-ControllerBase" title="Microsoft.AspNetCore.Mvc.ControllerBase">Microsoft.AspNetCore.Mvc.ControllerBase</a></li>
+</ul>
+<p><a name='M-Golden-ServerCoreDBSettings-ServerWebPagesConfigApi-Index'></a></p>
+<h3 id="index-method">Index() <code>method</code></h3>
+<h5 id="summary-198">Summary</h5>
+<p>Server Root &quot;/&quot; Redirection to &quot;server&quot; Folder</p>
+<h5 id="returns-47">Returns</h5>
+<h5 id="parameters-92">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreWebPages-ServerWebPagesLogin'></a></p>
+<h2 id="serverwebpageslogin-type">ServerWebPagesLogin <code>type</code></h2>
+<h5 id="namespace-42">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-199">Summary</h5>
+<p>Custom Class For Login over Server Web Pages</p>
+<p><a name='T-Golden-ServerCoreWebPages-ServerWebPagesToken'></a></p>
+<h2 id="serverwebpagestoken-type">ServerWebPagesToken <code>type</code></h2>
+<h5 id="namespace-43">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-200">Summary</h5>
+<p>Server WebPages Communication Token Definition
+for Security content</p>
+<p><a name='T-Golden-ServerCoreDBSettings-SetReportFilter'></a></p>
+<h2 id="setreportfilter-type">SetReportFilter <code>type</code></h2>
+<h5 id="namespace-44">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-201">Summary</h5>
+<p>Database Model Extension Definitions Its API Filter, Extended Classes, Translation, etc</p>
+<p><a name='T-Golden-ServerCoreDBSettings-SitemapController'></a></p>
+<h2 id="sitemapcontroller-type">SitemapController <code>type</code></h2>
+<h5 id="namespace-45">Namespace</h5>
+<p>Golden.ServerCoreDBSettings</p>
+<h5 id="summary-202">Summary</h5>
+<p>Sitemap.xml Routing</p>
+<h5 id="see-also-8">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-AspNetCore-Mvc-Controller" title="Microsoft.AspNetCore.Mvc.Controller">Microsoft.AspNetCore.Mvc.Controller</a></li>
+</ul>
+<p><a name='T-Golden-Startup'></a></p>
+<h2 id="startup-type">Startup <code>type</code></h2>
+<h5 id="namespace-46">Namespace</h5>
+<p>Golden</p>
+<h5 id="summary-203">Summary</h5>
+<p>Server Startup Definitions</p>
+<p><a name='M-Golden-Startup-Configure-Microsoft-AspNetCore-Builder-IApplicationBuilder,Microsoft-Extensions-Hosting-IHostApplicationLifetime-'></a></p>
+<h3 id="configureappserverlifetime-method">Configure(app,serverLifetime) <code>method</code></h3>
+<h5 id="summary-204">Summary</h5>
+<p>Server Core: Main Enabling of Server Services, Technologies, Modules, etc..</p>
+<h5 id="parameters-93">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app</td>
+<td><a href="#T-Microsoft-AspNetCore-Builder-IApplicationBuilder" title="Microsoft.AspNetCore.Builder.IApplicationBuilder">Microsoft.AspNetCore.Builder.IApplicationBuilder</a></td>
+<td></td>
+</tr>
+<tr>
+<td>serverLifetime</td>
+<td><a href="#T-Microsoft-Extensions-Hosting-IHostApplicationLifetime" title="Microsoft.Extensions.Hosting.IHostApplicationLifetime">Microsoft.Extensions.Hosting.IHostApplicationLifetime</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='M-Golden-Startup-ConfigureServices-Microsoft-Extensions-DependencyInjection-IServiceCollection-'></a></p>
+<h3 id="configureservicesservices-method">ConfigureServices(services) <code>method</code></h3>
+<h5 id="summary-205">Summary</h5>
+<p>Server Core: Main Configure of Server Services, Technologies, Modules, etc..</p>
+<h5 id="returns-48">Returns</h5>
+<p>void.</p>
+<h5 id="parameters-94">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td><a href="#T-Microsoft-Extensions-DependencyInjection-IServiceCollection" title="Microsoft.Extensions.DependencyInjection.IServiceCollection">Microsoft.Extensions.DependencyInjection.IServiceCollection</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name='T-Golden-Controllers-SystemDocApi'></a></p>
+<h2 id="systemdocapi-type">SystemDocApi <code>type</code></h2>
+<h5 id="namespace-47">Namespace</h5>
+<p>Golden.Controllers</p>
+<p><a name='F-Golden-Controllers-SystemDocApi-_hostingEnvironment'></a></p>
+<h3 id="_hostingenvironment-constants-1">_hostingEnvironment <code>constants</code></h3>
+<h5 id="summary-206">Summary</h5>
+<p>For wwwroot folder Update
+with detect changes
+and modify static pages</p>
+<p><a name='M-Golden-Controllers-SystemDocApi-GetMdDocumentPreview-System-Int32-'></a></p>
+<h3 id="getmddocumentpreview-method">GetMdDocumentPreview() <code>method</code></h3>
+<h5 id="summary-207">Summary</h5>
+<p>Documentation Code Manager Html Preview Api
+Startup Viewer</p>
+<h5 id="returns-49">Returns</h5>
+<h5 id="parameters-95">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='M-Golden-Controllers-SystemDocApi-GetMdLibraryPreview-System-Int32-'></a></p>
+<h3 id="getmdlibrarypreview-method">GetMdLibraryPreview() <code>method</code></h3>
+<h5 id="summary-208">Summary</h5>
+<p>Documentation Code Manager Html Preview Api
+Startup Viewer</p>
+<h5 id="returns-50">Returns</h5>
+<h5 id="parameters-96">Parameters</h5>
+<p>This method has no parameters.</p>
+<p><a name='T-Golden-ServerCoreWebPages-UserConfig'></a></p>
+<h2 id="userconfig-type">UserConfig <code>type</code></h2>
+<h5 id="namespace-48">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-209">Summary</h5>
+<p>Custom Class For UserConfig over Server Web Pages</p>
+<p><a name='T-Golden-ServerCoreWebPages-WebMessage'></a></p>
+<h2 id="webmessage-type">WebMessage <code>type</code></h2>
+<h5 id="namespace-49">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-210">Summary</h5>
+<p>Custom WebMessage Class For Server Web Pages</p>
+<p><a name='T-Golden-ServerCoreWebPages-WebRegistration'></a></p>
+<h2 id="webregistration-type">WebRegistration <code>type</code></h2>
+<h5 id="namespace-50">Namespace</h5>
+<p>Golden.ServerCoreWebPages</p>
+<h5 id="summary-211">Summary</h5>
+<p>WebPages User Registration class</p>
+<p><a name='T-Golden-ServerCoreDefinition-WebSocketExtension'></a></p>
+<h2 id="websocketextension-type">WebSocketExtension <code>type</code></h2>
+<h5 id="namespace-51">Namespace</h5>
+<p>Golden.ServerCoreDefinition</p>
+<h5 id="summary-212">Summary</h5>
+<p>WebSocket Extension Definition For
+Simple Central Control All Connection
+By Connection Path and Timeout</p>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogProvider'></a></p>
+<h2 id="websocketlogprovider-type">WebSocketLogProvider <code>type</code></h2>
+<h5 id="namespace-52">Namespace</h5>
+<p>Golden.ServerCoreDefinition.ServerCoreHelpers</p>
+<h5 id="summary-213">Summary</h5>
+<p>!!! Implemented
+Server Core WebSocket System LogProvider Stream
+This Is Special Serice For Remote Monitoring
+On More Devices in OneTime</p>
+<h5 id="see-also-9">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-Extensions-Logging-ILoggerProvider" title="Microsoft.Extensions.Logging.ILoggerProvider">Microsoft.Extensions.Logging.ILoggerProvider</a></li>
+</ul>
+<p><a name='T-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogger'></a></p>
+<h2 id="websocketlogger-type">WebSocketLogger <code>type</code></h2>
+<h5 id="namespace-53">Namespace</h5>
+<p>Golden.ServerCoreDefinition.ServerCoreHelpers</p>
+<h5 id="summary-214">Summary</h5>
+<p>Server Core WebSocket System Logger Interface</p>
+<h5 id="see-also-10">See Also</h5>
+<ul>
+<li><a href="#T-Microsoft-Extensions-Logging-ILogger" title="Microsoft.Extensions.Logging.ILogger">Microsoft.Extensions.Logging.ILogger</a></li>
+</ul>
+<p><a name='M-Golden-ServerCoreDefinition-ServerCoreHelpers-WebSocketLogger-Log``1-Microsoft-Extensions-Logging-LogLevel,Microsoft-Extensions-Logging-EventId,``0,System-Exception,System-Func{``0,System-Exception,System-String}-'></a></p>
+<h3 id="log1logleveleventidstateexceptionformatter-method">Log``1(logLevel,eventId,state,exception,formatter) <code>method</code></h3>
+<h5 id="summary-215">Summary</h5>
+<p>Used to log the entry.</p>
+<h5 id="parameters-97">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>logLevel</td>
+<td><a href="#T-Microsoft-Extensions-Logging-LogLevel" title="Microsoft.Extensions.Logging.LogLevel">Microsoft.Extensions.Logging.LogLevel</a></td>
+<td>An instance of <a href="#T-Microsoft-Extensions-Logging-LogLevel" title="Microsoft.Extensions.Logging.LogLevel">LogLevel</a>.</td>
+</tr>
+<tr>
+<td>eventId</td>
+<td><a href="#T-Microsoft-Extensions-Logging-EventId" title="Microsoft.Extensions.Logging.EventId">Microsoft.Extensions.Logging.EventId</a></td>
+<td>The event's ID. An instance of <a href="#T-Microsoft-Extensions-Logging-EventId" title="Microsoft.Extensions.Logging.EventId">EventId</a>.</td>
+</tr>
+<tr>
+<td>state</td>
+<td><a href="#T-%60%600" title="``0">``0</a></td>
+<td>The event's state.</td>
+</tr>
+<tr>
+<td>exception</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Exception" title="System.Exception">System.Exception</a></td>
+<td>The event's exception. An instance of <a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Exception" title="System.Exception">Exception</a></td>
+</tr>
+<tr>
+<td>formatter</td>
+<td><a href="http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&amp;l=EN-US&amp;k=k:System.Func" title="System.Func{``0,System.Exception,System.String}">System.Func{``0,System.Exception,System.String}</a></td>
+<td>A delegate that formats</td>
+</tr>
+</tbody>
+</table>
+<h5 id="generic-types-1">Generic Types</h5>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TState</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

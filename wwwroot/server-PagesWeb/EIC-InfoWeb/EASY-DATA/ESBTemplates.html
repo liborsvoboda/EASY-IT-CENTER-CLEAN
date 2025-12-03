@@ -1,0 +1,726 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h4 id="šablona-formuláře-funkční-strana-šablony-c">Šablona Formuláře Funkční Strana šablony C#</h4>
+<p>To je 48st 3ablonz kde je definováno co s čím se má stát.
+Je to seznam funkcionalit kderěé sjo pro každou šablonu stejnou
+protože jsou součástí stejného systému.</p>
+<p>Šablona Obsahuje XAML - Gafický Návrh šablony, C# - Funkční strana šablony
+Jejich rozdílnost je pouze v případech kdy vybočují, např Vložit
+Soubor Atd. K tomu ale nachstách Knihovnu Funkcionalit a
+vy jen vyberete funkcionalitu. Zde Standardní Šablona.
+Všechny šablony najdete na portálu vývoje.</p>
+<p>Šablon je celkem 10</p>
+<ol>
+<li>Standardní Šablona agendy = Přehled + Editace</li>
+<li>Šablona pouze spřehledem = Přehled</li>
+<li>Standardní Šablona s Sub Přehledem   = Šabolna má navíc přehled subpoložek</li>
+<li>Standardní Šablona s sub položkami  = navíc subpoložky (Faktura)</li>
+<li>Šablona Dokument Viewer</li>
+<li>Šablona Video Player</li>
+<li>Šablona Webrowser</li>
+<li>Šablona 3D STL Viewer</li>
+<li>Šablona Grafy</li>
+<li>Šablona Hardware Monitor</li>
+<li>Šablona Vlastní Formulář</li>
+</ol>
+<p>Šablony jsou plněpopsány v portálu, při kopíriování popis jen překáží</p>
+<p>Ukázka XAML, na portále bude již grafický CLICK vývoj</p>
+<pre><code class="lang-xml">&lt;UserControl
+    x:Class=&quot;EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationPage&quot;
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    xmlns:Controls=&quot;http://metro.mahapps.com/winfx/xaml/controls&quot;
+    xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+    xmlns:local=&quot;clr-namespace:EasyITSystemCenter.Pages&quot;
+    xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+    xmlns:xctk=&quot;http://schemas.xceed.com/wpf/xaml/toolkit&quot;
+    Name=&quot;Form&quot;
+    HorizontalAlignment=&quot;Stretch&quot;
+    VerticalAlignment=&quot;Stretch&quot;
+    d:DesignHeight=&quot;500&quot;
+    d:DesignWidth=&quot;600&quot;
+    Tag=&quot;Form&quot;
+    mc:Ignorable=&quot;d&quot;&gt;
+
+    &lt;Grid
+        Margin=&quot;0&quot; HorizontalAlignment=&quot;Stretch&quot; VerticalAlignment=&quot;Stretch&quot;
+        Background=&quot;{DynamicResource AccentColorBrush}&quot;&gt;
+        &lt;Grid x:Name=&quot;ListView&quot; Visibility=&quot;Visible&quot;&gt;
+            &lt;DataGrid
+                x:Name=&quot;DgListView&quot;
+                Width=&quot;{Binding Path=ActualWidth, ElementName=Form}&quot;
+                Height=&quot;{Binding Path=ActualHeight, ElementName=Form}&quot;
+                HorizontalAlignment=&quot;Left&quot; VerticalAlignment=&quot;Top&quot;
+                AutoGenerateColumns=&quot;True&quot; AutoGeneratedColumns=&quot;DgListView_Translate&quot; IsReadOnly=&quot;True&quot; MouseDoubleClick=&quot;DgListView_MouseDoubleClick&quot; SelectionChanged=&quot;DgListView_SelectionChanged&quot; SelectionMode=&quot;Single&quot; /&gt;
+        &lt;/Grid&gt;
+
+        &lt;Grid
+            x:Name=&quot;ListForm&quot;
+            Background=&quot;{DynamicResource WhiteBrush}&quot;
+            Visibility=&quot;Visible&quot;&gt;
+            &lt;Grid.ColumnDefinitions&gt;
+                &lt;ColumnDefinition Width=&quot;300&quot; /&gt;
+                &lt;ColumnDefinition Width=&quot;*&quot; /&gt;
+            &lt;/Grid.ColumnDefinitions&gt;
+            &lt;Grid.RowDefinitions&gt;
+                &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
+                &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
+                &lt;RowDefinition Height=&quot;80&quot; /&gt;
+                &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
+                &lt;RowDefinition Height=&quot;*&quot; /&gt;
+                &lt;RowDefinition Height=&quot;110&quot; /&gt;
+            &lt;/Grid.RowDefinitions&gt;
+
+            &lt;Label
+                x:Name=&quot;lbl_id&quot;
+                Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot;
+                HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; /&gt;
+            &lt;Controls:NumericUpDown
+                x:Name=&quot;txt_id&quot;
+                Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot;
+                Margin=&quot;0,2,0,2&quot; HorizontalContentAlignment=&quot;Left&quot;
+                Controls:TextBoxHelper.ClearTextButton=&quot;False&quot; Controls:TextBoxHelper.Watermark=&quot;&quot; HideUpDownButtons=&quot;True&quot; IsEnabled=&quot;False&quot; ToolTip=&quot;This unique identificator is read only value which is filled automatically by system&quot; /&gt;
+
+            &lt;Label
+                x:Name=&quot;lbl_systemName&quot;
+                Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot;
+                HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; /&gt;
+            &lt;TextBox
+                x:Name=&quot;txt_systemName&quot;
+                Grid.Row=&quot;1&quot; Grid.Column=&quot;1&quot;
+                Margin=&quot;0,2,0,2&quot;
+                Controls:TextBoxHelper.ClearTextButton=&quot;true&quot; Controls:TextBoxHelper.IsWaitingForData=&quot;True&quot; Controls:TextBoxHelper.Watermark=&quot;&quot; /&gt;
+
+            &lt;Label
+                x:Name=&quot;lbl_description&quot;
+                Grid.Row=&quot;2&quot; Grid.Column=&quot;0&quot;
+                HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; /&gt;
+            &lt;TextBox
+                x:Name=&quot;txt_description&quot;
+                Grid.Row=&quot;2&quot; Grid.Column=&quot;1&quot;
+                Margin=&quot;0,2,0,2&quot;
+                Controls:TextBoxHelper.ClearTextButton=&quot;True&quot; Controls:TextBoxHelper.Watermark=&quot;&quot; AcceptsReturn=&quot;True&quot; TextWrapping=&quot;Wrap&quot; VerticalScrollBarVisibility=&quot;Visible&quot; /&gt;
+
+            &lt;Label
+                x:Name=&quot;lbl_active&quot;
+                Grid.Row=&quot;3&quot; Grid.Column=&quot;0&quot;
+                HorizontalAlignment=&quot;Right&quot; HorizontalContentAlignment=&quot;Right&quot; /&gt;
+            &lt;CheckBox
+                x:Name=&quot;chb_active&quot;
+                Grid.Row=&quot;3&quot; Grid.Column=&quot;1&quot;
+                VerticalAlignment=&quot;Center&quot; /&gt;
+
+
+            &lt;Button
+                Name=&quot;btn_save&quot;
+                Grid.Row=&quot;5&quot; Grid.Column=&quot;0&quot;
+                Width=&quot;200&quot; Height=&quot;40&quot;
+                Margin=&quot;44,21,0,44&quot; HorizontalAlignment=&quot;Left&quot; VerticalAlignment=&quot;Bottom&quot;
+                Click=&quot;BtnSave_Click&quot;
+                Style=&quot;{DynamicResource AccentedSquareButtonStyle}&quot; /&gt;
+            &lt;Button
+                Name=&quot;btn_cancel&quot;
+                Grid.Row=&quot;5&quot; Grid.Column=&quot;1&quot;
+                Width=&quot;200&quot; Height=&quot;40&quot;
+                Margin=&quot;44,21,44,44&quot; HorizontalAlignment=&quot;Right&quot; VerticalAlignment=&quot;Bottom&quot;
+                Click=&quot;BtnCancel_Click&quot;
+                Style=&quot;{DynamicResource AccentedSquareButtonStyle}&quot; /&gt;
+        &lt;/Grid&gt;
+    &lt;/Grid&gt;
+&lt;/UserControl&gt;
+
+</code></pre>
+<p>A nyní Ukázka C# šablony, kde opravíte názvy políček v přehledu, SAVE, LOAD
+a vše ostatní zůstává. 3x Uprava- seznam polí v přehledu, Načtení polí, uložení.</p>
+<pre><code class="lang-cs">namespace EasyITSystemCenter.Pages {
+
+    public partial class TemplateClassListAutoDBTranslationPage : UserControl {
+        public static DataViewSupport dataViewSupport = new DataViewSupport();
+        public static TemplateClassList selectedRecord = new TemplateClassList();
+
+        public TemplateClassListAutoDBTranslationPage() {
+            InitializeComponent();
+            _ = SystemOperations.SetLanguageDictionary(Resources, App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;sys_defaultLanguage&quot;).Value);
+
+            try {
+                _ = DataOperations.TranslateFormFields(ListForm);
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+
+            _ = LoadDataList();
+            SetRecord(false);
+        }
+
+        public async Task&lt;bool&gt; LoadDataList() {
+            MainWindow.ProgressRing = Visibility.Visible;
+            try {
+                DgListView.ItemsSource = await CommApi.GetApiRequest&lt;List&lt;TemplateClassList&gt;&gt;(ApiUrls.EasyITCenterTemplateClassList, (dataViewSupport.AdvancedFilter == null) ? null : &quot;Filter/&quot; + WebUtility.UrlEncode(dataViewSupport.AdvancedFilter.Replace(&quot;[!]&quot;, &quot;&quot;).Replace(&quot;{!}&quot;, &quot;&quot;)), App.UserData.Authentification.Token);
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+            MainWindow.ProgressRing = Visibility.Hidden; return true;
+        }
+
+        //ZDE upravíte políčka která chcete vidět nebo skrýt v přehledu
+        private async void DgListView_Translate(object sender, EventArgs ex) {
+            try {
+                ((DataGrid)sender).Columns.ToList().ForEach(async e =&gt; {
+                    string headername = e.Header.ToString();
+                    if (headername == &quot;SystemName&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.DisplayIndex = 1; }
+                    else if (headername == &quot;Description&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.DisplayIndex = 2; }
+                    else if (headername == &quot;Active&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 2; }
+                    else if (headername == &quot;Timestamp&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 1; }
+                    else if (headername == &quot;Id&quot;) e.DisplayIndex = 0;
+                    else if (headername == &quot;UserId&quot;) e.Visibility = Visibility.Hidden;
+                });
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+        }
+
+        public void Filter(string filter) {
+            try {
+                if (filter.Length == 0) { dataViewSupport.FilteredValue = null; DgListView.Items.Filter = null; return; }
+                dataViewSupport.FilteredValue = filter;
+                DgListView.Items.Filter = (e) =&gt; {
+                    TemplateClassList user = e as TemplateClassList;
+                    return user.SystemName.ToLower().Contains(filter.ToLower())
+                    || !string.IsNullOrEmpty(user.Description) &amp;&amp; user.Description.ToLower().Contains(filter.ToLower());
+                };
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+        }
+
+        public void NewRecord() {
+            selectedRecord = new TemplateClassList();
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true);
+        }
+
+        public void EditRecord(bool copy) {
+            selectedRecord = (TemplateClassList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true, copy);
+        }
+
+        public async void DeleteRecord() {
+            selectedRecord = (TemplateClassList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            MessageDialogResult result = await MainWindow.ShowMessageOnMainWindow(false, Resources[&quot;deleteRecordQuestion&quot;].ToString() + &quot; &quot; + selectedRecord.Id.ToString(), true);
+            if (result == MessageDialogResult.Affirmative) {
+                DBResultMessage dBResult = await CommApi.DeleteApiRequest(ApiUrls.EasyITCenterTemplateClassList, selectedRecord.Id.ToString(), App.UserData.Authentification.Token);
+                if (dBResult.RecordCount == 0) await MainWindow.ShowMessageOnMainWindow(true, &quot;Exception Error : &quot; + dBResult.ErrorMessage);
+                await LoadDataList(); SetRecord(false);
+            }
+        }
+
+        private void DgListView_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
+            if (DgListView.SelectedItems.Count == 0) return;
+            selectedRecord = (TemplateClassList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true);
+        }
+
+        private void DgListView_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            if (DgListView.SelectedItems.Count &gt; 0) { selectedRecord = (TemplateClassList)DgListView.SelectedItem; }
+            else { selectedRecord = new TemplateClassList(); }
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(false);
+        }
+
+        //ULOžení Záznamu Zde opravíte políčka,
+        //Doslova opačná podmínka je v Načtení záznau
+        private async void BtnSave_Click(object sender, RoutedEventArgs e) {
+            try {
+                DBResultMessage dBResult;
+                selectedRecord.Id = (int)((txt_id.Value != null) ? txt_id.Value : 0);
+                selectedRecord.SystemName = txt_systemName.Text;
+                selectedRecord.Description = txt_description.Text;
+                selectedRecord.UserId = App.UserData.Authentification.Id;
+                selectedRecord.Active = (bool)chb_active.IsChecked;
+                selectedRecord.TimeStamp = DateTimeOffset.Now.DateTime;
+
+                string json = JsonConvert.SerializeObject(selectedRecord);
+                StringContent httpContent = new StringContent(json, System.Text.Encoding.UTF8, &quot;application/json&quot;);
+                if (selectedRecord.Id == 0) {
+                    dBResult = await CommApi.PutApiRequest(ApiUrls.EasyITCenterTemplateClassList, httpContent, null, App.UserData.Authentification.Token);
+                }
+                else { dBResult = await CommApi.PostApiRequest(ApiUrls.EasyITCenterTemplateClassList, httpContent, null, App.UserData.Authentification.Token); }
+
+                if (dBResult.RecordCount &gt; 0) { selectedRecord = new TemplateClassList(); await LoadDataList(); SetRecord(false); }
+                else { await MainWindow.ShowMessageOnMainWindow(true, &quot;Exception Error : &quot; + dBResult.ErrorMessage); }
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+        }
+
+        private void BtnCancel_Click(object sender, RoutedEventArgs e) {
+            selectedRecord = (DgListView.SelectedItems.Count &gt; 0) ? (TemplateClassList)DgListView.SelectedItem : new TemplateClassList();
+            SetRecord(false);
+        }
+        
+        //Načtení Záznamu Zde opravíte Vaše Políčka jen otočte polička oproti uložení
+        private void SetRecord(bool? showForm = null, bool copy = false) {
+            txt_id.Value = (copy) ? 0 : selectedRecord.Id;
+            txt_systemName.Text = selectedRecord.SystemName;
+            txt_description.Text = selectedRecord.Description;
+            chb_active.IsChecked = (selectedRecord.Id == 0) ? bool.Parse(App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;beh_activeNewInputDefault&quot;).Value) : selectedRecord.Active;
+
+            if (showForm != null &amp;&amp; showForm == true) {
+                MainWindow.DataGridSelected = true; MainWindow.DataGridSelectedIdListIndicator = selectedRecord.Id != 0; MainWindow.dataGridSelectedId = selectedRecord.Id; MainWindow.DgRefresh = false;
+                ListView.Visibility = Visibility.Hidden; ListForm.Visibility = Visibility.Visible; dataViewSupport.FormShown = true;
+            }
+            else {
+                MainWindow.DataGridSelected = true; MainWindow.DataGridSelectedIdListIndicator = selectedRecord.Id != 0; MainWindow.dataGridSelectedId = selectedRecord.Id; MainWindow.DgRefresh = true;
+                ListForm.Visibility = Visibility.Hidden; ListView.Visibility = Visibility.Visible; dataViewSupport.FormShown = showForm == null &amp;&amp; !bool.Parse(App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;beh_CloseFormAfterSave&quot;).Value);
+            }
+        }
+    }
+}
+</code></pre>
+<hr>
+<p><strong>Ukázka popsané šablony, smysl má jen C#, na XAML nen9 moc co popisovat
+Jen seznámení s pár globálními pravidly, která vám ulehčují život</strong></p>
+<pre><code class="lang-cs">
+// This is Template Page ListView + UserForm + SubListView Only
+namespace EasyITSystemCenter.Pages {
+
+    /// &lt;summary&gt;
+    /// This standartized Template is only for list view od Data table Called from MainWindow.cs on
+    /// open New Tab
+    /// &lt;/summary&gt;
+    public partial class TemplateClassListAutoDBTranslationWithSubViewPage : UserControl {
+
+        /// &lt;summary&gt;
+        /// Standartized declaring static page data and selected record for All Pages this method is
+        /// for global working with pages Called from MainWindow.cs for Control of Button Menu and
+        /// Selections (Report,Filter and more) All is setted as global Classes for All Pages and
+        /// Work is Fully automatized by System core
+        ///
+        /// HERE you Define All Data Variables For This Form
+        /// &lt;/summary&gt;
+        public static DataViewSupport dataViewSupport = new DataViewSupport();
+
+        public static BasicCurrencyList selectedRecord = new BasicCurrencyList();
+
+        public BusinessExtendedExchangeRateList selectedSubRecord = new BusinessExtendedExchangeRateList();
+
+        /// &lt;summary&gt;
+        /// Initialize page with loading Dictionary and start loding data Manual work needed
+        /// Translate All XAML fields by Resources Runned on start
+        /// &lt;/summary&gt;
+        public TemplateClassListAutoDBTranslationWithSubViewPage() {
+            InitializeComponent();
+            _ = SystemOperations.SetLanguageDictionary(Resources, App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;sys_defaultLanguage&quot;).Value);
+
+            try {
+                _ = DataOperations.TranslateFormFields(ListForm);
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+
+            _ = LoadDataList();
+            SetRecord(false);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized Method for Loading data. Manual Changing is needed for simple form is All
+        /// changed By CLASNAME Chage, but If you need More API data for selection Here are Defined
+        /// All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+        ///
+        /// After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+        /// is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+        /// Tag=Setting in XAML part) this method is for global working with pages Called from
+        /// MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public async Task&lt;bool&gt; LoadDataList() {
+            MainWindow.ProgressRing = Visibility.Visible;
+            try { if (MainWindow.serviceRunning) DgListView.ItemsSource = await CommApi.GetApiRequest&lt;List&lt;BasicCurrencyList&gt;&gt;(ApiUrls.EasyITCenterBasicCurrencyList, (dataViewSupport.AdvancedFilter == null) ? null : &quot;Filter/&quot; + WebUtility.UrlEncode(dataViewSupport.AdvancedFilter.Replace(&quot;[!]&quot;, &quot;&quot;).Replace(&quot;{!}&quot;, &quot;&quot;)), App.UserData.Authentification.Token); } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+            MainWindow.ProgressRing = Visibility.Hidden; return true;
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for translating column names of DatagidView (List Data) Manual
+        /// Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+        /// set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+        /// This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+        /// Tag=Setting in XAML part) this method is for global working with page internal reaction
+        /// on DatagrigView DataFiling on Start Page Runned On Page Loading
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;ex&quot;&gt;    &lt;/param&gt;
+        private async void DgListView_Translate(object sender, EventArgs ex) {
+            ((DataGrid)sender).Columns.ToList().ForEach(async e =&gt; {
+                string headername = e.Header.ToString();
+                if (headername == &quot;Name&quot;) { e.Header = await DBOperations.DBTranslation(&quot;fname&quot;); e.DisplayIndex = 1; }
+                else if (headername == &quot;ExchangeRate&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.DisplayIndex = 2; }
+                else if (headername == &quot;Fixed&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.DisplayIndex = 3; }
+                else if (headername == &quot;Description&quot;) e.Header = await DBOperations.DBTranslation(headername);
+                else if (headername == &quot;Default&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.DisplayIndex = DgListView.Columns.Count - 3; }
+                else if (headername == &quot;Active&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 2; }
+                else if (headername == &quot;Timestamp&quot;) { e.Header = await DBOperations.DBTranslation(headername); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 1; }
+                else if (headername == &quot;Id&quot;) e.DisplayIndex = 0;
+                else if (headername == &quot;UserId&quot;) e.Visibility = Visibility.Hidden;
+            });
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for searching match in setted columns. Searched value is from the
+        /// simple 'Search Input' for DatagidView (List Data) Manual Changing is needed of filtered
+        /// columns by Search Value This is on Every page ('View' and 'Form' Types) without
+        /// 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for global
+        /// working with pages Called from MainWindow.cs Dynamicaly Called Only from MainWindow.cs
+        /// when Search value Inserted
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;filter&quot;&gt;&lt;/param&gt;
+        public void Filter(string filter) {
+            try {
+                if (filter.Length == 0) { dataViewSupport.FilteredValue = null; DgListView.Items.Filter = null; return; }
+                dataViewSupport.FilteredValue = filter;
+                DgListView.Items.Filter = (e) =&gt; {
+                    BasicCurrencyList user = e as BasicCurrencyList;
+                    return user.Name.ToLower().Contains(filter.ToLower())
+                    || !string.IsNullOrEmpty(user.Description) &amp;&amp; user.Description.ToLower().Contains(filter.ToLower());
+                };
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+        /// By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+        /// New button Click Only Set Record And Hide Dataview and Show Detail
+        /// &lt;/summary&gt;
+        public void NewRecord() {
+            selectedRecord = new BasicCurrencyList();
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+        /// By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+        /// Edit button Click Only Set Record And Hide Dataview and Show Detail with selected Record
+        /// &lt;/summary&gt;
+        public void EditRecord(bool copy) {
+            selectedRecord = (BasicCurrencyList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true, copy);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+        /// By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+        /// Delete button Click Show MainWindow Standartized Message with info About Delete and
+        /// After confirm Send DeleteApiRequest Reload Datalist and cancel Selected Record
+        /// &lt;/summary&gt;
+        public async void DeleteRecord() {
+            selectedRecord = (BasicCurrencyList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            MessageDialogResult result = await MainWindow.ShowMessageOnMainWindow(false, Resources[&quot;deleteRecordQuestion&quot;].ToString() + &quot; &quot; + selectedRecord.Id.ToString(), true);
+            if (result == MessageDialogResult.Affirmative) {
+                DBResultMessage dBResult = await CommApi.DeleteApiRequest(ApiUrls.EasyITCenterBasicCurrencyList, selectedRecord.Id.ToString(), App.UserData.Authentification.Token);
+                if (dBResult.RecordCount == 0) await MainWindow.ShowMessageOnMainWindow(true, &quot;Exception Error : &quot; + dBResult.ErrorMessage);
+                _ = LoadDataList(); SetRecord(false);
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for selecting and opening Detail Form. This is only View Page, that
+        /// is only for Select record This is full automatic, not needed manual work This is on
+        /// Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+        /// Tag=Setting in XAML part) this method is for global working page its local control From XAML
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;     &lt;/param&gt;
+        private void DgListView_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
+            if (DgListView.SelectedItems.Count == 0) return;
+            selectedRecord = (BasicCurrencyList)DgListView.SelectedItem;
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(true);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for select one record only. This is full automatic, not needed
+        /// manual work This is on Every page ('View' and 'Form' Types) without 'Setting' Type
+        /// (Name=Setting and Tag=Setting in XAML part) this method is for global working page its
+        /// local control From XAML
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;The source of the event.&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;     
+        /// The &lt;see cref=&quot;SelectionChangedEventArgs&quot;/&gt; instance containing the event data.
+        /// &lt;/param&gt;
+        private void DgListView_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            if (DgListView.SelectedItems.Count &gt; 0) {
+                selectedRecord = (BasicCurrencyList)DgListView.SelectedItem;
+            }
+            else { selectedRecord = new BasicCurrencyList(); }
+            dataViewSupport.SelectedRecordId = selectedRecord.Id;
+            SetRecord(false);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for Save Record And return to Dataview. Manual work need, Here is
+        /// Join Betwen XAML inputs and Selected Record Dataset (dataset for Detail): Direction FORM
+        /// to SELECTED RECORD By ClasName Replacing All other changes are automaticaly
+        /// (API,DatasetType), just must define and control Each Field Of Dataset this method is for
+        /// global working page its local control From XAML
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;The source of the event.&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;     
+        /// The &lt;see cref=&quot;RoutedEventArgs&quot;/&gt; instance containing the event data.
+        /// &lt;/param&gt;
+        private async void BtnSave_Click(object sender, RoutedEventArgs e) {
+            try {
+                DBResultMessage dBResult;
+                selectedRecord.Id = (int)((txt_id.Value != null) ? txt_id.Value : 0);
+                selectedRecord.Name = txt_name.Text;
+                selectedRecord.ExchangeRate = (decimal)txt_exchangeRate.Value;
+                selectedRecord.Fixed = (bool)chb_fixed.IsChecked;
+                selectedRecord.Description = tb_description.Text;
+                selectedRecord.Default = (bool)chb_default.IsChecked;
+                selectedRecord.UserId = App.UserData.Authentification.Id;
+                selectedRecord.Active = (bool)chb_active.IsChecked;
+                selectedRecord.TimeStamp = DateTimeOffset.Now.DateTime;
+
+                string json = JsonConvert.SerializeObject(selectedRecord);
+                StringContent httpContent = new StringContent(json, System.Text.Encoding.UTF8, &quot;application/json&quot;);
+                if (selectedRecord.Id == 0) {
+                    dBResult = await CommApi.PutApiRequest(ApiUrls.EasyITCenterBasicCurrencyList, httpContent, null, App.UserData.Authentification.Token);
+                }
+                else { dBResult = await CommApi.PostApiRequest(ApiUrls.EasyITCenterBasicCurrencyList, httpContent, null, App.UserData.Authentification.Token); }
+
+                if (dBResult.RecordCount &gt; 0) {
+                    selectedRecord = new BasicCurrencyList();
+                    await LoadDataList();
+                    SetRecord(null);
+                }
+                else { await MainWindow.ShowMessageOnMainWindow(true, &quot;Exception Error : &quot; + dBResult.ErrorMessage); }
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for cancel of Editing. Hide Detail and Dataview List is Shown This
+        /// is full automatic, not needed manual work This is on Every page ('View' and 'Form'
+        /// Types) without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is
+        /// for global working page its local control From XAML
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;The source of the event.&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;     
+        /// The &lt;see cref=&quot;RoutedEventArgs&quot;/&gt; instance containing the event data.
+        /// &lt;/param&gt;
+        private void BtnCancel_Click(object sender, RoutedEventArgs e) {
+            selectedRecord = (DgListView.SelectedItems.Count &gt; 0) ? (BasicCurrencyList)DgListView.SelectedItem : new BasicCurrencyList();
+            SetRecord(false);
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for ¨Set New Record/ Edit Record / Copy Record And return to
+        /// Dataview. Manual work need, Here is Join Betwen XAML inputs and Selected Record Dataset
+        /// (dataset for Detail): Direction Selected record to FORM By ClasName Replacing All other
+        /// changes are automaticaly (API,DatasetType), just must define and control Each Field Of
+        /// Dataset this method is for global working page its local control From XAML
+        ///
+        /// In this type Form Here Are loaded Data for SublistView (on knows selected record for
+        /// correct join)
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;showForm&quot;&gt;if set to &lt;c&gt;true&lt;/c&gt; [show form].&lt;/param&gt;
+        /// &lt;param name=&quot;copy&quot;&gt;    if set to &lt;c&gt;true&lt;/c&gt; [copy].&lt;/param&gt;
+        private void SetRecord(bool? showForm = null, bool copy = false) {
+            txt_id.Value = (copy) ? 0 : selectedRecord.Id;
+            txt_name.Text = selectedRecord.Name;
+            txt_exchangeRate.Value = (double)selectedRecord.ExchangeRate;
+            chb_fixed.IsChecked = selectedRecord.Fixed;
+            tb_description.Text = selectedRecord.Description;
+            chb_default.IsChecked = selectedRecord.Default;
+            chb_active.IsChecked = (selectedRecord.Id == 0) ? bool.Parse(App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;beh_activeNewInputDefault&quot;).Value) : selectedRecord.Active;
+
+            if (showForm != null &amp;&amp; showForm == true) {
+                MainWindow.DataGridSelected = true; MainWindow.DataGridSelectedIdListIndicator = selectedRecord.Id != 0; MainWindow.dataGridSelectedId = selectedRecord.Id; MainWindow.DgRefresh = false;
+                ListView.Visibility = Visibility.Hidden; ListForm.Visibility = Visibility.Visible; dataViewSupport.FormShown = true;
+                if (!selectedRecord.Fixed) { SubListView.Visibility = Visibility.Visible; LoadSubDataList(); } else { SubListView.Visibility = Visibility.Hidden; }
+            }
+            else {
+                MainWindow.DataGridSelected = true; MainWindow.DataGridSelectedIdListIndicator = selectedRecord.Id != 0; MainWindow.dataGridSelectedId = selectedRecord.Id; MainWindow.DgRefresh = true;
+                ListForm.Visibility = Visibility.Hidden; ListView.Visibility = Visibility.Visible; dataViewSupport.FormShown = showForm == null &amp;&amp; !bool.Parse(App.appRuntimeData.AppClientSettings.First(a =&gt; a.Key == &quot;beh_CloseFormAfterSave&quot;).Value);
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized Method for Loading SubData. Manual Changing is needed for simple form is
+        /// All changed By CLASNAME Chage, but If you need More API data for selection Here are
+        /// Defined All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+        ///
+        /// After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+        /// is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+        /// Tag=Setting in XAML part) this method is for global working with pages Called from
+        /// MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public async void LoadSubDataList() {
+            MainWindow.ProgressRing = Visibility.Visible;
+            List&lt;BusinessExchangeRateList&gt; exchangeRateList = new List&lt;BusinessExchangeRateList&gt;();
+            List&lt;BusinessExtendedExchangeRateList&gt; BusinessExtendedExchangeRateList = new List&lt;BusinessExtendedExchangeRateList&gt;();
+            try {
+                if (MainWindow.serviceRunning) exchangeRateList = await CommApi.GetApiRequest&lt;List&lt;BusinessExchangeRateList&gt;&gt;(ApiUrls.EasyITCenterBusinessExchangeRateList, null, App.UserData.Authentification.Token);
+                exchangeRateList.Where(a =&gt; a.CurrencyId == selectedRecord.Id).ToList().ForEach(record =&gt; {
+                    BusinessExtendedExchangeRateList item = new BusinessExtendedExchangeRateList() {
+                        Id = record.Id,
+                        CurrencyId = record.CurrencyId,
+                        Value = record.Value,
+                        ValidFrom = record.ValidFrom,
+                        ValidTo = record.ValidTo,
+                        Description = record.Description,
+                        UserId = record.UserId,
+                        Active = record.Active,
+                        TimeStamp = record.TimeStamp,
+                        Currency = selectedRecord.Name
+                    };
+                    BusinessExtendedExchangeRateList.Add(item);
+                });
+                DgSubListView.ItemsSource = BusinessExtendedExchangeRateList;
+                DgSubListView.Items.Refresh();
+            } catch (Exception autoEx) { App.ApplicationLogging(autoEx); }
+            MainWindow.ProgressRing = Visibility.Hidden;
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for translating column names of SubDatagidView (List Data) Manual
+        /// Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+        /// set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+        /// This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+        /// Tag=Setting in XAML part) this method is for global working with page internal reaction
+        /// on DatagrigView DataFiling on Start Page Runned On Page Loading
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;ex&quot;&gt;    &lt;/param&gt;
+        private void DgSubListView_Translate(object sender, EventArgs ex) {
+            ((DataGrid)sender).Columns.ToList().ForEach(e =&gt; {
+                string headername = e.Header.ToString();
+                if (headername == &quot;Currency&quot;) e.Header = Resources[&quot;currency&quot;].ToString();
+                else if (headername == &quot;Value&quot;) e.Header = Resources[&quot;value&quot;].ToString();
+                else if (headername == &quot;ValidFrom&quot;) e.Header = Resources[&quot;validFrom&quot;].ToString();
+                else if (headername == &quot;ValidTo&quot;) e.Header = Resources[&quot;validTo&quot;].ToString();
+                else if (headername == &quot;Description&quot;) e.Header = Resources[&quot;description&quot;].ToString();
+                else if (headername == &quot;Active&quot;) { e.Header = Resources[&quot;active&quot;].ToString(); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 2; }
+                else if (headername == &quot;Timestamp&quot;) { e.Header = Resources[&quot;timestamp&quot;].ToString(); e.CellStyle = ProgramaticStyles.gridTextRightAligment; e.DisplayIndex = DgListView.Columns.Count - 1; }
+                else if (headername == &quot;Id&quot;) e.DisplayIndex = 0;
+                else if (headername == &quot;UserId&quot;) e.Visibility = Visibility.Hidden;
+                else if (headername == &quot;CurrencyId&quot;) e.Visibility = Visibility.Hidden;
+            });
+        }
+
+        /// &lt;summary&gt;
+        /// Standartized method for Loading Data for Selected Record This is full automatic, not
+        /// needed manual work This is on Every page ('View' and 'Form' Types) without 'Setting'
+        /// Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+        /// its local control From XAML
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;sender&quot;&gt;The source of the event.&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;     
+        /// The &lt;see cref=&quot;RoutedEventArgs&quot;/&gt; instance containing the event data.
+        /// &lt;/param&gt;
+        private void Fixed_Checked(object sender, RoutedEventArgs e) =&gt; SubListView.Visibility = Visibility.Hidden;
+
+        private void Fixed_UnChecked(object sender, RoutedEventArgs e) {
+            SubListView.Visibility = Visibility.Visible; LoadSubDataList();
+        }
+    }
+}
+
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

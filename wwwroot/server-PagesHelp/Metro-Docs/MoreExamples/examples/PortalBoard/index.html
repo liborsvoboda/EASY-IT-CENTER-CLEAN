@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="pui-app">
+<head>
+    <meta charset="utf-8">
+    <title>EIC&ESB Developer Portal</title>
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="Libor Svoboda">
+    <meta name="description" content="EIC&ESB Developer Portal">
+    <meta name="keywords" content="HTML, CSS, JS, Metro, CSS3, Javascript, HTML5, UI, Library, Web, Development, Framework, SPA, Static, Web, Designer, Builder, Studio, Creator">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+
+    <!-- PlaneUi -->
+    <link rel="stylesheet" type="text/css" href="./libraries/PlaneUi/css/planeui.css" />
+    <!-- PRIMARY -->
+    <link rel="stylesheet" href="./libraries/metro/css/metro-all.css" />
+    <link rel="stylesheet" href="./libraries/metro/css/metro-icons.css" />
+    <!-- TOOLS -->
+    <link rel="stylesheet" href="./libraries/tools/animate/css/animate.css" />
+    <link rel="stylesheet" href="./libraries/tools/flexslider/css/flexslider.css" />
+    <link rel="stylesheet" href="./libraries/tools/highlightjs/styles/default.min.css" />
+    <!-- EXTENSIONS -->
+    <!-- 	<link rel="stylesheet" href="./libraries/extension-css/desktop.css" /> -->
+    <!-- MANAGED -->
+    <link rel="stylesheet" href="./libraries/managed/css/site.css" />
+
+    <!-- PRIMARY -->
+    <script type="text/javascript" src="./libraries/jquery/js/jquery-3.6.0.min.js"></script>
+    <!-- PlaneUi -->
+    <script type="text/javascript" src="./libraries/PlaneUi/js/planeui.js"></script>
+    <script type="text/javascript" src="./libraries/PlaneUi/js/iscroll.js"></script>
+
+    <script type="text/javascript" src="./libraries/metro/js/metro.4.5.2.min.js"></script>
+
+
+    <!-- EXTENSIONS -->
+    <script type="text/javascript" src="./libraries/extension-js/desktop.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/js.cookie.min.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/clipboard.min.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/require.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/system.min.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/common.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/browser.js"></script>
+    <script type="text/javascript" src="./libraries/extension-js/history.js"></script>
+    <!-- TOOLS -->
+    <script type="text/javascript" src="./libraries/tools/flexslider/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="./libraries/tools/ytplayer/js/jquery.mb.YTPlayer.min.js"></script>
+    <script type="text/javascript" src="./libraries/tools/mermaid/js/mermaid.min.cdn.js"></script>
+    <!-- MANAGED -->
+    <script type="text/javascript" src="./libraries/managed/js/global-defaultCfg.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-storage.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-api.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-functions.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-behavior.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-objects.js"></script>
+    <script type="text/javascript" src="./libraries/managed/js/global-generators.js"></script>
+
+    <!-- Google Translation -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+
+    <div class="pui-layout pui-app-layout">
+
+        <!-- SKRYTY PANEL VLEVO RESENI ULOZISTE A SOUBORU-->
+        <div class="pui-side-slide-left">
+            <div style="height:100vh;">vlevo</div>
+        </div>
+
+        <!-- SKRYTY PANEL TOP RESENI KONFIGURATOR A NASTAVENI/ROZLOZENI PORTALU -->
+        <div class="pui-side-slide-top">
+            <div style="height:400px;">nahoře</div>
+        </div>
+
+        <div class="pui-app-main pui-app-main">
+            <!-- TOP MENU -->
+            <header class="pui-app-header pui-bg-blue-300">
+                <div class="pui-app-header-aside"
+                data-role="hint" data-hint-position="right" data-hint-text="Administrace Vaší MSSQL Databáze" data-cls-hint="bg-github title fg-white drop-shadow">      
+                    <a href="javascript:;" pui-side-slide="left"><i class="icon mif-database mif-2x pui-text-white"></i></a>
+                </div>
+
+                <!-- SEARCH-->
+                <div class="pui-app-header-left h-100">
+                    <div class="m-2 pos-top-left" >
+					<input type="text" data-role="input" data-search-button="true" placeholder="Co chcete Hledat" style="height: 100%;">
+				</div>
+               </div>
+
+                <div class="pui-app-header-middle" pui-side-slide="top" >
+                    <a href="javascript:;" pui-side-slide="top">
+                        <span class="h2 text-bold text-center pt-4 fg-mauve"
+                        data-role="hint" data-hint-position="bottom" data-hint-text="Statický Generátor Portálu" data-cls-hint="bg-github title fg-white drop-shadow">
+                        EIC & ESB Static Developer Portal</span>
+                    </a>
+                </div>
+
+
+                <!-- OTEVRENE OKNA panel-->
+                <div class="pui-app-header-right h-100 bg-gray w-25" data-role="hint" data-hint-position="bottom" data-hint-text="Seznam Otevřených Oken" data-cls-hint="bg-github title fg-white drop-shadow">
+                </div>
+
+                <div class="pui-app-header-offside"  data-role="hint" data-hint-position="left" data-hint-text="Seznam Nápověd, Nástrojů a Informací Systému" data-cls-hint="bg-github title fg-white drop-shadow">      
+                    <a href="javascript:;" pui-side-slide="right" class="pui-text-white icon mif-tree mif-2x" style="height:100%;"></a>
+                </div>
+            </header> 
+
+            <!-- PRACOVNI PLOCHA -->
+            <div class="pui-app-main-container" id="mainWindow">
+                <div class="pui-app-scroller2">
+                    <div class="window">
+                        <div class="window-caption">
+                            <span class="icon mif-windows"></span>
+                            <span class="h5">Pracovní Plocha</span>
+                            <div class="buttons pr-2">
+                                <span class="c-pointer mif-cog mif-2x p-1 pr-2" data-role="hint" data-hint-position="left" data-hint-text="Zobrazit Konfiguraci Plochy" data-cls-hint="bg-github title fg-white drop-shadow"></span>
+                                <span class="c-pointer mif-download mif-2x p-1 pr-2" data-role="hint" data-hint-position="left" data-hint-text="Stáhněte si Portál" data-cls-hint="bg-github title fg-white drop-shadow"></span>
+                                <span class="c-pointer mif-info mif-2x p-1" data-role="hint" data-hint-position="left" data-hint-text="Zobrazit Aktuální Informace" data-cls-hint="bg-github title fg-white drop-shadow"></span>
+                            </div>
+                        </div>
+                        <div id="mainDesktopId" class="window-content p-2">
+
+                            <div id="metroDocId"
+                                 data-role="panel"
+                                 data-title-icon="<span class='mif-chart-dots'></span>"
+                                 data-cls-panel="title text-bold bg-cyan"
+                                 data-collapsed="false"
+                                 data-on-collapse="MetroPanelChangeParam('close')"
+                                 data-on-expand="MetroPanelChangeParam('open')"
+                                 data-title-caption="Dokumentace Metro"
+                                 data-collapsible="true">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="pui-app-footer" style="height:55px !important">
+                <div class="pui-button-sheet pui-button-sheet-table pui-button-sheet-hover-pui-bg-none pui-unbordered bg-cyan" style="height:100%;">
+                    <div class="pui-button-sheet-row" style="height:48px;">
+
+                       <div class="w-50 d-inline-flex">
+			                <div class="d-flow text-bold pl-2 pb-0 mb-0 text-left w-75">
+				                <div class="d-flow h-100 title p-1 m-0" style="text-align:left;float:left">
+                                    <div class="d-block text-left">Distribuce IT &copy; 2008-2024</div>
+                                    <div class="d-block text-left">
+                                        <a href="https://Groupware-Solution.Eu" class="fg-mauve" target="_blank"
+                                        data-role="hint" data-hint-position="right" data-hint-text="IT obecné Webové stránky" data-cls-hint="bg-github title fg-white drop-shadow">Groupware-Solution.Eu</a>
+                                        </div>
+                                    <div class="d-block text-left">
+                                        <a href="https://KlikneteZde.Cz" class="fg-mauve" target="_blank"
+                                         data-role="hint" data-hint-position="right" data-hint-text="IT Řešení EIC & ESB Online na KlikneteZde.Cz" data-cls-hint="bg-github title fg-white drop-shadow">KlikneteZde.Cz</a>
+                                    </div>
+                                </div>
+			                </div>
+
+			                <div class="d-flow text-center w-50">
+				                <span style="text-align:left;float:left"></span>
+			                </div>
+
+                             <div class="d-flow title text-right p-1 m-0 w-50">
+                                <div class="d-block text-right">Použité Frameworky</div>
+                                <div class="d-block text-right">
+                                    <a href="https://metroui.org.ua/" class="fg-mauve" target="_blank"
+                                                data-role="hint" data-hint-position="top" data-hint-text="Primární FrameWork Metro 4" data-cls-hint="bg-github title fg-white drop-shadow">Metro 4</a>
+                                </div>
+                                <div class="d-block text-right">
+                                    <a href="https://github.com/pandao/planeui" class="fg-mauve" target="_blank"
+                                    data-role="hint" data-hint-position="top" data-hint-text="Rozšířeno FrameWorkem PlaneUI" data-cls-hint="bg-github title fg-white drop-shadow">PlaneUi</a>
+                                </div>
+                            </div>
+                        </div>
+
+                       <!--  <a href="javascript:;" pui-side-position="left"><i class="fa fa-comment-o fa-2x"></i>消息</a> 
+                        <a href="javascript:;" pui-side-position="right"><i class="fa fa-comments fa-2x"></i>社区</a>
+                        <a href="javascript:;" pui-side-position="top"><i class="fa fa-cloud-upload fa-2x"></i>同步</a>
+                        <a href="javascript:;" pui-side-position="bottom"><i class="fa fa-share fa-2x"></i>分享</a> -->
+                        <a href="javascript:;" pui-side-slide="bottom"><i class="icon mif-tools fa-2x"></i>Nastavení</a>
+                    </div>  
+
+                </div>
+              </footer>
+        </div>
+
+        <!-- SKRYTY PANEL VPRAVO Dostupne Dokumentace, nastroje, linky,  -->
+        <div class="pui-side-slide-right">                
+            <div style="height:100vh;">vpravo</div>
+        </div>
+
+        <!-- SKRYTY PANEL DOLE mozna konzole-->
+        <div class="pui-side-slide-bottom">                
+            <div style="height:400px;">dole</div>
+        </div>
+    </div> 
+
+    
+    <script>
+        // Startup Actions
+        showPageLoading();
+        RestrictionControls();
+        
+        //Plane
+        var scroller;
+        $(function () {
+            if (!/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                $(".pui-app-main-container").css("overflow", "hidden");
+
+                scroller = new IScroll("#mainWindow", {
+                    scrollbars: true,
+                    mouseWheel: true,
+                    interactiveScrollbars: true,
+                    shrinkScrollbars: 'scale',
+                    fadeScrollbars: true
+                });
+            }
+
+            $("header, footer").bind("touchmove", function (e) {
+                e.preventDefault();
+            });
+
+            $().sideSlide();
+            $().sidePosition();
+        });
+
+
+        //Onloaded Actions
+        document.addEventListener("DOMContentLoaded", function (event) {
+            if (Metro.storage.getItem('AutoHighlightEnabled', null) != null && Metro.storage.getItem('AutoHighlightEnabled', null)) { document.querySelectorAll('pre code').forEach((block) => { hljs.highlightElement(block); }); }
+            if (Metro.storage.getItem('AutoMermaidEnabled', null) != null && Metro.storage.getItem('AutoMermaidEnabled', null)) { Mermaid(); }
+        });
+
+        $(document).ready(function () {
+
+            SetDefaultValues();
+            Metro.activity.close(pageLoader);
+            
+        });
+
+    </script>
+    </body>
+</html>

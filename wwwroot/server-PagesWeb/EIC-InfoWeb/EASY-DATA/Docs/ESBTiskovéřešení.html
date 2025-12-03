@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h3 id="fyi-reporting----freeware-full-report-designer-and-viewer">FYI Reporting  - FreeWare Full Report Designer and Viewer</h3>
+<p>for Printing All document Types with Images, Barcodes, EAN, QR, Graphs, SubReport, etc.</p>
+<h2 id="important-info-for-report-develop">IMPORTANT INFO FOR REPORT DEVELOP</h2>
+<ul>
+<li>Reports are for developping setted Default Parameters.</li>
+<li>If the report is called from the system - All parameters are replaced by system sended params</li>
+<li>Each Report can has more Datasets  (subreports not need for Header/Items Views)</li>
+<li>More Examples are Defined</li>
+<li>Full Developing of new reports are supported</li>
+<li>Included commandline Tool, Report Viewer, Report Designer</li>
+</ul>
+<h3 id="joining-with-easysystembuilder---calling-reports">JOINING WITH EASYSYSTEMBuilder - Calling Reports</h3>
+<pre><code>Directly - System sending these parameters directly to opening Report
+    connectionString [Connect] - For Report connection to Database
+    table name [TableName] - primary tablename from datalist
+    record ID [Id] - Selected record Id
+    Simple Search Parameter [Search] - For simple search in Datalist Fields
+    
+Over DB  - System save all filter informations to table 'ReportQueueList' and 
+           to all record with has selected Datalist Table. 
+           After Saving to DB is Called open Report. Its for Reports with using DB  
+           procedure 'ReportDataset' for Full DB defined Data Selections
+           Direct parameters not need for this using
+</code></pre>
+<h3 id="easysystembuilder-system-conditions-for-reports">EASYSYSTEMBuilder SYSTEM Conditions for Reports</h3>
+<ul>
+<li><p>Connection String is Defined in setting for All reports in Application (Client)</p>
+</li>
+<li><p>All APIUrls with 'List' word on end are automaticaly added for insert Report for this Table</p>
+</li>
+<li><p>All System reports are Saved in Database - table 'ReportList'</p>
+</li>
+<li><p>For Print is downloaded and open with direct params everyTime</p>
+</li>
+<li><p>'ReportQueueList' Definitions is second method for Print report,<br>
+which the definition is full in DB (can be defined multi Datasets)</p>
+</li>
+<li><p>Report can combine both method for Load Datasets (Over stored procedure or direct selection with params)</p>
+</li>
+<li><p>Print Report Action you can set for Record Selection Only</p>
+</li>
+<li><p>Unlimited Print Reports you Define for Primary Table - DataList</p>
+</li>
+<li><p>System has these joins: Datalist, Rec ID, simple Search, Advanced Search</p>
+</li>
+<li><p>Each join [param] can be separated for run alone or combined with others</p>
+</li>
+<li><p>Full SQL and SQLexec are supported</p>
+</li>
+</ul>
+<h3 id="print-example-from-cmd-with-parameters">Print example from CMD with parameters</h3>
+<p>&quot;RdlReader.exe&quot; &quot;C:\WorkListPrint.rdl&quot; -p &quot;&amp;Search=%%&amp;Id=0&quot;</p>
+<p>Report has dataset and you can insert field over right mouse/ insert / object /</p>
+<p>Expressions
+PageBreak ={PersonalNumber} - new page by  each personalNumber</p>
+<p>functions in C# not MSSQL</p>
+<p>using =&quot;Filter:&quot; + Replace({?Search}, &quot;%&quot;, &quot;&quot;)  - Search is param, replace %%</p>
+<h2 id="for-run-report-mut-be-set-default-values-for-parametersfieldsoperationnumbervalue-----notesumamount">for run report mut be set Default values for parameters
+=Fields!OperationNumber.Value + &quot; &quot; + {Note}
+=Sum({Amount})</h2>
+<h3 id="print-sql-examples">Print SQL Examples</h3>
+<pre><code class="lang-sql">SET FMTONLY OFF;
+
+SELECT
+w.[Id],FORMAT([Date],'MM.yyyy') as Month,
+FORMAT([Date],'dd.MM.yyyy') as Date,
+CONCAT(FORMAT([Date],'MMyy'),w.[PersonalNumber]) as ListBreak,
+w.[PersonalNumber],o.[PartNumber],w.[WorkPlace],w.[OperationNumber],
+[WorkTime],[Pcs],[Amount],[WorkPower] ,[Name],[SurName],o.[Note]
+FROM [WorkList] w,[PersonList] p,[OperationList] o 
+WHERE w.PersonalNumber = p.PersonalNumber AND w.WorkPlace = o.WorkPlace 
+
+AND o.OperationNumber = w.OperationNumber AND
+(@Id = 0 AND ((LEN(@Search) &gt; 2 AND w.Id LIKE @Search) OR LEN(@Search) = 2))
+OR w.Id = @Id 
+
+ORDER BY w.[Date] ASC, w.PersonalNumber, w.[OperationNumber]
+</code></pre>
+<pre><code class="lang-sql">--Select with simple search and Id selection
+SELECT Id, UserName, TerminalName, Description, Timestamp 
+FROM LoginHistoryList 
+WHERE 1=1 AND (
+( @Search &lt;&gt; '%%' AND id LIKE @Search )
+OR ( @Search = '%%' AND @Id = 0  )
+OR ( @Search = '%%' AND @Id &lt;&gt; 0 AND Id = @Id )
+)
+</code></pre>
+<pre><code class="lang-sql">--Selection with direct params
+SELECT Id, UserName, TerminalName, Description, Timestamp 
+FROM LoginHistoryList 
+WHERE 1=1 AND (
+( @Search &lt;&gt; '%%' AND id LIKE @Search )
+OR ( @Search = '%%' AND @Id = 0  )
+OR ( @Search = '%%' AND @Id &lt;&gt; 0 AND Id = @Id )
+)
+</code></pre>
+<pre><code class="lang-sql">--Select with advanced Filter
+
+SET FMTONLY OFF;
+DECLARE @whereClause NVARCHAR(MAX) = @Filter ;
+DECLARE @sql NVARCHAR(MAX) = 'SELECT Id, UserName, TerminalName, Description, Timestamp FROM LoginHistoryList  WHERE @whereClause';
+
+SELECT @sql = REPLACE(@sql, '@whereClause', @whereClause);
+
+EXEC sp_executesql @sql;
+</code></pre>
+<pre><code class="lang-sql">--Selection with ReportQueueList definitions
+SET FMTONLY OFF;
+EXEC ReportDataset @TableName='tableName', @Sequence='SeqNr' 
+</code></pre>
+<pre><code class="lang-sql">--Selection with Formating and Dials Fields
+SET FMTONLY OFF;
+
+SELECT
+w.[Id],FORMAT([Date],'MM.yyyy') as Month,
+FORMAT([Date],'dd.MM.yyyy') as Date,
+CONCAT(FORMAT([Date],'MMyy'),w.[PersonalNumber]) as ListBreak,
+w.[PersonalNumber],o.[PartNumber],w.[WorkPlace],w.[OperationNumber],
+[WorkTime],[Pcs],[Amount],[WorkPower] ,[Name],[SurName],o.[Note]
+FROM [WorkList] w,[PersonList] p,[OperationList] o 
+WHERE w.PersonalNumber = p.PersonalNumber AND w.WorkPlace = o.WorkPlace 
+
+AND o.OperationNumber = w.OperationNumber AND
+(@Id = 0 AND ((LEN(@Search) &gt; 2 AND w.Id LIKE @Search) OR LEN(@Search) = 2))
+OR w.Id = @Id 
+
+ORDER BY w.[Date] ASC, w.PersonalNumber, w.[OperationNumber]
+</code></pre>
+<hr>
+<h2 id="system-printing">SYSTEM PRINTING</h2>
+<ul>
+<li><p>On Print Request</p>
+<ol>
+<li>Updated all filters in table 'ReportQueueList' on records for selected table</li>
+<li>download from DB and open report with sended these params for Direct SQL support
+Params</li>
+</ol>
+</li>
+<li><p>Search = Searched Value</p>
+</li>
+<li><p>Id = Record Id from table</p>
+</li>
+<li><p>Filter= Setted Filter command in sql syntax after WHERE clause</p>
+</li>
+<li><p>TableName - selected table Name</p>
+</li>
+<li><p>Connect - connection string from client settings
+3) Run report. Done</p>
+</li>
+<li><p>Report Types:</p>
+</li>
+<li><p>Alone Report file with ful own SQL command and use params for selection. Examples You can see in edited reports, Instalation folder and Help</p>
+</li>
+<li><p>Sql defined in ReportQueueList Table, in report is only command: SET FMTONLY OFF;EXEC ReportDataset @TableName='tablename', @Sequence='10'</p>
+</li>
+<li><p>Parameters are sending Every Time, For Debuging you can use MSSQL SQL Profiller</p>
+</li>
+<li><p>In database is Saved Stored Procedure: ReportDataset for folded filter, ReportQueueList table is managing</p>
+</li>
+<li><p>All report are shared for selected database</p>
+</li>
+<li><p>Each print is report again downloaded from database for new run</p>
+</li>
+<li><p>Each report can be exported in Reports menu</p>
+</li>
+<li><p>All reports are saved in instalation folder as Examples</p>
+</li>
+<li><p>All reports has same parameters</p>
+<p>Dynamic Filtering:</p>
+</li>
+<li><p>For managed SQL command can be 'Search' and 'Id' params ignored = Each Filter working independently
+Setted Priority:
+1] Combined Filter
+2] Id
+3] Searched Value (searched columns are rardcoded in 'Filter' method on each Datalist) in Report must be hardcoded again</p>
+</li>
+<li><p>in stored Procedure: 'ReportDataset'
+if Both Searfh and Id Ignored - Filter is aply alone
+else all cobndition are joined with 'OR' clause for Each Filter setting: 'Id' and 'Search'</p>
+</li>
+</ul>
+<p>Its Prepared for future MultiRows Selection</p>
+<ul>
+<li><p>More Info Via Help File FYI Reporting Documentations on Github</p>
+</li>
+<li><p>In one Report you can setted more DATALists = DB SELECTS (Invoice Example - Header/Item)
+and you can set any field over Report Parameter for using in all Report Positions</p>
+</li>
+</ul>
+<hr>
+<h3 id="markdown-item-template">MarkDown Item Template</h3>
+<pre><code class="lang-cs">
+</code></pre>
+<hr>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FileOperations </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FileOperations ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="EasyITcenter InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EasyITCenter.ServerCoreStructure.FileOperations">
+
+
+
+  <h1 id="EasyITCenter_ServerCoreStructure_FileOperations" data-uid="EasyITCenter.ServerCoreStructure.FileOperations" class="text-break">Class FileOperations</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">FileOperations</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="EasyITCenter.html">EasyITCenter</a>.<a class="xref" href="EasyITCenter.ServerCoreStructure.html">ServerCoreStructure</a></h6>
+  <h6><strong>Assembly</strong>: EasyITCenter.dll</h6>
+  <h5 id="EasyITCenter_ServerCoreStructure_FileOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FileOperations</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_ByteArrayToFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ByteArrayToFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_ByteArrayToFile_System_String_System_Byte___" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ByteArrayToFile(System.String,System.Byte[])">ByteArrayToFile(string, byte[])</h4>
+  <div class="markdown level1 summary"><p>Write ByteArray to File</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ByteArrayToFile(string fileName, byte[] byteArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">byteArray</span></td>
+        <td><p>The byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CheckDirectory_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CheckDirectory*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CheckDirectory_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CheckDirectory(System.String)">CheckDirectory(string)</h4>
+  <div class="markdown level1 summary"><p>Checks the directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckDirectory(string directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CheckFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CheckFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CheckFile_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CheckFile(System.String)">CheckFile(string)</h4>
+  <div class="markdown level1 summary"><p>Checks the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_ClearFolder_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ClearFolder*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_ClearFolder_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ClearFolder(System.String)">ClearFolder(string)</h4>
+  <div class="markdown level1 summary"><p>Full Clear Folder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearFolder(string FolderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">FolderName</span></td>
+        <td><p>Name of the folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_ConvertSystemFilePathFromUrl_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ConvertSystemFilePathFromUrl*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_ConvertSystemFilePathFromUrl_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ConvertSystemFilePathFromUrl(System.String)">ConvertSystemFilePathFromUrl(string)</h4>
+  <div class="markdown level1 summary"><p>Return Full File path to the operating system default
+slashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertSystemFilePathFromUrl(string webpath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">webpath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CopyDirectory_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyDirectory*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CopyDirectory_System_String_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyDirectory(System.String,System.String)">CopyDirectory(string, string)</h4>
+  <div class="markdown level1 summary"><p>Copy Full directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyDirectory(string sourcePath, string targetPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sourcePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CopyFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CopyFile_System_String_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyFile(System.String,System.String)">CopyFile(string, string)</h4>
+  <div class="markdown level1 summary"><p>/</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CopyFile(string from, string to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>From.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>To.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CopyFiles_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyFiles*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CopyFiles_System_String_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CopyFiles(System.String,System.String)">CopyFiles(string, string)</h4>
+  <div class="markdown level1 summary"><p>Prepared Method for Files Copy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyFiles(string sourcePath, string destinationPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sourcePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">destinationPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CreateDirectory_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreateDirectory*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CreateDirectory_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreateDirectory(System.String)">CreateDirectory(string)</h4>
+  <div class="markdown level1 summary"><p>Creates the directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDirectory(string directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CreateFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreateFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CreateFile_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreateFile(System.String)">CreateFile(string)</h4>
+  <div class="markdown level1 summary"><p>Prepared Method for Create empty file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CreateFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_CreatePath_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreatePath*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_CreatePath_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.CreatePath(System.String)">CreatePath(string)</h4>
+  <div class="markdown level1 summary"><p>Creates the path recursively.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CreatePath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The System.IO.Path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_DeleteDirectory_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.DeleteDirectory*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_DeleteDirectory_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.DeleteDirectory(System.String)">DeleteDirectory(string)</h4>
+  <div class="markdown level1 summary"><p>Deletes the directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteDirectory(string directory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_DeleteFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.DeleteFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_DeleteFile_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.DeleteFile(System.String)">DeleteFile(string)</h4>
+  <div class="markdown level1 summary"><p>Deletes the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeleteFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_FileDetectEncoding_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.FileDetectEncoding*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_FileDetectEncoding_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.FileDetectEncoding(System.String)">FileDetectEncoding(string)</h4>
+  <div class="markdown level1 summary"><p>Prepared Method for Get Information of File encoding UTF8,WIN1250,etc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Encoding FileDetectEncoding(string FileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">FileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_LoadOrCreateSettings_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.LoadOrCreateSettings*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_LoadOrCreateSettings" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.LoadOrCreateSettings">LoadOrCreateSettings()</h4>
+  <div class="markdown level1 summary"><p>Server Local Startup Configuration Its Running as First - Load from Congig.Json After DB
+connection Before Server Start Is This configuration Replaced By Data from DB And next
+Server Start. Its for situation - Bad Connection Server Start with Configuration from File</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadOrCreateSettings()</code></pre>
+  </div>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_ReadFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ReadFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_ReadFile_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.ReadFile(System.String)">ReadFile(string)</h4>
+  <div class="markdown level1 summary"><p>Reads the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadFile(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="EasyITCenter_ServerCoreStructure_FileOperations_WriteToFile_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.WriteToFile*"></a>
+  <h4 id="EasyITCenter_ServerCoreStructure_FileOperations_WriteToFile_System_String_System_String_" data-uid="EasyITCenter.ServerCoreStructure.FileOperations.WriteToFile(System.String,System.String)">WriteToFile(string, string)</h4>
+  <div class="markdown level1 summary"><p>Write String to File Used for JsonSaving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteToFile(string file, string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasyITCenter Universální Multi Server - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyITSystemCenter</name>
+    </assembly>
+    <members>
+        <member name="T:EasyITSystemCenter.Pages.XamlCodeEditorPage">
+            <summary>
+            XamlCodeEditorPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.XamlCodeEditorPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.MultiWebViewPage">
+            <summary>
+            MultiWebViewPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.MultiWebViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.UniversalCodeEditorPage">
+            <summary>
+            UniversalCodeEditorPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.UniversalCodeEditorPage.btnTheme_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            UniversalEditor Theme Controls
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.UniversalCodeEditorPage.TemplateSelected(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Set Selected Template
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.UniversalCodeEditorPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebCodeEditorPage">
+            <summary>
+            WebCodeEditorPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebCodeEditorPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.DocSrvDocTemplateListPage">
+            <summary>
+            DocSrvDocTemplateListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.DocSrvDocTemplateListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.DocSrvDocumentationCodeLibraryListPage">
+            <summary>
+            DocSrvDocumentationCodeLibraryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.DocSrvDocumentationCodeLibraryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.DocSrvDocumentationGroupListPage">
+            <summary>
+            DocSrvDocumentationGroupListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.DocSrvDocumentationGroupListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.DocSrvDocumentationListPage">
+            <summary>
+            DocSrvDocumentationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.DocSrvDocumentationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionEmailerHistoryListPage">
+            <summary>
+            SolutionEmailerHistoryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionEmailerHistoryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionMessageModuleListPage">
+            <summary>
+            SolutionMessageModuleListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionMessageModuleListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionMessageTypeListPage">
+            <summary>
+            SolutionMessageTypeListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionMessageTypeListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationPage">
+            <summary>
+            TemplateClassListAutoDBTranslationPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationViewPage">
+            <summary>
+            TemplateClassListAutoDBTranslationViewPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithParentPage">
+            <summary>
+            TemplateClassListAutoDBTranslationWithParentPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithParentPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage">
+            <summary>
+            This standartized Template is only for list view od Data table Called from MainWindow.cs on
+            open New Tab
+            </summary>
+            <summary>
+            TemplateClassListAutoDBTranslationWithSubPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.dataViewSupport">
+             <summary>
+             Standartized declaring static page data and selected record for All Pages this method is
+             for global working with pages Called from MainWindow.cs for Control of Button Menu and
+             Selections (Report,Filter and more) All is setted as global Classes for All Pages and
+             Work is Fully automatized by System core
+            
+             HERE you Define All Data Variables For This Form
+             </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and start loding data Manual work needed
+            Translate All XAML fields by Resources Runned on start
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.LoadDataList">
+             <summary>
+             Standartized Method for Loading data. Manual Changing is needed for simple form is All
+             changed By CLASNAME Chage, but If you need More API data for selection Here are Defined
+             All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.DgListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of DatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.Filter(System.String)">
+            <summary>
+            Standartized method for searching match in setted columns. Searched value is from the
+            simple 'Search Input' for DatagidView (List Data) Manual Changing is needed of filtered
+            columns by Search Value This is on Every page ('View' and 'Form' Types) without
+            'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for global
+            working with pages Called from MainWindow.cs Dynamicaly Called Only from MainWindow.cs
+            when Search value Inserted
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.NewRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            New button Click Only Set Record And Hide Dataview and Show Detail
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.EditRecord(System.Boolean)">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Edit button Click Only Set Record And Hide Dataview and Show Detail with selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.DeleteRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Delete button Click Show MainWindow Standartized Message with info About Delete and
+            After confirm Send DeleteApiRequest Reload Datalist and cancel Selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.DgListView_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Standartized method for selecting and opening Detail Form. This is only View Page, that
+            is only for Select record This is full automatic, not needed manual work This is on
+            Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working page its local control From XAML
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.DgListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on Every page ('View' and 'Form' Types) without 'Setting' Type
+            (Name=Setting and Tag=Setting in XAML part) this method is for global working page its
+            local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.BtnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Save Record And return to Dataview. Manual work need, Here is
+            Join Betwen XAML inputs and Selected Record Dataset (dataset for Detail): Direction FORM
+            to SELECTED RECORD By ClasName Replacing All other changes are automaticaly
+            (API,DatasetType), just must define and control Each Field Of Dataset this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.BtnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for cancel of Editing. Hide Detail and Dataview List is Shown This
+            is full automatic, not needed manual work This is on Every page ('View' and 'Form'
+            Types) without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is
+            for global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SetRecord(System.Nullable{System.Boolean},System.Boolean)">
+             <summary>
+             Standartized method for ¨Set New Record/ Edit Record / Copy Record And return to
+             Dataview. Manual work need, Here is Join Betwen XAML inputs and Selected Record Dataset
+             (dataset for Detail): Direction Selected record to FORM By ClasName Replacing All other
+             changes are automaticaly (API,DatasetType), just must define and control Each Field Of
+             Dataset this method is for global working page its local control From XAML
+            
+             In this type Form Here Are loaded Data for SublistView (on knows selected record for
+             correct join)
+             </summary>
+             <param name="showForm">if set to <c>true</c> [show form].</param>
+             <param name="copy">    if set to <c>true</c> [copy].</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.DgSubListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of SubDatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SelectGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method indicate start loading all data of SubRecord after Selected in
+            Combobox This is full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.UpdateCustomerSearchResults">
+            <summary>
+            Standartized method Filling Customer Input by Selected Value This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.Customer_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for Keyboard control of SelectBox This is full automatic, not needed
+            manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SelectCustomer_Enter(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized methods with Indicate Customer Selection and Start Filling Input This is
+            full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SetCustomer">
+            <summary>
+            Standartized methods For Filling Input after Selection This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.PartNumberGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method indicate start loading all data of SubRecord after Selected in
+            Combobox This is full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.UpdatePartNumberSearchResults">
+            <summary>
+            Standartized method Filling Customer Input by Selected Value This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.PartNumber_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for Keyboard control of SelectBox This is full automatic, not needed
+            manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SelectPartNumber_Enter(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on page With Sublist ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SetPartNumber">
+            <summary>
+            Standartized methods For Filling Input after Selection This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.dgSubListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on page With Sublist ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.BtnItemInsert_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Direct Insert SubRecord to SubListView Manual work needed, set
+            correct data set for SubRecord This is on page With Sublist ('View' and 'Form' Types)
+            without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.BtnItemDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Direct Delete SubRecord to SubListView Manual work needed, set
+            correct data set for SubRecord This is on page With Sublist ('View' and 'Form' Types)
+            without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.NotesChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized Maximal Simle Code with Reaction and Fill input After ParentComboboxSelection
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.ClearItemsFields">
+            <summary>
+            Standartized Method for Clear SubRecord Input Fields with custom Dataset For Correct
+            Using must be Fields changed for used dataset
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.SetSubListsNonActiveOnNewItem(System.Boolean)">
+            <summary>
+            Standartized Method for Load All SubData which is needed for Working with SubRecord For
+            Correct Using must be changed for actual datasets
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage">
+            <summary>
+            This standartized Template is only for list view od Data table Called from MainWindow.cs on
+            open New Tab
+            </summary>
+            <summary>
+            TemplateClassListAutoDBTranslationWithSubViewPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.dataViewSupport">
+             <summary>
+             Standartized declaring static page data and selected record for All Pages this method is
+             for global working with pages Called from MainWindow.cs for Control of Button Menu and
+             Selections (Report,Filter and more) All is setted as global Classes for All Pages and
+             Work is Fully automatized by System core
+            
+             HERE you Define All Data Variables For This Form
+             </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and start loding data Manual work needed
+            Translate All XAML fields by Resources Runned on start
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.LoadDataList">
+             <summary>
+             Standartized Method for Loading data. Manual Changing is needed for simple form is All
+             changed By CLASNAME Chage, but If you need More API data for selection Here are Defined
+             All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.DgListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of DatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.Filter(System.String)">
+            <summary>
+            Standartized method for searching match in setted columns. Searched value is from the
+            simple 'Search Input' for DatagidView (List Data) Manual Changing is needed of filtered
+            columns by Search Value This is on Every page ('View' and 'Form' Types) without
+            'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for global
+            working with pages Called from MainWindow.cs Dynamicaly Called Only from MainWindow.cs
+            when Search value Inserted
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.NewRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            New button Click Only Set Record And Hide Dataview and Show Detail
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.EditRecord(System.Boolean)">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Edit button Click Only Set Record And Hide Dataview and Show Detail with selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.DeleteRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Delete button Click Show MainWindow Standartized Message with info About Delete and
+            After confirm Send DeleteApiRequest Reload Datalist and cancel Selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.DgListView_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Standartized method for selecting and opening Detail Form. This is only View Page, that
+            is only for Select record This is full automatic, not needed manual work This is on
+            Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working page its local control From XAML
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.DgListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on Every page ('View' and 'Form' Types) without 'Setting' Type
+            (Name=Setting and Tag=Setting in XAML part) this method is for global working page its
+            local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.BtnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Save Record And return to Dataview. Manual work need, Here is
+            Join Betwen XAML inputs and Selected Record Dataset (dataset for Detail): Direction FORM
+            to SELECTED RECORD By ClasName Replacing All other changes are automaticaly
+            (API,DatasetType), just must define and control Each Field Of Dataset this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.BtnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for cancel of Editing. Hide Detail and Dataview List is Shown This
+            is full automatic, not needed manual work This is on Every page ('View' and 'Form'
+            Types) without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is
+            for global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.SetRecord(System.Nullable{System.Boolean},System.Boolean)">
+             <summary>
+             Standartized method for ¨Set New Record/ Edit Record / Copy Record And return to
+             Dataview. Manual work need, Here is Join Betwen XAML inputs and Selected Record Dataset
+             (dataset for Detail): Direction Selected record to FORM By ClasName Replacing All other
+             changes are automaticaly (API,DatasetType), just must define and control Each Field Of
+             Dataset this method is for global working page its local control From XAML
+            
+             In this type Form Here Are loaded Data for SublistView (on knows selected record for
+             correct join)
+             </summary>
+             <param name="showForm">if set to <c>true</c> [show form].</param>
+             <param name="copy">    if set to <c>true</c> [copy].</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.LoadSubDataList">
+             <summary>
+             Standartized Method for Loading SubData. Manual Changing is needed for simple form is
+             All changed By CLASNAME Chage, but If you need More API data for selection Here are
+             Defined All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.DgSubListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of SubDatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.Fixed_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Loading Data for Selected Record This is full automatic, not
+            needed manual work This is on Every page ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListAutoDBTranslationWithSubViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebServerViewPage">
+            <summary>
+            WebServerViewPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebServerViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.HostWin32AppPage">
+            <summary>
+            HostWin32AppPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.HostWin32AppPage._iscreated">
+            <summary>
+            Track if the application has been created
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.HostWin32AppPage._isdisposed">
+            <summary>
+            Track if the control is disposed
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.HostWin32AppPage._appWin">
+            <summary>
+            Handle to the application Window
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.HostWin32AppPage.exeName">
+            <summary>
+            The name of the exe to launch
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.HostWin32AppPage.OnSizeChanged(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            Force redraw of control when size changes
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.HostWin32AppPage.OnVisibleChanged(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Create control when visibility changes
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.HostWin32AppPage.OnResize(System.Object,System.Windows.SizeChangedEventArgs)">
+            <summary>
+            Update display of the executable
+            </summary>
+            <param name="e">Not used</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.HostWin32AppPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebModulePage">
+            <summary>
+            WebModulePage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebModulePage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerLiveDataMonitorListPage">
+            <summary>
+            ServerLiveDataMonitorListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerLiveDataMonitorListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerCorsDefAllowedOriginListPage">
+            <summary>
+            ServerCorsDefAllowedOriginListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerCorsDefAllowedOriginListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerModuleAndServiceListPage">
+            <summary>
+            ServerModuleAndServiceListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerModuleAndServiceListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionSchedulerListPage">
+            <summary>
+            SolutionSchedulerListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionSchedulerListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionMixedEnumListPage">
+            <summary>
+            SolutionMixedEnumListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionMixedEnumListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ClientSettingsPage">
+            <summary>
+            ClientSettingsPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ClientSettingsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemOperationListPage">
+            <summary>
+            SystemOperationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemOperationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemModuleListPage">
+            <summary>
+            SystemModuleListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemModuleListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionOperationListPage">
+            <summary>
+            SolutionOperationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionOperationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemCustomPageListPage">
+            <summary>
+            SystemCustomPageListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemCustomPageListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemGroupMenuListPage">
+            <summary>
+            SystemGroupMenuListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemGroupMenuListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemMenuListPage">
+            <summary>
+            SystemMenuListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemMenuListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.LicSrvLicenseActivationFailListPage">
+            <summary>
+            LicSrvLicenseActivationFailListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.LicSrvLicenseActivationFailListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.LicSrvLicenseAlgorithmListPage">
+            <summary>
+            LicSrvLicenseAlgorithmListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.LicSrvLicenseAlgorithmListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.LicSrvUsedLicenseListPage">
+            <summary>
+            LicSrvUsedLicenseListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.LicSrvUsedLicenseListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ProdGuidGroupListPage">
+            <summary>
+            ProdGuidGroupListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ProdGuidGroupListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ProdGuidOperationListPage">
+            <summary>
+            ProdGuidOperationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ProdGuidOperationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ProdGuidPartListPage">
+            <summary>
+            ProdGuidPartListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ProdGuidPartListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ProdGuidPersonListPage">
+            <summary>
+            ProdGuidPersonListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ProdGuidPersonListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ProdGuidWorkListPage">
+            <summary>
+            ProdGuidWorkListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ProdGuidWorkListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerBrowsablePathListPage">
+            <summary>
+            ServerBrowsablePathListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerBrowsablePathListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemMonitorPage">
+            <summary>
+            SystemMonitorPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemMonitorPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.GraphsPage">
+            <summary>
+            GraphsPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.GraphsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerToolTypeListPage">
+            <summary>
+            ServerToolTypeListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerToolTypeListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionLanguageListPage">
+            <summary>
+            SolutionLanguageListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionLanguageListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerToolPanelListPage">
+            <summary>
+            ServerToolPanelListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerToolPanelListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionStaticFileListPage">
+            <summary>
+            SolutionStaticFileListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionStaticFileListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebDocumentationListPage">
+            <summary>
+            WebDocumentationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebDocumentationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebDeveloperNewsListPage">
+            <summary>
+            WebDeveloperNewsListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebDeveloperNewsListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebBannedIpAddressListPage">
+            <summary>
+            WebBannedIpAddressListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebBannedIpAddressListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebGlobalPageBlockListPage">
+            <summary>
+            WebGlobalPageBlockListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebGlobalPageBlockListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionWebsiteListPage">
+            <summary>
+            SolutionWebsiteListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionWebsiteListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebDocumentationCodeLibraryListPage">
+            <summary>
+            WebDocumentationCodeLibraryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebDocumentationCodeLibraryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebCodeLibraryListPage">
+            <summary>
+            WebCodeLibraryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebCodeLibraryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebCoreFileListPage">
+            <summary>
+            WebCoreFileListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebCoreFileListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebGroupMenuListPage">
+            <summary>
+            WebGroupMenuListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebGroupMenuListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebMenuListPage">
+            <summary>
+            WebMenuListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebMenuListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebSettingListPage">
+            <summary>
+            WebSettingListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebSettingListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionMottoListPage">
+            <summary>
+            SolutionMottoListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionMottoListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessAddressListPage">
+            <summary>
+            BusinessAddressListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessAddressListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionEmailTemplateListPage">
+            <summary>
+            SolutionEmailTemplateListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionEmailTemplateListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerHealthCheckTaskListPage">
+            <summary>
+            ServerHealthCheckTaskListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerHealthCheckTaskListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WebVisitIpListPage">
+            <summary>
+            WebVisitIpListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WebVisitIpListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicImageGalleryListPage">
+            <summary>
+            BasicImageGalleryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.LoadFromServer(System.Int32)">
+            <summary>
+            Last proccess
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.RefreshViewPhoto(System.Nullable{System.Int32})">
+            <summary>
+            </summary>
+            <param name="selectedPhotoId">selectedPhotoId -1 is Select Last</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.ImageChangesCancelClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Image Graphics Changes Controllers
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.SaveImageToServer(System.Nullable{System.Int32})">
+            <summary>
+            null For Full Folder else No of dbId, 0 = new
+            </summary>
+            <param name="onlyThis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.ClearGallery">
+            <summary>
+            Phycical clear local storage and form
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.GrayscaleClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Images Effect Part
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicImageGalleryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ScreenSaverPage">
+            <summary>
+            ScreenSaverPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ScreenSaverPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemIgnoredExceptionListPage">
+            <summary>
+            SystemIgnoredExceptionListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemIgnoredExceptionListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerToolPanelDefinitionListPage">
+            <summary>
+            ServerToolPanelDefinitionListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerToolPanelDefinitionListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicAttachmentListPage">
+            <summary>
+            BasicAttachmentListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicAttachmentListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessBranchListPage">
+            <summary>
+            BusinessBranchListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessBranchListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicCalendarListPage">
+            <summary>
+            BasicCalendarListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicCalendarListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessCreditNoteListPage">
+            <summary>
+            BusinessCreditNoteListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessCreditNoteListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemDocumentTypeListPage">
+            <summary>
+            SystemDocumentTypeListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemDocumentTypeListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessExchangeRateListPage">
+            <summary>
+            BusinessExchangeRateListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessExchangeRateListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicCurrencyListPage">
+            <summary>
+            BasicCurrencyListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicCurrencyListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemDocumentAdviceListPage">
+            <summary>
+            SystemDocumentAdviceListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemDocumentAdviceListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessIncomingInvoiceListPage">
+            <summary>
+            BusinessIncomingInvoiceListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessIncomingInvoiceListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessIncomingOrderListPage">
+            <summary>
+            BusinessIncomingOrderListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessIncomingOrderListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemTranslationListPage">
+            <summary>
+            SystemTranslationListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemTranslationListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemLoginHistoryListPage">
+            <summary>
+            SystemLoginHistoryListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemLoginHistoryListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessMaturityListPage">
+            <summary>
+            BusinessMaturityListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessMaturityListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessNotesListPage">
+            <summary>
+            BusinessNotesListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessNotesListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessOfferListPage">
+            <summary>
+            BusinessOfferListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessOfferListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessOutgoingInvoiceListPage">
+            <summary>
+            BusinessOutgoingInvoiceListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessOutgoingInvoiceListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessOutgoingOrderListPage">
+            <summary>
+            BusinessOutgoingOrderListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessOutgoingOrderListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessPaymentMethodListPage">
+            <summary>
+            BusinessPaymentMethodListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessPaymentMethodListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessPaymentStatusListPage">
+            <summary>
+            BusinessPaymentStatusListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessPaymentStatusListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessReceiptListPage">
+            <summary>
+            BusinessReceiptListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessReceiptListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemReportQueueListPage">
+            <summary>
+            SystemReportQueueListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemReportQueueListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionFailListPage">
+            <summary>
+            SolutionFailListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionFailListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicItemListPage">
+            <summary>
+            BasicItemListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicItemListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemParameterListPage">
+            <summary>
+            SystemParameterListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemParameterListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicUnitListPage">
+            <summary>
+            BasicUnitListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicUnitListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BasicVatListPage">
+            <summary>
+            BasicVatListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BasicVatListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.BusinessWarehouseListPage">
+            <summary>
+            BusinessWarehouseListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.BusinessWarehouseListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemSvgIconListPage">
+            <summary>
+            SystemSvgIconListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemSvgIconListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SupportPage">
+            <summary>
+            SupportPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SupportPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SystemReportListPage">
+            <summary>
+            SystemReportListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SystemReportListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionUserListPage">
+            <summary>
+            SolutionUserListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionUserListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.SolutionUserRoleListPage">
+            <summary>
+            SolutionUserRoleListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.SolutionUserRoleListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.ServerSettingListPage">
+            <summary>
+            ServerSettingListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.ServerSettingListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.WelcomePage">
+            <summary>
+            WelcomePage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.WelcomePage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateWebViewPage">
+            <summary>
+            Template Page For internet pages document, pictures, text and and much more file formats
+            opened in WebViewer
+            </summary>
+            <summary>
+            TemplateWebViewPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateWebViewPage.dataViewSupport">
+            <summary>
+            Standartized declaring static page data for global vorking with pages
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateWebViewPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and direct show example file
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateWebViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListWithParentPage">
+            <summary>
+            TemplateClassListWithParentPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithParentPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateDocumentViewPage">
+            <summary>
+            Template Page For View document, pictures, text and and much more file formats opened in WebViewer
+            </summary>
+            <summary>
+            TemplateDocumentViewPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateDocumentViewPage.dataViewSupport">
+            <summary>
+            Standartized declaring static page data for global vorking with pages
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateDocumentViewPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and direct show example file
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateDocumentViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListWithSubPage">
+            <summary>
+            This standartized Template is only for list view od Data table Called from MainWindow.cs on
+            open New Tab
+            </summary>
+            <summary>
+            TemplateClassListWithSubPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.dataViewSupport">
+             <summary>
+             Standartized declaring static page data and selected record for All Pages this method is
+             for global working with pages Called from MainWindow.cs for Control of Button Menu and
+             Selections (Report,Filter and more) All is setted as global Classes for All Pages and
+             Work is Fully automatized by System core
+            
+             HERE you Define All Data Variables For This Form
+             </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and start loding data Manual work needed
+            Translate All XAML fields by Resources Runned on start
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.LoadDataList">
+             <summary>
+             Standartized Method for Loading data. Manual Changing is needed for simple form is All
+             changed By CLASNAME Chage, but If you need More API data for selection Here are Defined
+             All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.DgListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of DatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.Filter(System.String)">
+            <summary>
+            Standartized method for searching match in setted columns. Searched value is from the
+            simple 'Search Input' for DatagidView (List Data) Manual Changing is needed of filtered
+            columns by Search Value This is on Every page ('View' and 'Form' Types) without
+            'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for global
+            working with pages Called from MainWindow.cs Dynamicaly Called Only from MainWindow.cs
+            when Search value Inserted
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.NewRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            New button Click Only Set Record And Hide Dataview and Show Detail
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.EditRecord(System.Boolean)">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Edit button Click Only Set Record And Hide Dataview and Show Detail with selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.DeleteRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Delete button Click Show MainWindow Standartized Message with info About Delete and
+            After confirm Send DeleteApiRequest Reload Datalist and cancel Selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.DgListView_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Standartized method for selecting and opening Detail Form. This is only View Page, that
+            is only for Select record This is full automatic, not needed manual work This is on
+            Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working page its local control From XAML
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.DgListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on Every page ('View' and 'Form' Types) without 'Setting' Type
+            (Name=Setting and Tag=Setting in XAML part) this method is for global working page its
+            local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.BtnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Save Record And return to Dataview. Manual work need, Here is
+            Join Betwen XAML inputs and Selected Record Dataset (dataset for Detail): Direction FORM
+            to SELECTED RECORD By ClasName Replacing All other changes are automaticaly
+            (API,DatasetType), just must define and control Each Field Of Dataset this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.BtnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for cancel of Editing. Hide Detail and Dataview List is Shown This
+            is full automatic, not needed manual work This is on Every page ('View' and 'Form'
+            Types) without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is
+            for global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SetRecord(System.Nullable{System.Boolean},System.Boolean)">
+             <summary>
+             Standartized method for ¨Set New Record/ Edit Record / Copy Record And return to
+             Dataview. Manual work need, Here is Join Betwen XAML inputs and Selected Record Dataset
+             (dataset for Detail): Direction Selected record to FORM By ClasName Replacing All other
+             changes are automaticaly (API,DatasetType), just must define and control Each Field Of
+             Dataset this method is for global working page its local control From XAML
+            
+             In this type Form Here Are loaded Data for SublistView (on knows selected record for
+             correct join)
+             </summary>
+             <param name="showForm">if set to <c>true</c> [show form].</param>
+             <param name="copy">    if set to <c>true</c> [copy].</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.DgSubListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of SubDatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SelectGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method indicate start loading all data of SubRecord after Selected in
+            Combobox This is full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.UpdateCustomerSearchResults">
+            <summary>
+            Standartized method Filling Customer Input by Selected Value This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.Customer_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for Keyboard control of SelectBox This is full automatic, not needed
+            manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SelectCustomer_Enter(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized methods with Indicate Customer Selection and Start Filling Input This is
+            full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SetCustomer">
+            <summary>
+            Standartized methods For Filling Input after Selection This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.PartNumberGotFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method indicate start loading all data of SubRecord after Selected in
+            Combobox This is full automatic, not needed manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.UpdatePartNumberSearchResults">
+            <summary>
+            Standartized method Filling Customer Input by Selected Value This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.PartNumber_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for Keyboard control of SelectBox This is full automatic, not needed
+            manual work
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SelectPartNumber_Enter(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on page With Sublist ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     The <see cref="T:System.Windows.Input.KeyEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SetPartNumber">
+            <summary>
+            Standartized methods For Filling Input after Selection This is full automatic, not
+            needed manual work
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.dgSubListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on page With Sublist ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.BtnItemInsert_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Direct Insert SubRecord to SubListView Manual work needed, set
+            correct data set for SubRecord This is on page With Sublist ('View' and 'Form' Types)
+            without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.BtnItemDelete_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Direct Delete SubRecord to SubListView Manual work needed, set
+            correct data set for SubRecord This is on page With Sublist ('View' and 'Form' Types)
+            without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.NotesChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized Maximal Simle Code with Reaction and Fill input After ParentComboboxSelection
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.ClearItemsFields">
+            <summary>
+            Standartized Method for Clear SubRecord Input Fields with custom Dataset For Correct
+            Using must be Fields changed for used dataset
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.SetSubListsNonActiveOnNewItem(System.Boolean)">
+            <summary>
+            Standartized Method for Load All SubData which is needed for Working with SubRecord For
+            Correct Using must be changed for actual datasets
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage">
+            <summary>
+            This standartized Template is only for list view od Data table Called from MainWindow.cs on
+            open New Tab
+            </summary>
+            <summary>
+            TemplateClassListWithSubViewPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.dataViewSupport">
+             <summary>
+             Standartized declaring static page data and selected record for All Pages this method is
+             for global working with pages Called from MainWindow.cs for Control of Button Menu and
+             Selections (Report,Filter and more) All is setted as global Classes for All Pages and
+             Work is Fully automatized by System core
+            
+             HERE you Define All Data Variables For This Form
+             </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and start loding data Manual work needed
+            Translate All XAML fields by Resources Runned on start
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.LoadDataList">
+             <summary>
+             Standartized Method for Loading data. Manual Changing is needed for simple form is All
+             changed By CLASNAME Chage, but If you need More API data for selection Here are Defined
+             All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.DgListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of DatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.Filter(System.String)">
+            <summary>
+            Standartized method for searching match in setted columns. Searched value is from the
+            simple 'Search Input' for DatagidView (List Data) Manual Changing is needed of filtered
+            columns by Search Value This is on Every page ('View' and 'Form' Types) without
+            'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is for global
+            working with pages Called from MainWindow.cs Dynamicaly Called Only from MainWindow.cs
+            when Search value Inserted
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.NewRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            New button Click Only Set Record And Hide Dataview and Show Detail
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.EditRecord(System.Boolean)">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Edit button Click Only Set Record And Hide Dataview and Show Detail with selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.DeleteRecord">
+            <summary>
+            Standartized Method on All Pages with Forms for New Record ALL Needed changes Are done
+            By Replace CLASSNAME not needed manual work Dynamicaly Called Only from MainWindow.cs on
+            Delete button Click Show MainWindow Standartized Message with info About Delete and
+            After confirm Send DeleteApiRequest Reload Datalist and cancel Selected Record
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.DgListView_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Standartized method for selecting and opening Detail Form. This is only View Page, that
+            is only for Select record This is full automatic, not needed manual work This is on
+            Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working page its local control From XAML
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.DgListView_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Standartized method for select one record only. This is full automatic, not needed
+            manual work This is on Every page ('View' and 'Form' Types) without 'Setting' Type
+            (Name=Setting and Tag=Setting in XAML part) this method is for global working page its
+            local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.BtnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Save Record And return to Dataview. Manual work need, Here is
+            Join Betwen XAML inputs and Selected Record Dataset (dataset for Detail): Direction FORM
+            to SELECTED RECORD By ClasName Replacing All other changes are automaticaly
+            (API,DatasetType), just must define and control Each Field Of Dataset this method is for
+            global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.BtnCancel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for cancel of Editing. Hide Detail and Dataview List is Shown This
+            is full automatic, not needed manual work This is on Every page ('View' and 'Form'
+            Types) without 'Setting' Type (Name=Setting and Tag=Setting in XAML part) this method is
+            for global working page its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.SetRecord(System.Nullable{System.Boolean},System.Boolean)">
+             <summary>
+             Standartized method for ¨Set New Record/ Edit Record / Copy Record And return to
+             Dataview. Manual work need, Here is Join Betwen XAML inputs and Selected Record Dataset
+             (dataset for Detail): Direction Selected record to FORM By ClasName Replacing All other
+             changes are automaticaly (API,DatasetType), just must define and control Each Field Of
+             Dataset this method is for global working page its local control From XAML
+            
+             In this type Form Here Are loaded Data for SublistView (on knows selected record for
+             correct join)
+             </summary>
+             <param name="showForm">if set to <c>true</c> [show form].</param>
+             <param name="copy">    if set to <c>true</c> [copy].</param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.LoadSubDataList">
+             <summary>
+             Standartized Method for Loading SubData. Manual Changing is needed for simple form is
+             All changed By CLASNAME Chage, but If you need More API data for selection Here are
+             Defined All incoming Data Loading is same centralized only change ClasName For Diferent Dataset
+            
+             After all data for DatagridView (List Data) are loaded The ProgressRing is hidden This
+             is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+             Tag=Setting in XAML part) this method is for global working with pages Called from
+             MainWindow.cs on Refresh button click Runned on Pageloading or Filter or View Change
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.DgSubListView_Translate(System.Object,System.EventArgs)">
+            <summary>
+            Standartized method for translating column names of SubDatagidView (List Data) Manual
+            Changing is needed for set Translate of Column Names via Dictionary Items Here you can
+            set Format(Date,time, etc),Index position, Hide Column, Translate, change grahics Style
+            This is on Every page ('View' and 'Form' Types) without 'Setting' Type (Name=Setting and
+            Tag=Setting in XAML part) this method is for global working with page internal reaction
+            on DatagrigView DataFiling on Start Page Runned On Page Loading
+            </summary>
+            <param name="sender"></param>
+            <param name="ex">    </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.Fixed_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Standartized method for Loading Data for Selected Record This is full automatic, not
+            needed manual work This is on Every page ('View' and 'Form' Types) without 'Setting'
+            Type (Name=Setting and Tag=Setting in XAML part) this method is for global working page
+            its local control From XAML
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.RoutedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListWithSubViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListViewPage">
+            <summary>
+            TemplateClassListViewPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListViewPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateSettingsPage">
+            <summary>
+            TemplateSettingsPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateSettingsPage.dataViewSupport">
+            <summary>
+            Standartized declaring static page data for global vorking with pages
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateSettingsPage.Languages">
+            <summary>
+            Define Collection For Combobox
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateSettingsPage.#ctor">
+            <summary>
+            Initialize page with loading Dictionary and start loding data Manual work needed
+            Translate All XAML fields by Resources Runned on start
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateSettingsPage.BtnApiTest_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Customized GET Call
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateSettingsPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateClassListPage">
+            <summary>
+            TemplateClassListPage
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateClassListPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateSTLPage">
+            <summary>
+            TemplateSTLPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateSTLPage.dataViewSupport">
+            <summary>
+            Standartized declaring static page data for global vorking with pages
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateSTLPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Pages.TemplateVideoPage">
+            <summary>
+            TemplateVideoPage
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Pages.TemplateVideoPage.dataViewSupport">
+            <summary>
+            Standartized declaring static page data for global vorking with pages
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Pages.TemplateVideoPage.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Classes.AppVersion">
+            <summary>
+            Program version Class
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Classes.DataViewSupport">
+            <summary>
+            Actual List Item informations for Controls each Page in MainView
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Classes.Language">
+            <summary>
+            Language definition support
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Classes.ReportSelection">
+            <summary>
+            Report naming support
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.GlobalClasses.SystemLocalEnumSets.languages">
+            <summary>
+            Client Setting Offline enum of Languages
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.GlobalClasses.SystemLocalEnumSets.updateVariants">
+            <summary>
+            Client Setting offline enum Updater States
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.GlobalClasses.SystemLocalEnumSets.sections">
+            <summary>
+            Client Setting offline enum Menu Groups
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.GlobalClasses.SystemLocalEnumSets.SpecificationScriptTypes">
+            <summary>
+            TODO FOR MOVE TO MICRODIAL
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.AppRuntimeData">
+             <summary>
+             !!!SYSTEM Global Runtime Monitor Definition For One Point monitoring For Processes and each
+             other Definition For optimize the System Running
+            
+             TODO
+             - move All Central Definitions Here
+             - create Monitor Window for managing
+             </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.SystemStatuses">
+             <summary>
+             !!SYSTEM Global Definition for System Statuses
+            
+             SYSTEM Running mode In debug mode is disabled the System Logger Visual Studio Debugger
+             difficult operation has problem If you want you can enable SystemLogger by change to: DebugWithSystemLogger
+            
+             Its Used as String EveryWhere Its good Soution for Centarized Statuses of System Errors Are
+             Saved In SystemLogger or Database
+             </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.Authentification">
+            <summary>
+            Class for User Authentication information
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.UserData">
+            <summary>
+            Basic user data for login
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.UpdateVariant">
+            <summary>
+            Global class for using Name/Value - Example Reports, Language and others
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.TiltTargets">
+            <summary>
+            Tilt Document Types Definitions
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.DocumentItemList">
+            <summary>
+            Univessal Document List (Item) for Offer,Order,Invoice
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.SystemTranslatedTableList">
+            <summary>
+            Class for Using as customized list the List of API urls for Central using in the system One
+            Api is One: Dataview / Right / Report Posibility / Menu Item / Page Exist rules for
+            automatic processing in System Core Logic for simple Developing
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.SpTableList">
+            <summary>
+            Generated Class TableList from Stored Procedure SystemSpGetTableList
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.SystemOperationMessage">
+            <summary>
+            Custom Definition for Returning List with One Record from Operation Stored Procedures
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.DBJsonFile">
+            <summary>
+            Custom Definition for Returning List with One Record from Operation Stored Procedures
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalClasses.DeserializedJson">
+            <summary>
+            Custom Definition for Returning List with One Record from Operation Stored Procedures
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalGenerators.ImageElementGenerator">
+            <summary>
+            This class can be used to embed images inside AvalonEdit like this: <img src="Images/Save.png"/>
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalGenerators.ImageElementGenerator.GetFirstInterestedOffset(System.Int32)">
+            <summary>
+            Gets the first offset >= startOffset where the generator wants to construct
+            an element.
+            Return -1 to signal no interest.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalGenerators.ImageElementGenerator.ConstructElement(System.Int32)">
+            <summary>
+            Constructs an element at the specified offset.
+            May return null if no element should be constructed.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalGenerators.IconMaker">
+            <summary>
+            System Online Icon Generator from custom Path Its for working with Icon over Database Dynamically
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalGenerators.IconMaker.Icon(System.Windows.Media.Color,System.String)">
+            <summary>
+            Generate Custom Icon from Defined Path
+            </summary>
+            <param name="color">   The color.</param>
+            <param name="iconPath">The icon path.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.CommOperations">
+            <summary>
+            Centralized Communication Operations as Console, Web Socket 
+            Plugins and Extensions communications
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.ToolsOperations">
+            <summary>
+            Centralized Library With Extension Functions Of Exterrnal Tools
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.ToolsOperations.AvalonEditorFindText(System.String,System.Int32@,ICSharpCode.AvalonEdit.TextEditor@,System.Boolean)">
+            <summary>
+            Avaloneditor Content Search Function With HighLight
+            </summary>
+            <param name="searchQuery">        </param>
+            <param name="foundedIndex">       </param>
+            <param name="textEditor">         </param>
+            <param name="ignoreCaseSensitive"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.ToolsOperations.AvalonEditorReplaceText(System.String,System.String,System.Int32@,ICSharpCode.AvalonEdit.TextEditor@,System.Boolean,System.Boolean)">
+            <summary>
+            AvalonEditor Replace Matched Strings in Editor
+            </summary>
+            <param name="sourceString">       </param>
+            <param name="targetString">       </param>
+            <param name="foundedIndex">       </param>
+            <param name="textEditor">         </param>
+            <param name="ignoreCaseSensitive"></param>
+            <param name="selectedonly">       </param>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.FormOperations">
+            <summary>
+            Centralised Forms Functions for work with Types, methods, Formats, Logic, supported methods
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FormOperations.AnalphabetAndNumericOnlyValidated(System.Windows.Input.TextCompositionEventArgs@,System.Boolean)">
+            <summary>
+            TextInput allowing Analphabetical and numeric character Only
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FormOperations.NumberOnlyValidated(System.String)">
+            <summary>
+            Text Input Allowing Numeric Characters Only
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FormOperations.RemoveDisabledSpacesFromTextInput(System.Object@,System.Windows.Controls.TextChangedEventArgs@)">
+            <summary>
+            Removes the disabled spaces from referenced Inpout.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FormOperations.DisplayAllToolTips_OnClick(System.Windows.FrameworkElement)">
+            <summary>
+            Secventional Show All Tooltips On
+            Shown Objects in System
+            </summary>
+            <param name="userControl"></param>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.DataOperations">
+            <summary>
+            Centralized DataOperations as Cleaning dataset Language Dictionary Auto filing
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EasyITSystemCenter.GlobalOperations.DataOperations.ConvertDataSetToJson(System.Collections.Generic.Dictionary{System.String,System.String})" -->
+        <member name="M:EasyITSystemCenter.GlobalOperations.DataOperations.NullSetInExtensionFields``1(``0@)">
+            <summary>
+            !!! SYSTEM RULE: ClassList with joining fields names must be nullable before API
+            operation !!! ClassName must contain: "Extended" WORD Extension field in Class - Dataset
+            must be set as null before Database Operation else is joining to other dataset is valid
+            and can be blocked by fail key Its Check Extended in ClassName - SYSTEM RULE
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DataOperations.TranslateFormFields``1(``0)">
+            <summary>
+            !!! SYSTEM RULE: naming of automatic gtanslating fields must be type_fieldname fieldname
+            is Translated Over DB List !!! Translation List is Automatic Filling For Logged Agendas
+            Function using Referenced Objects
+            Defined: Grid[label,button],Label, Button, EXTEND this Fuction for every Parent a Direct
+            Types For One Function Translatings !!! Translate only Empty Contents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DataOperations.ParameterCheck(System.String)">
+            <summary>
+            Return Requested User or if not exist default DB parameter CamelCase Ignored
+            </summary>
+            <param name="parameterName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.HardwareOperations.ApplicationKeyboardMaping(System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Application Keyboard controller
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.MathTypeOperations.CheckTypeValue(System.String,System.String)">
+            <summary>
+            Global DataTypes Chwecker with Bool Result Used on System Parameters
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.DBOperations">
+            <summary>
+            Centralised DBFunctions as Load DB Congig, System Dials (Language, Params) Another Db
+            functions As Saving System Loging, Language Dictionary Autofiling
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.LoadStartupDBData">
+            <summary>
+            Startup Load System Parameters ,Languages, System Controlling, Server Setting
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.LoadWaitingDataInSleepMode">
+            <summary>
+            Reload SYSTEM Dials When System Sleep For Non Blocking Work Was Problem For More Startup
+            Saving and Reloading with Language List
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.LoadOrRefreshUserData">
+            <summary>
+            Centralised Method for Refresh All UserData params, for correct App running. Thinking
+            for remove and new Load Actualy limited by DebugingHelpSetting Itr user After Succes
+            User Login
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.SetNonUserDataOnSuccessStartUp">
+            <summary>
+            SYSTEM: Set NonUser Startup Data for Correct Prepare System Its for All Status Possible
+            - NODB,OS,IS,Network,etc. For check ANY possible problems out of System
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.SaveSystemFailMessage(System.String,System.String)">
+            <summary>
+            Save Exception to DB Fail List (System Log) Write to System Logger
+            </summary>
+            <param name="message"> </param>
+            <param name="logLevel"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.DBOperations.DBTranslation(System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Centralised Method for Translating by DB Dictionary Service insert the news words for
+            translate (After translate request) to Database Automaticaly with Empty Translate.
+            Service return translate if is possible or requested word send back CamelCase ignored
+            Default Language: CZ
+            </summary>
+            <param name="systemName">  </param>
+            <param name="notCreateNew"></param>
+            <param name="comaList">    </param>
+            <param name="lang">        </param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITSystemCenter.GlobalOperations.SystemOperations">
+            <summary>
+            Centralised System Functions for work with Types, methods, Formats, Logic, supported methods
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.SetLanguageDictionary(System.Windows.ResourceDictionary,System.String)">
+            <summary>
+            Settings Local Application Translation dictionaries (Resources Files) for Pages Will be
+            replaced by DBDictionary, but for Offline Running must be possible
+            </summary>
+            <param name="Resources">      </param>
+            <param name="languageDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.SendMailWithServerSetting(System.String)">
+            <summary>
+            Email Sender for send Direct Email by Server Configuration for Testing
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.SendMailWithMailTo(System.String,System.String,System.String,System.String)">
+            <summary>
+            System Mail sending
+            </summary>
+            <param name="address"></param>
+            <param name="subject"></param>
+            <param name="body">   </param>
+            <param name="attach"> </param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.IncreaseFileVersionBuild">
+            <summary>
+            Automatic Increase version System Ideal for small systems with more release in 1 day
+            Increase Windows Correct 3 position for Widows Installation In Debug is increase last 4 position
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.GetExceptionMessages(System.Exception,System.Int32)">
+            <summary>
+            Mining All Exception Information For Central System Logger Ignore Some selected Fails is
+            possible by Ignored Exception Settings
+            </summary>
+            <param name="exception"></param>
+            <param name="msgCount"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.GetExceptionMessagesAll(System.Exception,System.Int32)">
+            <summary>
+            Mining All Exception Information For Local System Logger EveryTime Show All fails for
+            Best Developing On Expert Level
+            </summary>
+            <param name="exception"></param>
+            <param name="msgCount"> </param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.FilterToString(System.Windows.Controls.ComboBox)">
+            <summary>
+            SYSTEM Advanced Filter Conversion for API return existing filter for saving to string in
+            selected Page
+            </summary>
+            <param name="filterBox"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.RemoveAppNamespaceFromString(System.String)">
+            <summary>
+            Its Solution for this is a solution for demanding and multiplied servers Or Running
+            SHARP and Test System By One Backend Server Service API Urls with Namespaces in Name are
+            for Backend model with More Same Database Schemas Backend Databases count in One Server
+            Service is Unlimited
+            </summary>
+            <param name="stringForRemoveNamespace"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.RandomString(System.Int32)">
+            <summary>
+            Generate Random String with defined length
+            </summary>
+            <param name="length">The length.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.StartExternalProccess(System.String,System.String,System.String,System.String)">
+             <summary>
+             System External Process Starter for Conrtalized Using Return the processId when is
+             started or null
+            
+             TODO
+             - create process Monitor
+             - save the monitored procceses to System Monitor
+             - must be refactored actual status
+             </summary>
+             <param name="type">          </param>
+             <param name="processCommand"></param>
+             <param name="startupPath">   The startup path.</param>
+             <param name="arguments">     The arguments.</param>
+             <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.FirstLetterToLower(System.String)">
+            <summary>
+            Change First Character of String
+            </summary>
+            <param name="str">The string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.PortInUse(System.Int32)">
+            <summary>
+            System Port Checker
+            </summary>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.SystemOperations.GetSystemLocalhostFreePort">
+            <summary>
+            Get First Free Port For Start Local Web Server
+            Used By reactive Web Server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.LoadSettings">
+            <summary>
+            Application Startup Check and configure Data Structure in folder ProgramData And
+            required files, load client configuration config.json
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.SaveSettings">
+            <summary>
+            Function for saving Application Configuration This is client configuration only
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.UnicodeToUTF8(System.String)">
+            <summary>
+            Unicodes to ut f8.
+            </summary>
+            <param name="strFrom">The string from.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CheckFile(System.String)">
+            <summary>
+            Checks the file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CopyFiles(System.String,System.String)">
+            <summary>
+            Prepared Method for Files Copy
+            </summary>
+            <param name="sourcePath">     </param>
+            <param name="destinationPath"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CreatePath(System.String)">
+            <summary>
+            Creates the path recursively.
+            </summary>
+            <param name="path">The path.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.ReadFile(System.String)">
+            <summary>
+            Reads the file.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.ByteArrayToFile(System.String,System.Byte[])">
+            <summary>
+            Write ByteArray to File
+            </summary>
+            <param name="fileName"> Name of the file.</param>
+            <param name="byteArray">The byte array.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CreateFile(System.String)">
+            <summary>
+            Prepared Method for Create empty file
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.WriteToFile(System.String,System.String)">
+            <summary>
+            Write String to File Used for JsonSaving
+            </summary>
+            <param name="file">   The file.</param>
+            <param name="content">The content.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.FileDetectEncoding(System.String)">
+            <summary>
+            Prepared Method for Get Information of File encoding UTF8,WIN1250,etc
+            </summary>
+            <param name="FileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.DeleteDirectory(System.String)">
+            <summary>
+            Deletes the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CheckDirectory(System.String)">
+            <summary>
+            Checks the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CopyDirectory(System.String,System.String)">
+            <summary>
+            Copy Full directory.
+            </summary>
+            <param name="directory">The directory.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CopyFile(System.String,System.String)">
+            <summary>
+            /
+            </summary>
+            <param name="from">From.</param>
+            <param name="to">  To.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.CreateDirectory(System.String)">
+            <summary>
+            Creates the directory.
+            </summary>
+            <param name="directory">The directory.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.DeleteFile(System.String)">
+            <summary>
+            Deletes the file.
+            </summary>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.ClearFolder(System.String)">
+            <summary>
+            Full Clear Folder
+            </summary>
+            <param name="FolderName">Name of the folder.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.FileOperations.VncServerIniFile(System.String)">
+            <summary>
+            Generate ini file for start vns server default password: groupware
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.MediaOperations.SaveAppScreenShot(EasyITSystemCenter.MainWindow,System.Boolean)">
+            <summary>
+            ScreenShot Function For Application Menu Tool If Return Array True, Image is returned in
+            response Other Save Dialog is Opened
+            </summary>
+            <param name="MainWindow">     The main window.</param>
+            <param name="returnArrayOnly"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.MediaOperations.GetImageImmediatelly(System.String)">
+            <summary>
+            Important Closing connections of openned files by Form and binding this is solution for
+            close oppened file after load Solution for All Files
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.MediaOperations.ArrayToImage(System.Byte[])">
+            <summary>
+            Cresate Bitmap Image from DB array to Image for show preview
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalOperations.MediaOperations.CreateImageFile(System.IO.FileStream,System.Windows.Media.Imaging.BitmapFrame,System.String)">
+            <summary>
+            Create More Image File Types NotUsed
+            </summary>
+            <param name="file">    </param>
+            <param name="frame">   </param>
+            <param name="fileType"></param>
+        </member>
+        <member name="T:EasyITSystemCenter.Tools.BraceFoldingStrategy">
+            <summary>
+            Allows producing foldings from a document based on braces.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.BraceFoldingStrategy.OpeningBrace">
+            <summary>
+            Gets/Sets the opening brace. The default value is '{'.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.BraceFoldingStrategy.ClosingBrace">
+            <summary>
+            Gets/Sets the closing brace. The default value is '}'.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.BraceFoldingStrategy.#ctor">
+            <summary>
+            Creates a new BraceFoldingStrategy.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.BraceFoldingStrategy.CreateNewFoldings(ICSharpCode.AvalonEdit.Document.TextDocument,System.Int32@)">
+            <summary>
+            Create <see cref="T:ICSharpCode.AvalonEdit.Folding.NewFolding"/>s for the specified document.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.BraceFoldingStrategy.CreateNewFoldings(ICSharpCode.AvalonEdit.Document.ITextSource)">
+            <summary>
+            Create <see cref="T:ICSharpCode.AvalonEdit.Folding.NewFolding"/>s for the specified document.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Tools.ColorizeAvalonEdit">
+            <summary>
+            Finds the word 'AvalonEdit' and makes it bold and italic.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Tools.ITextMarker">
+            <summary>
+            Represents a text marker.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.StartOffset">
+            <summary>
+            Gets the start offset of the marked text region.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.EndOffset">
+            <summary>
+            Gets the end offset of the marked text region.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.Length">
+            <summary>
+            Gets the length of the marked region.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.ITextMarker.Delete">
+            <summary>
+            Deletes the text marker.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.IsDeleted">
+            <summary>
+            Gets whether the text marker was deleted.
+            </summary>
+        </member>
+        <member name="E:EasyITSystemCenter.Tools.ITextMarker.Deleted">
+            <summary>
+            Event that occurs when the text marker is deleted.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.BackgroundColor">
+            <summary>
+            Gets/Sets the background color.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.ForegroundColor">
+            <summary>
+            Gets/Sets the foreground color.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.FontWeight">
+            <summary>
+            Gets/Sets the font weight.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.FontStyle">
+            <summary>
+            Gets/Sets the font style.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.MarkerTypes">
+            <summary>
+            Gets/Sets the type of the marker. Use TextMarkerType.None for normal markers.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.MarkerColor">
+            <summary>
+            Gets/Sets the color of the marker.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.Tag">
+            <summary>
+            Gets/Sets an object with additional data for this text marker.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarker.ToolTip">
+            <summary>
+            Gets/Sets an object that will be displayed as tooltip in the text editor.
+            </summary>
+            <remarks>Not supported in this sample!</remarks>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.None">
+            <summary>
+            Use no marker
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.SquigglyUnderline">
+            <summary>
+            Use squiggly underline marker
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.NormalUnderline">
+            <summary>
+            Normal underline.
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.DottedUnderline">
+            <summary>
+            Dotted underline.
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.LineInScrollBar">
+            <summary>
+            Horizontal line in the scroll bar.
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.ScrollBarRightTriangle">
+            <summary>
+            Small triangle in the scroll bar, pointing to the right.
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.ScrollBarLeftTriangle">
+            <summary>
+            Small triangle in the scroll bar, pointing to the left.
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.Tools.TextMarkerTypes.CircleInScrollBar">
+            <summary>
+            Small circle in the scroll bar.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.ITextMarkerService.Create(System.Int32,System.Int32)">
+            <summary>
+            Creates a new text marker. The text marker will be invisible at first,
+            you need to set one of the Color properties to make it visible.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Tools.ITextMarkerService.TextMarkers">
+            <summary>
+            Gets the list of text markers.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.ITextMarkerService.Remove(EasyITSystemCenter.Tools.ITextMarker)">
+            <summary>
+            Removes the specified text marker.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.ITextMarkerService.RemoveAll(System.Predicate{EasyITSystemCenter.Tools.ITextMarker})">
+            <summary>
+            Removes all text markers that match the condition.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.ITextMarkerService.GetMarkersAtOffset(System.Int32)">
+            <summary>
+            Finds all text markers at the specified offset.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Tools.MyCompletionData">
+            <summary>
+            Implements AvalonEdit ICompletionData interface to provide the entries in the completion drop down.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Tools.TextMarkerService">
+            <summary>
+            Handles the text markers for a code editor.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.Tools.TextMarkerService.Redraw(ICSharpCode.AvalonEdit.Document.ISegment)">
+            <summary>
+            Redraws the specified text segment.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.ProgramaticXamlBehaviors.TextBoxBehavior">
+            <summary>
+            TextBox Behavior SelectAll on Focus
+            Example of Link in XAML
+            xmlns:XamlExt="clr-namespace:EasyITSystemCenter.ProgramaticXamlBehaviors"
+            in TextBox Add behaviors:TextBoxBehavior.SelectAllTextOnFocus="True"
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.ProgramaticXamlBehaviors.MergedStylesExtension">
+            <summary>
+            Style Includer Definition, 
+            merge more styles to One For Use  Metro Default Definiton + Custom Modifications
+            Using Example:
+            <Button Style="{XamlExt:MergedStyles BasedOn={StaticResource FirstStyle} MergeStyle={ StaticResource SecondStyle}}" />
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EasyITSystemCenter.ProgramaticXamlBehaviors.CompoundStyle.#ctor" -->
+        <member name="T:EasyITSystemCenter.Api.ApiUrls">
+            <summary>
+            ALL standard View AND Form API Call must end with "List" - These will automatic added for
+            reports Definitions TODO From Table?
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Api.DBResultMessage">
+            <summary>
+            Global API Definition of Result API calls for All Calling of Insert / Update / Delete
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.SystemHelper.SystemLoggerWebSocketClass">
+            <summary>
+            System Logger WebSocket Monitor Controller Class Definition For Centralized Using
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.SystemHelper.SystemLoggerHelper">
+            <summary>
+            System Logger Helper Defined Central WebSocket Monitor Controller
+            </summary>
+        </member>
+        <member name="E:EasyITSystemCenter.SystemHelper.DelegateCommand`1.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute.
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.Startup">
+            <summary>
+            Local WebServwer Startup
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.DataResources.GetImageResource(System.String)">
+            <summary>
+            Get Uri from Images From Data/Images Folder
+            Requested parameter is Filename 
+            </summary>
+            <param name="resourceFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.DataResources.GetMediaResource(System.String)">
+            <summary>
+            Get Uri from Files From Data/Media Folder
+            Requested parameter is Filename 
+            </summary>
+            <param name="resourceFile"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITSystemCenter.MainWindow">
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.MainWindow.lastUserAction">
+            <summary>
+            MainControls Screen Variables
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.MultiSameTabsEnabled">
+            <summary>
+            Enable/Disable MultiSameTabs Forms
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.ServerLoggerSource">
+            <summary>
+            System Logger Source Status and Controller This is status of Settings System Logger Source
+            </summary>
+            <value><c>true</c> if [server logger source]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.ShowSystemLogger">
+            <summary>
+            System Logger Activator by Setted Parametr Can be setted for All Apps or Every User individually
+            </summary>
+            <value><c>true</c> if [show system logger]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.OperationRunning">
+            <summary>
+            Indicator for mark operation status for any programmatic operations
+            </summary>
+            <value><c>true</c> if [operation running]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.RunReleaseMode">
+            VNC Server Running Indicator
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.VncRunning">
+            VNC Server Running Indicator
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.SystemLogger">
+            <summary>
+            System Online Logger for EASY developing
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.UserLogged">
+            <summary>
+            User Logged Status
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.ServiceRunning">
+            <summary>
+            Service Status description
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.DgRefresh">
+            <summary>
+            Indicator for enable Refresh Button Indicator
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.DataGridSelected">
+            <summary>
+            Indicator for Enable New DataGrid Button
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.DataGridSelectedIdListIndicator">
+            <summary>
+            <see cref="T:System.Windows.Controls.DataGrid"/> have selected record indicator
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.ServiceStatus">
+            <summary>
+            Service Status public Variable
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.DownloadStatus">
+            <summary>
+            Downloading of update status variable
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.DownloadShow">
+            <summary>
+            Indicator for show Downloading area
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.MainWindow.ProgressRing">
+            <summary>
+            ProgressRing Visibility indicator
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.#ctor">
+            <summary>
+            System Core AND ALL shared functionalities
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.MainWindow_MouseLeave(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Writing Last User action for monitoring Free Time Used by: SceenSaver
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.SetSystemModuleListPanel">
+            <summary>
+            Set System Module Content
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.ShowMessageOnMainWindow(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Central Application Message Dialog for All Info / Error / other messages for User
+            </summary>
+            <param name="error">  </param>
+            <param name="message"></param>
+            <param name="confirm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.MainWindow_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Application Loaded Start Backend timer for check server set Theme
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.LoadUserMenu">
+            <summary>
+            Load UserMenu After Login And Sort
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.SystemTimerController(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Backend System Timer for check server connection
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.SetServiceStop">
+            <summary>
+            Server is unavailable All operations are blocked
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Btn_about_click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            about applications information
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.SystemModulePanel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Open Selected System Module
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.MainWindow_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            MainWindow Keyboard pointer to Keyboard Central Application controller
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Btn_LaunchHelp_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Help button controller for Show Help File
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Btn_ShowModulePanel_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Show Metro Theme possibilities
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.BtnShowLoggerClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Show System On line Logger
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.SystemLoggerSourceChanged_Click(System.Object,System.EventArgs)">
+            <summary>
+            System Logger Source Selector Server Logger has Source From Client Settings by WebSocket URL
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">     The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.ShowLoginDialog">
+            <summary>
+            Application Login Dialog
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.MainWindow_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Applications Close Request Controller
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Mi_logout_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Application Logout button Controller
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.BtnKeyboardClick(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            System tools controllers
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.TiltOpenForm(System.String)">
+            <summary>
+            Tilts: Standardized Opening or create Tilt documents
+            </summary>
+            <param name="translateHeader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.CbFilterDropDownClosed(System.Object,System.EventArgs)">
+            <summary>
+            Full dynamic apply sett ed filter
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Mi_filter_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Full dynamic Show/Hidden DataGrid advanced Filter Menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.StringToFilter(System.Windows.Controls.ComboBox,System.String)">
+            <summary>
+            Full dynamic build filter on selected page from saved advanced filter
+            </summary>
+            <param name="filterBox">     </param>
+            <param name="advancedFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.RemoveFilterItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Full dynamic Remove Item from DataGrid advanced Filter
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.FilterField_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Full dynamic set sign DataGrid advanced filter type
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.MainGrid_IsDraggingChanged(System.Object,System.Windows.RoutedPropertyChangedEventArgs{System.Boolean})">
+            <summary>
+            Dragging and separate to more Applications: TabPanel drag Controller - not Used
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.CbPrintReportsSelected(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Print Report Selection Controller
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.Menu_action_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            THIS IS AUTOMATIC INCLUDE DATALIST VIEW MENU in FORMAT APIcallPage open or select
+            existed TabPanel VERTICAL MENU - Copy and CHANGE ONLY Page Name AND Report CALL as /XXXX
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.AddOrRemoveTab(System.String,System.Object,System.String)">
+            <summary>
+            Tabs Pages control for Insert/Move/Change Pages
+            </summary>
+            <param name="headerName"></param>
+            <param name="tabPage">   </param>
+            <param name="tagText">   </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.TabPanelOnSelectionChange(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Tab click selection change reload ID and Pointers for ListView Buttons
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">     
+            The <see cref="T:System.Windows.Controls.SelectionChangedEventArgs"/> instance containing the event data.
+            </param>
+        </member>
+        <member name="M:EasyITSystemCenter.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.GlobalStyles.ProgramaticStyles.GridTextRightAligment">
+            <summary>
+            DataGrid Column Right Aligment
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EasyITSystemCenter.Properties.Resources">
+            <summary>
+              Třída prostředků se silnými typy pro vyhledávání lokalizovaných řetězců atp.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Properties.Resources.ResourceManager">
+            <summary>
+              Vrací instanci ResourceManager uloženou v mezipaměti použitou touto třídou.
+            </summary>
+        </member>
+        <member name="P:EasyITSystemCenter.Properties.Resources.Culture">
+            <summary>
+              Potlačí vlastnost CurrentUICulture aktuálního vlákna pro všechna
+              vyhledání prostředků pomocí třídy prostředků se silnými typy.
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.SystemStructure.SystemWindowDataModel.#ctor">
+            <summary>
+            Its Solution For MultiInstance Application If The InterTab Is Enabled Can be Dragged Tab
+            To the New Application
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.SystemConfiguration.CrashReporterSettings">
+            <summary>
+            Libreria condivisa
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.SystemConfiguration.CrashReporterSettings._ReportCrash">
+            <summary>
+            FirstRun
+            </summary>
+        </member>
+        <member name="T:EasyITSystemCenter.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.App.TiltReceiptDoc">
+            <summary>
+            Tilt Document types definitions
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.App.appRuntimeData">
+            <summary>
+            Global Application Startup Settings Central Parameters / Languages / User / Configure
+            TODO must centalize to Globall APP class
+            </summary>
+        </member>
+        <member name="F:EasyITSystemCenter.App.log">
+            <summary>
+            System Core Needs Runtime Data For Working
+            //TODO move to RuntimeData
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.#ctor">
+            <summary>
+            Application Global Exceptions Controls Definitions
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.OnStartup(System.Windows.StartupEventArgs)">
+            <summary>
+            Connected Starting Video
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.App.AppRestart">
+            <summary>
+            System Restart Controller
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.AppQuitRequest(System.Boolean)">
+            <summary>
+            System or Quit
+            </summary>
+            <param name="silent"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.App.StartupLocaslWebServer">
+            <summary>
+            Local Web Server Controller
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.ApplicationQuit">
+            <summary>
+            MainWindow Closing Handler for Cleaning TempData, disable AddOns / Tool and Third Party
+            Software Closing Third Party processes
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.ApplicationLogging(System.Exception,System.String)">
+            <summary>
+            Full Application System logging Running If is AppSystemTimer is Enabled for disable
+            other processes exceptions Full Application logging to file if enabled and to DB for
+            solving by Developers Supported Custom Message Here Is Filling Local System Logger for
+            Developers Logging to Database Are All non Developer working
+            </summary>
+            <param name="ex">           </param>
+            <param name="customMessage"></param>
+        </member>
+        <member name="M:EasyITSystemCenter.App.CurrentDomain_FirstChanceException(System.Object,System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs)">
+            <summary>
+            FullSystem Logging Every Exception types are monitored for maximize correct running all
+            processes, System addOns, systems, communications, threads, network All detail of
+            application system add all used possibilities
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.App.RootAppKeyDownController(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Keyboard Pointer to Central Keyboard Reaction Definitions
+            </summary>
+            <param name="sender"></param>
+            <param name="e">     </param>
+        </member>
+        <member name="M:EasyITSystemCenter.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:EasyITSystemCenter.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

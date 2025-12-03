@@ -1,0 +1,305 @@
+﻿@page "/Dashboard"
+@model ServerCorePages.DashBoardModel
+@{
+    ViewData["Title"] = "Welcome In GroupWare Solutions IT News";
+}
+
+<div class="text-center info-panel">
+    @*
+    https://metroui.org.ua/intro.html
+    https://metroui.org.ua/position.html
+    *@
+         
+    <div class="container-fluid bg-brand fg-white pos-fixed fixed-top z-top">
+        <header data-role="appbar" class="container pos-relative bg-brand fg-white" data-expand-point="md">
+            <div class="brand no-hover">GroupWare Solutions Asistant</div>
+            <span style="color:black;">translation is posibble by right mouse click</span>
+            <ul class="app-bar-menu ml-auto">
+                <li><a href="https://www.youtube.com/playlist?list=PLmE7gP9LTBimNJQ444ypG8HVce23fa2Hb" target="_blank" data-role="ripple" data-ripple-color="#CE352C" data-ripple-alpha=".2">Tutorials</a></li>
+                <li><a href="https://KlikneteZde.Cz" target="_blank" title="Online System for Testing" data-role="ripple" data-ripple-color="#CE352C" data-ripple-alpha=".2">Online</a></li>
+                @*<li><a href="/Subscriptions" data-role="ripple" data-ripple-color="#CE352C" data-ripple-alpha=".2">Subscriptions</a></li>*@
+                <li><a href="#" data-role="ripple" data-ripple-color="#CE352C" data-ripple-alpha=".2">Login</a></li>
+                <li><a href="/server" class="text-bold fg-yellow"><span class="d-block ani-vertical">Get started</span></a></li>
+            </ul>
+        </header>
+    </div>
+
+    <window>
+        <div class="hero hero-bg 1bg-brand-secondary add-neb">
+            <div class="container">
+                <div class="row">
+                    <div class="cell-lg-8 d-flex flex-justify-center flex-align-center" style="width:600px">
+                        <div class="hero-desc">
+                            <div class="h3 fg-white">A knowledge base made with intelligence</div>
+                            <div class="h3 fg-white">Modern Global Solution For Central Controlling</div>
+                            <br>
+                            <div class="h4 fg-blue pos-center">
+                                Generated Inteligent API Servers:
+                                <span class="h3 ml-5 fg-green" data-role="counter" data-value="1000" id="counter">3</span>
+                            </div>
+                            <div class="h4 fg-blue pos-center">
+                                Generated MS Systems:
+                                <span class="h3 ml-5 fg-green" data-role="counter" data-value="100000" id="counter">7</span>
+                            </div>
+                            <div class="h4 fg-blue pos-center">
+                                Managed DB Tables API endpoints:
+                                <span class="h3 ml-5 fg-green" data-role="counter" data-value="100000" id="counter">893</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-role="cube" class="cell-lg-4 d-none d-flex-lg flex-justify-center flex-align-top mt-2" style="height: 275px"
+                         data-color="bg-cyan bd-darkCyan"
+                         data-flash-color="#aa00ff"></div>
+                   @* <div class="cell-lg-6 d-none d-flex-lg flex-justify-center flex-align-center" style="height: 475px">
+                        <img src="~/metro/images/50.png" style="width: 400px;" class="shadow-2">
+                    </div>*@
+                </div>
+            </div>
+        </div>
+
+        <div class="about ">
+            <div class="container">
+                <div class="mt-10 text-center">
+                    <div class="h1">EASY GroupWare Solutions Smart Help Center</div>
+                    <p class="text-leader pl-20-md pr-20-md">
+                        An advanced knowledge base management service is the first step to customer care automation.
+                        Here are the main features Aistant already has:
+                    </p>
+                </div>
+
+                <div class="row mt-10">
+                    <div class="cell-md-6 pt-4">
+                        
+                        <div class="p-4 bg-brand-secondary h-100">
+                            <a href="/Docs" class="unstyled-link c-pointer" target="_blank">
+                                <div class="icon-box border bd-brand">
+                                    <div class="icon bg-brand fg-white"><span class="mif-developer_board"></span></div>
+                                    <div class="content d-flex flex-align-center pl-4">
+                                            <div class="h4 text-light c-pointer"><span class="reduce-1 enlarge-1-md">EASY-DATA-Center Full Developer Code Documentation</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p>
+                                Fully customizable projects for any type of practical use. A GroupWare solution that uses more technology than is normally needed, and that's just the beginning of the possibilities.
+                                There is also an abundance of ready-made configurations, tools, variables, 
+                                automatic tools for the simple solution of every request literally in a single day
+                                Click to open the Servers Documentation and all other information about Visions and Ideals
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cell-md-6 pt-4">
+                        <div class="p-4 bg-brand-secondary h-100">
+                                <a href="#" class="unstyled-link c-pointer" onclick='Metro.window.create({title:"Projects Info",shadow:true,draggable:true,modal:true,icon:"<span class=\"mif-info\"</span>",btnClose:true,width:818,height:680,place:"center",content:"<iframe src=\"../server/ManagerInfoBook/index.html\" style=\"width:100%;height:600px\"></iframe>"});'>
+                                <div class="icon-box border bd-brand">
+                                    <div class="icon bg-brand fg-white"><span class="mif-open-book"></span></div>
+                                    <div class="content d-flex flex-align-center pl-4">
+                                        <div class="h3 text-light"><span class="reduce-1 enlarge-1-md">Basic Projects Info for Managers CZ</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p>Short Info Book for Managers with Informations about Technologies, Using, Possibilities, 
+                                EASY progresses and Using Groupware Projects EASY-DATA-Center and EASY-SYSTEM-Builder in Practise
+                                Click For read Basic Documentation, which contains enough information for starting development immediately
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2-lg">
+                    <div class="cell-md-6 pt-4">
+                        <div class="p-4 bg-brand-secondary h-100">
+                            <a href="/server" class="unstyled-link c-pointer">
+                                <div class="icon-box border bd-brand">
+                                    <div class="icon bg-brand fg-white"><span class="mif-files-empty"></span></div>
+                                    <div class="content d-flex flex-align-center pl-4">
+                                        <div class="h4 text-light"><span class="reduce-1 enlarge-1-md">Never Ending Free Updates on the way for Full Auto System Solution</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p>All of these Groupware (multiple solutions in one package) projects have the ambition to automate at least 90% of the necessary activities during the implementation
+                                of the Backend Server EASY-DATA-Center (can manage bobust systems from one point), and for system development, all that remains is clicking on input Form fields and the database fields
+                                By Click you can go open All Tech/Dev/Info/Migration documents, images, videos, intelligent help, shared agendas Free, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cell-md-6 pt-4">
+                        <div class="p-4 bg-brand-secondary h-100">
+                            <a href="https://KlikneteZde.Cz" class="unstyled-link c-pointer">
+                                <div class="icon-box border bd-brand">
+                                    <div class="icon bg-brand fg-white"><span class="mif-search"></span></div>
+                                    <div class="content d-flex flex-align-center pl-4">
+                                        <div class="h5 text-light"><span class="reduce-1 enlarge-1-md">MS EASY-SYSTEM-Builder it will be fully tuned for connection to the systems generator by the end of the summer 2023</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p>
+                                Both solutions contain more than 100 Technologies with the possibility of expanding by several others. The perfectly tuned services of the core systems make these GroupWare solutions, cheap easily available solutions, with the possibility to move the development to the level of Database Architecture and the Form.
+                                There are also already plans to create a Web clone in Metro4 as a fully compatible sibling of the already existing Microsoft version. 
+                                By Click you can go to the ONLINE Portal and Test the Microsoft SYSTEM Online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2-lg">
+                    <div class="cell-md-6 pt-4">
+                        <div class="p-4 bg-brand-secondary h-100">
+                            <a href="https://github.com/liborsvoboda?tab=repositories" class="unstyled-link c-pointer">
+                                <div class="icon-box border bd-brand">
+                                    <div class="icon bg-brand fg-white"><span class="mif-github"></span></div>
+                                    <div class="content d-flex flex-align-center pl-4">
+                                        <div class="h4 text-light"><span class="reduce-1 enlarge-1-md">Migrations from Existing Systems, Addons, Modernization, NEW Easy and Future IT Way</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p>
+                                Systems are ready for Easy Support (RDP implementation completed in 5 hours). Agenda sharing system policy (ideas from the world) is the world's gateway to better work, use of society and world resources.
+                                The planet needs a global policy for central problem solving by all the people of the world. And it's a win-win for everyone.
+                                Each Agenda Is Only: Database Table - For Backend AND System Form - for frontend. All others processes are fully automatized
+                                Its Vision for 21.st. Click for open 57 older Free projects with GroupWare Face for Central managing of Company Resources.
+                            </p>
+                            <br>
+                            <div id="pictures" data-role="carousel">
+                                <div class="slide" data-cover="../metro/img/1.png"></div>
+                                <div class="slide" data-cover="../metro/img/2.png"></div>
+                                <div class="slide" data-cover="../metro/img/3.png"></div>
+                                <div class="slide" data-cover="../metro/img/4.png"></div>
+                                <div class="slide" data-cover="../metro/img/5.png"></div>
+                                <div class="slide" data-cover="../metro/img/6.png"></div>
+                                <div class="slide" data-cover="../metro/img/8.png"></div>
+                                <div class="slide" data-cover="../metro/img/10.png"></div>
+                                <div class="slide" data-cover="../metro/img/11.png"></div>
+                                <div class="slide" data-cover="../metro/img/12.png"></div>
+                                <div class="slide" data-cover="../metro/img/13.png"></div>
+                                <div class="slide" data-cover="../metro/img/14.png"></div>
+                                <div class="slide" data-cover="../metro/img/16.png"></div>
+                                <div class="slide" data-cover="../metro/img/17.png"></div>
+                                <div class="slide" data-cover="../metro/img/24.png"></div>
+                                <div class="slide" data-cover="../metro/img/25.png"></div>
+                                <div class="slide" data-cover="../metro/img/28.png"></div>
+                                <div class="slide" data-cover="../metro/img/29.png"></div>
+                                <div class="slide" data-cover="../metro/img/34.png"></div>
+                                <div class="slide" data-cover="../metro/img/37.png"></div>
+                                <div class="slide" data-cover="../metro/img/39.png"></div>
+                                <div class="slide" data-cover="../metro/img/43.png"></div>
+                                <div class="slide" data-cover="../metro/img/45.png"></div>
+                                <div class="slide" data-cover="../metro/img/49.png"></div>
+                                <div class="slide" data-cover="../metro/img/50.png"></div>
+                                <div class="slide" data-cover="../metro/img/54.png"></div>
+                                <div class="slide" data-cover="../metro/img/55.png"></div>
+                                <div class="slide" data-cover="../metro/img/57.png"></div>
+                                <div class="slide" data-cover="../metro/img/59.png"></div>
+                                <div class="slide" data-cover="../metro/img/61.png"></div>
+                                <div class="slide" data-cover="../metro/img/65.png"></div>
+                                <div class="slide" data-cover="../metro/img/69.png"></div>
+                                <div class="slide" data-cover="../metro/img/71.png"></div>
+                                <div class="slide" data-cover="../metro/img/72.png"></div>
+                            </div>
+                            <br>
+                            <div data-role="example">
+                               <video data-role="video-player" class="video-player" poster="../logo.png" 
+                               data-controls-hide="1000" data-loop="true" width="600" height="360" controls >
+                                   <source src="../server/ProjectsVideos/LastVideo.mp4" type="video/mp4" />
+                               </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-6 pt-4">
+                        <div class="p-4 bg-brand-secondary h-100 d-flex flex-align-center flex-justify-center">
+                            <a href="#" class="fg-dark no-decor">
+                               @* <p class="text-leader">There are much more features.</p>
+                                <p class="m-0">Take a look at our tutorial for details >></p>*@
+
+                                <ul class="step-list">
+                                    <li>
+                                        <h4>EASY-DATA-CENTER</h4>
+                                        <p>
+                                            One Click DB Schema, Auto API, Auto Doc, Templates for Specific Procedures, Apis, System Check, FTP, WEB, AutoControl System
+                                            Central Tables, Multi DB Support, Multi Model Support, One Dev Language, >100finished tool finished on github. Solutions For all World Servers Variables.
+                                            (WSDL will be added - only SAP), IS/OS/Linux/Windows Support, Minimal Hardware Requirements, Unlimited Easy Modifications/Customizations
+                                            DB Schema Controling, Implemented Inteligent solution for automatic repair existing Fails, High multiple Security, EASY Implementation/Migration
+                                            Better Data using posibilities, Optimized Traffic, Prepared For Automatioc Generate Server From Database Schema (With all Object Types)
+                                            Development using template renaming only for new table/API. Proper 3-tier system logic solutions for software.
+                                            System Core has custom analyzers for Core Controlling and more Future innovations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>EASY-SYSTEM-BUILDER</h4>
+                                        <p>
+                                            Super modern EASY SYSTEM Builder, it has automatic intelligent SYSTEM CORE for editing only with Insert Form. They are supported
+                                            All types of systems - Machine control, Terminal, Control, Complete IT system, DataHouse, WorkFlow, Media, Video, 3D
+                                            , Reporting, HW system management, etc. Development is extremely fast, All Requests are solved by one man maximum in a few days.
+                                            System Core has custom analyzers for Core Controlling and more Future innovations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>GENERATORS and WEB SYSTEM Builder</h4>
+                                        <p>
+                                            This year the BACKEND SERVER generator and the MS SYSTEM Generator will be completed. a fully compatible 
+                                            Metro4 System for web solutions will be launched next year. Everyone I disable moves the system and agenda sharing, 
+                                            which means nothing just a table and form, development for all other extremes is fast and effortless
+                                        </p>
+                                    </li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+          @*      <div class="d-flex flex-justify-center flex-align-center">
+                    <button class="mt-10 mb-10 d-none d-block-md button large bg-brand fg-white shadow-1">Create you branded help center</button>
+                    <button class="mt-10 mb-10 d-none-md button bg-brand fg-white shadow-1">Create you branded help center</button>
+                </div>*@
+            </div>
+        </div>
+
+        <div class="widgets pt-10 pb-10">
+            <div class="container">
+                <div class="row mt-10">
+                    <div class="cell-md-6 pt-4">
+                        <div class="info-panel no-overflow border bd-brand h-100">
+                            <div class="info-panel-header bg-brand fg-white">Customizable design</div>
+                            <div class="info-panel-content">
+                                <div class="mx-10 my-6"><img src="~/metro/images/qcustomizable.svg" class="w-100"></div>
+                                <span class="text-leader2">You decide where to place it and how it will look. Fonts, colors, sizes and some behavior options - everything is configurable.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-6 pt-4">
+                        <div class="info-panel no-overflow border bd-brand h-100">
+                            <div class="info-panel-header bg-brand fg-white">Search suggestions</div>
+                            <div class="info-panel-content">
+                                <div class="mx-10 my-6"><img src="~/metro/images/search_suggeestions.svg" class="w-100"></div>
+                                <span class="text-leader2">Usually, people don’t know how to ask for what they need. Aistant can help with that by generating search suggestions based on the content of your website.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-10-md">
+                    <div class="cell-md-6 pt-4">
+                        <div class="info-panel no-overflow border bd-brand h-100">
+                            <div class="info-panel-header bg-brand fg-white">Analytics</div>
+                            <div class="info-panel-content">
+                                <div class="mx-10 my-6"><img src="~/metro/images/analitics.svg" class="w-100"></div>
+                                <span class="text-leader2">What your visitors search for? What are the most frequent queries? Do they satisfied with the results? You will get the answers for these and other questions with our analytics tool.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-6 pt-4">
+                        <div class="info-panel no-overflow border bd-brand h-100">
+                            <div class="info-panel-header bg-brand fg-white">"Contact us" form</div>
+                            <div class="info-panel-content">
+                                <div class="mx-10 my-6"><img src="~/metro/images/contact_us.svg" class="w-100"></div>
+                                <span class="text-leader2">Search request - is the first interaction of the potential client with your website. If they found what needed - that’s great. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </window>
+
+</div>

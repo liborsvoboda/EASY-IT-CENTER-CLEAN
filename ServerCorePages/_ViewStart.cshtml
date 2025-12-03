@@ -1,0 +1,75 @@
+﻿@addTagHelper *, WebOptimizer.Core
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Westwind.AspNetCore
+@addTagHelper *, Westwind.AspNetCore.Markdown
+
+@using System.Collections
+@using System.Collections.Generic
+@using System.IO
+@using System.Linq
+@using System.Security.Claims
+@using System.Text.RegularExpressions
+@using System.Threading.Tasks
+@using EasyITCenter
+@using EasyITCenter.WebClasses
+@using EasyITCenter.Controllers
+@using EasyITCenter.DBModel
+@using EasyITCenter.Managers
+@using EasyITCenter.ServerCorePages
+@using EasyITCenter.ServerCoreStructure
+@using Microsoft.AspNetCore.Html
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Mvc.RazorPages
+@using Westwind.AspNetCore.Markdown
+
+@{
+  Context.Items = CoreOperations.ChechUrlRequestValidOrAuthorized(Context).Items;
+
+
+    RouteLayoutTypes routeLayout = RouteLayoutTypes.SystemPortalLayout;
+    try { routeLayout = ((RouteLayoutTypes)Context.Items.FirstOrDefault(a => a.Key.ToString() == "RouteLayoutTypes").Value); } catch { }
+    string? FileValidUrl = "";
+    try { FileValidUrl = ((string?)Context.Items.FirstOrDefault(a => a.Key.ToString() == "FileValidUrl").Value); } catch { }
+
+    ServerModuleAndServiceList? systemModule = null; ServerModuleAndServiceList? loginModule = null; ServerWebPagesToken? webpagestoken = null; string? portalRedirect = null;
+    try { systemModule = ((ServerModuleAndServiceList?)Context.Items.FirstOrDefault(a => a.Key.ToString() == "SystemModule").Value); } catch { }
+    try { loginModule = ((ServerModuleAndServiceList?)Context.Items.FirstOrDefault(a => a.Key.ToString() == "LoginModule").Value); } catch { }
+    try { webpagestoken = ((ServerWebPagesToken?)Context.Items.FirstOrDefault(a => a.Key.ToString() == "ServerWebPagesToken").Value); } catch { }
+    try { portalRedirect = Context.Items.FirstOrDefault(a => a.Key.ToString() == "PortalRedirect").Value?.ToString(); } catch { }
+
+    try
+    {
+        string? fileContent = "";
+        string? filePath = System.IO.Path.Combine(SrvRuntime.WebRootPath) + FileOperations.ConvertSystemFilePathFromUrl(FileValidUrl);
+        if (systemModule != null) { this.Html.Raw(systemModule.CustomHtmlContent);
+
+        }
+
+        if (systemModule == null && !System.IO.File.Exists(filePath)) { filePath = System.IO.Path.Combine(SrvRuntime.WebRootPath) + FileOperations.ConvertSystemFilePathFromUrl(DbOperations.GetServerParameterLists("RedirectPath").Value); }
+        if (systemModule == null && !System.IO.File.Exists(filePath)) {
+            if (!filePath.ToLower().EndsWith(".md")) { fileContent = System.IO.File.ReadAllText(filePath); } else { fileContent = Markdown.ParseHtmlString(fileContent)?.Value?.ToString(); }
+            this.Html.Raw(fileContent);
+        }
+    } catch {
+    }
+
+    //TODO change this Management to Set Over Administration With Full Online Dynamic Control
+
+
+    //Select Detected Layout
+
+    if (systemModule == null && loginModule == null) {
+        Layout = "/ServerCorePages/Shared/" + routeLayout.ToString() + ".cshtml";
+    }
+
+    if (loginModule != null && loginModule.InheritedLayoutType != null) {
+        Layout = "/ServerCorePages/Shared/" + loginModule.InheritedLayoutType + ".cshtml";
+    } else if (systemModule != null && systemModule.InheritedLayoutType != null) {
+        Layout = "/ServerCorePages/Shared/" + systemModule.InheritedLayoutType + ".cshtml";
+    } else if(systemModule != null && systemModule.InheritedLayoutType == null) { //Portal Pages
+        Layout = "/ServerCorePages/Shared/ServerPortalLayout.cshtml";
+    }
+
+    this.Layout = Layout;
+}

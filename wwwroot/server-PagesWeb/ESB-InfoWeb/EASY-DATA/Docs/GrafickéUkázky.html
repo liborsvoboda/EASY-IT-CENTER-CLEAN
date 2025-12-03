@@ -1,0 +1,1182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="EasySYSTEMbuilder InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h3 id="all-documentation-graphics-code-posibilities">All Documentation Graphics Code Posibilities</h3>
+<p>Full documentation Codes and posibilities are on <a href="https://mermaid.js.org/intro/">MerMaid</a></p>
+<hr>
+<h3 id="all-codes-needs-copy--paste-only-of-codes-to-code-block">All Codes needs Copy / Paste Only of codes to code block</h3>
+<hr>
+<p>erDiagram
+CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+CUSTOMER ||--o{ ORDER : places
+CUSTOMER ||--o{ INVOICE : &quot;liable for&quot;
+DELIVERY-ADDRESS ||--o{ ORDER : receives
+INVOICE ||--|{ ORDER : covers
+ORDER ||--|{ ORDER-ITEM : includes
+PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+PRODUCT ||--o{ ORDER-ITEM : &quot;ordered in&quot;</p>
+<pre><code class="lang-mermaid">erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : &quot;liable for&quot;
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : &quot;ordered in&quot;
+</code></pre>
+<hr>
+<p>flowchart LR
+a --&gt; b &amp; c--&gt; d</p>
+<pre><code class="lang-mermaid">flowchart LR
+   a --&gt; b &amp; c--&gt; d
+</code></pre>
+<hr>
+<p>sequenceDiagram
+participant Alice
+participant Bob
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br>prevail!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!</p>
+<pre><code class="lang-mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</code></pre>
+<hr>
+<p>gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10</p>
+<p>section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d</p>
+<pre><code class="lang-mermaid">gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+</code></pre>
+<hr>
+<p>classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 <em>-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --</em> C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label</p>
+<pre><code class="lang-mermaid">classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+</code></pre>
+<hr>
+<p>gitGraph
+commit
+commit
+branch develop
+commit
+commit
+commit
+checkout main
+commit
+commit</p>
+<pre><code class="lang-mermaid">gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+</code></pre>
+<hr>
+<p>erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses</p>
+<pre><code class="lang-mermaid">erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+</code></pre>
+<hr>
+<p>journey
+title My working day
+section Go to work
+Make tea: 5: Me
+Go upstairs: 3: Me
+Do work: 1: Me, Cat
+section Go home
+Go downstairs: 5: Me
+Sit down: 5: Me</p>
+<pre><code class="lang-mermaid">journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+</code></pre>
+<hr>
+<p>quadrantChart
+title Reach and engagement of campaigns
+x-axis Low Reach --&gt; High Reach
+y-axis Low Engagement --&gt; High Engagement
+quadrant-1 We should expand
+quadrant-2 Need to promote
+quadrant-3 Re-evaluate
+quadrant-4 May be improved
+Campaign A: [0.3, 0.6]
+Campaign B: [0.45, 0.23]
+Campaign C: [0.57, 0.69]
+Campaign D: [0.78, 0.34]
+Campaign E: [0.40, 0.34]
+Campaign F: [0.35, 0.78]</p>
+<pre><code class="lang-mermaid">quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --&gt; High Reach
+    y-axis Low Engagement --&gt; High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+</code></pre>
+<hr>
+<p>flowchart TB
+c1--&gt;a2
+subgraph one
+a1--&gt;a2
+end
+subgraph two
+b1--&gt;b2
+end
+subgraph three
+c1--&gt;c2
+end</p>
+<pre><code class="lang-mermaid">flowchart TB
+    c1--&gt;a2
+    subgraph one
+    a1--&gt;a2
+    end
+    subgraph two
+    b1--&gt;b2
+    end
+    subgraph three
+    c1--&gt;c2
+    end
+</code></pre>
+<hr>
+<p>sequenceDiagram
+box Purple Alice &amp; John
+participant A
+participant J
+end
+box Another Group
+participant B
+participant C
+end
+A-&gt;&gt;J: Hello John, how are you?
+J-&gt;&gt;A: Great!
+A-&gt;&gt;B: Hello Bob, how is Charly ?
+B-&gt;&gt;C: Hello Charly, how are you?</p>
+<pre><code class="lang-mermaid">sequenceDiagram
+    box Purple Alice &amp; John
+    participant A
+    participant J
+    end
+    box Another Group
+    participant B
+    participant C
+    end
+    A-&gt;&gt;J: Hello John, how are you?
+    J-&gt;&gt;A: Great!
+    A-&gt;&gt;B: Hello Bob, how is Charly ?
+    B-&gt;&gt;C: Hello Charly, how are you?
+</code></pre>
+<hr>
+<p>sequenceDiagram
+autonumber
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!</p>
+<pre><code class="lang-mermaid">sequenceDiagram
+    autonumber
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</code></pre>
+<hr>
+<hr>
+<h2 id="title-animal-example">title: Animal example</h2>
+<p>classDiagram
+note &quot;From Duck till Zebra&quot;
+Animal &lt;|-- Duck
+note for Duck &quot;can fly\ncan swim\ncan dive\ncan help in debugging&quot;
+Animal &lt;|-- Fish
+Animal &lt;|-- Zebra
+Animal : +int age
+Animal : +String gender
+Animal: +isMammal()
+Animal: +mate()
+class Duck{
++String beakColor
++swim()
++quack()
+}
+class Fish{
+-int sizeInFeet
+-canEat()
+}
+class Zebra{
++bool is_wild
++run()
+}</p>
+<pre><code class="lang-mermaid">---
+title: Animal example
+---
+classDiagram
+    note &quot;From Duck till Zebra&quot;
+    Animal &lt;|-- Duck
+    note for Duck &quot;can fly\ncan swim\ncan dive\ncan help in debugging&quot;
+    Animal &lt;|-- Fish
+    Animal &lt;|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
+</code></pre>
+<hr>
+<p>classDiagram
+classA --|&gt; classB : Inheritance
+classC --* classD : Composition
+classE --o classF : Aggregation
+classG --&gt; classH : Association
+classI -- classJ : Link(Solid)
+classK ..&gt; classL : Dependency
+classM ..|&gt; classN : Realization
+classO .. classP : Link(Dashed)</p>
+<pre><code class="lang-mermaid">classDiagram
+classA --|&gt; classB : Inheritance
+classC --* classD : Composition
+classE --o classF : Aggregation
+classG --&gt; classH : Association
+classI -- classJ : Link(Solid)
+classK ..&gt; classL : Dependency
+classM ..|&gt; classN : Realization
+classO .. classP : Link(Dashed)
+</code></pre>
+<hr>
+<p>stateDiagram-v2
+[*] --&gt; Active</p>
+<pre><code>state Active {
+    [*] --&gt; NumLockOff
+    NumLockOff --&gt; NumLockOn : EvNumLockPressed
+    NumLockOn --&gt; NumLockOff : EvNumLockPressed
+    --
+    [*] --&gt; CapsLockOff
+    CapsLockOff --&gt; CapsLockOn : EvCapsLockPressed
+    CapsLockOn --&gt; CapsLockOff : EvCapsLockPressed
+    --
+    [*] --&gt; ScrollLockOff
+    ScrollLockOff --&gt; ScrollLockOn : EvScrollLockPressed
+    ScrollLockOn --&gt; ScrollLockOff : EvScrollLockPressed
+}
+</code></pre>
+<pre><code class="lang-mermaid">stateDiagram-v2
+    [*] --&gt; Active
+
+    state Active {
+        [*] --&gt; NumLockOff
+        NumLockOff --&gt; NumLockOn : EvNumLockPressed
+        NumLockOn --&gt; NumLockOff : EvNumLockPressed
+        --
+        [*] --&gt; CapsLockOff
+        CapsLockOff --&gt; CapsLockOn : EvCapsLockPressed
+        CapsLockOn --&gt; CapsLockOff : EvCapsLockPressed
+        --
+        [*] --&gt; ScrollLockOff
+        ScrollLockOff --&gt; ScrollLockOn : EvScrollLockPressed
+        ScrollLockOn --&gt; ScrollLockOff : EvScrollLockPressed
+    }
+</code></pre>
+<hr>
+<p>erDiagram
+CAR ||--o{ NAMED-DRIVER : allows
+CAR {
+string registrationNumber PK
+string make
+string model
+string[] parts
+}
+PERSON ||--o{ NAMED-DRIVER : is
+PERSON {
+string driversLicense PK &quot;The license #&quot;
+string(99) firstName &quot;Only 99 characters are allowed&quot;
+string lastName
+string phone UK
+int age
+}
+NAMED-DRIVER {
+string carRegistrationNumber PK, FK
+string driverLicence PK, FK
+}
+MANUFACTURER only one to zero or more CAR : makes</p>
+<pre><code class="lang-mermaid">erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber PK
+        string make
+        string model
+        string[] parts
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string driversLicense PK &quot;The license #&quot;
+        string(99) firstName &quot;Only 99 characters are allowed&quot;
+        string lastName
+        string phone UK
+        int age
+    }
+    NAMED-DRIVER {
+        string carRegistrationNumber PK, FK
+        string driverLicence PK, FK
+    }
+    MANUFACTURER only one to zero or more CAR : makes
+</code></pre>
+<hr>
+<p>gantt
+dateFormat  YYYY-MM-DD
+title       Adding GANTT diagram functionality to mermaid
+excludes    weekends
+%% (<code>excludes</code> accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)</p>
+<pre><code>section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2              :         des4, after des3, 5d
+
+section Critical tasks
+Completed task in the critical line :crit, done, 2014-01-06,24h
+Implement parser and jison          :crit, done, after des1, 2d
+Create tests for parser             :crit, active, 3d
+Future task in critical line        :crit, 5d
+Create tests for renderer           :2d
+Add to mermaid                      :1d
+Functionality added                 :milestone, 2014-01-25, 0d
+
+section Documentation
+Describe gantt syntax               :active, a1, after des1, 3d
+Add gantt diagram to demo page      :after a1  , 20h
+Add another diagram to demo page    :doc1, after a1  , 48h
+
+section Last section
+Describe gantt syntax               :after doc1, 3d
+Add gantt diagram to demo page      :20h
+Add another diagram to demo page    :48h
+</code></pre>
+<pre><code class="lang-mermaid">gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week (&quot;sunday&quot;) or &quot;weekends&quot;, but not the word &quot;weekdays&quot;.)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+    Functionality added                 :milestone, 2014-01-25, 0d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h
+</code></pre>
+<hr>
+<p>requirementDiagram</p>
+<pre><code>requirement test_req {
+id: 1
+text: the test text.
+risk: high
+verifymethod: test
+}
+
+functionalRequirement test_req2 {
+id: 1.1
+text: the second test text.
+risk: low
+verifymethod: inspection
+}
+
+performanceRequirement test_req3 {
+id: 1.2
+text: the third test text.
+risk: medium
+verifymethod: demonstration
+}
+
+interfaceRequirement test_req4 {
+id: 1.2.1
+text: the fourth test text.
+risk: medium
+verifymethod: analysis
+}
+
+physicalRequirement test_req5 {
+id: 1.2.2
+text: the fifth test text.
+risk: medium
+verifymethod: analysis
+}
+
+designConstraint test_req6 {
+id: 1.2.3
+text: the sixth test text.
+risk: medium
+verifymethod: analysis
+}
+
+element test_entity {
+type: simulation
+}
+
+element test_entity2 {
+type: word doc
+docRef: reqs/test_entity
+}
+
+element test_entity3 {
+type: &quot;test suite&quot;
+docRef: github.com/all_the_tests
+}
+
+
+test_entity - satisfies -&gt; test_req2
+test_req - traces -&gt; test_req2
+test_req - contains -&gt; test_req3
+test_req3 - contains -&gt; test_req4
+test_req4 - derives -&gt; test_req5
+test_req5 - refines -&gt; test_req6
+test_entity3 - verifies -&gt; test_req5
+test_req &lt;- copies - test_entity2
+</code></pre>
+<pre><code class="lang-mermaid">requirementDiagram
+
+    requirement test_req {
+    id: 1
+    text: the test text.
+    risk: high
+    verifymethod: test
+    }
+
+    functionalRequirement test_req2 {
+    id: 1.1
+    text: the second test text.
+    risk: low
+    verifymethod: inspection
+    }
+
+    performanceRequirement test_req3 {
+    id: 1.2
+    text: the third test text.
+    risk: medium
+    verifymethod: demonstration
+    }
+
+    interfaceRequirement test_req4 {
+    id: 1.2.1
+    text: the fourth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    physicalRequirement test_req5 {
+    id: 1.2.2
+    text: the fifth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    designConstraint test_req6 {
+    id: 1.2.3
+    text: the sixth test text.
+    risk: medium
+    verifymethod: analysis
+    }
+
+    element test_entity {
+    type: simulation
+    }
+
+    element test_entity2 {
+    type: word doc
+    docRef: reqs/test_entity
+    }
+
+    element test_entity3 {
+    type: &quot;test suite&quot;
+    docRef: github.com/all_the_tests
+    }
+
+
+    test_entity - satisfies -&gt; test_req2
+    test_req - traces -&gt; test_req2
+    test_req - contains -&gt; test_req3
+    test_req3 - contains -&gt; test_req4
+    test_req4 - derives -&gt; test_req5
+    test_req5 - refines -&gt; test_req6
+    test_entity3 - verifies -&gt; test_req5
+    test_req &lt;- copies - test_entity2
+</code></pre>
+<hr>
+<p>%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'rotateCommitLabel': false}} }%%
+gitGraph
+commit id: &quot;feat(api): ...&quot;
+commit id: &quot;a&quot;
+commit id: &quot;b&quot;
+commit id: &quot;fix(client): .extra long label..&quot;
+branch c2
+commit id: &quot;feat(modules): ...&quot;
+commit id: &quot;test(client): ...&quot;
+checkout main
+commit id: &quot;fix(api): ...&quot;
+commit id: &quot;ci: ...&quot;
+branch b1
+commit
+branch b2
+commit</p>
+<pre><code class="lang-mermaid">%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'rotateCommitLabel': false}} }%%
+gitGraph
+  commit id: &quot;feat(api): ...&quot;
+  commit id: &quot;a&quot;
+  commit id: &quot;b&quot;
+  commit id: &quot;fix(client): .extra long label..&quot;
+  branch c2
+  commit id: &quot;feat(modules): ...&quot;
+  commit id: &quot;test(client): ...&quot;
+  checkout main
+  commit id: &quot;fix(api): ...&quot;
+  commit id: &quot;ci: ...&quot;
+  branch b1
+  commit
+  branch b2
+  commit
+</code></pre>
+<hr>
+<p>C4Context
+title System Context diagram for Internet Banking System
+Enterprise_Boundary(b0, &quot;BankBoundary0&quot;) {
+Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
+Person(customerB, &quot;Banking Customer B&quot;)
+Person_Ext(customerC, &quot;Banking Customer C&quot;, &quot;desc&quot;)</p>
+<pre><code>    Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br/&gt; with personal bank accounts.&quot;)
+
+    System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
+
+    Enterprise_Boundary(b1, &quot;BankBoundary&quot;) {
+
+      SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+      System_Boundary(b2, &quot;BankBoundary2&quot;) {
+        System(SystemA, &quot;Banking System A&quot;)
+        System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts. next line.&quot;)
+      }
+
+      System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
+      SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+
+      Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) {
+        SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank.&quot;)
+        SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+      }
+    }
+  }
+
+  BiRel(customerA, SystemAA, &quot;Uses&quot;)
+  BiRel(SystemAA, SystemE, &quot;Uses&quot;)
+  Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
+  Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
+
+  UpdateElementStyle(customerA, $fontColor=&quot;red&quot;, $bgColor=&quot;grey&quot;, $borderColor=&quot;red&quot;)
+  UpdateRelStyle(customerA, SystemAA, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetX=&quot;5&quot;)
+  UpdateRelStyle(SystemAA, SystemE, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetY=&quot;-10&quot;)
+  UpdateRelStyle(SystemAA, SystemC, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetY=&quot;-40&quot;, $offsetX=&quot;-50&quot;)
+  UpdateRelStyle(SystemC, customerA, $textColor=&quot;red&quot;, $lineColor=&quot;red&quot;, $offsetX=&quot;-50&quot;, $offsetY=&quot;20&quot;)
+
+  UpdateLayoutConfig($c4ShapeInRow=&quot;3&quot;, $c4BoundaryInRow=&quot;1&quot;)
+</code></pre>
+<pre><code class="lang-mermaid">C4Context
+      title System Context diagram for Internet Banking System
+      Enterprise_Boundary(b0, &quot;BankBoundary0&quot;) {
+        Person(customerA, &quot;Banking Customer A&quot;, &quot;A customer of the bank, with personal bank accounts.&quot;)
+        Person(customerB, &quot;Banking Customer B&quot;)
+        Person_Ext(customerC, &quot;Banking Customer C&quot;, &quot;desc&quot;)
+
+        Person(customerD, &quot;Banking Customer D&quot;, &quot;A customer of the bank, &lt;br/&gt; with personal bank accounts.&quot;)
+
+        System(SystemAA, &quot;Internet Banking System&quot;, &quot;Allows customers to view information about their bank accounts, and make payments.&quot;)
+
+        Enterprise_Boundary(b1, &quot;BankBoundary&quot;) {
+
+          SystemDb_Ext(SystemE, &quot;Mainframe Banking System&quot;, &quot;Stores all of the core banking information about customers, accounts, transactions, etc.&quot;)
+
+          System_Boundary(b2, &quot;BankBoundary2&quot;) {
+            System(SystemA, &quot;Banking System A&quot;)
+            System(SystemB, &quot;Banking System B&quot;, &quot;A system of the bank, with personal bank accounts. next line.&quot;)
+          }
+
+          System_Ext(SystemC, &quot;E-mail system&quot;, &quot;The internal Microsoft Exchange e-mail system.&quot;)
+          SystemDb(SystemD, &quot;Banking System D Database&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+
+          Boundary(b3, &quot;BankBoundary3&quot;, &quot;boundary&quot;) {
+            SystemQueue(SystemF, &quot;Banking System F Queue&quot;, &quot;A system of the bank.&quot;)
+            SystemQueue_Ext(SystemG, &quot;Banking System G Queue&quot;, &quot;A system of the bank, with personal bank accounts.&quot;)
+          }
+        }
+      }
+
+      BiRel(customerA, SystemAA, &quot;Uses&quot;)
+      BiRel(SystemAA, SystemE, &quot;Uses&quot;)
+      Rel(SystemAA, SystemC, &quot;Sends e-mails&quot;, &quot;SMTP&quot;)
+      Rel(SystemC, customerA, &quot;Sends e-mails to&quot;)
+
+      UpdateElementStyle(customerA, $fontColor=&quot;red&quot;, $bgColor=&quot;grey&quot;, $borderColor=&quot;red&quot;)
+      UpdateRelStyle(customerA, SystemAA, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetX=&quot;5&quot;)
+      UpdateRelStyle(SystemAA, SystemE, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetY=&quot;-10&quot;)
+      UpdateRelStyle(SystemAA, SystemC, $textColor=&quot;blue&quot;, $lineColor=&quot;blue&quot;, $offsetY=&quot;-40&quot;, $offsetX=&quot;-50&quot;)
+      UpdateRelStyle(SystemC, customerA, $textColor=&quot;red&quot;, $lineColor=&quot;red&quot;, $offsetX=&quot;-50&quot;, $offsetY=&quot;20&quot;)
+
+      UpdateLayoutConfig($c4ShapeInRow=&quot;3&quot;, $c4BoundaryInRow=&quot;1&quot;)
+</code></pre>
+<hr>
+<p>mindmap
+root((mindmap))
+Origins
+Long history
+::icon(fa fa-book)
+Popularisation
+British popular psychology author Tony Buzan
+Research
+On effectiveness<br>and features
+On Automatic creation
+Uses
+Creative techniques
+Strategic planning
+Argument mapping
+Tools
+Pen and paper
+Mermaid</p>
+<pre><code class="lang-mermaid">mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness&lt;br/&gt;and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+</code></pre>
+<hr>
+<p>timeline
+title History of Social Media Platform
+2002 : LinkedIn
+2004 : Facebook
+: Google
+2005 : Youtube
+2006 : Twitter
+2002
+LinkedIn
+2004
+Facebook
+Google
+2005
+Youtube
+2006
+Twitter</p>
+<pre><code class="lang-mermaid">timeline
+    title History of Social Media Platform
+    2002 : LinkedIn
+    2004 : Facebook
+         : Google
+    2005 : Youtube
+    2006 : Twitter
+2002
+LinkedIn
+2004
+Facebook
+Google
+2005
+Youtube
+2006
+Twitter
+
+</code></pre>
+<hr>
+<p>%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+timeline
+title History of Social Media Platform
+2002 : LinkedIn
+2004 : Facebook : Google
+2005 : Youtube
+2006 : Twitter
+2007 : Tumblr
+2008 : Instagram
+2010 : Pinterest</p>
+<pre><code class="lang-mermaid">%%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
+    timeline
+        title History of Social Media Platform
+          2002 : LinkedIn
+          2004 : Facebook : Google
+          2005 : Youtube
+          2006 : Twitter
+          2007 : Tumblr
+          2008 : Instagram
+          2010 : Pinterest
+</code></pre>
+<hr>
+<hr>
+<h2 id="configsankeyshowvalues-false">config:
+sankey:
+showValues: false</h2>
+<p>sankey-beta</p>
+<p>Agricultural 'waste',Bio-conversion,124.729
+Bio-conversion,Liquid,0.597
+Bio-conversion,Losses,26.862
+Bio-conversion,Solid,280.322
+Bio-conversion,Gas,81.144
+Biofuel imports,Liquid,35
+Biomass imports,Solid,35
+Coal imports,Coal,11.606
+Coal reserves,Coal,63.965
+Coal,Solid,75.571
+District heating,Industry,10.639
+District heating,Heating and cooling - commercial,22.505
+District heating,Heating and cooling - homes,46.184
+Electricity grid,Over generation / exports,104.453
+Electricity grid,Heating and cooling - homes,113.726
+Electricity grid,H2 conversion,27.14
+Electricity grid,Industry,342.165
+Electricity grid,Road transport,37.797
+Electricity grid,Agriculture,4.412
+Electricity grid,Heating and cooling - commercial,40.858
+Electricity grid,Losses,56.691
+Electricity grid,Rail transport,7.863
+Electricity grid,Lighting &amp; appliances - commercial,90.008
+Electricity grid,Lighting &amp; appliances - homes,93.494
+Gas imports,Ngas,40.719
+Gas reserves,Ngas,82.233
+Gas,Heating and cooling - commercial,0.129
+Gas,Losses,1.401
+Gas,Thermal generation,151.891
+Gas,Agriculture,2.096
+Gas,Industry,48.58
+Geothermal,Electricity grid,7.013
+H2 conversion,H2,20.897
+H2 conversion,Losses,6.242
+H2,Road transport,20.897
+Hydro,Electricity grid,6.995
+Liquid,Industry,121.066
+Liquid,International shipping,128.69
+Liquid,Road transport,135.835
+Liquid,Domestic aviation,14.458
+Liquid,International aviation,206.267
+Liquid,Agriculture,3.64
+Liquid,National navigation,33.218
+Liquid,Rail transport,4.413
+Marine algae,Bio-conversion,4.375
+Ngas,Gas,122.952
+Nuclear,Thermal generation,839.978
+Oil imports,Oil,504.287
+Oil reserves,Oil,107.703
+Oil,Liquid,611.99
+Other waste,Solid,56.587
+Other waste,Bio-conversion,77.81
+Pumped heat,Heating and cooling - homes,193.026
+Pumped heat,Heating and cooling - commercial,70.672
+Solar PV,Electricity grid,59.901
+Solar Thermal,Heating and cooling - homes,19.263
+Solar,Solar Thermal,19.263
+Solar,Solar PV,59.901
+Solid,Agriculture,0.882
+Solid,Thermal generation,400.12
+Solid,Industry,46.477
+Thermal generation,Electricity grid,525.531
+Thermal generation,Losses,787.129
+Thermal generation,District heating,79.329
+Tidal,Electricity grid,9.452
+UK land based bioenergy,Bio-conversion,182.01
+Wave,Electricity grid,19.013
+Wind,Electricity grid,289.366</p>
+<pre><code class="lang-mermaid">---
+config:
+  sankey:
+    showValues: false
+---
+sankey-beta
+
+Agricultural 'waste',Bio-conversion,124.729
+Bio-conversion,Liquid,0.597
+Bio-conversion,Losses,26.862
+Bio-conversion,Solid,280.322
+Bio-conversion,Gas,81.144
+Biofuel imports,Liquid,35
+Biomass imports,Solid,35
+Coal imports,Coal,11.606
+Coal reserves,Coal,63.965
+Coal,Solid,75.571
+District heating,Industry,10.639
+District heating,Heating and cooling - commercial,22.505
+District heating,Heating and cooling - homes,46.184
+Electricity grid,Over generation / exports,104.453
+Electricity grid,Heating and cooling - homes,113.726
+Electricity grid,H2 conversion,27.14
+Electricity grid,Industry,342.165
+Electricity grid,Road transport,37.797
+Electricity grid,Agriculture,4.412
+Electricity grid,Heating and cooling - commercial,40.858
+Electricity grid,Losses,56.691
+Electricity grid,Rail transport,7.863
+Electricity grid,Lighting &amp; appliances - commercial,90.008
+Electricity grid,Lighting &amp; appliances - homes,93.494
+Gas imports,Ngas,40.719
+Gas reserves,Ngas,82.233
+Gas,Heating and cooling - commercial,0.129
+Gas,Losses,1.401
+Gas,Thermal generation,151.891
+Gas,Agriculture,2.096
+Gas,Industry,48.58
+Geothermal,Electricity grid,7.013
+H2 conversion,H2,20.897
+H2 conversion,Losses,6.242
+H2,Road transport,20.897
+Hydro,Electricity grid,6.995
+Liquid,Industry,121.066
+Liquid,International shipping,128.69
+Liquid,Road transport,135.835
+Liquid,Domestic aviation,14.458
+Liquid,International aviation,206.267
+Liquid,Agriculture,3.64
+Liquid,National navigation,33.218
+Liquid,Rail transport,4.413
+Marine algae,Bio-conversion,4.375
+Ngas,Gas,122.952
+Nuclear,Thermal generation,839.978
+Oil imports,Oil,504.287
+Oil reserves,Oil,107.703
+Oil,Liquid,611.99
+Other waste,Solid,56.587
+Other waste,Bio-conversion,77.81
+Pumped heat,Heating and cooling - homes,193.026
+Pumped heat,Heating and cooling - commercial,70.672
+Solar PV,Electricity grid,59.901
+Solar Thermal,Heating and cooling - homes,19.263
+Solar,Solar Thermal,19.263
+Solar,Solar PV,59.901
+Solid,Agriculture,0.882
+Solid,Thermal generation,400.12
+Solid,Industry,46.477
+Thermal generation,Electricity grid,525.531
+Thermal generation,Losses,787.129
+Thermal generation,District heating,79.329
+Tidal,Electricity grid,9.452
+UK land based bioenergy,Bio-conversion,182.01
+Wave,Electricity grid,19.013
+Wind,Electricity grid,289.366
+</code></pre>
+<hr>
+<p>graph TB
+sq[Square shape] --&gt; ci((Circle shape))</p>
+<pre><code>subgraph A
+    od&gt;Odd shape]-- Two line&lt;br/&gt;edge comment --&gt; ro
+    di{Diamond with &lt;br/&gt; line break} -.-&gt; ro(Rounded&lt;br&gt;square&lt;br&gt;shape)
+    di==&gt;ro2(Rounded square shape)
+end
+
+%% Notice that no text in shape are added here instead that is appended further down
+e --&gt; od3&gt;Really long text with linebreak&lt;br&gt;in an Odd shape]
+
+%% Comments after double percent signs
+e((Inner / circle&lt;br&gt;and some odd &lt;br&gt;special characters)) --&gt; f(,.?!+-*?)
+
+cyr[Cyrillic]--&gt;cyr2((Circle shape ??????));
+
+ classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+ classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+ class sq,e green
+ class di orange
+</code></pre>
+<pre><code class="lang-mermaid">graph TB
+    sq[Square shape] --&gt; ci((Circle shape))
+
+    subgraph A
+        od&gt;Odd shape]-- Two line&lt;br/&gt;edge comment --&gt; ro
+        di{Diamond with &lt;br/&gt; line break} -.-&gt; ro(Rounded&lt;br&gt;square&lt;br&gt;shape)
+        di==&gt;ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --&gt; od3&gt;Really long text with linebreak&lt;br&gt;in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle&lt;br&gt;and some odd &lt;br&gt;special characters)) --&gt; f(,.?!+-*?)
+
+    cyr[Cyrillic]--&gt;cyr2((Circle shape ??????));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange
+</code></pre>
+<hr>
+<p>sequenceDiagram
+participant web as Web Browser
+participant blog as Blog Service
+participant account as Account Service
+participant mail as Mail Service
+participant db as Storage</p>
+<pre><code>Note over web,db: The user must be logged in to submit blog posts
+web-&gt;&gt;+account: Logs in using credentials
+account-&gt;&gt;db: Query stored accounts
+db-&gt;&gt;account: Respond with query result
+
+alt Credentials not found
+    account-&gt;&gt;web: Invalid credentials
+else Credentials found
+    account-&gt;&gt;-web: Successfully logged in
+
+    Note over web,db: When the user is authenticated, they can now submit new posts
+    web-&gt;&gt;+blog: Submit new post
+    blog-&gt;&gt;db: Store post data
+
+    par Notifications
+        blog--)mail: Send mail to blog subscribers
+        blog--)db: Store in-site notifications
+    and Response
+        blog--&gt;&gt;-web: Successfully posted
+    end
+end
+</code></pre>
+<pre><code class="lang-mermaid">sequenceDiagram
+    participant web as Web Browser
+    participant blog as Blog Service
+    participant account as Account Service
+    participant mail as Mail Service
+    participant db as Storage
+
+    Note over web,db: The user must be logged in to submit blog posts
+    web-&gt;&gt;+account: Logs in using credentials
+    account-&gt;&gt;db: Query stored accounts
+    db-&gt;&gt;account: Respond with query result
+
+    alt Credentials not found
+        account-&gt;&gt;web: Invalid credentials
+    else Credentials found
+        account-&gt;&gt;-web: Successfully logged in
+
+        Note over web,db: When the user is authenticated, they can now submit new posts
+        web-&gt;&gt;+blog: Submit new post
+        blog-&gt;&gt;db: Store post data
+
+        par Notifications
+            blog--)mail: Send mail to blog subscribers
+            blog--)db: Store in-site notifications
+        and Response
+            blog--&gt;&gt;-web: Successfully posted
+        end
+    end
+</code></pre>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasySYSTEMbuilder Universální Systém builder - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

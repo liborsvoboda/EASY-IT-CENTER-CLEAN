@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta name="author" content="Aona Suzutsuki" />
+    <title>MainWindow Class</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu-anim.css" />
+    <link rel="stylesheet" type="text/css" href="../css/table.css" />
+    <link rel="stylesheet" href="../syntaxhighlighter/css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="../syntaxhighlighter/css/shThemeDefault.css" type="text/css" />
+    <script type="text/javascript" src="../syntaxhighlighter/js/shCore.js"></script>
+    <script type="text/javascript" src="../syntaxhighlighter/js/shBrushCSharp.js"></script>
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(function () {
+            SyntaxHighlighter.defaults.toolbar = false;
+            SyntaxHighlighter.all();
+
+            registMenu();
+        });
+    </script>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="menu-container">
+            <div id="top-menu-bt-cover">
+                <a class="menu-trigger" href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Index</a></li>
+                <li>EasyITSystemCenter
+                    <ul>
+                        <li>Classes
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/Classes/PropertyOrServiceTypeList/PropertyOrServiceTypeList.html">PropertyOrServiceTypeList</a></li>
+                                <li><a href="../EasyITSystemCenter/Classes/AppVersion.html">AppVersion</a></li>
+                                <li><a href="../EasyITSystemCenter/Classes/DataViewSupport.html">DataViewSupport</a></li>
+                                <li><a href="../EasyITSystemCenter/Classes/Language.html">Language</a></li>
+                                <li><a href="../EasyITSystemCenter/Classes/ReportSelection.html">ReportSelection</a></li>
+                            </ul>
+                        </li>
+                        <li>Pages
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelApprovalListPage.html">HotelApprovalListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelImagesListPage.html">HotelImagesListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelListPage.html">HotelListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelPropertyAndServiceListPage.html">HotelPropertyAndServiceListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelReservationReviewApprovalListPage.html">HotelReservationReviewApprovalListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelRoomListPage.html">HotelRoomListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelActionTypeListPage.html">HotelActionTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelReservationStatusListPage.html">HotelReservationStatusListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelRoomTypeListPage.html">HotelRoomTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/PropertyGroupListPage.html">PropertyGroupListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/PropertyOrServiceTypeListPage.html">PropertyOrServiceTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/PropertyOrServiceUnitListPage.html">PropertyOrServiceUnitListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/CodeLibraryListPage.html">CodeLibraryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/CreditPackageListPage.html">CreditPackageListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/CityListPage.html">CityListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/CountryAreaListPage.html">CountryAreaListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/CountryListPage.html">CountryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/InterestAreaListPage.html">InterestAreaListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/DocSrvDocTemplateListPage.html">DocSrvDocTemplateListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/DocumentationCodeLibraryListPage.html">DocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/DocumentationGroupListPage.html">DocumentationGroupListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/DocumentationListPage.html">DocumentationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionEmailerHistoryListPage.html">SolutionEmailerHistoryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionMessageModuleListPage.html">SolutionMessageModuleListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionMessageTypeListPage.html">SolutionMessageTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/GuestListPage.html">GuestListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelReservationListPage.html">HotelReservationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelReservationReviewListPage.html">HotelReservationReviewListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HotelReservedRoomListPage.html">HotelReservedRoomListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/GuestSettingListPage.html">GuestSettingListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/GuestFavoriteListPage.html">GuestFavoriteListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/GuestLoginHistoryListPage.html">GuestLoginHistoryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HostWin32AppPage.html">HostWin32AppPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebModulePage.html">WebModulePage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerLiveDataMonitorListPage.html">ServerLiveDataMonitorListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerCorsDefAllowedOriginListPage.html">ServerCorsDefAllowedOriginListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerModuleAndServiceListPage.html">ServerModuleAndServiceListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionSchedulerListPage.html">SolutionSchedulerListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionMixedEnumListPage.html">SolutionMixedEnumListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ClientSettingsPage.html">ClientSettingsPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebCodeEditorPage.html">WebCodeEditorPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemOperationListPage.html">SystemOperationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemModuleListPage.html">SystemModuleListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionOperationListPage.html">SolutionOperationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemCustomPageListPage.html">SystemCustomPageListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemGroupMenuListPage.html">SystemGroupMenuListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemMenuListPage.html">SystemMenuListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerBrowsablePathListPage.html">ServerBrowsablePathListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemMonitorPage.html">SystemMonitorPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/GraphsPage.html">GraphsPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerToolTypeListPage.html">ServerToolTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionLanguageListPage.html">SolutionLanguageListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerToolPanelListPage.html">ServerToolPanelListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionMottoListPage.html">SolutionMottoListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessAddressListPage.html">BusinessAddressListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionEmailTemplateListPage.html">SolutionEmailTemplateListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerHealthCheckTaskListPage.html">ServerHealthCheckTaskListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/HolidayTipsListPage.html">HolidayTipsListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/OftenQuestionListPage.html">OftenQuestionListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/PrivacyPolicyListPage.html">PrivacyPolicyListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/RegistrationInfoListPage.html">RegistrationInfoListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/TermsListPage.html">TermsListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/UbytkacInfoListPage.html">UbytkacInfoListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebMottoListPage.html">WebMottoListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebPageSettingListPage.html">WebPageSettingListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebBannedIpAddressListPage.html">WebBannedIpAddressListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebCoreFileListPage.html">WebCoreFileListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebDeveloperNewsListPage.html">WebDeveloperNewsListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebDocumentationListPage.html">WebDocumentationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebGlobalPageBlockListPage.html">WebGlobalPageBlockListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebGroupMenuListPage.html">WebGroupMenuListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebMenuListPage.html">WebMenuListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebCodeLibraryListPage.html">WebCodeLibraryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebDocumentationCodeLibraryListPage.html">WebDocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebSettingListPage.html">WebSettingListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WebVisitIpListPage.html">WebVisitIpListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicImageGalleryListPage.html">BasicImageGalleryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ScreenSaverPage.html">ScreenSaverPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemIgnoredExceptionListPage.html">SystemIgnoredExceptionListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerToolPanelDefinitionListPage.html">ServerToolPanelDefinitionListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicAttachmentListPage.html">BasicAttachmentListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessBranchListPage.html">BusinessBranchListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicCalendarListPage.html">BasicCalendarListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessCreditNoteListPage.html">BusinessCreditNoteListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemDocumentTypeListPage.html">SystemDocumentTypeListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessExchangeRateListPage.html">BusinessExchangeRateListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicCurrencyListPage.html">BasicCurrencyListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemDocumentAdviceListPage.html">SystemDocumentAdviceListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessIncomingInvoiceListPage.html">BusinessIncomingInvoiceListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessIncomingOrderListPage.html">BusinessIncomingOrderListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemTranslationListPage.html">SystemTranslationListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemLoginHistoryListPage.html">SystemLoginHistoryListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessMaturityListPage.html">BusinessMaturityListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessNotesListPage.html">BusinessNotesListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessOfferListPage.html">BusinessOfferListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessOutgoingInvoiceListPage.html">BusinessOutgoingInvoiceListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessOutgoingOrderListPage.html">BusinessOutgoingOrderListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessPaymentMethodListPage.html">BusinessPaymentMethodListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessPaymentStatusListPage.html">BusinessPaymentStatusListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessReceiptListPage.html">BusinessReceiptListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemReportQueueListPage.html">SystemReportQueueListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionFailListPage.html">SolutionFailListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicItemListPage.html">BasicItemListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemParameterListPage.html">SystemParameterListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicUnitListPage.html">BasicUnitListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BasicVatListPage.html">BasicVatListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/BusinessWarehouseListPage.html">BusinessWarehouseListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemSvgIconListPage.html">SystemSvgIconListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SupportPage.html">SupportPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SystemReportListPage.html">SystemReportListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionUserListPage.html">SolutionUserListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/SolutionUserRoleListPage.html">SolutionUserRoleListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/ServerSettingListPage.html">ServerSettingListPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/WelcomePage.html">WelcomePage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/TemplateWebViewPage.html">TemplateWebViewPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/TemplateDocumentViewPage.html">TemplateDocumentViewPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/TemplateSTLPage.html">TemplateSTLPage</a></li>
+                                <li><a href="../EasyITSystemCenter/Pages/TemplateVideoPage.html">TemplateVideoPage</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalClasses
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/SystemLocalEnumSets/SystemLocalEnumSets.html">SystemLocalEnumSets</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/AppRuntimeData.html">AppRuntimeData</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/SystemStatuses.html">SystemStatuses</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/Authentification.html">Authentification</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/UserData.html">UserData</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/UpdateVariant.html">UpdateVariant</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/TiltTargets.html">TiltTargets</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/DocumentItemList.html">DocumentItemList</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/SystemTranslatedTableList.html">SystemTranslatedTableList</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/SpTableList.html">SpTableList</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/DBJsonFile.html">DBJsonFile</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalClasses/DeserializedJson.html">DeserializedJson</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalOperations
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/CommOperations.html">CommOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/ToolsOperations.html">ToolsOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/FormOperations.html">FormOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/HardwareOperations/HardwareOperations.html">HardwareOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/MathTypeOperations/MathTypeOperations.html">MathTypeOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/DBOperations.html">DBOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/SystemOperations.html">SystemOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../EasyITSystemCenter/GlobalOperations/MediaOperations/MediaOperations.html">MediaOperations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../EasyITSystemCenter/Info.html">Info</a></li>
+                        <li><a href="../EasyITSystemCenter/InfoPopup/InfoPopup.html">InfoPopup</a></li>
+                        <li>ProgramaticXamlBehaviors
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/ProgramaticXamlBehaviors/TextBoxBehavior.html">TextBoxBehavior</a></li>
+                            </ul>
+                        </li>
+                        <li>Api
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/Api/ApiUrls.html">ApiUrls</a></li>
+                                <li><a href="../EasyITSystemCenter/Api/DBResultMessage.html">DBResultMessage</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemHelper
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/SystemHelper/SystemLoggerWebSocketClass.html">SystemLoggerWebSocketClass</a></li>
+                                <li><a href="../EasyITSystemCenter/SystemHelper/SystemLoggerHelper.html">SystemLoggerHelper</a></li>
+                                <li><a href="../EasyITSystemCenter/SystemHelper/DelegateCommand`1/DelegateCommand`1.html">DelegateCommand`1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../EasyITSystemCenter/Startup.html">Startup</a></li>
+                        <li><a href="../EasyITSystemCenter/MainWindow.html">MainWindow</a></li>
+                        <li>Properties
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/Properties/Resources.html">Resources</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemStructure
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/SystemStructure/SystemWindowDataModel/SystemWindowDataModel.html">SystemWindowDataModel</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalGenerators
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/GlobalGenerators/IconMaker.html">IconMaker</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemConfiguration
+                            <ul>
+                                <li><a href="../EasyITSystemCenter/SystemConfiguration/CrashReporterSettings.html">CrashReporterSettings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../EasyITSystemCenter/App.html">App</a></li>
+                    </ul>
+                </li>
+                <li>XamlGeneratedNamespace
+                    <ul>
+                        <li><a href="../XamlGeneratedNamespace/GeneratedInternalTypeHelper.html">GeneratedInternalTypeHelper</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="body-content">
+            <div>
+                <h1>MainWindow Class</h1>
+                <div>Namespace: EasyITSystemCenter</div>
+                <div id="inherited">Inherited: <span class="specific-element">System.Object</span></div>
+            </div>
+            <br />
+            MainWindow
+            <br />
+            <div>
+                <h3>Constructor</h3>
+                <ol>
+                    <li><a href="#9D39DE38EBD353E96486C8459F261AC12852FE7BACADF0415D58E721FE881F30">MainWindow()</a></li>
+                </ol>
+                <h3>Methods</h3>
+                <ol>
+                    <li><a href="#5296A3B68836A68D48DE2BA8C2C0B0FFFA95209D4155BEF0BABBFB5F3C0CC275">MainWindow_MouseLeave()</a></li>
+                    <li><a href="#300CB13EBAD5463D1EB200EBD735E189D52D50C4CC14D4E60DF0C1D17269588F">SetSystemModuleListPanel()</a></li>
+                    <li><a href="#4E192FC93CD725D645349E7AA0E0E651C88B2D3FE6CDA86420B8FAD0C4C9F1D5">ShowMessageOnMainWindow(bool error, string message, bool confirm)</a></li>
+                    <li><a href="#5E3F5274833BDBE59B3A83C0741ED96AC967738E86E7108F9A39082BE7D92975">MainWindow_Loaded(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#33B771D7BBBE72FB9319E674602E3328DF709679475A3ED9BFC4AF906AE97749">LoadUserMenu()</a></li>
+                    <li><a href="#9907BE0651B7902A4C7C819B903CA57C45D41E7ADFEC1AB641EB8141CB58E2FD">SystemTimerController(object sender, ElapsedEventArgs e)</a></li>
+                    <li><a href="#953BFE906CB439A49C4B56FBDFECE2ADF20B2DB89C608C617FF07C2D4EA43078">SetServiceStop()</a></li>
+                    <li><a href="#D85408BC26689618FFB9594685755A69A3769D1B674246A727A284002B5C89DC">Btn_about_click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#299742305F1006BD9682FCBB48F5522E88065F13420F98BA01FAC96E3A0226E8">SystemModulePanel_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#6A0F25C902E4BDDC86FABE9F4EB99CA7ECEE0F2D37DB83705299110959690674">MainWindow_KeyDown(object sender, KeyEventArgs e)</a></li>
+                    <li><a href="#0E5CD3F496B17495327E8C91C17A9F4136F1E1B3CC8D3BBF96948D15798F23D7">Btn_LaunchHelp_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#1E2EB31238BCEF38FAB463B58DD489832DAE1790B0F94856B6AE298F0C8C17E6">Btn_ShowModulePanel_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#AA45CA0777092D282C83DE42442608A7E18AE2EB4DA2DB6C0488707431FD73FC">BtnShowLoggerClick(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#7D9930B351661DBC004984D15AA13044A483339F1B4DE36C3EA43A9729F9D954">SystemLoggerSourceChanged_Click(object sender, EventArgs e)</a></li>
+                    <li><a href="#1255CC7B9EA97E9204B0346399885366692F6C7E5FB76EAA850E51CCBE3E83C9">ShowLoginDialog()</a></li>
+                    <li><a href="#93097B50A0DAD1E173A1DA4C1381DAA75CD0741F1C7762434388A35FD8B1E26A">MainWindow_Closing(object sender, CancelEventArgs e)</a></li>
+                    <li><a href="#6647329B97891C08E4DAB622E03DF7962E04073174460F18EBEC7A3943BD9211">Mi_logout_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#2DA37629EE05B9D3667838C9597E617E7AAE28CFF5E922907042B8342189675E">BtnKeyboardClick(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#7B61022B465ED2923957A22F361D4A43488400CBD998883848A1AD2BC2292D4F">TiltOpenForm(string translateHeader)</a></li>
+                    <li><a href="#3C62C364BB92E9DC82DF2EC5C0D242772B84031B4FE8B54B0879B7C674B00352">CbFilterDropDownClosed(object sender, EventArgs e)</a></li>
+                    <li><a href="#B73B09BE6A18E5D12EF0CB939EEC5982716A7B0190EA79F0ACE55BD6FCBFE112">Mi_filter_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#F5D1E9FDBDD77BF75A04EA1C8A3C237173F80E4F14F8F399AC1CFBA03207781D">StringToFilter(ComboBox filterBox, string advancedFilter)</a></li>
+                    <li><a href="#AFA87AB87D51CE427A298115B145237B92FA75ABE52E6922EB06B27E1EFBA628">RemoveFilterItem_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#D707C3200B2691461FA7F40FF65C69480E30ABEE95C9CF9EFBB0FE6B46BD7D80">FilterField_SelectionChanged(object sender, SelectionChangedEventArgs e)</a></li>
+                    <li><a href="#CD20F767B55677E3C13C518D157B92507AC7EA201249F286F450D8EF602CC20D">MainGrid_IsDraggingChanged(object sender, RoutedPropertyChangedEventArgs&lt;bool&gt; e)</a></li>
+                    <li><a href="#240FC7A74897E30577742106E6092367CC3500FBDDD412A652F0C142EBBB41A9">CbPrintReportsSelected(object sender, SelectionChangedEventArgs e)</a></li>
+                    <li><a href="#7B249A9E5CF25B8ACB64433F215F9169A1D12C723D0C57BB13FF81AB945EFDC0">Menu_action_Click(object sender, RoutedEventArgs e)</a></li>
+                    <li><a href="#AF96C2A8229C68E541986CE465AEC7F79D9F9BEE70C45C55D258EBD4E7F31A99">AddOrRemoveTab(string headerName, object tabPage, string tagText)</a></li>
+                    <li><a href="#75B2485E97A37144741CEBAD280842850DFBD2DA1D19F804678FD0C4521A4EAD">TabPanelOnSelectionChange(object sender, SelectionChangedEventArgs e)</a></li>
+                    <li><a href="#62DE620AF1D84B604352F5641C4AA37697873B585A3778FEB0DF56D7F2B49D43">InitializeComponent()</a></li>
+                </ol>
+                <h3>Properties</h3>
+                <ol>
+                    <li><a href="#910558C5422E76D90A9D1673A6ED6A320C17D1CB6588A2138BD9D0481D42E716">MultiSameTabsEnabled</a></li>
+                    <li><a href="#1F8BD3159D789E6DB20DCA8484A669FC52DAF1DB5E88AD4773CFC7ACE147D267">ServerLoggerSource</a></li>
+                    <li><a href="#F4E048671081789A8F731C5E6A20839DFCFF4FAD330267A3DA1773ED5C490396">ShowSystemLogger</a></li>
+                    <li><a href="#D8212FA02FC127C018F63C7C86E63C4D6CC3EBB086069A7E171EE38F40F70247">OperationRunning</a></li>
+                    <li><a href="#9EAAD748F9E76E2A6BC78A650662E0C85E10FB0F88F9ABDF02D9134D9450B0BD">RunReleaseMode</a></li>
+                    <li><a href="#FAA66189C15DCA7DA3DF872016D6ACB63D1B7496D5DBA6AB30C137AA3CE46490">VncRunning</a></li>
+                    <li><a href="#DA1F36891F4BF678C4F6B6D7D5C919868B637E56D49C33ED64487E1BD27ADA08">SystemLogger</a></li>
+                    <li><a href="#47D9F4E07B34A1C9194D8390DE67226EE8E3DA6F950FA1FBA102744E3366D1C8">UserLogged</a></li>
+                    <li><a href="#CD03CD61D69035CE0C46147AD5FA9547A1BD3C3D3FC4C39469E20C93B9664A73">ServiceRunning</a></li>
+                    <li><a href="#3A9DEA327BBCC3EBE029F09B515FC77473C8044597AD4D7B99DBE69BD3D3283F">DgRefresh</a></li>
+                    <li><a href="#0C59B4FA0DB9E65A8C79204651ABA7FA963CE02010D419B18DB41AAA5026CB71">DataGridSelected</a></li>
+                    <li><a href="#8897FB74B9ADCC65A14017BA225A704BE1E7DC06B47CF5BF05C7B3239B50A0E2">DataGridSelectedIdListIndicator</a></li>
+                    <li><a href="#B8C58AE16D40DAEFEDEF8F9AFD7C3BC37C12DD80DAFA02BDC8FC27492AE9A4FF">ServiceStatus</a></li>
+                    <li><a href="#F2E2891C95B95BC0887DA8EC7BA737CD2DE5193E80C884AA26F296FFE41446A6">DownloadStatus</a></li>
+                    <li><a href="#7F5758C9C3C9BB619C48299EDCB0FDB3B153360893EB84528F2B416545D79699">DownloadShow</a></li>
+                    <li><a href="#96BD23341705A188D9CEA63F89F9BB18082EDD1253A461E8DD194023BE08978F">ProgressRing</a></li>
+                </ol>
+                <h3>Fields</h3>
+                <ol>
+                    <li><a href="#2856A2943E1DB04272CF26836075538B1D879BDC4C802B1DB3809516D4BAD58A">lastUserAction</a></li>
+                </ol>
+
+            </div>
+            
+            <br />
+            <div id="constructors">
+                <h2>Constructors</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="9D39DE38EBD353E96486C8459F261AC12852FE7BACADF0415D58E721FE881F30">public MainWindow()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            System Core AND ALL shared functionalities
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+
+            
+
+            
+            <br />
+            <div id="methods">
+                <h2>Methods</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="5296A3B68836A68D48DE2BA8C2C0B0FFFA95209D4155BEF0BABBFB5F3C0CC275">public MainWindow_MouseLeave()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Writing Last User action for monitoring Free Time Used by: SceenSaver
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="300CB13EBAD5463D1EB200EBD735E189D52D50C4CC14D4E60DF0C1D17269588F">public SetSystemModuleListPanel()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Set System Module Content
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="4E192FC93CD725D645349E7AA0E0E651C88B2D3FE6CDA86420B8FAD0C4C9F1D5">public ShowMessageOnMainWindow(bool error, string message, bool confirm)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">bool</div></td>
+                                    <td aria-label="Name" class="elem-name">error</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string</div></td>
+                                    <td aria-label="Name" class="elem-name">message</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">bool</div></td>
+                                    <td aria-label="Name" class="elem-name">confirm</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Central Application Message Dialog for All Info / Error / other messages for User
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="5E3F5274833BDBE59B3A83C0741ED96AC967738E86E7108F9A39082BE7D92975">public MainWindow_Loaded(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Application Loaded Start Backend timer for check server set Theme
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="33B771D7BBBE72FB9319E674602E3328DF709679475A3ED9BFC4AF906AE97749">public LoadUserMenu()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Load UserMenu After Login And Sort
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="9907BE0651B7902A4C7C819B903CA57C45D41E7ADFEC1AB641EB8141CB58E2FD">public SystemTimerController(object sender, ElapsedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">ElapsedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Backend System Timer for check server connection
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="953BFE906CB439A49C4B56FBDFECE2ADF20B2DB89C608C617FF07C2D4EA43078">public SetServiceStop()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Server is unavailable All operations are blocked
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D85408BC26689618FFB9594685755A69A3769D1B674246A727A284002B5C89DC">public Btn_about_click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            about applications information
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="299742305F1006BD9682FCBB48F5522E88065F13420F98BA01FAC96E3A0226E8">public SystemModulePanel_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Open Selected System Module
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="6A0F25C902E4BDDC86FABE9F4EB99CA7ECEE0F2D37DB83705299110959690674">public MainWindow_KeyDown(object sender, KeyEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">KeyEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            MainWindow Keyboard pointer to Keyboard Central Application controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="0E5CD3F496B17495327E8C91C17A9F4136F1E1B3CC8D3BBF96948D15798F23D7">public Btn_LaunchHelp_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Help button controller for Show Help File
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1E2EB31238BCEF38FAB463B58DD489832DAE1790B0F94856B6AE298F0C8C17E6">public Btn_ShowModulePanel_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Show Metro Theme possibilities
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="AA45CA0777092D282C83DE42442608A7E18AE2EB4DA2DB6C0488707431FD73FC">public BtnShowLoggerClick(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Show System On line Logger
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7D9930B351661DBC004984D15AA13044A483339F1B4DE36C3EA43A9729F9D954">public SystemLoggerSourceChanged_Click(object sender, EventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description">The source of the event.</td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">EventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description">The <span class="specific-element">EventArgs</span> instance containing the event data.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            System Logger Source Selector Server Logger has Source From Client Settings by WebSocket URL
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1255CC7B9EA97E9204B0346399885366692F6C7E5FB76EAA850E51CCBE3E83C9">public ShowLoginDialog()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            Application Login Dialog
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="93097B50A0DAD1E173A1DA4C1381DAA75CD0741F1C7762434388A35FD8B1E26A">public MainWindow_Closing(object sender, CancelEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">CancelEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Applications Close Request Controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="6647329B97891C08E4DAB622E03DF7962E04073174460F18EBEC7A3943BD9211">public Mi_logout_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Application Logout button Controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="2DA37629EE05B9D3667838C9597E617E7AAE28CFF5E922907042B8342189675E">public BtnKeyboardClick(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            System tools controllers
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7B61022B465ED2923957A22F361D4A43488400CBD998883848A1AD2BC2292D4F">public TiltOpenForm(string translateHeader)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string</div></td>
+                                    <td aria-label="Name" class="elem-name">translateHeader</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Tilts: Standardized Opening or create Tilt documents
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3C62C364BB92E9DC82DF2EC5C0D242772B84031B4FE8B54B0879B7C674B00352">public CbFilterDropDownClosed(object sender, EventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">EventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Full dynamic apply sett ed filter
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B73B09BE6A18E5D12EF0CB939EEC5982716A7B0190EA79F0ACE55BD6FCBFE112">public Mi_filter_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Full dynamic Show/Hidden DataGrid advanced Filter Menu
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="F5D1E9FDBDD77BF75A04EA1C8A3C237173F80E4F14F8F399AC1CFBA03207781D">public StringToFilter(ComboBox filterBox, string advancedFilter)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">ComboBox</div></td>
+                                    <td aria-label="Name" class="elem-name">filterBox</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string</div></td>
+                                    <td aria-label="Name" class="elem-name">advancedFilter</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Full dynamic build filter on selected page from saved advanced filter
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="AFA87AB87D51CE427A298115B145237B92FA75ABE52E6922EB06B27E1EFBA628">public RemoveFilterItem_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Full dynamic Remove Item from DataGrid advanced Filter
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D707C3200B2691461FA7F40FF65C69480E30ABEE95C9CF9EFBB0FE6B46BD7D80">public FilterField_SelectionChanged(object sender, SelectionChangedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">SelectionChangedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Full dynamic set sign DataGrid advanced filter type
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="CD20F767B55677E3C13C518D157B92507AC7EA201249F286F450D8EF602CC20D">public MainGrid_IsDraggingChanged(object sender, RoutedPropertyChangedEventArgs<bool> e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedPropertyChangedEventArgs&lt;bool&gt;</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Dragging and separate to more Applications: TabPanel drag Controller - not Used
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="240FC7A74897E30577742106E6092367CC3500FBDDD412A652F0C142EBBB41A9">public CbPrintReportsSelected(object sender, SelectionChangedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">SelectionChangedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Print Report Selection Controller
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7B249A9E5CF25B8ACB64433F215F9169A1D12C723D0C57BB13FF81AB945EFDC0">public Menu_action_Click(object sender, RoutedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">RoutedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            THIS IS AUTOMATIC INCLUDE DATALIST VIEW MENU in FORMAT APIcallPage open or select
+                existed TabPanel VERTICAL MENU - Copy and CHANGE ONLY Page Name AND Report CALL as /XXXX
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="AF96C2A8229C68E541986CE465AEC7F79D9F9BEE70C45C55D258EBD4E7F31A99">public AddOrRemoveTab(string headerName, object tabPage, string tagText)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string</div></td>
+                                    <td aria-label="Name" class="elem-name">headerName</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">tabPage</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">string</div></td>
+                                    <td aria-label="Name" class="elem-name">tagText</td>
+                                    <td aria-label="Description"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Tabs Pages control for Insert/Move/Change Pages
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="75B2485E97A37144741CEBAD280842850DFBD2DA1D19F804678FD0C4521A4EAD">public TabPanelOnSelectionChange(object sender, SelectionChangedEventArgs e)</h3>
+                    <div class="method-content">
+                        
+                        
+                        <table class="parameter">
+                            <caption>Parameters</caption>
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th class="elem-name">Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">object</div></td>
+                                    <td aria-label="Name" class="elem-name">sender</td>
+                                    <td aria-label="Description">The sender.</td>
+                                </tr>
+                                <tr>
+                                    <td aria-label="Type"><div class="specific-element">SelectionChangedEventArgs</div></td>
+                                    <td aria-label="Name" class="elem-name">e</td>
+                                    <td aria-label="Description">The <span class="specific-element">SelectionChangedEventArgs</span> instance containing the event data.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                        <div class="elem-content">
+                            Tab click selection change reload ID and Pointers for ListView Buttons
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="62DE620AF1D84B604352F5641C4AA37697873B585A3778FEB0DF56D7F2B49D43">public InitializeComponent()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            InitializeComponent
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+            <br />
+            <div id="properties">
+                <h2>Properties</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="910558C5422E76D90A9D1673A6ED6A320C17D1CB6588A2138BD9D0481D42E716">public void MultiSameTabsEnabled</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Enable/Disable MultiSameTabs Forms
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1F8BD3159D789E6DB20DCA8484A669FC52DAF1DB5E88AD4773CFC7ACE147D267">public void ServerLoggerSource</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                System Logger Source Status and Controller This is status of Settings System Logger Source
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="F4E048671081789A8F731C5E6A20839DFCFF4FAD330267A3DA1773ED5C490396">public void ShowSystemLogger</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                System Logger Activator by Setted Parametr Can be setted for All Apps or Every User individually
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D8212FA02FC127C018F63C7C86E63C4D6CC3EBB086069A7E171EE38F40F70247">public void OperationRunning</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Indicator for mark operation status for any programmatic operations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="9EAAD748F9E76E2A6BC78A650662E0C85E10FB0F88F9ABDF02D9134D9450B0BD">public void RunReleaseMode</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="FAA66189C15DCA7DA3DF872016D6ACB63D1B7496D5DBA6AB30C137AA3CE46490">public void VncRunning</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="DA1F36891F4BF678C4F6B6D7D5C919868B637E56D49C33ED64487E1BD27ADA08">public void SystemLogger</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                System Online Logger for EASY developing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="47D9F4E07B34A1C9194D8390DE67226EE8E3DA6F950FA1FBA102744E3366D1C8">public void UserLogged</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                User Logged Status
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="CD03CD61D69035CE0C46147AD5FA9547A1BD3C3D3FC4C39469E20C93B9664A73">public void ServiceRunning</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Service Status description
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="3A9DEA327BBCC3EBE029F09B515FC77473C8044597AD4D7B99DBE69BD3D3283F">public void DgRefresh</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Indicator for enable Refresh Button Indicator
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="0C59B4FA0DB9E65A8C79204651ABA7FA963CE02010D419B18DB41AAA5026CB71">public void DataGridSelected</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Indicator for Enable New DataGrid Button
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="8897FB74B9ADCC65A14017BA225A704BE1E7DC06B47CF5BF05C7B3239B50A0E2">public void DataGridSelectedIdListIndicator</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                <span class="specific-element">DataGrid</span> have selected record indicator
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="B8C58AE16D40DAEFEDEF8F9AFD7C3BC37C12DD80DAFA02BDC8FC27492AE9A4FF">public void ServiceStatus</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Service Status public Variable
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="F2E2891C95B95BC0887DA8EC7BA737CD2DE5193E80C884AA26F296FFE41446A6">public void DownloadStatus</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Downloading of update status variable
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7F5758C9C3C9BB619C48299EDCB0FDB3B153360893EB84528F2B416545D79699">public void DownloadShow</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Indicator for show Downloading area
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="96BD23341705A188D9CEA63F89F9BB18082EDD1253A461E8DD194023BE08978F">public void ProgressRing</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                ProgressRing Visibility indicator
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+            <br />
+            <div id="fields">
+                <h2>Fields</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="2856A2943E1DB04272CF26836075538B1D879BDC4C802B1DB3809516D4BAD58A">public void lastUserAction</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                MainControls Screen Variables
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        XMLDocumentToHtml: Groupware-Solution.Eu 2024 - 2025 Libor Svoboda.
+    </div>
+
+</body>
+</html>

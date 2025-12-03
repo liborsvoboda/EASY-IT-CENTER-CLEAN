@@ -1,0 +1,4 @@
+# EIC&ESC Nezastavitelný Vývoj s UPDATY od OSTATNÍCH
+
+ROZEPSAT SE O PORTÁLECH, GENEROVání
+

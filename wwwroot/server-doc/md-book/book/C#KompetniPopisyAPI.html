@@ -1,0 +1,653 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>C# Kompetní Popisy API  - EIC&amp;ESB Dokumentace</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="EasyITcenter &amp; EasySYSTEMbuilder Dokumentace">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">EIC&ESB-Globální IT Řešení na míru</li><li class="chapter-item expanded "><a href="VizeaNápadyaPostupy.html"><strong aria-hidden="true">1.</strong> Ver.9: Vize a Nápady a Postupy</a></li><li class="chapter-item expanded "><a href="HistorieReklamníchSdělení.html"><strong aria-hidden="true">2.</strong> Ver.5: Historie Reklamních Sdělení</a></li><li class="chapter-item expanded "><a href="ÚvodníInformace.html"><strong aria-hidden="true">3.</strong> Ver.22: Úvodní Informace</a></li><li class="chapter-item expanded "><a href="PřipravovanéNovinky.html"><strong aria-hidden="true">4.</strong> Ver.43: Připravované Novinky</a></li><li class="chapter-item expanded "><a href="AutomatickéFunkcinality.html"><strong aria-hidden="true">5.</strong> Ver.5: Automatické Funkcinality</a></li><li class="chapter-item expanded "><a href="DatabázeNápověda.html"><strong aria-hidden="true">6.</strong> Ver.3: Databáze Nápověda</a></li><li class="chapter-item expanded "><a href="EIC&ESB3rdNástrojeaModuly.html"><strong aria-hidden="true">7.</strong> Ver.5: EIC&ESB 3rd Nástroje a Moduly</a></li><li class="chapter-item expanded "><a href="ZpracovávánéAChangeLog.html"><strong aria-hidden="true">8.</strong> Ver.37: Zpracováváné A ChangeLog</a></li><li class="chapter-item expanded "><a href="CeníkEIC&ESBaITSlužeb.html"><strong aria-hidden="true">9.</strong> Ver.22: Ceník EIC&ESB a IT Služeb</a></li><li class="chapter-item expanded "><a href="Kontakty.html"><strong aria-hidden="true">10.</strong> Ver.2: Kontakty</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Start -DATABASE-RULE</li><li class="chapter-item expanded "><a href="WebRozcestník.html"><strong aria-hidden="true">11.</strong> Ver.8: Web Rozcestník</a></li><li class="chapter-item expanded "><a href="DBTabulkyŘešení.html"><strong aria-hidden="true">12.</strong> Ver.50: DB Tabulky Řešení</a></li><li class="chapter-item expanded "><a href="DBProceduryŘešení.html"><strong aria-hidden="true">13.</strong> Ver.49: DB Procedury Řešení</a></li><li class="chapter-item expanded "><a href="DBTriggery.html"><strong aria-hidden="true">14.</strong> Ver.47: DB Triggery</a></li><li class="chapter-item expanded "><a href="DBViewaFunkce.html"><strong aria-hidden="true">15.</strong> Ver.45: DB View a Funkce</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-Dev Pravidla</li><li class="chapter-item expanded "><a href="EICServerInstalaceWIN_LIN.html"><strong aria-hidden="true">16.</strong> Ver.15: EIC Server Instalace WIN_LIN</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="EIC-LogikaaStruktura.html"><strong aria-hidden="true">17.</strong> Ver.12: EIC - Logika a Struktura</a></li><li class="chapter-item expanded "><a href="EICUnikátníAPISlužby.html"><strong aria-hidden="true">18.</strong> Ver.8: EIC Unikátní API Služby</a></li><li class="chapter-item expanded "><a href="ZákladníKonfiguraceServeru.html"><strong aria-hidden="true">19.</strong> Ver.23: Základní Konfigurace Serveru</a></li><li class="chapter-item expanded "><a href="SeznamImpl.ModulůServeru.html"><strong aria-hidden="true">20.</strong> Ver.9: Seznam Impl. Modulů Serveru</a></li><li class="chapter-item expanded "><a href="EICXMLKomentářezProjektu.html"><strong aria-hidden="true">21.</strong> Ver.14: EIC XML Komentáře z Projektu</a></li><li class="chapter-item expanded "><a href="EICRadyprogramování.html"><strong aria-hidden="true">22.</strong> Ver.8: EIC Rady programování</a></li><li class="chapter-item expanded "><a href="APIŠablonySystému.html"><strong aria-hidden="true">23.</strong> Ver.60: API Šablony Systému</a></li><li class="chapter-item expanded "><a href="StaticWebPortál.html"><strong aria-hidden="true">24.</strong> Ver.3: Static Web Portál</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="ESB-LogikaaStuktura.html"><strong aria-hidden="true">25.</strong> Ver.5: ESB - Logika a Stuktura</a></li><li class="chapter-item expanded "><a href="SeznamImplementovanýchAgend.html"><strong aria-hidden="true">26.</strong> Ver.18:  Seznam Implementovaných Agend</a></li><li class="chapter-item expanded "><a href="SeznamukázkovýchModulůSystému.html"><strong aria-hidden="true">27.</strong> Ver.13: Seznam ukázkových Modulů Systému</a></li><li class="chapter-item expanded "><a href="ESBXMLKomentářezProjektu.html"><strong aria-hidden="true">28.</strong> Ver.6: ESB XML Komentáře z Projektu</a></li><li class="chapter-item expanded "><a href="MikročíselníkyunikátníFunkce.html"><strong aria-hidden="true">29.</strong> Ver.8: Mikročíselníky unikátní Funkce</a></li><li class="chapter-item expanded "><a href="GlobálníFunkce.html"><strong aria-hidden="true">30.</strong> Ver.9: Globální Funkce</a></li><li class="chapter-item expanded "><a href="ESBRadyprogramování.html"><strong aria-hidden="true">31.</strong> Ver.8: ESB Rady programování</a></li><li class="chapter-item expanded "><a href="XAMLŠablonySystému.html"><strong aria-hidden="true">32.</strong> Ver.63: XAML Šablony Systému</a></li><li class="chapter-item expanded "><a href="ESBTiskovéřešení.html"><strong aria-hidden="true">33.</strong> Ver.5: ESB Tiskové řešení</a></li><li class="chapter-item expanded "><a href="DoplňujícíSubProjekty.html"><strong aria-hidden="true">34.</strong> Ver.8: Doplňující SubProjekty</a></li><li class="chapter-item expanded "><a href="ESBSystemHelpLibrary.html"><strong aria-hidden="true">35.</strong> Ver.9: ESB System Help Library</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="APIŠablonySystému.html"><strong aria-hidden="true">36.</strong> Ver.62: API Šablony Systému</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="XAMLŠablonySystému.html"><strong aria-hidden="true">37.</strong> Ver.2: XAML Šablony Systému</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="GenerátoryaJejichFunkce.html"><strong aria-hidden="true">38.</strong> Ver.63: Generátory a Jejich Funkce</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIS-ESB-ClonedSmallServers</li><li class="chapter-item expanded "><a href="ExpertDocSPAManager.html"><strong aria-hidden="true">39.</strong> Ver.18: ExpertDoc SPA Manager</a></li><li class="chapter-item expanded "><a href="ExpertDocWebServer.html"><strong aria-hidden="true">40.</strong> Ver.18: ExpertDoc Web Server</a></li><li class="chapter-item expanded "><a href="ExpertDocExportSPADocWebu.html"><strong aria-hidden="true">41.</strong> Ver.21: ExpertDoc Export SPADoc Webu</a></li><li class="chapter-item expanded "><a href="ExpertDocUkázkyFormátování.html"><strong aria-hidden="true">42.</strong> Ver.19: ExpertDoc Ukázky Formátování</a></li><li class="chapter-item expanded "><a href="ExpertDocGrafickéUkázky.html"><strong aria-hidden="true">43.</strong> Ver.21: ExpertDoc Grafické Ukázky</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-CanceledRazorBuild</li><li class="chapter-item expanded "><a href="ZrušenýMVCWebPortalCsHtml.html"><strong aria-hidden="true">44.</strong> Ver.78: Zrušený MVC Web Portal CsHtml</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC&ESB Github a Svět Neomezená Řešení</li><li class="chapter-item expanded "><a href="GitHubTopPriorita.html"><strong aria-hidden="true">45.</strong> Ver.2: GitHub Top Priorita</a></li><li class="chapter-item expanded "><a href="awesome-dotnet-core.html"><strong aria-hidden="true">46.</strong> Ver.2: awesome-dotnet-core</a></li><li class="chapter-item expanded "><a href="awesome-dotnet-coreNext.html"><strong aria-hidden="true">47.</strong> Ver.2: awesome-dotnet-core Next</a></li><li class="chapter-item expanded "><a href="awesomeBlazor.html"><strong aria-hidden="true">48.</strong> Ver.3: awesome Blazor</a></li><li class="chapter-item expanded "><a href="awesome-workflow-engines.html"><strong aria-hidden="true">49.</strong> Ver.3: awesome-workflow-engines</a></li><li class="chapter-item expanded "><a href="editorjsrozšířený.html"><strong aria-hidden="true">50.</strong> Ver.4: editorjs rozšířený</a></li><li class="chapter-item expanded "><a href="AwesomeWPF.html"><strong aria-hidden="true">51.</strong> Ver.4: Awesome WPF</a></li><li class="chapter-item expanded "><a href="ZaznamenanéNápadykprověření.html"><strong aria-hidden="true">52.</strong> Ver.2: Zaznamenané Nápady k prověření </a></li><li class="chapter-item expanded "><a href="InspiraceGithubBohatéProfily.html"><strong aria-hidden="true">53.</strong> Ver.3: Inspirace Github Bohaté Profily </a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC+ESB Sdílené WEB Řešení VŠECH</li><li class="chapter-item expanded "><a href="WebSocketv5MINUTACH.html"><strong aria-hidden="true">54.</strong> WebSocket v 5 MINUTÁCH</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Start -DATABASE-RULE</li><li class="chapter-item expanded "><a href="MSSQLZalohaObnovaDB.html"><strong aria-hidden="true">55.</strong> MSSQL Zaloha Obnova DB</a></li><li class="chapter-item expanded "><a href="MSSQLDBTABULkY.html"><strong aria-hidden="true">56.</strong> MSSQL DB TABULkY</a></li><li class="chapter-item expanded "><a href="TBLBasicAttachmentList.html"><strong aria-hidden="true">57.</strong> TBL BasicAttachmentList</a></li><li class="chapter-item expanded "><a href="TBLBasicCalendarList.html"><strong aria-hidden="true">58.</strong> TBL BasicCalendarList</a></li><li class="chapter-item expanded "><a href="TBLBasicCurrencyList.html"><strong aria-hidden="true">59.</strong> TBL BasicCurrencyList</a></li><li class="chapter-item expanded "><a href="TBLBasicImageGalleryList.html"><strong aria-hidden="true">60.</strong> TBL BasicImageGalleryList</a></li><li class="chapter-item expanded "><a href="TBLBasicItemList.html"><strong aria-hidden="true">61.</strong> TBL BasicItemList</a></li><li class="chapter-item expanded "><a href="TBLBasicUnitList.html"><strong aria-hidden="true">62.</strong> TBL BasicUnitList</a></li><li class="chapter-item expanded "><a href="TBLBasicVatList.html"><strong aria-hidden="true">63.</strong> TBL BasicVatList</a></li><li class="chapter-item expanded "><a href="TBLBasicViewAttachmentList.html"><strong aria-hidden="true">64.</strong> TBL BasicViewAttachmentList</a></li><li class="chapter-item expanded "><a href="TBLBusinessAddressList.html"><strong aria-hidden="true">65.</strong> TBL BusinessAddressList</a></li><li class="chapter-item expanded "><a href="TBLBusinessBranchList.html"><strong aria-hidden="true">66.</strong> TBL BusinessBranchList</a></li><li class="chapter-item expanded "><a href="TBLBusinessCreditNoteList.html"><strong aria-hidden="true">67.</strong> TBL BusinessCreditNoteList</a></li><li class="chapter-item expanded "><a href="TBLBusinessCreditNoteSupportList.html"><strong aria-hidden="true">68.</strong> TBL BusinessCreditNoteSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessExchangeRateList.html"><strong aria-hidden="true">69.</strong> TBL BusinessExchangeRateList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingInvoiceList.html"><strong aria-hidden="true">70.</strong> TBL BusinessIncomingInvoiceList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingInvoiceSupportList.html"><strong aria-hidden="true">71.</strong> TBL BusinessIncomingInvoiceSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingOrderList.html"><strong aria-hidden="true">72.</strong> TBL BusinessIncomingOrderList</a></li><li class="chapter-item expanded "><a href="TBLBusinessIncomingOrderSupportList.html"><strong aria-hidden="true">73.</strong> TBL BusinessIncomingOrderSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessMaturityList.html"><strong aria-hidden="true">74.</strong> TBL BusinessMaturityList</a></li><li class="chapter-item expanded "><a href="TBLBusinessNotesList.html"><strong aria-hidden="true">75.</strong> TBL BusinessNotesList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOfferList.html"><strong aria-hidden="true">76.</strong> TBL BusinessOfferList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOfferSupportList.html"><strong aria-hidden="true">77.</strong> TBL BusinessOfferSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingInvoiceList.html"><strong aria-hidden="true">78.</strong> TBL BusinessOutgoingInvoiceList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingInvoiceSupportList.html"><strong aria-hidden="true">79.</strong> TBL BusinessOutgoingInvoiceSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingOrderList.html"><strong aria-hidden="true">80.</strong> TBL BusinessOutgoingOrderList</a></li><li class="chapter-item expanded "><a href="TBLBusinessOutgoingOrderSupportList.html"><strong aria-hidden="true">81.</strong> TBL BusinessOutgoingOrderSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessPaymentMethodList.html"><strong aria-hidden="true">82.</strong> TBL BusinessPaymentMethodList</a></li><li class="chapter-item expanded "><a href="TBLBusinessPaymentStatusList.html"><strong aria-hidden="true">83.</strong> TBL BusinessPaymentStatusList</a></li><li class="chapter-item expanded "><a href="TBLBusinessReceiptList.html"><strong aria-hidden="true">84.</strong> TBL BusinessReceiptList</a></li><li class="chapter-item expanded "><a href="TBLBusinessReceiptSupportList.html"><strong aria-hidden="true">85.</strong> TBL BusinessReceiptSupportList</a></li><li class="chapter-item expanded "><a href="TBLBusinessWarehouseList.html"><strong aria-hidden="true">86.</strong> TBL BusinessWarehouseList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocTemplateList.html"><strong aria-hidden="true">87.</strong> TBL DocSrvDocTemplateList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationCodeLibraryList.html"><strong aria-hidden="true">88.</strong> TBL DocSrvDocumentationCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationGroupList.html"><strong aria-hidden="true">89.</strong> TBL DocSrvDocumentationGroupList</a></li><li class="chapter-item expanded "><a href="TBLDocSrvDocumentationList.html"><strong aria-hidden="true">90.</strong> TBL DocSrvDocumentationList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvAuthLogList.html"><strong aria-hidden="true">91.</strong> TBL GithubSrvAuthLogList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvRepositoryList.html"><strong aria-hidden="true">92.</strong> TBL GithubSrvRepositoryList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvSshKeyList.html"><strong aria-hidden="true">93.</strong> TBL GithubSrvSshKeyList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvTeamList.html"><strong aria-hidden="true">94.</strong> TBL GithubSrvTeamList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvTeamRepositoryRoleList.html"><strong aria-hidden="true">95.</strong> TBL GithubSrvTeamRepositoryRoleList</a></li><li class="chapter-item expanded "><a href="TBLGithubSrvUserTeamRoleList.html"><strong aria-hidden="true">96.</strong> TBL GithubSrvUserTeamRoleList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvLicenseActivationFailList.html"><strong aria-hidden="true">97.</strong> TBL LicSrvLicenseActivationFailList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvLicenseAlgorithmList.html"><strong aria-hidden="true">98.</strong> TBL LicSrvLicenseAlgorithmList</a></li><li class="chapter-item expanded "><a href="TBLLicSrvUsedLicenseList.html"><strong aria-hidden="true">99.</strong> TBL LicSrvUsedLicenseList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidGroupList.html"><strong aria-hidden="true">100.</strong> TBL ProdGuidGroupList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidOperationList.html"><strong aria-hidden="true">101.</strong> TBL ProdGuidOperationList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidPartList.html"><strong aria-hidden="true">102.</strong> TBL ProdGuidPartList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidPersonList.html"><strong aria-hidden="true">103.</strong> TBL ProdGuidPersonList</a></li><li class="chapter-item expanded "><a href="TBLProdGuidWorkList.html"><strong aria-hidden="true">104.</strong> TBL ProdGuidWorkList</a></li><li class="chapter-item expanded "><a href="TBLProviderAutoGenServerReqList.html"><strong aria-hidden="true">105.</strong> TBL ProviderAutoGenServerReqList</a></li><li class="chapter-item expanded "><a href="TBLProviderGeneratedLicenseList.html"><strong aria-hidden="true">106.</strong> TBL ProviderGeneratedLicenseList</a></li><li class="chapter-item expanded "><a href="TBLProviderGeneratedToolList.html"><strong aria-hidden="true">107.</strong> TBL ProviderGeneratedToolList</a></li><li class="chapter-item expanded "><a href="TBLProviderViewGeneratedToolRatingList.html"><strong aria-hidden="true">108.</strong> TBL ProviderViewGeneratedToolRatingList</a></li><li class="chapter-item expanded "><a href="TBLServerApiSecurityList.html"><strong aria-hidden="true">109.</strong> TBL ServerApiSecurityList</a></li><li class="chapter-item expanded "><a href="TBLServerCorsDefAllowedOriginList.html"><strong aria-hidden="true">110.</strong> TBL ServerCorsDefAllowedOriginList</a></li><li class="chapter-item expanded "><a href="TBLServerHealthCheckTaskList.html"><strong aria-hidden="true">111.</strong> TBL ServerHealthCheckTaskList</a></li><li class="chapter-item expanded "><a href="TBLServerLiveDataMonitorList.html"><strong aria-hidden="true">112.</strong> TBL ServerLiveDataMonitorList</a></li><li class="chapter-item expanded "><a href="TBLServerModuleAndServiceList.html"><strong aria-hidden="true">113.</strong> TBL ServerModuleAndServiceList</a></li><li class="chapter-item expanded "><a href="TBLServerSettingList.html"><strong aria-hidden="true">114.</strong> TBL ServerSettingList</a></li><li class="chapter-item expanded "><a href="TBLServerStaticOrMvcDefPathList.html"><strong aria-hidden="true">115.</strong> TBL ServerStaticOrMvcDefPathList</a></li><li class="chapter-item expanded "><a href="TBLServerToolPanelDefinitionList.html"><strong aria-hidden="true">116.</strong> TBL ServerToolPanelDefinitionList</a></li><li class="chapter-item expanded "><a href="TBLServerToolTypeList.html"><strong aria-hidden="true">117.</strong> TBL ServerToolTypeList</a></li><li class="chapter-item expanded "><a href="TBLSolutionEmailerHistoryList.html"><strong aria-hidden="true">118.</strong> TBL SolutionEmailerHistoryList</a></li><li class="chapter-item expanded "><a href="TBLSolutionEmailTemplateList.html"><strong aria-hidden="true">119.</strong> TBL SolutionEmailTemplateList</a></li><li class="chapter-item expanded "><a href="TBLSolutionFailList.html"><strong aria-hidden="true">120.</strong> TBL SolutionFailList</a></li><li class="chapter-item expanded "><a href="TBLSolutionLanguageList.html"><strong aria-hidden="true">121.</strong> TBL SolutionLanguageList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMessageModuleList.html"><strong aria-hidden="true">122.</strong> TBL SolutionMessageModuleList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMessageTypeList.html"><strong aria-hidden="true">123.</strong> TBL SolutionMessageTypeList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMixedEnumList.html"><strong aria-hidden="true">124.</strong> TBL SolutionMixedEnumList</a></li><li class="chapter-item expanded "><a href="TBLSolutionMottoList.html"><strong aria-hidden="true">125.</strong> TBL SolutionMottoList</a></li><li class="chapter-item expanded "><a href="TBLSolutionOperationList.html"><strong aria-hidden="true">126.</strong> TBL SolutionOperationList</a></li><li class="chapter-item expanded "><a href="TBLSolutionSchedulerList.html"><strong aria-hidden="true">127.</strong> TBL SolutionSchedulerList</a></li><li class="chapter-item expanded "><a href="TBLSolutionSchedulerProcessList.html"><strong aria-hidden="true">128.</strong> TBL SolutionSchedulerProcessList</a></li><li class="chapter-item expanded "><a href="TBLSolutionStaticFileList.html"><strong aria-hidden="true">129.</strong> TBL SolutionStaticFileList</a></li><li class="chapter-item expanded "><a href="TBLSolutionStaticFilePathList.html"><strong aria-hidden="true">130.</strong> TBL SolutionStaticFilePathList</a></li><li class="chapter-item expanded "><a href="TBLSolutionTaskList.html"><strong aria-hidden="true">131.</strong> TBL SolutionTaskList</a></li><li class="chapter-item expanded "><a href="TBLSolutionUserList.html"><strong aria-hidden="true">132.</strong> TBL SolutionUserList</a></li><li class="chapter-item expanded "><a href="TBLSolutionUserRoleList.html"><strong aria-hidden="true">133.</strong> TBL SolutionUserRoleList</a></li><li class="chapter-item expanded "><a href="TBLSolutionWebsiteList.html"><strong aria-hidden="true">134.</strong> TBL SolutionWebsiteList</a></li><li class="chapter-item expanded "><a href="TBLSystemCustomPageList.html"><strong aria-hidden="true">135.</strong> TBL SystemCustomPageList</a></li><li class="chapter-item expanded "><a href="TBLSystemDocumentAdviceList.html"><strong aria-hidden="true">136.</strong> TBL SystemDocumentAdviceList</a></li><li class="chapter-item expanded "><a href="TBLSystemDocumentTypeList.html"><strong aria-hidden="true">137.</strong> TBL SystemDocumentTypeList</a></li><li class="chapter-item expanded "><a href="TBLSystemGroupMenuList.html"><strong aria-hidden="true">138.</strong> TBL SystemGroupMenuList</a></li><li class="chapter-item expanded "><a href="TBLSystemIgnoredExceptionList.html"><strong aria-hidden="true">139.</strong> TBL SystemIgnoredExceptionList</a></li><li class="chapter-item expanded "><a href="TBLSystemLoginHistoryList.html"><strong aria-hidden="true">140.</strong> TBL SystemLoginHistoryList</a></li><li class="chapter-item expanded "><a href="TBLSystemMenuList.html"><strong aria-hidden="true">141.</strong> TBL SystemMenuList</a></li><li class="chapter-item expanded "><a href="TBLSystemModuleList.html"><strong aria-hidden="true">142.</strong> TBL SystemModuleList</a></li><li class="chapter-item expanded "><a href="TBLSystemParameterList.html"><strong aria-hidden="true">143.</strong> TBL SystemParameterList</a></li><li class="chapter-item expanded "><a href="TBLSystemReportList.html"><strong aria-hidden="true">144.</strong> TBL SystemReportList</a></li><li class="chapter-item expanded "><a href="TBLSystemReportQueueList.html"><strong aria-hidden="true">145.</strong> TBL SystemReportQueueList</a></li><li class="chapter-item expanded "><a href="TBLSystemSvgIconList.html"><strong aria-hidden="true">146.</strong> TBL SystemSvgIconList</a></li><li class="chapter-item expanded "><a href="TBLSystemTranslationList.html"><strong aria-hidden="true">147.</strong> TBL SystemTranslationList</a></li><li class="chapter-item expanded "><a href="TBLTemplateList.html"><strong aria-hidden="true">148.</strong> TBL TemplateList</a></li><li class="chapter-item expanded "><a href="TBLWebBannedIpAddressList.html"><strong aria-hidden="true">149.</strong> TBL WebBannedIpAddressList</a></li><li class="chapter-item expanded "><a href="TBLWebCodeLibraryList.html"><strong aria-hidden="true">150.</strong> TBL WebCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLWebConfiguratorList.html"><strong aria-hidden="true">151.</strong> TBL WebConfiguratorList</a></li><li class="chapter-item expanded "><a href="TBLWebCoreFileList.html"><strong aria-hidden="true">152.</strong> TBL WebCoreFileList</a></li><li class="chapter-item expanded "><a href="TBLWebDeveloperNewsList.html"><strong aria-hidden="true">153.</strong> TBL WebDeveloperNewsList</a></li><li class="chapter-item expanded "><a href="TBLWebDocumentationCodeLibraryList.html"><strong aria-hidden="true">154.</strong> TBL WebDocumentationCodeLibraryList</a></li><li class="chapter-item expanded "><a href="TBLWebDocumentationList.html"><strong aria-hidden="true">155.</strong> TBL WebDocumentationList</a></li><li class="chapter-item expanded "><a href="TBLWebGlobalPageBlockList.html"><strong aria-hidden="true">156.</strong> TBL WebGlobalPageBlockList</a></li><li class="chapter-item expanded "><a href="TBLWebGroupMenuList.html"><strong aria-hidden="true">157.</strong> TBL WebGroupMenuList</a></li><li class="chapter-item expanded "><a href="TBLWebMenuList.html"><strong aria-hidden="true">158.</strong> TBL WebMenuList</a></li><li class="chapter-item expanded "><a href="TBLWebMessagesList.html"><strong aria-hidden="true">159.</strong> TBL WebMessagesList</a></li><li class="chapter-item expanded "><a href="TBLWebSettingList.html"><strong aria-hidden="true">160.</strong> TBL WebSettingList</a></li><li class="chapter-item expanded "><a href="TBLWebUserSettingList.html"><strong aria-hidden="true">161.</strong> TBL WebUserSettingList</a></li><li class="chapter-item expanded "><a href="TBLWebVisitIpList.html"><strong aria-hidden="true">162.</strong> TBL WebVisitIpList</a></li><li class="chapter-item expanded "><a href="FNFn_SplitString.html"><strong aria-hidden="true">163.</strong> FN Fn_SplitString</a></li><li class="chapter-item expanded "><a href="FNfnGetFileName.html"><strong aria-hidden="true">164.</strong> FNfnGetFileName</a></li><li class="chapter-item expanded "><a href="SP_SpOperationTemplate.html"><strong aria-hidden="true">165.</strong> SP _SpOperationTemplate</a></li><li class="chapter-item expanded "><a href="SP_SpOperationTodoCheckRolesIntegrity.html"><strong aria-hidden="true">166.</strong> SP _SpOperationTodoCheckRolesIntegrity</a></li><li class="chapter-item expanded "><a href="SPDB_HELP_ExtensionTableDefExport.html"><strong aria-hidden="true">167.</strong> SP DB_HELP_ExtensionTableDefExport</a></li><li class="chapter-item expanded "><a href="SPDB_HELP_INFO.html"><strong aria-hidden="true">168.</strong> SP DB_HELP_INFO</a></li><li class="chapter-item expanded "><a href="SPExampleExportJsonFile.html"><strong aria-hidden="true">169.</strong> SP ExampleExportJsonFile</a></li><li class="chapter-item expanded "><a href="SPLicSrvSpCheckUnlockKey.html"><strong aria-hidden="true">170.</strong> SP LicSrvSpCheckUnlockKey</a></li><li class="chapter-item expanded "><a href="SPReportDataset.html"><strong aria-hidden="true">171.</strong> SP ReportDataset</a></li><li class="chapter-item expanded "><a href="SPsp_GetDDL.html"><strong aria-hidden="true">172.</strong> SP sp_GetDDL</a></li><li class="chapter-item expanded "><a href="SPSpAutoCleanEmailer.html"><strong aria-hidden="true">173.</strong> SP SpAutoCleanEmailer</a></li><li class="chapter-item expanded "><a href="SPSpImportSvgIcon.html"><strong aria-hidden="true">174.</strong> SP SpImportSvgIcon</a></li><li class="chapter-item expanded "><a href="SPSpImportTemplateDocFilesFromFolder.html"><strong aria-hidden="true">175.</strong> SP SpImportTemplateDocFilesFromFolder</a></li><li class="chapter-item expanded "><a href="SPSpOperationAutoGenDescToDocs.html"><strong aria-hidden="true">176.</strong> SP SpOperationAutoGenDescToDocs</a></li><li class="chapter-item expanded "><a href="SPSpOperationAutoUpdateDbTemplateDoc.html"><strong aria-hidden="true">177.</strong> SP SpOperationAutoUpdateDbTemplateDoc</a></li><li class="chapter-item expanded "><a href="SPSpOperationDBBackup.html"><strong aria-hidden="true">178.</strong> SP SpOperationDBBackup</a></li><li class="chapter-item expanded "><a href="SPSpOperationExportConfigFile.html"><strong aria-hidden="true">179.</strong> SP SpOperationExportConfigFile</a></li><li class="chapter-item expanded "><a href="SPSpOperationFailListClean.html"><strong aria-hidden="true">180.</strong> SP SpOperationFailListClean</a></li><li class="chapter-item expanded "><a href="SPSpOperationFillTranslationTableList.html"><strong aria-hidden="true">181.</strong> SP SpOperationFillTranslationTableList</a></li><li class="chapter-item expanded "><a href="SPSpOperationRunSqlScript.html"><strong aria-hidden="true">182.</strong> SP SpOperationRunSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpProvider_ExportSqlScript.html"><strong aria-hidden="true">183.</strong> SP SpProvider_ExportSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpProvider_SendSqlScript.html"><strong aria-hidden="true">184.</strong> SP SpProvider_SendSqlScript</a></li><li class="chapter-item expanded "><a href="SPSpShowDBProcedureList.html"><strong aria-hidden="true">185.</strong> SP SpShowDBProcedureList</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_BACKUP.html"><strong aria-hidden="true">186.</strong> SP SpTaskDB_BACKUP</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_CLONE.html"><strong aria-hidden="true">187.</strong> SP SpTaskDB_CLONE</a></li><li class="chapter-item expanded "><a href="SPSpTaskDB_SETRIGHTS.html"><strong aria-hidden="true">188.</strong> SP SpTaskDB_SETRIGHTS</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetSystemPageList.html"><strong aria-hidden="true">189.</strong> SP SystemSpGetSystemPageList</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetTableList.html"><strong aria-hidden="true">190.</strong> SP SystemSpGetTableList</a></li><li class="chapter-item expanded "><a href="SPSystemSpGetUserMenuList.html"><strong aria-hidden="true">191.</strong> SP SystemSpGetUserMenuList</a></li><li class="chapter-item expanded "><a href="TRTR_BranchList.html"><strong aria-hidden="true">192.</strong> TR TR_BranchList</a></li><li class="chapter-item expanded "><a href="TRTR_CurrencyList.html"><strong aria-hidden="true">193.</strong> TR TR_CurrencyList</a></li><li class="chapter-item expanded "><a href="TRTR_DocumentationList.html"><strong aria-hidden="true">194.</strong> TR TR_DocumentationList</a></li><li class="chapter-item expanded "><a href="TRTR_ImageGalleryList.html"><strong aria-hidden="true">195.</strong> TR TR_ImageGalleryList</a></li><li class="chapter-item expanded "><a href="TRTR_MaturityList.html"><strong aria-hidden="true">196.</strong> TR TR_MaturityList</a></li><li class="chapter-item expanded "><a href="TRTR_ParameterList.html"><strong aria-hidden="true">197.</strong> TR TR_ParameterList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentMethodList.html"><strong aria-hidden="true">198.</strong> TR TR_PaymentMethodList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusList.html"><strong aria-hidden="true">199.</strong> TR TR_PaymentStatusList</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusListCreditNote.html"><strong aria-hidden="true">200.</strong> TR TR_PaymentStatusListCreditNote</a></li><li class="chapter-item expanded "><a href="TRTR_PaymentStatusListReceipt.html"><strong aria-hidden="true">201.</strong> TR TR_PaymentStatusListReceipt</a></li><li class="chapter-item expanded "><a href="TRTR_ReportList.html"><strong aria-hidden="true">202.</strong> TR TR_ReportList</a></li><li class="chapter-item expanded "><a href="TRTR_ServerModuleAndServiceList.html"><strong aria-hidden="true">203.</strong> TR TR_ServerModuleAndServiceList</a></li><li class="chapter-item expanded "><a href="TRTR_SolutionEmailerHistoryList.html"><strong aria-hidden="true">204.</strong> TR TR_SolutionEmailerHistoryList</a></li><li class="chapter-item expanded "><a href="TRTR_SystemTranslationList.html"><strong aria-hidden="true">205.</strong> TR TR_SystemTranslationList</a></li><li class="chapter-item expanded "><a href="TRTR_UnitList.html"><strong aria-hidden="true">206.</strong> TR TR_UnitList</a></li><li class="chapter-item expanded "><a href="TRTR_UserList.html"><strong aria-hidden="true">207.</strong> TR TR_UserList</a></li><li class="chapter-item expanded "><a href="TRTR_VatList.html"><strong aria-hidden="true">208.</strong> TR TR_VatList</a></li><li class="chapter-item expanded "><a href="TRTR_WarehouseList.html"><strong aria-hidden="true">209.</strong> TR TR_WarehouseList</a></li><li class="chapter-item expanded "><a href="TRTR_WebDocumentationList.html"><strong aria-hidden="true">210.</strong> TR TR_WebDocumentationList</a></li><li class="chapter-item expanded "><a href="TRTR_WebMenuList.html"><strong aria-hidden="true">211.</strong> TR TR_WebMenuList</a></li><li class="chapter-item expanded "><a href="VIEWBasicViewAttachmentList.html"><strong aria-hidden="true">212.</strong> VIEW BasicViewAttachmentList</a></li><li class="chapter-item expanded "><a href="VIEWProviderViewGeneratedToolRatingList.html"><strong aria-hidden="true">213.</strong> VIEW ProviderViewGeneratedToolRatingList</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC - Dokumentace Projektu</li><li class="chapter-item expanded "><a href="ManualniServerSettingPageXAML.html"><strong aria-hidden="true">214.</strong> Manuální ServerSettingPage XAML</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="SablonaMVCsvlastnimzabezpecenim.html"><strong aria-hidden="true">215.</strong> Šablona MVC s vlastním zabezpečením</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="WPF_C#MetodyFormularu.html"><strong aria-hidden="true">216.</strong> WPF_C# Metody Formulářů</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="C#APIAutorizaceToken,Basic.html"><strong aria-hidden="true">217.</strong> C# API Autorizace Token, Basic</a></li><li class="chapter-item expanded "><a href="C#APIpropracisDynamickymiProcedurami.html"><strong aria-hidden="true">218.</strong> C# API pro práci s Dynamickými  Procedurami</a></li><li class="chapter-item expanded "><a href="C#APIpropracisProceduramiTrueFalse.html"><strong aria-hidden="true">219.</strong> C# API pro práci s Procedurami TrueFalse</a></li><li class="chapter-item expanded "><a href="C#APIpropracisrozsahypolozek.html"><strong aria-hidden="true">220.</strong> C# API pro práci s rozsahy položek</a></li><li class="chapter-item expanded "><a href="C#APIpropraciseSoubory,Obrazky,Atd.html"><strong aria-hidden="true">221.</strong> C# API pro práci se Soubory,Obrázky,Atd</a></li><li class="chapter-item expanded "><a href="C#APIsulozernimSubRozsahuv1kroku.html"><strong aria-hidden="true">222.</strong> C# API s uložerním Sub Rozsahův 1 kroku</a></li><li class="chapter-item expanded "><a href="C#APIUniverzalniSablonaRestFull.html"><strong aria-hidden="true">223.</strong> C# API Univerzální Šablona RestFull</a></li><li class="chapter-item expanded "><a href="C#DatoveBlokyPrebiratezDB.html"><strong aria-hidden="true">224.</strong> C# Datové Bloky Přebíráte z DB</a></li><li class="chapter-item expanded "><a href="C#FormularesPrehledyPlneOkomentovane.html"><strong aria-hidden="true">225.</strong> C# Formuláře s Přehledy Plně Okomentované</a></li><li class="chapter-item expanded "><a href="C#KompetniPopisyAPI.html" class="active"><strong aria-hidden="true">226.</strong> C# Kompetní Popisy API </a></li><li class="chapter-item expanded "><a href="C#WebSocketReseni.html"><strong aria-hidden="true">227.</strong> C# WebSocket Řešení</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">ESB Knihovny Kódů a Šablony</li><li class="chapter-item expanded "><a href="XAMLFormularNastaveniveskupinach.html"><strong aria-hidden="true">228.</strong> XAML Formulář Nastavení ve skupinách</a></li><li class="chapter-item expanded "><a href="XAMLGrafy,Diagrami,Uml,Atd.html"><strong aria-hidden="true">229.</strong> XAML Grafy, Diagrami, Uml, Atd</a></li><li class="chapter-item expanded "><a href="XAMLMonitoringOSSystemu.html"><strong aria-hidden="true">230.</strong> XAML Monitoring OS Systému</a></li><li class="chapter-item expanded "><a href="XAMLPanelNastroju.html"><strong aria-hidden="true">231.</strong> XAML Panel Nástrojů</a></li><li class="chapter-item expanded "><a href="XAMLProhlizecDoc,PDF,Office,Obrazky,Atd.html"><strong aria-hidden="true">232.</strong> XAML Prohlížeč Doc,PDF,Office,Obrázky,Atd</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularsLokalnimPrekladem.html"><strong aria-hidden="true">233.</strong> XAML Přehled a Formulář s Lokálním Překladem</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularsVazbou.html"><strong aria-hidden="true">234.</strong> XAML Přehled a Formulář s Vazbou</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularseSubFormem.html"><strong aria-hidden="true">235.</strong> XAML Přehled a Formulář se SubFormem</a></li><li class="chapter-item expanded "><a href="XAMLPrehledaFormularseSubPrehledem.html"><strong aria-hidden="true">236.</strong> XAML Přehled a Formulář se SubPřehledem</a></li><li class="chapter-item expanded "><a href="XAMLPrehravacVidei,Zvuku.html"><strong aria-hidden="true">237.</strong> XAML Přehrávač Videí, Zvuků</a></li><li class="chapter-item expanded "><a href="XAMLSamotnyPrehled.html"><strong aria-hidden="true">238.</strong> XAML Samotný Přehled</a></li><li class="chapter-item expanded "><a href="XAMLSablonaPrehled+Formular.html"><strong aria-hidden="true">239.</strong> XAML Šablona Přehled + Formulář</a></li><li class="chapter-item expanded "><a href="XAMLSetricObrazovky.html"><strong aria-hidden="true">240.</strong> XAML Šetřič Obrazovky</a></li><li class="chapter-item expanded "><a href="XAMLVlastniFormular.html"><strong aria-hidden="true">241.</strong> XAML Vlastní Formulář</a></li><li class="chapter-item expanded "><a href="XAMLWeby,Internet,Portaly.html"><strong aria-hidden="true">242.</strong> XAML Weby, Internet, Portály</a></li><li class="chapter-item expanded "><a href="XAMLZobrazeni3D,STL,atd.html"><strong aria-hidden="true">243.</strong> XAML Zobrazení 3D,STL,atd</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">EIC-CanceledRazorBuild</li><li class="chapter-item expanded "><a href="_ViewImports.cshtml.html"><strong aria-hidden="true">244.</strong> _ViewImports.cshtml</a></li><li class="chapter-item expanded "><a href="_ViewStart.cshtml.html"><strong aria-hidden="true">245.</strong> _ViewStart.cshtml</a></li><li class="chapter-item expanded "><a href="AdvantageousServices.cshtml.html"><strong aria-hidden="true">246.</strong> AdvantageousServices.cshtml</a></li><li class="chapter-item expanded "><a href="AminLogin.cshtml.html"><strong aria-hidden="true">247.</strong> AminLogin.cshtml</a></li><li class="chapter-item expanded "><a href="AminLogin.cshtml.cs.html"><strong aria-hidden="true">248.</strong> AminLogin.cshtml.cs</a></li><li class="chapter-item expanded "><a href="AutomaticServices.cshtml.html"><strong aria-hidden="true">249.</strong> AutomaticServices.cshtml</a></li><li class="chapter-item expanded "><a href="BusinessGenerators.cshtml.html"><strong aria-hidden="true">250.</strong> BusinessGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="DashBoard.cshtml.html"><strong aria-hidden="true">251.</strong> DashBoard.cshtml</a></li><li class="chapter-item expanded "><a href="Databases.cshtml.html"><strong aria-hidden="true">252.</strong> Databases.cshtml</a></li><li class="chapter-item expanded "><a href="DocumentationsGenerators.cshtml.html"><strong aria-hidden="true">253.</strong> DocumentationsGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="Downloads.cshtml.html"><strong aria-hidden="true">254.</strong> Downloads.cshtml</a></li><li class="chapter-item expanded "><a href="EDCImageList.cshtml.html"><strong aria-hidden="true">255.</strong> EDCImageList.cshtml</a></li><li class="chapter-item expanded "><a href="EDCManagersInfoCZ.cshtml.html"><strong aria-hidden="true">256.</strong> EDCManagersInfoCZ.cshtml</a></li><li class="chapter-item expanded "><a href="EDCManagersInfoEN.cshtml.html"><strong aria-hidden="true">257.</strong> EDCManagersInfoEN.cshtml</a></li><li class="chapter-item expanded "><a href="Error.cshtml.html"><strong aria-hidden="true">258.</strong> Error.cshtml</a></li><li class="chapter-item expanded "><a href="ESBImageList.cshtml.html"><strong aria-hidden="true">259.</strong> ESBImageList.cshtml</a></li><li class="chapter-item expanded "><a href="ESBManagersInfoCZ.cshtml.html"><strong aria-hidden="true">260.</strong> ESBManagersInfoCZ.cshtml</a></li><li class="chapter-item expanded "><a href="ESBManagersInfoEN.cshtml.html"><strong aria-hidden="true">261.</strong> ESBManagersInfoEN.cshtml</a></li><li class="chapter-item expanded "><a href="GalleryGenerators.cshtml.html"><strong aria-hidden="true">262.</strong> GalleryGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="ChangeLog.cshtml.html"><strong aria-hidden="true">263.</strong> ChangeLog.cshtml</a></li><li class="chapter-item expanded "><a href="InteliBook.cshtml.html"><strong aria-hidden="true">264.</strong> InteliBook.cshtml</a></li><li class="chapter-item expanded "><a href="Login.cshtml.html"><strong aria-hidden="true">265.</strong> Login.cshtml</a></li><li class="chapter-item expanded "><a href="MdView.cshtml.html"><strong aria-hidden="true">266.</strong> MdView.cshtml</a></li><li class="chapter-item expanded "><a href="PriceList.cshtml.html"><strong aria-hidden="true">267.</strong> PriceList.cshtml</a></li><li class="chapter-item expanded "><a href="Privacy.cshtml.html"><strong aria-hidden="true">268.</strong> Privacy.cshtml</a></li><li class="chapter-item expanded "><a href="Registration.cshtml.html"><strong aria-hidden="true">269.</strong> Registration.cshtml</a></li><li class="chapter-item expanded "><a href="ResetPassword.cshtml.html"><strong aria-hidden="true">270.</strong> ResetPassword.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionCoresLogic.cshtml.html"><strong aria-hidden="true">271.</strong> SolutionCoresLogic.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionServers.cshtml.html"><strong aria-hidden="true">272.</strong> SolutionServers.cshtml</a></li><li class="chapter-item expanded "><a href="SolutionsVisionsIdeas.cshtml.html"><strong aria-hidden="true">273.</strong> SolutionsVisionsIdeas.cshtml</a></li><li class="chapter-item expanded "><a href="SystemToolsGenerators.cshtml.html"><strong aria-hidden="true">274.</strong> SystemToolsGenerators.cshtml</a></li><li class="chapter-item expanded "><a href="SystemToolsGenerators.cshtml.cs.html"><strong aria-hidden="true">275.</strong> SystemToolsGenerators.cshtml.cs</a></li><li class="chapter-item expanded "><a href="TechnologyPosibilities.cshtml.html"><strong aria-hidden="true">276.</strong> TechnologyPosibilities.cshtml</a></li><li class="chapter-item expanded "><a href="TechnologyPosibilities.cshtml.cs.html"><strong aria-hidden="true">277.</strong> TechnologyPosibilities.cshtml.cs</a></li><li class="chapter-item expanded "><a href="Terms.cshtml.html"><strong aria-hidden="true">278.</strong> Terms.cshtml</a></li><li class="chapter-item expanded "><a href="Terms.cshtml.cs.html"><strong aria-hidden="true">279.</strong> Terms.cshtml.cs</a></li><li class="chapter-item expanded "><a href="UserProfile.cshtml.html"><strong aria-hidden="true">280.</strong> UserProfile.cshtml</a></li><li class="chapter-item expanded "><a href="UserProfile.cshtml.cs.html"><strong aria-hidden="true">281.</strong> UserProfile.cshtml.cs</a></li><li class="chapter-item expanded "><a href="VideoGallery.cshtml.html"><strong aria-hidden="true">282.</strong> VideoGallery.cshtml</a></li><li class="chapter-item expanded "><a href="VideoGallery.cshtml.cs.html"><strong aria-hidden="true">283.</strong> VideoGallery.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebEditors.cshtml.html"><strong aria-hidden="true">284.</strong> WebEditors.cshtml</a></li><li class="chapter-item expanded "><a href="WebEditors.cshtml.cs.html"><strong aria-hidden="true">285.</strong> WebEditors.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebMenuBuilder.cshtml.html"><strong aria-hidden="true">286.</strong> WebMenuBuilder.cshtml</a></li><li class="chapter-item expanded "><a href="WebMenuBuilder.cshtml.cs.html"><strong aria-hidden="true">287.</strong> WebMenuBuilder.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebSetting.cshtml.html"><strong aria-hidden="true">288.</strong> WebSetting.cshtml</a></li><li class="chapter-item expanded "><a href="WebSetting.cshtml.cs.html"><strong aria-hidden="true">289.</strong> WebSetting.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WebViewers.cshtml.html"><strong aria-hidden="true">290.</strong> WebViewers.cshtml</a></li><li class="chapter-item expanded "><a href="WebViewers.cshtml.cs.html"><strong aria-hidden="true">291.</strong> WebViewers.cshtml.cs</a></li><li class="chapter-item expanded "><a href="WpfDeveloperTools.cshtml.html"><strong aria-hidden="true">292.</strong> WpfDeveloperTools.cshtml</a></li><li class="chapter-item expanded "><a href="WpfDeveloperTools.cshtml.cs.html"><strong aria-hidden="true">293.</strong> WpfDeveloperTools.cshtml.cs</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">EIC&amp;ESB Dokumentace</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Úvod---eic-knihovny-kódů-a-Šablony"><a class="header" href="#Úvod---eic-knihovny-kódů-a-Šablony">Úvod   EIC Knihovny Kódů a Šablony</a></h1>
+<p>Knihovny kódů implementovaných v projektu. 
+Většinou už budete jen opakovat co bylo vytvořeno, takže stačí vykopírovat z Těchto Knihoven</p>
+<p>Kompletní Dokumentace ke každému volaní a informace jak je správně používat </p>
+<p>using EASYDATACenter.DBModel;</p>
+<p>namespace EASYDATACenter.Controllers {
+/// <summary>
+/// System Template of Authentication Basic / Bearer security Api communication
+/// </summary>
+[ApiController]
+[Route(&quot;TemplateAuthApi&quot;)]
+public class TemplateAuthApiService : ControllerBase {
+private static Encoding ISO_8859_1_ENCODING = Encoding.GetEncoding(&quot;ISO-8859-1&quot;);</p>
+<pre><code>    /// &lt;summary&gt;
+    /// Server Basic Authentication API for login Via UserName and Password Returned is Token
+    /// for next communication Token Can be limited by Time - Validating is via LifetimeValidatora
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;Authorization&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [AllowAnonymous]
+    [HttpPost(&quot;/TemplateAuthApi&quot;)]
+    public IActionResult Authenticate([FromHeader] string Authorization) {
+        (string username, string password) = GetUsernameAndPasswordFromAuthorizeHeader(Authorization);
+
+        var user = Authenticate(username, password);
+
+        try {
+            if (HttpContext.Connection.RemoteIpAddress != null &amp;&amp; user != null) {
+                string clientIPAddr = System.Net.Dns.GetHostEntry(HttpContext.Connection.RemoteIpAddress).AddressList.First(x =&gt; x.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).ToString();
+                if (!string.IsNullOrWhiteSpace(clientIPAddr)) { DBOperations.WriteVisit(clientIPAddr, user.Id, username); }
+            }
+        } catch { }
+
+        if (user == null)
+            return BadRequest(new { message = DBOperations.DBTranslate(&quot;UsernameOrPasswordIncorrect&quot;, BackendServer.ServerConfigSettings.ConfigServerLanguage) });
+
+        if (!BackendServer.ServerConfigSettings.ServerTimeTokenValidationEnabled) { user.Expiration = null; }
+
+        RefreshUserToken(username, user);
+        return Ok(JsonSerializer.Serialize(user));
+    }
+
+    private static (string?, string?) GetUsernameAndPasswordFromAuthorizeHeader(string authorizeHeader) {
+        if (authorizeHeader == null || (!authorizeHeader.Contains(&quot;Basic &quot;) &amp;&amp; !authorizeHeader.Contains(&quot;Bearer &quot;))) return (null, null);
+
+        if (authorizeHeader.Contains(&quot;Basic &quot;)) {
+            string encodedUsernamePassword = authorizeHeader.Substring(&quot;Basic &quot;.Length).Trim();
+            string usernamePassword = ISO_8859_1_ENCODING.GetString(Convert.FromBase64String(encodedUsernamePassword));
+
+            string username = usernamePassword.Split(':')[0];
+            string password = usernamePassword.Split(':')[1];
+
+            return (username, password);
+        }
+
+        return (null, null);
+    }
+
+    /// &lt;summary&gt;
+    /// API Authenticated and Generate Token
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;username&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;password&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public static AuthenticateResponse? Authenticate(string? username, string? password) {
+        if (username == null)
+            return null;
+
+        var user = new EASYDATACenterContext()
+            .UserLists.Include(a =&gt; a.Role).Where(a =&gt; a.Active == true &amp;&amp; a.UserName == username &amp;&amp; a.Password == password)
+            .First();
+
+        if (user == null)
+            return null;
+
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Encoding.ASCII.GetBytes(BackendServer.ServerConfigSettings.ConfigJwtLocalKey);
+        var tokenDescriptor = new SecurityTokenDescriptor {
+            Subject = new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.PrimarySid, user.Id.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, user.UserName),
+                new Claim(ClaimTypes.Role, user.Role.SystemName),
+                new Claim(ClaimTypes.Dns, BackendServer.ServerConfigSettings.ConfigCertificateDomain),
+            }),
+            Issuer = user.UserName,
+            NotBefore = DateTimeOffset.Now.DateTime,
+            Expires = DateTimeOffset.Now.AddMinutes(BackendServer.ServerConfigSettings.ConfigApiTokenTimeoutMin).DateTime,
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+        };
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+
+        AuthenticateResponse authResponse = new() { Id = user.Id, Name = user.Name, Surname = user.SurName, Token = tokenHandler.WriteToken(token), Expiration = token.ValidTo.ToLocalTime(), Role = user.Role.SystemName };
+        return authResponse;
+    }
+
+    /// &lt;summary&gt;
+    /// API Refresh User Token
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;username&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;token&quot;&gt;   &lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    public static bool RefreshUserToken(string username, AuthenticateResponse token) {
+        try {
+            var dbUser = new EASYDATACenterContext()
+                .UserLists.Where(a =&gt; a.Active == true &amp;&amp; a.UserName == username)
+                .First();
+            if (dbUser == null || dbUser.Token == token.Token &amp;&amp; dbUser.Expiration &lt; DateTimeOffset.Now) return false;
+
+            dbUser.Token = token.Token;
+            dbUser.Expiration = token.Expiration;
+            var data = new EASYDATACenterContext().UserLists.Update(dbUser);
+            int result = data.Context.SaveChanges();
+
+            if (result &gt; 0) return true;
+            return false;
+        } catch (Exception ex) { }
+        return false;
+    }
+
+    /// &lt;summary&gt;
+    /// API Token LifeTime Validator
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;notBefore&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;expires&quot;&gt;  &lt;/param&gt;
+    /// &lt;param name=&quot;token&quot;&gt;    &lt;/param&gt;
+    /// &lt;param name=&quot;params&quot;&gt;   &lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    internal static bool LifetimeValidator(DateTime? notBefore, DateTime? expires, SecurityToken token, TokenValidationParameters @params) {
+        if (RefreshUserToken(token.Issuer, new AuthenticateResponse() { Token = ((JwtSecurityToken)token).RawData.ToString(), Expiration = DateTimeOffset.Now.AddMinutes(BackendServer.ServerConfigSettings.ConfigApiTokenTimeoutMin).DateTime }))
+            return true;
+        else return false;
+    }
+}
+</code></pre>
+<h2 id=""><a class="header" href="#">}</a></h2>
+<p>using EASYDATACenter.DBModel;</p>
+<p>namespace EASYDATACenter.Controllers {
+/// <summary>
+/// Universal Template For Make Any Full Backend Server One Template Has All data operation
+/// Controls for simple copy and build ANY Backend Server
+/// </summary>
+[Authorize]
+[ApiController]
+[Route(&quot;TemplateList&quot;)]
+[SwaggerTag(&quot;API Template with INSERT/UPDATE/DELETE/SELECT AND FILTERING APIs&quot;)]
+public class TemplateListApi : ControllerBase {
+/// <summary>
+/// Operation: Select All records Standard API for return all records from DB table
+/// </summary>
+/// <returns></returns>
+[HttpGet(&quot;/TemplateList&quot;)]
+[SwaggerOperation(Summary = &quot;Get All records&quot;, Description = &quot;Async standard select record API&quot;, OperationId = &quot;Select all records&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+public async Task<string> GetTemplateList() {
+List<TemplateList> data;
+using (new TransactionScope(TransactionScopeOption.Required, new TransactionOptions {
+IsolationLevel = IsolationLevel.ReadUncommitted //with NO LOCK
+})) {
+data = new EASYDATACenterContext().TemplateLists.ToList();
+}</p>
+<pre><code>        return JsonSerializer.Serialize(data);
+    }
+
+    /// &lt;summary&gt;
+    /// Operation: Select By sent SQL Where Condition Standard API for return records by Where
+    /// condition in Query from DB table
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;filter&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpGet(&quot;/TemplateList/Filter/{filter}&quot;)]
+    [SwaggerOperation(Summary = &quot;Get records by Advanced filter&quot;, Description = &quot;Async standard select records by advanced filter API&quot;, OperationId = &quot;Select records by Advanced filter&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+    public async Task&lt;string&gt; GetTemplateListByFilter(string filter) {
+        List&lt;TemplateList&gt; data;
+        using (new TransactionScope(TransactionScopeOption.Required, new TransactionOptions {
+            IsolationLevel = IsolationLevel.ReadUncommitted //with NO LOCK
+        })) {
+            data = new EASYDATACenterContext().TemplateLists.FromSqlRaw(&quot;SELECT * FROM TemplateList WHERE 1=1 AND &quot; + filter.Replace(&quot;+&quot;, &quot; &quot;)).AsNoTracking().ToList();
+        }
+
+        return JsonSerializer.Serialize(data);
+    }
+
+    /// &lt;summary&gt;
+    /// Operation: Select Unique record Standard API for return one record by primary Id key
+    /// from DB table
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;id&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpGet(&quot;/TemplateList/{id}&quot;)]
+    [SwaggerOperation(Summary = &quot;Get Record by Id&quot;, Description = &quot;Async standard Get record by Id API&quot;, OperationId = &quot;Get One record&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+    public async Task&lt;string&gt; GetTemplateListKey(int id) {
+        TemplateList data;
+        using (new TransactionScope(TransactionScopeOption.Required, new TransactionOptions {
+            IsolationLevel = IsolationLevel.ReadUncommitted
+        })) {
+            data = new EASYDATACenterContext().TemplateLists.Where(a =&gt; a.Id == id).First();
+        }
+
+        return JsonSerializer.Serialize(data);
+    }
+
+    /// &lt;summary&gt;
+    /// Operation: Insert new record Standard API for insert new record to DB table
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;record&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpPut(&quot;/TemplateList&quot;)]
+    [Consumes(&quot;application/json&quot;)]
+    [SwaggerOperation(Summary = &quot;Create a new Record&quot;, Description = &quot;Async standard Insert record API&quot;, OperationId = &quot;Insert New Record&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+    public async Task&lt;string&gt; InsertTemplateList([FromBody] TemplateList record) {
+        try {
+            record.User = null;  //EntityState.Detached IDENTITY_INSERT is set to OFF
+            var data = new EASYDATACenterContext().TemplateLists.Add(record);
+            int result = await data.Context.SaveChangesAsync();
+            if (result &gt; 0) return JsonSerializer.Serialize(new DBResultMessage() { InsertedId = record.Id, Status = DBResult.success.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+            else return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+        } catch (Exception ex) {
+            return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = 0, ErrorMessage = ServerCoreFunctions.GetUserApiErrMessage(ex) });
+        }
+    }
+
+    /// &lt;summary&gt;
+    /// Operation: Update record by unique Id key Standard API for update existing record in DB table
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;record&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpPost(&quot;/TemplateList&quot;)]
+    [Consumes(&quot;application/json&quot;)]
+    [SwaggerOperation(Summary = &quot;Update Record&quot;, Description = &quot;Async standard Update record API&quot;, OperationId = &quot;Update Record&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+    public async Task&lt;string&gt; UpdateTemplateList([FromBody] TemplateList record) {
+        try {
+            var data = new EASYDATACenterContext().TemplateLists.Update(record);
+            int result = await data.Context.SaveChangesAsync();
+            if (result &gt; 0) return JsonSerializer.Serialize(new DBResultMessage() { InsertedId = record.Id, Status = DBResult.success.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+            else return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+        } catch (Exception ex) { return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = 0, ErrorMessage = ServerCoreFunctions.GetUserApiErrMessage(ex) }); }
+    }
+
+    /// &lt;summary&gt;
+    /// Operation: Delete record by unique Id key Standard API for delete existing record in DB table
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;id&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpDelete(&quot;/TemplateList/{id}&quot;)]
+    [Consumes(&quot;application/json&quot;)]
+    [SwaggerOperation(Summary = &quot;Delete Record&quot;, Description = &quot;Async standard Delete record API&quot;, OperationId = &quot;Delete Record&quot;, Tags = new[] { &quot;TemplateListApi&quot; })]
+    public async Task&lt;string&gt; DeleteTemplateList(string id) {
+        try {
+            if (!int.TryParse(id, out int Ids)) return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = 0, ErrorMessage = &quot;Id is not set&quot; });
+
+            TemplateList record = new() { Id = int.Parse(id) };
+
+            var data = new EASYDATACenterContext().TemplateLists.Remove(record);
+            int result = await data.Context.SaveChangesAsync();
+            if (result &gt; 0) return JsonSerializer.Serialize(new DBResultMessage() { InsertedId = record.Id, Status = DBResult.success.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+            else return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = result, ErrorMessage = string.Empty });
+        } catch (Exception ex) {
+            return JsonSerializer.Serialize(new DBResultMessage() { Status = DBResult.error.ToString(), RecordCount = 0, ErrorMessage = ServerCoreFunctions.GetUserApiErrMessage(ex) });
+        }
+    }
+}
+</code></pre>
+<h2 id="-1"><a class="header" href="#-1">}</a></h2>
+<p>using EASYDATACenter.DBModel;</p>
+<p>namespace EASYDATACenter.Controllers {</p>
+<pre><code>[ApiController]
+[Route(&quot;TemplateProcedure&quot;)]
+public class TemplateProcedureApi : ControllerBase {
+    /// &lt;summary&gt;
+    /// API With response from DATABASE STORED PROCEDURE Procedure use IN/OUT parameters In
+    /// Database User must have right for Execute procedure
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;unlockCode&quot;&gt;&lt;/param&gt;
+    /// &lt;param name=&quot;partNumber&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [AllowAnonymous]
+    [HttpGet(&quot;/TemplateProcedure/{UnlockCode}/{PartNumber}&quot;)]
+    public async Task&lt;string&gt; GetTemplateProcedure(string unlockCode, string partNumber) {
+        string data = string.Empty; List&lt;SqlParameter&gt; parameters = new(); bool allowed = false; bool catched = false;
+        try {
+            if (HttpContext.Connection.RemoteIpAddress != null) {
+                string clientIPAddr = System.Net.Dns.GetHostEntry(HttpContext.Connection.RemoteIpAddress).AddressList.First(x =&gt; x.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).ToString();
+                if (!string.IsNullOrWhiteSpace(clientIPAddr)) {
+                    parameters = new List&lt;SqlParameter&gt; {
+                    new SqlParameter { ParameterName = &quot;@unlockCode&quot;, Value = unlockCode },
+                    new SqlParameter { ParameterName = &quot;@partNumber&quot;, Value = partNumber },
+                    new SqlParameter { ParameterName = &quot;@ipAddress&quot;, Value = clientIPAddr },
+                    new SqlParameter { ParameterName = &quot;@allowed&quot; , Value = allowed, Direction = System.Data.ParameterDirection.Output} };
+
+                    data = new EASYDATACenterContext().Database.ExecuteSqlRaw(&quot;exec CheckUnlockKey @unlockCode, @partNumber , @ipAddress, @allowed output&quot;, parameters.ToArray()).ToString();
+                    allowed = bool.Parse(parameters[3].Value.ToString());
+                }
+            }
+        } catch { catched = true; }
+        try {
+            if (catched) {
+                parameters = new List&lt;SqlParameter&gt; {
+                new SqlParameter { ParameterName = &quot;@unlockCode&quot;, Value = unlockCode },
+                new SqlParameter { ParameterName = &quot;@partNumber&quot;, Value = partNumber },
+                new SqlParameter { ParameterName = &quot;@ipAddress&quot;, Value = &quot;Unknown&quot; },
+                new SqlParameter { ParameterName = &quot;@allowed&quot; , Value = allowed, Direction = System.Data.ParameterDirection.Output} };
+
+                data = new EASYDATACenterContext().Database.ExecuteSqlRaw(&quot;exec CheckUnlockKey @unlockCode, @partNumber , @ipAddress, @allowed output&quot;, parameters.ToArray()).ToString();
+                allowed = bool.Parse(parameters[3].Value.ToString());
+            }
+        } catch { }
+        return JsonSerializer.Serialize(allowed);
+    }
+
+    [AllowAnonymous]
+    [HttpPost(&quot;TemplateProcedure&quot;)]
+    [Consumes(&quot;application/json&quot;)]
+    public async Task&lt;string&gt; PostTemplateProcedure([FromBody] LicenseActivator record) {
+        string data = string.Empty; List&lt;SqlParameter&gt; parameters = new(); bool allowed = false; bool catched = false;
+        try {
+            if (HttpContext.Connection.RemoteIpAddress != null) {
+                string clientIPAddr = System.Net.Dns.GetHostEntry(HttpContext.Connection.RemoteIpAddress).AddressList.First(x =&gt; x.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork).ToString();
+                if (!string.IsNullOrWhiteSpace(clientIPAddr)) {
+                    parameters = new List&lt;SqlParameter&gt; {
+                    new SqlParameter { ParameterName = &quot;@unlockCode&quot;, Value = record.UnlockCode },
+                    new SqlParameter { ParameterName = &quot;@partNumber&quot;, Value = record.PartNumber },
+                    new SqlParameter { ParameterName = &quot;@ipAddress&quot;, Value = clientIPAddr },
+                    new SqlParameter { ParameterName = &quot;@allowed&quot; , Value = allowed, Direction = System.Data.ParameterDirection.Output} };
+
+                    data = new EASYDATACenterContext().Database.ExecuteSqlRaw(&quot;exec CheckUnlockKey @unlockCode, @partNumber , @ipAddress, @allowed output&quot;, parameters.ToArray()).ToString();
+                    allowed = bool.Parse(parameters[3].Value.ToString());
+                }
+            }
+        } catch { catched = true; }
+        try {
+            if (catched) {
+                parameters = new List&lt;SqlParameter&gt; {
+                    new SqlParameter { ParameterName = &quot;@unlockCode&quot;, Value = record.UnlockCode },
+                    new SqlParameter { ParameterName = &quot;@partNumber&quot;, Value = record.PartNumber },
+                    new SqlParameter { ParameterName = &quot;@ipAddress&quot;, Value = &quot;Unknown&quot; },
+                    new SqlParameter { ParameterName = &quot;@allowed&quot; , Value = allowed, Direction = System.Data.ParameterDirection.Output} };
+
+                data = new EASYDATACenterContext().Database.ExecuteSqlRaw(&quot;exec CheckUnlockKey @unlockCode, @partNumber , @ipAddress, @allowed output&quot;, parameters.ToArray()).ToString();
+                allowed = bool.Parse(parameters[3].Value.ToString());
+            }
+        } catch { }
+        return JsonSerializer.Serialize(allowed);
+    }
+}
+</code></pre>
+<p>}</p>
+<hr />
+<p>using EASYDATACenter.DBModel;</p>
+<p>namespace EASYDATACenter.Controllers {
+[Authorize]
+[ApiController]
+[Route(&quot;TemplateAnySProcedureData&quot;)]
+public class TemplateAnySProcedureDataListApi : ControllerBase {
+/// <summary>
+/// Gets the template any s procedure data list. Simple Call Procedure and the Table Result
+/// is Fill to List od Class Class must Have same Column Names as in SP result
+/// 'CollectionFromSql' and Your Class as Generic 'CollectionFromSql' is Extended for Main
+/// EASYDATACenter Schema If you implement other new schema, you must copy these extensions
+/// </summary>
+/// <returns></returns>
+[HttpGet(&quot;/TemplateAnySProcedureData&quot;)]
+public async Task<string> GetTemplateAnySProcedureDataList() {
+List<CustomString> data = new();
+data = new EASYDATACenterContext().CollectionFromSql<CustomString>(&quot;EXEC GetTables;&quot;);</p>
+<pre><code>        return JsonSerializer.Serialize(data, new JsonSerializerOptions() { ReferenceHandler = ReferenceHandler.IgnoreCycles, WriteIndented = true });
+    }
+}
+</code></pre>
+<h2 id="-2"><a class="header" href="#-2">}</a></h2>
+<p>namespace EASYDATACenter.DBModel {
+/// <summary>
+/// Template System Class, This Class has all DBLogic auto Fields and user join for simple
+/// creating system Only Rename for your new table
+/// !!! All Classes Are Generated Automatically For Backend Server And System Builder
+/// </summary>
+[Table(&quot;TemplateClassList&quot;)]
+[Index(&quot;Name&quot;, Name = &quot;IX_TemplateClassList&quot;, IsUnique = true)]
+public partial class TemplateClassList {
+[Key]
+public int Id { get; set; }</p>
+<pre><code>    [StringLength(50)]
+    [Unicode(false)]
+    public string Name { get; set; } = null!;
+
+    [Column(TypeName = &quot;text&quot;)]
+    public string? Description { get; set; }
+
+    public int UserId { get; set; }
+    public bool Default { get; set; }
+    public bool Active { get; set; }
+    public DateTime TimeStamp { get; set; }
+
+    [ForeignKey(&quot;UserId&quot;)]
+    [InverseProperty(&quot;TemplateClassLists&quot;)]
+    public virtual UserList User { get; set; } = null!;
+}
+</code></pre>
+<p>}</p>
+<hr />
+<p>using MimeKit;
+using EASYDATACenter.DBModel;</p>
+<p>namespace EASYDATACenter.Controllers {
+/// <summary>
+/// This is Template for Images API for Returning files Its standard using for WebPages or can
+/// be used for Document System Can be used for All file types
+/// </summary>
+[ApiController]
+[Route(&quot;TemplateImageApi/Image&quot;)]
+public class TemplateImageApi : ControllerBase {</p>
+<pre><code>    /// &lt;summary&gt;
+    /// Return Image by Primary Key
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;id&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpGet(&quot;/TemplateImageApi/Image/{id}&quot;)]
+    public async Task&lt;IActionResult&gt; GetSearchImageById(int? id = null) {
+        int recId; ImageGalleryList data = null;
+        if (!string.IsNullOrWhiteSpace(id.ToString()) &amp;&amp; int.TryParse(id.ToString(), out recId)) {
+            data = _dbContext.ImageGalleryLists.Where(a =&gt; a.Id == recId).FirstOrDefault();
+        }
+
+        if (data != null) { return File(data.Attachment, MimeTypes.GetMimeType(data.FileName), data.FileName); } else { return BadRequest(new { message = DBOperations.DBTranslate(&quot;BadRequest&quot;, &quot;en&quot;) }); }
+    }
+
+    /// &lt;summary&gt;
+    /// Return Image by Foreign Key / or Hidden Logic Previous Attackers
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;id&quot;&gt;      &lt;/param&gt;
+    /// &lt;param name=&quot;fileName&quot;&gt;&lt;/param&gt;
+    /// &lt;returns&gt;&lt;/returns&gt;
+    [HttpGet(&quot;/TemplateImageApi/Image/{id}/{filename}&quot;)]
+    public async Task&lt;IActionResult&gt; GetSearchImageByKeys(int? id = null, string fileName = null) {
+        int recId; ImageGalleryList data = null;
+        if (!string.IsNullOrWhiteSpace(id.ToString()) &amp;&amp; !string.IsNullOrWhiteSpace(fileName) &amp;&amp; int.TryParse(id.ToString(), out recId)) {
+            data = _dbContext.ImageGalleryLists.Where(a =&gt; a.Id == recId &amp;&amp; a.FileName.ToLower() == fileName.ToLower()).FirstOrDefault();
+        }
+
+        if (data != null) { return File(data.Attachment, MimeTypes.GetMimeType(data.FileName), data.FileName); } else { return BadRequest(new { message = DBOperations.DBTranslate(&quot;BadRequest&quot;, &quot;en&quot;) }); }
+    }
+
+    [HttpGet(&quot;/TemplateImageApi/RoomImage/{id}/{roomId}&quot;)]
+    public async Task&lt;IActionResult&gt; GetRoomImageByKeys(int? id = null, int? roomId = null) {
+        int hId; int rId; ImageGalleryList data = null;
+        if (int.TryParse(id.ToString(), out hId) &amp;&amp; int.TryParse(roomId.ToString(), out rId)) {
+            data = _dbContext.ImageGalleryLists.Where(a =&gt; a.Id == hId &amp;&amp; a.Id == rId).FirstOrDefault();
+        }
+
+        if (data != null) { return File(data.Attachment, MimeTypes.GetMimeType(data.FileName), data.FileName); } else { return BadRequest(new { message = DBOperations.DBTranslate(&quot;BadRequest&quot;, &quot;en&quot;) }); }
+    }
+}
+</code></pre>
+<h2 id="-3"><a class="header" href="#-3">}</a></h2>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="C#FormularesPrehledyPlneOkomentovane.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="C#WebSocketReseni.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="C#FormularesPrehledyPlneOkomentovane.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="C#WebSocketReseni.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

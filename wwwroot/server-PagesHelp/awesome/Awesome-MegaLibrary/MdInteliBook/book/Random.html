@@ -1,0 +1,936 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Random - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html" class="active"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="awesome-random-stuff"><a class="header" href="#awesome-random-stuff">Awesome Random Stuff</a></h1>
+<blockquote>
+<p>Collection of interesting &amp; awesome random stuff I find on the World Wide Web.</p>
+</blockquote>
+<h3 id="december-10-2021"><a class="header" href="#december-10-2021">December 10, 2021</a></h3>
+<ul>
+<li><a href="https://tools.airboxr.com/?ref=producthunt">The Ultimate Google Sheets Toolkit</a> - A curated list of Google Sheets resources to supercharge your analysis, manage your workflow, or build expertise in advanced analytics.</li>
+</ul>
+<h3 id="november-17-2021"><a class="header" href="#november-17-2021">November 17, 2021</a></h3>
+<ul>
+<li><a href="https://regexlearn.com/">RegexLearn - Step by step, from zero to advanced.</a> - Learn RegEx, step by step, zero to advanced. Playground and Cheatsheet.</li>
+</ul>
+<h3 id="october-26-2021"><a class="header" href="#october-26-2021">October 26, 2021</a></h3>
+<ul>
+<li><a href="https://calibreapp.com/tools/core-web-vitals-checker">Core Web Vitals Checker | Calibre</a> - Check if your site meets the Core Web Vitals assessment in one click.</li>
+</ul>
+<h3 id="october-18-2021"><a class="header" href="#october-18-2021">October 18, 2021</a></h3>
+<ul>
+<li><a href="https://calculateaspectratio.com/">Aspect Ratio Calculator - 4:3, 16:9, 21:9 (Ratio calculator)</a> - Calculate the Aspect Ratio (ARC) here by entering your in pixel or ratio ✅. Change the image aspect ratio via this Ratio Calculator ✅. The pixel aspect calculator makes it extremely easy to change any &quot;W:H&quot; format with custom a width or height.</li>
+</ul>
+<h3 id="october-14-2021"><a class="header" href="#october-14-2021">October 14, 2021</a></h3>
+<ul>
+<li><a href="https://3dicons.co/?ref=producthunt">3dicons - Open source 3D icon library</a> - 1440+ beautifully crafted open-source 3D icons. You can use completely free and without attribution for personal or commercial project</li>
+<li><a href="https://redact.photo/">redact.photo • Free and private image redaction in the browser</a> - Free and private image redaction in the browser</li>
+<li><a href="https://hashtagsgenerator.net/">Hashtag Generator - Best Hashtags For Instagram and TikTok</a> - The hashtags generator for Instagram and TikTok will help you to generate the most popular hashtags based upon your keyword.</li>
+<li><a href="https://whats.new/shortcuts/">.new - Google Registry</a> - Browse the full list of .new shortcuts available today from Adobe, Spotify, and many more.</li>
+</ul>
+<h3 id="october-13-2021"><a class="header" href="#october-13-2021">October 13, 2021</a></h3>
+<ul>
+<li><a href="https://tinyfunction.com/">Tiny Function</a> - Fastest way to create cloud functions. Write your function, deploy and call them from anywhere.</li>
+</ul>
+<h3 id="october-12-2021"><a class="header" href="#october-12-2021">October 12, 2021</a></h3>
+<ul>
+<li><a href="https://lynnandtonic.com/archive/">Site Archive - Lynn Fisher</a> - Previous and archived versions of lynnandtonic.com.</li>
+</ul>
+<h3 id="october-11-2021"><a class="header" href="#october-11-2021">October 11, 2021</a></h3>
+<ul>
+<li><a href="https://culdesac.com/">Cities For People Not Cars | Culdesac</a> - Culdesac builds car-free neighborhoods from scratch. Come live at the first car-free neighborhood in the US - Culdesac Tempe (Phoenix) - 1000 people, 0 cars.</li>
+</ul>
+<h3 id="october-7-2021"><a class="header" href="#october-7-2021">October 7, 2021</a></h3>
+<ul>
+<li><a href="https://chilipepper.io/">Chilipepper</a> - Spicy Notion plugins &amp; extensions</li>
+</ul>
+<h3 id="october-5-2021"><a class="header" href="#october-5-2021">October 5, 2021</a></h3>
+<ul>
+<li><a href="https://fly.io/">Fly.io</a> - Deploy App Servers close to Your Users. Make your applications 80% faster by running on physical servers in cities where your users are.</li>
+</ul>
+<h3 id="september-27-2021"><a class="header" href="#september-27-2021">September 27, 2021</a></h3>
+<ul>
+<li><a href="https://onfire.craftwork.design/?ref=producthunt">On Fire illustrations</a> - High-quality interface assets for designers and startup creatives</li>
+<li><a href="https://www.coldemailguide.co/?ref=producthunt">The Best Cold Email Guide</a> - Get tactical advice on 11 pages of no-bs content. See real-life examples from many industries. Learn from 48 case studies from idea-phase to scaling-phase.</li>
+</ul>
+<h3 id="september-23-2021"><a class="header" href="#september-23-2021">September 23, 2021</a></h3>
+<ul>
+<li><a href="https://railway.app/">Railway</a> - Railway is an infrastructure platform where you can provision infrastructure, develop with that infrastructure locally, and then deploy to the cloud.</li>
+<li><a href="https://motion.dev/">Motion One</a> - The Web Animations API for everyone</li>
+</ul>
+<h3 id="september-22-2021"><a class="header" href="#september-22-2021">September 22, 2021</a></h3>
+<ul>
+<li><a href="https://checklistgenerator.co/">Checklist generator</a> - Create checklists for free and host them wherever you want.</li>
+</ul>
+<h3 id="september-14-2021"><a class="header" href="#september-14-2021">September 14, 2021</a></h3>
+<ul>
+<li><a href="https://osome.com/sg/">Osome helps businesses in Singapore to outsource their paperwork</a> - Osome helps foreign and Singaporean entrepreneurs to manage their businesses. Register and get your new company operational with our certified agents backed by modern technology</li>
+</ul>
+<h3 id="september-12-2021"><a class="header" href="#september-12-2021">September 12, 2021</a></h3>
+<ul>
+<li><a href="https://toolkit.addy.codes/">Web Designer &amp; Developer Toolkit by Addy Codes – Curated tools &amp; resources for people who make websites</a> - Curated tools &amp; resources for people who make websites</li>
+</ul>
+<h3 id="september-10-2021"><a class="header" href="#september-10-2021">September 10, 2021</a></h3>
+<ul>
+<li><a href="https://www.headers.me/">Headers.me | Cover images that get you followers</a> - Create matching cover images for the social media platforms you love without the need of any complex design tools or templates. #twitter</li>
+<li><a href="https://andreasbm.github.io/web-skills/">Web Skills</a> - A visual overview of useful skills to learn as a web developer</li>
+<li><a href="https://www.techworld-with-nana.com/devops-bootcamp">DevOps Bootcamp | Techworld with Nana</a> - Become a Devops engineer | 6-month program to start your career as DevOps engineer</li>
+</ul>
+<h3 id="september-9-2021"><a class="header" href="#september-9-2021">September 9, 2021</a></h3>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2021/08/state-management-nextjs/">State Management In Next.js — Smashing Magazine</a> - By combining some React APIs, we can accurately manage “simple” states. With Next.js though, we can quickly find situations where we need to accommodate many other requirements. Let’s have a look at some patterns to accomplish all that.</li>
+</ul>
+<h3 id="september-8-2021"><a class="header" href="#september-8-2021">September 8, 2021</a></h3>
+<ul>
+<li><a href="https://www.radix-ui.com/">The foundation for your design system</a> - A suite of components, colors, and icons for building high-quality React design systems and web apps.</li>
+<li><a href="https://stitches.dev/">Stitches — CSS-in-JS with near-zero runtime</a> - CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience, by Modulz.</li>
+</ul>
+<h3 id="september-7-2021"><a class="header" href="#september-7-2021">September 7, 2021</a></h3>
+<ul>
+<li><a href="https://www.mixfont.com/shadows?ref=producthunt">Mixfont | A modern font generator</a> - Whether you're designing a website or writing a paper, Mixfont is simple way to choose beautiful fonts that work well together.</li>
+<li><a href="https://readyplayer.me/avatar">Ready Player Me - Create a Full-Body 3D Avatar From a Photo</a> - Full-body character creator for the metaverse. Make a 3D avatar from a photo and use it in apps and games like VRChat and LIV</li>
+<li><a href="https://www.sudtipos.com/font/dystopian">Dystopian font family · Sudtipos.com</a> - Discover everything about Dystopian font family. A great colorfont, trochut, sudtipos, sans, mondrian, bauhaus, vanguardia, design, art, geometric, futura font family available for Broadcasting, Desktop, Digital Ads, Epub, MobileApp, WebApp, Webfont.</li>
+</ul>
+<h3 id="september-6-2021"><a class="header" href="#september-6-2021">September 6, 2021</a></h3>
+<ul>
+<li><a href="https://www.labnol.org/apps/calendar.html?ref=producthunt&amp;ck_subscriber_id=989097516">“Add to Calendar” Links for Google Calendar, Outlook, ICS</a> - Create Add to Calendar links for adding event links in emails, websites and newsletters. Works with Google Calendar, Microsoft Office 365, Outlook, Yahoo Calendar and Apple iCalendar .ics files.</li>
+<li><a href="https://naevner.com/?ref=producthunt">Nævner</a> - Natural language color descriptions, generated from hex color codes. Press: R to pick a random color.</li>
+<li><a href="https://mubert.com/render/Playlists/Stock-music">Stock-music Royalty-Free Music - 300k+ tracks | Mubert Render</a> - Looking For Product-Hunt Royalty-Free Music For Your Project? ⚡ Come Explore Our Vast Array Of Royalty-Free Product-Hunt Music In Our Limitless Library ⏩</li>
+<li><a href="https://slantt.co/editor/tiles">Slantt.co</a> - Design professional isometric illustrations for your website in minutes</li>
+<li><a href="https://twittrgems.upskillindia.org/?ref=producthunt">Twittr Gems - All Resources</a> - Browse The Best Twitter Threads From Your favourite Creators</li>
+</ul>
+<h3 id="september-2-2021"><a class="header" href="#september-2-2021">September 2, 2021</a></h3>
+<ul>
+<li><a href="https://reqres.in/">Reqres - A hosted REST-API ready to respond to your AJAX requests</a> - A hosted REST-API ready to respond to your AJAX requests</li>
+</ul>
+<h3 id="september-1-2021"><a class="header" href="#september-1-2021">September 1, 2021</a></h3>
+<ul>
+<li><a href="https://programmerhumor.io/">ProgrammerHumor.io - Best programming memes on the internet</a> - Only a few can understand the humor of programmers, are you a programmer? Checkout the best programming memes on ProgrammerHumor.io</li>
+<li><a href="https://thecodinglove.com/">The Coding Love - Programmer humor: gifs, memes, jokes</a> - The Coding Love - Programmer humor: gifs, memes, jokes</li>
+<li><a href="https://jotai.pmnd.rs/">Jotai</a> - Primitive and flexible state management for React</li>
+</ul>
+<h3 id="august-26-2021"><a class="header" href="#august-26-2021">August 26, 2021</a></h3>
+<ul>
+<li><a href="https://ray.so/">Create beautiful images of your code</a> - Turn your code into beautiful images. Choose from a range of syntax colors, hide or show the background, and toggle between a dark and light window. #code #screenshot</li>
+<li><a href="https://poet.so/">Poet.so | Create Beautiful Images of Twitter Posts</a> - Capture and share Twitter posts as beautiful images. #screenshot #twitter</li>
+</ul>
+<h3 id="august-25-2021"><a class="header" href="#august-25-2021">August 25, 2021</a></h3>
+<ul>
+<li><a href="https://www.tubebuddy.com/">TubeBuddy</a> - The Premier YouTube Channel Management Toolkit</li>
+</ul>
+<h3 id="august-24-2021"><a class="header" href="#august-24-2021">August 24, 2021</a></h3>
+<ul>
+<li><a href="https://poet.so/">Poet.so | Create Beautiful Images of Twitter Posts</a> - Capture and share Twitter posts as beautiful images. </li>
+</ul>
+<h3 id="august-18-2021"><a class="header" href="#august-18-2021">August 18, 2021</a></h3>
+<ul>
+<li><a href="https://makerlead.com/?ref=producthunt">MakerLead — Discover new startups making real revenue</a> - Analyze Stripe-verified revenue metrics from early stage startups #open</li>
+<li><a href="https://www.heycopy.io/?ref=producthunt">HeyCopy</a> - Become a better writer with a Copy Buddy. #design</li>
+<li><a href="https://snackthis.co/">Create stunning content</a> - Create stunning content that drives more engagement. #video</li>
+<li><a href="https://www.roastmylandingpage.com/">Roast My Landing Page: increase your landing page conversion</a> - Roast My Landing Page: increase your landing page conversion with an action-based video roast from a conversion rate expert. #landingpage</li>
+</ul>
+<h3 id="august-13-2021"><a class="header" href="#august-13-2021">August 13, 2021</a></h3>
+<ul>
+<li><a href="https://openby.design/">Openby.design</a> - Free &amp; Open Source Design Assets Custom crafted free UI design resources, for personal and commercial projects. No attribution is required. #free #foss</li>
+<li><a href="https://github.com/christiannaths/Redacted-Font">christiannaths/redacted-font: Keep your wireframes free of distracting Lorem Ipsum.</a> - Keep your wireframes free of distracting Lorem Ipsum. - christiannaths/redacted-font: Keep your wireframes free of distracting Lorem Ipsum.</li>
+</ul>
+<h3 id="july-27-2021"><a class="header" href="#july-27-2021">July 27, 2021</a></h3>
+<ul>
+<li><a href="https://justfields.com/">Justfields</a> - The headacheless CMS for small projects. #awesome #jamstack </li>
+<li><a href="https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/">A Complete Guide To Accessible Front-End Components — Smashing Magazine</a> - An up-to-date collection of accessible front-end components: accordions, form styles, dark mode, data charts, date pickers, form styles, navigation menu, modals, radio buttons, &quot;skip&quot; links, SVGs, tabs, tables, toggles and tooltips.</li>
+</ul>
+<h3 id="july-17-2021"><a class="header" href="#july-17-2021">July 17, 2021</a></h3>
+<ul>
+<li><a href="https://wangchujiang.com/github-rank/">GitHub Users Global Ranking</a> - By followers.</li>
+</ul>
+<h3 id="july-9-2021"><a class="header" href="#july-9-2021">July 9, 2021</a></h3>
+<ul>
+<li><a href="https://hackmd.io/?ref=producthunt">HackMD - Collaborative Markdown Knowledge Base</a> - Best way to write and share your knowledge in markdown.</li>
+</ul>
+<h3 id="june-16-2021"><a class="header" href="#june-16-2021">June 16, 2021</a></h3>
+<ul>
+<li><a href="https://www.cutout.pro/cartoonAvatar.html">Cartoon Selfie-Cutout.pro</a> - cutout.pro -  online AI neural style transfer with one-click, generating avatars, portraits, family photos, and videos with styles including  impressionism, oil painting, watercolor, ink and other styles. Ice movement, water flow, flames, metal, any picture style can be transferred</li>
+</ul>
+<h3 id="june-5-2021"><a class="header" href="#june-5-2021">June 5, 2021</a></h3>
+<ul>
+<li><a href="https://codepunkt.de/writing/generating-beautiful-open-graph-images-with-nodejs/">Generating beautiful Open Graph images with Node.js | Codepunkt</a> - Open graph images provide nice previews when sharing your website. This article explains how to automatically generate open graph images with Node.js and integrate the results into a Gatsby site.</li>
+</ul>
+<h3 id="may-30-2021"><a class="header" href="#may-30-2021">May 30, 2021</a></h3>
+<ul>
+<li><a href="https://boringavatars.com/">Avatar generator playground - Boring Avatars</a> - Boring avatars is a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette.</li>
+<li><a href="https://gradient-king.vercel.app/">Gradient King</a> - Never ever run out of gradients! </li>
+</ul>
+<h3 id="may-29-2021"><a class="header" href="#may-29-2021">May 29, 2021</a></h3>
+<ul>
+<li><a href="https://zzamboni.org/post/using-spoons-in-hammerspoon/#:~:text=To%20install%20the%20spoon%2C%20download,hammerspoon%2FSpoons%2F%20.">HammerSpoon Intro:</a> - Using Spoons in Hammerspoon</li>
+</ul>
+<h3 id="may-26-2021"><a class="header" href="#may-26-2021">May 26, 2021</a></h3>
+<ul>
+<li><a href="https://bloby.co/">Bloby</a> - Generate random SVG shapes with Bloby.</li>
+</ul>
+<h3 id="may-17-2021"><a class="header" href="#may-17-2021">May 17, 2021</a></h3>
+<ul>
+<li><a href="https://firefoo.app/">Firefoo</a> - A Powerful GUI Client for Firebase Firestore.</li>
+</ul>
+<h3 id="may-15-2021"><a class="header" href="#may-15-2021">May 15, 2021</a></h3>
+<ul>
+<li><a href="https://tweetable-charts.agiliq.com/">📊 Tweetable Charts</a> - Create Text based Charts and Visuals you can embed on Twitter.</li>
+<li><a href="https://changaco.oy.lc/unicode-progress-bars/">Unicode progress bars</a> - Create a text based progress bar.</li>
+</ul>
+<h3 id="may-13-2021"><a class="header" href="#may-13-2021">May 13, 2021</a></h3>
+<ul>
+<li><a href="https://www.figmaster.co/">Figmaster</a> - Figmaster plugin is a workbook for Figma that contains a large set of exercises on how to build your modern design system from scratch. #design</li>
+<li><a href="https://iconoir.com/">Iconoir | #Free #Icons</a> - The Simple and Definitive hand-crafted SVG Icons Library.</li>
+</ul>
+<h3 id="may-10-2021"><a class="header" href="#may-10-2021">May 10, 2021</a></h3>
+<ul>
+<li><a href="https://www.brandbird.app/">BrandBird | Brand Your Twitter Visual Content</a> - Brand your Twitter content in seconds with BrandBird. Copy/Paste screenshots &amp; auto-resize images to fit the official Twitter guidelines and match your unique branding as a creator.</li>
+<li><a href="https://landingpage.fyi/landing-page-checklist.html#why">Landing Page Checklist | 100+ Tools to Build a Landing Page</a> - The world of Landing Pages is constantly changing. That's why you need to change along. We gathered all tools you need to build your Landing Page in 2021. Check it out!</li>
+</ul>
+<h3 id="may-9-2021"><a class="header" href="#may-9-2021">May 9, 2021</a></h3>
+<ul>
+<li><a href="https://github.com/nextapps-de/winbox">nextapps-de/winbox: WinBox is a professional HTML5 window manager for the web: lightweight, outstanding performance, no dependencies, fully customizable, open source!</a> - WinBox is a professional HTML5 window manager for the web: lightweight, outstanding performance, no dependencies, fully customizable, open source! - nextapps-de/winbox</li>
+<li><a href="https://weareskribbl.com/?ref=producthunt">Skribbl | Free, Hand-Drawn Illustrations</a> - Free, hand-drawn illustrations brought to you by a growing community of aspiring creatives. You can use our free illustrations for any purpose, without attribution.</li>
+</ul>
+<h3 id="may-7-2021"><a class="header" href="#may-7-2021">May 7, 2021</a></h3>
+<ul>
+<li><a href="https://sli.dev/">Slidev</a> - Presentation slides for developers</li>
+</ul>
+<h3 id="may-4-2021"><a class="header" href="#may-4-2021">May 4, 2021</a></h3>
+<ul>
+<li><a href="https://www.snoweb-svg.com/en/">Free SVG collections for web | Snoweb</a> - Get free collections of SVGs animated built in HTML and CSS.    Choose and embed web-optimized SVGs in your HTML or with Django.</li>
+<li><a href="https://headlessdropshipping.com/">Launch your own dropshipping store with Next.js, Printful, and Snipcart</a> - Build your own Headless eCommerce storefront with Next.js and Snipcart, and deliver swag powered by Printful. End to end commerce, styled using TailwindCSS and deployed on Vercel.</li>
+<li><a href="https://www.printful.com/">Printful: On-Demand Product Fulfillment &amp; Warehousing Services</a> - Design and sell custom products online with print-on-demand drop shipping. Sign up for free and start an online store without inventory.</li>
+</ul>
+<h3 id="may-3-2021"><a class="header" href="#may-3-2021">May 3, 2021</a></h3>
+<ul>
+<li><a href="https://readme.so/editor">readme.so - Easiest Way to Create A README</a> - Use readme.so's markdown editor and ready made templates to easily create a simple README for your repositories</li>
+</ul>
+<h3 id="may-1-2021"><a class="header" href="#may-1-2021">May 1, 2021</a></h3>
+<ul>
+<li><a href="https://generated.photos/face-generator">Face Generator – Generate Faces Online Using AI</a> - Create a face using our AI face generator. Choose age, head pose, skin tone, emotion, sex and generate a baby or adult face online.</li>
+<li><a href="https://github.com/QingWei-Li/notea">QingWei-Li/notea: </a> - 📒 Self hosted note taking app stored on S3 + Vercel + Netlify.</li>
+<li><a href="https://emaily.app/">Emaily: Create a ready-to-send emails</a> - Emaily is a service that writes text for emails instead of you.</li>
+</ul>
+<h3 id="april-29-2021"><a class="header" href="#april-29-2021">April 29, 2021</a></h3>
+<ul>
+<li><a href="https://iconic.app/">Iconic — Free “do wtf you want with” pixel-perfect icons</a> - Free, “do wtf you want with” pixel-perfect icons. New icons added every week. #icons #free </li>
+<li><a href="https://haydencleary.com/en/blog/how-to-convince-your-boss-to-use-tailwind-css">How to convince your boss to use Tailwind CSS | Hayden Cleary</a> - Everything you need to adopt the hot new CSS framework in your company.</li>
+</ul>
+<h3 id="april-16-2021"><a class="header" href="#april-16-2021">April 16, 2021</a></h3>
+<ul>
+<li><a href="https://bridgezero.com/">BridgeZero - Compare Visa Programs</a> - A ranking of the world's best visa and residency programs.</li>
+</ul>
+<h3 id="april-14-2021"><a class="header" href="#april-14-2021">April 14, 2021</a></h3>
+<ul>
+<li><a href="https://uppbeat.io/">Free Music For YouTube Videos &amp; Creators • Uppbeat</a> - Download the best copyright free music from the world's hottest beatmakers and indie artists. Create your free account &amp; start downloading now. #music #audio</li>
+</ul>
+<h3 id="april-2-2021"><a class="header" href="#april-2-2021">April 2, 2021</a></h3>
+<ul>
+<li><a href="https://www.conic.style/">Conic.css</a> - Nice, simple conic gradients.</li>
+</ul>
+<h3 id="march-26-2021"><a class="header" href="#march-26-2021">March 26, 2021</a></h3>
+<ul>
+<li><a href="https://approximated.app/">Approximated - The API for your virtual hosts</a> - Add custom domains &amp; subdomains to any app with one easy API.</li>
+<li><a href="https://approximated.app/">Approximated - The API for your virtual hosts</a> - Add custom domains &amp; subdomains to any app with one easy API. #SaaS #SSL</li>
+</ul>
+<h3 id="march-23-2021"><a class="header" href="#march-23-2021">March 23, 2021</a></h3>
+<ul>
+<li><a href="https://www.tabextend.com/pricing">tabExtend</a> - Clear and save your tabs in an efficient way. #Design #icons #gradient #faq</li>
+<li><a href="https://www.tabextend.com/">tabExtend - Clear and save your tabs in an efficient way</a> - Be more productive by quickly decluttering your browser. Use drag and drop to clear your tabs or one-click save them all. Add notes and to-dos, save text-snippets, sync and share all in your new tab</li>
+<li><a href="https://cryptii.com/">Modular conversion, encoding and encryption online — Cryptii</a> - Web app offering modular conversion, encoding and encryption online. Translations are done in the browser without any server interaction. This is an Open Source project, code licensed MIT.</li>
+</ul>
+<h3 id="february-24-2021"><a class="header" href="#february-24-2021">February 24, 2021</a></h3>
+<ul>
+<li><a href="https://monsterbrain.github.io/keyboard-shortcut-image-generator/">Key-Short-Image</a> - Keyboard Shortcut Image Generator</li>
+</ul>
+<h3 id="february-20-2021"><a class="header" href="#february-20-2021">February 20, 2021</a></h3>
+<ul>
+<li><a href="https://tripetto.com/no-code-calculations-with-the-calculator-block/?ref=producthunt">No-code calculations with the calculator block - Tripetto</a> - Make quizzes, order forms, exams and more with no-code calculations. All without any coding in Tripetto’s calculator block. #design</li>
+</ul>
+<h3 id="february-4-2021"><a class="header" href="#february-4-2021">February 4, 2021</a></h3>
+<ul>
+<li><a href="https://emailmastery.org/spotlights">Spotlights - Email Mastery</a> - The best brand emails. Annotated.</li>
+</ul>
+<h3 id="february-3-2021"><a class="header" href="#february-3-2021">February 3, 2021</a></h3>
+<ul>
+<li><a href="https://glassmorphism.com/?ref=producthunt">Glassmorphism CSS Generator</a> - Glassmorphism is a unified name for the popular Frosted Glass aesthetic.</li>
+<li><a href="https://www.thiscodeworks.com/extension/vscode?ref=producthunt">Save Code VS Code Extension</a> - Save code snippets in the cloud &amp; organize them into collections. Using our Chrome &amp; VS Code extensions you can save code snippets online with just one-click!</li>
+</ul>
+<h3 id="february-2-2021"><a class="header" href="#february-2-2021">February 2, 2021</a></h3>
+<ul>
+<li><a href="https://sleeknote.com/">Sleeknote</a> - A Popup Builder. #copy #marketing #landingpage</li>
+</ul>
+<h3 id="february-1-2021"><a class="header" href="#february-1-2021">February 1, 2021</a></h3>
+<ul>
+<li><a href="https://www.programmableweb.com/apis/directory">API Directory | ProgrammableWeb</a> - View our API Directory, the largest Application Programming Interface repository on the web</li>
+</ul>
+<h3 id="january-31-2021"><a class="header" href="#january-31-2021">January 31, 2021</a></h3>
+<ul>
+<li><a href="https://tweetpik.com/?ref=producthunt">TweetPik</a> - Convert Tweets to Images SVG, PNG and JPG #landingpage #perf</li>
+<li><a href="https://better-twitter-dm-link.vercel.app/">Better Twitter DM Link</a> - A tool to help you create Twitter DM links with prefilled or custom messages.</li>
+</ul>
+<h3 id="january-29-2021"><a class="header" href="#january-29-2021">January 29, 2021</a></h3>
+<ul>
+<li><a href="https://uppbeat.io/">Free Music For YouTube Videos &amp; Creators • Uppbeat</a> - Download the best copyright free music from the world's hottest beatmakers and indie artists. Create your free account &amp; start downloading now. #music #audio</li>
+<li><a href="https://www.gleek.io/?ref=producthunt">Gleek.io</a> - Diagram maker for developers</li>
+<li><a href="https://coverr.co/?ref=producthunt">Free Stock Footage | Royalty Free Videos for Download | Coverr</a> - Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project. No attribution required.</li>
+<li><a href="https://jakeprins.com/blog/the-best-places-to-post-your-startup">The Best Places to Post Your Startup</a> - I write articles and make digital products like RaterFox, React Milkshake, MakerMove, FlowReads, RemoteRocket and the Serverless SaaS Boilerplate</li>
+</ul>
+<h3 id="january-27-2021"><a class="header" href="#january-27-2021">January 27, 2021</a></h3>
+<ul>
+<li><a href="https://remarkable.com/">reMarkable</a> - Replace your notebooks and printed documents with the only tablet that feels like paper.</li>
+<li><a href="https://www.lg.com/us/monitors/lg-49WL95C-W-ultrawide-monitor?cmpid=social%7CHE%7CMonitor%7CPROJ_IRM%7C49WL95C%7CYoutube%7CAliAbdaal&amp;utm_source=Youtube&amp;utm_medium=IRM&amp;utm_campaign=49WL95C%7CAliAbdaal">LG 49WL95C-W </a> - LG 49WL95C-W 49 Inch 32:9 UltraWide Dual QHD IPS Curved LED Monitor with HDR 10 (49WL95C-W). #led #office #hardware</li>
+</ul>
+<h3 id="january-22-2021"><a class="header" href="#january-22-2021">January 22, 2021</a></h3>
+<ul>
+<li><a href="https://studio.polotno.dev/?ref=producthunt">Polotno Studio - Make graphical designs</a> - Free online design editor. Create images for social media, youtube previews, facebook covers</li>
+</ul>
+<h3 id="january-20-2021"><a class="header" href="#january-20-2021">January 20, 2021</a></h3>
+<ul>
+<li><a href="https://inmagik.it/blog/use-eazy-auth">use-eazy-auth: a library for simple auth management in React | Inmagik homepage</a> - INMAGIK is an indipendent software development agency shipping open source based solutions for information management and visualization.</li>
+</ul>
+<h3 id="january-19-2021"><a class="header" href="#january-19-2021">January 19, 2021</a></h3>
+<ul>
+<li><a href="https://staff.design/wilson-miner">Wilson Miner · Staff Design</a> - Navigating the individual contributor career path #design</li>
+<li><a href="https://cloudlyn.com/">Cloudlyn</a> - The cloud for Devops &amp; Microservices #docker</li>
+</ul>
+<h3 id="january-18-2021"><a class="header" href="#january-18-2021">January 18, 2021</a></h3>
+<ul>
+<li><a href="https://teenyicons.com/?ref=builtwithtailwind.com">Teenyicons — Tiny minimal 1px icons</a> - An elegant icon set by Anja van Staden with more than a thousand icons.</li>
+</ul>
+<h3 id="january-14-2021"><a class="header" href="#january-14-2021">January 14, 2021</a></h3>
+<ul>
+<li><a href="https://hypercolor.dev/#gradients">Hypercolor - Tailwind CSS Gradient Palette</a> - A curated collection of beautiful premade gradients using default colors from the Tailwind CSS library.</li>
+<li><a href="https://github.com/webextension-toolbox/webextension-toolbox">webextension-toolbox/webextension-toolbox: Small CLI toolbox for cross-browser WebExtension development</a> - Small CLI toolbox for cross-browser WebExtension development - webextension-toolbox/webextension-toolbox</li>
+<li><a href="https://github.com/extend-chrome/js-react-boilerplate">extend-chrome/js-react-boilerplate: Chrome extension boilerplate with JavaScript and React</a> - Chrome extension boilerplate with JavaScript and React - extend-chrome/js-react-boilerplate</li>
+<li><a href="https://github.com/extend-chrome?type=source">@extend-chrome</a> - Excellent Chrome extension resources for developers.</li>
+</ul>
+<h3 id="january-13-2021"><a class="header" href="#january-13-2021">January 13, 2021</a></h3>
+<ul>
+<li><a href="https://a11y.coffee/">A11y Coffee</a> - An intro to what web accessibility is, why it's important, and the guiding principles behind accessibility standards.</li>
+<li><a href="https://bestofjs.org/">Best of JavaScript</a> - Check out the most popular open-source projects and the latest trends about the web platform and Node.js.</li>
+</ul>
+<h3 id="january-8-2021"><a class="header" href="#january-8-2021">January 8, 2021</a></h3>
+<ul>
+<li><a href="https://metrics.lecoq.io/">Metrics</a> - An image generator with 20+ metrics about your GitHub account such as activity, community, repositories, coding habits, website performances, music played, starred topics, etc. that you can put on your profile or elsewhere !</li>
+</ul>
+<h3 id="january-7-2021"><a class="header" href="#january-7-2021">January 7, 2021</a></h3>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/optimize-vscode-performance-best-extensions/">VS Code Performance – How to Optimize Visual Studio Code and Choose the &quot;Best&quot; Extensions</a> - Eperf</li>
+</ul>
+<h3 id="january-5-2021"><a class="header" href="#january-5-2021">January 5, 2021</a></h3>
+<ul>
+<li><a href="https://www.svgrepo.com/?ck_subscriber_id=193935667">SVG Repo - Free SVG Vectors and Icons</a> - Free Vectors and Icons in SVG format. ✅ Download free mono or multi color vectors for commercial use. Search in 300.000+ Free SVG Vectors and Icons. #svg #icons #free</li>
+</ul>
+<h3 id="december-28-2020"><a class="header" href="#december-28-2020">December 28, 2020</a></h3>
+<ul>
+<li><a href="https://tally.so/">Tally forms</a> - The simplest way to create beautiful forms &amp; surveys, for free. Without knowing how to code! #design #free</li>
+</ul>
+<h3 id="december-26-2020"><a class="header" href="#december-26-2020">December 26, 2020</a></h3>
+<ul>
+<li><a href="https://www.a11yproject.com/">Home - The A11Y Project</a> - The A11Y Project is a community-driven effort to make digital accessibility easier.</li>
+</ul>
+<h3 id="december-21-2020"><a class="header" href="#december-21-2020">December 21, 2020</a></h3>
+<ul>
+<li><a href="https://rihlinator.timo.sh/">Rihlinator</a> - Beautiful letter design</li>
+<li><a href="https://moiva.io/?ck_subscriber_id=478721850">Moiva.io</a> - Javascript libraries and frameworks comparison side by side. Visual with charts and graphs. Multiple metrics. Data from Github, NPM, Google Trends, ThoughtWorks Tech Radar, etc.</li>
+<li><a href="https://pstunnel.com/">PS Tunnel</a> - Edit Shopify images in Photoshop #tailwind</li>
+</ul>
+<h3 id="december-15-2020"><a class="header" href="#december-15-2020">December 15, 2020</a></h3>
+<ul>
+<li><a href="https://whattotweet.com/">What to Tweet?</a> - Ideas on what to tweet.</li>
+<li><a href="https://coverart.xyz/">Cover Art</a> - Discover the world’s best podcast cover art</li>
+</ul>
+<h3 id="december-13-2020"><a class="header" href="#december-13-2020">December 13, 2020</a></h3>
+<ul>
+<li><a href="https://seoasked.com/?ref=producthunt">Seoasked.com</a> - Archiving Google answers about SEO</li>
+</ul>
+<h3 id="december-9-2020"><a class="header" href="#december-9-2020">December 9, 2020</a></h3>
+<ul>
+<li><a href="https://typefully.app/?ref=producthunt">Typefully</a> - Write great Twitter threads..</li>
+<li><a href="https://linear.app/">Linear</a> - Linear helps high-performing teams execute faster and build products now with roadmap, customizable views, list controls, sorting options and an enhanced sub-issue editor.  #Desgin #Gradients</li>
+</ul>
+<h3 id="december-8-2020"><a class="header" href="#december-8-2020">December 8, 2020</a></h3>
+<ul>
+<li><a href="https://datagifmaker.withgoogle.com/">Data Gif Maker</a> - I’ve created an animated GIF using Data Gif Maker by Google News Labs. Create your own at datagifmaker.withgoogle.com</li>
+</ul>
+<h3 id="december-5-2020"><a class="header" href="#december-5-2020">December 5, 2020</a></h3>
+<ul>
+<li><a href="https://devicon.dev/">DEVICON | All programming languages and development tools related icons font</a> - devicon aims to gather all logos representing development languages and tools in one font.</li>
+<li><a href="https://checklistgenerator.co/">Checklist generator</a> - Create checklists for free and host them wherever you want.</li>
+</ul>
+<h3 id="december-4-2020"><a class="header" href="#december-4-2020">December 4, 2020</a></h3>
+<ul>
+<li><a href="https://tryca.st/">Welcome to Cast</a> - Studio. Editor. Host. — Everything for a podcast needs no downloads, no guest logins — only 10 USD a month.</li>
+<li><a href="https://usemysound.com/?ref=producthunt#rec254199922">UseMySound</a> - Royalty free music weekly (music for videos, ads, games &amp; podcasts).</li>
+<li><a href="https://domchristie.github.io/turndown/">Turndown Demo</a> - Configurable HTML to Markdown convertor.</li>
+</ul>
+<h3 id="december-3-2020"><a class="header" href="#december-3-2020">December 3, 2020</a></h3>
+<ul>
+<li><a href="https://github.com/edent/SuperTinyIcons">edent/SuperTinyIcons</a> - Under 1KB each! Super Tiny Icons are miniscule SVG versions of your favourite website and app logos - edent/SuperTinyIcons</li>
+<li><a href="https://storyset.com/">Storyset</a> - Download free illustrations to power up your projects.</li>
+</ul>
+<h3 id="december-2-2020"><a class="header" href="#december-2-2020">December 2, 2020</a></h3>
+<ul>
+<li><a href="https://www.thegrowthlist.co/">GrowthList - Never Miss a Growth Opportunity</a> - GrowthList is the go-to resource hub for tech-savvy marketers in fast-growing companies. Find hundred of Growth Hacks to boost your startup !</li>
+<li><a href="https://domainr.com/">Domainr</a> - Fast, free, domain name search, short URLs, new gTLDs, whois</li>
+<li><a href="https://domize.com/">Domain Name Search</a> - Domize is a domain name search engine that begins looking up the availability of a domain name as soon as you start typing it. Domize provides a secure and private environment to search for your next domain name.</li>
+<li><a href="https://writy.io/">Content for Developers · Writy.io</a> - Content writing is hard. There are so many ways to go wrong. Learn from Maedah's decade of experience for writing content meant for Developers and technical audience. Make your content sound and look more authentic.</li>
+</ul>
+<h3 id="november-30-2020"><a class="header" href="#november-30-2020">November 30, 2020</a></h3>
+<ul>
+<li><a href="https://maizzle.com/">Maizzle - Framework for Rapid Email Prototyping</a> - Maizzle is a framework that helps you quickly build HTML emails with Tailwind CSS and advanced, email-specific post-processing.</li>
+</ul>
+<h3 id="november-17-2020"><a class="header" href="#november-17-2020">November 17, 2020</a></h3>
+<ul>
+<li><a href="https://www.uxtoast.com/">uxtoast | Learn the fundamentals of UX &amp; UI Design</a> - Learn the fundamentals of UX &amp; UI Design, including design laws and principles, user research, and design processes.</li>
+</ul>
+<h3 id="november-15-2020"><a class="header" href="#november-15-2020">November 15, 2020</a></h3>
+<ul>
+<li><a href="https://hunter.io/templates?ref=producthunt">Cold email templates • Hunter</a> - Directory of best-performing cold email templates. Filter hundreds of templates by category and start your email outreach in minutes.</li>
+<li><a href="https://icons8.com/upscaler?ref=producthunt">AI Image Upscaler - Enlarge Images &amp; Photos Online for Free</a> - Free online smart upscaler software to enlarge images and photos (JPG, PNG) without losing quality. Enlarge and enhance pictures automatically using AI</li>
+</ul>
+<h3 id="november-13-2020"><a class="header" href="#november-13-2020">November 13, 2020</a></h3>
+<ul>
+<li><a href="https://svgbox.net/">API for Web Icons | SVGBox.net</a> - SVG Icons and patterns, served/modified as image source URLs. Simple.</li>
+</ul>
+<h3 id="november-12-2020"><a class="header" href="#november-12-2020">November 12, 2020</a></h3>
+<ul>
+<li><a href="https://cssgradient.io/gradient-backgrounds/">Gradient Backgrounds – 🌈 The Best Gradient Sites All in One Place</a> - Discover the best gradient backgrounds from  a curated collection of the ultimate list of gradient sites. With 1000+ gradients, it's easy to find the 👌 color!</li>
+<li><a href="https://jakearchibald.github.io/svgomg/">SVGOMG - SVGO's Missing GUI</a> - My go to SVG Optimizer.</li>
+<li><a href="https://coolbackgrounds.io/?ref=AhmadAwais.com&amp;utm_medium=twitter.com/MrAhmadAwais">Cool Backgrounds</a> - Explore a beautifully curated selection of cool backgrounds that you can add to blogs, websites, or as desktop and phone wallpapers.</li>
+</ul>
+<h3 id="november-5-2020"><a class="header" href="#november-5-2020">November 5, 2020</a></h3>
+<ul>
+<li><a href="https://undesign.learn.uno/">Undesign | Collection of free design tools and resources for makers, developers and designers</a> - Collection of free design tools and resources for makers, developers and designers</li>
+<li><a href="https://pfpmaker.com/?ref=producthunt">Free Profile Pic Maker | Make an awesome profile picture from any photo</a> - Upload your photo and create profile picture which will give you 14 times more visits &amp; 36 times more chances to receive a message with a professional headshot</li>
+<li><a href="https://formito.com/tools/logo?ref=producthunt">Free Typography Logo Maker — Design a logo in seconds!</a> - Design a free typography logo for your business, product, or brand using an easy to use online logo maker tool. Choose from hundreds of fonts, preview light and dark version of your logo, and then export SVG and PNG versions.</li>
+<li><a href="https://yqnn.github.io/svg-path-editor/">SvgPathEditor</a> - Online editor to create and manipulate SVG paths</li>
+</ul>
+<h3 id="october-24-2020"><a class="header" href="#october-24-2020">October 24, 2020</a></h3>
+<ul>
+<li><a href="https://patternpad.com/">PatternPad - Create beautiful patterns for presentations, social media or branding.</a> - PatternPad offers unlimited unique pattern designs that fit your style. Ideal for branding, presentations, social media posts or customising products.</li>
+</ul>
+<h3 id="october-22-2020"><a class="header" href="#october-22-2020">October 22, 2020</a></h3>
+<ul>
+<li><a href="https://svgwave.in/">Svg Wave - A free beautiul &amp; SVG wave Generator.</a> - SVG Wave is a minimal svg wave generator with lot of customization. It lets you abiltiy to generate and export pngs and svgs of beautiful waves. SVG wave also lets you layer multiple waves. Create SVGs for your website designs.</li>
+</ul>
+<h3 id="october-18-2020"><a class="header" href="#october-18-2020">October 18, 2020</a></h3>
+<ul>
+<li><a href="https://www.shapefest.com/">Shapefest™ - A massive library of free 3D shapes</a> - A massive free library of beautifully rendered 3D shapes. 160,000+ high resolution PNG images in one cohesive library.</li>
+</ul>
+<h3 id="october-10-2020"><a class="header" href="#october-10-2020">October 10, 2020</a></h3>
+<ul>
+<li><a href="https://tailwind.ink/?ref=producthunt">Tailwind Ink | AI color palette generator for Tailwindcss</a> - A tool for creating new color shades based on a neural network and trained with the Tailwindcss palette.</li>
+<li><a href="https://icons.modulz.app/?ref=producthunt">Radix Icons</a> - A crisp set of 15×15 icons designed by the Modulz team.</li>
+</ul>
+<h3 id="october-5-2020"><a class="header" href="#october-5-2020">October 5, 2020</a></h3>
+<ul>
+<li><a href="https://incompetech.filmmusic.io/search">Search for royalty free music by Kevin MacLeod</a> - 100% ROYALTY-free music: ✓ Free of charge for all ✓ Youtube videos ✓ Online advertising ✓ Product films ✓ Company films ✓ Websites ✓ Download without registration and use immediately!</li>
+</ul>
+<h3 id="october-4-2020"><a class="header" href="#october-4-2020">October 4, 2020</a></h3>
+<ul>
+<li><a href="https://symbols.radicasoftware.com/72/brands-0-9">Brands Companies</a> - SVG Logos</li>
+</ul>
+<h3 id="september-26-2020"><a class="header" href="#september-26-2020">September 26, 2020</a></h3>
+<ul>
+<li><a href="https://ihateregex.io/">i Hate Regex - The Regex Cheat Sheet</a> - i Hate Regex is a regex cheat sheet that also explains the commonly used expressions so that you understand it. Stop hating and start learning.</li>
+</ul>
+<h3 id="september-23-2020"><a class="header" href="#september-23-2020">September 23, 2020</a></h3>
+<ul>
+<li><a href="https://codepen.io/thuijssoon/pen/bEgBLK">Schema.org/VideoObject </a> - Generator for Vimeo</li>
+<li><a href="https://codepen.io/ahmadawais/pen/yLOGqpm">Schema.org/VideoObject</a> - Generate valid schema JSON+LD for Vimeo</li>
+</ul>
+<h3 id="september-20-2020"><a class="header" href="#september-20-2020">September 20, 2020</a></h3>
+<ul>
+<li><a href="https://transform.tools/">Transform | A polyglot web converter.</a> - Wow. JSON to TypeScript is fun. And more transformers.</li>
+</ul>
+<h3 id="september-18-2020"><a class="header" href="#september-18-2020">September 18, 2020</a></h3>
+<ul>
+<li><a href="https://mee6.xyz/">MEE6 - The Discord Bot</a> - Configure moderation, leveling, Twitch alerts, and much more with the most easy-to-use dashboard!</li>
+<li><a href="https://yagpdb.xyz/">YAGPDB</a> - Yet Another General Purpose Discord Bot. Reaction to Accept Terms feature.</li>
+</ul>
+<h3 id="september-15-2020"><a class="header" href="#september-15-2020">September 15, 2020</a></h3>
+<ul>
+<li><a href="https://arwes.dev/">Arwes - Sci-Fi UI Framework</a> - Futuristic Sci-Fi and Cyberpunk Graphical User Interface Framework for Web Apps</li>
+</ul>
+<h3 id="september-14-2020"><a class="header" href="#september-14-2020">September 14, 2020</a></h3>
+<ul>
+<li><a href="https://mertjf.github.io/tailblocks/">tailblocks — Ready-to-use Tailwind CSS blocks</a> - Web site created using create-react-app</li>
+<li><a href="https://tailwind-typography-playground.vercel.app/">Tailwind Typography Playground</a> - Web site created using create-react-app</li>
+<li><a href="https://tailwind-gradient-designer.csspost.com/">Tailwind Gradient Designer</a> - Click generate done.</li>
+<li><a href="https://tailwind.ink/">Tailwind Ink</a> - Generate custom color palette.</li>
+</ul>
+<h3 id="september-13-2020"><a class="header" href="#september-13-2020">September 13, 2020</a></h3>
+<ul>
+<li><a href="https://www.gradientmagic.com/browse">Gradient Magic - Fantastic and Unique CSS Gradients</a> - A Free Gallery of Fantastic and Unique CSS Gradients.</li>
+<li><a href="https://lookup.design/">lookup.design - ui examples (steve's recommendations)</a> - Browse handpicked ui and ux design examples and find inspiration for your next website or app.</li>
+<li><a href="https://uiplaybook.dev/">UI Playbook</a> - The documented collection of UI components.</li>
+</ul>
+<h3 id="september-3-2020"><a class="header" href="#september-3-2020">September 3, 2020</a></h3>
+<ul>
+<li><a href="https://shiftnudge.com/">Shift Nudge – Interface Design Course</a> - The design on this course site is pretty fucking amazing.</li>
+</ul>
+<h3 id="august-28-2020"><a class="header" href="#august-28-2020">August 28, 2020</a></h3>
+<ul>
+<li><a href="https://restofworld.org/2020/stat-of-the-day/">Like numbers? We got you.</a> - Try out our new infinity stats stack — a collection of the most fascinating, weird, and important numbers from around the (rest of) world.</li>
+<li><a href="https://theheadless.dev/">theheadless.dev - Learn Puppeteer &amp; Playwright</a> - Tips, tricks and in-depth guides from the trenches</li>
+</ul>
+<h3 id="august-22-2020"><a class="header" href="#august-22-2020">August 22, 2020</a></h3>
+<ul>
+<li><a href="https://documentation.divio.com/">The documentation system — Documentation system documentation</a> - Excellent guide to follow on how to document your software.</li>
+</ul>
+<h3 id="august-20-2020"><a class="header" href="#august-20-2020">August 20, 2020</a></h3>
+<ul>
+<li><a href="https://systemuicons.com/">System UIcons</a> - A free icon set designed for systems and products. Use how you want, without attribution.</li>
+</ul>
+<h3 id="august-19-2020"><a class="header" href="#august-19-2020">August 19, 2020</a></h3>
+<ul>
+<li><a href="https://squircley.app/">Squircley | SVG Squircle Maker</a> - Create and export beautiful SVG squircles to use in your designs.</li>
+</ul>
+<h3 id="august-18-2020"><a class="header" href="#august-18-2020">August 18, 2020</a></h3>
+<ul>
+<li><a href="https://leaverou.github.io/css3patterns/#">CSS3 Patterns Gallery</a> - Amazing CSS only bg patterns.</li>
+</ul>
+<h3 id="august-16-2020"><a class="header" href="#august-16-2020">August 16, 2020</a></h3>
+<ul>
+<li><a href="https://maizzle.com/">Home | Maizzle - Framework for Rapid Email Prototyping</a> - Maizzle is a framework that helps you quickly build HTML emails with Tailwind CSS and advanced, email-specific post-processing.</li>
+<li><a href="https://github.com/bashaus/prevent-widows">bashaus/prevent-widows: Prevent widows from appearing in a string (includes posthtml implementation)</a> - Prevent widows from appearing in a string (includes posthtml implementation) - bashaus/prevent-widows</li>
+</ul>
+<h3 id="august-15-2020"><a class="header" href="#august-15-2020">August 15, 2020</a></h3>
+<ul>
+<li><a href="https://github.com/npm/registry/blob/master/docs/user/authentication.md">npm registry/authentication</a> - npm registry authentication documentation. Hard to find otherwise.</li>
+</ul>
+<h3 id="july-26-2020"><a class="header" href="#july-26-2020">July 26, 2020</a></h3>
+<ul>
+<li><a href="https://3d-book-css.netlify.app/">3D Book Image CSS Generator</a> - Generate an animated 3D image from a book cover and export to HTML/CSS to embed on your website.</li>
+</ul>
+<h3 id="july-25-2020"><a class="header" href="#july-25-2020">July 25, 2020</a></h3>
+<ul>
+<li><a href="https://shape.so/">Shape - 20000+ Icons &amp; Illustrations to SVG, Lottie, React.</a> - Shape lets you customize the style, colors and border of static &amp; animated icons and illustrations. You can export to React, SVG and Lottie code.</li>
+<li><a href="https://fabdevgit.github.io/barchartrace/">FabDev | Bar chart race generator</a> - Generate your own bar chart race from a csv file thanks to this open source tool made by FabDev</li>
+</ul>
+<h3 id="july-19-2020"><a class="header" href="#july-19-2020">July 19, 2020</a></h3>
+<ul>
+<li><a href="https://appydev.co/">Appydev | Find awesome tools</a> - Appydev is a collection of awesome tools, resources, communities &amp; podcasts for developers, designers &amp; enthusiasts.</li>
+</ul>
+<h3 id="july-17-2020"><a class="header" href="#july-17-2020">July 17, 2020</a></h3>
+<ul>
+<li><a href="https://archiveprogram.github.com/">GitHub Archive Program | The GitHub Archive Program will safely story every public GitHub repo for 1,000 years in the Arctic World Archive in Svalbard, Norway.</a> - The GitHub Archive Program will safely story every public GitHub repo for 1,000 years in the Arctic World Archive in Svalbard, Norway. Blog Design.</li>
+<li><a href="https://tablericons.com/">Tabler Icons - 550+ Highly customizable free SVG icons</a> - 550+ Customizable free SVG icons - Tabler Icons</li>
+<li><a href="https://squircley.app/">Squircley | SVG Squircle Maker</a> - Create and export beautiful SVG squircles to use in your designs.</li>
+<li><a href="https://stylestage.dev/styles/">Styles Directory | Style Stage</a> - Modern CSS Styles</li>
+<li><a href="https://whimsical.club/">The Whimsical Web</a> - A curated list of sites with an extra bit of fun.</li>
+</ul>
+<h3 id="july-14-2020"><a class="header" href="#july-14-2020">July 14, 2020</a></h3>
+<ul>
+<li><a href="https://copypastelist.co/">Copy Paste List</a> - Quick, unformatted, copy and paste-able lists for all your needs.</li>
+</ul>
+<h3 id="july-13-2020"><a class="header" href="#july-13-2020">July 13, 2020</a></h3>
+<ul>
+<li><a href="https://keyframes.app/animate/">Animate | Keyframes.app</a> - Keyframes gives you a visual timeline to help you create, view, and run animations without having to go back and forth between your browser and editor.</li>
+<li><a href="https://extract.pics/">Image Extractor</a> - A free tool to extract, view and download images from websites.</li>
+<li><a href="https://simpleicons.org/">Simple Icons</a> - 1377 Free SVG icons for popular brands.</li>
+</ul>
+<h3 id="july-5-2020"><a class="header" href="#july-5-2020">July 5, 2020</a></h3>
+<ul>
+<li><a href="https://axesslab.com/alt-texts/#main-content">Alt-texts: The Ultimate Guide - Axess Lab</a> - This post contains everything you need to know about alt-texts! When to use them and how to perfectly craft them. By me, Daniel, a web developer with vision impairment who use a screen reader in my day-to-day life. My experience of images on the web I use a combination of magnification and screen reader when […]</li>
+<li><a href="https://twitter.com/vavroom/status/1067579069682769920">The alt text</a> - Alt text  for a linked image should be the destination of the link, rather than a description of what is in the image. Otherwise, screen reader users will not know where the link goes. #a11y #accessibility&quot; / Twitter</li>
+</ul>
+<h3 id="july-2-2020"><a class="header" href="#july-2-2020">July 2, 2020</a></h3>
+<ul>
+<li><a href="https://freeillustrations.xyz/?ref=producthunt">Free illustrations </a> - Free illustrations help you find free to use illustrations &amp; vectors for your next personal or commercial project. ✓ PNG ✓ SVG ✓ PSD ✓ SKETCH ✓ FIGMA ✓ PDF.</li>
+<li><a href="https://howtotarget.email/">How to Target Email Clients</a> - Crowdsourced email development techniques for singling out email clients and platforms. Created by @dylanatsmith.</li>
+</ul>
+<h3 id="june-28-2020"><a class="header" href="#june-28-2020">June 28, 2020</a></h3>
+<ul>
+<li><a href="https://editor.method.ac/">SVG Draw</a> - Draw SVGs</li>
+</ul>
+<h3 id="june-22-2020"><a class="header" href="#june-22-2020">June 22, 2020</a></h3>
+<ul>
+<li><a href="https://nodesource.com/blog/understanding-how-node-js-release-lines-work/">Understanding How Node.js Release Lines Work</a> - Learn about how Node.js versions work.</li>
+<li><a href="https://neumorphic.design/?ref=producthunt">Neumorphic Generator</a> - That name is enough.</li>
+</ul>
+<h3 id="june-20-2020"><a class="header" href="#june-20-2020">June 20, 2020</a></h3>
+<ul>
+<li><a href="https://www.netguru.com/resources#ebooks">Netguru – Resources</a> - Design for free books.</li>
+<li><a href="https://www.netguru.com/design-process">Design Process for Pros</a> - Love that book design, how on hover a new chapter shows up. Ahmazing.</li>
+</ul>
+<h3 id="june-11-2020"><a class="header" href="#june-11-2020">June 11, 2020</a></h3>
+<ul>
+<li><a href="https://twitter.com/tucker_dev/status/1270765145619337218">Web Dev Resources</a> - A big 🧵 of free web development resources.</li>
+<li><a href="https://javascript.info/">The Modern JavaScript Tutorial</a> - Modern JavaScript Tutorial: simple, but detailed explanations with examples and tasks, including: closures, document and events, object oriented programming and more.</li>
+<li><a href="https://iradesign.io/">IRA Design</a> - Build your own amazing illustrations.</li>
+<li><a href="https://teachyourselfcs.com/">Teach Yourself Computer Science</a> - All the resources you need to give yourself a world class computer science education.</li>
+<li><a href="https://serverless-stack.com/#table-of-contents">Building a Full-Stack App with Serverless and React</a> - Free step-by-step tutorials for creating full-stack apps with Serverless Framework and React.js. Build a Serverless REST API with our Serverless tutorial and connect it to a React single-page application with our React.js tutorial. Use our AWS tutorial with screenshots to deploy your full-stack app.</li>
+</ul>
+<h3 id="june-5-2020"><a class="header" href="#june-5-2020">June 5, 2020</a></h3>
+<ul>
+<li><a href="https://www.goodannotations.com/editor/">Image Annotations</a> - Online Annotator, could be helpful.</li>
+</ul>
+<h3 id="june-4-2020"><a class="header" href="#june-4-2020">June 4, 2020</a></h3>
+<ul>
+<li><a href="https://saurabhdaware.github.io/text-to-handwriting/">Text to Handwriting</a> - I hate writing assignments so I made this tool that converts text to an image that looks like handwriting. You can copy paste text content into the textbox and click generate image button to generate image.</li>
+</ul>
+<h3 id="june-2-2020"><a class="header" href="#june-2-2020">June 2, 2020</a></h3>
+<ul>
+<li><a href="https://blobs.app/">Blobs</a> - Generate beautiful blob shapes for web and flutter apps.</li>
+<li><a href="https://trianglify.io/?ref=producthunt">Trianglify.io</a> - Trianglify.io is a tool for generating low poly triangle patterns that can be used as wallpapers and website assets.</li>
+</ul>
+<h3 id="may-26-2020"><a class="header" href="#may-26-2020">May 26, 2020</a></h3>
+<ul>
+<li><a href="https://untools.co/">Untools</a> - Collection of thinking tools and frameworks to help you solve problems, make decisions and understand systems.</li>
+<li><a href="https://postaga.com/">Postaga</a> - Generate more backlinks and social shares with effective, automated post promotion and outreach.</li>
+</ul>
+<h3 id="may-25-2020"><a class="header" href="#may-25-2020">May 25, 2020</a></h3>
+<ul>
+<li><a href="https://www.chargebee.com/pricing/?ref=navbar">Buttons Inspiration</a> - I like the buttons design on this site. </li>
+<li><a href="https://mertjf.github.io/tailblocks/">tailblocks</a> - Ready-to-use Tailwind CSS blocks.</li>
+</ul>
+<h3 id="may-22-2020"><a class="header" href="#may-22-2020">May 22, 2020</a></h3>
+<ul>
+<li><a href="https://freesound.org/browse/">Freesound</a> - A collaborative database of creative-commons licensed sound for musicians and sound lovers.</li>
+<li><a href="https://csswizardry.com/2020/05/the-fastest-google-fonts/">The Fastest Google Fonts</a> - The best guide on making Google Fonts faster upto 1200ms.</li>
+<li><a href="https://maketext.io/">Text to SVG</a> - Cool Texts Generator in SVG / PNG with 30+ Effects x 800+ Fonts</li>
+</ul>
+<h3 id="may-20-2020"><a class="header" href="#may-20-2020">May 20, 2020</a></h3>
+<ul>
+<li><a href="https://dohliam.github.io/dropin-minimal-css/">Drop-in Minimal CSS</a> - Enter this ‘minimal CSS framework switcher’ where you get to preview lots of minimal CSS frameworks on a single page. </li>
+</ul>
+<h3 id="may-18-2020"><a class="header" href="#may-18-2020">May 18, 2020</a></h3>
+<ul>
+<li><a href="https://whentolaunch.app/insights">When To Launch Your Product </a> - Insights on when to launch a product on ProductHunt. Pretty useful.</li>
+</ul>
+<h3 id="may-17-2020"><a class="header" href="#may-17-2020">May 17, 2020</a></h3>
+<ul>
+<li><a href="https://showcase.metamate.io/hackernews-trends">HackerNews Trends</a> - Nice trends site to analyze data on HN.</li>
+<li><a href="https://www.thisworddoesnotexist.com/">This Word Does Not Exist</a> - This Word Does Not Exist uses an artificial intelligence model named GPT-2 to invent new English words.</li>
+<li><a href="https://www.screely.com/">Screely</a> - Instantly turn your screenshot into a beautiful mockup. Customize the mockup window, background and much more.</li>
+</ul>
+<h3 id="may-15-2020"><a class="header" href="#may-15-2020">May 15, 2020</a></h3>
+<ul>
+<li><a href="https://www.bensound.com/">Bensound</a> - Royalty Free Music. Free license requires attribution.</li>
+</ul>
+<h3 id="may-12-2020"><a class="header" href="#may-12-2020">May 12, 2020</a></h3>
+<ul>
+<li><a href="https://blush.design/">Blush.Design</a> - Blush makes it easy to add illustrations to your projects. With collections made by artists across the globe, there’s something for everyone—and every project.</li>
+</ul>
+<h3 id="may-10-2020"><a class="header" href="#may-10-2020">May 10, 2020</a></h3>
+<ul>
+<li><a href="https://www.sessions.edu/color-calculator/">Color Wheel - Color Calculator</a> - Use the color wheel to find the perfect color scheme with the Sessions College color calculator. Endless free color combinations, working from any base color.</li>
+<li><a href="https://hue360.herokuapp.com/">[ HUE / 360 ] </a> - The Color Scheme Application</li>
+<li><a href="https://www.canva.com/colors/color-wheel/">Color wheel </a> - The color wheel shows the relationship between colors. Create the perfect color scheme for your next project. It's easy and free!</li>
+</ul>
+<h3 id="may-9-2020"><a class="header" href="#may-9-2020">May 9, 2020</a></h3>
+<ul>
+<li><a href="https://letsenhance.io/v2/boost">Let's Enhance</a> - Enhance your images to 4x for free.</li>
+<li><a href="https://neumorphism.io/#6c777d">Neumorphism</a> - CSS code generator that will help with colors, gradients and shadows to adapt this new design trend or discover its possibilities.</li>
+</ul>
+<h3 id="may-7-2020"><a class="header" href="#may-7-2020">May 7, 2020</a></h3>
+<ul>
+<li><a href="https://www.resumes.io/create-a-resume">Resumes.io</a> - Create your resume and get hired fast with Resume Builder. Our online tool will guide you through each step so you can be confident with the result.</li>
+<li><a href="https://latexresu.me/">Resume Maker</a> - Latex resumes. I like the first template a lot.</li>
+</ul>
+<h3 id="april-29-2020"><a class="header" href="#april-29-2020">April 29, 2020</a></h3>
+<ul>
+<li><a href="https://svgtopng.com/">SVG to PNG </a> - This free online SVG to PNG converter allows you to convert SVG files to PNG images, quickly and easily.</li>
+<li><a href="https://components.ai/">Components AI</a> - With Components AI you can generate gradients, font pairings, and explore hand curated components.</li>
+<li><a href="https://1loc.dev/">1loc</a> - Useful JavaScript single line of code.</li>
+<li><a href="https://play.google.com/store/apps/details?id=de.simolation.subscriptionmanager&amp;utm_source=simons.page&amp;ref=simons.page">Subscriptions</a> - Almost everyone now pays for services on a regular basis. Whether Spotify, Netflix, and Co. you quickly lose track of what you actually spend.With this app, you simply enter the existing subscriptions and you have an easy overview.⭐ Features ⭐- Create regular and one-time subscriptions- Enter the billing period to see the next payment date- Add important data for each subscription (description, the start of payment, Payment method, and notes)- 160+ different currencies with the current exchange rate- Optional dark design- Backup possibility (including Google Drive option).</li>
+</ul>
+<h3 id="april-28-2020"><a class="header" href="#april-28-2020">April 28, 2020</a></h3>
+<ul>
+<li><a href="https://naive.pro/?ref=producthunt">NAÏVE </a> - Improve your workflow: Cut shake and overexposure, Create proxy files, Sync multicam in-one-place — Automagically! Perfect for Adobe Premiere Pro.</li>
+</ul>
+<h3 id="april-26-2020"><a class="header" href="#april-26-2020">April 26, 2020</a></h3>
+<ul>
+<li><a href="https://www.manypixels.co/">ManyPixels </a> - ManyPixels offers unlimited graphic and web design services for a flat monthly fee. Get your personal graphic designer in a few clicks.</li>
+<li><a href="https://hackernoon.com/how-to-build-a-saas-with-0-fed2341078c8">SaaS from scratch</a> - How to build a SaaS with $0.</li>
+</ul>
+<h3 id="april-25-2020"><a class="header" href="#april-25-2020">April 25, 2020</a></h3>
+<ul>
+<li><a href="https://www.convertjson.com/html-table-to-json.htm">HTML Table To JSON Converter</a> - Convert JSON to HTML Table</li>
+</ul>
+<h3 id="april-23-2020"><a class="header" href="#april-23-2020">April 23, 2020</a></h3>
+<ul>
+<li><a href="https://bansal.io/pattern-css">pattern.css</a> - Fantastic CSS only library to fill your empty background with beautiful patterns.</li>
+</ul>
+<h3 id="april-22-2020"><a class="header" href="#april-22-2020">April 22, 2020</a></h3>
+<ul>
+<li><a href="https://hellowebbooks.com/news/how-i-launched-my-learn-to-code-book-and-made-nearly-5000-in-pre-orders/#show-last-Point">I self-published</a> - Something worth reading if you intend to self-publish.</li>
+<li><a href="https://themer.dev/?ck_subscriber_id=783973516">themer</a> - themer takes a set of colors and generates themes for your apps: editors, terminals, wallpapers, and more.</li>
+</ul>
+<h3 id="april-20-2020"><a class="header" href="#april-20-2020">April 20, 2020</a></h3>
+<ul>
+<li><a href="https://background-generator.com/">background generator</a> - Does what the name says it does.</li>
+<li><a href="https://mrcoles.com/bookmarklet/">Bookmarklet Creator</a> - A simple web based tool to convert JavaScript into a bookmarklet and optionally include external scripts, like jQuery. There is an automated demo included at the bottom of the page.</li>
+<li><a href="https://github.com/onderceylan/pwa-asset-generator">onderceylan/pwa-asset-generator</a> - PWA asset generator based on Puppeteer. Automatically generates icons and splash screens guided by Web App Manifest specs and Apple Human Interface guidelines. Updates manifest.json and index.html files with the generated images.</li>
+<li><a href="https://darebee.com/workouts/home-workout.html">Home Workout</a> - Home Workout is a Darebee workout you can do without even changing into training attire.</li>
+</ul>
+<h3 id="april-19-2020"><a class="header" href="#april-19-2020">April 19, 2020</a></h3>
+<ul>
+<li><a href="https://cssbuilder.veliovgroup.com/">Grab n'go visual CSS editor</a> - Quickly prototype, mock, edit, and generate valid CSS for Safari, Chrome, Firefox, Opera, and IE browsers. Learn CSS while tinkering its properties visually.</li>
+<li><a href="https://gh-polls.com/">GitHub Polls</a> - SVG polls you can embed in GitHub issues or readmes.</li>
+<li><a href="https://app.gh-polls.com/">GitHub Polls</a> - Poll Creating UI.</li>
+<li><a href="https://crontab.guru/">crontab.guru</a> - An easy to use editor for crontab schedules.</li>
+</ul>
+<h3 id="april-18-2020"><a class="header" href="#april-18-2020">April 18, 2020</a></h3>
+<ul>
+<li><a href="https://github.com/onderceylan/pwa-asset-generator">onderceylan/pwa-asset-generator</a> - PWA asset generator based on Puppeteer. Automatically generates icons and splash screens guided by Web App Manifest specs and Apple Human Interface guidelines. Updates manifest.json and index.html files with the generated images.</li>
+</ul>
+<h3 id="april-16-2020"><a class="header" href="#april-16-2020">April 16, 2020</a></h3>
+<ul>
+<li><a href="https://vime-js.com/">Vime</a> - All your media player needs in one place - a modern alternative to Videojs and Plyr. Supports Html5, Hls, Dash, YouTube, Vimeo, Dailymotion and more to come.</li>
+<li><a href="https://mybrandnewlogo.com/color-gradient-generator">CSS Color Gradient Generator</a> - Free CSS color gradient generator. Perfect for gradient backgrounds or UI elements on your website, easy to use.</li>
+</ul>
+<h3 id="april-15-2020"><a class="header" href="#april-15-2020">April 15, 2020</a></h3>
+<ul>
+<li><a href="https://json-to-js.com/">JSON to JavaScript</a> - This online tool helps you to convert JSON to JavaScript.</li>
+</ul>
+<h3 id="april-13-2020"><a class="header" href="#april-13-2020">April 13, 2020</a></h3>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ahmadawais.emoji-log-vscode">Emoji Log VSCode</a> - Emoji Log for Visual Studio Code.</li>
+<li><a href="https://twitter.com/StasKlymenko/status/1248199947528409088">HTML/CSS/JS</a> - The perfect explanation.</li>
+</ul>
+<h3 id="april-12-2020"><a class="header" href="#april-12-2020">April 12, 2020</a></h3>
+<ul>
+<li><a href="https://github.com/cli/cli">cli/cli</a> - GitHub’s official command line tool.</li>
+</ul>
+<h3 id="april-11-2020"><a class="header" href="#april-11-2020">April 11, 2020</a></h3>
+<ul>
+<li><a href="https://stevecat.net/table-magic/#">table-magic</a> - Generate markdown tables and more.</li>
+<li><a href="https://www.productschool.com/learn-from-home/?ref=producthunt">Product School</a> - Free online resources for product managers.</li>
+<li><a href="https://nodecli.com/">NodeCLI.com</a> - Build Node.js Command-line Automation Dev-tools.</li>
+<li><a href="https://github.com/Idnan/bash-guide">bash-guide</a> - A guide to learn bash.</li>
+<li><a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> - Optimize SVGS. SVGO's Missing GUI.</li>
+<li><a href="http://html2jade.org/">HTML2Jade</a> - HTML to Jade/Pug Online Realtime Converter.</li>
+<li><a href="https://github.com/mathiasbynens/emoji-regex">mathiasbynens/emoji-regex</a> - A regular expression to match all Emoji-only symbols as per the Unicode Standard.</li>
+<li><a href="http://chocolat.insipi.de/#demo">Chocolat</a> - Responsive lightbox.</li>
+<li><a href="https://weblogs.asp.net/dixin/understanding-all-javascript-module-formats-and-tools">Understanding (all) JavaScript module formats and tools</a> - JavaScript language was initially invented for simple form manipulation, with no built-in features like module or namespace. In years, tons of terms, patterns, libraries, syntax, and tools are …</li>
+<li><a href="https://leontrolski.github.io/33-line-react.html">33 line React</a> - This guy attempts to create React.js in 33 lines.</li>
+<li><a href="https://maedahbatool.com/closed-captions-screenflow/">Screenflow</a> - Closed Captions Workflow by Maedah.</li>
+</ul>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/license.png" alt="📃" /></a></p>
+<h2 id="license--conduct"><a class="header" href="#license--conduct">License &amp; Conduct</a></h2>
+<ul>
+<li>Copyright © <a href="https://twitter.com/MrAhmadAwais/">Ahmad Awais</a></li>
+<li><a href="code-of-conduct.html">Code of Conduct</a></li>
+</ul>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/connect.png" alt="🙌" /></a></p>
+<h2 id="connect"><a class="header" href="#connect">Connect</a></h2>
+<div align="left">
+    <p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To stay up to date on free & open-source software</small></p>
+    <p><a href="https://twitter.com/MrAhmadAwais/"><img alt="Twitter @MrAhmadAwais" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&style=flat" /></a>&nbsp;<small><strong>(follow)</strong> To get #OneDevMinute daily hot tips & trolls</small></p>
+    <p><a href="https://www.youtube.com/AhmadAwais"><img alt="YouTube AhmadAwais" align="center" src="https://img.shields.io/badge/YOUTUBE-gray.svg?colorB=ff0000&style=flat" /></a>&nbsp;<small><strong>(subscribe)</strong> To tech talks & #OneDevMinute videos</small></p>
+    <p><a href="https://AhmadAwais.com/"><img alt="Blog: AhmadAwais.com" align="center" src="https://img.shields.io/badge/MY%20BLOG-gray.svg?colorB=4D2AFF&style=flat" /></a>&nbsp;<small><strong>(read)</strong> In-depth & long form technical articles</small></p>
+    <p><a href="https://www.linkedin.com/in/MrAhmadAwais/"><img alt="LinkedIn @MrAhmadAwais" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&style=flat" /></a>&nbsp;<small><strong>(connect)</strong> On the LinkedIn profile y'all</small></p>
+</div>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/sponsor.png" alt="👌" /></a></p>
+<h2 id="sponsor"><a class="header" href="#sponsor">Sponsor</a></h2>
+<p>Me (<a href="https://twitter.com/mrahmadawais/">Ahmad Awais</a>) and my incredible wife (<a href="https://twitter.com/MaedahBatool/">Maedah Batool</a>) are two engineers who fell in love with open source and then with each other. You can read more <a href="https://ahmadawais.com/about">about me here</a>. If you or your company use any of my projects or like what I’m doing then consider backing me. I'm in this for the long run. An open-source developer advocate.</p>
+<p><a href="https://twitter.com/mrahmadawais/"><img src="https://img.shields.io/twitter/follow/mrahmadawais.svg?style=social&amp;label=Follow%20@MrAhmadAwais" alt="Ahmad on Twitter" /></a></p>
+<p><a href="https://github.com/AhmadAwais/sponsor"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/sponsor/sponsor.jpg" alt="Ahmad on Twitter" /></a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Python.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="ReadmeAwesome.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Python.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="ReadmeAwesome.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

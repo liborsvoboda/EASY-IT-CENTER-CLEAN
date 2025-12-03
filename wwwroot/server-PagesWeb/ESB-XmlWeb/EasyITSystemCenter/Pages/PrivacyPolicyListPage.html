@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta name="author" content="Aona Suzutsuki" />
+    <title>PrivacyPolicyListPage Class</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-anim.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/table.css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shThemeDefault.css" type="text/css" />
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shCore.js"></script>
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shBrushCSharp.js"></script>
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(function () {
+            SyntaxHighlighter.defaults.toolbar = false;
+            SyntaxHighlighter.all();
+
+            registMenu();
+        });
+    </script>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="menu-container">
+            <div id="top-menu-bt-cover">
+                <a class="menu-trigger" href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="../../index.html">Index</a></li>
+                <li>EasyITSystemCenter
+                    <ul>
+                        <li>Classes
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Classes/PropertyOrServiceTypeList/PropertyOrServiceTypeList.html">PropertyOrServiceTypeList</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/AppVersion.html">AppVersion</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/DataViewSupport.html">DataViewSupport</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/Language.html">Language</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/ReportSelection.html">ReportSelection</a></li>
+                            </ul>
+                        </li>
+                        <li>Pages
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelApprovalListPage.html">HotelApprovalListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelImagesListPage.html">HotelImagesListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelListPage.html">HotelListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelPropertyAndServiceListPage.html">HotelPropertyAndServiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationReviewApprovalListPage.html">HotelReservationReviewApprovalListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelRoomListPage.html">HotelRoomListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelActionTypeListPage.html">HotelActionTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationStatusListPage.html">HotelReservationStatusListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelRoomTypeListPage.html">HotelRoomTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyGroupListPage.html">PropertyGroupListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyOrServiceTypeListPage.html">PropertyOrServiceTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyOrServiceUnitListPage.html">PropertyOrServiceUnitListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CodeLibraryListPage.html">CodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CreditPackageListPage.html">CreditPackageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CityListPage.html">CityListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CountryAreaListPage.html">CountryAreaListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CountryListPage.html">CountryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/InterestAreaListPage.html">InterestAreaListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocSrvDocTemplateListPage.html">DocSrvDocTemplateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationCodeLibraryListPage.html">DocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationGroupListPage.html">DocumentationGroupListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationListPage.html">DocumentationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionEmailerHistoryListPage.html">SolutionEmailerHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMessageModuleListPage.html">SolutionMessageModuleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMessageTypeListPage.html">SolutionMessageTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestListPage.html">GuestListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationListPage.html">HotelReservationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationReviewListPage.html">HotelReservationReviewListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservedRoomListPage.html">HotelReservedRoomListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestSettingListPage.html">GuestSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestFavoriteListPage.html">GuestFavoriteListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestLoginHistoryListPage.html">GuestLoginHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HostWin32AppPage.html">HostWin32AppPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebModulePage.html">WebModulePage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerLiveDataMonitorListPage.html">ServerLiveDataMonitorListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerCorsDefAllowedOriginListPage.html">ServerCorsDefAllowedOriginListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerModuleAndServiceListPage.html">ServerModuleAndServiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionSchedulerListPage.html">SolutionSchedulerListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMixedEnumListPage.html">SolutionMixedEnumListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ClientSettingsPage.html">ClientSettingsPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCodeEditorPage.html">WebCodeEditorPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemOperationListPage.html">SystemOperationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemModuleListPage.html">SystemModuleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionOperationListPage.html">SolutionOperationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemCustomPageListPage.html">SystemCustomPageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemGroupMenuListPage.html">SystemGroupMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemMenuListPage.html">SystemMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerBrowsablePathListPage.html">ServerBrowsablePathListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemMonitorPage.html">SystemMonitorPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GraphsPage.html">GraphsPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolTypeListPage.html">ServerToolTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionLanguageListPage.html">SolutionLanguageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolPanelListPage.html">ServerToolPanelListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMottoListPage.html">SolutionMottoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessAddressListPage.html">BusinessAddressListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionEmailTemplateListPage.html">SolutionEmailTemplateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerHealthCheckTaskListPage.html">ServerHealthCheckTaskListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HolidayTipsListPage.html">HolidayTipsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/OftenQuestionListPage.html">OftenQuestionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PrivacyPolicyListPage.html">PrivacyPolicyListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/RegistrationInfoListPage.html">RegistrationInfoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TermsListPage.html">TermsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/UbytkacInfoListPage.html">UbytkacInfoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebMottoListPage.html">WebMottoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebPageSettingListPage.html">WebPageSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebBannedIpAddressListPage.html">WebBannedIpAddressListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCoreFileListPage.html">WebCoreFileListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDeveloperNewsListPage.html">WebDeveloperNewsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDocumentationListPage.html">WebDocumentationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebGlobalPageBlockListPage.html">WebGlobalPageBlockListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebGroupMenuListPage.html">WebGroupMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebMenuListPage.html">WebMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCodeLibraryListPage.html">WebCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDocumentationCodeLibraryListPage.html">WebDocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebSettingListPage.html">WebSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebVisitIpListPage.html">WebVisitIpListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicImageGalleryListPage.html">BasicImageGalleryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ScreenSaverPage.html">ScreenSaverPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemIgnoredExceptionListPage.html">SystemIgnoredExceptionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolPanelDefinitionListPage.html">ServerToolPanelDefinitionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicAttachmentListPage.html">BasicAttachmentListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessBranchListPage.html">BusinessBranchListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicCalendarListPage.html">BasicCalendarListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessCreditNoteListPage.html">BusinessCreditNoteListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemDocumentTypeListPage.html">SystemDocumentTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessExchangeRateListPage.html">BusinessExchangeRateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicCurrencyListPage.html">BasicCurrencyListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemDocumentAdviceListPage.html">SystemDocumentAdviceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessIncomingInvoiceListPage.html">BusinessIncomingInvoiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessIncomingOrderListPage.html">BusinessIncomingOrderListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemTranslationListPage.html">SystemTranslationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemLoginHistoryListPage.html">SystemLoginHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessMaturityListPage.html">BusinessMaturityListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessNotesListPage.html">BusinessNotesListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOfferListPage.html">BusinessOfferListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOutgoingInvoiceListPage.html">BusinessOutgoingInvoiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOutgoingOrderListPage.html">BusinessOutgoingOrderListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessPaymentMethodListPage.html">BusinessPaymentMethodListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessPaymentStatusListPage.html">BusinessPaymentStatusListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessReceiptListPage.html">BusinessReceiptListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemReportQueueListPage.html">SystemReportQueueListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionFailListPage.html">SolutionFailListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicItemListPage.html">BasicItemListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemParameterListPage.html">SystemParameterListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicUnitListPage.html">BasicUnitListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicVatListPage.html">BasicVatListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessWarehouseListPage.html">BusinessWarehouseListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemSvgIconListPage.html">SystemSvgIconListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SupportPage.html">SupportPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemReportListPage.html">SystemReportListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionUserListPage.html">SolutionUserListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionUserRoleListPage.html">SolutionUserRoleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerSettingListPage.html">ServerSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WelcomePage.html">WelcomePage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateWebViewPage.html">TemplateWebViewPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateDocumentViewPage.html">TemplateDocumentViewPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateSTLPage.html">TemplateSTLPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateVideoPage.html">TemplateVideoPage</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalClasses
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemLocalEnumSets/SystemLocalEnumSets.html">SystemLocalEnumSets</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/AppRuntimeData.html">AppRuntimeData</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemStatuses.html">SystemStatuses</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/Authentification.html">Authentification</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/UserData.html">UserData</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/UpdateVariant.html">UpdateVariant</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/TiltTargets.html">TiltTargets</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DocumentItemList.html">DocumentItemList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemTranslatedTableList.html">SystemTranslatedTableList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SpTableList.html">SpTableList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DBJsonFile.html">DBJsonFile</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DeserializedJson.html">DeserializedJson</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalOperations
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/CommOperations.html">CommOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/ToolsOperations.html">ToolsOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/FormOperations.html">FormOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/HardwareOperations/HardwareOperations.html">HardwareOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/MathTypeOperations/MathTypeOperations.html">MathTypeOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/DBOperations.html">DBOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/SystemOperations.html">SystemOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/MediaOperations/MediaOperations.html">MediaOperations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/Info.html">Info</a></li>
+                        <li><a href="../../EasyITSystemCenter/InfoPopup/InfoPopup.html">InfoPopup</a></li>
+                        <li>ProgramaticXamlBehaviors
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/ProgramaticXamlBehaviors/TextBoxBehavior.html">TextBoxBehavior</a></li>
+                            </ul>
+                        </li>
+                        <li>Api
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Api/ApiUrls.html">ApiUrls</a></li>
+                                <li><a href="../../EasyITSystemCenter/Api/DBResultMessage.html">DBResultMessage</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemHelper
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/SystemLoggerWebSocketClass.html">SystemLoggerWebSocketClass</a></li>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/SystemLoggerHelper.html">SystemLoggerHelper</a></li>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/DelegateCommand`1/DelegateCommand`1.html">DelegateCommand`1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/Startup.html">Startup</a></li>
+                        <li><a href="../../EasyITSystemCenter/MainWindow.html">MainWindow</a></li>
+                        <li>Properties
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Properties/Resources.html">Resources</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemStructure
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemStructure/SystemWindowDataModel/SystemWindowDataModel.html">SystemWindowDataModel</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalGenerators
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalGenerators/IconMaker.html">IconMaker</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemConfiguration
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemConfiguration/CrashReporterSettings.html">CrashReporterSettings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/App.html">App</a></li>
+                    </ul>
+                </li>
+                <li>XamlGeneratedNamespace
+                    <ul>
+                        <li><a href="../../XamlGeneratedNamespace/GeneratedInternalTypeHelper.html">GeneratedInternalTypeHelper</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="body-content">
+            <div>
+                <h1>PrivacyPolicyListPage Class</h1>
+                <div>Namespace: EasyITSystemCenter.Pages</div>
+                <div id="inherited">Inherited: <span class="specific-element">System.Object</span></div>
+            </div>
+            <br />
+            PrivacyPolicyListPage
+            <br />
+            <div>
+                <h3>Methods</h3>
+                <ol>
+                    <li><a href="#62DE620AF1D84B604352F5641C4AA37697873B585A3778FEB0DF56D7F2B49D43">InitializeComponent()</a></li>
+                </ol>
+
+            </div>
+            
+
+            
+
+            
+
+            
+            <br />
+            <div id="methods">
+                <h2>Methods</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="62DE620AF1D84B604352F5641C4AA37697873B585A3778FEB0DF56D7F2B49D43">public InitializeComponent()</h3>
+                    <div class="method-content">
+                        
+                        
+                        
+                        <div class="elem-content">
+                            InitializeComponent
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        XMLDocumentToHtml: Groupware-Solution.Eu 2024 - 2025 Libor Svoboda.
+    </div>
+
+</body>
+</html>

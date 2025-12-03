@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Použit&#237; konfigurac&#237; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Použit&#237; konfigurac&#237; ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="EasySYSTEMbuilder InfoWeb">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="použití-konfigurací">Použití konfigurací</h1>
+
+<p>v aplikaci je jednoduchý soubor config/config.js
+Zde nastavíte jeden ze 3 režimů použití</p>
+<pre><code class="lang-cs">  Editor běží ve 3 režimech
+  - Samostatný editor - přímé stažení souboru z URL/Editoru. Statické lázně. Need Run from SecuritedWeb - Cors
+  - filesEditor - Manager Přímé načítání souborů ze složky &quot;data&quot;, nastavená v config - Správa dokumentace s ručně přepisovanými exportovanými soubory
+  - apiManager - Správa dokumentů Api ze serveru s automatickým verzováním,
+
+</code></pre>
+<hr>
+<h3 id="používání-moderních-funkcí-a-nápadů">Používání moderních funkcí a nápadů</h3>
+<ul>
+<li>Expertní editor pro správu každého typu Markdown Documentation</li>
+<li>Rozšířeno pro multimédia pomocí grafů, struktur atd. pro neomezené jednoduché použití</li>
+<li>Můžete definovat vlastní výchozí šablonu</li>
+<li>Můžete exportovat Html, Pdf soubor s libovolným jazykem</li>
+<li>pouze jeden jazykový soubor Mardown pro automatický online překlad / export do VŠECH jazyků</li>
+<li>Lze použít offline, pouze tlanslating v režimu offline není k dispozici</li>
+<li>Automatické verzování souborů Otevřít okamžitě zapsat všechny změny každým uživatelem</li>
+<li>Automatický překlad může vytvořit Universal Web pro Doc Viewer. Pro publikování potřebujete pouze Kopírovat na webový server</li>
+<li>Automatický vícejazyčný export PDF a HTML. MD je v jednom jazyce – automatický překlad nepotřebuje více jazyků</li>
+<li>Pouze režim Api automaticky aktualizuje zdrojové soubory (přístupné z DB), ostatní režimy musíte exportovat a nahradit ručně</li>
+<li>Může být použit pro dokumentaci procesů, toků, projektů, vývoje všeho,</li>
+<li>Snadný způsob aktualizace požadovaných novinek ze strany klientů</li>
+<li>S Generated Summary.md bude PŘEVEDEN NA DOKUMENTÁCI s fulltextovým vyhledáváním a publikován jako webové stránky</li>
+<li>Spuštění jako samostatná aplikace,</li>
+<li>Veškerá podpora OS</li>
+<li>Spustit kliknutím na index.hml -- Statické stránky, webové stránky, PC aplikace</li>
+<li>Celý kód je k dispozici pro nákup a neomezený vývoj</li>
+</ul>
+<pre><code class="lang-cs">
+</code></pre>
+<hr>
+<h3 id="snadné-konfigurace">SNADNÉ konfigurace</h3>
+<ul>
+<li>Lze spustit kliknutím na index.html Statické stránky přímo jako EASY Media Editor</li>
+<li>Samostatná konfigurace je pro správu/zobrazení uložených souborů</li>
+<li>Configuration Api je pro správu/zobrazování souborů Api s automatickým verzováním</li>
+<li>definice konfigurační třídy { Name,AutoVersion,Description,TimeStamp}
+-!!! Vyberte jednu z možností nastavení!!! Spustit pouze první nastavenou variantu !!!</li>
+</ul>
+<blockquote>
+<p>Varianta FilesEditor</p>
+</blockquote>
+<pre><code class="lang-csharp">// výchozí []
+// příklad ['test.md','test1.md']
+let ConfigFiles = ['helpFullEn.md','help_en.md','MerMaid.md'];
+</code></pre>
+<blockquote>
+<p>Varianta Api Documentation Manager</p>
+</blockquote>
+<pre><code class="lang-csharp">nech ConfigApiServer = {
+     BasicAuthLoginName: 'tester',
+     BasicAuthLoginPassword: 'tester',
+     ServerApiAddress: 'http:127.0.0.1:5000'
+}
+</code></pre>
+<blockquote>
+<p>Samostatná varianta editoru Offine/Online/StaticSpa/RunByClick</p>
+</blockquote>
+<pre><code class="lang-csharp">// jeho jediné Načtení souboru MarkDown z adresy URL pro úpravy a export
+// Cors potřebuje spustit Https
+// výchozí null
+// příklad &quot;https://some.com/makdown.md&quot;
+let ConfigUrlMdFile = &quot;https://kliknetezde.cz:5000/tools/EDC_ESB_InteliHelp/src/README.md&quot;;
+</code></pre>
+<h3 id="další-konfigurace">Další konfigurace</h3>
+<pre><code class="lang-csharp">// Výchozí soubor šablony ze složky &quot;config&quot;.
+let ConfigDefaultTemplate = &quot;defaultTemplate.md&quot;;
+
+// Automatický export souboru při uložení do paměti
+let ConfigExportFileOnSaving = true;
+//Povolit vytvoření nového dokumentu (API - úplný proces, vytvoření správce souborů)
+let ConfigEnableCreateNewDoc = true;
+// Systémová zpráva Zobrazit čas
+let ConfigSystemMessageShowTime = 5;
+
+//Je potřeba pro vícenásobný export
+let ConfigMermaidConvertOnExport = true;
+
+//TODO se nepoužívá
+let ConfigSelectedLanguages = ['cs','en','de','fr'];
+
+// Čas přípravy na vícenásobný export
+nech ConfigWaitingTimeInterval = 10;
+
+// Povolení automatického překladu při spuštění
+nech ConfigAutoMultiTranslateEnabled = true;
+
+// Návrat do jazyka po vícenásobném překladu
+let ConfigReturnToLanguage = 'en';
+</code></pre>
+<hr>
+<h3 id="použití-vývojáře">Použití vývojáře</h3>
+<pre><code class="lang-cs">//zobrazit původní nápovědu
+$(&quot;#Mavon&quot;)[0].__vue__.s_help = pravda
+
+//ovládání panelu nástrojů mavon
+$(&quot;#Mavon&quot;)[0].__vue__.$root.toolbar.save = false
+
+//Konfigurace webového serveru
+https://www.npmjs.com/package/http-server
+
+</code></pre>
+<hr>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      EasySYSTEMbuilder Universální Systém builder - Komplexní Řešení pro Vaše IT
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

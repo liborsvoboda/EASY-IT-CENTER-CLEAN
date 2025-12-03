@@ -1,0 +1,18 @@
+- name: Úvod EIC
+  homepage: index.md
+
+- name: Projekt
+  href: api/EasyITCenter.BackendServer.yml
+  
+- name: Info Dokumentace
+  href: EASY-DATA/SUMMARY.md
+
+- name: Dev Šablony
+  href: EASY-DATA/EICTemplates.md
+  
+- name: Struktura C#
+  href: EASY-DATA/EasyITCenter-Server.md
+  
+- name: Online Ukázky
+  href: EASY-DATA/EICExamplesOnline.md  
+

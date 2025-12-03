@@ -1,0 +1,25 @@
+[book]
+title = "OneClickGenerator Centralized Docs"
+authors = ["KlikneteZde.Cz in GroupWare-Solution.Eu"]
+language = "en"
+multilingual = false
+src = "src"
+description = "Here Write Your Desciption"
+
+
+[output.html]
+theme = "rust"
+default-theme = "rust"
+additional-css = ["./css/global.css"]
+additional-js = ["./js/jquery-3.6.0.min.js","./js/mermaid.min.cdn.js","./js/jquery-storage.js","./js/globalscript.js"]
+
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true 
+line-numbers = false 
+runnable = true 
+
+[output.html.print]
+enable = true 
+page-break = true

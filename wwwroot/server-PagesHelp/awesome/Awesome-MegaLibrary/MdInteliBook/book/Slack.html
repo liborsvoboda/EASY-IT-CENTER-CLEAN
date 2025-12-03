@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Slack - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html" class="active"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="images/logo.jpg" alt="Awesome Slack" /></p>
+<p><a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></a></p>
+<p>A list of communities about web development and design that are powered by <a href="http://slack.com">Slack</a>.</p>
+<h2 id="whats-slack"><a class="header" href="#whats-slack">What's Slack?</a></h2>
+<blockquote>
+<p>Slack is a platform for team communication: everything in one place, instantly searchable, available wherever you go. <em>- slack.com</em></p>
+</blockquote>
+<h2 id="development"><a class="header" href="#development">Development</a></h2>
+<ul>
+<li><a href="http://www.angularbuddies.com/">Angular</a></li>
+<li><a href="https://ember-community-slackin.herokuapp.com/">Ember</a></li>
+<li><a href="http://nodeslackers.io/">NodeJS</a></li>
+<li><a href="https://larachat.co/">Laravel</a></li>
+<li><a href="https://rubydevelopers.typeform.com/to/l7WVWl">Ruby</a></li>
+<li><a href="http://frontenddevelopers.org/">Front end</a></li>
+<li><a href="http://fedsonslack.com/">FEDs On Slack</a></li>
+<li><a href="http://hashtagtesting.com/">Test</a></li>
+<li><a href="http://androidchat.co/">Android</a></li>
+<li><a href="https://docs.google.com/forms/d/1Wk7Alq-lp9sgH3h___zMPmh4gAaghsGpnnsW0Pa_9Ik/viewform?fbzx=4754263898376949596#start=invite">GO</a></li>
+<li><a href="http://polymer-slack.herokuapp.com/">Polymer</a></li>
+<li><a href="https://symfony2slack.herokuapp.com/">Symfony</a></li>
+<li><a href="http://chat.phalcontip.com">Phalcon</a></li>
+<li><a href="http://clojurians.net/">Clojure</a></li>
+<li><a href="http://ios-developers.io/">iOS Developers</a></li>
+<li><a href="https://elixir-slackin.herokuapp.com/">Elixir</a></li>
+<li><a href="http://devopschat.co/">DevOps</a></li>
+<li><a href="https://slashrocket.io/">slashrocket</a></li>
+<li><a href="http://slack.cordova.io/">Cordova</a></li>
+<li><a href="http://atom-slack.herokuapp.com/">Atom</a></li>
+<li><a href="https://quokkaslack.herokuapp.com/">Quokka CMS</a></li>
+<li><a href="http://www.hashtagdevelopers.com/">#ruby, #python, #nodejs, #php, #go, #fed</a></li>
+</ul>
+<h2 id="regional"><a class="header" href="#regional">Regional</a></h2>
+<ul>
+<li><a href="http://focusasia.famouslabs.co?ref=github">Asia - Focus Asia</a></li>
+<li><a href="http://devanz.co">Australia &amp; New Zealand</a></li>
+<li><a href="http://slack-pythonbrasil.herokuapp.com/">Python Brazilian Community</a></li>
+<li><a href="http://grupysp.herokuapp.com/">Python São Paulo Community</a></li>
+<li><a href="http://grupypr.herokuapp.com/">Python Curitiba Community</a></li>
+</ul>
+<h2 id="design"><a class="header" href="#design">Design</a></h2>
+<ul>
+<li><a href="http://teamsketch.io/">Sketch</a></li>
+<li><a href="https://docs.google.com/forms/d/1KFCWRmjL3Z0GZxrUZjy_f8s0x1dIGaJP9447FbuBSqg/viewform?c=0&amp;w=1">Design Talks</a></li>
+<li><a href="http://www.designerhangout.co/">Designer Hangout</a></li>
+</ul>
+<h2 id="misc"><a class="header" href="#misc">Misc</a></h2>
+<ul>
+<li><a href="https://make.wordpress.org/chat/">WordPress</a></li>
+<li><a href="http://hashtagnomads.com/">Digital Nomad Chat</a></li>
+<li><a href="http://www.chitchats.co/">Chit Chats</a></li>
+<li><a href="https://github.com/evangelistcollective/">The Evangelist Collective</a></li>
+<li><a href="https://web-a11y.herokuapp.com/">a11y</a></li>
+<li><a href="http://signup.hangops.com">HangOps</a></li>
+<li><a href="http://psychedelicchat.com/">Psychedelic Chat</a></li>
+<li><a href="http://lgbtq.technology/">LGBTQ in Technology</a></li>
+<li><a href="http://www.hashtagstartup.co/">#Startup</a></li>
+<li><a href="http://artisans.digital">Digital Artisans</a></li>
+</ul>
+<h2 id="looking-for-more-lists-like-that"><a class="header" href="#looking-for-more-lists-like-that">Looking for more lists like that?</a></h2>
+<ul>
+<li><a href="https://github.com/sindresorhus/awesome">Awesome</a></li>
+<li><a href="https://github.com/peterkokot/awesome-community">Awesome Community</a></li>
+</ul>
+<h2 id="contribute"><a class="header" href="#contribute">Contribute</a></h2>
+<p>Your contributions and suggestions are :heart: welcome. Ensure to read the <a href="https://github.com/filipelinhares/awesome-slack/blob/master/CONTRIBUTING.md">guidelines</a> first.</p>
+<h2 id="license"><a class="header" href="#license">License</a></h2>
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /></a></p>
+<p><a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></a></p>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/matiassingers/awesome-slack/master/awesome-slack-pink.png" alt="Logo" width="200px">
+</p>
+<p align="center">
+    <h3 align="center">Awesome Slack</h3>
+</p>
+<p align="center">
+    A curated list of awesome, Slack-related things.
+</p>
+<hr />
+<p>An avid Slack user? A developer looking for awesome tools to build out an integration? Just looking for inspiration? This is a list of all the best things Slack. </p>
+<ul>
+<li><a href="#pencil--lists">:pencil:  Lists</a></li>
+<li><a href="#art--themes">:art:  Themes</a></li>
+<li><a href="#hammer_and_wrench--libraries-and-sdks">:hammer_and_wrench:  Libraries and SDKs</a></li>
+<li><a href="#gear--open-source-slack-apps-and-integrations">:gear:  Open-Source Slack Apps and Integrations</a></li>
+<li><a href="#busts_in_silhouette--contributions">:busts_in_silhouette:  Contributions</a></li>
+<li><a href="#classical_building--license">:classical_building:  License</a></li>
+</ul>
+<h2 id="pencil---lists"><a class="header" href="#pencil---lists">:pencil:   Lists</a></h2>
+<ul>
+<li><a href="https://api.slack.com/community">Community-Built Libraries</a> - Slack-curated list of community open-source libraries</li>
+<li><a href="https://slack.com/apps">Slack App Directory</a> - Official directory of publicly available Slack apps </li>
+<li><a href="https://emoji.gg">Slack Emojis</a> - Unofficial directory of custom emojis for Slack</li>
+</ul>
+<h2 id="art---themes"><a class="header" href="#art---themes">:art:   Themes</a></h2>
+<ul>
+<li><a href="http://slackthemes.net/">Slack Themes</a> - A Slack sidebar theme browser</li>
+<li><a href="http://sweetthemesaremadeofthe.se/">Sweet Themes Are Made of These</a> - Website for sharing Slack custom palettes</li>
+</ul>
+<h2 id="hammer_and_wrench---libraries-and-sdks"><a class="header" href="#hammer_and_wrench---libraries-and-sdks">:hammer_and_wrench:   Libraries and SDKs</a></h2>
+<h3 id="c"><a class="header" href="#c">C#</a></h3>
+<ul>
+<li><a href="https://github.com/jammerware/margiebot">margiebot</a> - A .NET library designed to make building bots for Slack fast, easy, and fun</li>
+<li><a href="https://github.com/nerdfury/Slack.Webhooks">Slack.Webhooks</a> - A library to work with Slack webhooks more easily</li>
+<li><a href="https://github.com/Inumedia/SlackAPI">SlackAPI</a> - A third-party implementation of Slack's API written in C#</li>
+</ul>
+<h3 id="erlang"><a class="header" href="#erlang">Erlang</a></h3>
+<ul>
+<li><a href="https://github.com/julienXX/slacker">slacker</a> - Erlang Slack REST API wrapper</li>
+</ul>
+<h3 id="go"><a class="header" href="#go">Go</a></h3>
+<ul>
+<li><a href="https://github.com/adnanh/webhook">webhook</a> - Easily run commands in response to HTTP webhook requests from Slack</li>
+</ul>
+<h3 id="java"><a class="header" href="#java">Java</a></h3>
+<ul>
+<li><a href="https://github.com/slackapi/java-slack-sdk">java-slack-sdk</a> - Slack's official Java framework for building Slack apps</li>
+<li><a href="https://github.com/Ullink/simple-slack-api">simple-slack-api</a> - A Slack client library in Java</li>
+</ul>
+<h3 id="javascripttypescript"><a class="header" href="#javascripttypescript">JavaScript/TypeScript</a></h3>
+<ul>
+<li><a href="https://github.com/slackapi/bolt-js">bolt-js</a> - Slack's official JavaScript framework for building Slack apps</li>
+<li><a href="https://github.com/yhatt/jsx-slack">jsx-slack</a> - Build JSON object for Slack Block Kit surfaces from JSX</li>
+<li><a href="https://github.com/slackapi/node-slack-sdk">node-slack-sdk</a> - Slack's official SDK for Node.js </li>
+<li><a href="https://github.com/raycharius/slack-block-builder">slack-block-builder</a> - Lightweight Node.js library for building Slack Block Kit UIs, with a declarative syntax inspired by SwiftUI</li>
+</ul>
+<h3 id="php"><a class="header" href="#php">PHP</a></h3>
+<ul>
+<li><a href="https://github.com/DZunke/SlackBundle">SlackBundle</a> - SlackBundle for Symfony2</li>
+<li><a href="https://github.com/slack-php/slack-php-app-framework">slack-php-app-framework</a> - Robust PHP framework for building Slack apps in PHP</li>
+<li><a href="https://github.com/jeremeamia/slack-block-kit">slack-php-block-kit</a> - Fluent interface for composing Slack Block Kit messages and modals in PHP </li>
+<li><a href="https://github.com/slack-php/slack-php-socket-mode">slack-php-socket-mode</a> - A Socket Mode implementation for <a href="https://github.com/slack-php/slack-php-app-framework">slack-php-app-framework</a></li>
+<li><a href="https://github.com/slack-php/slack-php-slick">slack-php-slick</a> - Dependency-free micro-framework for building Slack apps in PHP</li>
+</ul>
+<h3 id="powershell"><a class="header" href="#powershell">PowerShell</a></h3>
+<ul>
+<li><a href="https://github.com/RamblingCookieMonster/PSSlack">PSSlack</a> -  PowerShell module for simple Slack integration.</li>
+</ul>
+<h3 id="python"><a class="header" href="#python">Python</a></h3>
+<ul>
+<li><a href="https://github.com/imryche/blockkit">blockkit</a> - A fast way to build Block Kit interfaces in Python</li>
+<li><a href="https://github.com/slackapi/bolt-python">bolt-python</a> - Slack's official Python framework for building Slack apps</li>
+<li><a href="https://github.com/lamby/django-slack">django-slack</a> - Slack integration for Django, using the templating engine to generate messages</li>
+<li><a href="https://github.com/izdi/django-slack-oauth">django-slack-oauth</a> - Slack OAuth module for Django</li>
+<li><a href="https://github.com/slackapi/python-slack-events-api">python-slack-events-api</a> - Slack Events API adapter for Python </li>
+<li><a href="https://github.com/slackapi/python-slack-sdk">python-slack-sdk</a> - Slack's official SDK for Python</li>
+<li><a href="https://github.com/nicklambourne/slackblocks">slackblocks</a> - Python API for building Slack Block Kit messages</li>
+<li><a href="https://github.com/jolicode/slack-php-api">slack-php-api</a> - PHP Slack client based on the official OpenAPI specification </li>
+<li><a href="https://github.com/juanpabloaj/slacker-cli">slacker-cli</a> - Messages to slack from the command line</li>
+<li><a href="https://github.com/ebrassell/slashbot">slashbot</a> - An easy way to create slash commands using AWS Lambda functions</li>
+<li><a href="https://github.com/YSaxon/boltworks">boltworks</a> - Extensions to Slack's bolt framework: expandable GUIs, easier callbacks, richer CLIs</li>
+</ul>
+<h3 id="r"><a class="header" href="#r">R</a></h3>
+<ul>
+<li><a href="https://github.com/hrbrmstr/slackr">slackr</a> - A package to send webhook API messages to Slack channels/users from R</li>
+</ul>
+<h3 id="ruby"><a class="header" href="#ruby">Ruby</a></h3>
+<ul>
+<li><a href="https://github.com/stevenosloan/slack-notifier">slack-notifier</a> - A simple wrapper for posting to Slack</li>
+<li><a href="https://github.com/sosedoff/slack-notify">slack-notify</a> - Send notifications to Slack</li>
+<li><a href="https://github.com/rikas/slack-poster">slack-poster</a> - Simple gem to post messages on Slack using webhooks</li>
+<li><a href="https://github.com/CGA1123/slack-ruby-block-kit">slack-ruby-block-kit</a> - A ruby wrapper for Slack's Block Kit</li>
+<li><a href="https://github.com/dblock/slack-ruby-bot">slack-ruby-bot</a> - The easiest way to write a Slack bot in Ruby</li>
+<li><a href="https://github.com/slack-ruby/slack-ruby-bot-server">slack-ruby-bot-server</a> - Ruby library for building Slack applications</li>
+<li><a href="https://github.com/dblock/slack-ruby-client">slack-ruby-client</a> - A Ruby client for the Slack Web and RealTime Messaging APIs</li>
+</ul>
+<h3 id="rust"><a class="header" href="#rust">Rust</a></h3>
+<ul>
+<li><a href="https://github.com/abdolence/slack-morphism-rust">slack-morphism-rust</a> - A modern async Slack API client for Rust</li>
+</ul>
+<h3 id="scala"><a class="header" href="#scala">Scala</a></h3>
+<ul>
+<li><a href="https://github.com/gilbertw1/slack-scala-client">slack-scala-client</a> - A Scala Slack client for the Web and RTM API</li>
+</ul>
+<h3 id="swift"><a class="header" href="#swift">Swift</a></h3>
+<ul>
+<li><a href="https://github.com/SwiftBlocksUI/SwiftBlocksUI/">SwiftBlocksUI</a> - Interactive Slack messages and modals using a SwiftUI-like declarative style</li>
+</ul>
+<h2 id="gear---open-source-slack-apps-and-integrations"><a class="header" href="#gear---open-source-slack-apps-and-integrations">:gear:   Open-Source Slack Apps and Integrations</a></h2>
+<h3 id="coffeescript"><a class="header" href="#coffeescript">CoffeeScript</a></h3>
+<ul>
+<li><a href="https://github.com/sdslabs/jinora">jinora</a> - Slack webhook app to create anonymous public channels</li>
+</ul>
+<h3 id="java-1"><a class="header" href="#java-1">Java</a></h3>
+<ul>
+<li><a href="https://github.com/Ullink/simple-slack-api">simple-slack-api</a> - A Slack client library in Java</li>
+<li><a href="https://github.com/slackapi/tasks-app">tasks-app</a> - Simple task management app produced by Slack</li>
+</ul>
+<h3 id="javascripttypescript-1"><a class="header" href="#javascripttypescript-1">JavaScript/Typescript</a></h3>
+<ul>
+<li><a href="https://github.com/slackapi/definition-app">definition-app</a> - App for storing and accessing company-specific phrases</li>
+<li><a href="https://github.com/slackapi/slack-github-action">slack-github-action</a> - Send data into Slack using this GitHub Action</li>
+<li><a href="https://github.com/slackapi/slack-reporting-tool">slack-reporting-tool</a> - App that allows team members to report offensive messages</li>
+<li><a href="https://github.com/heikkipora/tesla-slack">tesla-slack</a> - Track your Tesla from Slack</li>
+<li><a href="https://github.com/slackapi/tasks-app">tasks-app</a> - Simple task management app produced by Slack</li>
+</ul>
+<h3 id="php-1"><a class="header" href="#php-1">PHP</a></h3>
+<ul>
+<li><a href="https://github.com/infojunkie/MantisBT-Slack">MantisBT-Slack</a> - MantisBT plugin to send bug updates to Slack</li>
+<li><a href="https://github.com/Seldaek/monolog">monolog</a> - Sends your logs to Slack</li>
+</ul>
+<h3 id="python-1"><a class="header" href="#python-1">Python</a></h3>
+<ul>
+<li><a href="https://github.com/lins05/slackbot">slackbot</a> - A chat bot for Slack</li>
+<li><a href="https://github.com/juanpabloaj/slacker-cli">slacker-cli</a> - Messages to slack from the command line</li>
+<li><a href="https://github.com/slackapi/tasks-app">tasks-app</a> - Simple task management app produced by Slack</li>
+<li><a href="https://github.com/rawdigits/wee-slack">wee-slack</a> - A WeeChat plugin for Slack</li>
+</ul>
+<h3 id="ruby-1"><a class="header" href="#ruby-1">Ruby</a></h3>
+<ul>
+<li><a href="https://github.com/dblock/slack-gamebot">slack-gamebot</a> - A game bot for Slack</li>
+<li><a href="https://github.com/gesteves/snarkov">snarkov</a> - Sinatra-based Markov bot for Slack</li>
+<li><a href="https://github.com/barryf/tickbot">tickbot</a> - Simple team time tracking reminder</li>
+<li><a href="https://github.com/gesteves/trebekbot">trebekbot</a> - A Jeopardy! bot for Slack</li>
+</ul>
+<h2 id="busts_in_silhouette---contributions"><a class="header" href="#busts_in_silhouette---contributions">:busts_in_silhouette:   Contributions</a></h2>
+<p>Contributions are always welcome! Please read the <a href="contributing.html">contribution guidelines</a> first.</p>
+<h2 id="classical_building---license"><a class="header" href="#classical_building---license">:classical_building:   License</a></h2>
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" /></a></p>
+<p>To the extent possible under law, <a href="http://mts.io">Matias Singers</a> has waived all copyright and related or neighboring rights to this work.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Shell.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Solidity.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Shell.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Solidity.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

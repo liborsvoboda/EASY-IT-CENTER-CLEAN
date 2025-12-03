@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <meta name="author" content="Aona Suzutsuki" />
+    <title>ServerRuntimeData Class</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/menu-anim.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/table.css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shCore.css" type="text/css" />
+    <link rel="stylesheet" href="../../syntaxhighlighter/css/shThemeDefault.css" type="text/css" />
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shCore.js"></script>
+    <script type="text/javascript" src="../../syntaxhighlighter/js/shBrushCSharp.js"></script>
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        $(function () {
+            SyntaxHighlighter.defaults.toolbar = false;
+            SyntaxHighlighter.all();
+
+            registMenu();
+        });
+    </script>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="menu-container">
+            <div id="top-menu-bt-cover">
+                <a class="menu-trigger" href="javascript:void(0);">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="../../index.html">Index</a></li>
+                <li>EasyITCenter
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../../EasyITCenter/Controllers/EasyITCenterStoredProceduresListApi.html">EasyITCenterStoredProceduresListApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/MessageModuleApi/MessageModuleApi.html">MessageModuleApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/ExpertDocApi/ExpertDocApi.html">ExpertDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/ServerDocApi/ServerDocApi.html">ServerDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/SystemWebDocApi/SystemWebDocApi.html">SystemWebDocApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/WebPagesAdminGroupMenuListApi/WebPagesAdminGroupMenuListApi.html">WebPagesAdminGroupMenuListApi</a></li>
+                                <li><a href="../../EasyITCenter/Controllers/WebPagesMessagesListApi/WebPagesMessagesListApi.html">WebPagesMessagesListApi</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreDBSettings
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerCoreLoggerWS.html">ServerCoreLoggerWS</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerDbDgmlSchemaApi.html">ServerDbDgmlSchemaApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerEmailerApi.html">ServerEmailerApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerMarkDownCodeSnippetApi.html">ServerMarkDownCodeSnippetApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/RSSLoad/RSSLoad.html">RSSLoad</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SomeRSSProvider.html">SomeRSSProvider</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerRssFeedApi.html">ServerRssFeedApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerWebPagesExportApi.html">ServerWebPagesExportApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/RobotsController.html">RobotsController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SitemapController.html">SitemapController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerDynamicSqlApi.html">ServerDynamicSqlApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerManagementApi.html">ServerManagementApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerOpenGraphApi.html">ServerOpenGraphApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemBuilderOnlinePreviewApi/SystemBuilderOnlinePreviewApi.html">SystemBuilderOnlinePreviewApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesSystemDataGetOnlyApi.html">WebPagesSystemDataGetOnlyApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesSystemToolsApi/WebPagesSystemToolsApi.html">WebPagesSystemToolsApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WebPagesUserApi/WebPagesUserApi.html">WebPagesUserApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/ServerWebProviderGetOnlyApi.html">ServerWebProviderGetOnlyApi</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/EasyITCenterContext.html">EasyITCenterContext</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/DatabaseContextExtensions.html">DatabaseContextExtensions</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WorkFlowContext.html">WorkFlowContext</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/WorkflowContextExtensions.html">WorkflowContextExtensions</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/StdAuthGenericProviderApi`3.html">StdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/StdFreeGenericProviderApi`3.html">StdFreeGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemStdAuthGenericProviderApi`3.html">SystemStdAuthGenericProviderApi`3</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreDBSettings/SystemStdFreeGenericProviderApi`3.html">SystemStdFreeGenericProviderApi`3</a></li>
+                            </ul>
+                        </li>
+                        <li>GitServer
+                            <ul>
+                                <li>Services
+                                    <ul>
+                                        <li><a href="../../EasyITCenter/GitServer/Services/GitAuthenticationService.html">GitAuthenticationService</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>ControllersExtensions
+                            <ul>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/EasyITCenterAuthenticationApi/EasyITCenterAuthenticationApi.html">EasyITCenterAuthenticationApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/EasyITCenterBackendCheckApi.html">EasyITCenterBackendCheckApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/SoftwareTriggers.html">SoftwareTriggers</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCorePostFileRotatorApi.html">ServerCorePostFileRotatorApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerToolsMinifierApi.html">ServerToolsMinifierApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCoreAutoGeneratorApi.html">ServerCoreAutoGeneratorApi</a></li>
+                                <li><a href="../../EasyITCenter/ControllersExtensions/ServerCoreWebToolsGenApi.html">ServerCoreWebToolsGenApi</a></li>
+                            </ul>
+                        </li>
+                        <li>DBModel
+                            <ul>
+                                <li><a href="../../EasyITCenter/DBModel/DBResult.html">DBResult</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/DBResultMessage.html">DBResultMessage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AuthenticateResponse.html">AuthenticateResponse</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/SetReportFilter.html">SetReportFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/IdFilter.html">IdFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/NameFilter.html">NameFilter</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CustomString.html">CustomString</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/GenericTable.html">GenericTable</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AutoGenRequest.html">AutoGenRequest</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/AutoGenConnectionString.html">AutoGenConnectionString</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/UploadGeneratorFiles.html">UploadGeneratorFiles</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/UploadFileData.html">UploadFileData</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CarouselImage.html">CarouselImage</a></li>
+                                <li><a href="../../EasyITCenter/DBModel/CarouselVideo.html">CarouselVideo</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreWebPages
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/DBWebApiResponses.html">DBWebApiResponses</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/ServerWebPagesLogin.html">ServerWebPagesLogin</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/ServerWebPagesToken.html">ServerWebPagesToken</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/EmailVerification.html">EmailVerification</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/WebRegistration.html">WebRegistration</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/UserConfig.html">UserConfig</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreWebPages/WebMessage.html">WebMessage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITCenter/BackendServer.html">BackendServer</a></li>
+                        <li>ServerCoreStructure
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerConfigSettings.html">ServerConfigSettings</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/MailRequest.html">MailRequest</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerStatuses.html">ServerStatuses</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ProcessClass.html">ProcessClass</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerLocalDbDials.html">ServerLocalDbDials</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerRuntimeData.html">ServerRuntimeData</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketExtension.html">WebSocketExtension</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerCoreAutoScheduler.html">ServerCoreAutoScheduler</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/AutoScheduledJob.html">AutoScheduledJob</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DelegateHealthCheckPublisher.html">DelegateHealthCheckPublisher</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/CommunicationController.html">CommunicationController</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketLogProvider.html">WebSocketLogProvider</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebSocketLogger.html">WebSocketLogger</a></li>
+                                <li>CoreOperations
+                                    <ul>
+                                        <li><a href="../../EasyITCenter/ServerCoreStructure/CoreOperations/GetOperatingSystemInfo.html">GetOperatingSystemInfo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DataOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/DbOperations.html">DbOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/WebToolsOperations.html">WebToolsOperations</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreStructure/ServerCoreWebHelpers.html">ServerCoreWebHelpers</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreServers
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServer/HostedFtpServer.html">HostedFtpServer</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider.html">HostedFtpServerMembershipProvider</a>
+                                    <ul>
+                                        <li><a href="../../EasyITCenter/ServerCoreServers/HostedFtpServerMembershipProvider/CustomFtpUser.html">CustomFtpUser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>ToolsControllers
+                            <ul>
+                                <li><a href="../../EasyITCenter/ToolsControllers/GeneratorMarkDownCode.html">GeneratorMarkDownCode</a></li>
+                            </ul>
+                        </li>
+                        <li>ServerCoreConfiguration
+                            <ul>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerConfigurationServices.html">ServerConfigurationServices</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerEnablingServices.html">ServerEnablingServices</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerModules.html">ServerModules</a></li>
+                                <li><a href="../../EasyITCenter/ServerCoreConfiguration/ServerModulesEnabling.html">ServerModulesEnabling</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITCenter/Startup.html">Startup</a></li>
+                        <li><a href="../../EasyITCenter/MimeTypes.html">MimeTypes</a></li>
+                    </ul>
+                </li>
+                <li>UploadFilesServer
+                    <ul>
+                        <li>Controllers
+                            <ul>
+                                <li><a href="../../UploadFilesServer/Controllers/ServerWebsiteStaticFilesApi/ServerWebsiteStaticFilesApi.html">ServerWebsiteStaticFilesApi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>ServerCorePages
+                    <ul>
+                        <li><a href="../../ServerCorePages/IndexModel.html">IndexModel</a></li>
+                    </ul>
+                </li>
+                <li>EasyITSystemCenter
+                    <ul>
+                        <li>Classes
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Classes/PropertyOrServiceTypeList/PropertyOrServiceTypeList.html">PropertyOrServiceTypeList</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/AppVersion.html">AppVersion</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/DataViewSupport.html">DataViewSupport</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/Language.html">Language</a></li>
+                                <li><a href="../../EasyITSystemCenter/Classes/ReportSelection.html">ReportSelection</a></li>
+                            </ul>
+                        </li>
+                        <li>Pages
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelApprovalListPage.html">HotelApprovalListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelImagesListPage.html">HotelImagesListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelListPage.html">HotelListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelPropertyAndServiceListPage.html">HotelPropertyAndServiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationReviewApprovalListPage.html">HotelReservationReviewApprovalListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelRoomListPage.html">HotelRoomListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelActionTypeListPage.html">HotelActionTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationStatusListPage.html">HotelReservationStatusListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelRoomTypeListPage.html">HotelRoomTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyGroupListPage.html">PropertyGroupListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyOrServiceTypeListPage.html">PropertyOrServiceTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PropertyOrServiceUnitListPage.html">PropertyOrServiceUnitListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CodeLibraryListPage.html">CodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CreditPackageListPage.html">CreditPackageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CityListPage.html">CityListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CountryAreaListPage.html">CountryAreaListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/CountryListPage.html">CountryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/InterestAreaListPage.html">InterestAreaListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocSrvDocTemplateListPage.html">DocSrvDocTemplateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationCodeLibraryListPage.html">DocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationGroupListPage.html">DocumentationGroupListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/DocumentationListPage.html">DocumentationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionEmailerHistoryListPage.html">SolutionEmailerHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMessageModuleListPage.html">SolutionMessageModuleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMessageTypeListPage.html">SolutionMessageTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestListPage.html">GuestListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationListPage.html">HotelReservationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservationReviewListPage.html">HotelReservationReviewListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HotelReservedRoomListPage.html">HotelReservedRoomListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestSettingListPage.html">GuestSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestFavoriteListPage.html">GuestFavoriteListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GuestLoginHistoryListPage.html">GuestLoginHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HostWin32AppPage.html">HostWin32AppPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebModulePage.html">WebModulePage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerLiveDataMonitorListPage.html">ServerLiveDataMonitorListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerCorsDefAllowedOriginListPage.html">ServerCorsDefAllowedOriginListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerModuleAndServiceListPage.html">ServerModuleAndServiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionSchedulerListPage.html">SolutionSchedulerListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMixedEnumListPage.html">SolutionMixedEnumListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ClientSettingsPage.html">ClientSettingsPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCodeEditorPage.html">WebCodeEditorPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemOperationListPage.html">SystemOperationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemModuleListPage.html">SystemModuleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionOperationListPage.html">SolutionOperationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemCustomPageListPage.html">SystemCustomPageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemGroupMenuListPage.html">SystemGroupMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemMenuListPage.html">SystemMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerBrowsablePathListPage.html">ServerBrowsablePathListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemMonitorPage.html">SystemMonitorPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/GraphsPage.html">GraphsPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolTypeListPage.html">ServerToolTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionLanguageListPage.html">SolutionLanguageListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolPanelListPage.html">ServerToolPanelListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionMottoListPage.html">SolutionMottoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessAddressListPage.html">BusinessAddressListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionEmailTemplateListPage.html">SolutionEmailTemplateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerHealthCheckTaskListPage.html">ServerHealthCheckTaskListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/HolidayTipsListPage.html">HolidayTipsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/OftenQuestionListPage.html">OftenQuestionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/PrivacyPolicyListPage.html">PrivacyPolicyListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/RegistrationInfoListPage.html">RegistrationInfoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TermsListPage.html">TermsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/UbytkacInfoListPage.html">UbytkacInfoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebMottoListPage.html">WebMottoListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebPageSettingListPage.html">WebPageSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebBannedIpAddressListPage.html">WebBannedIpAddressListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCoreFileListPage.html">WebCoreFileListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDeveloperNewsListPage.html">WebDeveloperNewsListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDocumentationListPage.html">WebDocumentationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebGlobalPageBlockListPage.html">WebGlobalPageBlockListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebGroupMenuListPage.html">WebGroupMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebMenuListPage.html">WebMenuListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebCodeLibraryListPage.html">WebCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebDocumentationCodeLibraryListPage.html">WebDocumentationCodeLibraryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebSettingListPage.html">WebSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WebVisitIpListPage.html">WebVisitIpListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicImageGalleryListPage.html">BasicImageGalleryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ScreenSaverPage.html">ScreenSaverPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemIgnoredExceptionListPage.html">SystemIgnoredExceptionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerToolPanelDefinitionListPage.html">ServerToolPanelDefinitionListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicAttachmentListPage.html">BasicAttachmentListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessBranchListPage.html">BusinessBranchListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicCalendarListPage.html">BasicCalendarListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessCreditNoteListPage.html">BusinessCreditNoteListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemDocumentTypeListPage.html">SystemDocumentTypeListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessExchangeRateListPage.html">BusinessExchangeRateListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicCurrencyListPage.html">BasicCurrencyListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemDocumentAdviceListPage.html">SystemDocumentAdviceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessIncomingInvoiceListPage.html">BusinessIncomingInvoiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessIncomingOrderListPage.html">BusinessIncomingOrderListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemTranslationListPage.html">SystemTranslationListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemLoginHistoryListPage.html">SystemLoginHistoryListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessMaturityListPage.html">BusinessMaturityListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessNotesListPage.html">BusinessNotesListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOfferListPage.html">BusinessOfferListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOutgoingInvoiceListPage.html">BusinessOutgoingInvoiceListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessOutgoingOrderListPage.html">BusinessOutgoingOrderListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessPaymentMethodListPage.html">BusinessPaymentMethodListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessPaymentStatusListPage.html">BusinessPaymentStatusListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessReceiptListPage.html">BusinessReceiptListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemReportQueueListPage.html">SystemReportQueueListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionFailListPage.html">SolutionFailListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicItemListPage.html">BasicItemListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemParameterListPage.html">SystemParameterListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicUnitListPage.html">BasicUnitListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BasicVatListPage.html">BasicVatListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/BusinessWarehouseListPage.html">BusinessWarehouseListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemSvgIconListPage.html">SystemSvgIconListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SupportPage.html">SupportPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SystemReportListPage.html">SystemReportListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionUserListPage.html">SolutionUserListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/SolutionUserRoleListPage.html">SolutionUserRoleListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/ServerSettingListPage.html">ServerSettingListPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/WelcomePage.html">WelcomePage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateWebViewPage.html">TemplateWebViewPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateDocumentViewPage.html">TemplateDocumentViewPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateSTLPage.html">TemplateSTLPage</a></li>
+                                <li><a href="../../EasyITSystemCenter/Pages/TemplateVideoPage.html">TemplateVideoPage</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalClasses
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemLocalEnumSets/SystemLocalEnumSets.html">SystemLocalEnumSets</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/AppRuntimeData.html">AppRuntimeData</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemStatuses.html">SystemStatuses</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/Authentification.html">Authentification</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/UserData.html">UserData</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/UpdateVariant.html">UpdateVariant</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/TiltTargets.html">TiltTargets</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DocumentItemList.html">DocumentItemList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemTranslatedTableList.html">SystemTranslatedTableList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SpTableList.html">SpTableList</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/SystemOperationMessage.html">SystemOperationMessage</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DBJsonFile.html">DBJsonFile</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalClasses/DeserializedJson.html">DeserializedJson</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalOperations
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/CommOperations.html">CommOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/ToolsOperations.html">ToolsOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/FormOperations.html">FormOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/DataOperations.html">DataOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/HardwareOperations/HardwareOperations.html">HardwareOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/MathTypeOperations/MathTypeOperations.html">MathTypeOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/DBOperations.html">DBOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/SystemOperations.html">SystemOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/FileOperations/FileOperations.html">FileOperations</a></li>
+                                <li><a href="../../EasyITSystemCenter/GlobalOperations/MediaOperations/MediaOperations.html">MediaOperations</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/Info.html">Info</a></li>
+                        <li><a href="../../EasyITSystemCenter/InfoPopup/InfoPopup.html">InfoPopup</a></li>
+                        <li>ProgramaticXamlBehaviors
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/ProgramaticXamlBehaviors/TextBoxBehavior.html">TextBoxBehavior</a></li>
+                            </ul>
+                        </li>
+                        <li>Api
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Api/ApiUrls.html">ApiUrls</a></li>
+                                <li><a href="../../EasyITSystemCenter/Api/DBResultMessage.html">DBResultMessage</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemHelper
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/SystemLoggerWebSocketClass.html">SystemLoggerWebSocketClass</a></li>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/SystemLoggerHelper.html">SystemLoggerHelper</a></li>
+                                <li><a href="../../EasyITSystemCenter/SystemHelper/DelegateCommand`1/DelegateCommand`1.html">DelegateCommand`1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/Startup.html">Startup</a></li>
+                        <li><a href="../../EasyITSystemCenter/MainWindow.html">MainWindow</a></li>
+                        <li>Properties
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/Properties/Resources.html">Resources</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemStructure
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemStructure/SystemWindowDataModel/SystemWindowDataModel.html">SystemWindowDataModel</a></li>
+                            </ul>
+                        </li>
+                        <li>GlobalGenerators
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/GlobalGenerators/IconMaker.html">IconMaker</a></li>
+                            </ul>
+                        </li>
+                        <li>SystemConfiguration
+                            <ul>
+                                <li><a href="../../EasyITSystemCenter/SystemConfiguration/CrashReporterSettings.html">CrashReporterSettings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../EasyITSystemCenter/App.html">App</a></li>
+                    </ul>
+                </li>
+                <li>XamlGeneratedNamespace
+                    <ul>
+                        <li><a href="../../XamlGeneratedNamespace/GeneratedInternalTypeHelper.html">GeneratedInternalTypeHelper</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="body-content">
+            <div>
+                <h1>ServerRuntimeData Class</h1>
+                <div>Namespace: EasyITCenter.ServerCoreStructure</div>
+                <div id="inherited">Inherited: <span class="specific-element">System.Object</span></div>
+            </div>
+            <br />
+            The server runtime data.
+            <br />
+            <div>
+                <h3>Properties</h3>
+                <ol>
+                    <li><a href="#A41C393C9B3401693B1525DD64EA4F4A6038E2F562172E93BC361F324AE31398">ContentRootPath</a></li>
+                    <li><a href="#7750ED72CF8140C4A8F59EBD4E0DAA19FD1D7E0D01D29336780010078BD3263C">Startup_path</a></li>
+                    <li><a href="#1C79B3A32F2344BC4C8851E4A5DF013E00D434D5DD1CF0F6E7245BCDBA12C8B4">WebRoot_path</a></li>
+                    <li><a href="#4CF957D40808802DB9BAE1F0F2522DD491221E4E453EA437946EE0364D892C55">Setting_folder</a></li>
+                    <li><a href="#82820E7DE72529C9ADA73C3D2D6FAB7AAD93F812084279F82937370AE2453B3A">UserPath</a></li>
+                    <li><a href="#652F9F16F40F4F6C23E192B779EA7750D3A0D47C207723930C73F3C71BC0A64D">SpecialUserWebRootPath</a></li>
+                    <li><a href="#F7DAD4B1EE74D11D10EFA1D2A70DA43AC1C0FA74DF539EF4129A3EFD0B2780E7">ConfigFile</a></li>
+                    <li><a href="#1C57DE68434702EEE2DC9D7BA3E0B12436876FA8FC5AA43DAEB74063982669F2">DataPath</a></li>
+                    <li><a href="#622404CCED6186CEF65950F9776083C425854E8AFB4AF8FEFEFB92FBAC333D7A">DebugMode</a></li>
+                </ol>
+                <h3>Fields</h3>
+                <ol>
+                    <li><a href="#A6A8AFDDBE33EB2293A8D4965924209EE2F91BE312A837848004C705B323061E">LocalDBTableList</a></li>
+                    <li><a href="#A37E9FDF08468B861BACC0C83BC075246538A875FF8EB12E92470BEED9C5F336">ServerCancelToken</a></li>
+                    <li><a href="#D381066DB75A46A4C6F46CE7F43055A154306D6B5EA7EFD6EB7951A8CDD69155">ServerArgs</a></li>
+                    <li><a href="#16B5DFF260C9982159EFCC51702A421D203BC4B9C8EB315CFC4AA65D57733958">ServerCoreStatus</a></li>
+                    <li><a href="#C0EF731B9A4EB13D2E683240D278E897889BDD2117A594826285267454B7D3B2">ServerRestartRequest</a></li>
+                    <li><a href="#4A7E58B607580BC592579549EB4A9EC9D8DCDF5A2C8E552A9EC38EBB2793E5EC">ServerFTPProvider</a></li>
+                    <li><a href="#88EBD0A63549DCCEC97AF488979EB85F09D1F4C09BBC4E59F028F557E7FC7D42">ServerAutoSchedulerProvider</a></li>
+                    <li><a href="#78502A3548140A3477849389B375ABBCF53A3C08BD8543EB8BB7D155D84845D8">CentralWebSocketList</a></li>
+                    <li><a href="#295C11FD9A863D3B1583F67B9DF953151F081FA060B0F5FCE4E786498C4CB03C">ServerServiceProvider</a></li>
+                    <li><a href="#AE29B33B7C51EFEF0B8069402BC20E8006B271FACA500AD53ED712A26057B73F">FileRotatorRuntineLibrary</a></li>
+                </ol>
+
+            </div>
+            
+
+            
+
+            
+
+            
+
+            
+            <br />
+            <div id="properties">
+                <h2>Properties</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A41C393C9B3401693B1525DD64EA4F4A6038E2F562172E93BC361F324AE31398">public void ContentRootPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets Project Root Directory.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="7750ED72CF8140C4A8F59EBD4E0DAA19FD1D7E0D01D29336780010078BD3263C">public void Startup_path</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the startup_path.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1C79B3A32F2344BC4C8851E4A5DF013E00D434D5DD1CF0F6E7245BCDBA12C8B4">public void WebRoot_path</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the startup_path.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="4CF957D40808802DB9BAE1F0F2522DD491221E4E453EA437946EE0364D892C55">public void Setting_folder</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the setting_folder.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="82820E7DE72529C9ADA73C3D2D6FAB7AAD93F812084279F82937370AE2453B3A">public void UserPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the configure file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="652F9F16F40F4F6C23E192B779EA7750D3A0D47C207723930C73F3C71BC0A64D">public void SpecialUserWebRootPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                User Web Root Path for Startup and Any missing address Automatic Redirection Value must
+                start with / Its Portal Model Central Point
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="F7DAD4B1EE74D11D10EFA1D2A70DA43AC1C0FA74DF539EF4129A3EFD0B2780E7">public void ConfigFile</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the configure file.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="1C57DE68434702EEE2DC9D7BA3E0B12436876FA8FC5AA43DAEB74063982669F2">public void DataPath</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the data path.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="622404CCED6186CEF65950F9776083C425854E8AFB4AF8FEFEFB92FBAC333D7A">public void DebugMode</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Gets or Sets the debug mode.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+            
+            <br />
+            <div id="fields">
+                <h2>Fields</h2>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A6A8AFDDBE33EB2293A8D4965924209EE2F91BE312A837848004C705B323061E">public void LocalDBTableList</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                The local db table list.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="A37E9FDF08468B861BACC0C83BC075246538A875FF8EB12E92470BEED9C5F336">public void ServerCancelToken</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Cancellation Token for Server Remote Control
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="D381066DB75A46A4C6F46CE7F43055A154306D6B5EA7EFD6EB7951A8CDD69155">public void ServerArgs</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Starup Args
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="16B5DFF260C9982159EFCC51702A421D203BC4B9C8EB315CFC4AA65D57733958">public void ServerCoreStatus</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Core Status
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="C0EF731B9A4EB13D2E683240D278E897889BDD2117A594826285267454B7D3B2">public void ServerRestartRequest</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Restart Request Indicator
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="4A7E58B607580BC592579549EB4A9EC9D8DCDF5A2C8E552A9EC38EBB2793E5EC">public void ServerFTPProvider</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Securited FTP Provider for Remote Control
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="88EBD0A63549DCCEC97AF488979EB85F09D1F4C09BBC4E59F028F557E7FC7D42">public void ServerAutoSchedulerProvider</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Server Securited FTP Provider for Remote Control
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="78502A3548140A3477849389B375ABBCF53A3C08BD8543EB8BB7D155D84845D8">public void CentralWebSocketList</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Central WebSocket List for Easy one place Using
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="295C11FD9A863D3B1583F67B9DF953151F081FA060B0F5FCE4E786498C4CB03C">public void ServerServiceProvider</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                Central List With references on Hested Server Sevices For Acess and Using Hosted
+                Functionalities for example: Start/Stop Service And More Other sub services for Optimal Hosting
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="method-elem">
+                    <h3 id="AE29B33B7C51EFEF0B8069402BC20E8006B271FACA500AD53ED712A26057B73F">public void FileRotatorRuntineLibrary</h3>
+                    <div class="method-content">
+                        
+                    
+                        <div class="method-elem">
+                            <div class="elem-content">
+                                SercerCore FilesLibrary For Rotator
+                TODO Clean
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="footer">
+        XMLDocumentToHtml: Groupware-Solution.Eu 2024 - 2025 Libor Svoboda.
+    </div>
+
+</body>
+</html>

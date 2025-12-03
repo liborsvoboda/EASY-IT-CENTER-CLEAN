@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+	<meta name="robots" content="noindex,follow">
+	<meta name="charset" content="utf-8" />
+
+	<link rel="stylesheet" href="./metro/css/skin-win8/ui.fancytree.min.css">
+	<link rel="stylesheet" href="./metro/css/metro-all.css" />
+
+	<script type="text/javascript" src="./metro/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./metro/js/fancytree-all-deps.js"></script>
+	<script type="text/javascript" src="./metro/js/metro.min.js"></script>
+
+	<title>Fancytree - Browser</title>
+	<script type="text/javascript">
+		$(function () {
+			$("#tree").fancytree({
+				checkbox: false,
+				source: {
+                    url: "./jsondata.json"
+				},
+				activate: function (event, data) {
+                    $("#FrameWindow").html("<iframe id=IFrameWindow src='" + data.node.key + "' class='h-100' height='100%' frameborder='0' scrolling='yes' style='width:100%; height: 100%;' ></iframe>");
+				},
+				checkbox: function (event, data) {
+					//hide for all
+					return data.node.isFolder() ? false : false;
+
+                    // Hide checkboxes for folders
+                    //return data.node.isFolder() ? false : true;
+				},
+				//tooltip: function (event, data) {
+				//	// Create dynamic tooltips
+				//	return data.node.title + " (" + data.node.key + ")";
+				//},
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="row w-100 h-100 d-inline-flex">
+		<div id="tree" class="h-100" style="width: 200px; overflow-y: auto;"></div>
+		<div id="FrameWindow" class="h-100" height="100%" frameborder="0" scrolling="yes" style="width: calc(100% - 200px);height:100%;"></div>
+	</div>
+</body>
+
+</html>

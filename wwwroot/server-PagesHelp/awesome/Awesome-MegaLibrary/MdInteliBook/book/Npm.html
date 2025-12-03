@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Npm - OneClickGenerator Centralized Docs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="Here Write Your Desciption">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./css/global.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="aframe.html"><strong aria-hidden="true">1.</strong> aframe</a></li><li class="chapter-item expanded "><a href="AI.html"><strong aria-hidden="true">2.</strong> AI</a></li><li class="chapter-item expanded "><a href="Algolia.html"><strong aria-hidden="true">3.</strong> Algolia</a></li><li class="chapter-item expanded "><a href="ApiDevTools.html"><strong aria-hidden="true">4.</strong> ApiDevTools</a></li><li class="chapter-item expanded "><a href="Avalonia.html"><strong aria-hidden="true">5.</strong> Avalonia</a></li><li class="chapter-item expanded "><a href="Awesome-All.html"><strong aria-hidden="true">6.</strong> Awesome-All</a></li><li class="chapter-item expanded "><a href="awesome-awesomeness.html"><strong aria-hidden="true">7.</strong> awesome-awesomeness</a></li><li class="chapter-item expanded "><a href="AwesomeAwesome.html"><strong aria-hidden="true">8.</strong> AwesomeAwesome</a></li><li class="chapter-item expanded "><a href="Awesomeness.html"><strong aria-hidden="true">9.</strong> Awesomeness</a></li><li class="chapter-item expanded "><a href="Badges.html"><strong aria-hidden="true">10.</strong> Badges</a></li><li class="chapter-item expanded "><a href="Beginners.html"><strong aria-hidden="true">11.</strong> Beginners</a></li><li class="chapter-item expanded "><a href="BigData.html"><strong aria-hidden="true">12.</strong> BigData</a></li><li class="chapter-item expanded "><a href="Black-friday.html"><strong aria-hidden="true">13.</strong> Black-friday</a></li><li class="chapter-item expanded "><a href="Blazor.html"><strong aria-hidden="true">14.</strong> Blazor</a></li><li class="chapter-item expanded "><a href="blockchain.html"><strong aria-hidden="true">15.</strong> blockchain</a></li><li class="chapter-item expanded "><a href="BridgeNET.html"><strong aria-hidden="true">16.</strong> BridgeNET</a></li><li class="chapter-item expanded "><a href="Browserify.html"><strong aria-hidden="true">17.</strong> Browserify</a></li><li class="chapter-item expanded "><a href="Bun.html"><strong aria-hidden="true">18.</strong> Bun</a></li><li class="chapter-item expanded "><a href="C#CodeGen.html"><strong aria-hidden="true">19.</strong> C#CodeGen</a></li><li class="chapter-item expanded "><a href="CharpGenerators.html"><strong aria-hidden="true">20.</strong> CharpGenerators</a></li><li class="chapter-item expanded "><a href="Chatgp.html"><strong aria-hidden="true">21.</strong> Chatgp</a></li><li class="chapter-item expanded "><a href="Chatgpt-prompts.html"><strong aria-hidden="true">22.</strong> Chatgpt-prompts</a></li><li class="chapter-item expanded "><a href="Chrome-devtools.html"><strong aria-hidden="true">23.</strong> Chrome-devtools</a></li><li class="chapter-item expanded "><a href="Cli-Apps.html"><strong aria-hidden="true">24.</strong> Cli-Apps</a></li><li class="chapter-item expanded "><a href="Courses.html"><strong aria-hidden="true">25.</strong> Courses</a></li><li class="chapter-item expanded "><a href="Csharp.html"><strong aria-hidden="true">26.</strong> Csharp</a></li><li class="chapter-item expanded "><a href="DataEngineering.html"><strong aria-hidden="true">27.</strong> DataEngineering</a></li><li class="chapter-item expanded "><a href="DbTools.html"><strong aria-hidden="true">28.</strong> DbTools</a></li><li class="chapter-item expanded "><a href="DomainDesign.html"><strong aria-hidden="true">29.</strong> DomainDesign</a></li><li class="chapter-item expanded "><a href="Dotnet-core.html"><strong aria-hidden="true">30.</strong> Dotnet-core</a></li><li class="chapter-item expanded "><a href="Dotnet.html"><strong aria-hidden="true">31.</strong> Dotnet</a></li><li class="chapter-item expanded "><a href="dotnetReady.html"><strong aria-hidden="true">32.</strong> dotnetReady</a></li><li class="chapter-item expanded "><a href="Echarts.html"><strong aria-hidden="true">33.</strong> Echarts</a></li><li class="chapter-item expanded "><a href="ECommerce.html"><strong aria-hidden="true">34.</strong> ECommerce</a></li><li class="chapter-item expanded "><a href="Editorjs.html"><strong aria-hidden="true">35.</strong> Editorjs</a></li><li class="chapter-item expanded "><a href="Electron.html"><strong aria-hidden="true">36.</strong> Electron</a></li><li class="chapter-item expanded "><a href="Example.html"><strong aria-hidden="true">37.</strong> Example</a></li><li class="chapter-item expanded "><a href="Falsehood.html"><strong aria-hidden="true">38.</strong> Falsehood</a></li><li class="chapter-item expanded "><a href="FastReportCloud.html"><strong aria-hidden="true">39.</strong> FastReportCloud</a></li><li class="chapter-item expanded "><a href="FireWalls.html"><strong aria-hidden="true">40.</strong> FireWalls</a></li><li class="chapter-item expanded "><a href="Generators.html"><strong aria-hidden="true">41.</strong> Generators</a></li><li class="chapter-item expanded "><a href="Github-vue.html"><strong aria-hidden="true">42.</strong> Github-vue</a></li><li class="chapter-item expanded "><a href="Github.html"><strong aria-hidden="true">43.</strong> Github</a></li><li class="chapter-item expanded "><a href="Gitpod.html"><strong aria-hidden="true">44.</strong> Gitpod</a></li><li class="chapter-item expanded "><a href="Gogot.html"><strong aria-hidden="true">45.</strong> Gogot</a></li><li class="chapter-item expanded "><a href="Gpt3.html"><strong aria-hidden="true">46.</strong> Gpt3</a></li><li class="chapter-item expanded "><a href="Hacking.html"><strong aria-hidden="true">47.</strong> Hacking</a></li><li class="chapter-item expanded "><a href="hcloud.html"><strong aria-hidden="true">48.</strong> hcloud</a></li><li class="chapter-item expanded "><a href="HealthCare.html"><strong aria-hidden="true">49.</strong> HealthCare</a></li><li class="chapter-item expanded "><a href="Hydrogen.html"><strong aria-hidden="true">50.</strong> Hydrogen</a></li><li class="chapter-item expanded "><a href="Hyperterm.html"><strong aria-hidden="true">51.</strong> Hyperterm</a></li><li class="chapter-item expanded "><a href="Ilp.html"><strong aria-hidden="true">52.</strong> Ilp</a></li><li class="chapter-item expanded "><a href="IncidentResponse.html"><strong aria-hidden="true">53.</strong> IncidentResponse</a></li><li class="chapter-item expanded "><a href="Interledger.html"><strong aria-hidden="true">54.</strong> Interledger</a></li><li class="chapter-item expanded "><a href="Interview-question.html"><strong aria-hidden="true">55.</strong> Interview-question</a></li><li class="chapter-item expanded "><a href="Iot.html"><strong aria-hidden="true">56.</strong> Iot</a></li><li class="chapter-item expanded "><a href="IPTV.html"><strong aria-hidden="true">57.</strong> IPTV</a></li><li class="chapter-item expanded "><a href="JamStack.html"><strong aria-hidden="true">58.</strong> JamStack</a></li><li class="chapter-item expanded "><a href="Javascript-learning.html"><strong aria-hidden="true">59.</strong> Javascript-learning</a></li><li class="chapter-item expanded "><a href="Javascript.html"><strong aria-hidden="true">60.</strong> Javascript</a></li><li class="chapter-item expanded "><a href="Jekyll-editors.html"><strong aria-hidden="true">61.</strong> Jekyll-editors</a></li><li class="chapter-item expanded "><a href="Jekyll-plugins.html"><strong aria-hidden="true">62.</strong> Jekyll-plugins</a></li><li class="chapter-item expanded "><a href="Jekyll-themes.html"><strong aria-hidden="true">63.</strong> Jekyll-themes</a></li><li class="chapter-item expanded "><a href="Jekyll.html"><strong aria-hidden="true">64.</strong> Jekyll</a></li><li class="chapter-item expanded "><a href="List.html"><strong aria-hidden="true">65.</strong> List</a></li><li class="chapter-item expanded "><a href="MacroPad.html"><strong aria-hidden="true">66.</strong> MacroPad</a></li><li class="chapter-item expanded "><a href="Main.html"><strong aria-hidden="true">67.</strong> Main</a></li><li class="chapter-item expanded "><a href="MarkDown.html"><strong aria-hidden="true">68.</strong> MarkDown</a></li><li class="chapter-item expanded "><a href="MarkDownEdit.html"><strong aria-hidden="true">69.</strong> MarkDownEdit</a></li><li class="chapter-item expanded "><a href="Master.html"><strong aria-hidden="true">70.</strong> Master</a></li><li class="chapter-item expanded "><a href="Maui.html"><strong aria-hidden="true">71.</strong> Maui</a></li><li class="chapter-item expanded "><a href="Metalsmith.html"><strong aria-hidden="true">72.</strong> Metalsmith</a></li><li class="chapter-item expanded "><a href="Microsoft.html"><strong aria-hidden="true">73.</strong> Microsoft</a></li><li class="chapter-item expanded "><a href="Moleculer.html"><strong aria-hidden="true">74.</strong> Moleculer</a></li><li class="chapter-item expanded "><a href="Mqtt.html"><strong aria-hidden="true">75.</strong> Mqtt</a></li><li class="chapter-item expanded "><a href="MusicProduct.html"><strong aria-hidden="true">76.</strong> MusicProduct</a></li><li class="chapter-item expanded "><a href="NaturalLangProcess.html"><strong aria-hidden="true">77.</strong> NaturalLangProcess</a></li><li class="chapter-item expanded "><a href="Near.html"><strong aria-hidden="true">78.</strong> Near</a></li><li class="chapter-item expanded "><a href="NetworkAutomation.html"><strong aria-hidden="true">79.</strong> NetworkAutomation</a></li><li class="chapter-item expanded "><a href="Newsletters.html"><strong aria-hidden="true">80.</strong> Newsletters</a></li><li class="chapter-item expanded "><a href="Nlp.html"><strong aria-hidden="true">81.</strong> Nlp</a></li><li class="chapter-item expanded "><a href="NodeJs.html"><strong aria-hidden="true">82.</strong> NodeJs</a></li><li class="chapter-item expanded "><a href="Npm.html" class="active"><strong aria-hidden="true">83.</strong> Npm</a></li><li class="chapter-item expanded "><a href="Npx.html"><strong aria-hidden="true">84.</strong> Npx</a></li><li class="chapter-item expanded "><a href="Nugets.html"><strong aria-hidden="true">85.</strong> Nugets</a></li><li class="chapter-item expanded "><a href="Observables.html"><strong aria-hidden="true">86.</strong> Observables</a></li><li class="chapter-item expanded "><a href="Okr.html"><strong aria-hidden="true">87.</strong> Okr</a></li><li class="chapter-item expanded "><a href="OpenSource.html"><strong aria-hidden="true">88.</strong> OpenSource</a></li><li class="chapter-item expanded "><a href="Osint.html"><strong aria-hidden="true">89.</strong> Osint</a></li><li class="chapter-item expanded "><a href="Php.html"><strong aria-hidden="true">90.</strong> Php</a></li><li class="chapter-item expanded "><a href="Piracy.html"><strong aria-hidden="true">91.</strong> Piracy</a></li><li class="chapter-item expanded "><a href="Pnpm.html"><strong aria-hidden="true">92.</strong> Pnpm</a></li><li class="chapter-item expanded "><a href="Podcasts.html"><strong aria-hidden="true">93.</strong> Podcasts</a></li><li class="chapter-item expanded "><a href="PostHtml.html"><strong aria-hidden="true">94.</strong> PostHtml</a></li><li class="chapter-item expanded "><a href="Powershell.html"><strong aria-hidden="true">95.</strong> Powershell</a></li><li class="chapter-item expanded "><a href="PractiseProgram.html"><strong aria-hidden="true">96.</strong> PractiseProgram</a></li><li class="chapter-item expanded "><a href="Projects.html"><strong aria-hidden="true">97.</strong> Projects</a></li><li class="chapter-item expanded "><a href="Puppetier.html"><strong aria-hidden="true">98.</strong> Puppetier</a></li><li class="chapter-item expanded "><a href="Python.html"><strong aria-hidden="true">99.</strong> Python</a></li><li class="chapter-item expanded "><a href="Random.html"><strong aria-hidden="true">100.</strong> Random</a></li><li class="chapter-item expanded "><a href="ReadmeAwesome.html"><strong aria-hidden="true">101.</strong> ReadmeAwesome</a></li><li class="chapter-item expanded "><a href="ReadTheDocs.html"><strong aria-hidden="true">102.</strong> ReadTheDocs</a></li><li class="chapter-item expanded "><a href="Recursion.html"><strong aria-hidden="true">103.</strong> Recursion</a></li><li class="chapter-item expanded "><a href="RemoteJob.html"><strong aria-hidden="true">104.</strong> RemoteJob</a></li><li class="chapter-item expanded "><a href="Research.html"><strong aria-hidden="true">105.</strong> Research</a></li><li class="chapter-item expanded "><a href="Resources.html"><strong aria-hidden="true">106.</strong> Resources</a></li><li class="chapter-item expanded "><a href="Ripple.html"><strong aria-hidden="true">107.</strong> Ripple</a></li><li class="chapter-item expanded "><a href="Roslyn.html"><strong aria-hidden="true">108.</strong> Roslyn</a></li><li class="chapter-item expanded "><a href="Selfhosted.html"><strong aria-hidden="true">109.</strong> Selfhosted</a></li><li class="chapter-item expanded "><a href="SheetMusic.html"><strong aria-hidden="true">110.</strong> SheetMusic</a></li><li class="chapter-item expanded "><a href="Shell.html"><strong aria-hidden="true">111.</strong> Shell</a></li><li class="chapter-item expanded "><a href="Slack.html"><strong aria-hidden="true">112.</strong> Slack</a></li><li class="chapter-item expanded "><a href="Solidity.html"><strong aria-hidden="true">113.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Speakers.html"><strong aria-hidden="true">114.</strong> Speakers</a></li><li class="chapter-item expanded "><a href="Split-keyboards.html"><strong aria-hidden="true">115.</strong> Split-keyboards</a></li><li class="chapter-item expanded "><a href="StoryBook.html"><strong aria-hidden="true">116.</strong> StoryBook</a></li><li class="chapter-item expanded "><a href="Streaming.html"><strong aria-hidden="true">117.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="SummerNote.html"><strong aria-hidden="true">118.</strong> SummerNote</a></li><li class="chapter-item expanded "><a href="Sysadmin.html"><strong aria-hidden="true">119.</strong> Sysadmin</a></li><li class="chapter-item expanded "><a href="TailWindCss.html"><strong aria-hidden="true">120.</strong> TailWindCss</a></li><li class="chapter-item expanded "><a href="Talks.html"><strong aria-hidden="true">121.</strong> Talks</a></li><li class="chapter-item expanded "><a href="Tap.html"><strong aria-hidden="true">122.</strong> Tap</a></li><li class="chapter-item expanded "><a href="Tauri.html"><strong aria-hidden="true">123.</strong> Tauri</a></li><li class="chapter-item expanded "><a href="TechBlogs.html"><strong aria-hidden="true">124.</strong> TechBlogs</a></li><li class="chapter-item expanded "><a href="Templates.html"><strong aria-hidden="true">125.</strong> Templates</a></li><li class="chapter-item expanded "><a href="Terraform.html"><strong aria-hidden="true">126.</strong> Terraform</a></li><li class="chapter-item expanded "><a href="Themes.html"><strong aria-hidden="true">127.</strong> Themes</a></li><li class="chapter-item expanded "><a href="Tuneling.html"><strong aria-hidden="true">128.</strong> Tuneling</a></li><li class="chapter-item expanded "><a href="Visualstudiocode.html"><strong aria-hidden="true">129.</strong> Visualstudiocode</a></li><li class="chapter-item expanded "><a href="Vue-3.html"><strong aria-hidden="true">130.</strong> Vue-3</a></li><li class="chapter-item expanded "><a href="Vue.html"><strong aria-hidden="true">131.</strong> Vue</a></li><li class="chapter-item expanded "><a href="Wasi.html"><strong aria-hidden="true">132.</strong> Wasi</a></li><li class="chapter-item expanded "><a href="Web-browsers.html"><strong aria-hidden="true">133.</strong> Web-browsers</a></li><li class="chapter-item expanded "><a href="Web-editor.html"><strong aria-hidden="true">134.</strong> Web-editor</a></li><li class="chapter-item expanded "><a href="WebAssembly.html"><strong aria-hidden="true">135.</strong> WebAssembly</a></li><li class="chapter-item expanded "><a href="WebAudio.html"><strong aria-hidden="true">136.</strong> WebAudio</a></li><li class="chapter-item expanded "><a href="WebExtensions.html"><strong aria-hidden="true">137.</strong> WebExtensions</a></li><li class="chapter-item expanded "><a href="WebHacking.html"><strong aria-hidden="true">138.</strong> WebHacking</a></li><li class="chapter-item expanded "><a href="WebHosting.html"><strong aria-hidden="true">139.</strong> WebHosting</a></li><li class="chapter-item expanded "><a href="Workflow.html"><strong aria-hidden="true">140.</strong> Workflow</a></li><li class="chapter-item expanded "><a href="Wysiwyg.html"><strong aria-hidden="true">141.</strong> Wysiwyg</a></li><li class="spacer"></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">OneClickGenerator Centralized Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="awesome-npm"><a class="header" href="#awesome-npm">Awesome npm <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a> <a href="https://www.npmjs.com"><img src="https://github.com/npm/logos/blob/7fb0bc425e0dac1bab065217c4ed595594448db4/npm-transparent.png" width="200" align="right" alt="npm"></a></a></h1>
+<blockquote>
+<p>Awesome <a href="https://www.npmjs.com">npm</a> resources and tips</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Npm_(software)">npm</a> is a package manager for the JavaScript programming language and comes bundled in the <a href="https://en.wikipedia.org/wiki/Node.js">Node.js</a> runtime.</p>
+<p><em>Please read the <a href="contributing.html">contribution guidelines</a> before contributing.</em></p>
+<h2 id="contents"><a class="header" href="#contents">Contents</a></h2>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#related">Related</a></li>
+</ul>
+<h2 id="articles"><a class="header" href="#articles">Articles</a></h2>
+<ul>
+<li><a href="https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328">Small focused modules</a></li>
+<li><a href="http://blog.izs.me/post/48281998870/unix-philosophy-and-nodejs">Unix philosophy and Node.js</a> - Write programs that do one thing and do it well.</li>
+<li><a href="https://web.archive.org/web/20180302125059/https://substack.net/how_I_write_modules">Writing small modules</a></li>
+<li><a href="https://nodesource.com/blog/semver-a-primer/">Semver: A Primer</a> <em>(Must read!)</em></li>
+<li><a href="https://nodesource.com/blog/semver-tilde-and-caret/">Semver: Tilde and Caret</a></li>
+<li><a href="https://addyosmani.com/blog/using-npm-offline/">Offline installation of npm packages</a></li>
+<li><a href="https://web.archive.org/web/20180302164842/http://substack.net/task_automation_with_npm_run">Task automation with npm run</a></li>
+<li><a href="https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">How to use npm as a build tool</a></li>
+<li><a href="https://github.com/sindresorhus/guides/blob/main/npm-global-without-sudo.md">Install npm packages globally without sudo on macOS and Linux</a></li>
+<li><a href="https://medium.com/@goldglovecb/npm-needs-a-personal-trainer-537e0f8859c6">Optimizing the footprint of an npm package</a></li>
+<li><a href="https://github.com/maxogden/art-of-node#modules">The Art of Node</a> - An introduction to Node.js and client-side development with npm.</li>
+<li><a href="https://css-tricks.com/why-npm-scripts/">Why npm scripts?</a> - An introduction to npm scripts with common packages and scripts, as well as a boilerplate project.</li>
+</ul>
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<h3 id="web"><a class="header" href="#web">Web</a></h3>
+<ul>
+<li><a href="https://npms.io">npms</a> - Superb package search with deep analysis of package quality using a <a href="https://npms.io/about">myriad of metrics</a>.</li>
+<li><a href="https://nodei.co/">NodeICO</a> - Package badges.</li>
+<li><a href="https://libraries.io/npm">Libraries.io</a> - Package discovery.</li>
+<li><a href="http://npm-stat.com">npm-stat</a> - Statistics charts for packages.</li>
+<li><a href="http://npm.anvaka.com">npmgraph</a> - Visualization of dependencies.</li>
+<li><a href="http://www.npmtrends.com">npm trends</a> - Compare package download counts over time.</li>
+<li><a href="https://npmcompare.com">npm-compare</a> - Easily search and compare packages.</li>
+<li><a href="https://gist.github.com/bcoe/dcc961b869bbf6685002">npm-top</a> - npm users by downloads.</li>
+<li><a href="http://semver.npmjs.com">npm semver calculator</a> - Visually explore what versions of a package a semver range matches.</li>
+<li><a href="https://ghub.io">ghub.io</a> - Redirects to the GitHub repo of an npm package.</li>
+<li><a href="https://moiva.io">moiva</a> - Discover and compare packages.</li>
+</ul>
+<h3 id="browser-extensions"><a class="header" href="#browser-extensions">Browser extensions</a></h3>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/octo-linker/jlmafbaeoofdegohdhinkhilhclaklkp">Octo-Linker</a> - Chrome extension to navigate across npm packages on GitHub with ease.</li>
+<li><a href="https://chrome.google.com/webstore/detail/npm-hub/kbbbjimdjbjclaebffknlabpogocablj">npm-hub</a> - Chrome extension to explore npm dependencies on GitHub repos.</li>
+<li><a href="https://chrome.google.com/webstore/detail/github-npm-stats/oomfflokggoffaiagenekchfnpighcef">github-npm-stats</a> - View npm download stats on GitHub.</li>
+<li><a href="https://chrome.google.com/webstore/detail/npm-search-update/kagpoplamlmaonpddimnnigiojimihnh">npm-search-update</a> - Chrome extension to quickly search for dependencies and monitor changes from the npm registry.</li>
+</ul>
+<h3 id="cli"><a class="header" href="#cli">CLI</a></h3>
+<ul>
+<li><a href="https://github.com/lukechilds/zsh-better-npm-completion">zsh-better-npm-completion</a> - Better ZSH completion for npm.</li>
+<li><a href="https://github.com/voidcosmos/npkill">npkill</a> - Easily find and remove old and heavy node_modules folders.</li>
+</ul>
+<h2 id="packages"><a class="header" href="#packages">Packages</a></h2>
+<h3 id="publishing"><a class="header" href="#publishing">Publishing</a></h3>
+<ul>
+<li><a href="https://github.com/sindresorhus/np">np</a> - A better <code>npm publish</code>.</li>
+<li><a href="https://github.com/inikulin/publish-please">publish-please</a> - Publish packages safely and gracefully.</li>
+<li><a href="https://github.com/phuu/npm-release">npm-release</a> - Making releasing to npm so easy a kitten could probably do it™.</li>
+<li><a href="https://github.com/timoxley/pkgfiles">pkgfiles</a> - List all files which would be published in a package.</li>
+<li><a href="https://github.com/webpro/release-it">release-it</a> - Automate releases for Git repositories and/or npm packages. Changelog generation, GitHub/GitLab releases, etc.</li>
+<li><a href="https://github.com/semantic-release/semantic-release">semantic-release</a> - Fully automated package publishing.</li>
+</ul>
+<h3 id="registry"><a class="header" href="#registry">Registry</a></h3>
+<ul>
+<li><a href="https://github.com/sindresorhus/npm-name-cli">npm-name</a> - Check whether a package name is available on npm.</li>
+<li><a href="https://github.com/sindresorhus/package-json">package-json</a> - Get the package.json of a package from the npm registry.</li>
+<li><a href="https://github.com/sindresorhus/latest-version-cli">latest-version</a> - Get the latest version of an npm package.</li>
+<li><a href="https://github.com/sindresorhus/npm-keyword">npm-keyword</a> - Get a list of npm packages with a certain keyword.</li>
+<li><a href="https://github.com/sindresorhus/npm-user">npm-user</a> - Get user info of an npm user.</li>
+<li><a href="https://github.com/sindresorhus/npm-email">npm-email</a> - Get the email of an npm user.</li>
+<li><a href="https://github.com/kevva/npm-user-packages-cli">npm-user-packages</a> - Get packages by an npm user.</li>
+<li><a href="https://github.com/gillstrom/dpn">dpn</a> - Get the dependents of a user's npm packages.</li>
+<li><a href="https://github.com/hughsk/npm-stats">npm-stats</a> - Get data from an npm registry.</li>
+<li><a href="https://github.com/postmanlabs/npm-cli-login">npm-cli-login</a> - Log in to npm.</li>
+<li><a href="https://github.com/Pana/nrm">nrm</a> - Registry manager.</li>
+<li><a href="https://github.com/dickeyxxx/npm-register">npm-register</a> - Easy to set up and maintain npm registry and proxy.</li>
+<li><a href="https://github.com/verdaccio/verdaccio">verdaccio</a> - Lightweight private npm proxy registry.</li>
+<li><a href="https://cloudsmith.io/l/npm-registry/">cloudsmith</a> - A fully managed package management SaaS with support for public and private npm registries (and many others).</li>
+</ul>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<ul>
+<li><a href="https://github.com/sindresorhus/npm-home">npm-home</a> - Open the npm page of a package.</li>
+<li><a href="https://github.com/sindresorhus/gh-home">gh-home</a> - Open the GitHub page of a package.</li>
+<li><a href="https://github.com/alanshaw/david">david</a> - Check if your package dependencies are out of date.</li>
+<li><a href="https://github.com/dylang/npm-check">npm-check</a> - Check for outdated, incorrect, and unused dependencies, as well as interactive update.</li>
+<li><a href="https://github.com/th0r/npm-upgrade">npm-upgrade</a> - Update outdated npm dependencies interactively.</li>
+<li><a href="https://github.com/uber/npm-shrinkwrap">npm-shrinkwrap</a> - A consistent shrinkwrap tool.</li>
+<li><a href="https://github.com/felixrieseberg/npm-windows-upgrade">npm-windows-upgrade</a> - Upgrade npm on Windows.</li>
+<li><a href="https://github.com/sindresorhus/generator-nm">generator-nm</a> - Scaffold out an npm package.</li>
+<li><a href="https://github.com/sindresorhus/package-up">package-up</a> - Find the closest package.json file.</li>
+<li><a href="https://github.com/sindresorhus/read-package-up">read-package-up</a> - Read the closest package.json file.</li>
+<li><a href="https://github.com/npm/normalize-package-data">normalize-package-data</a> - Normalize package metadata.</li>
+<li><a href="https://github.com/sindresorhus/package-config">package-config</a> - Get namespaced config from the closest package.json.</li>
+<li><a href="https://github.com/sindresorhus/npm-run-path">npm-run-path</a> - Run locally installed binaries in the terminal by name like with global ones.</li>
+<li><a href="https://github.com/nolanlawson/local-npm">local-npm</a> - Use npm <a href="https://addyosmani.com/blog/using-npm-offline/">offline</a>.</li>
+<li><a href="https://github.com/zeke/npe">npe</a> - CLI for inspecting and editing properties in package.json.</li>
+<li><a href="https://github.com/samccone/engine-deps">engine-deps</a> - Manage Node.js version specific dependencies with ease.</li>
+<li><a href="https://github.com/amovah/enpeem-search">enpeem-search</a> - Search packages by scraping the npm web search.</li>
+<li><a href="https://github.com/seanzarrin/npm-issues">npm-issues</a> - Search known issues of all your packages at once.</li>
+<li><a href="https://github.com/davej/john">john</a> - Make npm3's flat dependencies easier to find and sort.</li>
+<li><a href="https://github.com/ruyadorno/ntl">ntl</a> - Interactive CLI menu to list &amp; run npm tasks.</li>
+<li><a href="https://github.com/egoist/decheck">decheck</a> - Explore dependencies of npm packages in the command-line.</li>
+<li><a href="https://github.com/JamieMason/shrinkpack">shrinkpack</a> - Lock down your dependencies and install offline.</li>
+<li><a href="https://github.com/coderaiser/redrun">redrun</a> - Expand scripts from package.json to improve execution speed.</li>
+<li><a href="https://github.com/egoist/package-size">package-size</a> - Get the bundle size of an npm package.</li>
+<li><a href="https://github.com/imsnif/synp">synp</a> - Convert yarn.lock to package-lock.json and vice versa.</li>
+<li><a href="https://github.com/mysticatea/npm-run-all">npm-run-all</a> - CLI tool to run multiple npm-scripts in parallel or serial.</li>
+<li><a href="https://github.com/Qard/onchange">onchange</a> - Watch files and folders and run a command when something changed.</li>
+<li><a href="https://github.com/micromata/cli-error-notifier">cli-error-notifier</a> - Sends native desktop notifications when npm scripts fail.</li>
+<li><a href="https://github.com/rvpanoz/luna">luna</a> - App to manage npm dependencies.</li>
+<li><a href="https://github.com/maticzav/emma-cli">emma-cli</a> - Interactive CLI package search utility.</li>
+<li><a href="https://github.com/lirantal/lockfile-lint">lockfile-lint</a> - Lint lockfiles for improved security and trust policies to mitigate malicious package injection and insecure lockfile resources.</li>
+</ul>
+<h2 id="clients"><a class="header" href="#clients">Clients</a></h2>
+<ul>
+<li><a href="https://github.com/yarnpkg/yarn">yarn</a> - Fast, reliable, and secure dependency management.</li>
+<li><a href="https://github.com/npm/cli">npm</a> - The official client.</li>
+<li><a href="https://github.com/pnpm/pnpm">pnpm</a> - Fast, disk space efficient package manager.</li>
+</ul>
+<h2 id="tips"><a class="header" href="#tips">Tips</a></h2>
+<h3 id="update-to-the-latest-npm-version"><a class="header" href="#update-to-the-latest-npm-version">Update to the latest npm version</a></h3>
+<pre><code>$ npm install --global npm
+</code></pre>
+<p><em><a href="https://github.com/felixrieseberg/npm-windows-upgrade">Windows users, read more.</a></em></p>
+<h3 id="command-aliases"><a class="header" href="#command-aliases">Command aliases</a></h3>
+<ul>
+<li><code>npm i </code> → <code>npm install</code></li>
+<li><code>npm i -D</code> → <code>npm install --save-dev</code></li>
+<li><code>npm t</code> → <code>npm test</code></li>
+<li><code>npm it</code> → <code>npm install &amp;&amp; npm test</code></li>
+<li><code>npm r</code> → <code>npm uninstall</code></li>
+<li><code>npm un</code> → <code>npm uninstall</code></li>
+<li><code>npm up</code> → <code>npm update</code></li>
+</ul>
+<h3 id="shell-aliases"><a class="header" href="#shell-aliases">Shell aliases</a></h3>
+<p>Speed up your common npm tasks.</p>
+<p>In your <code>.zshrc</code>/<code>.bashrc</code>:</p>
+<pre><code class="language-sh">alias ni='npm install'
+alias nid='npm install --save-dev'
+alias nig='npm install --global'
+alias nt='npm test'
+alias nit='npm install &amp;&amp; npm test'
+alias nk='npm link'
+alias nr='npm run'
+alias ns='npm start'
+alias nf='npm cache clean &amp;&amp; rm -rf node_modules &amp;&amp; npm install'
+alias nlg='npm list --global --depth=0'
+</code></pre>
+<h3 id="dont-add-to-packagejson-when-installing"><a class="header" href="#dont-add-to-packagejson-when-installing">Don't add to package.json when installing</a></h3>
+<p>By default npm adds packages you install to the <code>dependencies</code> field in package.json (since v5). You can prevent this by specifying the <code>--no-save</code> flag. You can add a package to <code>devDependencies</code> with <code>--save-dev</code>/<code>-D</code>:</p>
+<pre><code>$ npm install --save-dev ava
+</code></pre>
+<h3 id="run-scripts"><a class="header" href="#run-scripts">Run scripts</a></h3>
+<p>You can easily <a href="https://docs.npmjs.com/cli/run-script">run scripts</a> using npm by adding them to the <code>&quot;scripts&quot;</code> field in package.json and run them with <code>npm run &lt;script-name&gt;</code>. Run <code>npm run</code> to see available scripts. Binaries of locally install packages are made available in the <a href="https://en.wikipedia.org/wiki/PATH_(variable)">PATH</a>, so you can run them by name.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;cat&quot;: &quot;cat-names&quot;
+	},
+	&quot;dependencies&quot;: {
+		&quot;cat-names&quot;: &quot;^1.0.0&quot;
+	}
+}
+</code></pre>
+<pre><code>$ npm run cat
+Max
+</code></pre>
+<p>All package.json properties are <a href="https://docs.npmjs.com/misc/scripts#packagejson-vars">exposed</a> as environment variables:</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;name&quot;: &quot;echo $npm_package_name&quot;
+	}
+}
+</code></pre>
+<pre><code>$ npm run name
+awesome-package
+</code></pre>
+<h4 id="passing-options-to-commands"><a class="header" href="#passing-options-to-commands">Passing options to commands</a></h4>
+<p>You can pass options to the command you are using in your npm script by adding <code>-- --flag</code> like in the example below. The <code>--</code> <a href="https://unix.stackexchange.com/questions/11376/what-does-double-dash-mean-also-known-as-bare-double-dash">marks the end of options parsing</a>, so <code>npm run</code> will just ignore it and pass it to the command.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;xo&quot;: &quot;xo&quot;,
+		&quot;xo:fix&quot;: &quot;npm run xo -- --fix&quot;,
+	}
+}
+</code></pre>
+<p><em>Adding the <code>-- --fix </code> option is like executing <code>xo --fix</code></em>.</p>
+<h4 id="silent-option"><a class="header" href="#silent-option">Silent option</a></h4>
+<p><code>npm run</code> has a <code>--silent</code> option which is especially useful when combining npm scripts.</p>
+<p>Imagine you have a setup for linting your JavaScript files like the following:</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;xo&quot;: &quot;xo&quot;,
+		&quot;xo:fix&quot;: &quot;npm run xo --silent -- --fix&quot;,
+	}
+}
+</code></pre>
+<p><em>Using the <code>--silent</code> option reduces the output in the terminal. See <a href="https://twitter.com/mkuehnel/status/957965749473210369">this comparison</a>.</em></p>
+<h3 id="lifecycle-scripts"><a class="header" href="#lifecycle-scripts">Lifecycle scripts</a></h3>
+<p>npm comes with predefined <a href="https://docs.npmjs.com/misc/scripts">lifecyle scripts</a> which are excuted under specific conditions if they are defined in your package.json.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;prepublishOnly&quot;: &quot;nsp check&quot;
+	},
+	&quot;devDependencies&quot;: {
+		&quot;nsp&quot;: &quot;^3.0.0&quot;
+	}
+}
+</code></pre>
+<p>This will be executed automatically before your npm package is published to the registry via <code>npm publish</code> to check for known vulnerabilties in your dependencies.</p>
+<p><em>Note: <strong>prepublishOnly</strong> is available since npm v4.0.0. See <a href="https://docs.npmjs.com/misc/scripts#deprecation-note">npm docs</a>.</em></p>
+<h4 id="npm-start-and-npm-test"><a class="header" href="#npm-start-and-npm-test"><code>npm start</code> and <code>npm test</code></a></h4>
+<p><code>npm start</code> and <code>npm test</code> are also lifecycle scripts but are not executed automatically.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;start&quot;: &quot;node server.js&quot;,
+		&quot;test&quot;: &quot;ava&quot;
+	},
+	&quot;devDependencies&quot;: {
+		&quot;ava&quot;: &quot;^1.0.0&quot;
+	}
+}
+</code></pre>
+<p>Therefore they can be executed simply with:</p>
+<pre><code class="language-console">$ npm test
+$ npm start
+</code></pre>
+<h4 id="pre-and-post-scripts"><a class="header" href="#pre-and-post-scripts"><code>pre</code> and <code>post</code> scripts</a></h4>
+<p>These are special lifecycle scripts which can be used to run scripts automatically in sequence.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;scripts&quot;: {
+		&quot;pretest&quot;: &quot;eslint .&quot;,
+		&quot;test&quot;: &quot;ava&quot;
+	},
+	&quot;devDependencies&quot;: {
+		&quot;eslint&quot;: &quot;^4.19.0&quot;,
+		&quot;ava&quot;: &quot;^1.0.0&quot;
+	}
+}
+</code></pre>
+<pre><code class="language-console">$ npm test
+</code></pre>
+<p>This will lint your files before running your tests. The tests will not run if linting fails. Or more generally spoken: the following script won’t be executed if one of the scripts running in sequence exits with an exit code other than 0.</p>
+<p><em>Note: <code>pre</code> and <code>post</code> scripts can also be used for your custom npm scripts. So <code>npm run foo</code> will also run <code>prefoo</code> and <code>postfoo</code> if defined.</em></p>
+<h3 id="run-script-with-npx"><a class="header" href="#run-script-with-npx">Run script with <code>npx</code></a></h3>
+<p><code>npm</code> <a href="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b">comes bundled</a> with <code>npx</code> (Since v5.2.0) — a tool to execute package binaries. Each command is executed either from the local <code>node_modules/.bin</code> directory, or from a central cache, installing any packages needed in order for <code>&lt;command&gt;</code> to run.</p>
+<pre><code class="language-json">{
+	&quot;name&quot;: &quot;awesome-package&quot;,
+	&quot;dependencies&quot;: {
+		&quot;cat-names&quot;: &quot;^1.0.0&quot;
+	}
+}
+</code></pre>
+<p>If the binary is already installed, it will be executed from <code>node_modules/.bin</code>.</p>
+<pre><code>$ npx cat-names
+Max
+</code></pre>
+<p>But if the binary is missing, it will be installed first.</p>
+<pre><code>$ npx dog-names
+npx: installed 46 in 3.136s
+Bentley
+</code></pre>
+<h3 id="run-commands-with-different-nodejs-versions"><a class="header" href="#run-commands-with-different-nodejs-versions">Run commands with different Node.js versions</a></h3>
+<p>With <code>npx</code> (Comes bundled with npm v5.2.0 or newer) and the <a href="https://www.npmjs.com/package/node-bin"><code>node-bin</code></a> package, you can easily try out code in different Node.js versions without having to use a version manager like <a href="http://nvm.sh"><code>nvm</code></a>, <a href="https://github.com/isaacs/nave"><code>nave</code></a>, or <a href="https://github.com/tj/n"><code>n</code></a>.</p>
+<pre><code>$ npx --package=node-bin@6.11.0 -- node --version
+v6.11.0
+</code></pre>
+<h3 id="link-local-packages"><a class="header" href="#link-local-packages">Link local packages</a></h3>
+<p>Sometimes it can be useful to have a local version of a package as a dependency. You can use <code>npm link</code> to link one local package into another. Run <code>npm link</code> in the package you want to use. This creates a global reference. Then go into your original package and run <code>npm link &lt;package-name&gt;</code> to link in the other package.</p>
+<pre><code>$ cd rainbow
+$ npm link
+$ cd ../unicorn
+$ npm link rainbow
+</code></pre>
+<p>You can now use <code>rainbow</code> as a dependency in the <code>unicorn</code> package.</p>
+<h3 id="install-a-package-from-github"><a class="header" href="#install-a-package-from-github">Install a package from GitHub</a></h3>
+<p>npm supports using a shorthand for installing a package directly from a GitHub repo:</p>
+<pre><code>$ npm install sindresorhus/chalk
+</code></pre>
+<p>Let's target a specific commit as the main branch is a moving target:</p>
+<pre><code>$ npm install 'sindresorhus/chalk#51b8f32'
+</code></pre>
+<p>Specify either a commit SHA, branch, tag, or nothing.</p>
+<p>You can also install Git dependencies with semver: <em>(Requires npm v5 or newer)</em></p>
+<pre><code>$ npm install 'sindresorhus/chalk#semver:^2.0.0'
+</code></pre>
+<h3 id="install-a-specific-version-of-a-package"><a class="header" href="#install-a-specific-version-of-a-package">Install a specific version of a package</a></h3>
+<pre><code>$ npm install chalk@1.0.0
+</code></pre>
+<h3 id="list-top-level-installed-packages-and-their-version"><a class="header" href="#list-top-level-installed-packages-and-their-version">List top-level installed packages and their version</a></h3>
+<pre><code>$ npm ls --depth=0
+</code></pre>
+<h3 id="command-help"><a class="header" href="#command-help">Command help</a></h3>
+<p>Get help docs for a command:</p>
+<pre><code>$ npm help &lt;command&gt;
+</code></pre>
+<p>Example:</p>
+<pre><code>$ npm help install
+</code></pre>
+<h3 id="standalone-version-of-a-package"><a class="header" href="#standalone-version-of-a-package">Standalone version of a package</a></h3>
+<p>Quickly get a standalone version of a package that is browserified and usable in the browser.</p>
+<pre><code>https://wzrd.in/standalone/&lt;package-name&gt;[@&lt;version&gt;]
+</code></pre>
+<p>Examples:</p>
+<ul>
+<li><a href="https://wzrd.in/standalone/object-assign">https://wzrd.in/standalone/object-assign</a></li>
+<li><a href="https://wzrd.in/standalone/object-assign@4.0.0">https://wzrd.in/standalone/object-assign@4.0.0</a></li>
+</ul>
+<p>Great for prototyping, but download the file or use Browserify yourself for production.</p>
+<h2 id="faq"><a class="header" href="#faq">FAQ</a></h2>
+<ul>
+<li><a href="http://stackoverflow.com/questions/11459733/check-in-node-modules-vs-shrinkwrap">Check in node_modules vs. shrinkwrap</a></li>
+<li><a href="http://stackoverflow.com/questions/18641899/what-is-the-difference-between-bower-and-npm">What is the difference between Bower and npm?</a></li>
+<li><a href="http://stackoverflow.com/questions/22137778/what-does-mean-in-package-json-versioning">What does <code>^</code> mean in package.json versioning?</a></li>
+<li><a href="http://stackoverflow.com/questions/10972176/find-the-version-of-an-installed-npm-package">Find the version of an installed npm package</a></li>
+<li><a href="http://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies">What's the difference between dependencies, devDependencies, and peerDependencies in package.json?</a></li>
+</ul>
+<h2 id="community"><a class="header" href="#community">Community</a></h2>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=npm"><code>#npm</code> on Freenode</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/npm">Stack Overflow</a></li>
+<li><a href="https://www.reddit.com/r/npm">Reddit</a></li>
+<li><a href="https://twitter.com/npmjs">Twitter</a></li>
+<li><a href="https://blog.npmjs.org">Blog</a></li>
+</ul>
+<h2 id="documentation"><a class="header" href="#documentation">Documentation</a></h2>
+<ul>
+<li><a href="https://docs.npmjs.com">Official</a></li>
+<li><a href="https://github.com/npm/npm/wiki/Troubleshooting">Troubleshooting</a></li>
+<li><a href="https://docs.npmjs.com/getting-started/semantic-versioning">Semantic versioning</a></li>
+<li><a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">Fixing npm permissions</a></li>
+<li><a href="https://docs.npmjs.com/files/package.json">package.json</a></li>
+<li><a href="https://docs.npmjs.com/cli/run-script">npm run script</a></li>
+<li><a href="https://github.com/npm/download-counts">Stats API</a></li>
+</ul>
+<h2 id="support"><a class="header" href="#support">Support</a></h2>
+<ul>
+<li><a href="https://npm.community/c/support">npm.community</a></li>
+<li><a href="https://twitter.com/npm_support">Twitter</a></li>
+<li><a href="https://www.npmjs.com/support">Contact form</a></li>
+</ul>
+<h2 id="related"><a class="header" href="#related">Related</a></h2>
+<ul>
+<li><a href="https://github.com/sindresorhus/awesome-nodejs">awesome-nodejs</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="NodeJs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="Npx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="NodeJs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="Npx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/mermaid.min.cdn.js"></script>
+        <script src="./js/jquery-storage.js"></script>
+        <script src="./js/globalscript.js"></script>
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="keywords" content="Editor.md,editor,Markdown Editor,Markdown" />
+    <meta name="description" content="Universal MarkDown Editor" />
+    <title>Universal MarkDown Editor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/editormd.css" />
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <div id="layout">
+    <div id="MdEditor"></div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/editormd.js"></script>
+    <script src="languages/en.js"></script>
+    <script type="text/javascript">
+        var mdEditor;
+
+
+        function getCodeValue() {
+            return (localStorage.modeName) ? $("#" + localStorage.modeName.replace("text/", "").replace("c/c++", "cpp") + "-code").val() : localStorage.mode;
+        }
+
+        function themeSelect(id, themes, lsKey, callback) {
+            var select = $("#" + id);
+
+            for (var i = 0, len = themes.length; i < len; i++) {
+                var theme = themes[i];
+                var selected = (localStorage[lsKey] == theme) ? " selected=\"selected\"" : "";
+
+                select.append("<option value=\"" + theme + "\"" + selected + ">" + theme + "</option>");
+            }
+
+            select.bind("change", function () {
+                var theme = $(this).val();
+
+                if (theme === "") {
+                    alert("theme == \"\"");
+                    return false;
+                }
+
+                console.log("lsKey =>", lsKey, theme);
+
+                localStorage[lsKey] = theme;
+                callback(select, theme);
+            });
+
+            return select;
+        };
+
+
+
+
+
+        $(function () {
+
+            $.get('./index.md', function (md) {
+                mdEditor = editormd("MdEditor", {
+                    width: "100%",
+                    height: "100vh",
+                    path: './lib/',
+                    theme: (localStorage.theme) ? localStorage.theme : "dark",
+                    previewTheme: (localStorage.previewTheme) ? localStorage.previewTheme : "dark",
+                    editorTheme: (localStorage.editorTheme) ? localStorage.editorTheme : "pastel-on-dark",
+                    markdown: md,
+                    mode: "gfm",
+                    codeFold: true,
+                    gotoLine: true,
+                    pluginPath: "",
+                    autoCloseTags: true,
+                    autoCloseBrackets: true,
+                    showTrailingSpace: true,
+                    matchBrackets: true,
+                    indentWithTabs: true,
+                    styleSelectedText: true,
+                    matchWordHighlight: true,           // options: true, false, "onselected"
+                    styleActiveLine: true,           // Highlight the current line
+                    dialogLockScreen: true,
+                    dialogShowMask: true,
+                    dialogDraggable: true,
+                    dialogMaskBgColor: "#fff",
+                    dialogMaskOpacity: 0.1,
+                    fontSize: "13px",
+
+                    autoLoadModules: true,
+                    syncScrolling: true,
+                    saveHTMLToTextarea: true,    // 保存 HTML 到 Textarea
+                    searchReplace: true,
+                    //watch : false,                // 关闭实时预览
+                    htmlDecode: "style,script,iframe|on*",            // 开启 HTML 标签解析，为了安全性，默认不开启
+                    toolbar: true,             //关闭工具栏
+                    previewCodeHighlight: true, // 关闭预览 HTML 的代码块高亮，默认开启
+                    emoji: true,
+                    taskList: true,
+                    tocm: true,         // Using [TOCM]
+                    tex: true,                   // 开启科学公式TeX语言支持，默认关闭
+                    flowChart: true,             // 开启流程图支持，默认关闭
+                    sequenceDiagram: true,       // 开启时序/序列图支持，默认关闭,
+                    //dialogLockScreen : false,   // 设置弹出层对话框不锁屏，全局通用，默认为true
+                    //dialogShowMask : false,     // 设置弹出层对话框显示透明遮罩层，全局通用，默认为true
+                    //dialogDraggable : false,    // 设置弹出层对话框不可拖动，全局通用，默认为true
+                    //dialogMaskOpacity : 0.4,    // 设置透明遮罩层的透明度，全局通用，默认值为0.1
+                    //dialogMaskBgColor : "#000", // 设置透明遮罩层的背景颜色，全局通用，默认为#fff
+                    imageUpload: true,
+                    imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                    imageUploadURL: "./php/upload.php",
+                    onload: function () {
+                        /*console.log('onload', this);*/
+                        //this.fullscreen();
+                        //this.unwatch();
+                        //this.watch().fullscreen();
+
+                        //this.setMarkdown("#PHP");
+                        //this.width("100%");
+                        //this.height(480);
+                        //this.resize("100%", 640);
+                    }
+                });
+
+                //editormd.toolbarHandlers["html-entities"] = null;
+
+                themeSelect("editormd-theme-select", editormd.themes, "theme", function ($this, theme) {
+                    mdEditor.setTheme(theme);
+                });
+                themeSelect("editor-area-theme-select", editormd.editorThemes, "editorTheme", function ($this, theme) {
+                    mdEditor.setCodeMirrorTheme(theme);
+                    // or mdEditor.setEditorTheme(theme);
+                });
+
+                themeSelect("preview-area-theme-select", editormd.previewThemes, "previewTheme", function ($this, theme) {
+                    mdEditor.setPreviewTheme(theme);
+                });
+
+
+                var modesSelect = $("#modes");
+                var modeNames = ["text/html", "javascript", "php", "text/xml", "text/json", "java", "actionscript", "perl", "go", "python", "c/c++", "css", "ruby"];
+                var modes = ["text/html", "javascript", "php", "text/xml", "text/json", "clike", "javascript", "perl", "go", "python", "clike", "css", "ruby"];
+
+                for (var i = 0, len = modes.length; i < len; i++) {
+                    var mode = modes[i];
+                    var selected = (localStorage.modeName == modeNames[i]) ? " selected=\"selected\"" : "";
+                    modesSelect.append("<option value=\"" + mode + "\"" + selected + " name=\"" + modeNames[i] + "\"" + selected + ">" + modeNames[i] + "</option>");
+                }
+
+                modesSelect.change(function () {
+                    var mode = $(this).val();
+                    var modeName = $(this).find("option:selected").attr("name");
+
+                    if (mode == "") {
+                        alert("mode == \"\"");
+                        return false;
+                    }
+
+                    localStorage.mode = mode;
+                    localStorage.modeName = modeName;
+
+                    var code = getCodeValue();
+
+                    mdEditor.setCodeMirrorOption("mode", mode);
+                    //mdEditor.setCodeMirrorOption("value", code);
+                    mdEditor.setValue(code);
+                });
+
+            });
+            // END Definition  Of Editor
+
+            $("#create-btn").click(function () {
+                $.getScript("./js/editormd.js", function () {
+                    $("#layout").append("<div id=\"MdEditor\"></div>");
+
+                    mdEditormd = editormd("MdEditor", {
+                        width: "90%",
+                        height: 640,
+                        markdown: "### 动态创建 Editor.md\r\n\r\nDynamic create Editor.md",
+                        path: './lib/'
+                    });
+                });
+            });
+
+            $("#remove-btn").click(function () {
+                mdEditormd.editor.remove();
+            });
+
+
+            $("#goto-line-btn").bind("click", function () {
+                mdEditor.gotoLine(90);
+            });
+
+            $("#show-btn").bind('click', function () {
+                mdEditor.show();
+            });
+
+            $("#hide-btn").bind('click', function () {
+                mdEditor.hide();
+            });
+
+            $("#get-md-btn").bind('click', function () {
+                alert(mdEditor.getMarkdown());
+            });
+
+            $("#get-html-btn").bind('click', function () {
+                alert(mdEditor.getHTML());
+            });
+
+            $("#watch-btn").bind('click', function () {
+                mdEditor.watch();
+            });
+
+            $("#unwatch-btn").bind('click', function () {
+                mdEditor.unwatch();
+            });
+
+            $("#preview-btn").bind('click', function () {
+                mdEditor.previewing();
+            });
+
+            $("#fullscreen-btn").bind('click', function () {
+                mdEditor.fullscreen();
+            });
+
+            $("#show-toolbar-btn").bind('click', function () {
+                mdEditor.showToolbar();
+            });
+
+            $("#close-toolbar-btn").bind('click', function () {
+                mdEditor.hideToolbar();
+            });
+
+            $("#toc-menu-btn").click(function () {
+                mdEditor.config({
+                    tocDropdown: true,
+                    tocTitle: "Rozcestník",
+                });
+            });
+
+            $("#toc-default-btn").click(function () {
+                mdEditor.config("tocDropdown", false);
+            });
+
+        });
+    </script>
+
+</body>
+</html>
