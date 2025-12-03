@@ -1,0 +1,11 @@
+﻿################################################################################
+# Tento soubor .gitignore byl automaticky vytvořen aplikací Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/websocket
+/bin/Debug/net6.0
+/obj
+/websocket.csproj.user
+/bin/Release/net6.0
+/packages
+/Videos
