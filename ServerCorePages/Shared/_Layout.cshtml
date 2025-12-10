@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @*
+        https://metroui.org.ua/intro.html
+        https://metroui.org.ua/position.html
+    *@
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="charset" content="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewData["Title"] - WebApp1</title>
+    @RenderSection( "HeadLink", required: false )
+    <link rel="stylesheet" href="~/metro/lib/metro/css/metro-all.min.css?v=4.2.46" />
+    <link rel="stylesheet" href="~/metro/css/site.css" />
+    <link rel="stylesheet" href="~/metro/css/metro-all.min.css" />
+    <link rel="stylesheet" href="~/metro/css/metro-icons.min.css" />
+    <link rel="stylesheet" href="~/metro/css/aistant.css" />
+    @RenderSection( "CssPart", required: false )
+    <script type="text/javascript" src="~/metro/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/metro/lib/metro/js/customFunctions.js"></script>
+</head>
+<body>
+ 
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   @*START FOOTER PART*@
+    <footer class="fixed-bottom">
+        <div class="container pt-1 pb-1">
+            <div class="text-center">
+                <ul class="inline-list reduce-1" id="social-menu">
+                    <li><a href="/DashBoard" title="Projects Home Pages"><span class="mif-home ani-hover-ring"></span></a></li>
+                    <li><a href="/Docs" title="Full Projects Code Help"><span class="mif-open-book ani-hover-ring"></span></a></li>
+                    <li><a href="https://www.facebook.com/GroupWareSolution" target="_blank" title="Facebook Contacts"><span class="mif-facebook ani-hover-ring"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/libor-svoboda-7b96014a/" target="_blank" title="Work Profile"><span class="mif-linkedin ani-hover-ring"></span></a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLmE7gP9LTBimNJQ444ypG8HVce23fa2Hb" target="_blank" title="Video Examples"><span class="mif-youtube ani-hover-ring"></span></a></li>
+                    <li><a href="https://github.com/liborsvoboda" target="_blank" title="Other Free GroupWare Projects"><span class="mif-github ani-hover-ring"></span></a></li>
+                    <li><a href="https://KlikneteZde.Cz" target="_blank" title="Online System for Testing"><span class="mif-dashboard ani-horizontal ani-hover-ring"></span></a></li>
+                    <li><a href="http://KlikneteZde.Cz:5000/server" target="_blank" title="All Projects Materials"><span class="mif-server ani-hover-ring"></span></a></li>
+                    <li><a href="http://KlikneteZde.Cz:5000/DashBoard" target="_blank" title="For Developers"><span class="mif-developer_board ani-hover-ring"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-1">
+                <ul class="inline-list reduce-1" id="footer-menu">
+                    <li><a href="https://www.youtube.com/playlist?list=PLmE7gP9LTBimNJQ444ypG8HVce23fa2Hb" target="_blank">Tutorials</a></li>
+                   @* <li><a href="/Subscriptions">Subscriptions</a></li>*@
+                    <li><a href="/Privacy">Privacy Policy</a></li>
+                    <li><a href="/Terms">Terms &amp; Conditions</a></li>
+                    <li><a href="https://GroupWare-Solution.Eu/contactus" target="_blank">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-1 reduce-1">
+                &copy; 2008-2023 by <a href="#" class="no-wrap">GroupWare - With Easy Modern Solutions</a>
+                <small>Version <span class="text-bold">2.0.0</span></small> Created with <a href="https://metroui.org.ua">Metro 4</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="~/metro/js/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/metro/lib/metro/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/metro/lib/metro/js/metro.min.js?v=4.2.46"></script>
+    <script type="text/javascript" src="~/metro/js/common.js" asp-append-version="true"></script>
+    @await RenderSectionAsync( "JsPart", required: false )
+    @await RenderSectionAsync( "ScriptPart", required: false )
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
